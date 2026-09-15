@@ -147,7 +147,7 @@ The old `legacy-event-A`, `legacy-event-B`, `legacy-event-C`, and `legacy-event-
 | Tune SQLite performance | `issue-041`, 2024-05-06 | none recorded | Improve SQLite contention | superseded by `evt-205` | superseded |
 | Ship first post-migration release | release plan | 2024-08-30 | Release is shipped | scheduled | completed by `release-024` on 2024-08-30 |
 
-The “continue unfinished work” capstone cut is `as_of: 2024-08-23`, one week before `release-024`. At that cut the backup obligation is open, the documentation work is already complete despite the weak linkage, and the fixture review is only a derived candidate. The 22 July production deployment is not the release referred to by `session-051`.
+The “continue unfinished work” capstone cut is `as_of: 2024-08-23`, one week before `release-024`. At that cut the backup obligation is open, the documentation work is already complete despite the weak linkage, and the fixture review is a real derived loop: open, derived, and lower-authority than an obligation. The 22 July production deployment is not the release referred to by `session-051`.
 
 At the corpus end, `intent-401` is completed, `release-024` has shipped, and the true fixture loop is completed. No open item is left without an end-of-corpus state.
 

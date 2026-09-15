@@ -23,3 +23,25 @@ The first implementation milestone is deliberately narrow: build the controlled 
 - **Evidence:** frozen run manifests, per-case outputs, exact source traces, and per-question metrics.
 
 No benchmark result is claimed until its complete run artifact is committed.
+
+## Controlled-corpus generator (H1: E-03 / E-04)
+
+Ground truth: `spec/running-examples.md` on main. Contract: the Memory
+repo's `spec/benchmark-v0.1.md`. The generator implements Q1/Q2 scope
+only — World A as a canonical fixture plus N parametric worlds (default
+12) built from the same five scenario templates. No Worlds B–D, no
+intentions, no procedures yet.
+
+```bash
+python -m pytest -q                                  # 37 tests, incl. plant-a-leak
+python -m generator.build --repo-root .              # seed 20240823, frozen to
+                                                     # experiments/benchmark/fixtures/v0.1
+```
+
+Layout: `corpus/artifacts/gen-NNNNNN.md` + `corpus/queries.jsonl`
+(system-visible; no answers) alongside evaluator-side `eval/`
+(`ledger.jsonl`, `expected.jsonl`, E-04 `oracle*.jsonl`,
+`build_meta.jsonl`). The build refuses to freeze unless all five
+leakage audits pass; see `experiments/benchmark/AUDIT-REPORT.md`.
+No retriever, memory system, or model call lives in this repo yet —
+that is H2.
