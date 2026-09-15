@@ -1,0 +1,31 @@
+{"query_id": "q-000001", "family": "Q1", "topic": "API gateway", "as_of": "2024-07-10", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000002", "family": "Q2-decision", "topic": "API gateway", "as_of": "2024-07-15", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000003", "family": "Q1", "topic": "audit log", "as_of": "2024-07-22", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000004", "family": "Q2-decision", "topic": "audit log", "as_of": "2024-08-23", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000005", "family": "Q1", "topic": "blob storage", "as_of": "2024-12-31", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000006", "family": "Q2-decision", "topic": "blob storage", "as_of": "2025-06-30", "answer": {"decision": "New blob storage work should target S3.", "status": "current", "decided_at": "2025-05-10"}, "supporting": ["adr-1024", "adr-1025", "deployment-1026", "deployment-1027"]}
+{"query_id": "q-000007", "family": "Q2-production", "topic": "blob storage", "as_of": "2024-07-10", "answer": {"production": null, "status": "unknown"}, "supporting": []}
+{"query_id": "q-000008", "family": "Q1", "topic": "event-store backend", "as_of": "2024-07-15", "answer": {"kind": "artifact_set"}, "supporting": ["adr-003", "adr-007", "deployment-001", "incident-021", "session-014", "session-019", "session-031", "session-033"]}
+{"query_id": "q-000009", "family": "Q2-decision", "topic": "event-store backend", "as_of": "2024-07-22", "answer": {"decision": "New event-store work should target PostgreSQL.", "status": "current", "decided_at": "2024-07-11"}, "supporting": ["adr-003", "adr-007", "deployment-001", "deployment-101", "incident-021", "session-014", "session-019", "session-031", "session-033"]}
+{"query_id": "q-000010", "family": "Q2-production", "topic": "event-store backend", "as_of": "2024-08-23", "answer": {"production": "PostgreSQL runs in production.", "status": "current", "effective_at": "2024-07-22"}, "supporting": ["deployment-101"]}
+{"query_id": "q-000011", "family": "Q1", "topic": "feature flags", "as_of": "2024-12-31", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000012", "family": "Q2-decision", "topic": "feature flags", "as_of": "2025-06-30", "answer": {"decision": "New feature flags work should target LaunchDarkly.", "status": "current", "decided_at": "2025-03-10"}, "supporting": ["adr-1013", "runbook-1014"]}
+{"query_id": "q-000013", "family": "Q1", "topic": "full-text search index", "as_of": "2024-07-10", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000014", "family": "Q2-decision", "topic": "full-text search index", "as_of": "2024-07-15", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000015", "family": "Q2-production", "topic": "full-text search index", "as_of": "2024-07-22", "answer": {"production": null, "status": "unknown"}, "supporting": []}
+{"query_id": "q-000016", "family": "Q1", "topic": "lookup-latency caching", "as_of": "2024-08-23", "answer": {"kind": "artifact_set"}, "supporting": ["adr-009", "session-040", "session-044"]}
+{"query_id": "q-000017", "family": "Q2-decision", "topic": "lookup-latency caching", "as_of": "2024-12-31", "answer": {"decision": "Do not introduce Redis.", "status": "current", "decided_at": "2024-08-12"}, "supporting": ["adr-009", "session-040", "session-044"]}
+{"query_id": "q-000018", "family": "Q1", "topic": "message-queue backend", "as_of": "2025-06-30", "answer": {"kind": "artifact_set"}, "supporting": ["session-1002", "session-1003", "session-1004", "session-1005"]}
+{"query_id": "q-000019", "family": "Q2-decision", "topic": "message-queue backend", "as_of": "2024-07-10", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000020", "family": "Q1", "topic": "metrics pipeline", "as_of": "2024-07-15", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000021", "family": "Q2-decision", "topic": "metrics pipeline", "as_of": "2024-07-22", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000022", "family": "Q1", "topic": "notification fan-out", "as_of": "2024-08-23", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000023", "family": "Q2-decision", "topic": "notification fan-out", "as_of": "2024-12-31", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000024", "family": "Q1", "topic": "schema registry", "as_of": "2025-06-30", "answer": {"kind": "artifact_set"}, "supporting": ["adr-1021", "session-1022", "session-1023"]}
+{"query_id": "q-000025", "family": "Q2-decision", "topic": "schema registry", "as_of": "2024-07-10", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000026", "family": "Q1", "topic": "secret store", "as_of": "2024-07-15", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000027", "family": "Q2-decision", "topic": "secret store", "as_of": "2024-07-22", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000028", "family": "Q1", "topic": "session cache", "as_of": "2024-08-23", "answer": {"kind": "artifact_set"}, "supporting": []}
+{"query_id": "q-000029", "family": "Q2-decision", "topic": "session cache", "as_of": "2024-12-31", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}
+{"query_id": "q-000030", "family": "Q1", "topic": "tracing backend", "as_of": "2025-06-30", "answer": {"kind": "artifact_set"}, "supporting": ["session-1000", "session-1001"]}
+{"query_id": "q-000031", "family": "Q2-decision", "topic": "tracing backend", "as_of": "2024-07-10", "answer": {"decision": null, "status": "no-decision"}, "supporting": []}

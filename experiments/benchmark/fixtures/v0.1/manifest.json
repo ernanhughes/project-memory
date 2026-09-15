@@ -1,0 +1,344 @@
+{
+  "corpus_version": "v0.1",
+  "seed": 20240823,
+  "n_parametric_worlds": 12,
+  "generator_commit": "e8bb9099f74ebae09eb0b85c2c46802ffe628de3",
+  "query_set_version": "v0.1-q1q2",
+  "files": [
+    {
+      "path": "corpus/artifacts/gen-000001.md",
+      "sha256": "c633964ba8efb9132f68fa78501799bf8dd5d8561a03e6e0c6f2d4c1b081b510",
+      "bytes": 141
+    },
+    {
+      "path": "corpus/artifacts/gen-000002.md",
+      "sha256": "d62fcba5bfffddd4395dfa682d27597c63bd500364ef36f7a71f8af55851f6ba",
+      "bytes": 136
+    },
+    {
+      "path": "corpus/artifacts/gen-000003.md",
+      "sha256": "4a8dcf55fbaa22b52fbd13f47ecabed7d5a687b66abb0c0090822ae79bf18753",
+      "bytes": 182
+    },
+    {
+      "path": "corpus/artifacts/gen-000004.md",
+      "sha256": "72432ff34a2e29cc7a006b8ac8c102348fcf81bfd523530fb1c4ab5bf4f15015",
+      "bytes": 225
+    },
+    {
+      "path": "corpus/artifacts/gen-000005.md",
+      "sha256": "d8be32d8d49008ed63ca7c49e98cb2c60bc786bb3aaf7af4f6c7f5b53294ebf0",
+      "bytes": 230
+    },
+    {
+      "path": "corpus/artifacts/gen-000006.md",
+      "sha256": "2c7cf7b6432019b38c60029e62cb366270ef3d2ed695c938e037695893926d64",
+      "bytes": 184
+    },
+    {
+      "path": "corpus/artifacts/gen-000007.md",
+      "sha256": "5581878b36acfec94e34b89267ed8ea4d4cd44578cc67cc900c19d0b30e3f29d",
+      "bytes": 201
+    },
+    {
+      "path": "corpus/artifacts/gen-000008.md",
+      "sha256": "3c386629780fcf87a3d3af8732b85722aff7d62efb0621200fab79e3f3b84951",
+      "bytes": 274
+    },
+    {
+      "path": "corpus/artifacts/gen-000009.md",
+      "sha256": "a58175b6069ba560588fb421a0d5a45672f3780717ea9d1595ee49fdb615ff32",
+      "bytes": 221
+    },
+    {
+      "path": "corpus/artifacts/gen-000010.md",
+      "sha256": "dfa60642e7d4b957ca4f230b48bbed7026938bb100e033c7d12bd54a45ff4f15",
+      "bytes": 163
+    },
+    {
+      "path": "corpus/artifacts/gen-000011.md",
+      "sha256": "bafa20f6672c41684c85086a4eaafa631ac140eb9e34d66faf388e6bb19c52d9",
+      "bytes": 171
+    },
+    {
+      "path": "corpus/artifacts/gen-000012.md",
+      "sha256": "b86f6d601e19290627c37711ba63983cf7579b544692ada6646b9a260fda0623",
+      "bytes": 243
+    },
+    {
+      "path": "corpus/artifacts/gen-000013.md",
+      "sha256": "234690402544ff35746e517df39704a5ed393742dd2897d21d452616ceb9cb4d",
+      "bytes": 139
+    },
+    {
+      "path": "corpus/artifacts/gen-000014.md",
+      "sha256": "c5802a28ff3d98dae20e69b4cecf565511cbaf84a4c7f7af958e7930eff02bab",
+      "bytes": 192
+    },
+    {
+      "path": "corpus/artifacts/gen-000015.md",
+      "sha256": "d3e56c4ecfc94d312d870c4c1ae6fc83c28ec75dea47fd16e546031b065800d1",
+      "bytes": 219
+    },
+    {
+      "path": "corpus/artifacts/gen-000016.md",
+      "sha256": "b11c78a6dd133ec72caa22f206bf29dbb3e840c99bb50410e6d97ee472d95fad",
+      "bytes": 133
+    },
+    {
+      "path": "corpus/artifacts/gen-000017.md",
+      "sha256": "afb93c1bb8afd5558afd240793d41dae3c893d9cde8f627d6f2d0fefa3e00927",
+      "bytes": 157
+    },
+    {
+      "path": "corpus/artifacts/gen-000018.md",
+      "sha256": "328e8e14606b8b0f12d67351f5ea0eb136a92c5ca463b14d514fd81bf29f730b",
+      "bytes": 163
+    },
+    {
+      "path": "corpus/artifacts/gen-000019.md",
+      "sha256": "f046382da0df67140c392b9794999936768bff7839b57c1f0c5d15c9b78f0786",
+      "bytes": 263
+    },
+    {
+      "path": "corpus/artifacts/gen-000020.md",
+      "sha256": "5ce52aac74072effa18a0dc1a05a439a4157efd7c5786a4abd8743016c5d2ae6",
+      "bytes": 249
+    },
+    {
+      "path": "corpus/artifacts/gen-000021.md",
+      "sha256": "80748068dd87a67a367cea273bf872655c087b6270b2411e52848aba99375f48",
+      "bytes": 219
+    },
+    {
+      "path": "corpus/artifacts/gen-000022.md",
+      "sha256": "2dae075faf0cec17df34a3910e833ba440a191333f30e543dc802076abca2f9a",
+      "bytes": 168
+    },
+    {
+      "path": "corpus/artifacts/gen-000023.md",
+      "sha256": "db8fbc4568114ed00bb60ffd2c516578438e4521a1120da45a1820c19170484c",
+      "bytes": 145
+    },
+    {
+      "path": "corpus/artifacts/gen-000024.md",
+      "sha256": "e57864118a4670f8bc2f541d51bfa1aee7a01733951e1f8d53556b226ea37c54",
+      "bytes": 242
+    },
+    {
+      "path": "corpus/artifacts/gen-000025.md",
+      "sha256": "daa98046ee83d8e7d565a18cd9aa6eda37fe301b3c7451fb6e8039919404261e",
+      "bytes": 203
+    },
+    {
+      "path": "corpus/artifacts/gen-000026.md",
+      "sha256": "fcc0478cc99e4ce282f4a7ccb28fcaf7058daa7fd1bb36a315f5ea9a4dd7f91d",
+      "bytes": 181
+    },
+    {
+      "path": "corpus/artifacts/gen-000027.md",
+      "sha256": "baae9769ee536e7f1060f2c97aeebf87092d8224576600a215fddf4733e0c40a",
+      "bytes": 270
+    },
+    {
+      "path": "corpus/artifacts/gen-000028.md",
+      "sha256": "2eae7e2f0b3365fae51e75ea018f5c05460032c5793b87991a08045c4f2b17f8",
+      "bytes": 210
+    },
+    {
+      "path": "corpus/artifacts/gen-000029.md",
+      "sha256": "4902f35503f8d4f3307647c43444b5ff52c7a03c748eeaccf6ffdee42d11a231",
+      "bytes": 285
+    },
+    {
+      "path": "corpus/artifacts/gen-000030.md",
+      "sha256": "e0c66a9b32accca0649bc96e5147afbee6964f0c4865ab9a70503aac5681baf5",
+      "bytes": 150
+    },
+    {
+      "path": "corpus/artifacts/gen-000031.md",
+      "sha256": "6c958f8701a6fa09a77363f0216262e0d34c8a36874398c57c2181c41815cbc1",
+      "bytes": 229
+    },
+    {
+      "path": "corpus/artifacts/gen-000032.md",
+      "sha256": "492a523c1daba9bd25b81760647217f36b1da84f10929e59b84fdfd52254e0ee",
+      "bytes": 167
+    },
+    {
+      "path": "corpus/artifacts/gen-000033.md",
+      "sha256": "5e46a2f6bcaa2ce9660c08aad1614ff629643179b6bf05103ab214832e4a841f",
+      "bytes": 160
+    },
+    {
+      "path": "corpus/artifacts/gen-000034.md",
+      "sha256": "45ea618dcb8e1d93d0b5ef2968c32eb3374b6981fae0a33d302e48621c9ca908",
+      "bytes": 206
+    },
+    {
+      "path": "corpus/artifacts/gen-000035.md",
+      "sha256": "e9a7c10e40fdbc0f7410209d38d99257306cf6526a27cab2eba0b26a5209af49",
+      "bytes": 127
+    },
+    {
+      "path": "corpus/artifacts/gen-000036.md",
+      "sha256": "baad53d71794c7c520898af98eef3f89cdc9cd4b3346f34bd2d8f2031fc061f5",
+      "bytes": 199
+    },
+    {
+      "path": "corpus/artifacts/gen-000037.md",
+      "sha256": "a76fd9bbf92a4bfec33013ac550c0f7d7072b180509261e2b9504dc9636630dc",
+      "bytes": 143
+    },
+    {
+      "path": "corpus/artifacts/gen-000038.md",
+      "sha256": "5eebaa5eded80a7bd3952564e49c172ed26add4d01ab5323e005c5a5d4723ec4",
+      "bytes": 209
+    },
+    {
+      "path": "corpus/artifacts/gen-000039.md",
+      "sha256": "281cd963b0d29cfc731886b6f3d6e070f96d7fa36121c0a52ab965f7f65b86a0",
+      "bytes": 217
+    },
+    {
+      "path": "corpus/artifacts/gen-000040.md",
+      "sha256": "03b9a7fe8e72055c60db722c1da585d599ea795af632ea107865dd548d415aa3",
+      "bytes": 145
+    },
+    {
+      "path": "corpus/artifacts/gen-000041.md",
+      "sha256": "039d9402a3f53201a9301e7a2786ab5d4821eb3d1f5a5855078bc170a51a97aa",
+      "bytes": 146
+    },
+    {
+      "path": "corpus/artifacts/gen-000042.md",
+      "sha256": "3ef341fcab6410417e94346dfb13e1bcc127d03c96b49b55377ec41b39115807",
+      "bytes": 132
+    },
+    {
+      "path": "corpus/artifacts/gen-000043.md",
+      "sha256": "44eaa28cbd438ad565e4ce0be3148331de1b185e460fc7669b6f52f3d6bdc0e8",
+      "bytes": 131
+    },
+    {
+      "path": "corpus/artifacts/gen-000044.md",
+      "sha256": "f72471ae918eb6158a0fade22aa84c8cb30e0a6b510175a17543406c70060111",
+      "bytes": 197
+    },
+    {
+      "path": "corpus/artifacts/gen-000045.md",
+      "sha256": "077d27eb8473110f825574c735bed1dff63d29fb7e575ee3a4dfa238e72ee273",
+      "bytes": 141
+    },
+    {
+      "path": "corpus/artifacts/gen-000046.md",
+      "sha256": "e53b2d230721e87bf9a4e9a1693e65cd587d76c04fababc77917f0b073270fa1",
+      "bytes": 238
+    },
+    {
+      "path": "corpus/artifacts/gen-000047.md",
+      "sha256": "d4a1d50f2ef70b9affb88cf2607b078a99b26a6c36830d41fbe7d841d7239805",
+      "bytes": 184
+    },
+    {
+      "path": "corpus/artifacts/gen-000048.md",
+      "sha256": "6dcc32b23a064d39dfd2ea046064c9c288f1d6a836179085e2208c3b24ffd9b6",
+      "bytes": 159
+    },
+    {
+      "path": "corpus/artifacts/gen-000049.md",
+      "sha256": "d00f50d495e18776bfdd9223c9b81181cb1481df91e970598e9526d36c01c7a9",
+      "bytes": 292
+    },
+    {
+      "path": "corpus/artifacts/gen-000050.md",
+      "sha256": "ee85201ac073b2fd5ffe7380324325588e8675a13dbf18ba0dc383d5e33752f9",
+      "bytes": 144
+    },
+    {
+      "path": "corpus/artifacts/gen-000051.md",
+      "sha256": "2a4b60b44f477960963bda67eb391fa71bd8cc2d69e7a71e1ff2e9c0e9892519",
+      "bytes": 142
+    },
+    {
+      "path": "corpus/artifacts/gen-000052.md",
+      "sha256": "4a4e796ccd5f8c94dfb71daeb0c445ecfa49ff5c5c5574367745fa89459b1fa6",
+      "bytes": 184
+    },
+    {
+      "path": "corpus/artifacts/gen-000053.md",
+      "sha256": "b7eeebf31ded3dc0245eade5cc4be602b1e5e4faa973ec62f1b7f5fef2051f74",
+      "bytes": 143
+    },
+    {
+      "path": "corpus/artifacts/gen-000054.md",
+      "sha256": "57e4b42ff6ab3a3e258b5367b7ac7cde66a00a1ea05c73b38fca1ba182924a85",
+      "bytes": 124
+    },
+    {
+      "path": "corpus/artifacts/gen-000055.md",
+      "sha256": "73e313f93863a96c67b05e4d3b98665fafa51f5e6c55c7c70573bfe91260e294",
+      "bytes": 159
+    },
+    {
+      "path": "corpus/artifacts/gen-000056.md",
+      "sha256": "a91ab42f24685b61e5956f7ba0a8ef887afd2c03354fca30a4b128dcfd9e2f23",
+      "bytes": 154
+    },
+    {
+      "path": "corpus/artifacts/gen-000057.md",
+      "sha256": "2b392e8d8cadfeef2301ae56e42807f31ccbc944c38f57d46fb0c57abae11e8f",
+      "bytes": 136
+    },
+    {
+      "path": "corpus/artifacts/gen-000058.md",
+      "sha256": "c21e4880c2b471256aff0c55d30c9f0ab315bdde1716ca1fdc1d9a07feae5803",
+      "bytes": 234
+    },
+    {
+      "path": "corpus/artifacts/gen-000059.md",
+      "sha256": "f3d135f9cfa3068db31dbc76f12a8156a7e36bde723d78d524ff93f708041918",
+      "bytes": 167
+    },
+    {
+      "path": "corpus/artifacts/gen-000060.md",
+      "sha256": "dfa33c30f5d2a121015bad5c51871682599a5a13faabaaf86eb69e9ccb26e59a",
+      "bytes": 141
+    },
+    {
+      "path": "corpus/artifacts/gen-000061.md",
+      "sha256": "c29d3b5c3aeeb18dee5d94bda69744068979d6be5e2e00fc385c1a187ca32a7d",
+      "bytes": 155
+    },
+    {
+      "path": "corpus/queries.jsonl",
+      "sha256": "376797afd698c7e9d4bd620b6e21abfdc258bb4a9990b1610ce5a25a2574c0df",
+      "bytes": 4848
+    },
+    {
+      "path": "eval/build_meta.jsonl",
+      "sha256": "d60622eecd2ac609a238a537764010aa0033ee6dbf8cfb403ebbbad81560c28f",
+      "bytes": 11243
+    },
+    {
+      "path": "eval/expected.jsonl",
+      "sha256": "c6743db6c615fd8c24e4720cf1cad248370847e066c8aefd4f861fe9fcab64b5",
+      "bytes": 5925
+    },
+    {
+      "path": "eval/ledger.jsonl",
+      "sha256": "ae6afe1e7aee8cf24e40c55c0cc33f7dd0dc3c800fc43a42282be3071e637c28",
+      "bytes": 20349
+    },
+    {
+      "path": "eval/oracle.jsonl",
+      "sha256": "7e99f4b9c1692392bab9da510a5ffb5b32bf411d46044754a86fd6eb5624cfb7",
+      "bytes": 3305
+    },
+    {
+      "path": "eval/oracle_roles.jsonl",
+      "sha256": "cd829d6e5a55d3f282a9370c8a217cee054c3a2ef12043e44e6d85298f872165",
+      "bytes": 3738
+    }
+  ]
+}

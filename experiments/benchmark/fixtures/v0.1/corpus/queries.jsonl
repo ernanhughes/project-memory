@@ -1,0 +1,31 @@
+{"query_id": "q-000001", "family": "Q1", "topic": "API gateway", "text": "Find the discussions of API gateway.", "as_of": "2024-07-10"}
+{"query_id": "q-000002", "family": "Q2-decision", "topic": "API gateway", "text": "What should new work target for API gateway?", "as_of": "2024-07-15"}
+{"query_id": "q-000003", "family": "Q1", "topic": "audit log", "text": "Find the discussions of audit log.", "as_of": "2024-07-22"}
+{"query_id": "q-000004", "family": "Q2-decision", "topic": "audit log", "text": "What should new work target for audit log?", "as_of": "2024-08-23"}
+{"query_id": "q-000005", "family": "Q1", "topic": "blob storage", "text": "Find the discussions of blob storage.", "as_of": "2024-12-31"}
+{"query_id": "q-000006", "family": "Q2-decision", "topic": "blob storage", "text": "What should new work target for blob storage?", "as_of": "2025-06-30"}
+{"query_id": "q-000007", "family": "Q2-production", "topic": "blob storage", "text": "What runs in production for blob storage?", "as_of": "2024-07-10"}
+{"query_id": "q-000008", "family": "Q1", "topic": "event-store backend", "text": "Where did the team discuss event-store backend?", "as_of": "2024-07-15"}
+{"query_id": "q-000009", "family": "Q2-decision", "topic": "event-store backend", "text": "What did the team decide about event-store backend?", "as_of": "2024-07-22"}
+{"query_id": "q-000010", "family": "Q2-production", "topic": "event-store backend", "text": "What runs in production for event-store backend?", "as_of": "2024-08-23"}
+{"query_id": "q-000011", "family": "Q1", "topic": "feature flags", "text": "In which sessions did feature flags come up?", "as_of": "2024-12-31"}
+{"query_id": "q-000012", "family": "Q2-decision", "topic": "feature flags", "text": "What did the team decide about feature flags?", "as_of": "2025-06-30"}
+{"query_id": "q-000013", "family": "Q1", "topic": "full-text search index", "text": "Where did the team discuss full-text search index?", "as_of": "2024-07-10"}
+{"query_id": "q-000014", "family": "Q2-decision", "topic": "full-text search index", "text": "What did the team decide about full-text search index?", "as_of": "2024-07-15"}
+{"query_id": "q-000015", "family": "Q2-production", "topic": "full-text search index", "text": "Which system currently runs full-text search index in production?", "as_of": "2024-07-22"}
+{"query_id": "q-000016", "family": "Q1", "topic": "lookup-latency caching", "text": "In which sessions did lookup-latency caching come up?", "as_of": "2024-08-23"}
+{"query_id": "q-000017", "family": "Q2-decision", "topic": "lookup-latency caching", "text": "What was decided regarding lookup-latency caching?", "as_of": "2024-12-31"}
+{"query_id": "q-000018", "family": "Q1", "topic": "message-queue backend", "text": "Find the discussions of message-queue backend.", "as_of": "2025-06-30"}
+{"query_id": "q-000019", "family": "Q2-decision", "topic": "message-queue backend", "text": "What was decided regarding message-queue backend?", "as_of": "2024-07-10"}
+{"query_id": "q-000020", "family": "Q1", "topic": "metrics pipeline", "text": "Where did the team discuss metrics pipeline?", "as_of": "2024-07-15"}
+{"query_id": "q-000021", "family": "Q2-decision", "topic": "metrics pipeline", "text": "What was decided regarding metrics pipeline?", "as_of": "2024-07-22"}
+{"query_id": "q-000022", "family": "Q1", "topic": "notification fan-out", "text": "Where was notification fan-out talked about?", "as_of": "2024-08-23"}
+{"query_id": "q-000023", "family": "Q2-decision", "topic": "notification fan-out", "text": "What did the team decide about notification fan-out?", "as_of": "2024-12-31"}
+{"query_id": "q-000024", "family": "Q1", "topic": "schema registry", "text": "Where was schema registry talked about?", "as_of": "2025-06-30"}
+{"query_id": "q-000025", "family": "Q2-decision", "topic": "schema registry", "text": "What was decided regarding schema registry?", "as_of": "2024-07-10"}
+{"query_id": "q-000026", "family": "Q1", "topic": "secret store", "text": "In which sessions did secret store come up?", "as_of": "2024-07-15"}
+{"query_id": "q-000027", "family": "Q2-decision", "topic": "secret store", "text": "What was decided regarding secret store?", "as_of": "2024-07-22"}
+{"query_id": "q-000028", "family": "Q1", "topic": "session cache", "text": "Find the discussions of session cache.", "as_of": "2024-08-23"}
+{"query_id": "q-000029", "family": "Q2-decision", "topic": "session cache", "text": "What did the team decide about session cache?", "as_of": "2024-12-31"}
+{"query_id": "q-000030", "family": "Q1", "topic": "tracing backend", "text": "In which sessions did tracing backend come up?", "as_of": "2025-06-30"}
+{"query_id": "q-000031", "family": "Q2-decision", "topic": "tracing backend", "text": "What did the team decide about tracing backend?", "as_of": "2024-07-10"}
