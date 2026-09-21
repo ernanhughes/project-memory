@@ -1,0 +1,1251 @@
+{
+  "run_id": "sim-muse-v2",
+  "seed": 20240823,
+  "n_worlds": 12,
+  "task_set_version": "sim-v0.1-new-service",
+  "corpus_version": "v0.1",
+  "tasks": [
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "as_of": "2025-06-30"
+    }
+  ],
+  "rows": [
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-api-gateway-C0-r0",
+      "usage": {
+        "input_tokens": 118,
+        "cached_input_tokens": 0,
+        "output_tokens": 331,
+        "reasoning_tokens": 318,
+        "total_tokens": 449
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 525,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "C1",
+      "action": {
+        "target": "Envoy",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-api-gateway-C1-r0",
+      "usage": {
+        "input_tokens": 4179,
+        "cached_input_tokens": 0,
+        "output_tokens": 260,
+        "reasoning_tokens": 246,
+        "total_tokens": 4439
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15867,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "C2",
+      "action": {
+        "target": "Envoy",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-api-gateway-C2-r0",
+      "usage": {
+        "input_tokens": 447,
+        "cached_input_tokens": 0,
+        "output_tokens": 1273,
+        "reasoning_tokens": 1259,
+        "total_tokens": 1720
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1743,
+      "context_chars": 1276
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "CO",
+      "action": {
+        "target": "Envoy",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-api-gateway-CO-r0",
+      "usage": {
+        "input_tokens": 238,
+        "cached_input_tokens": 0,
+        "output_tokens": 402,
+        "reasoning_tokens": 388,
+        "total_tokens": 640
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 933,
+      "context_chars": 466
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-audit-log-C0-r0",
+      "usage": {
+        "input_tokens": 118,
+        "cached_input_tokens": 0,
+        "output_tokens": 231,
+        "reasoning_tokens": 218,
+        "total_tokens": 349
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 523,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "C1",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-audit-log-C1-r0",
+      "usage": {
+        "input_tokens": 4179,
+        "cached_input_tokens": 0,
+        "output_tokens": 142,
+        "reasoning_tokens": 127,
+        "total_tokens": 4321
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15865,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "C2",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-audit-log-C2-r0",
+      "usage": {
+        "input_tokens": 409,
+        "cached_input_tokens": 0,
+        "output_tokens": 471,
+        "reasoning_tokens": 456,
+        "total_tokens": 880
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1607,
+      "context_chars": 1142
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "CO",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-audit-log-CO-r0",
+      "usage": {
+        "input_tokens": 186,
+        "cached_input_tokens": 0,
+        "output_tokens": 262,
+        "reasoning_tokens": 247,
+        "total_tokens": 448
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 759,
+      "context_chars": 294
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-blob-storage-C0-r0",
+      "usage": {
+        "input_tokens": 118,
+        "cached_input_tokens": 0,
+        "output_tokens": 218,
+        "reasoning_tokens": 205,
+        "total_tokens": 336
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 526,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "C1",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-blob-storage-C1-r0",
+      "usage": {
+        "input_tokens": 4179,
+        "cached_input_tokens": 0,
+        "output_tokens": 247,
+        "reasoning_tokens": 233,
+        "total_tokens": 4426
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15868,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "C2",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-blob-storage-C2-r0",
+      "usage": {
+        "input_tokens": 448,
+        "cached_input_tokens": 0,
+        "output_tokens": 336,
+        "reasoning_tokens": 322,
+        "total_tokens": 784
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1669,
+      "context_chars": 1201
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "CO",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-blob-storage-CO-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 350,
+        "reasoning_tokens": 336,
+        "total_tokens": 524
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-event-store-backend-C0-r0",
+      "usage": {
+        "input_tokens": 119,
+        "cached_input_tokens": 0,
+        "output_tokens": 243,
+        "reasoning_tokens": 230,
+        "total_tokens": 362
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 533,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "C1",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-event-store-backend-C1-r0",
+      "usage": {
+        "input_tokens": 4180,
+        "cached_input_tokens": 0,
+        "output_tokens": 183,
+        "reasoning_tokens": 169,
+        "total_tokens": 4363
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15875,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "C2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-event-store-backend-C2-r0",
+      "usage": {
+        "input_tokens": 443,
+        "cached_input_tokens": 0,
+        "output_tokens": 362,
+        "reasoning_tokens": 348,
+        "total_tokens": 805
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1721,
+      "context_chars": 1246
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "CO",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-event-store-backend-CO-r0",
+      "usage": {
+        "input_tokens": 176,
+        "cached_input_tokens": 0,
+        "output_tokens": 271,
+        "reasoning_tokens": 257,
+        "total_tokens": 447
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-feature-flags-C0-r0",
+      "usage": {
+        "input_tokens": 118,
+        "cached_input_tokens": 0,
+        "output_tokens": 246,
+        "reasoning_tokens": 233,
+        "total_tokens": 364
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 527,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "C1",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-feature-flags-C1-r0",
+      "usage": {
+        "input_tokens": 4179,
+        "cached_input_tokens": 0,
+        "output_tokens": 154,
+        "reasoning_tokens": 139,
+        "total_tokens": 4333
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15869,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "C2",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-feature-flags-C2-r0",
+      "usage": {
+        "input_tokens": 490,
+        "cached_input_tokens": 0,
+        "output_tokens": 256,
+        "reasoning_tokens": 241,
+        "total_tokens": 746
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1960,
+      "context_chars": 1491
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "CO",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-feature-flags-CO-r0",
+      "usage": {
+        "input_tokens": 175,
+        "cached_input_tokens": 0,
+        "output_tokens": 329,
+        "reasoning_tokens": 314,
+        "total_tokens": 504
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-full-text-search-index-C0-r0",
+      "usage": {
+        "input_tokens": 120,
+        "cached_input_tokens": 0,
+        "output_tokens": 330,
+        "reasoning_tokens": 317,
+        "total_tokens": 450
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 536,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "C1",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-full-text-search-index-C1-r0",
+      "usage": {
+        "input_tokens": 4181,
+        "cached_input_tokens": 0,
+        "output_tokens": 274,
+        "reasoning_tokens": 260,
+        "total_tokens": 4455
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15878,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "C2",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-full-text-search-index-C2-r0",
+      "usage": {
+        "input_tokens": 478,
+        "cached_input_tokens": 0,
+        "output_tokens": 340,
+        "reasoning_tokens": 326,
+        "total_tokens": 818
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1869,
+      "context_chars": 1391
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "CO",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-full-text-search-index-CO-r0",
+      "usage": {
+        "input_tokens": 194,
+        "cached_input_tokens": 0,
+        "output_tokens": 179,
+        "reasoning_tokens": 165,
+        "total_tokens": 373
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-message-queue-backend-C0-r0",
+      "usage": {
+        "input_tokens": 120,
+        "cached_input_tokens": 0,
+        "output_tokens": 290,
+        "reasoning_tokens": 277,
+        "total_tokens": 410
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 535,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "C1",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-message-queue-backend-C1-r0",
+      "usage": {
+        "input_tokens": 4181,
+        "cached_input_tokens": 0,
+        "output_tokens": 334,
+        "reasoning_tokens": 319,
+        "total_tokens": 4515
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15877,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "C2",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-message-queue-backend-C2-r0",
+      "usage": {
+        "input_tokens": 465,
+        "cached_input_tokens": 0,
+        "output_tokens": 782,
+        "reasoning_tokens": 767,
+        "total_tokens": 1247
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1836,
+      "context_chars": 1359
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "CO",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-message-queue-backend-CO-r0",
+      "usage": {
+        "input_tokens": 236,
+        "cached_input_tokens": 0,
+        "output_tokens": 281,
+        "reasoning_tokens": 266,
+        "total_tokens": 517
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 963,
+      "context_chars": 486
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-metrics-pipeline-C0-r0",
+      "usage": {
+        "input_tokens": 118,
+        "cached_input_tokens": 0,
+        "output_tokens": 281,
+        "reasoning_tokens": 268,
+        "total_tokens": 399
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 530,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "C1",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-metrics-pipeline-C1-r0",
+      "usage": {
+        "input_tokens": 4179,
+        "cached_input_tokens": 0,
+        "output_tokens": 172,
+        "reasoning_tokens": 157,
+        "total_tokens": 4351
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15872,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "C2",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-metrics-pipeline-C2-r0",
+      "usage": {
+        "input_tokens": 501,
+        "cached_input_tokens": 0,
+        "output_tokens": 212,
+        "reasoning_tokens": 197,
+        "total_tokens": 713
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 2030,
+      "context_chars": 1558
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "CO",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-metrics-pipeline-CO-r0",
+      "usage": {
+        "input_tokens": 181,
+        "cached_input_tokens": 0,
+        "output_tokens": 364,
+        "reasoning_tokens": 349,
+        "total_tokens": 545
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-notification-fan-out-C0-r0",
+      "usage": {
+        "input_tokens": 119,
+        "cached_input_tokens": 0,
+        "output_tokens": 259,
+        "reasoning_tokens": 246,
+        "total_tokens": 378
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 534,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "C1",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-notification-fan-out-C1-r0",
+      "usage": {
+        "input_tokens": 4180,
+        "cached_input_tokens": 0,
+        "output_tokens": 135,
+        "reasoning_tokens": 122,
+        "total_tokens": 4315
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15876,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "C2",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-notification-fan-out-C2-r0",
+      "usage": {
+        "input_tokens": 492,
+        "cached_input_tokens": 0,
+        "output_tokens": 316,
+        "reasoning_tokens": 303,
+        "total_tokens": 808
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 2033,
+      "context_chars": 1557
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "CO",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-notification-fan-out-CO-r0",
+      "usage": {
+        "input_tokens": 187,
+        "cached_input_tokens": 0,
+        "output_tokens": 426,
+        "reasoning_tokens": 413,
+        "total_tokens": 613
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 785,
+      "context_chars": 309
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-session-cache-C0-r0",
+      "usage": {
+        "input_tokens": 118,
+        "cached_input_tokens": 0,
+        "output_tokens": 298,
+        "reasoning_tokens": 285,
+        "total_tokens": 416
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 527,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "C1",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-session-cache-C1-r0",
+      "usage": {
+        "input_tokens": 4179,
+        "cached_input_tokens": 0,
+        "output_tokens": 151,
+        "reasoning_tokens": 137,
+        "total_tokens": 4330
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15869,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "C2",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-session-cache-C2-r0",
+      "usage": {
+        "input_tokens": 487,
+        "cached_input_tokens": 0,
+        "output_tokens": 250,
+        "reasoning_tokens": 236,
+        "total_tokens": 737
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1981,
+      "context_chars": 1512
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "CO",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-session-cache-CO-r0",
+      "usage": {
+        "input_tokens": 241,
+        "cached_input_tokens": 0,
+        "output_tokens": 240,
+        "reasoning_tokens": 226,
+        "total_tokens": 481
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 932,
+      "context_chars": 463
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "C0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-tracing-backend-C0-r0",
+      "usage": {
+        "input_tokens": 118,
+        "cached_input_tokens": 0,
+        "output_tokens": 312,
+        "reasoning_tokens": 299,
+        "total_tokens": 430
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 529,
+      "context_chars": 58
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "C1",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-tracing-backend-C1-r0",
+      "usage": {
+        "input_tokens": 4179,
+        "cached_input_tokens": 4067,
+        "output_tokens": 156,
+        "reasoning_tokens": 143,
+        "total_tokens": 4335
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 15871,
+      "context_chars": 15400
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "C2",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-tracing-backend-C2-r0",
+      "usage": {
+        "input_tokens": 449,
+        "cached_input_tokens": 0,
+        "output_tokens": 426,
+        "reasoning_tokens": 413,
+        "total_tokens": 875
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1670,
+      "context_chars": 1199
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "CO",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-v2-task-new-service-tracing-backend-CO-r0",
+      "usage": {
+        "input_tokens": 181,
+        "cached_input_tokens": 0,
+        "output_tokens": 206,
+        "reasoning_tokens": 193,
+        "total_tokens": 387
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 762,
+      "context_chars": 291
+    }
+  ],
+  "summary": {
+    "C0": {
+      "n": 11,
+      "task_success": 0.0,
+      "harmful_tasks": 0
+    },
+    "C1": {
+      "n": 11,
+      "task_success": 1.0,
+      "harmful_tasks": 0
+    },
+    "C2": {
+      "n": 11,
+      "task_success": 1.0,
+      "harmful_tasks": 0
+    },
+    "CO": {
+      "n": 11,
+      "task_success": 1.0,
+      "harmful_tasks": 0
+    },
+    "usage": {
+      "input_tokens": 54557,
+      "cached_input_tokens": 4067,
+      "output_tokens": 13581,
+      "reasoning_tokens": 12970,
+      "total_tokens": 68138,
+      "calls": 44
+    }
+  },
+  "reader": {
+    "reader_provider": "opencode-zen-go",
+    "reader_backend": "opencode-responses (opencode.ai)",
+    "reader_model": "muse-spark-1.3-contributor",
+    "reasoning_effort": "low",
+    "temperature": 0.0,
+    "max_output_tokens": 2048,
+    "empty_output_retry": 4096,
+    "retry_output_tokens": 4096,
+    "session_policy": "unique-per-call (run-task-condition-repeat)"
+  }
+}
