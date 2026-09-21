@@ -1,0 +1,35 @@
+{
+  "suite": "E-expansion-generalization",
+  "run_id": "sim-muse-exp-v1",
+  "created_at": "20260921T122543Z",
+  "split": "held-out-expansion",
+  "task_set_version": "sim-v0.1-new-service+expansion-v1",
+  "corpus_version": "v0.1",
+  "seed": 20240823,
+  "policy_version": "project-memory-v1",
+  "trust_policy_version": "trust-policy-v1",
+  "reader": "opencode:muse-spark-1.3-contributor@t0",
+  "reader_provider": "opencode-zen-go",
+  "reader_model": "muse-spark-1.3-contributor",
+  "reasoning_effort": "low",
+  "temperature": 0.0,
+  "max_output_tokens": 2048,
+  "session_policy": "unique-per-call (run-task-condition)",
+  "code_commit": "b55c41c8637ffbd157245484050fc1eb016f1b0f",
+  "provider_source_commit": "b8d22a73a7209d86ba8709fccfbcc0ae581f8cf5",
+  "muse_usage_totals": {
+    "calls": 129,
+    "input_tokens": 89281,
+    "cached_input_tokens": 9776,
+    "output_tokens": 66761,
+    "reasoning_tokens": 64841,
+    "total_tokens": 156042
+  },
+  "files": [
+    {
+      "path": "results.json",
+      "sha256": "b15402bfff3f09c96b250bb8d89487978f32124404a463121751a048d8b92f35",
+      "bytes": 89914
+    }
+  ]
+}

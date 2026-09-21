@@ -1,0 +1,3499 @@
+{
+  "run_id": "sim-muse-exp-v1",
+  "tasks": 11,
+  "rows": [
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-api-gateway-E0-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 255,
+        "reasoning_tokens": 242,
+        "total_tokens": 362
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 467,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "E1",
+      "action": {
+        "target": "Envoy",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-api-gateway-E1-r0",
+      "usage": {
+        "input_tokens": 447,
+        "cached_input_tokens": 0,
+        "output_tokens": 1779,
+        "reasoning_tokens": 1765,
+        "total_tokens": 2226
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1743,
+      "context_chars": 1276
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "E2",
+      "action": {
+        "target": "Envoy",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-api-gateway-E2-r0",
+      "usage": {
+        "input_tokens": 308,
+        "cached_input_tokens": 0,
+        "output_tokens": 345,
+        "reasoning_tokens": 331,
+        "total_tokens": 653
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1185,
+      "context_chars": 718
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "EA",
+      "action": {
+        "target": "Envoy",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-api-gateway-EA-r0",
+      "usage": {
+        "input_tokens": 1689,
+        "cached_input_tokens": 0,
+        "output_tokens": 368,
+        "reasoning_tokens": 354,
+        "total_tokens": 2057
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6367,
+      "context_chars": 5900
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "EO",
+      "action": {
+        "target": "Envoy",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-api-gateway-EO-r0",
+      "usage": {
+        "input_tokens": 238,
+        "cached_input_tokens": 0,
+        "output_tokens": 372,
+        "reasoning_tokens": 358,
+        "total_tokens": 610
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 933,
+      "context_chars": 466
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-audit-log-E0-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 164,
+        "reasoning_tokens": 151,
+        "total_tokens": 271
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 465,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "E1",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-audit-log-E1-r0",
+      "usage": {
+        "input_tokens": 409,
+        "cached_input_tokens": 0,
+        "output_tokens": 605,
+        "reasoning_tokens": 590,
+        "total_tokens": 1014
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1607,
+      "context_chars": 1142
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "E2",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-audit-log-E2-r0",
+      "usage": {
+        "input_tokens": 240,
+        "cached_input_tokens": 0,
+        "output_tokens": 510,
+        "reasoning_tokens": 495,
+        "total_tokens": 750
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 487
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "EA",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-audit-log-EA-r0",
+      "usage": {
+        "input_tokens": 1706,
+        "cached_input_tokens": 0,
+        "output_tokens": 294,
+        "reasoning_tokens": 279,
+        "total_tokens": 2000
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6426,
+      "context_chars": 5961
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "EO",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-audit-log-EO-r0",
+      "usage": {
+        "input_tokens": 186,
+        "cached_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_tokens": 173,
+        "total_tokens": 374
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 759,
+      "context_chars": 294
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-blob-storage-E0-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 253,
+        "reasoning_tokens": 240,
+        "total_tokens": 360
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 468,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "E1",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-blob-storage-E1-r0",
+      "usage": {
+        "input_tokens": 448,
+        "cached_input_tokens": 0,
+        "output_tokens": 405,
+        "reasoning_tokens": 391,
+        "total_tokens": 853
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1669,
+      "context_chars": 1201
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "E2",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-blob-storage-E2-r0",
+      "usage": {
+        "input_tokens": 228,
+        "cached_input_tokens": 0,
+        "output_tokens": 248,
+        "reasoning_tokens": 234,
+        "total_tokens": 476
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 861,
+      "context_chars": 393
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "EA",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-blob-storage-EA-r0",
+      "usage": {
+        "input_tokens": 1700,
+        "cached_input_tokens": 0,
+        "output_tokens": 160,
+        "reasoning_tokens": 146,
+        "total_tokens": 1860
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6377,
+      "context_chars": 5909
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "EO",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-blob-storage-EO-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 261,
+        "reasoning_tokens": 247,
+        "total_tokens": 435
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-event-store-backend-E0-r0",
+      "usage": {
+        "input_tokens": 108,
+        "cached_input_tokens": 0,
+        "output_tokens": 180,
+        "reasoning_tokens": 167,
+        "total_tokens": 288
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "E1",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-event-store-backend-E1-r0",
+      "usage": {
+        "input_tokens": 443,
+        "cached_input_tokens": 0,
+        "output_tokens": 333,
+        "reasoning_tokens": 319,
+        "total_tokens": 776
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1721,
+      "context_chars": 1246
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "E2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-event-store-backend-E2-r0",
+      "usage": {
+        "input_tokens": 232,
+        "cached_input_tokens": 0,
+        "output_tokens": 262,
+        "reasoning_tokens": 248,
+        "total_tokens": 494
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 915,
+      "context_chars": 440
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "EA",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-event-store-backend-EA-r0",
+      "usage": {
+        "input_tokens": 1701,
+        "cached_input_tokens": 0,
+        "output_tokens": 241,
+        "reasoning_tokens": 227,
+        "total_tokens": 1942
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6384,
+      "context_chars": 5909
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "EO",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-event-store-backend-EO-r0",
+      "usage": {
+        "input_tokens": 176,
+        "cached_input_tokens": 0,
+        "output_tokens": 192,
+        "reasoning_tokens": 178,
+        "total_tokens": 368
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-feature-flags-E0-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 212,
+        "reasoning_tokens": 199,
+        "total_tokens": 319
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "E1",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-feature-flags-E1-r0",
+      "usage": {
+        "input_tokens": 490,
+        "cached_input_tokens": 0,
+        "output_tokens": 252,
+        "reasoning_tokens": 237,
+        "total_tokens": 742
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1960,
+      "context_chars": 1491
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "E2",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-feature-flags-E2-r0",
+      "usage": {
+        "input_tokens": 244,
+        "cached_input_tokens": 0,
+        "output_tokens": 332,
+        "reasoning_tokens": 317,
+        "total_tokens": 576
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 911,
+      "context_chars": 442
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "EA",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-feature-flags-EA-r0",
+      "usage": {
+        "input_tokens": 1700,
+        "cached_input_tokens": 0,
+        "output_tokens": 225,
+        "reasoning_tokens": 210,
+        "total_tokens": 1925
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6378,
+      "context_chars": 5909
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "EO",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-feature-flags-EO-r0",
+      "usage": {
+        "input_tokens": 175,
+        "cached_input_tokens": 0,
+        "output_tokens": 196,
+        "reasoning_tokens": 181,
+        "total_tokens": 371
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-full-text-search-index-E0-r0",
+      "usage": {
+        "input_tokens": 109,
+        "cached_input_tokens": 0,
+        "output_tokens": 200,
+        "reasoning_tokens": 187,
+        "total_tokens": 309
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 478,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "E1",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-full-text-search-index-E1-r0",
+      "usage": {
+        "input_tokens": 478,
+        "cached_input_tokens": 0,
+        "output_tokens": 306,
+        "reasoning_tokens": 292,
+        "total_tokens": 784
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1869,
+      "context_chars": 1391
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "E2",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-full-text-search-index-E2-r0",
+      "usage": {
+        "input_tokens": 258,
+        "cached_input_tokens": 0,
+        "output_tokens": 228,
+        "reasoning_tokens": 214,
+        "total_tokens": 486
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 989,
+      "context_chars": 511
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "EA",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-full-text-search-index-EA-r0",
+      "usage": {
+        "input_tokens": 1702,
+        "cached_input_tokens": 0,
+        "output_tokens": 211,
+        "reasoning_tokens": 197,
+        "total_tokens": 1913
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6387,
+      "context_chars": 5909
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "EO",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-full-text-search-index-EO-r0",
+      "usage": {
+        "input_tokens": 194,
+        "cached_input_tokens": 0,
+        "output_tokens": 242,
+        "reasoning_tokens": 228,
+        "total_tokens": 436
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-message-queue-backend-E0-r0",
+      "usage": {
+        "input_tokens": 109,
+        "cached_input_tokens": 0,
+        "output_tokens": 277,
+        "reasoning_tokens": 264,
+        "total_tokens": 386
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 477,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "E1",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-message-queue-backend-E1-r0",
+      "usage": {
+        "input_tokens": 465,
+        "cached_input_tokens": 0,
+        "output_tokens": 784,
+        "reasoning_tokens": 769,
+        "total_tokens": 1249
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1836,
+      "context_chars": 1359
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "E2",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-message-queue-backend-E2-r0",
+      "usage": {
+        "input_tokens": 304,
+        "cached_input_tokens": 0,
+        "output_tokens": 396,
+        "reasoning_tokens": 381,
+        "total_tokens": 700
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1233,
+      "context_chars": 756
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "EA",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-message-queue-backend-EA-r0",
+      "usage": {
+        "input_tokens": 1687,
+        "cached_input_tokens": 0,
+        "output_tokens": 263,
+        "reasoning_tokens": 248,
+        "total_tokens": 1950
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6397,
+      "context_chars": 5920
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "EO",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-message-queue-backend-EO-r0",
+      "usage": {
+        "input_tokens": 236,
+        "cached_input_tokens": 0,
+        "output_tokens": 199,
+        "reasoning_tokens": 184,
+        "total_tokens": 435
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 963,
+      "context_chars": 486
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-metrics-pipeline-E0-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 173,
+        "reasoning_tokens": 160,
+        "total_tokens": 280
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 472,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "E1",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-metrics-pipeline-E1-r0",
+      "usage": {
+        "input_tokens": 501,
+        "cached_input_tokens": 0,
+        "output_tokens": 207,
+        "reasoning_tokens": 192,
+        "total_tokens": 708
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 2030,
+      "context_chars": 1558
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "E2",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-metrics-pipeline-E2-r0",
+      "usage": {
+        "input_tokens": 255,
+        "cached_input_tokens": 0,
+        "output_tokens": 444,
+        "reasoning_tokens": 429,
+        "total_tokens": 699
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 981,
+      "context_chars": 509
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "EA",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-metrics-pipeline-EA-r0",
+      "usage": {
+        "input_tokens": 1700,
+        "cached_input_tokens": 0,
+        "output_tokens": 253,
+        "reasoning_tokens": 238,
+        "total_tokens": 1953
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6381,
+      "context_chars": 5909
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "EO",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-metrics-pipeline-EO-r0",
+      "usage": {
+        "input_tokens": 181,
+        "cached_input_tokens": 0,
+        "output_tokens": 325,
+        "reasoning_tokens": 310,
+        "total_tokens": 506
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-notification-fan-out-E0-r0",
+      "usage": {
+        "input_tokens": 108,
+        "cached_input_tokens": 0,
+        "output_tokens": 171,
+        "reasoning_tokens": 158,
+        "total_tokens": 279
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 476,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "E1",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-notification-fan-out-E1-r0",
+      "usage": {
+        "input_tokens": 492,
+        "cached_input_tokens": 0,
+        "output_tokens": 316,
+        "reasoning_tokens": 303,
+        "total_tokens": 808
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 2033,
+      "context_chars": 1557
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "E2",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-notification-fan-out-E2-r0",
+      "usage": {
+        "input_tokens": 246,
+        "cached_input_tokens": 0,
+        "output_tokens": 463,
+        "reasoning_tokens": 450,
+        "total_tokens": 709
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 984,
+      "context_chars": 508
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "EA",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-notification-fan-out-EA-r0",
+      "usage": {
+        "input_tokens": 1707,
+        "cached_input_tokens": 0,
+        "output_tokens": 315,
+        "reasoning_tokens": 302,
+        "total_tokens": 2022
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6452,
+      "context_chars": 5976
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "EO",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-notification-fan-out-EO-r0",
+      "usage": {
+        "input_tokens": 187,
+        "cached_input_tokens": 0,
+        "output_tokens": 400,
+        "reasoning_tokens": 387,
+        "total_tokens": 587
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 785,
+      "context_chars": 309
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-session-cache-E0-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 170,
+        "reasoning_tokens": 157,
+        "total_tokens": 277
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "E1",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-session-cache-E1-r0",
+      "usage": {
+        "input_tokens": 487,
+        "cached_input_tokens": 0,
+        "output_tokens": 247,
+        "reasoning_tokens": 233,
+        "total_tokens": 734
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1981,
+      "context_chars": 1512
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "E2",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-session-cache-E2-r0",
+      "usage": {
+        "input_tokens": 326,
+        "cached_input_tokens": 0,
+        "output_tokens": 216,
+        "reasoning_tokens": 202,
+        "total_tokens": 542
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1295,
+      "context_chars": 826
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "EA",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-session-cache-EA-r0",
+      "usage": {
+        "input_tokens": 1692,
+        "cached_input_tokens": 0,
+        "output_tokens": 385,
+        "reasoning_tokens": 371,
+        "total_tokens": 2077
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6366,
+      "context_chars": 5897
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "EO",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-session-cache-EO-r0",
+      "usage": {
+        "input_tokens": 241,
+        "cached_input_tokens": 0,
+        "output_tokens": 192,
+        "reasoning_tokens": 178,
+        "total_tokens": 433
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 932,
+      "context_chars": 463
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "E0",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-tracing-backend-E0-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 174,
+        "reasoning_tokens": 161,
+        "total_tokens": 281
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 471,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "E1",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-tracing-backend-E1-r0",
+      "usage": {
+        "input_tokens": 449,
+        "cached_input_tokens": 0,
+        "output_tokens": 794,
+        "reasoning_tokens": 781,
+        "total_tokens": 1243
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1670,
+      "context_chars": 1199
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "E2",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-tracing-backend-E2-r0",
+      "usage": {
+        "input_tokens": 239,
+        "cached_input_tokens": 0,
+        "output_tokens": 682,
+        "reasoning_tokens": 669,
+        "total_tokens": 921
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 481
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "EA",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-tracing-backend-EA-r0",
+      "usage": {
+        "input_tokens": 1701,
+        "cached_input_tokens": 0,
+        "output_tokens": 456,
+        "reasoning_tokens": 443,
+        "total_tokens": 2157
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 6429,
+      "context_chars": 5958
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "EO",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-task-new-service-tracing-backend-EO-r0",
+      "usage": {
+        "input_tokens": 181,
+        "cached_input_tokens": 0,
+        "output_tokens": 382,
+        "reasoning_tokens": 369,
+        "total_tokens": 563
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 762,
+      "context_chars": 291
+    },
+    {
+      "task_id": "eq-q-000008",
+      "topic": "event-store backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000008-QE0-r0",
+      "usage": {
+        "input_tokens": 85,
+        "cached_input_tokens": 0,
+        "output_tokens": 257,
+        "reasoning_tokens": 247,
+        "total_tokens": 342
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 348,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q-000008",
+      "topic": "event-store backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "session-014",
+          "incident-021"
+        ],
+        "expected": [
+          "adr-003",
+          "adr-007",
+          "deployment-001",
+          "incident-021",
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000008-QE1-r0",
+      "usage": {
+        "input_tokens": 421,
+        "cached_input_tokens": 0,
+        "output_tokens": 803,
+        "reasoning_tokens": 786,
+        "total_tokens": 1224
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1592,
+      "context_chars": 1244
+    },
+    {
+      "task_id": "eq-q-000008",
+      "topic": "event-store backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "session-031",
+          "incident-021",
+          "session-019",
+          "session-014"
+        ],
+        "expected": [
+          "adr-003",
+          "adr-007",
+          "deployment-001",
+          "incident-021",
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000008-QE2-r0",
+      "usage": {
+        "input_tokens": 661,
+        "cached_input_tokens": 0,
+        "output_tokens": 763,
+        "reasoning_tokens": 738,
+        "total_tokens": 1424
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 2679,
+      "context_chars": 2331
+    },
+    {
+      "task_id": "eq-q-000008",
+      "topic": "event-store backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "session-014",
+          "session-019",
+          "incident-021",
+          "session-031",
+          "session-033"
+        ],
+        "expected": [
+          "adr-003",
+          "adr-007",
+          "deployment-001",
+          "incident-021",
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000008-EO-r0",
+      "usage": {
+        "input_tokens": 612,
+        "cached_input_tokens": 0,
+        "output_tokens": 1724,
+        "reasoning_tokens": 1695,
+        "total_tokens": 2336
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 2393,
+      "context_chars": 2045
+    },
+    {
+      "task_id": "eq-q-000018",
+      "topic": "message-queue backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000018-QE0-r0",
+      "usage": {
+        "input_tokens": 85,
+        "cached_input_tokens": 0,
+        "output_tokens": 364,
+        "reasoning_tokens": 354,
+        "total_tokens": 449
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 347,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q-000018",
+      "topic": "message-queue backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-1002",
+          "session-1003",
+          "session-1004",
+          "session-1005"
+        ],
+        "expected": [
+          "session-1002",
+          "session-1003",
+          "session-1004",
+          "session-1005"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000018-QE1-r0",
+      "usage": {
+        "input_tokens": 441,
+        "cached_input_tokens": 0,
+        "output_tokens": 849,
+        "reasoning_tokens": 820,
+        "total_tokens": 1290
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1706,
+      "context_chars": 1359
+    },
+    {
+      "task_id": "eq-q-000018",
+      "topic": "message-queue backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "session-1004",
+          "session-1003",
+          "session-1002"
+        ],
+        "expected": [
+          "session-1002",
+          "session-1003",
+          "session-1004",
+          "session-1005"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000018-QE2-r0",
+      "usage": {
+        "input_tokens": 3476,
+        "cached_input_tokens": 0,
+        "output_tokens": 304,
+        "reasoning_tokens": 280,
+        "total_tokens": 3780
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 13205,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-q-000018",
+      "topic": "message-queue backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-1002",
+          "session-1003",
+          "session-1004",
+          "session-1005"
+        ],
+        "expected": [
+          "session-1002",
+          "session-1003",
+          "session-1004",
+          "session-1005"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000018-EO-r0",
+      "usage": {
+        "input_tokens": 359,
+        "cached_input_tokens": 0,
+        "output_tokens": 601,
+        "reasoning_tokens": 572,
+        "total_tokens": 960
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1437,
+      "context_chars": 1090
+    },
+    {
+      "task_id": "eq-q-000024",
+      "topic": "schema registry",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000024-QE0-r0",
+      "usage": {
+        "input_tokens": 83,
+        "cached_input_tokens": 0,
+        "output_tokens": 322,
+        "reasoning_tokens": 312,
+        "total_tokens": 405
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 340,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q-000024",
+      "topic": "schema registry",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "rate_limited"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000024-QE1-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1810,
+      "context_chars": 1470
+    },
+    {
+      "task_id": "eq-q-000024",
+      "topic": "schema registry",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-1022",
+          "session-1023",
+          "adr-1021"
+        ],
+        "expected": [
+          "adr-1021",
+          "session-1022",
+          "session-1023"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000024-QE2-r0",
+      "usage": {
+        "input_tokens": 3474,
+        "cached_input_tokens": 0,
+        "output_tokens": 589,
+        "reasoning_tokens": 565,
+        "total_tokens": 4063
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 13198,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-q-000024",
+      "topic": "schema registry",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "adr-1021",
+          "session-1022",
+          "session-1023"
+        ],
+        "expected": [
+          "adr-1021",
+          "session-1022",
+          "session-1023"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000024-EO-r0",
+      "usage": {
+        "input_tokens": 304,
+        "cached_input_tokens": 0,
+        "output_tokens": 425,
+        "reasoning_tokens": 401,
+        "total_tokens": 729
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 881
+    },
+    {
+      "task_id": "eq-q-000009",
+      "topic": "event-store backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000009-QE0-r0",
+      "usage": {
+        "input_tokens": 86,
+        "cached_input_tokens": 0,
+        "output_tokens": 274,
+        "reasoning_tokens": 264,
+        "total_tokens": 360
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 352,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q-000009",
+      "topic": "event-store backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "adr-003",
+          "adr-007"
+        ],
+        "expected": [
+          "adr-003",
+          "adr-007",
+          "deployment-001",
+          "deployment-101",
+          "incident-021",
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000009-QE1-r0",
+      "usage": {
+        "input_tokens": 421,
+        "cached_input_tokens": 0,
+        "output_tokens": 559,
+        "reasoning_tokens": 542,
+        "total_tokens": 980
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1598,
+      "context_chars": 1246
+    },
+    {
+      "task_id": "eq-q-000009",
+      "topic": "event-store backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "adr-007"
+        ],
+        "expected": [
+          "adr-003",
+          "adr-007",
+          "deployment-001",
+          "deployment-101",
+          "incident-021",
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000009-QE2-r0",
+      "usage": {
+        "input_tokens": 854,
+        "cached_input_tokens": 0,
+        "output_tokens": 640,
+        "reasoning_tokens": 627,
+        "total_tokens": 1494
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 3465,
+      "context_chars": 3113
+    },
+    {
+      "task_id": "eq-q-000009",
+      "topic": "event-store backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "adr-007"
+        ],
+        "expected": [
+          "adr-003",
+          "adr-007",
+          "deployment-001",
+          "deployment-101",
+          "incident-021",
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000009-EO-r0",
+      "usage": {
+        "input_tokens": 669,
+        "cached_input_tokens": 0,
+        "output_tokens": 830,
+        "reasoning_tokens": 817,
+        "total_tokens": 1499
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 2620,
+      "context_chars": 2268
+    },
+    {
+      "task_id": "eq-q-000006",
+      "topic": "blob storage",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000006-QE0-r0",
+      "usage": {
+        "input_tokens": 85,
+        "cached_input_tokens": 0,
+        "output_tokens": 344,
+        "reasoning_tokens": 334,
+        "total_tokens": 429
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 346,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q-000006",
+      "topic": "blob storage",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "adr-1025"
+        ],
+        "expected": [
+          "adr-1024",
+          "adr-1025",
+          "deployment-1026",
+          "deployment-1027"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000006-QE1-r0",
+      "usage": {
+        "input_tokens": 410,
+        "cached_input_tokens": 0,
+        "output_tokens": 562,
+        "reasoning_tokens": 548,
+        "total_tokens": 972
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1408,
+      "context_chars": 1062
+    },
+    {
+      "task_id": "eq-q-000006",
+      "topic": "blob storage",
+      "condition": "QE2",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "adr-1025"
+        ],
+        "expected": [
+          "adr-1024",
+          "adr-1025",
+          "deployment-1026",
+          "deployment-1027"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000006-QE2-r0",
+      "usage": {
+        "input_tokens": 3476,
+        "cached_input_tokens": 0,
+        "output_tokens": 303,
+        "reasoning_tokens": 289,
+        "total_tokens": 3779
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 13204,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-q-000006",
+      "topic": "blob storage",
+      "condition": "EO",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "adr-1025"
+        ],
+        "expected": [
+          "adr-1024",
+          "adr-1025",
+          "deployment-1026",
+          "deployment-1027"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000006-EO-r0",
+      "usage": {
+        "input_tokens": 341,
+        "cached_input_tokens": 0,
+        "output_tokens": 676,
+        "reasoning_tokens": 662,
+        "total_tokens": 1017
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1184,
+      "context_chars": 838
+    },
+    {
+      "task_id": "eq-q-000010",
+      "topic": "event-store backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000010-QE0-r0",
+      "usage": {
+        "input_tokens": 85,
+        "cached_input_tokens": 0,
+        "output_tokens": 345,
+        "reasoning_tokens": 335,
+        "total_tokens": 430
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 349,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q-000010",
+      "topic": "event-store backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "deployment-101"
+        ],
+        "expected": [
+          "deployment-101"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000010-QE1-r0",
+      "usage": {
+        "input_tokens": 420,
+        "cached_input_tokens": 0,
+        "output_tokens": 651,
+        "reasoning_tokens": 638,
+        "total_tokens": 1071
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1595,
+      "context_chars": 1246
+    },
+    {
+      "task_id": "eq-q-000010",
+      "topic": "event-store backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "deployment-101"
+        ],
+        "expected": [
+          "deployment-101"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000010-QE2-r0",
+      "usage": {
+        "input_tokens": 1262,
+        "cached_input_tokens": 0,
+        "output_tokens": 1129,
+        "reasoning_tokens": 1116,
+        "total_tokens": 2391
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 5078,
+      "context_chars": 4729
+    },
+    {
+      "task_id": "eq-q-000010",
+      "topic": "event-store backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "deployment-101"
+        ],
+        "expected": [
+          "deployment-101"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q-000010-EO-r0",
+      "usage": {
+        "input_tokens": 140,
+        "cached_input_tokens": 0,
+        "output_tokens": 326,
+        "reasoning_tokens": 313,
+        "total_tokens": 466
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 565,
+      "context_chars": 216
+    },
+    {
+      "task_id": "eq-q3-01",
+      "topic": "audit log",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-01-QE0-r0",
+      "usage": {
+        "input_tokens": 90,
+        "cached_input_tokens": 0,
+        "output_tokens": 382,
+        "reasoning_tokens": 372,
+        "total_tokens": 472
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 363,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q3-01",
+      "topic": "audit log",
+      "condition": "QE1",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-1031"
+        ],
+        "expected": [
+          "session-1031"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-01-QE1-r0",
+      "usage": {
+        "input_tokens": 450,
+        "cached_input_tokens": 0,
+        "output_tokens": 746,
+        "reasoning_tokens": 732,
+        "total_tokens": 1196
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1610,
+      "context_chars": 1247
+    },
+    {
+      "task_id": "eq-q3-01",
+      "topic": "audit log",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-1031"
+        ],
+        "expected": [
+          "session-1031"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-01-QE2-r0",
+      "usage": {
+        "input_tokens": 3481,
+        "cached_input_tokens": 0,
+        "output_tokens": 524,
+        "reasoning_tokens": 510,
+        "total_tokens": 4005
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 13221,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-q3-01",
+      "topic": "audit log",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-1031"
+        ],
+        "expected": [
+          "session-1031"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-01-EO-r0",
+      "usage": {
+        "input_tokens": 143,
+        "cached_input_tokens": 0,
+        "output_tokens": 1002,
+        "reasoning_tokens": 988,
+        "total_tokens": 1145
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 549,
+      "context_chars": 186
+    },
+    {
+      "task_id": "eq-q3-02",
+      "topic": "event-store backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-02-QE0-r0",
+      "usage": {
+        "input_tokens": 90,
+        "cached_input_tokens": 0,
+        "output_tokens": 344,
+        "reasoning_tokens": 334,
+        "total_tokens": 434
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 368,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q3-02",
+      "topic": "event-store backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "incident-021"
+        ],
+        "expected": [
+          "incident-021",
+          "session-014",
+          "session-019"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-02-QE1-r0",
+      "usage": {
+        "input_tokens": 425,
+        "cached_input_tokens": 0,
+        "output_tokens": 699,
+        "reasoning_tokens": 686,
+        "total_tokens": 1124
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1614,
+      "context_chars": 1246
+    },
+    {
+      "task_id": "eq-q3-02",
+      "topic": "event-store backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-014",
+          "session-019",
+          "incident-021"
+        ],
+        "expected": [
+          "incident-021",
+          "session-014",
+          "session-019"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-02-QE2-r0",
+      "usage": {
+        "input_tokens": 3481,
+        "cached_input_tokens": 0,
+        "output_tokens": 855,
+        "reasoning_tokens": 834,
+        "total_tokens": 4336
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 13226,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-q3-02",
+      "topic": "event-store backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "incident-021",
+          "session-014",
+          "session-019"
+        ],
+        "expected": [
+          "incident-021",
+          "session-014",
+          "session-019"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q3-02-EO-r0",
+      "usage": {
+        "input_tokens": 265,
+        "cached_input_tokens": 0,
+        "output_tokens": 1001,
+        "reasoning_tokens": 980,
+        "total_tokens": 1266
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1121,
+      "context_chars": 753
+    },
+    {
+      "task_id": "eq-q4-01",
+      "topic": "production event-store backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": false,
+        "expected": true
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-01-QE0-r0",
+      "usage": {
+        "input_tokens": 73,
+        "cached_input_tokens": 0,
+        "output_tokens": 268,
+        "reasoning_tokens": 257,
+        "total_tokens": 341
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 280,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q4-01",
+      "topic": "production event-store backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 1.0,
+        "parsed": true,
+        "expected": true
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-01-QE1-r0",
+      "usage": {
+        "input_tokens": 400,
+        "cached_input_tokens": 0,
+        "output_tokens": 422,
+        "reasoning_tokens": 411,
+        "total_tokens": 822
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1446,
+      "context_chars": 1166
+    },
+    {
+      "task_id": "eq-q4-01",
+      "topic": "production event-store backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": true,
+        "expected": true
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-01-QE2-r0",
+      "usage": {
+        "input_tokens": 3464,
+        "cached_input_tokens": 0,
+        "output_tokens": 886,
+        "reasoning_tokens": 875,
+        "total_tokens": 4350
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 13138,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-q4-01",
+      "topic": "production event-store backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": true,
+        "expected": true
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-01-EO-r0",
+      "usage": {
+        "input_tokens": 1498,
+        "cached_input_tokens": 0,
+        "output_tokens": 447,
+        "reasoning_tokens": 436,
+        "total_tokens": 1945
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 5279,
+      "context_chars": 4999
+    },
+    {
+      "task_id": "eq-q4-02",
+      "topic": "production event-store backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 1.0,
+        "parsed": false,
+        "expected": false
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-02-QE0-r0",
+      "usage": {
+        "input_tokens": 72,
+        "cached_input_tokens": 0,
+        "output_tokens": 379,
+        "reasoning_tokens": 368,
+        "total_tokens": 451
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 276,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q4-02",
+      "topic": "production event-store backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "rate_limited"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-02-QE1-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1584,
+      "context_chars": 1308
+    },
+    {
+      "task_id": "eq-q4-02",
+      "topic": "production event-store backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": false,
+        "expected": false
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-02-QE2-r0",
+      "usage": {
+        "input_tokens": 3463,
+        "cached_input_tokens": 0,
+        "output_tokens": 488,
+        "reasoning_tokens": 477,
+        "total_tokens": 3951
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 13134,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-q4-02",
+      "topic": "production event-store backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": false,
+        "expected": false
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q4-02-EO-r0",
+      "usage": {
+        "input_tokens": 1497,
+        "cached_input_tokens": 0,
+        "output_tokens": 272,
+        "reasoning_tokens": 261,
+        "total_tokens": 1769
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 5275,
+      "context_chars": 4999
+    },
+    {
+      "task_id": "eq-q5-01",
+      "topic": "release obligations",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-01-QE0-r0",
+      "usage": {
+        "input_tokens": 94,
+        "cached_input_tokens": 0,
+        "output_tokens": 363,
+        "reasoning_tokens": 353,
+        "total_tokens": 457
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 362,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q5-01",
+      "topic": "release obligations",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "scan-109"
+        ],
+        "expected": [
+          "fixture-scan-109",
+          "session-051"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-01-QE1-r0",
+      "usage": {
+        "input_tokens": 440,
+        "cached_input_tokens": 0,
+        "output_tokens": 1292,
+        "reasoning_tokens": 1278,
+        "total_tokens": 1732
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1766,
+      "context_chars": 1404
+    },
+    {
+      "task_id": "eq-q5-01",
+      "topic": "release obligations",
+      "condition": "QE2",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "scan-109"
+        ],
+        "expected": [
+          "fixture-scan-109",
+          "session-051"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-01-QE2-r0",
+      "usage": {
+        "input_tokens": 1271,
+        "cached_input_tokens": 0,
+        "output_tokens": 1952,
+        "reasoning_tokens": 1938,
+        "total_tokens": 3223
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 5091,
+      "context_chars": 4729
+    },
+    {
+      "task_id": "eq-q5-01",
+      "topic": "release obligations",
+      "condition": "EO",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "session-051"
+        ],
+        "expected": [
+          "fixture-scan-109",
+          "session-051"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-01-EO-r0",
+      "usage": {
+        "input_tokens": 235,
+        "cached_input_tokens": 0,
+        "output_tokens": 1145,
+        "reasoning_tokens": 1132,
+        "total_tokens": 1380
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 941,
+      "context_chars": 579
+    },
+    {
+      "task_id": "eq-q5-02",
+      "topic": "release obligations",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-02-QE0-r0",
+      "usage": {
+        "input_tokens": 94,
+        "cached_input_tokens": 0,
+        "output_tokens": 344,
+        "reasoning_tokens": 334,
+        "total_tokens": 438
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 362,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-q5-02",
+      "topic": "release obligations",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "commit-112"
+        ],
+        "expected": [
+          "session-051"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-02-QE1-r0",
+      "usage": {
+        "input_tokens": 429,
+        "cached_input_tokens": 355,
+        "output_tokens": 2148,
+        "reasoning_tokens": 2135,
+        "total_tokens": 2577
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 1706,
+      "context_chars": 1344
+    },
+    {
+      "task_id": "eq-q5-02",
+      "topic": "release obligations",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-051"
+        ],
+        "expected": [
+          "session-051"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-02-QE2-r0",
+      "usage": {
+        "input_tokens": 793,
+        "cached_input_tokens": 0,
+        "output_tokens": 724,
+        "reasoning_tokens": 711,
+        "total_tokens": 1517
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 3164,
+      "context_chars": 2802
+    },
+    {
+      "task_id": "eq-q5-02",
+      "topic": "release obligations",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-051"
+        ],
+        "expected": [
+          "session-051"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-q5-02-EO-r0",
+      "usage": {
+        "input_tokens": 156,
+        "cached_input_tokens": 0,
+        "output_tokens": 431,
+        "reasoning_tokens": 418,
+        "total_tokens": 587
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 595,
+      "context_chars": 233
+    },
+    {
+      "task_id": "eq-recall-01",
+      "topic": "event-store backend",
+      "condition": "QE0",
+      "action": {
+        "task_score": 0.0,
+        "parsed": null,
+        "error_type": "empty_output"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-recall-01-QE0-r0",
+      "usage": {
+        "input_tokens": 95,
+        "cached_input_tokens": 0,
+        "output_tokens": 308,
+        "reasoning_tokens": 298,
+        "total_tokens": 403
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 412,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-recall-01",
+      "topic": "event-store backend",
+      "condition": "QE1",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "session-014",
+          "session-019",
+          "incident-021"
+        ],
+        "expected": [
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-recall-01-QE1-r0",
+      "usage": {
+        "input_tokens": 421,
+        "cached_input_tokens": 0,
+        "output_tokens": 1083,
+        "reasoning_tokens": 1062,
+        "total_tokens": 1504
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1658,
+      "context_chars": 1246
+    },
+    {
+      "task_id": "eq-recall-01",
+      "topic": "event-store backend",
+      "condition": "QE2",
+      "action": {
+        "task_score": 0.0,
+        "parsed": [
+          "incident-021",
+          "session-014",
+          "session-019",
+          "session-031"
+        ],
+        "expected": [
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-recall-01-QE2-r0",
+      "usage": {
+        "input_tokens": 3486,
+        "cached_input_tokens": 3427,
+        "output_tokens": 2442,
+        "reasoning_tokens": 2417,
+        "total_tokens": 5928
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 2,
+      "prompt_chars": 13270,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-recall-01",
+      "topic": "event-store backend",
+      "condition": "EO",
+      "action": {
+        "task_score": 1.0,
+        "parsed": [
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ],
+        "expected": [
+          "session-014",
+          "session-019",
+          "session-031",
+          "session-033"
+        ]
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-recall-01-EO-r0",
+      "usage": {
+        "input_tokens": 342,
+        "cached_input_tokens": 0,
+        "output_tokens": 454,
+        "reasoning_tokens": 429,
+        "total_tokens": 796
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1427,
+      "context_chars": 1015
+    },
+    {
+      "task_id": "eq-irr-01",
+      "topic": "release identifier",
+      "condition": "QE0",
+      "action": {
+        "task_score": 1.0,
+        "parsed": "R-24-083",
+        "expected": "R-24-083"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-irr-01-QE0-r0",
+      "usage": {
+        "input_tokens": 32,
+        "cached_input_tokens": 0,
+        "output_tokens": 261,
+        "reasoning_tokens": 246,
+        "total_tokens": 293
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 127,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-irr-01",
+      "topic": "release identifier",
+      "condition": "QE1",
+      "action": {
+        "task_score": 1.0,
+        "parsed": "R-24-083",
+        "expected": "R-24-083"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-irr-01-QE1-r0",
+      "usage": {
+        "input_tokens": 395,
+        "cached_input_tokens": 0,
+        "output_tokens": 119,
+        "reasoning_tokens": 104,
+        "total_tokens": 514
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1627,
+      "context_chars": 1500
+    },
+    {
+      "task_id": "eq-irr-01",
+      "topic": "release identifier",
+      "condition": "QE2",
+      "action": {
+        "task_score": 1.0,
+        "parsed": "R-24-083",
+        "expected": "R-24-083"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "qeval-scored"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-irr-01-QE2-r0",
+      "usage": {
+        "input_tokens": 3423,
+        "cached_input_tokens": 0,
+        "output_tokens": 104,
+        "reasoning_tokens": 89,
+        "total_tokens": 3527
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 12985,
+      "context_chars": 12858
+    },
+    {
+      "task_id": "eq-irr-01",
+      "topic": "release identifier",
+      "condition": "EO",
+      "action": {
+        "parsed": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [
+        "qecho-oracle-is-query"
+      ],
+      "skipped": "echo oracle is the empty query",
+      "session_id": "sim-muse-exp-v1-eq-irr-01-EO-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "eq-ol-01",
+      "topic": "message-queue backend",
+      "condition": "OL",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-ol-01-OL-r0",
+      "usage": {
+        "input_tokens": 1132,
+        "cached_input_tokens": 0,
+        "output_tokens": 1516,
+        "reasoning_tokens": 1501,
+        "total_tokens": 2648
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 4629,
+      "context_chars": 4152
+    },
+    {
+      "task_id": "eq-ol-01",
+      "topic": "message-queue backend",
+      "condition": "E2",
+      "action": {
+        "target": "Redpanda",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-ol-01-E2-r0",
+      "usage": {
+        "input_tokens": 304,
+        "cached_input_tokens": 0,
+        "output_tokens": 229,
+        "reasoning_tokens": 214,
+        "total_tokens": 533
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1233,
+      "context_chars": 756
+    },
+    {
+      "task_id": "eq-ol-02",
+      "topic": "session cache",
+      "condition": "OL",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-ol-02-OL-r0",
+      "usage": {
+        "input_tokens": 1130,
+        "cached_input_tokens": 0,
+        "output_tokens": 269,
+        "reasoning_tokens": 255,
+        "total_tokens": 1399
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 4530,
+      "context_chars": 4061
+    },
+    {
+      "task_id": "eq-ol-02",
+      "topic": "session cache",
+      "condition": "E2",
+      "action": {
+        "target": "Memcached",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-ol-02-E2-r0",
+      "usage": {
+        "input_tokens": 326,
+        "cached_input_tokens": 0,
+        "output_tokens": 201,
+        "reasoning_tokens": 187,
+        "total_tokens": 527
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1295,
+      "context_chars": 826
+    },
+    {
+      "task_id": "eq-rv-01",
+      "topic": "event-store backend",
+      "condition": "RV",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-rv-01-RV-r0",
+      "usage": {
+        "input_tokens": 233,
+        "cached_input_tokens": 0,
+        "output_tokens": 493,
+        "reasoning_tokens": 479,
+        "total_tokens": 726
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 913,
+      "context_chars": 438
+    },
+    {
+      "task_id": "eq-rv-01",
+      "topic": "event-store backend",
+      "condition": "E2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-rv-01-E2-r0",
+      "usage": {
+        "input_tokens": 232,
+        "cached_input_tokens": 0,
+        "output_tokens": 265,
+        "reasoning_tokens": 251,
+        "total_tokens": 497
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 915,
+      "context_chars": 440
+    },
+    {
+      "task_id": "eq-cx-01",
+      "topic": "event-store backend",
+      "condition": "CX",
+      "action": {
+        "target": "SQLite",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 1,
+      "codes": [
+        "harm.superseded"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-cx-01-CX-r0",
+      "usage": {
+        "input_tokens": 257,
+        "cached_input_tokens": 0,
+        "output_tokens": 375,
+        "reasoning_tokens": 362,
+        "total_tokens": 632
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1023,
+      "context_chars": 548
+    },
+    {
+      "task_id": "eq-cx-01",
+      "topic": "event-store backend",
+      "condition": "E2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-exp-v1-eq-cx-01-E2-r0",
+      "usage": {
+        "input_tokens": 232,
+        "cached_input_tokens": 227,
+        "output_tokens": 215,
+        "reasoning_tokens": 201,
+        "total_tokens": 447
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 915,
+      "context_chars": 440
+    },
+    {
+      "task_id": "eq-q6-event-store ",
+      "topic": "event-store backend",
+      "condition": "Q6SEL",
+      "action": {
+        "precision": 0.0784,
+        "recall": 0.8
+      },
+      "task_score": 0.1428,
+      "harmful": 0,
+      "codes": [
+        "q6.selection"
+      ],
+      "session_id": "n/a-deterministic",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 10586
+    },
+    {
+      "task_id": "eq-q6-message-queu",
+      "topic": "message-queue backend",
+      "condition": "Q6SEL",
+      "action": {
+        "precision": 0.0392,
+        "recall": 1.0
+      },
+      "task_score": 0.0754,
+      "harmful": 0,
+      "codes": [
+        "q6.selection"
+      ],
+      "session_id": "n/a-deterministic",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 10586
+    }
+  ],
+  "summary": {
+    "CX": {
+      "n": 1,
+      "task_success": 0.0,
+      "harmful_tasks": 1,
+      "skipped": 0
+    },
+    "E0": {
+      "n": 11,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "E1": {
+      "n": 11,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "E2": {
+      "n": 15,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "EA": {
+      "n": 11,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "EO": {
+      "n": 24,
+      "task_success": 0.8333,
+      "harmful_tasks": 0,
+      "skipped": 1
+    },
+    "OL": {
+      "n": 2,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "Q6SEL": {
+      "n": 2,
+      "task_success": 0.1091,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "QE0": {
+      "n": 14,
+      "task_success": 0.1429,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "QE1": {
+      "n": 14,
+      "task_success": 0.3571,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "QE2": {
+      "n": 14,
+      "task_success": 0.5714,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "RV": {
+      "n": 1,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "usage": {
+      "input_tokens": 82720,
+      "cached_input_tokens": 4009,
+      "output_tokens": 57591,
+      "reasoning_tokens": 55906,
+      "total_tokens": 140311,
+      "calls": 116
+    }
+  }
+}

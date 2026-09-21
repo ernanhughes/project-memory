@@ -500,6 +500,8 @@ def main(argv: list[str] | None = None) -> None:
     }
     manifest.update(_manifest_extra(args, muse_model, muse_effort,
                                     outdir, totals))
+    from generator import manifest as manifest_mod
+    manifest["files"] = manifest_mod.collect_files(outdir)
     (outdir / "manifest.json").write_text(
         json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {outdir} "
