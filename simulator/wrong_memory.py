@@ -55,7 +55,8 @@ judging C3-C7. That outcome is a result, not a failure.
 
 from __future__ import annotations
 
-WRONG_CONDITIONS = ("W0", "WC", "WS", "WM", "WR", "WX", "WP", "WO")
+WRONG_CONDITIONS = ("W0", "WC", "WS", "WM", "WR", "WX", "WP", "WO",
+                    "WXm")
 
 SKIP_NO_SUPERSEDED = "no-superseded-decision-on-topic"
 SKIP_NO_EVIDENCE = "no-supporting-evidence-for-revocation-probe"
