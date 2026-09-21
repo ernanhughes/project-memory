@@ -230,6 +230,112 @@ def run_condition(client: OpenCodeModel, run_id: str, task, views: list[dict],
             "prompt_chars": len(prompt), "context_chars": len(context)}
 
 
+def run_trust_probe(client: OpenCodeModel, run_id: str, task,
+                    views: list[dict], world, probe: str, model: str,
+                    dry_run: bool = False) -> list[dict]:
+    """Behavioral rows for one trust probe across RAW + C6 + S1/S2/S3.
+
+    Identical rendered strings share one live call; sibling rows are
+    composed from it (marked inherited_from). This is exact-prompt
+    identity, not assumed equivalence — and temp-0 determinism has
+    three perfect reproductions behind it (44/44, 11/11, 11/11).
+    """
+    from simulator import trust_gate as tg_mod
+    from simulator import wrong_memory as wm_mod
+    task_views = [v for v in views if v["date"] <= task.as_of]
+    pool, note, meta = wm_mod.trust_probe_views(
+        probe, task, task_views, world)
+    tpacket = tg_mod.task_packet(task)
+    if pool is None:
+        return [_skip_row(run_id, task, f"{probe}-{lvl}", note)
+                for lvl in ("RAW", "C6", "S1", "S2", "S3")]
+    by_display, by_key = {}, {}
+    for record in world.ledger.records:
+        by_key[record.key] = record
+        if record.display_id:
+            by_display[record.display_id] = record
+        if record.second_display_id:
+            by_display[record.second_display_id] = record
+    units = tg_mod.units_from_views(pool, by_display, by_key, meta)
+    admits = {lvl: tg_mod.admit(units, tpacket, lvl)
+              for lvl in ("S1", "S2", "S3", "FULL")}
+    by_id = {u.unit_id: u for u in units}
+
+    def render(uids: set[str]) -> str:
+        ordered = [u for u in pool if u["display_id"] in uids]
+        return "\n\n---\n\n".join(render_view(v) for v in ordered)
+
+    strings = {"RAW": render({u["display_id"] for u in pool})}
+    strings["C6"] = render({u for u in
+                            tg_mod.admitted_set(admits["FULL"])})
+    for lvl in ("S1", "S2", "S3"):
+        strings[lvl] = render({u for u in
+                               tg_mod.admitted_set(admits[lvl])})
+    order = ["RAW", "C6", "S1", "S2", "S3"]
+    seen: dict[str, str] = {}
+    rows: dict[str, dict] = {}
+    for lvl in order:
+        cond = f"{probe}-{lvl}"
+        if strings[lvl] in seen:
+            src = seen[strings[lvl]]
+            row = dict(rows[src])
+            row["condition"] = cond
+            row["inherited_from"] = src
+            rows[cond] = row
+            continue
+        rows[cond] = _live_row(client, run_id, task, world, cond,
+                               strings[lvl], model, dry_run)
+        seen[strings[lvl]] = cond
+    return [rows[f"{probe}-{lvl}"] for lvl in order]
+
+
+def _skip_row(run_id: str, task, condition: str, reason: str) -> dict:
+    return {"task_id": task.task_id, "topic": task.topic,
+            "condition": condition, "action": {"target": None},
+            "task_score": None, "harmful": 0, "codes": (),
+            "skipped": reason,
+            "session_id": session_for(run_id, task.task_id, condition),
+            "usage": {}, "prompt_chars": 0, "context_chars": 0}
+
+
+def _live_row(client: OpenCodeModel, run_id: str, task, world,
+              condition: str, context: str, model: str,
+              dry_run: bool) -> dict:
+    from simulator import scores as scores_mod
+    prompt = build_prompt(task, context)
+    session_id = session_for(run_id, task.task_id, condition)
+    if dry_run:
+        action = {"target": "unknown", "parse": "dry-run"}
+        scored = scores_mod.score_action(world, task, action)
+        return {"task_id": task.task_id, "topic": task.topic,
+                "condition": condition, "action": action,
+                "task_score": scored["task_score"],
+                "harmful": scored["harmful"],
+                "codes": list(scored["codes"]),
+                "session_id": session_id, "usage": {},
+                "prompt_chars": len(prompt),
+                "context_chars": len(context)}
+    result = client.generate(prompt, model=model,
+                             temperature=TEMPERATURE,
+                             max_tokens=MAX_OUTPUT_TOKENS,
+                             session_id=session_id)
+    if result.get("error"):
+        action = {"target": "unknown", "parse": "error",
+                  "error_type": result.get("error_type")}
+    else:
+        action = parse_action(result.get("response", ""))
+    scored = scores_mod.score_action(world, task, action)
+    return {"task_id": task.task_id, "topic": task.topic,
+            "condition": condition, "action": action,
+            "task_score": scored["task_score"],
+            "harmful": scored["harmful"],
+            "codes": list(scored["codes"]), "session_id": session_id,
+            "usage": result.get("usage", {}) or {},
+            "model": result.get("model", model),
+            "attempts": result.get("attempts", 1),
+            "prompt_chars": len(prompt), "context_chars": len(context)}
+
+
 def run_ladder_muse(client: OpenCodeModel, run_id: str, model: str,
                     seed: int = run_mod.DEFAULT_SEED,
                     n_worlds: int = run_mod.DEFAULT_WORLDS,
@@ -240,8 +346,14 @@ def run_ladder_muse(client: OpenCodeModel, run_id: str, model: str,
     rows = []
     for task in tasks:
         for cond in conditions:
-            rows.append(run_condition(client, run_id, task, views, world,
-                                      cond, model, dry_run=dry_run))
+            if cond in wrong_mod.TRUST_PROBES:
+                rows.extend(run_trust_probe(
+                    client, run_id, task, views, world, cond, model,
+                    dry_run=dry_run))
+            else:
+                rows.append(run_condition(client, run_id, task, views,
+                                          world, cond, model,
+                                          dry_run=dry_run))
     return {"run_id": run_id, "seed": seed, "n_worlds": n_worlds,
             "task_set_version": TASK_SET_VERSION,
             "corpus_version": CORPUS_VERSION,
@@ -293,6 +405,11 @@ def _git_dirty(repo: Path) -> bool:
     return bool(out.strip())
 
 
+def _hl_sha256(data: bytes) -> str:
+    import hashlib as _hl
+    return _hl.sha256(data).hexdigest()
+
+
 def _sha256_file(path: Path) -> bytes:
     import hashlib
     digest = hashlib.sha256()
@@ -318,7 +435,8 @@ def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
                 seed: int = run_mod.DEFAULT_SEED,
                 n_worlds: int = run_mod.DEFAULT_WORLDS,
                 out=None, repo_root=None, conditions: tuple = CONDITIONS,
-                query_tag: str = "muse-ladder") -> Path:
+                query_tag: str = "muse-ladder",
+                extra_manifest: dict | None = None) -> Path:
     from generator import manifest as manifest_mod
 
     pm_root = Path(repo_root or _PM_ROOT)
@@ -376,6 +494,20 @@ def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
     manifest_path = out / "manifest.json"
     manifest_data = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest_data["provenance"] = provenance
+    if any(c in wrong_mod.TRUST_PROBES for c in conditions):
+        # Trust runs pin the imported policy file too: same memory
+        # SHA as the provider, plus the exact file hash. Substrate
+        # drift fails fast here, not silently in results.
+        from context_frames import trust_policy as _tp
+        assert _tp.TRUST_POLICY_VERSION == "trust-policy-v1"
+        tfile = (_MEMORY_SOLUTION / "context_frames"
+                 / "trust_policy.py")
+        manifest_data["provenance"]["trust_policy_version"] = \
+            _tp.TRUST_POLICY_VERSION
+        manifest_data["provenance"]["trust_policy_file_sha256"] = \
+            _hl_sha256(tfile.read_bytes())
+    if extra_manifest:
+        manifest_data.update(extra_manifest)
     manifest_path.write_text(
         json.dumps(manifest_data, indent=2) + "\n", encoding="utf-8")
     print(f"frozen muse ladder at {out} "
@@ -390,6 +522,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--seed", type=int, default=run_mod.DEFAULT_SEED)
     parser.add_argument("--worlds", type=int, default=run_mod.DEFAULT_WORLDS)
     parser.add_argument("--conditions", nargs="+", default=list(CONDITIONS))
+    parser.add_argument("--query-tag", default="muse-ladder")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--out", default=None)
     parser.add_argument("--repo-root", default=None)
@@ -405,7 +538,8 @@ def main(argv: list[str] | None = None) -> None:
                 n_worlds=args.worlds,
                 out=args.out or f"experiments/benchmark/runs/{run_id}",
                 repo_root=args.repo_root or _PM_ROOT,
-                conditions=tuple(args.conditions))
+                conditions=tuple(args.conditions),
+                query_tag=args.query_tag)
 
 
 if __name__ == "__main__":
