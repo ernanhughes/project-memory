@@ -1,0 +1,14 @@
+{
+  "corpus_version": "v0.1",
+  "seed": 20240823,
+  "n_parametric_worlds": 12,
+  "generator_commit": "28a58f83277b288d51f88f47238886eae642d014",
+  "query_set_version": "sim-v0.1-new-service+muse-ladder",
+  "files": [
+    {
+      "path": "results.json",
+      "sha256": "ee5b164de43d886b2defe3c372c83f10391e52c6e496464619fa4b37273cda3a",
+      "bytes": 33409
+    }
+  ]
+}
