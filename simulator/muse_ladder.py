@@ -339,6 +339,154 @@ def _live_row(client: OpenCodeModel, run_id: str, task, world,
             "prompt_chars": len(prompt), "context_chars": len(context)}
 
 
+def run_assembly_probe(client: OpenCodeModel, run_id: str, task,
+                       views: list[dict], world, model: str,
+                       dry_run: bool = False) -> list[dict]:
+    """Behavioral rows for the C7 assembly ladder on one task.
+
+    Base candidate set: C6-admitted full-history views (trust policy
+    FULL, no probe metadata). Identical rendered strings share one
+    live call (marked inherited_from); S2==A3 and S3==A4 by
+    construction, asserted here. Trace per row carries candidate
+    set, C6 verdicts, inclusion/exclusion reasons, groups, ordering,
+    tokens, and hash.
+    """
+    from simulator import assembly as asm_mod
+    from simulator import frames as frames_mod
+    from simulator import trust_gate as tg_mod
+    task_views = [v for v in views if v["date"] <= task.as_of]
+    by_display, by_key = {}, {}
+    for record in world.ledger.records:
+        by_key[record.key] = record
+        if record.display_id:
+            by_display[record.display_id] = record
+        if record.second_display_id:
+            by_display[record.second_display_id] = record
+    units = tg_mod.units_from_views(task_views, by_display, by_key, {})
+    packet = tg_mod.task_packet(task)
+    admits = tg_mod.admit(units, packet, "FULL")
+    admitted = [v for v in task_views
+                if admits.get(v["display_id"]) is not None
+                and admits[v["display_id"]].verdict == "admit"]
+    c6_verdicts = {uid: a.verdict for uid, a in admits.items()}
+    decisive = {d for d in frames_mod.decisive_ids(
+        world, task.topic, task.as_of)
+        if d in {v["display_id"] for v in admitted}}
+    dec = [r for r in world.ledger.records
+           if r.topic == task.topic and r.kind == "decision"
+           and r.date <= task.as_of]
+    support_ids = []
+    if dec:
+        best = max(dec, key=lambda r: (r.date, r.key))
+        for key in best.supported_by:
+            rec = by_key.get(key)
+            if rec is not None and rec.display_id:
+                support_ids.append(rec.display_id)
+                if rec.second_display_id:
+                    support_ids.append(rec.second_display_id)
+    derived_map = {}
+    for view in admitted:
+        record = by_display.get(view["display_id"])
+        if record is not None and record.kind == "derived_restatement":
+            roots = []
+            stack = list(record.derived_from or ())
+            seen: set[str] = set()
+            while stack:
+                key = stack.pop()
+                if key in seen:
+                    continue
+                seen.add(key)
+                src = by_key.get(key)
+                if src is None or not src.display_id:
+                    continue
+                if src.kind != "derived_restatement":
+                    roots.append(src.display_id)
+                else:
+                    stack.extend(src.derived_from or ())
+            derived_map[view["display_id"]] = (
+                tuple(roots), record.content)
+    # Ladder construction (deterministic, model-free).
+    built: dict[str, tuple[list, dict]] = {}
+    built["A0"] = (admitted, {"rule": "all-admitted-original-order"})
+    dec_kept, dec_trace = asm_mod.select_decisive(admitted, decisive)
+    built["A1"] = (dec_kept, dec_trace)
+    sup1, sup1_trace = asm_mod.select_support_overlap(
+        admitted, decisive, task.text)
+    built["A2"] = (dec_kept + [v for v in sup1
+                               if v["display_id"] not in decisive],
+                   {**dec_trace, **sup1_trace})
+    supc, supc_trace = asm_mod.select_support_chain(
+        admitted, set(support_ids))
+    built["A3"] = (dec_kept + [v for v in supc
+                               if v["display_id"] not in decisive],
+                   {**dec_trace, **supc_trace})
+    red, red_trace = asm_mod.collapse_redundant(admitted, derived_map)
+    built["A4"] = (red, red_trace)
+    grouped = asm_mod.group_order(
+        red, decisive, set(support_ids))
+    built["A5"] = (grouped, {**red_trace,
+                             "grouping": "decisive-support-remainder"})
+    budgeted, bud_trace = asm_mod.apply_budget(grouped, decisive)
+    built["A6"] = (budgeted, {**red_trace, **bud_trace,
+                              "grouping": "decisive-support-remainder",
+                              "budget_chars": asm_mod.BUDGET_CHARS})
+    supl, supl_trace = asm_mod.select_support_ledger(
+        admitted, support_ids)
+    built["AO"] = (dec_kept + [v for v in supl
+                               if v["display_id"] not in decisive],
+                   {**dec_trace, **supl_trace})
+    first_dec = sorted(decisive)[0] if decisive else None
+    built["S1"] = ([v for v in admitted
+                    if v["display_id"] == first_dec],
+                   ({"S1-first": "select.decisive-single"}
+                    if first_dec else {}))
+    built["S2"] = built["A3"]
+    built["S3"] = built["A4"]
+    s4ordered = sorted(
+        admitted, key=lambda v: (-asm_mod._overlap(task.text, v),
+                                 v["display_id"]))
+    s4kept, s4_trace = asm_mod.apply_budget(s4ordered, decisive)
+    built["S4"] = (s4kept, s4_trace)
+    # Render + dedupe by exact string.
+    order = ["A0", "A1", "A2", "A3", "A4", "A5", "A6", "AO",
+             "S1", "S2", "S3", "S4"]
+    strings: dict[str, str] = {}
+    for name in order:
+        units_kept, _trace = built[name]
+        strings[name] = "\n\n---\n\n".join(
+            render_view(v) for v in units_kept)
+    seen: dict[str, str] = {}
+    rows: dict[str, dict] = {}
+    for name in order:
+        if strings[name] in seen:
+            # Exact-string identity: share the outcome, never the
+            # usage dict (shared dicts double-count calls upstream).
+            src = seen[strings[name]]
+            row = dict(rows[src])
+            row["condition"] = name
+            row["inherited_from"] = src
+            row["usage"] = {}
+            rows[name] = row
+            continue
+        rows[name] = _live_row(client, run_id, task, world, name,
+                               strings[name], model, dry_run)
+        seen[strings[name]] = name
+    # Attach assembly traces.
+    for name in order:
+        units_kept, trace = built[name]
+        rows[name]["assembly_trace"] = {
+            "candidate_ids": sorted(v["display_id"] for v in admitted),
+            "c6_verdicts": {uid: c6_verdicts.get(uid, "n/a")
+                            for uid in
+                            sorted(v["display_id"] for v in admitted)},
+            "selected_ids": [v["display_id"] for v in units_kept],
+            "reasons": trace,
+            "ordering": [v["display_id"] for v in units_kept],
+            "context_chars": len(strings[name]),
+        }
+    return [rows[name] for name in order]
+
+
 def run_ladder_muse(client: OpenCodeModel, run_id: str, model: str,
                     seed: int = run_mod.DEFAULT_SEED,
                     n_worlds: int = run_mod.DEFAULT_WORLDS,
@@ -352,6 +500,10 @@ def run_ladder_muse(client: OpenCodeModel, run_id: str, model: str,
             if cond in wrong_mod.TRUST_PROBES:
                 rows.extend(run_trust_probe(
                     client, run_id, task, views, world, cond, model,
+                    dry_run=dry_run))
+            elif cond == "ASSEMBLY":
+                rows.extend(run_assembly_probe(
+                    client, run_id, task, views, world, model,
                     dry_run=dry_run))
             else:
                 rows.append(run_condition(client, run_id, task, views,
