@@ -269,9 +269,6 @@ def q_rows(qtask, views: list, world, client, run_id: str, model: str,
     if eo is not None:
         rows.append(_q_row(client, run_id, qtask, "EO", eo, model,
                            dry_run))
-    if eo is not None:
-        rows.append(_q_row(client, run_id, qtask, "EO", eo, model,
-                           dry_run))
     else:
         rows.append({"task_id": qtask.task_id, "topic": qtask.topic,
                      "condition": "EO", "action": {"parsed": None},

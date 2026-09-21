@@ -40,12 +40,30 @@ def test_qeval_parse_score():
     assert qeval_mod.parse_yesno("YES, it is.") is True
     assert qeval_mod.parse_yesno("no.") is False
     assert qeval_mod.parse_yesno("maybe") is None
+    assert qeval_mod.parse_yesno("no.") is False
+    assert qeval_mod.parse_yesno("maybe") is None
 
     class T:
         query_kind = "ids"
         expected_ids = ("a-1",)
     assert qeval_mod.score_qtask(T(), "a-1")["task_score"] == 1.0
     assert qeval_mod.score_qtask(T(), "a-2")["task_score"] == 0.0
+
+
+def test_qeval_id_scoring_order_insensitive():
+    class T:
+        query_kind = "ids"
+        expected_ids = ("a-1", "a-2")
+
+    class T2:
+        query_kind = "ids"
+        expected_ids = ("incident-021", "session-014", "session-019")
+    assert qeval_mod.score_qtask(T(), "a-2\na-1")["task_score"] == 1.0
+    assert qeval_mod.score_qtask(
+        T2(), "session-014\nsession-019\nincident-021")[
+            "task_score"] == 1.0
+    assert qeval_mod.score_qtask(T2(), "session-014")[
+        "task_score"] == 0.0
 
 
 def test_qeval_precision_recall():

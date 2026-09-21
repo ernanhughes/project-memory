@@ -65,11 +65,14 @@ def parse_yesno(text: str) -> bool | None:
 
 
 def score_qtask(task, response: str) -> dict:
-    """Deterministic Q scoring. Returns score + parsed answer."""
+    """Deterministic Q scoring. id tasks compare SETS (response
+    ordering carries no meaning); yesno matches the boolean; echo
+    requires substring presence."""
     if task.query_kind == "ids":
         predicted = parse_ids(response)
         expected = list(task.expected_ids)
-        return {"task_score": 1.0 if predicted == expected else 0.0,
+        return {"task_score": 1.0 if set(predicted) == set(expected)
+                else 0.0,
                 "parsed": predicted, "expected": expected}
     if task.query_kind == "yesno":
         predicted = parse_yesno(response)
