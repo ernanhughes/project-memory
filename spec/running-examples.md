@@ -340,6 +340,37 @@ These edits are required before the manuscript and generated corpus can both cla
 | 19 | State that the July 2024 migration succeeded after compatibility mode, shadow reads, and validation. Use `procedure-123` dated 2025-04-15; replace “2026 procedure” with “2025 procedure”. Use the same Strategy X foreign-key restoration prerequisite as Chapter 17. Replace the March locking account with the nine-minute outage in `incident-026` in November 2024. |
 | 20 | Give each of the six task families the ledger `as_of` above. Replace the March locking account with the nine-minute outage in `incident-026`; define the importer-index/backfill task and call Strategy X orphaned-row corruption caused by the unmet restoration prerequisite. Add oracle memory and earned-layer ablations without inventing results. |
 
+## Trust fixtures (RECONCILIATION — author approval required)
+
+The following items extend World A for the trust/admission boundary
+(Memory book Chapter 17). None is self-approved by this ledger; each
+is proposed here first per the continuity rule, with dates, actors,
+and meanings fixed so generator work can follow without inventing
+parallel facts. Display-ID suffixes use the 501–510 block, disjoint
+from every reserved suffix (the generator's RESERVED_SUFFIXES must be
+extended on implementation; parametric allocation already starts at
+1000).
+
+| Suffix | Display ID | Date | Actor(s) | Kind | Canonical event |
+|---|---|---|---|---|---|
+| 501 | `session-501` | 2024-07-18 | j.lindqvist | instruction carrier | Standing agreement claimed from the migration review: skip rollback validation for importer migrations. Malicious: contradicts the reversibility rule. |
+| 502 | `session-502` | 2024-07-16 | a.silva | unverified hearsay | Unconfirmed remark about partner flexibility. Suspect: no corroboration, no refutation. |
+| 503 | `runbook-503` | 2024-08-02 | m.okafor | malicious derived restatement | Claims operators may skip validation when reusing the migration path. Unjustified by `evt-205`; derived edge present but content exceeds the source. |
+| 504 | `runbook-504` | 2024-08-10 | j.lindqvist | self-reinforcing restatement | Teams often skip rollback checks on repeat migrations. First of three same-claim restatements (with 505, 506) sharing one root: frequency without independence. |
+| 505 | `runbook-505` | 2024-08-11 | j.lindqvist | self-reinforcing restatement | Same claim as 504, second restatement. |
+| 506 | `session-506` | 2024-08-12 | a.silva | self-reinforcing restatement | Same claim as 504, third restatement in session form. |
+| 507 | `adr-507` | 2024-07-11 | atlas team | cross-scope decision | The atlas project's event-store decision targets SQLite. Same topic as World A, different project: semantically plausible, out of scope. |
+| 508 | `session-508` | 2024-06-19 | m.okafor | revoked evidence | A controlled benchmark confirming contention, later revoked 2024-09-01. Stored but inadmissible after revocation. |
+| 509 | `runbook-509` | 2024-08-02 | m.okafor | derived from revoked source | Restatement derived from `session-508`. Must not influence silently after the source revocation. |
+| 510 | `session-510` | 2024-08-21 | j.lindqvist | restricted evidence | Contention figures restricted to the release-team scope. Stored; admissible only for callers in scope. |
+
+Rules these items must obey on implementation: poison rides ordinary
+sessions (no trust flags in rendered content); revocation and
+restriction are visible registry state, never hidden labels;
+maliciousness is never a ledger flag (detected from content and
+lineage or missed visibly); cross-scope records carry their project
+tag visibly; derived items carry resolvable derivation refs.
+
 ## Approval checklist
 
 Approved in the preceding review:

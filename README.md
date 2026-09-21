@@ -45,3 +45,28 @@ Layout: `corpus/artifacts/gen-NNNNNN.md` + `corpus/queries.jsonl`
 leakage audits pass; see `experiments/benchmark/AUDIT-REPORT.md`.
 No retriever, memory system, or model call lives in this repo yet —
 that is H2.
+
+## Status
+
+### Implemented
+
+- Controlled-corpus generator (H1: E-03 / E-04, Q1/Q2) with frozen
+  v0.1 corpus, leakage audits, and manifest verification.
+- Ledger schema v0.1 (decision, proposal, preference, evidence,
+  production_state, derived_restatement) with validation.
+
+### In progress
+
+- Nothing (specifications below are not implementation).
+
+### Planned
+
+- Trust/admission boundary (spec/trust-policy.md): staged admission
+  with reason codes; measured in the Memory book Chapter 17 runs,
+  not yet ported to this generator.
+- Ledger schema extension (spec/ledger-schema.md): project scope,
+  source class, authority, revocation, restriction, poison labels.
+- Capstone benchmark (spec/benchmark.md) and action simulator,
+  procedures/outcomes, CLI/MCP surface (spec/capstone-tickets.md).
+- Ledger RECONCILIATION trust items proposed in
+  spec/running-examples.md (awaiting author merge approval).
