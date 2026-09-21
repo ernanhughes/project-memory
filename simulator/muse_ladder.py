@@ -40,6 +40,7 @@ from pathlib import Path
 from . import actors as actor_mod
 from . import run as run_mod
 from . import scores as scores_mod
+from . import wrong_memory as wrong_mod
 from .world import WorldState
 
 _THIS = Path(__file__).resolve()
@@ -56,6 +57,7 @@ from providers.opencode import (  # noqa: E402
 )
 
 CONDITIONS = ("C0", "C1", "C2", "CO")
+WRONG_CONDITIONS = wrong_mod.WRONG_CONDITIONS
 TASK_SET_VERSION = run_mod.TASK_SET_VERSION
 CORPUS_VERSION = run_mod.CORPUS_VERSION
 LEXICAL_K = 5
@@ -106,9 +108,25 @@ def build_context(condition: str, views: list[dict], task,
                 wanted.add(record.second_display_id)
         return "\n\n---\n\n".join(render_view(v) for v in views
                                   if v["display_id"] in wanted)
+    if condition in ("W0", "WC"):
+        # Aliases over frozen contexts: W0 is no-memory (C0), WC is the
+        # current-decision context (CO). Same strings, distinct names so
+        # the wrong-memory report reads without cross-referencing.
+        return build_context("C0" if condition == "W0" else "CO",
+                             views, task, world)
+    if condition in wrong_mod.WRONG_CONDITIONS:
+        probed, note = wrong_mod.probe_views(condition, task, views,
+                                             world)
+        if probed is None:  # pragma: no cover - runner maps to skip row
+            raise _SkipCondition(note)
+        return "\n\n---\n\n".join(render_view(v) for v in probed)
     raise NotImplementedError(
         f"{condition} has no supplying system yet (C3-C7 specified, "
         "not built). Refusing to fake the condition.")
+
+
+class _SkipCondition(Exception):
+    """Raised when a probe has no applicable content for a task."""
 
 
 PROMPT_TEMPLATE = (
@@ -139,7 +157,16 @@ def run_condition(client: OpenCodeModel, run_id: str, task, views: list[dict],
                   world: WorldState, condition: str, model: str,
                   dry_run: bool = False) -> dict:
     task_views = [v for v in views if v["date"] <= task.as_of]
-    context = build_context(condition, task_views, task, world)
+    try:
+        context = build_context(condition, task_views, task, world)
+    except _SkipCondition as exc:
+        return {"task_id": task.task_id, "topic": task.topic,
+                "condition": condition, "action": {"target": None},
+                "task_score": None, "harmful": 0, "codes": (),
+                "skipped": str(exc),
+                "session_id": session_for(run_id, task.task_id,
+                                          condition),
+                "usage": {}, "prompt_chars": 0, "context_chars": 0}
     prompt = build_prompt(task, context)
     session_id = session_for(run_id, task.task_id, condition)
     if dry_run:
@@ -198,7 +225,11 @@ def summarize(rows: list[dict]) -> dict:
                     "total_tokens": 0, "calls": 0}
     for row in rows:
         entry = by_cond.setdefault(row["condition"],
-                                   {"n": 0, "mean": 0.0, "harm": 0})
+                                   {"n": 0, "mean": 0.0, "harm": 0,
+                                    "skipped": 0})
+        if row.get("task_score") is None:
+            entry["skipped"] += 1  # skipped probes never enter means
+            continue
         entry["n"] += 1
         entry["mean"] += row["task_score"]
         entry["harm"] += row["harmful"]
@@ -210,8 +241,10 @@ def summarize(rows: list[dict]) -> dict:
                         "total_tokens"):
                 usage_totals[key] += int(usage.get(key) or 0)
     return {cond: {"n": e["n"],
-                   "task_success": round(e["mean"] / e["n"], 4),
-                   "harmful_tasks": e["harm"]}
+                   "task_success": (round(e["mean"] / e["n"], 4)
+                                    if e["n"] else None),
+                   "harmful_tasks": e["harm"],
+                   "skipped": e["skipped"]}
             for cond, e in sorted(by_cond.items())} | {"usage": usage_totals}
 
 
@@ -252,7 +285,8 @@ def corpus_digest() -> str:
 def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
                 seed: int = run_mod.DEFAULT_SEED,
                 n_worlds: int = run_mod.DEFAULT_WORLDS,
-                out=None, repo_root=None) -> Path:
+                out=None, repo_root=None, conditions: tuple = CONDITIONS,
+                query_tag: str = "muse-ladder") -> Path:
     from generator import manifest as manifest_mod
 
     pm_root = Path(repo_root or _PM_ROOT)
@@ -267,7 +301,8 @@ def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
 
     out = Path(out or f"experiments/benchmark/runs/{run_id}")
     out.mkdir(parents=True, exist_ok=True)
-    result = run_ladder_muse(client, run_id, model, seed, n_worlds)
+    result = run_ladder_muse(client, run_id, model, seed, n_worlds,
+                             conditions=conditions)
     result["summary"] = summarize(result["rows"])
     result["reader"] = {
         "reader_provider": "opencode-zen-go",
@@ -287,7 +322,7 @@ def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
         corpus_version=CORPUS_VERSION, seed=seed,
         n_parametric_worlds=n_worlds,
         generator_commit=manifest_mod.generator_commit(pm_root),
-        query_set_version=TASK_SET_VERSION + "+muse-ladder")
+        query_set_version=TASK_SET_VERSION + "+" + query_tag)
     manifest_mod.write_manifest(out, man)
     # Provenance v2: the base manifest's generator_commit is no longer
     # enough — the experiment spans two repos plus the provider file.
