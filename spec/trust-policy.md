@@ -1,12 +1,14 @@
-# Trust / admission policy (specification)
+# Trust / admission policy
 
-Status: **SPECIFIED ONLY — measured in the Memory book Chapter 17
-runs (`trust-dev-v1`, `trust-eval-v1-llama`, `trust-eval-v1-muse`);
-not yet implemented in this repository.**
+Status: **MEASURED.** The authoritative implementation remains in
+the Memory repository (`solution/context_frames/trust_policy.py`,
+currently `trust-policy-v1.1`); it is adapted here, never
+duplicated (`simulator/trust_gate.py` maps ledger views to its
+input shape and records verdicts). This document describes what
+the policy is, as built.
 
-Reference implementation: `solution/context_frames/trust_policy.py`
-in `ernanhughes/memory` (trust-policy-v1). Port it here; do not
-reinvent it.
+Reference runs: `trust-dev-v1`, `trust-eval-v1-llama`,
+`trust-eval-v1-muse` (book repo) and `sim-muse-c6-v1` (here).
 
 ## Rule
 
@@ -39,6 +41,15 @@ screen only. S2 adds 1, 2 (known classes), 5. S3 adds corroboration
 for action-directing content on consequential tasks (evidence and
 proposals inform without directing, and are exempt). FULL is all
 stages with corroboration-aware instruction handling.
+
+## Revocation inheritance (v1.1)
+
+A derived unit whose transitive derivation closure contains a
+revoked source cannot retain independent action-authority
+(`deny.revoked_source`, stage `revocation-inheritance`), at every
+policy level. Standing, not truth: content is never declared
+false. This closed the one independently reproduced defect in the
+policy (echo of a present revoked source previously admitted).
 
 ## Corroboration
 

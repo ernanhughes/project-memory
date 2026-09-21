@@ -48,12 +48,15 @@ def select_decisive(admitted: list[dict], decisive_ids: set[str]):
     return kept, trace
 
 
-def _overlap(query: str, view: dict) -> int:
+def overlap_score(query: str, view: dict) -> int:
+    """Content-word overlap between a query and a view. Public so
+    ranking-adjacent callers share one scalar with the ranking."""
     from generator.queries import content_words
     qw = set(content_words(query))
     vw = set(content_words(view.get("title", "")
                            + " " + view.get("body", "")))
     return len(qw & vw)
+
 
 
 def select_support_overlap(admitted: list[dict], decisive_ids: set[str],
@@ -64,7 +67,7 @@ def select_support_overlap(admitted: list[dict], decisive_ids: set[str],
     if not cands:
         return [], {}
     ordered = sorted(cands,
-                     key=lambda v: (-_overlap(query, v),
+                     key=lambda v: (-overlap_score(query, v),
                                     v["display_id"]))
     chosen = ordered[0]
     return [chosen], {chosen["display_id"]: "select.support-overlap"}

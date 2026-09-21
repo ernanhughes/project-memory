@@ -1,4 +1,4 @@
-"""Muse-first model-mediated ladder (next4).
+"""Muse-first model-mediated ladder.
 
 Deterministic T1 stays model-free: WorldState, transitions, harm
 classification, hidden ledger, scorer, and oracle/null controls are
@@ -12,12 +12,17 @@ Conditions implemented in this harness (frozen):
   C1 -- Muse, full visible project history (all task views at cut).
   C2 -- Muse, lexical top-k (same ranking as LexicalActor, k=5).
   CO -- Muse, oracle evidence (current-decision artifact only).
+  C3 -- temporal-filtered history (simulator/temporal.py).
+  C4 -- scope-filtered history (simulator/scope.py).
+  W*, F*, T* -- wrong-memory, frame-uncertainty, and trust probes
+    (simulator/wrong_memory.py) with skip rows for inapplicable
+    topics.
+  A*, S*, E*, QE* -- assembly ladder, simplifications, and
+    held-out expansion conditions (see run_assembly_probe,
+    run_trust_probe, expansion_run.py).
 
-C3-C7 (structured / framed / safe / trusted / assembled) are NOT
-implemented: no structured-memory system exists yet to supply their
-contexts. They remain specified, not built; this harness raises
-NotImplementedError if asked for them so no headline can silently
-depend on a faked condition.
+C8+ raise NotImplementedError: no supplying system exists yet, so
+no headline can silently depend on a faked condition.
 
 Session policy: one deterministic session id per (run, task,
 condition, repeat) -- full prompt supplied on every request, no
@@ -153,7 +158,7 @@ def build_context(condition: str, views: list[dict], task,
             raise _SkipCondition(note)
         return "\n\n---\n\n".join(render_view(v) for v in probed)
     raise NotImplementedError(
-        f"{condition} has no supplying system yet (C5-C7 specified, "
+        f"{condition} has no supplying system yet (C8+ specified, "
         "not built). Refusing to fake the condition.")
 
 
@@ -443,7 +448,7 @@ def run_assembly_probe(client: OpenCodeModel, run_id: str, task,
     built["S2"] = built["A3"]
     built["S3"] = built["A4"]
     s4ordered = sorted(
-        admitted, key=lambda v: (-asm_mod._overlap(task.text, v),
+        admitted, key=lambda v: (-asm_mod.overlap_score(task.text, v),
                                  v["display_id"]))
     s4kept, s4_trace = asm_mod.apply_budget(s4ordered, decisive)
     built["S4"] = (s4kept, s4_trace)

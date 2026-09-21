@@ -1,10 +1,11 @@
-# Ledger schema extension (specification)
+# Ledger schema extension (deferred)
 
-Status: **SPECIFIED ONLY.** v0.1 (`generator/schema.py`) is
-implemented and frozen. The fields below are specified for the trust
-work and are not yet in the schema. Do not add them to v0.1 records
-or fixtures; implement under a new corpus version when the trust
-fixtures are ported.
+Status: v0.1 (`generator/schema.py`) implemented and frozen. The
+fields below remain specified-only: no experiment in the finished
+program required them (revocation was probed via designation
+metadata, scope via view tags, both documented in-run). Implement
+under a new corpus version if real-corpus work demands them; do
+not add them to v0.1 records or fixtures.
 
 ## New optional record fields
 

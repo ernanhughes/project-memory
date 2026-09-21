@@ -1,60 +1,54 @@
-# Capstone tickets (T1–T2 implemented; rest specified)
+# Capstone tickets: final classification
 
-## T1 — Action simulator
+Completed research is DONE. Everything else is classified by
+evidence, not ambition. CLI/MCP product surfaces are optional
+productization paths, not scientific requirements: not building
+them blocks nothing in this program.
 
-IMPLEMENTED 2026-09-21 (`simulator/`): deterministic world state
-from the hidden ledger, new-service task family (11 tasks;
-rejection topics yield no task), rule actors (null, oracle,
-lexical, superseded/preference probes), deterministic scorer with
-reason codes, ledger overlays (remove/add, revalidated, frozen
-fixtures never mutated). Remaining: further task families, more
-intervention ops beyond remove/add.
+## T1 — Action simulator: DONE
 
-## T2 — Baseline ladder
+Implemented (`simulator/`), measured (`sim-v0.1`), tested (48
+simulator tests). Remaining task families and intervention ops
+are future research only if a new question needs them.
 
-IMPLEMENTED 2026-09-21 with T1, frozen run
-`experiments/benchmark/runs/sim-v0.1/`: null 0.0/0 harm, oracle
-1.0/0, lexical 0.727/3 harms, superseded 0.0/3, preference 0.0/1.
-Manifest with per-file checksums; verify clean. (Rule-actor
-ladder; memory-condition ladder awaits trust port T7.)
+## T2 — Baseline ladder: DONE
 
-## T3 — Open loops, assembly, outcomes, procedures
+Rule-actor ladder frozen with manifests. The memory-condition
+ladder it anticipated was built instead as C0–C7/S-ladders under
+Muse; see docs/experiments.md. No further T2 work required.
 
-Add each only where repository state and book experiments require
-it, following the already-measured book order (loops → assembly →
-outcomes → procedures). Acceptance per layer: pre-registered
-positive control plus ablation, frozen run committed.
+## T3 — Open loops, assembly, outcomes, procedures: PARTIALLY EARNED
 
-## T4 — Causal mini-worlds
+Assembly measured via C7 (S2 adopted, A6 declined). Open loops,
+outcomes, and procedures were never needed by any measured
+failure in this program and remain unbuilt by design. Not
+deferred for later: refused as unevidenced.
 
-Hidden ledger encodes decision → action → outcome edges as
-authoritative ground truth for controlled scenarios (SQLite
-contention chain; migration → stale-fixtures chain). Acceptance:
-intervention/counterfactual questions (what happened / why / what
-worked / what failed / what to repeat / what to avoid / what if the
-old approach returned) scored against ledger edges; no causality
-inferred from mere sequence (guarded by test).
+## T4 — Causal mini-worlds: OUT OF CAPSTONE SCOPE
 
-## T5 — CLI surface
+No experiment in this program required ledger-encoded causal
+edges. Counterfactual reasoning was tested behaviorally where it
+arose (supersession, revocation) without a causal layer.
 
-`pm ingest/ask/open-loops/context/explain/trace/replay/record-outcome/
-quarantine/revoke/audit/benchmark` exposing real architecture only;
-no commands for appearance. Acceptance: every command maps to an
-implemented module; replay/benchmark reproduce frozen runs.
+## T5 — CLI surface: FUTURE PRODUCT WORK
 
-## T6 — MCP surface
+Optional productization. Explicitly not a scientific requirement
+and not a blocker. If built later, every command must map to an
+implemented module; replay/benchmark must reproduce frozen runs.
 
-Small model-independent tools (`recall`, `current_truth`,
-`explain`, `open_loops`, `assemble_context`, `record_outcome`,
-plus `quarantine`, `request_restricted_memory`) usable by multiple
-models. Acceptance: two different models complete one capstone
-task through the surface with identical memory state.
+## T6 — MCP surface: FUTURE PRODUCT WORK
 
-## T7 — Port trust fixtures
+Optional productization, same status as T5. The two-model
+acceptance test is recorded here so a future implementer knows
+the bar; it does not gate the capstone.
 
-Port the book trust fixtures (book runs `trust-dev-v1`,
-`trust-eval-v1-*`) into generator fixtures under a new corpus
-version once ledger-schema.md lands: RECONCILIATION items from
-spec/running-examples.md, RESERVED_SUFFIXES extended, hygiene
-confirmed, v0.1 untouched. Acceptance: frozen corpus builds with
-all audits passing; trust experiment reproduces book verdicts.
+## T7 — Port trust fixtures: MEASURED BUT NOT SHIPPED (as corpus)
+
+The trust experiment it was written for was run instead in the
+Memory repository (`trust-dev-v1`, `trust-eval-v1-*`) and in the
+simulator trust gate with revocation inheritance fixed in
+trust-policy-v1.1. Porting fixtures into a new generator corpus
+version remains defined work (RECONCILIATION items in
+spec/running-examples.md, suffix block 501–510, hygiene rules in
+spec/ledger-schema.md) but is not required by any open
+scientific question in this program.
