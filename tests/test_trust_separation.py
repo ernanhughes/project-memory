@@ -157,12 +157,10 @@ def test_corroborated_conflict_quarantined_only_via_conflict():
         assert res[uid].stage == "conflict"
 
 
-def test_echo_of_present_revoked_source_admitted_gap():
-    # Known trust-policy gap, pinned (not patched here): revocation
-    # of a PRESENT source does not propagate to its derivations.
-    # _grounded checks kinds, _established checks currency — neither
-    # consults revoked. T7 must add revocation inheritance; this test
-    # names the gap so the port cannot silently inherit it.
+def test_echo_of_present_revoked_source_denied_t7():
+    # Was a pinned gap (echo admitted despite revoked source);
+    # T7 revocation inheritance now denies it. History: the gap
+    # test named this so the fix could not arrive silently.
     from simulator import trust_gate as _tg
     _tp = _tg.tp
     src = _tp.Unit("adr-007", "decision", "main", "2024-07-11",
@@ -176,4 +174,7 @@ def test_echo_of_present_revoked_source_admitted_gap():
                             True)
     res = _tp.apply_policy([src, echo], packet, "FULL")
     assert res.admissions["adr-007"].verdict == "deny"
-    assert res.admissions["runbook-006"].verdict == "admit"
+    assert res.admissions["runbook-006"].verdict == "deny"
+    assert res.admissions["runbook-006"].reason == "deny.revoked_source"
+    assert res.admissions["runbook-006"].stage == \
+        "revocation-inheritance"

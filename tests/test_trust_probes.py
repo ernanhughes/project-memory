@@ -97,7 +97,7 @@ def test_adaptation_maps_display_namespace():
     units = tg.units_from_views(pool, by_display, by_key, meta)
     assert {u.unit_id for u in units} == {
         v["display_id"] for v in pool}
-    assert tg.TRUST_POLICY_VERSION == "trust-policy-v1"
+    assert tg.TRUST_POLICY_VERSION == "trust-policy-v1.1"
 
 
 def test_adaptation_resolves_derived_refs():

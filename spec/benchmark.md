@@ -36,3 +36,24 @@ untouched by this spec. Trust fixtures live in the book repo runs
 extension (ledger-schema.md) lands here; then corresponding
 generator fixtures follow under a new corpus version, never by
 editing v0.1.
+
+## Known instrument boundaries (carried forward, not fixed)
+
+These held-out findings constrain how results may be read. They are
+fixture properties, not architecture verdicts:
+
+- `eq-q5-01`: the oracle itself fails (expected open-loop set
+  unscorable by id-listing). Insensitive fixture: preserve it, never
+  include it in headline comparisons.
+- `eq-q4-02`: no-memory answers correctly (parametric knowledge of
+  the SQLite/PostgreSQL transition). Contaminated /
+  non-memory-dependent case: keep it, label it, never use it as
+  evidence for memory.
+- Q1 expected sets require complete discussion recall, which
+  top-k retrieval is structurally incapable of guaranteeing.
+  That is the legitimate distinction between answer retrieval and
+  historical reconstruction; do not hide it with a looser scorer.
+- Question-type routing is load-bearing: recall tasks retain
+  low-authority records that action tasks must deny (the q-000018
+  mechanism). Uniform admission across question types is a known
+  wrong answer, pinned in `tests/test_routing.py`.

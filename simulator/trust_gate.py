@@ -34,7 +34,7 @@ if str(_MEMORY_SOLUTION) not in sys.path:
 from context_frames import trust_policy as tp  # noqa: E402
 
 TRUST_POLICY_VERSION = tp.TRUST_POLICY_VERSION
-assert TRUST_POLICY_VERSION == "trust-policy-v1", TRUST_POLICY_VERSION
+assert TRUST_POLICY_VERSION == "trust-policy-v1.1", TRUST_POLICY_VERSION
 
 LEVELS = ("S1", "S2", "S3", "FULL")
 

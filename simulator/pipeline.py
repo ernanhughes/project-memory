@@ -28,6 +28,83 @@ from __future__ import annotations
 
 POLICY_VERSION = "project-memory-v1"
 
+# Question-type routing: which pipeline stages may govern which
+# question class. Follows question semantics, never scores:
+#
+# * recall (Q1, Q-recall): retrieval + temporal interpretation.
+#   Authority must not erase history: preferences and echoes stay
+#   visible because "where was it discussed" is about the record,
+#   not its standing to direct action.
+# * explanatory/state (Q2-Q5): retrieval + temporal. Currency
+#   matters (Q4 is validity by definition); trust exclusion does
+#   not apply — explanation cites, it does not obey.
+# * action/influence (action tasks, Q6 selection, probes): the full
+#   v1 pipeline including trust admission and S2 assembly.
+# * control (echo/irrelevant): no memory at all. An answer already
+#   present in the query must not be displaced by retrieval.
+QUESTION_ROUTES = {
+    "recall": ("retrieval", "temporal"),
+    "explanatory": ("retrieval", "temporal"),
+    "action": ("retrieval", "temporal", "scope", "frame", "trust",
+               "assembly"),
+    "control": (),
+}
+
+# Family to route. Q2 straddles recall/explanation in the book, but
+# here every Q2 asks for records about a decision (evidence
+# lookup), so explanatory fits; recall is reserved for
+# discussion-enumeration (Q1) and full-listing (Q-recall) tasks.
+FAMILY_ROUTES = {
+    "Q1": "recall",
+    "Q2": "explanatory",
+    "Q3": "explanatory",
+    "Q4": "explanatory",
+    "Q5": "explanatory",
+    "Q-recall": "recall",
+    "Q-irr": "control",
+    "new-service": "action",
+    "action-probe": "action",
+}
+
+
+def route_for(family: str) -> tuple:
+    """Pipeline stages for a task family. Unknown families raise:
+    routing must be explicit, never defaulted."""
+    if family not in FAMILY_ROUTES:
+        raise ValueError(f"unrouted family {family!r}")
+    return QUESTION_ROUTES[FAMILY_ROUTES[family]]
+
+
+def routed_admission(task_views: list[dict], world, task,
+                     family: str, meta: dict | None = None) -> tuple:
+    """Admission honoring the family route. Recall/explanatory apply
+    temporal filtering only (no trust exclusion); action applies the
+    full integrated pipeline; control admits nothing. Returns
+    (views, trace) with the route recorded."""
+    from simulator import scope as scope_mod
+    from simulator import temporal as temporal_mod
+    route = route_for(family)
+    trace: dict = {"route": list(route)}
+    if route == ():
+        trace["control"] = {"kept": 0, "reason": "no-memory-control"}
+        return [], trace
+    stage = temporal_mod.temporal_filter(task_views, world.ledger,
+                                        task.as_of)
+    trace["temporal"] = {"kept": len(stage)}
+    if "trust" not in route and "scope" not in route:
+        return stage, trace
+    stage = scope_mod.scope_filter(stage, task.project)
+    trace["scope"] = {"kept": len(stage)}
+    if "trust" not in route:
+        return stage, trace
+    kept, verdicts = c6_admitted(stage, world, task, meta)
+    trace["trust"] = {
+        "kept": len(kept),
+        "denied": sorted(
+            uid for uid, verdict in verdicts.items()
+            if verdict != "admit")}
+    return kept, trace
+
 
 def c6_admitted(task_views: list[dict], world, task,
                 meta: dict | None = None) -> tuple[list, dict]:
