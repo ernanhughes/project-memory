@@ -1,0 +1,14 @@
+{
+  "corpus_version": "v0.1",
+  "seed": 20240823,
+  "n_parametric_worlds": 12,
+  "generator_commit": "891754d4303c8354c0f9e61bcf4e21a82f5dff9d",
+  "query_set_version": "sim-v0.1-new-service",
+  "files": [
+    {
+      "path": "results.json",
+      "sha256": "ae1897a702b096f97e9426f7bc19f424daaaf043807bc64095a0ef49277d4aae",
+      "bytes": 18582
+    }
+  ]
+}
