@@ -19,6 +19,9 @@ class TaskPacket:
     topic: str
     text: str
     as_of: str
+    # Scope home project. Defaulted so the frozen 11-task family is
+    # byte-identical (ids, topics, cuts pinned by test); C4 reads it.
+    project: str = "main"
 
 
 TASK_CUT = "2025-06-30"

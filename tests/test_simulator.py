@@ -68,7 +68,8 @@ def test_actor_views_carry_no_ledger():
     data = _inputs()
     for view in data["views"]:
         assert set(view) == {"display_id", "kind", "date", "title",
-                             "body"}
+                             "body", "project"}
+        assert view["project"] == "main"  # ledger renders untagged
     assert all(v["date"] <= tasks_mod.TASK_CUT for v in data["views"])
 
 

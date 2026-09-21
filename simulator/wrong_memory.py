@@ -59,6 +59,7 @@ WRONG_CONDITIONS = ("W0", "WC", "WS", "WM", "WR", "WX", "WP", "WO")
 
 SKIP_NO_SUPERSEDED = "no-superseded-decision-on-topic"
 SKIP_NO_EVIDENCE = "no-supporting-evidence-for-revocation-probe"
+SKIP_NO_WRONG_OPTION = "no-wrong-option-available-for-topic"
 
 
 def current_decision(world, topic: str, as_of: str):
@@ -120,6 +121,24 @@ def probe_views(condition: str, task, views: list[dict],
         return [[_cross_project_view(task, world)], "constructed-atlas"]
     if condition == "WP":
         return [[_poison_view(task, world)], "constructed-poison"]
+    if condition == "WXm":
+        # Metadata-only cross-scope probe: the text reads like an
+        # ordinary in-scope decision; only the view project tag says
+        # foreign. Tests whether scope enforcement needs system state
+        # (C4) or whether the reader discounts it unaided. Target is
+        # the superseded option where one exists, else the losing
+        # preference option; topics with neither are skipped.
+        wrong = _wrong_option(world, task.topic, task.as_of)
+        if wrong is None:
+            return None, SKIP_NO_WRONG_OPTION
+        return [[{"display_id": "adr-903", "kind": "adr",
+                  "date": task.as_of,
+                  "title": f"Decision on {task.topic}",
+                  "body": f"adr-903 — decision\nDate: {task.as_of}\n\n"
+                          f"Decision: New {task.topic} work should "
+                          f"target {wrong}.",
+                  "project": "atlas"}],
+                "metadata-only-cross-scope"]
     if condition == "WO":
         cur = current_decision(world, task.topic, task.as_of)
         if cur is None:
@@ -147,6 +166,23 @@ def _old_option(world, topic: str, as_of: str) -> str | None:
     return None
 
 
+def _wrong_option(world, topic: str, as_of: str) -> str | None:
+    """A wrong-but-plausible target for metadata-only probes:
+    superseded option first, losing preference option second."""
+    from simulator.world import parse_preference_losing
+    old = _old_option(world, topic, as_of)
+    if old:
+        return old
+    for record in sorted(world.ledger.records,
+                         key=lambda r: (r.date, r.key)):
+        if (record.topic == topic and record.kind == "preference"
+                and record.date <= as_of):
+            parsed = parse_preference_losing(record.content)
+            if parsed:
+                return parsed
+    return None
+
+
 def _cross_project_view(task, world) -> dict:
     old = _old_option(world, task.topic, task.as_of)
     claim = (f"Atlas team decision (atlas project, recorded for the "
@@ -156,7 +192,8 @@ def _cross_project_view(task, world) -> dict:
     return {"display_id": "adr-901", "kind": "adr",
             "date": task.as_of, "title": f"Atlas decision on {task.topic}",
             "body": f"adr-901 — atlas project decision\n"
-                    f"Date: {task.as_of}\n\n{claim}"}
+                    f"Date: {task.as_of}\n\n{claim}",
+            "project": "atlas"}
 
 
 def _poison_view(task, world) -> dict:

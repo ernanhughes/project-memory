@@ -22,9 +22,12 @@ _PREF_RE = re.compile(r"[Pp]refers? ([^.]+?) for ")
 
 
 def artifact_view(artifact) -> dict:
+    # "project" defaults to the main scope: ledger renders carry no
+    # scope tag (scope attribution is C4-era system state, not v0.1
+    # content). Constructed foreign views set it explicitly.
     return {"display_id": artifact.display_id, "kind": artifact.kind,
             "date": artifact.date, "title": artifact.title,
-            "body": artifact.body}
+            "body": artifact.body, "project": "main"}
 
 
 def _overlap(query: str, body: str) -> int:

@@ -70,9 +70,18 @@ def test_c3_drops_superseded_keeps_current():
     assert len(c3) < len(ml.build_context("C1", task_views, task, world))
 
 
+def test_c4_keeps_single_project_history():
+    world, tasks, views = _inputs()
+    for task in tasks:
+        task_views = [v for v in views if v["date"] <= task.as_of]
+        assert ml.build_context(
+            "C4", task_views, task, world) == ml.build_context(
+            "C1", task_views, task, world)
+
+
 def test_unbuilt_conditions_refuse():
     world, tasks, views = _inputs()
-    for cond in ("C4", "C5", "C6", "C7"):
+    for cond in ("C5", "C6", "C7"):
         try:
             ml.build_context(cond, views, tasks[0], world)
         except NotImplementedError:

@@ -40,6 +40,7 @@ from pathlib import Path
 from . import actors as actor_mod
 from . import run as run_mod
 from . import scores as scores_mod
+from . import scope as scope_mod
 from . import temporal as temporal_mod
 from . import wrong_memory as wrong_mod
 from .world import WorldState
@@ -119,6 +120,13 @@ def build_context(condition: str, views: list[dict], task,
         kept = temporal_mod.temporal_filter(views, world.ledger,
                                             task.as_of)
         return "\n\n---\n\n".join(render_view(v) for v in kept)
+    if condition == "C4":
+        # Project-scoped memory: full history minus foreign-project
+        # views, original order. Repairs cross-scope steering; must
+        # not damage same-project behavior and cannot see staleness
+        # (C3 owns temporal), poison, or revocation.
+        kept = scope_mod.scope_filter(views, task.project)
+        return "\n\n---\n\n".join(render_view(v) for v in kept)
     if condition in ("W0", "WC"):
         # Aliases over frozen contexts: W0 is no-memory (C0), WC is the
         # current-decision context (CO). Same strings, distinct names so
@@ -132,7 +140,7 @@ def build_context(condition: str, views: list[dict], task,
             raise _SkipCondition(note)
         return "\n\n---\n\n".join(render_view(v) for v in probed)
     raise NotImplementedError(
-        f"{condition} has no supplying system yet (C4-C7 specified, "
+        f"{condition} has no supplying system yet (C5-C7 specified, "
         "not built). Refusing to fake the condition.")
 
 

@@ -94,6 +94,17 @@ def test_wo_contains_decision_plus_support():
     assert "adr-007" in ids and len(ids) > 1
 
 
+def test_wxm_metadata_only_no_scope_text():
+    world, tasks, views = _inputs()
+    task = next(t for t in tasks if t.topic == "event-store backend")
+    tv = _task_views(views, task)
+    probed, note = wm.probe_views("WXm", task, tv, world)
+    assert probed is not None, note
+    assert probed[0]["project"] == "atlas"
+    assert "atlas" not in probed[0]["body"].lower()
+    assert "SQLite" in probed[0]["body"]
+
+
 def test_classification_gate():
     assert wm.classify_task(1.0, 0.0, {"WS": (0.0, 0)})[0] == "SENSITIVE"
     assert wm.classify_task(1.0, 0.0, {"WS": (0.0, 1)})[0] == "SENSITIVE"
