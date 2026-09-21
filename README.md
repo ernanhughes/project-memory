@@ -54,6 +54,10 @@ that is H2.
   v0.1 corpus, leakage audits, and manifest verification.
 - Ledger schema v0.1 (decision, proposal, preference, evidence,
   production_state, derived_restatement) with validation.
+- Action simulator T1/T2 (`simulator/`, 48 tests): deterministic
+  world state, new-service tasks, rule actors, reason-coded scoring,
+  ledger overlays, frozen baseline ladder
+  (`experiments/benchmark/runs/sim-v0.1/`).
 
 ### In progress
 

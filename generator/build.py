@@ -98,10 +98,22 @@ def strip_datelineless(ledger: Ledger, artifacts: list, rng: random.Random,
             art.has_timestamp = False
 
 
-def build_corpus(seed: int = DEFAULT_SEED, n_worlds: int = DEFAULT_WORLDS) -> dict:
-    """Full in-memory build. Returns everything the writer needs."""
+def build_corpus(seed: int = DEFAULT_SEED, n_worlds: int = DEFAULT_WORLDS,
+                 ledger=None) -> dict:
+    """Full in-memory build. Returns everything the writer needs.
+
+    ``ledger`` injects a prebuilt (possibly overlaid) ledger instead of
+    building from seed; audits and rendering proceed unchanged. The
+    default path is byte-identical to previous builds.
+    """
     rng = random.Random(seed)
-    ledger, context, _alloc = worlds.build_ledger(n_worlds, seed)
+    if ledger is None:
+        ledger, context, _alloc = worlds.build_ledger(n_worlds, seed)
+    else:
+        # Injected (possibly overlaid) ledger: World A context artifacts
+        # stay; parametric worlds carry none. Audits still apply to the
+        # default path unchanged; overlay runs skip freezing.
+        _, context = worlds.build_world_a()
     wa_records, _ = worlds.build_world_a()  # deterministic: no rng inside
     world_a_keys = {r.key for r in wa_records}
     # Round-robin (seeded offset) realisation choice for every kind, so

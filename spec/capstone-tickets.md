@@ -1,27 +1,22 @@
-# Capstone tickets (specified, unimplemented)
-
-Each ticket below is executable work with acceptance criteria. None
-is started. Implement in order; keep every phase green before the
-next begins.
+# Capstone tickets (T1–T2 implemented; rest specified)
 
 ## T1 — Action simulator
 
-Deterministic simulated project environment for action tasks
-(capstone task families in spec/running-examples.md). The system
-proposes an action changing simulated project state; the simulator
-scores deterministically (no LLM judge where deterministic scoring
-is possible). Acceptance: replay same task under multiple
-conditions with identical transitions; intervention tests
-(remove/restore/wrong/poisoned/revoked/cross-scope/outcome-changed)
-attribute failure classes (retrieval/selection/temporal/
-provenance/authority/assembly/reader/learning).
+IMPLEMENTED 2026-09-21 (`simulator/`): deterministic world state
+from the hidden ledger, new-service task family (11 tasks;
+rejection topics yield no task), rule actors (null, oracle,
+lexical, superseded/preference probes), deterministic scorer with
+reason codes, ledger overlays (remove/add, revalidated, frozen
+fixtures never mutated). Remaining: further task families, more
+intervention ops beyond remove/add.
 
 ## T2 — Baseline ladder
 
-No-memory / full-history / strong-RAG / structured / complete /
-complete+trust-gate / oracle conditions over the simulator.
-Acceptance: frozen run with manifests recording every PART XXIII
-field; no successive condition assumed better — measured.
+IMPLEMENTED 2026-09-21 with T1, frozen run
+`experiments/benchmark/runs/sim-v0.1/`: null 0.0/0 harm, oracle
+1.0/0, lexical 0.727/3 harms, superseded 0.0/3, preference 0.0/1.
+Manifest with per-file checksums; verify clean. (Rule-actor
+ladder; memory-condition ladder awaits trust port T7.)
 
 ## T3 — Open loops, assembly, outcomes, procedures
 
