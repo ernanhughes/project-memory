@@ -1,0 +1,26 @@
+{
+  "corpus_version": "v0.1",
+  "seed": 20240823,
+  "n_parametric_worlds": 12,
+  "generator_commit": "fbe3bd1d0c89bfd9e7799bd475a5264181293233",
+  "query_set_version": "sim-v0.1-new-service+muse-ladder",
+  "files": [
+    {
+      "path": "results.json",
+      "sha256": "15f89f34ef037b544006ce3920a5d59b2d5f1d960d037c746408c6934226e0c5",
+      "bytes": 58983
+    }
+  ],
+  "provenance": {
+    "code_commit": "fbe3bd1d0c89bfd9e7799bd475a5264181293233",
+    "dirty_state": false,
+    "corpus_digest": "126b435a78ef2dc41734e6dd295e1ac812ab555077665cd0fa80de888d57a30e",
+    "provider": "opencode-zen-go",
+    "provider_model": "muse-spark-1.3-contributor",
+    "provider_source_repo": "ernanhughes/memory",
+    "provider_source_commit": "24c5482f9c789ae9ace598304c8d4d69526442ff",
+    "provider_source_dirty": false,
+    "provider_source_file": "solution/providers/opencode.py",
+    "provider_source_file_sha256": "a688570a5567aa1871afe7c04ed567511a27c8f7b7df19c84c0c6d9b67a24fd7"
+  }
+}
