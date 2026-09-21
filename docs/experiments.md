@@ -203,3 +203,14 @@ experiments/benchmark/runs/sim-muse-c6-v1
 experiments/benchmark/runs/sim-muse-c7-v1
 experiments/benchmark/runs/sim-muse-exp-v1
 ```
+
+## What the experiments rejected
+
+* **Full history is always bad**: false — full history scores 1.0 on ordinary tasks (`sim-muse-v2` C1); it fails only under adversarial or overload conditions.
+* **Stronger models remove the need for project memory**: false — C0 abstains on all 11 tasks; the reader cannot invent project state.
+* **More correct evidence is always better**: false — decision-plus-support underperforms the bare decision on some topics (WO 0.73 vs WC 1.0).
+* **Every memory question should use the same authority gate**: false — recall needs historical visibility that action tasks must deny (q-000018 mechanism).
+* **The most sophisticated assembler must be best**: false — S2 matches A6 behaviorally at a fraction of tokens (`sim-muse-c7-v1`).
+* **Retrieval ranking errors automatically become behavioral errors**: false — misleading order reads at 1.0; only missing system state (scope, revocation, authority) reliably steers.
+* **Trust is free**: false — quarantine and revocation carry measured utility prices on the strong reader.
+* **Every proposed mechanism deserves to ship**: false — A6, generic redundancy reduction, explicit budgeting, and per-reader tuning were measured and declined.
