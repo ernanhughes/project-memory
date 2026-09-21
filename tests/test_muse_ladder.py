@@ -60,9 +60,19 @@ def test_co_contains_current_decision_only():
     assert "adr-003" not in co
 
 
+def test_c3_drops_superseded_keeps_current():
+    world, tasks, views = _inputs()
+    task = next(t for t in tasks if t.topic == "event-store backend")
+    task_views = [v for v in views if v["date"] <= task.as_of]
+    c3 = ml.build_context("C3", task_views, task, world)
+    assert "adr-003" not in c3  # superseded SQLite decision excluded
+    assert "adr-007" in c3  # current decision retained
+    assert len(c3) < len(ml.build_context("C1", task_views, task, world))
+
+
 def test_unbuilt_conditions_refuse():
     world, tasks, views = _inputs()
-    for cond in ("C3", "C4", "C5", "C6", "C7"):
+    for cond in ("C4", "C5", "C6", "C7"):
         try:
             ml.build_context(cond, views, tasks[0], world)
         except NotImplementedError:

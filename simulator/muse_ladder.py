@@ -40,6 +40,7 @@ from pathlib import Path
 from . import actors as actor_mod
 from . import run as run_mod
 from . import scores as scores_mod
+from . import temporal as temporal_mod
 from . import wrong_memory as wrong_mod
 from .world import WorldState
 
@@ -108,6 +109,16 @@ def build_context(condition: str, views: list[dict], task,
                 wanted.add(record.second_display_id)
         return "\n\n---\n\n".join(render_view(v) for v in views
                                   if v["display_id"] in wanted)
+    if condition == "C3":
+        # Structured/temporal memory: full history minus superseded
+        # records at the task standpoint, original order. Repairs
+        # stale-only steering; must not damage current-decision
+        # behavior and cannot see scope, poison, or revocation.
+        # world.ledger is the run's own ledger (seed-parameterized
+        # upstream), never rebuilt here.
+        kept = temporal_mod.temporal_filter(views, world.ledger,
+                                            task.as_of)
+        return "\n\n---\n\n".join(render_view(v) for v in kept)
     if condition in ("W0", "WC"):
         # Aliases over frozen contexts: W0 is no-memory (C0), WC is the
         # current-decision context (CO). Same strings, distinct names so
@@ -121,7 +132,7 @@ def build_context(condition: str, views: list[dict], task,
             raise _SkipCondition(note)
         return "\n\n---\n\n".join(render_view(v) for v in probed)
     raise NotImplementedError(
-        f"{condition} has no supplying system yet (C3-C7 specified, "
+        f"{condition} has no supplying system yet (C4-C7 specified, "
         "not built). Refusing to fake the condition.")
 
 

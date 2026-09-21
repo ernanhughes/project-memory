@@ -5,6 +5,11 @@ perfection and null failure follow from the scorer by construction;
 discrimination counts (lexical vs oracle, overlays) were observed on
 the frozen seed first and are pinned as regression values with the
 mechanism named beside each pin.
+
+The 11-task new-service family is the frozen capstone development
+family (next5 sequence step 1): these ids, topics, and cuts must not
+be edited to help C3-C7. Any fixture change retires this family and
+starts a new one under a new task-set version.
 """
 
 from generator import build
@@ -18,6 +23,26 @@ from simulator import tasks as tasks_mod
 from simulator.world import WorldState
 
 SEED = 20240823
+
+FROZEN_TASK_IDS = [
+    "task-new-service-api-gateway",
+    "task-new-service-audit-log",
+    "task-new-service-blob-storage",
+    "task-new-service-event-store-backend",
+    "task-new-service-feature-flags",
+    "task-new-service-full-text-search-index",
+    "task-new-service-message-queue-backend",
+    "task-new-service-metrics-pipeline",
+    "task-new-service-notification-fan-out",
+    "task-new-service-session-cache",
+    "task-new-service-tracing-backend",
+]
+
+
+def test_frozen_development_family_unchanged():
+    data = run_mod.build_inputs(seed=SEED, n_worlds=12)
+    assert [t.task_id for t in data["tasks"]] == FROZEN_TASK_IDS
+    assert {t.as_of for t in data["tasks"]} == {"2025-06-30"}
 
 
 def _inputs(n_worlds=12):
