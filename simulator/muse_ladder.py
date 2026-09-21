@@ -133,6 +133,19 @@ def build_context(condition: str, views: list[dict], task,
         # the wrong-memory report reads without cross-referencing.
         return build_context("C0" if condition == "W0" else "CO",
                              views, task, world)
+    fconds = {p + a for p in wrong_mod.FRAME_PROBES
+              for a in ("N", "P")}
+    if condition in fconds:
+        # Frame-uncertainty probes: <probe><N naive|P policy>.
+        # Establishment classes and the Ch13 policy mapping are fixed
+        # in wrong_memory.py; this branch only renders.
+        probed, note, _info = wrong_mod.frame_probe_views(
+            "F" + condition[1],
+            "naive" if condition.endswith("N") else "policy",
+            task, views, world)
+        if probed is None:
+            raise _SkipCondition(note)
+        return "\n\n---\n\n".join(render_view(v) for v in probed)
     if condition in wrong_mod.WRONG_CONDITIONS:
         probed, note = wrong_mod.probe_views(condition, task, views,
                                              world)

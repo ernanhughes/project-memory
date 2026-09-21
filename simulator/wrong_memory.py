@@ -55,12 +55,39 @@ judging C3-C7. That outcome is a result, not a failure.
 
 from __future__ import annotations
 
-WRONG_CONDITIONS = ("W0", "WC", "WS", "WM", "WR", "WX", "WP", "WO",
-                    "WXm")
+WRONG_CONDITIONS = ("W0", "WC", "WS", "WM", "WR", "WX", "WP", "WO")
+
+# Frame-uncertainty probes (C5 pass). Each probe fixes a frame plus
+# establishment evidence; the naive arm hard-frames, the policy arm
+# applies the Chapter 13 mapping unretuned. Establishment strength is
+# constant per probe and never follows from frame direction.
+FRAME_PROBES = ("F0", "FW", "FC", "FS", "FU", "FB")
+
+# Fixed establishment per probe (topic-independent by construction).
+PROBE_ESTABLISHMENT = {
+    "F0": "corroborated",   # declared basis + corroborating cue
+    "FW": "weak",            # single ambiguous cue
+    "FC": "conflicting",     # two competing cues
+    "FS": "stale",           # basis predates current work
+    "FU": "unknown",         # no frame cues at all
+    "FB": "unknown",         # no legitimate evidence; naive imposes anyway
+}
+
+# Chapter 13 policy mapping, unretuned. Sim reduction: unknown maps
+# to query-only fallback (no REQUEST/ABSTAIN action path exists in
+# this harness); BROADEN stays unmapped as in the book runs.
+PROBE_POLICY_ACTION = {
+    "corroborated": "HARD_FRAME",
+    "weak": "SOFT_FRAME",
+    "stale": "QUERY_ONLY",
+    "conflicting": "QUERY_ONLY",
+    "unknown": "QUERY_ONLY",
+}
 
 SKIP_NO_SUPERSEDED = "no-superseded-decision-on-topic"
 SKIP_NO_EVIDENCE = "no-supporting-evidence-for-revocation-probe"
 SKIP_NO_WRONG_OPTION = "no-wrong-option-available-for-topic"
+SKIP_NO_EXCLUDING_FILTER = "no-fixed-filter-excludes-decisive"
 
 
 def current_decision(world, topic: str, as_of: str):
@@ -234,3 +261,112 @@ def classify_task(wc_score, w0_score, wrong: dict) -> tuple[str, str]:
                 f"wrong-memory steers away from WC-correct: {bad}")
     return ("INSENSITIVE",
             "no wrong-memory condition moved behavior off WC-correct")
+
+
+def frame_probe_views(probe: str, arm: str, task, views: list[dict],
+                      world) -> tuple[list[dict] | None, str, dict]:
+    """Build naive/policy contexts for frame-uncertainty probes.
+
+    Returns (views | None, note, frame_info). None means skip with
+    reason note. frame_info records the frame name, establishment
+    class, and policy action for the run record. Arm "naive" hard
+    frames; arm "policy" applies PROBE_POLICY_ACTION unretuned.
+
+    Per-topic frame assignment may use hidden truth (which filter
+    covers/excludes the decisive set); establishment strength is
+    fixed per probe and never follows from the assignment. The
+    reader sees only rendered views.
+    """
+    from simulator import frames as frames_mod
+    assert probe in FRAME_PROBES and arm in ("naive", "policy")
+    establishment = PROBE_ESTABLISHMENT[probe]
+    task_views = [v for v in views if v["date"] <= task.as_of]
+    by_id = {v["display_id"]: v for v in task_views}
+    decisive = {d for d in frames_mod.decisive_ids(
+        world, task.topic, task.as_of) if d in by_id}
+    info = {"probe": probe, "arm": arm,
+            "establishment": establishment}
+    if probe == "F0":
+        frame = frames_mod.first_filter_covering(
+            decisive, task_views, True)
+        info.update(frame=frame,
+                    action=PROBE_POLICY_ACTION[establishment])
+        return [frames_mod.hard_filter(frame, task_views),
+                f"corroborated-hard:{frame}", info]
+    if probe == "FW":
+        try:
+            frame = frames_mod.first_filter_covering(
+                decisive, task_views, False)
+        except ValueError:
+            return None, SKIP_NO_EXCLUDING_FILTER, info
+        if arm == "naive":
+            info.update(frame=frame, action="HARD_FRAME-imposed")
+            return [frames_mod.hard_filter(frame, task_views),
+                    f"weak-hard-imposed:{frame}", info]
+        info.update(frame=frame, action=PROBE_POLICY_ACTION[establishment])
+        return [frames_mod.soft_order(frame, task_views),
+                f"weak-soft:{frame}", info]
+    if probe == "FC":
+        # Documented arbitrary pick: alphabetically first frame.
+        frame = sorted(frames_mod.FRAME_NAMES)[0]
+        if arm == "naive":
+            info.update(frame=frame, action="HARD_FRAME-imposed")
+            return [frames_mod.hard_filter(frame, task_views),
+                    f"conflicting-hard-imposed:{frame}", info]
+        info.update(frame=frame, action=PROBE_POLICY_ACTION[establishment])
+        return [_query_fallback_views(task, task_views),
+                "conflicting-fallback", info]
+    if probe == "FS":
+        dates = [r.date for r in world.ledger.records
+                 if r.topic == task.topic and r.kind == "decision"
+                 and r.date <= task.as_of]
+        if not dates:
+            return None, "no-decision-date-for-era-frame", info
+        cutoff = min(dates)
+        kept = [v for v in task_views if v["date"] < cutoff]
+        if arm == "naive":
+            info.update(frame=f"pre-era({cutoff})",
+                        action="HARD_FRAME-imposed")
+            return [kept, f"stale-era-hard:{cutoff}", info]
+        info.update(frame=f"pre-era({cutoff})",
+                    action=PROBE_POLICY_ACTION[establishment])
+        return [_query_fallback_views(task, task_views),
+                "stale-fallback", info]
+    if probe == "FU":
+        if arm == "naive":
+            info.update(frame="dev-session",
+                        action="HARD_FRAME-invented")
+            return [frames_mod.hard_filter("dev-session", task_views),
+                    "unknown-hard-invented:dev-session", info]
+        info.update(frame="none", action=PROBE_POLICY_ACTION[establishment])
+        return [_query_fallback_views(task, task_views),
+                "unknown-fallback", info]
+    if probe == "FB":
+        pref = [v for v in task_views
+                if _kind_of(v, world, task) == "preference"]
+        if arm == "naive":
+            info.update(frame="preference-led",
+                        action="HARD_FRAME-imposed")
+            return [pref, "known-bad-hard:preference-led", info]
+        info.update(frame="none", action=PROBE_POLICY_ACTION[establishment])
+        return [_query_fallback_views(task, task_views),
+                "known-bad-fallback", info]
+    raise ValueError(f"unknown frame probe {probe}")
+
+
+def _query_fallback_views(task, task_views) -> list[dict]:
+    """Pre-registered safe fallback: flat lexical top-5, no frame.
+    Identical construction to C2 by design (asserted in tests), so
+    fallback behavior is shared, not re-measured per probe."""
+    from simulator.actors import rank_lexical_views
+    from simulator.muse_ladder import LEXICAL_K
+    return rank_lexical_views(task_views, task.text)[:LEXICAL_K]
+
+
+def _kind_of(view: dict, world, task) -> str:
+    for record in world.ledger.records:
+        if record.display_id == view["display_id"]:
+            return record.kind
+        if record.second_display_id == view["display_id"]:
+            return record.kind
+    return view.get("kind", "")
