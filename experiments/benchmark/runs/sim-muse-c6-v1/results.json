@@ -1,0 +1,6927 @@
+{
+  "run_id": "sim-muse-c6-v1",
+  "seed": 20240823,
+  "n_worlds": 12,
+  "task_set_version": "sim-v0.1-new-service",
+  "corpus_version": "v0.1",
+  "tasks": [
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "as_of": "2025-06-30"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "as_of": "2025-06-30"
+    }
+  ],
+  "rows": [
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 173,
+        "cached_input_tokens": 0,
+        "output_tokens": 426,
+        "reasoning_tokens": 413,
+        "total_tokens": 599
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 705,
+      "context_chars": 238
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TC-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 705,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TC-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 705,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TC-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 705,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TC-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 705,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TL-RAW",
+      "action": {
+        "target": "nginx",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TL-RAW-r0",
+      "usage": {
+        "input_tokens": 160,
+        "cached_input_tokens": 0,
+        "output_tokens": 303,
+        "reasoning_tokens": 290,
+        "total_tokens": 463
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 655,
+      "context_chars": 188
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TL-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TL-C6-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 205,
+        "reasoning_tokens": 192,
+        "total_tokens": 312
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 467,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TL-S1",
+      "action": {
+        "target": "nginx",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TL-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 655,
+      "context_chars": 188,
+      "inherited_from": "TL-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TL-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 467,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TL-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 467,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 234,
+        "cached_input_tokens": 0,
+        "output_tokens": 451,
+        "reasoning_tokens": 438,
+        "total_tokens": 685
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 945,
+      "context_chars": 478
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TP-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TP-C6-r0",
+      "usage": {
+        "input_tokens": 173,
+        "cached_input_tokens": 0,
+        "output_tokens": 300,
+        "reasoning_tokens": 287,
+        "total_tokens": 473
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 705,
+      "context_chars": 238
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TP-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 705,
+      "context_chars": 238,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TP-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 945,
+      "context_chars": 478,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TP-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 945,
+      "context_chars": 478,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "nginx",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 322,
+        "cached_input_tokens": 0,
+        "output_tokens": 1625,
+        "reasoning_tokens": 1612,
+        "total_tokens": 1947
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1203,
+      "context_chars": 736
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TX-C6-r0",
+      "usage": {
+        "input_tokens": 205,
+        "cached_input_tokens": 0,
+        "output_tokens": 1058,
+        "reasoning_tokens": 1045,
+        "total_tokens": 1263
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 781,
+      "context_chars": 314
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TX-S1",
+      "action": {
+        "target": "nginx",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1203,
+      "context_chars": 736,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TX-S2",
+      "action": {
+        "target": "nginx",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1203,
+      "context_chars": 736,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-api-gateway",
+      "topic": "API gateway",
+      "condition": "TX-S3",
+      "action": {
+        "target": "nginx",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-api-gateway-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1203,
+      "context_chars": 736,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 240,
+        "cached_input_tokens": 0,
+        "output_tokens": 337,
+        "reasoning_tokens": 322,
+        "total_tokens": 577
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 487
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TC-C6",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 487,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TC-S1",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 487,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TC-S2",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 487,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TC-S3",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 487,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TL-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TL-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TL-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TL-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TL-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TL-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TL-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TL-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TL-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TL-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 247,
+        "cached_input_tokens": 0,
+        "output_tokens": 425,
+        "reasoning_tokens": 410,
+        "total_tokens": 672
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 995,
+      "context_chars": 530
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TP-C6",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TP-C6-r0",
+      "usage": {
+        "input_tokens": 186,
+        "cached_input_tokens": 0,
+        "output_tokens": 197,
+        "reasoning_tokens": 182,
+        "total_tokens": 383
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 759,
+      "context_chars": 294
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TP-S1",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 759,
+      "context_chars": 294,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TP-S2",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 995,
+      "context_chars": 530,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TP-S3",
+      "action": {
+        "target": "append-only store",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 995,
+      "context_chars": 530,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 340,
+        "cached_input_tokens": 0,
+        "output_tokens": 927,
+        "reasoning_tokens": 914,
+        "total_tokens": 1267
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1283,
+      "context_chars": 818
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TX-C6-r0",
+      "usage": {
+        "input_tokens": 208,
+        "cached_input_tokens": 0,
+        "output_tokens": 522,
+        "reasoning_tokens": 509,
+        "total_tokens": 730
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 796,
+      "context_chars": 331
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TX-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1283,
+      "context_chars": 818,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TX-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1283,
+      "context_chars": 818,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-audit-log",
+      "topic": "audit log",
+      "condition": "TX-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-audit-log-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1283,
+      "context_chars": 818,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 235,
+        "reasoning_tokens": 221,
+        "total_tokens": 409
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TC-C6",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TC-S1",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TC-S2",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TC-S3",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TL-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TL-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TL-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TL-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TL-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TL-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TL-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TL-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TL-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TL-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 240,
+        "cached_input_tokens": 0,
+        "output_tokens": 1076,
+        "reasoning_tokens": 1062,
+        "total_tokens": 1316
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 927,
+      "context_chars": 459
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TP-C6",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TP-C6-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 249,
+        "reasoning_tokens": 235,
+        "total_tokens": 423
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TP-S1",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 659,
+      "context_chars": 191,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TP-S2",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 927,
+      "context_chars": 459,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TP-S3",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 927,
+      "context_chars": 459,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 325,
+        "cached_input_tokens": 0,
+        "output_tokens": 608,
+        "reasoning_tokens": 594,
+        "total_tokens": 933
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1170,
+      "context_chars": 702
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TX-C6-r0",
+      "usage": {
+        "input_tokens": 206,
+        "cached_input_tokens": 0,
+        "output_tokens": 462,
+        "reasoning_tokens": 449,
+        "total_tokens": 668
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 788,
+      "context_chars": 320
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TX-S1",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1170,
+      "context_chars": 702,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TX-S2",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1170,
+      "context_chars": 702,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-blob-storage",
+      "topic": "blob storage",
+      "condition": "TX-S3",
+      "action": {
+        "target": "S3",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-blob-storage-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1170,
+      "context_chars": 702,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 352,
+        "cached_input_tokens": 0,
+        "output_tokens": 495,
+        "reasoning_tokens": 481,
+        "total_tokens": 847
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1452,
+      "context_chars": 977
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TC-C6",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1452,
+      "context_chars": 977,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TC-S1",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1452,
+      "context_chars": 977,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TC-S2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1452,
+      "context_chars": 977,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TC-S3",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1452,
+      "context_chars": 977,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TR-RAW",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TR-RAW-r0",
+      "usage": {
+        "input_tokens": 233,
+        "cached_input_tokens": 0,
+        "output_tokens": 550,
+        "reasoning_tokens": 536,
+        "total_tokens": 783
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 913,
+      "context_chars": 438
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TR-C6",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TR-C6-r0",
+      "usage": {
+        "input_tokens": 176,
+        "cached_input_tokens": 0,
+        "output_tokens": 197,
+        "reasoning_tokens": 183,
+        "total_tokens": 373
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TR-S1",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TR-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217,
+      "inherited_from": "TR-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TR-S2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TR-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217,
+      "inherited_from": "TR-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TR-S3",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TR-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217,
+      "inherited_from": "TR-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TL-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TL-RAW-r0",
+      "usage": {
+        "input_tokens": 175,
+        "cached_input_tokens": 0,
+        "output_tokens": 483,
+        "reasoning_tokens": 470,
+        "total_tokens": 658
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 754,
+      "context_chars": 279
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TL-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TL-C6-r0",
+      "usage": {
+        "input_tokens": 108,
+        "cached_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_tokens": 175,
+        "total_tokens": 296
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TL-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TL-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 754,
+      "context_chars": 279,
+      "inherited_from": "TL-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TL-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TL-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 243,
+        "cached_input_tokens": 0,
+        "output_tokens": 651,
+        "reasoning_tokens": 637,
+        "total_tokens": 894
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 970,
+      "context_chars": 495
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TP-C6",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TP-C6-r0",
+      "usage": {
+        "input_tokens": 176,
+        "cached_input_tokens": 0,
+        "output_tokens": 394,
+        "reasoning_tokens": 380,
+        "total_tokens": 570
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TP-S1",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 692,
+      "context_chars": 217,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TP-S2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 970,
+      "context_chars": 495,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TP-S3",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 970,
+      "context_chars": 495,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TD-RAW",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TD-RAW-r0",
+      "usage": {
+        "input_tokens": 169,
+        "cached_input_tokens": 0,
+        "output_tokens": 654,
+        "reasoning_tokens": 640,
+        "total_tokens": 823
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 700,
+      "context_chars": 225
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TD-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TD-C6-r0",
+      "usage": {
+        "input_tokens": 108,
+        "cached_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_tokens": 175,
+        "total_tokens": 296
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TD-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TD-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TD-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 475,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 330,
+        "cached_input_tokens": 0,
+        "output_tokens": 1221,
+        "reasoning_tokens": 1207,
+        "total_tokens": 1551
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1237,
+      "context_chars": 762
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TX-C6-r0",
+      "usage": {
+        "input_tokens": 209,
+        "cached_input_tokens": 0,
+        "output_tokens": 496,
+        "reasoning_tokens": 483,
+        "total_tokens": 705
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 819,
+      "context_chars": 344
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TX-S1",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1237,
+      "context_chars": 762,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TX-S2",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1237,
+      "context_chars": 762,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-event-store-backend",
+      "topic": "event-store backend",
+      "condition": "TX-S3",
+      "action": {
+        "target": "PostgreSQL",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-event-store-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1237,
+      "context_chars": 762,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 175,
+        "cached_input_tokens": 0,
+        "output_tokens": 196,
+        "reasoning_tokens": 181,
+        "total_tokens": 371
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TC-C6",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TC-S1",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TC-S2",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TC-S3",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TL-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TL-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TL-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TL-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TL-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TL-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TL-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TL-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TL-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TL-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 236,
+        "cached_input_tokens": 0,
+        "output_tokens": 435,
+        "reasoning_tokens": 420,
+        "total_tokens": 671
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 922,
+      "context_chars": 453
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TP-C6",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TP-C6-r0",
+      "usage": {
+        "input_tokens": 175,
+        "cached_input_tokens": 0,
+        "output_tokens": 396,
+        "reasoning_tokens": 381,
+        "total_tokens": 571
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TP-S1",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 678,
+      "context_chars": 209,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TP-S2",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 922,
+      "context_chars": 453,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TP-S3",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 922,
+      "context_chars": 453,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TD-RAW",
+      "action": {
+        "target": "LaunchDarkly",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TD-RAW-r0",
+      "usage": {
+        "input_tokens": 175,
+        "cached_input_tokens": 0,
+        "output_tokens": 611,
+        "reasoning_tokens": 596,
+        "total_tokens": 786
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 695,
+      "context_chars": 226
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TD-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TD-C6-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 198,
+        "reasoning_tokens": 185,
+        "total_tokens": 305
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TD-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TD-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TD-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 329,
+        "cached_input_tokens": 0,
+        "output_tokens": 782,
+        "reasoning_tokens": 769,
+        "total_tokens": 1111
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TX-C6-r0",
+      "usage": {
+        "input_tokens": 208,
+        "cached_input_tokens": 0,
+        "output_tokens": 561,
+        "reasoning_tokens": 548,
+        "total_tokens": 769
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 811,
+      "context_chars": 342
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TX-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TX-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-feature-flags",
+      "topic": "feature flags",
+      "condition": "TX-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-feature-flags-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 194,
+        "cached_input_tokens": 0,
+        "output_tokens": 258,
+        "reasoning_tokens": 244,
+        "total_tokens": 452
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TC-C6",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TC-S1",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TC-S2",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TC-S3",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TL-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TL-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TL-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TL-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TL-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TL-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TL-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TL-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TL-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TL-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 263,
+        "cached_input_tokens": 0,
+        "output_tokens": 748,
+        "reasoning_tokens": 734,
+        "total_tokens": 1011
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1044,
+      "context_chars": 566
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TP-C6",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TP-C6-r0",
+      "usage": {
+        "input_tokens": 194,
+        "cached_input_tokens": 99,
+        "output_tokens": 258,
+        "reasoning_tokens": 244,
+        "total_tokens": 452
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TP-S1",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 753,
+      "context_chars": 275,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TP-S2",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1044,
+      "context_chars": 566,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TP-S3",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1044,
+      "context_chars": 566,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 355,
+        "cached_input_tokens": 0,
+        "output_tokens": 744,
+        "reasoning_tokens": 730,
+        "total_tokens": 1099
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1337,
+      "context_chars": 859
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TX-C6-r0",
+      "usage": {
+        "input_tokens": 215,
+        "cached_input_tokens": 0,
+        "output_tokens": 473,
+        "reasoning_tokens": 460,
+        "total_tokens": 688
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 848,
+      "context_chars": 370
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TX-S1",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1337,
+      "context_chars": 859,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TX-S2",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1337,
+      "context_chars": 859,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-full-text-search-index",
+      "topic": "full-text search index",
+      "condition": "TX-S3",
+      "action": {
+        "target": "Typesense",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-full-text-search-index-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1337,
+      "context_chars": 859,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 370,
+        "reasoning_tokens": 357,
+        "total_tokens": 544
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 738,
+      "context_chars": 261
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TC-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 738,
+      "context_chars": 261,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TC-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 738,
+      "context_chars": 261,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TC-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 738,
+      "context_chars": 261,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TC-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 738,
+      "context_chars": 261,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TL-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TL-RAW-r0",
+      "usage": {
+        "input_tokens": 187,
+        "cached_input_tokens": 0,
+        "output_tokens": 266,
+        "reasoning_tokens": 253,
+        "total_tokens": 453
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 804,
+      "context_chars": 327
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TL-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TL-C6-r0",
+      "usage": {
+        "input_tokens": 109,
+        "cached_input_tokens": 0,
+        "output_tokens": 235,
+        "reasoning_tokens": 222,
+        "total_tokens": 344
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 477,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TL-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TL-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 804,
+      "context_chars": 327,
+      "inherited_from": "TL-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TL-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 477,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TL-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 477,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 239,
+        "cached_input_tokens": 0,
+        "output_tokens": 504,
+        "reasoning_tokens": 491,
+        "total_tokens": 743
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 998,
+      "context_chars": 521
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TP-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TP-C6-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 415,
+        "reasoning_tokens": 402,
+        "total_tokens": 589
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 738,
+      "context_chars": 261
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TP-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 738,
+      "context_chars": 261,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TP-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 998,
+      "context_chars": 521,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TP-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 998,
+      "context_chars": 521,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "Kafka",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 336,
+        "cached_input_tokens": 0,
+        "output_tokens": 1077,
+        "reasoning_tokens": 1064,
+        "total_tokens": 1413
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1299,
+      "context_chars": 822
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TX-C6-r0",
+      "usage": {
+        "input_tokens": 216,
+        "cached_input_tokens": 0,
+        "output_tokens": 656,
+        "reasoning_tokens": 643,
+        "total_tokens": 872
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 834,
+      "context_chars": 357
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TX-S1",
+      "action": {
+        "target": "Kafka",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1299,
+      "context_chars": 822,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TX-S2",
+      "action": {
+        "target": "Kafka",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1299,
+      "context_chars": 822,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-message-queue-backend",
+      "topic": "message-queue backend",
+      "condition": "TX-S3",
+      "action": {
+        "target": "Kafka",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-message-queue-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1299,
+      "context_chars": 822,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 181,
+        "cached_input_tokens": 0,
+        "output_tokens": 217,
+        "reasoning_tokens": 202,
+        "total_tokens": 398
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TC-C6",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TC-S1",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TC-S2",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TC-S3",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TL-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TL-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TL-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TL-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TL-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TL-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TL-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TL-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TL-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TL-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 242,
+        "cached_input_tokens": 0,
+        "output_tokens": 563,
+        "reasoning_tokens": 548,
+        "total_tokens": 805
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 982,
+      "context_chars": 510
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TP-C6",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TP-C6-r0",
+      "usage": {
+        "input_tokens": 181,
+        "cached_input_tokens": 0,
+        "output_tokens": 299,
+        "reasoning_tokens": 284,
+        "total_tokens": 480
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TP-S1",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 732,
+      "context_chars": 260,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TP-S2",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 982,
+      "context_chars": 510,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TP-S3",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 982,
+      "context_chars": 510,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TD-RAW",
+      "action": {
+        "target": "OTLP",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TD-RAW-r0",
+      "usage": {
+        "input_tokens": 180,
+        "cached_input_tokens": 0,
+        "output_tokens": 425,
+        "reasoning_tokens": 410,
+        "total_tokens": 605
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 714,
+      "context_chars": 242
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TD-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TD-C6-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 202,
+        "reasoning_tokens": 189,
+        "total_tokens": 309
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 472,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TD-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 472,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TD-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 472,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TD-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TD-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 472,
+      "context_chars": 0,
+      "inherited_from": "TD-C6"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 335,
+        "cached_input_tokens": 0,
+        "output_tokens": 1839,
+        "reasoning_tokens": 1826,
+        "total_tokens": 2174
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1285,
+      "context_chars": 813
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TX-C6-r0",
+      "usage": {
+        "input_tokens": 208,
+        "cached_input_tokens": 0,
+        "output_tokens": 515,
+        "reasoning_tokens": 502,
+        "total_tokens": 723
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 818,
+      "context_chars": 346
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TX-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1285,
+      "context_chars": 813,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TX-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1285,
+      "context_chars": 813,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-metrics-pipeline",
+      "topic": "metrics pipeline",
+      "condition": "TX-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-metrics-pipeline-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1285,
+      "context_chars": 813,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 246,
+        "cached_input_tokens": 0,
+        "output_tokens": 391,
+        "reasoning_tokens": 378,
+        "total_tokens": 637
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 984,
+      "context_chars": 508
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TC-C6",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 984,
+      "context_chars": 508,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TC-S1",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 984,
+      "context_chars": 508,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TC-S2",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 984,
+      "context_chars": 508,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TC-S3",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 984,
+      "context_chars": 508,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TL-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TL-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TL-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TL-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TL-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TL-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TL-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TL-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TL-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TL-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 250,
+        "cached_input_tokens": 0,
+        "output_tokens": 552,
+        "reasoning_tokens": 539,
+        "total_tokens": 802
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1043,
+      "context_chars": 567
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TP-C6",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TP-C6-r0",
+      "usage": {
+        "input_tokens": 187,
+        "cached_input_tokens": 0,
+        "output_tokens": 323,
+        "reasoning_tokens": 310,
+        "total_tokens": 510
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 785,
+      "context_chars": 309
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TP-S1",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 785,
+      "context_chars": 309,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TP-S2",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1043,
+      "context_chars": 567,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TP-S3",
+      "action": {
+        "target": "SNS",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1043,
+      "context_chars": 567,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 345,
+        "cached_input_tokens": 0,
+        "output_tokens": 734,
+        "reasoning_tokens": 721,
+        "total_tokens": 1079
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1361,
+      "context_chars": 885
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TX-C6-r0",
+      "usage": {
+        "input_tokens": 211,
+        "cached_input_tokens": 0,
+        "output_tokens": 487,
+        "reasoning_tokens": 474,
+        "total_tokens": 698
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 837,
+      "context_chars": 361
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TX-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1361,
+      "context_chars": 885,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TX-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1361,
+      "context_chars": 885,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-notification-fan-out",
+      "topic": "notification fan-out",
+      "condition": "TX-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-notification-fan-out-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1361,
+      "context_chars": 885,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 490,
+        "reasoning_tokens": 477,
+        "total_tokens": 664
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 707,
+      "context_chars": 238
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TC-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 707,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TC-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 707,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TC-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 707,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TC-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 707,
+      "context_chars": 238,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TL-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TL-RAW-r0",
+      "usage": {
+        "input_tokens": 175,
+        "cached_input_tokens": 0,
+        "output_tokens": 590,
+        "reasoning_tokens": 577,
+        "total_tokens": 765
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 733,
+      "context_chars": 264
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TL-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TL-C6-r0",
+      "usage": {
+        "input_tokens": 107,
+        "cached_input_tokens": 0,
+        "output_tokens": 170,
+        "reasoning_tokens": 157,
+        "total_tokens": 277
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TL-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TL-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 733,
+      "context_chars": 264,
+      "inherited_from": "TL-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TL-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TL-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TL-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 469,
+      "context_chars": 0,
+      "inherited_from": "TL-C6"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 235,
+        "cached_input_tokens": 0,
+        "output_tokens": 1278,
+        "reasoning_tokens": 1265,
+        "total_tokens": 1513
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 951,
+      "context_chars": 482
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TP-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TP-C6-r0",
+      "usage": {
+        "input_tokens": 174,
+        "cached_input_tokens": 0,
+        "output_tokens": 429,
+        "reasoning_tokens": 416,
+        "total_tokens": 603
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 707,
+      "context_chars": 238
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TP-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 707,
+      "context_chars": 238,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TP-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 951,
+      "context_chars": 482,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TP-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 951,
+      "context_chars": 482,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "Redis",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 323,
+        "cached_input_tokens": 0,
+        "output_tokens": 1312,
+        "reasoning_tokens": 1299,
+        "total_tokens": 1635
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TX-C6-r0",
+      "usage": {
+        "input_tokens": 205,
+        "cached_input_tokens": 0,
+        "output_tokens": 453,
+        "reasoning_tokens": 440,
+        "total_tokens": 658
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 795,
+      "context_chars": 326
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TX-S1",
+      "action": {
+        "target": "Redis",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TX-S2",
+      "action": {
+        "target": "Redis",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-session-cache",
+      "topic": "session cache",
+      "condition": "TX-S3",
+      "action": {
+        "target": "Redis",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.unknown-target"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-session-cache-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1221,
+      "context_chars": 752,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TC-RAW",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TC-RAW-r0",
+      "usage": {
+        "input_tokens": 239,
+        "cached_input_tokens": 0,
+        "output_tokens": 490,
+        "reasoning_tokens": 477,
+        "total_tokens": 729
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 481
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TC-C6",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 481,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TC-S1",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 481,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TC-S2",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 481,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TC-S3",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TC-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 952,
+      "context_chars": 481,
+      "inherited_from": "TC-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TR-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TR-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TR-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TR-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TR-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TR-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TR-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TR-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TR-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-supporting-evidence-for-revocation-probe",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TR-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TL-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TL-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TL-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TL-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TL-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TL-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TL-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TL-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TL-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-preference-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TL-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TP-RAW",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TP-RAW-r0",
+      "usage": {
+        "input_tokens": 242,
+        "cached_input_tokens": 0,
+        "output_tokens": 518,
+        "reasoning_tokens": 505,
+        "total_tokens": 760
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1010,
+      "context_chars": 539
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TP-C6",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TP-C6-r0",
+      "usage": {
+        "input_tokens": 181,
+        "cached_input_tokens": 0,
+        "output_tokens": 327,
+        "reasoning_tokens": 314,
+        "total_tokens": 508
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 762,
+      "context_chars": 291
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TP-S1",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TP-C6-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 762,
+      "context_chars": 291,
+      "inherited_from": "TP-C6"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TP-S2",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1010,
+      "context_chars": 539,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TP-S3",
+      "action": {
+        "target": "Tempo",
+        "parse": "ok"
+      },
+      "task_score": 1.0,
+      "harmful": 0,
+      "codes": [
+        "ok.current"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TP-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1010,
+      "context_chars": 539,
+      "inherited_from": "TP-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TD-RAW",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TD-RAW-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TD-C6",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TD-C6-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TD-S1",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TD-S1-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TD-S2",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TD-S2-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TD-S3",
+      "action": {
+        "target": null
+      },
+      "task_score": null,
+      "harmful": 0,
+      "codes": [],
+      "skipped": "no-derived-record-on-topic",
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TD-S3-r0",
+      "usage": {},
+      "prompt_chars": 0,
+      "context_chars": 0
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TX-RAW",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TX-RAW-r0",
+      "usage": {
+        "input_tokens": 333,
+        "cached_input_tokens": 0,
+        "output_tokens": 795,
+        "reasoning_tokens": 782,
+        "total_tokens": 1128
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1310,
+      "context_chars": 839
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TX-C6",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TX-C6-r0",
+      "usage": {
+        "input_tokens": 206,
+        "cached_input_tokens": 0,
+        "output_tokens": 505,
+        "reasoning_tokens": 492,
+        "total_tokens": 711
+      },
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 814,
+      "context_chars": 343
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TX-S1",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1310,
+      "context_chars": 839,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TX-S2",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1310,
+      "context_chars": 839,
+      "inherited_from": "TX-RAW"
+    },
+    {
+      "task_id": "task-new-service-tracing-backend",
+      "topic": "tracing backend",
+      "condition": "TX-S3",
+      "action": {
+        "target": "unknown",
+        "parse": "ok"
+      },
+      "task_score": 0.0,
+      "harmful": 0,
+      "codes": [
+        "miss.abstained"
+      ],
+      "session_id": "sim-muse-c6-v1-task-new-service-tracing-backend-TX-RAW-r0",
+      "usage": {},
+      "model": "muse-spark-1.3-contributor",
+      "attempts": 1,
+      "prompt_chars": 1310,
+      "context_chars": 839,
+      "inherited_from": "TX-RAW"
+    }
+  ],
+  "summary": {
+    "TC-C6": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TC-RAW": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TC-S1": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TC-S2": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TC-S3": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TD-C6": {
+      "n": 3,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 8
+    },
+    "TD-RAW": {
+      "n": 3,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 8
+    },
+    "TD-S1": {
+      "n": 3,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 8
+    },
+    "TD-S2": {
+      "n": 3,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 8
+    },
+    "TD-S3": {
+      "n": 3,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 8
+    },
+    "TL-C6": {
+      "n": 4,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 7
+    },
+    "TL-RAW": {
+      "n": 4,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 7
+    },
+    "TL-S1": {
+      "n": 4,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 7
+    },
+    "TL-S2": {
+      "n": 4,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 7
+    },
+    "TL-S3": {
+      "n": 4,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 7
+    },
+    "TP-C6": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TP-RAW": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TP-S1": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TP-S2": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TP-S3": {
+      "n": 11,
+      "task_success": 0.7273,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TR-C6": {
+      "n": 1,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 10
+    },
+    "TR-RAW": {
+      "n": 1,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 10
+    },
+    "TR-S1": {
+      "n": 1,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 10
+    },
+    "TR-S2": {
+      "n": 1,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 10
+    },
+    "TR-S3": {
+      "n": 1,
+      "task_success": 1.0,
+      "harmful_tasks": 0,
+      "skipped": 10
+    },
+    "TX-C6": {
+      "n": 11,
+      "task_success": 0.0,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TX-RAW": {
+      "n": 11,
+      "task_success": 0.2727,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TX-S1": {
+      "n": 11,
+      "task_success": 0.2727,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TX-S2": {
+      "n": 11,
+      "task_success": 0.2727,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "TX-S3": {
+      "n": 11,
+      "task_success": 0.2727,
+      "harmful_tasks": 0,
+      "skipped": 0
+    },
+    "usage": {
+      "input_tokens": 15321,
+      "cached_input_tokens": 99,
+      "output_tokens": 38010,
+      "reasoning_tokens": 37050,
+      "total_tokens": 53331,
+      "calls": 71
+    }
+  },
+  "reader": {
+    "reader_provider": "opencode-zen-go",
+    "reader_backend": "opencode-responses (opencode.ai)",
+    "reader_model": "muse-spark-1.3-contributor",
+    "reasoning_effort": "low",
+    "temperature": 0.0,
+    "max_output_tokens": 2048,
+    "empty_output_retry": 4096,
+    "retry_output_tokens": 4096,
+    "session_policy": "unique-per-call (run-task-condition-repeat)"
+  }
+}
