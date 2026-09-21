@@ -90,11 +90,9 @@ def build_context(condition: str, views: list[dict], task,
     if condition == "C1":
         return "\n\n---\n\n".join(render_view(v) for v in views)
     if condition == "C2":
-        ranked = sorted(
-            views,
-            key=lambda a: (-actor_mod._overlap(
-                task.text, a["title"] + " " + a["body"]), a["display_id"]))
-        return "\n\n---\n\n".join(render_view(v) for v in ranked[:LEXICAL_K])
+        ranked = actor_mod.rank_lexical_views(
+            views, task.text)[:LEXICAL_K]
+        return "\n\n---\n\n".join(render_view(v) for v in ranked)
     if condition == "CO":
         current = [r for r in world.ledger.records
                    if r.topic == task.topic and r.kind == "decision"
@@ -217,11 +215,55 @@ def summarize(rows: list[dict]) -> dict:
             for cond, e in sorted(by_cond.items())} | {"usage": usage_totals}
 
 
+def _git_head(repo: Path) -> str:
+    import subprocess
+    return subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], cwd=str(repo), text=True).strip()
+
+
+def _git_dirty(repo: Path) -> bool:
+    import subprocess
+    out = subprocess.check_output(
+        ["git", "status", "--porcelain"], cwd=str(repo), text=True)
+    return bool(out.strip())
+
+
+def _sha256_file(path: Path) -> bytes:
+    import hashlib
+    digest = hashlib.sha256()
+    with open(path, "rb") as handle:
+        for chunk in iter(lambda: handle.read(65536), b""):
+            digest.update(chunk)
+    return digest.digest()
+
+
+def corpus_digest() -> str:
+    """Digest over the frozen v0.1 corpus this ladder reads."""
+    import hashlib
+    corpus = _PM_ROOT / "experiments" / "benchmark" / "fixtures" / "v0.1"
+    digest = hashlib.sha256()
+    for path in sorted(corpus.rglob("*")):
+        if path.is_file():
+            digest.update(path.relative_to(corpus).as_posix().encode())
+            digest.update(_sha256_file(path))
+    return digest.hexdigest()
+
+
 def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
                 seed: int = run_mod.DEFAULT_SEED,
                 n_worlds: int = run_mod.DEFAULT_WORLDS,
                 out=None, repo_root=None) -> Path:
     from generator import manifest as manifest_mod
+
+    pm_root = Path(repo_root or _PM_ROOT)
+    memory_root = _MEMORY_SOLUTION.parent
+    for repo, label in ((pm_root, "project-memory"),
+                        (memory_root, "memory")):
+        if _git_dirty(repo):
+            raise SystemExit(
+                f"REFUSING TO FREEZE: {label} working tree is dirty "
+                f"({repo}). Canonical runs require dirty_state=false "
+                "in every source repo; commit or stash first.")
 
     out = Path(out or f"experiments/benchmark/runs/{run_id}")
     out.mkdir(parents=True, exist_ok=True)
@@ -235,6 +277,7 @@ def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
         "temperature": TEMPERATURE,
         "max_output_tokens": MAX_OUTPUT_TOKENS,
         "empty_output_retry": MAX_OUTPUT_TOKENS * 2,
+        "retry_output_tokens": MAX_OUTPUT_TOKENS * 2,
         "session_policy": "unique-per-call "
                           "(run-task-condition-repeat)",
     }
@@ -243,10 +286,31 @@ def freeze_muse(client: OpenCodeModel, run_id: str, model: str,
     man = manifest_mod.Manifest(
         corpus_version=CORPUS_VERSION, seed=seed,
         n_parametric_worlds=n_worlds,
-        generator_commit=manifest_mod.generator_commit(
-            Path(repo_root or _PM_ROOT)),
+        generator_commit=manifest_mod.generator_commit(pm_root),
         query_set_version=TASK_SET_VERSION + "+muse-ladder")
     manifest_mod.write_manifest(out, man)
+    # Provenance v2: the base manifest's generator_commit is no longer
+    # enough — the experiment spans two repos plus the provider file.
+    import hashlib as _hl
+    provider_file = _MEMORY_SOLUTION / "providers" / "opencode.py"
+    provenance = {
+        "code_commit": _git_head(pm_root),
+        "dirty_state": False,
+        "corpus_digest": corpus_digest(),
+        "provider": "opencode-zen-go",
+        "provider_model": model,
+        "provider_source_repo": "ernanhughes/memory",
+        "provider_source_commit": _git_head(memory_root),
+        "provider_source_dirty": False,
+        "provider_source_file": "solution/providers/opencode.py",
+        "provider_source_file_sha256": _hl.sha256(
+            provider_file.read_bytes()).hexdigest(),
+    }
+    manifest_path = out / "manifest.json"
+    manifest_data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest_data["provenance"] = provenance
+    manifest_path.write_text(
+        json.dumps(manifest_data, indent=2) + "\n", encoding="utf-8")
     print(f"frozen muse ladder at {out} "
           f"({len(result['tasks'])} tasks x {len(CONDITIONS)} conditions)")
     return out

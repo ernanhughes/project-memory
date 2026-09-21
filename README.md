@@ -33,7 +33,7 @@ only — World A as a canonical fixture plus N parametric worlds (default
 intentions, no procedures yet.
 
 ```bash
-python -m pytest -q                                  # 37 tests, incl. plant-a-leak
+python -m pytest -q                                  # 59 tests, incl. plant-a-leak
 python -m generator.build --repo-root .              # seed 20240823, frozen to
                                                      # experiments/benchmark/fixtures/v0.1
 ```
@@ -43,34 +43,38 @@ Layout: `corpus/artifacts/gen-NNNNNN.md` + `corpus/queries.jsonl`
 (`ledger.jsonl`, `expected.jsonl`, E-04 `oracle*.jsonl`,
 `build_meta.jsonl`). The build refuses to freeze unless all five
 leakage audits pass; see `experiments/benchmark/AUDIT-REPORT.md`.
-No retriever, memory system, or model call lives in this repo yet —
-that is H2.
+
+## Model-mediated ladder (Muse)
+
+`simulator/muse_ladder.py` runs the same 11 new-service tasks
+through Muse Spark with four frozen conditions (C0 no memory, C1
+full history, C2 lexical top-5, CO oracle evidence); C3–C7 refuse
+with `NotImplementedError` until their supplying systems exist.
+Model calls live only in this harness and its frozen runs — the
+deterministic T1/T2 core stays model-free.
+
+```bash
+python -m simulator.muse_ladder --run-id sim-muse-v2 \
+    --out experiments/benchmark/runs/sim-muse-v2
+```
 
 ## Status
 
-### Implemented
+Implemented:
 
-- Controlled-corpus generator (H1: E-03 / E-04, Q1/Q2) with frozen
-  v0.1 corpus, leakage audits, and manifest verification.
-- Ledger schema v0.1 (decision, proposal, preference, evidence,
-  production_state, derived_restatement) with validation.
-- Action simulator T1/T2 (`simulator/`, 48 tests): deterministic
-  world state, new-service tasks, rule actors, reason-coded scoring,
-  ledger overlays, frozen baseline ladder
-  (`experiments/benchmark/runs/sim-v0.1/`).
+- controlled generator
+- deterministic T1 action simulator
+- rule-actor T2 baseline
+- Muse-first model-mediated baseline C0/C1/C2/CO
 
-### In progress
+Measured:
 
-- Nothing (specifications below are not implementation).
+- sim-v0.1
+- sim-muse-v2
 
-### Planned
+Not implemented:
 
-- Trust/admission boundary (spec/trust-policy.md): staged admission
-  with reason codes; measured in the Memory book Chapter 17 runs,
-  not yet ported to this generator.
-- Ledger schema extension (spec/ledger-schema.md): project scope,
-  source class, authority, revocation, restriction, poison labels.
-- Capstone benchmark (spec/benchmark.md) and action simulator,
-  procedures/outcomes, CLI/MCP surface (spec/capstone-tickets.md).
-- Ledger RECONCILIATION trust items proposed in
-  spec/running-examples.md (awaiting author merge approval).
+- C3–C7
+- integrated Q1–Q6 capstone
+- trust port
+- real-corpus validation

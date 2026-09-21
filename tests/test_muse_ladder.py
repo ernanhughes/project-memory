@@ -7,6 +7,8 @@ only by frozen runs with manifests.
 
 from simulator import muse_ladder as ml
 from simulator import run as run_mod
+from simulator.actors import rank_lexical_views
+from simulator.muse_ladder import render_view
 
 
 def _inputs():
@@ -74,6 +76,15 @@ def test_session_unique_per_call():
     b = ml.session_for("run1", "task-x", "C1")
     c = ml.session_for("run1", "task-x", "C0", repeat=1)
     assert len({a, b, c}) == 3
+
+
+def test_c2_shares_ranking_with_lexical_actor():
+    world, tasks, views = _inputs()
+    task_views = [v for v in views if v["date"] <= tasks[0].as_of]
+    expected = "\n\n---\n\n".join(
+        render_view(v)
+        for v in rank_lexical_views(task_views, tasks[0].text)[:ml.LEXICAL_K])
+    assert ml.build_context("C2", task_views, tasks[0], world) == expected
 
 
 def test_prompt_carries_full_context_every_call():

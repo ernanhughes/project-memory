@@ -31,6 +31,19 @@ def _overlap(query: str, body: str) -> int:
     return len(set(content_words(query)) & set(content_words(body)))
 
 
+def rank_lexical_views(views: list[dict], query_text: str) -> list[dict]:
+    """Public lexical ranking shared by LexicalActor and Muse C2.
+
+    Word-overlap rank, tie-break by display id. Callers choose their
+    own cutoff (or none); the ordering itself is the contract, so the
+    two retrieval paths cannot drift apart silently.
+    """
+    return sorted(views,
+                  key=lambda a: (-_overlap(query_text, a["title"]
+                                           + " " + a["body"]),
+                                 a["display_id"]))
+
+
 class NullActor:
     name = "null"
 
@@ -58,11 +71,7 @@ class LexicalActor:
     name = "lexical"
 
     def act(self, artifacts: list[dict], task) -> dict:
-        ranked = sorted(artifacts,
-                        key=lambda a: (-_overlap(task.text, a["title"]
-                                                 + " " + a["body"]),
-                                       a["display_id"]))
-        for art in ranked:
+        for art in rank_lexical_views(artifacts, task.text):
             body = art["body"]
             for pattern in (_NEW_RE, _OLD_RE, _PREF_RE):
                 match = pattern.search(body)
