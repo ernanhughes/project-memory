@@ -155,3 +155,25 @@ def test_corroborated_conflict_quarantined_only_via_conflict():
     for uid in quarantined:
         assert res[uid].reason == "quarantine.conflicting_evidence"
         assert res[uid].stage == "conflict"
+
+
+def test_echo_of_present_revoked_source_admitted_gap():
+    # Known trust-policy gap, pinned (not patched here): revocation
+    # of a PRESENT source does not propagate to its derivations.
+    # _grounded checks kinds, _established checks currency — neither
+    # consults revoked. T7 must add revocation inheritance; this test
+    # names the gap so the port cannot silently inherit it.
+    from simulator import trust_gate as _tg
+    _tp = _tg.tp
+    src = _tp.Unit("adr-007", "decision", "main", "2024-07-11",
+                   "Target PostgreSQL.", "target PostgreSQL", "adr",
+                   "2024-07-11", "", (), (), True, "")
+    echo = _tp.Unit("runbook-006", "derived_restatement", "main",
+                    "2024-08-16", "Operators note: target PostgreSQL.",
+                    "target PostgreSQL", "runbook", "", "",
+                    ("adr-007",), (), False, "")
+    packet = _tp.TaskPacket("t", "q", "2024-08-23", "main", "agent",
+                            True)
+    res = _tp.apply_policy([src, echo], packet, "FULL")
+    assert res.admissions["adr-007"].verdict == "deny"
+    assert res.admissions["runbook-006"].verdict == "admit"

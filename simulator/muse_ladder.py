@@ -277,10 +277,13 @@ def run_trust_probe(client: OpenCodeModel, run_id: str, task,
     for lvl in order:
         cond = f"{probe}-{lvl}"
         if strings[lvl] in seen:
+            # Exact-prompt identity: share the outcome, never the
+            # usage dict (shared dicts double-count calls upstream).
             src = seen[strings[lvl]]
             row = dict(rows[src])
             row["condition"] = cond
             row["inherited_from"] = src
+            row["usage"] = {}
             rows[cond] = row
             continue
         rows[cond] = _live_row(client, run_id, task, world, cond,
