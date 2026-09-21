@@ -372,7 +372,8 @@ def main(argv: list[str] | None = None) -> None:
     freeze_muse(client, run_id, model, seed=args.seed,
                 n_worlds=args.worlds,
                 out=args.out or f"experiments/benchmark/runs/{run_id}",
-                repo_root=args.repo_root or _PM_ROOT)
+                repo_root=args.repo_root or _PM_ROOT,
+                conditions=tuple(args.conditions))
 
 
 if __name__ == "__main__":
