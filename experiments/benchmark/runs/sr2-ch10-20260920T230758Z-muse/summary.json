@@ -1,0 +1,7 @@
+{
+  "keyword_work_type_accuracy": 0.7273,
+  "declared_mean_must_recall": 0.9015,
+  "keyword_mean_must_recall": 0.8712,
+  "muse_work_type_accuracy": 0.7273,
+  "muse_mean_must_recall": 0.9242
+}

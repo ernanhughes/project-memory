@@ -1,0 +1,226 @@
+{
+  "corpus_version": "ch3-fixture-v0.1",
+  "task_set_version": "nexus-routing-tasks-v0.1",
+  "notes": "Chapter 6 routing benchmark. Extends the Chapter 4 task set with indirect (chain-reachable), no-memory-needed, and additional unsupported families. routing_family is analysis metadata and evaluator-only: it is never visible to a router except in the labelled leakage control.",
+  "history_source_ids": [
+    "session-014.md",
+    "session-019.md",
+    "experiment-contention.md",
+    "incident-021.md",
+    "benchmark-note.md",
+    "adr-007.md",
+    "session-040.md",
+    "session-044.md",
+    "adr-009.md",
+    "stale-summary.md",
+    "production-notes.md",
+    "notification-service.md",
+    "commits.log",
+    "issue-041.md"
+  ],
+  "tasks": [
+    {
+      "task_id": "q1-locate-eventstore",
+      "family": "locate",
+      "routing_family": "locate",
+      "prompt": "Where did we discuss the event-store backend?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["session-014.md", "session-019.md", "adr-007.md"]
+    },
+    {
+      "task_id": "q2-decision-eventstore",
+      "family": "decision",
+      "routing_family": "locate",
+      "prompt": "What event store should new services use?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["adr-007.md"],
+      "expected_state": "PostgreSQL",
+      "superseded_options": ["SQLite"]
+    },
+    {
+      "task_id": "q2-decision-redis",
+      "family": "decision",
+      "routing_family": "locate",
+      "prompt": "What did the team decide about introducing Redis as a lookup cache?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["adr-009.md", "session-044.md"],
+      "expected_state": "will not introduce Redis",
+      "expected_aliases": ["decided against redis", "redis was rejected", "rejected the redis proposal", "no redis", "not introduce a lookup cache", "not to introduce redis", "decided not to introduce"],
+      "superseded_options": ["introduce Redis", "add Redis"]
+    },
+    {
+      "task_id": "q3-why-postgres",
+      "family": "provenance",
+      "routing_family": "provenance",
+      "prompt": "Why was PostgreSQL chosen for the event store?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["experiment-contention.md", "incident-021.md", "adr-007.md"],
+      "expected_state": "contention"
+    },
+    {
+      "task_id": "q4-current-eventstore",
+      "family": "temporal",
+      "routing_family": "temporal",
+      "prompt": "What event store should new code target today?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["adr-007.md"],
+      "temporal_mode": "current",
+      "expected_current": "PostgreSQL",
+      "expected_historical": "SQLite",
+      "superseded_options": ["SQLite"]
+    },
+    {
+      "task_id": "q4-historical-march",
+      "family": "temporal",
+      "routing_family": "temporal",
+      "prompt": "What event store did the March prototype use?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["session-014.md"],
+      "temporal_mode": "historical",
+      "expected_current": "PostgreSQL",
+      "expected_historical": "SQLite"
+    },
+    {
+      "task_id": "q4-production-now",
+      "family": "temporal",
+      "routing_family": "temporal",
+      "prompt": "What runs in production for the event store now?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["production-notes.md"],
+      "temporal_mode": "current",
+      "expected_current": "PostgreSQL runs in production",
+      "expected_aliases": ["PostgreSQL"],
+      "expected_historical": "SQLite runs in production",
+      "superseded_options": ["SQLite runs in production"]
+    },
+    {
+      "task_id": "q6-use-new-service",
+      "family": "use",
+      "routing_family": "use",
+      "prompt": "A second service needs its own event log. What should it use and why?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["adr-007.md", "experiment-contention.md"],
+      "expected_state": "PostgreSQL",
+      "superseded_options": ["SQLite"]
+    },
+    {
+      "task_id": "q-stale-trap",
+      "family": "decision",
+      "routing_family": "adversarial",
+      "prompt": "A new service is about to copy the wiki's SQLite setup for its event log. What should it use instead?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["adr-007.md", "stale-summary.md"],
+      "expected_state": "PostgreSQL",
+      "superseded_options": ["SQLite"],
+      "notes": "Adversarial: stale summary dominates on SQLite vocabulary."
+    },
+    {
+      "task_id": "q-abs-cache",
+      "family": "decision",
+      "routing_family": "unsupported",
+      "prompt": "What cache layer was adopted for the event store?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [],
+      "expected_status": "unanswerable",
+      "notes": "No cache was adopted; abstention is correct."
+    },
+    {
+      "task_id": "q-rel-influences",
+      "family": "relational",
+      "routing_family": "relational",
+      "prompt": "Which incidents and measurements influenced the event-store decision?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["incident-021.md", "experiment-contention.md", "benchmark-note.md", "adr-007.md"]
+    },
+    {
+      "task_id": "q-rel-trace",
+      "family": "relational",
+      "routing_family": "relational",
+      "prompt": "How is the June ingestion stall connected to the PostgreSQL decision?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["incident-021.md", "adr-007.md"],
+      "expected_state": "contention"
+    },
+    {
+      "task_id": "q-global-themes",
+      "family": "global",
+      "routing_family": "synthesis",
+      "prompt": "What major architectural changes occurred in this project's history?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["adr-007.md", "adr-009.md", "production-notes.md", "commits.log"]
+    },
+    {
+      "task_id": "q-global-reliability",
+      "family": "global",
+      "routing_family": "synthesis",
+      "prompt": "What reliability work did the team do around the event-store backend?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["incident-021.md", "experiment-contention.md", "session-019.md", "benchmark-note.md"]
+    },
+    {
+      "task_id": "q-ind-leftover",
+      "family": "open-loop",
+      "routing_family": "indirect",
+      "prompt": "What untidy work was left behind by the measurements that settled the backend question?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["issue-041.md"],
+      "expected_state": "fixture",
+      "expected_aliases": ["scratch fixtures", "fixture cleanup", "load-test directory", "issue-041"],
+      "notes": "Indirect: the answering artifact names neither the backend nor the decision. Reachable via decision -> contention benchmark -> leftover fixtures."
+    },
+    {
+      "task_id": "q-ind-owner",
+      "family": "provenance",
+      "routing_family": "indirect",
+      "prompt": "Who produced the evidence the event-store decision rested on?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["experiment-contention.md", "benchmark-note.md"],
+      "expected_state": "a.novak",
+      "expected_aliases": ["novak"],
+      "notes": "Indirect: the decision record does not name the measurement owner; the owner appears only on the measurement artifacts."
+    },
+    {
+      "task_id": "q-ind-separate-store",
+      "family": "relational",
+      "routing_family": "indirect",
+      "prompt": "Which service keeps its data separately from the one that migrated?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": ["notification-service.md"],
+      "expected_state": "notification",
+      "expected_aliases": ["notification service"],
+      "notes": "Indirect and inverted: the corpus's designated distractor is the correct answer here, reachable only by knowing which service migrated."
+    },
+    {
+      "task_id": "q-nomem-contention",
+      "family": "use",
+      "routing_family": "no-memory",
+      "prompt": "In one sentence, and without reference to this project, what does write contention mean in a database?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [],
+      "expected_state": "concurrent",
+      "expected_aliases": ["simultaneous", "multiple writers", "at the same time", "competing"],
+      "notes": "No memory needed. Retrieving project history can only add distraction; source precision punishes it."
+    },
+    {
+      "task_id": "q-nomem-index",
+      "family": "use",
+      "routing_family": "no-memory",
+      "prompt": "In general terms, and without reference to this project, what is a database index for?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [],
+      "expected_state": "faster",
+      "expected_aliases": ["speed", "lookup", "search", "query performance", "quickly"],
+      "notes": "No memory needed."
+    },
+    {
+      "task_id": "q-abs-provider",
+      "family": "decision",
+      "routing_family": "unsupported",
+      "prompt": "Which cloud provider hosts the production PostgreSQL instance?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [],
+      "expected_status": "unanswerable",
+      "notes": "The history never names a provider; abstention is correct and confident invention is the failure."
+    }
+  ]
+}

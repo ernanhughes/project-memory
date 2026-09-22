@@ -1,0 +1,106 @@
+{
+  "task_id": "q2-decision-eventstore",
+  "mode": "best",
+  "answer_text": "PostgreSQL",
+  "abstained": false,
+  "cited_source_ids": [],
+  "retrieved_source_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "notification-service.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-040.md",
+    "commits.log"
+  ],
+  "admitted_source_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "notification-service.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-014.md"
+  ],
+  "context_tokens_estimate": 659,
+  "latencies_ms": {
+    "graph": 0.0,
+    "raw_retrieval": 2734.518799930811,
+    "generate": 3822.193400003016,
+    "total": 6557.2
+  },
+  "graph_result": {
+    "question": "What event store should new services use?",
+    "method": "best",
+    "answer_text": "",
+    "wall_seconds": 0.0,
+    "latency_ms": 0.0,
+    "context_tokens_estimate": 0,
+    "entities_seen": [],
+    "relationships_seen": [],
+    "text_units_used": [],
+    "communities_used": [],
+    "raw_output": "",
+    "context_data": {},
+    "source_artifacts": [],
+    "llm_calls": null
+  },
+  "linked_entities": [],
+  "implicated_sources": [],
+  "observations": [
+    {
+      "metric": "source_recall",
+      "value": 1.0,
+      "failure_class": null,
+      "evidence": [
+        "hit:adr-007.md"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "source_precision",
+      "value": 0.16666666666666666,
+      "failure_class": "CONTEXT_DISTRACTION",
+      "evidence": [
+        "relevant:adr-007.md",
+        "irrelevant:stale-summary.md",
+        "irrelevant:notification-service.md",
+        "irrelevant:benchmark-note.md",
+        "irrelevant:production-notes.md",
+        "irrelevant:session-014.md"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "abstention_correctness",
+      "value": true,
+      "failure_class": null,
+      "evidence": [
+        "answered"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "decision_exactness",
+      "value": true,
+      "failure_class": null,
+      "evidence": [
+        "matched:PostgreSQL"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "supersession_correctness",
+      "value": true,
+      "failure_class": null,
+      "evidence": [
+        "no-superseded-use"
+      ],
+      "grader": "mechanical"
+    }
+  ],
+  "final_context": "[source:stale-summary.md chunk:8fb3609bdae263d7]\n# Event-store wiki page (last edited May 2024 \u2014 outdated)\n\nThe event store keeps the service event log in SQLite. The single-file\nlayout makes backups trivial and queries stay simple. New services\nshould copy the SQLite setup described here.\n\nNote pinned by m.okafor in September 2024: this page is stale. The team\nmoved the event store to PostgreSQL in July (see ADR-007) after the\nSQLite prototype failed under concurrent writes. Do not follow the\nSQLite instructions above.\n\n---\n\n[source:adr-007.md chunk:cca8e7c8b1de90a7]\n# ADR-007 \u2014 event-store target\n\ndate: 2024-07-11\nstatus: accepted\ndeciders: m.okafor, j.lindqvist\n\nDecision (evt-205): new event-store work should target PostgreSQL.\n\nContext: the SQLite prototype (evt-201) suffered concurrent-write\ncontention under load (evt-202, evt-203). The PostgreSQL candidate held\nflat throughput to 32 writers (evt-204).\n\nConsequences: the event-store service migrates to PostgreSQL; new\nservices copy the PostgreSQL setup, not the SQLite prototype. This\ndecision supersedes evt-201.\n\n---\n\n[source:notification-service.md chunk:c3ded28c12b96585]\n# Notification service runbook (unrelated distractor)\n\nThe notification service stores queued messages in its own embedded\ndatabase file. Event delivery is at-least-once; duplicate deliveries\nare deduplicated by message id. This service shares no storage with\nthe event-store service and follows a different backup schedule.\n\n---\n\n[source:benchmark-note.md chunk:e8560e5286fd2027]\n# Benchmark evt-204 \u2014 PostgreSQL candidate for the event store\n\ndate: 2024-07-02\nowner: a.novak\n\nSame write workload against PostgreSQL 15: throughput holds flat to 32\nwriters, p99 write latency 11ms. Operational cost is higher than SQLite\n(single container, managed backups), but the concurrency behaviour is\ndecisive for a shared write-heavy service.\n\n---\n\n[source:production-notes.md chunk:28dbcbb43c40d63a]\n# Production state notes\n\n- 2024-03-04: SQLite runs in production for the event store (fact-301).\n- 2024-07-22: PostgreSQL runs in production for the event store\n  (fact-302), superseding fact-301. SQLite no longer serves traffic.\n\n---\n\n[source:session-014.md chunk:5c5e18454baa6b2e]\n# Session 014 \u2014 event-store backend discussion\n\ndate: 2024-03-04\nparticipants: m.okafor, j.lindqvist\n\nWe need somewhere to keep the service event log. M. proposes SQLite:\nsingle file, no operations burden, easy to back up. J. worries about\nconcurrent writers but agrees to try it for the first prototype.\n\nAgreement: start with SQLite for the prototype (evt-201) and revisit if\nwrite contention shows up under load.",
+  "status": "complete",
+  "condition": "best",
+  "family": "decision"
+}

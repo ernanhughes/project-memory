@@ -1,0 +1,34 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "notification service",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 32804.9055999727,
+  "cited_ids": [
+    "Data: Sources (13)",
+    "Data: Sources (0, 14)",
+    "Data: Sources (14)"
+  ],
+  "context_tokens": 555,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 39397.70420000423,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-ind-separate-store",
+  "reader_latency_ms": 6592.577499977779,
+  "retrieved_ids": []
+}

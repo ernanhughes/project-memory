@@ -1,0 +1,139 @@
+{
+  "trace_id": "T2-cocoder-CO",
+  "condition": "CO",
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "project_frame": "cocoder-v1",
+  "work_frame": "wf-t2-cocoder",
+  "query": "How should we improve the context system?",
+  "as_of": "2026-09-20T12:00:00Z",
+  "budget_tokens": 1500,
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_count": 4,
+  "admitted_count": 4,
+  "rejected_count": 0,
+  "stages": [
+    {
+      "stage": "oracle",
+      "admitted_items": 4,
+      "bundle_tokens": 186
+    }
+  ],
+  "bundle_digest": "5ae89ad4102e111f",
+  "bundle_tokens": 186,
+  "latency_ms": 0.04,
+  "candidates": [
+    {
+      "candidate_id": "cc-context-window",
+      "project_id": "cocoder",
+      "kind": "implementation_detail",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 57,
+      "source_refs": [
+        "cocoder/context/build.py"
+      ]
+    },
+    {
+      "candidate_id": "cc-improve-context",
+      "project_id": "cocoder",
+      "kind": "planning_note",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 41,
+      "source_refs": [
+        "cocoder/docs/roadmap.md"
+      ]
+    },
+    {
+      "candidate_id": "cc-eval-harness",
+      "project_id": "cocoder",
+      "kind": "experiment_result",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 46,
+      "source_refs": [
+        "cocoder/eval/harness.md"
+      ]
+    },
+    {
+      "candidate_id": "cc-memory-notes",
+      "project_id": "cocoder",
+      "kind": "implementation_detail",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 42,
+      "source_refs": [
+        "cocoder/memory/notes.py"
+      ]
+    }
+  ],
+  "schema_version": "context-trace/v0.1"
+}

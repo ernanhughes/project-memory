@@ -1,0 +1,42 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "PostgreSQL was chosen for the event store to address the critical performance bottlenecks of SQLite under concurrent writes, ensuring scalability and reliability for the shared workload.",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 30037.753299984615,
+  "cited_ids": [
+    "experiment-contention.md",
+    "incident-021.md",
+    "benchmark-note.md",
+    "adr-007.md",
+    "stale-summary.md"
+  ],
+  "context_tokens": 620,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 52420.54580000695,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 2,
+  "notes": "linked=1 implicated=2",
+  "query_id": "q3-why-postgres",
+  "reader_latency_ms": 22382.618799980264,
+  "retrieved_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ]
+}

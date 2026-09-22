@@ -1,0 +1,81 @@
+{
+ "bcode": "B0",
+ "n_tasks": 7,
+ "task_success_macro": 0.2262,
+ "mean_tokens": 1.0,
+ "harm_tasks": 0,
+ "rows": [
+  {
+   "task_id": "fix-store",
+   "task_score": 0.3333,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "ship-ch10",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "release-blockers",
+   "task_score": 0.5,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "credit-rule",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "cite-rule",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "review-prose",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "review-arch",
+   "task_score": 0.75,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "corpus-cleanup",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  },
+  {
+   "task_id": "irrelevant",
+   "task_score": 1.0,
+   "harm": false,
+   "context_tokens": 1,
+   "context_hash": "e3b0c44298fc1c14",
+   "n_memory": 0
+  }
+ ]
+}

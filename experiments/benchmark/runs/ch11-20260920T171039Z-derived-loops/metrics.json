@@ -1,0 +1,111 @@
+{
+  "unconstrained": {
+    "tasks": 8,
+    "positive_tasks": 7,
+    "mean_inferred_precision": 0.4583,
+    "mean_inferred_recall": 1.0,
+    "micro_precision": 0.4762,
+    "micro_recall": 1.0,
+    "tasks_with_harmful": 4,
+    "harmful_task_rate": 0.5,
+    "abstention_tasks": 1,
+    "abstention_correct": 0,
+    "abstention_rate": 0.0,
+    "evidence_correctness": 0.0
+  },
+  "staged": {
+    "tasks": 8,
+    "positive_tasks": 7,
+    "mean_inferred_precision": 1.0,
+    "mean_inferred_recall": 1.0,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "tasks_with_harmful": 0,
+    "harmful_task_rate": 0.0,
+    "abstention_tasks": 1,
+    "abstention_correct": 1,
+    "abstention_rate": 1.0,
+    "evidence_correctness": 1.0
+  },
+  "no-current": {
+    "tasks": 8,
+    "positive_tasks": 7,
+    "mean_inferred_precision": 0.9286,
+    "mean_inferred_recall": 1.0,
+    "micro_precision": 0.9091,
+    "micro_recall": 1.0,
+    "tasks_with_harmful": 0,
+    "harmful_task_rate": 0.0,
+    "abstention_tasks": 1,
+    "abstention_correct": 1,
+    "abstention_rate": 1.0,
+    "evidence_correctness": 1.0
+  },
+  "no-expected": {
+    "tasks": 8,
+    "positive_tasks": 7,
+    "mean_inferred_precision": 0.8571,
+    "mean_inferred_recall": 1.0,
+    "micro_precision": 0.8333,
+    "micro_recall": 1.0,
+    "tasks_with_harmful": 0,
+    "harmful_task_rate": 0.0,
+    "abstention_tasks": 1,
+    "abstention_correct": 1,
+    "abstention_rate": 1.0,
+    "evidence_correctness": 1.0
+  },
+  "no-cancel": {
+    "tasks": 8,
+    "positive_tasks": 7,
+    "mean_inferred_precision": 0.6458,
+    "mean_inferred_recall": 1.0,
+    "micro_precision": 0.5556,
+    "micro_recall": 1.0,
+    "tasks_with_harmful": 4,
+    "harmful_task_rate": 0.5,
+    "abstention_tasks": 1,
+    "abstention_correct": 0,
+    "abstention_rate": 0.0,
+    "evidence_correctness": 1.0
+  },
+  "oracle": {
+    "tasks": 8,
+    "positive_tasks": 7,
+    "mean_inferred_precision": 1.0,
+    "mean_inferred_recall": 1.0,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "tasks_with_harmful": 0,
+    "harmful_task_rate": 0.0,
+    "abstention_tasks": 1,
+    "abstention_correct": 1,
+    "abstention_rate": 1.0,
+    "evidence_correctness": 0.0
+  },
+  "abstain": {
+    "tasks": 8,
+    "positive_tasks": 7,
+    "mean_inferred_precision": null,
+    "mean_inferred_recall": 0.0,
+    "micro_precision": null,
+    "micro_recall": 0.0,
+    "tasks_with_harmful": 0,
+    "harmful_task_rate": 0.0,
+    "abstention_tasks": 1,
+    "abstention_correct": 1,
+    "abstention_rate": 1.0,
+    "evidence_correctness": null
+  },
+  "backtest": {
+    "primary": "mean_inferred_precision",
+    "primary_gain": -0.3542,
+    "breaches": [
+      "harmful_task_rate: 0.0 -> 0.5",
+      "abstention_rate: 1.0 -> 0.0"
+    ],
+    "promoted": false,
+    "candidate": "v2-drop-cancelling-leg",
+    "rationale": "recover the deferred-docs candidate; locally correct, globally harmful"
+  }
+}

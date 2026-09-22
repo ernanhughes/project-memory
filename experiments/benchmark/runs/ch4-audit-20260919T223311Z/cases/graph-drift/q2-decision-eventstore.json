@@ -1,0 +1,11 @@
+{
+  "task_id": "q2-decision-eventstore",
+  "condition": "graph-drift",
+  "family": "decision",
+  "mode": "drift",
+  "status": "failed",
+  "error": "TimeoutExpired: Command '['C:\\\\Projects\\\\memory\\\\solution\\\\.venv\\\\Scripts\\\\python.exe', 'C:\\\\Projects\\\\memory\\\\solution\\\\graph_memory\\\\graphrag_backend\\\\query_worker.py', '--root', 'C:\\\\Projects\\\\memory\\\\solution\\\\graph_memory\\\\work\\\\ch4', '--mode', 'drift', '--question', 'What event store should new services use?', '--level', '2', '--version', '3.1.2', '--output', 'C:\\\\Users\\\\ernan\\\\AppData\\\\Local\\\\Temp\\\\memory-graph-query-x5v1nw8p\\\\result.json']' timed out after 90 seconds",
+  "latencies_ms": {
+    "total": 90236.4
+  }
+}

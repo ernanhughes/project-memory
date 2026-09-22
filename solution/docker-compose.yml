@@ -1,0 +1,21 @@
+# Reproducible PostgreSQL substrate for the RAG baseline.
+# A reader reproduces the baseline database with:
+#   docker compose up -d
+# Connection: postgresql://postgres:postgres@localhost:5434/memory_baseline
+services:
+  pg:
+    # Verified 2026-09-19 as pgvector 0.8.6 on PostgreSQL 15. HNSW cosine
+    # search requires pgvector >= 0.7; older images lack the opclass.
+    image: pgvector/pgvector:pg15
+    container_name: memory-pg
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: memory_baseline
+    ports:
+      - "5434:5432"
+    volumes:
+      - memory-pgdata:/var/lib/postgresql/data
+
+volumes:
+  memory-pgdata:

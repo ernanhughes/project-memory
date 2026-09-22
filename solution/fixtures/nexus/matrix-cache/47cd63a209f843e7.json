@@ -1,0 +1,33 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 23424.133999971673,
+  "cited_ids": [
+    "Data: Production state notes (14)"
+  ],
+  "context_tokens": 343,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 77912.49600000447,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "current_state_accuracy": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q4-production-now",
+  "reader_latency_ms": 54488.1567999837,
+  "retrieved_ids": []
+}

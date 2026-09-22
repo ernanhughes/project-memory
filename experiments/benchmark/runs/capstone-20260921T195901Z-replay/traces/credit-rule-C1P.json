@@ -1,0 +1,724 @@
+{
+ "task_id": "credit-rule",
+ "condition": "C1P",
+ "bcode": "B1P",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "mb-arch-definition",
+  "mb-arch-layers",
+  "mb-arch-q6-open",
+  "mb-arch-spine",
+  "mb-ch03-admission-note",
+  "mb-ch03-baseline-role",
+  "mb-ch03-baseline-strength",
+  "mb-ch04-result",
+  "mb-ch06-result",
+  "mb-ch07-result",
+  "mb-ch08-result",
+  "mb-ch09-handoff",
+  "mb-ch09-result",
+  "mb-ch10-concepts",
+  "mb-ch10-experiment-pending",
+  "mb-ch10-priority-refusal",
+  "mb-ch10-prose-opening",
+  "mb-ch10-prose-schema",
+  "mb-ch10-refs",
+  "mb-ch11-opening",
+  "mb-contract-failure-classes",
+  "mb-contract-frozen-run",
+  "mb-contract-q6",
+  "mb-echo-baseline-1",
+  "mb-echo-baseline-2",
+  "mb-echo-baseline-3",
+  "mb-echo-baseline-4",
+  "mb-echo-ch9-result-1",
+  "mb-impl-graphrag",
+  "mb-impl-postgres",
+  "mb-impl-test-paths",
+  "mb-impl-zeromq",
+  "mb-loop-ch10-experiment",
+  "mb-loop-ch11-recap",
+  "mb-loop-readme-drift",
+  "mb-loop-real-corpus",
+  "mb-method-baseline-rule",
+  "mb-method-earn",
+  "mb-method-evidence-discipline",
+  "mb-refutes-ch9-scope",
+  "mb-research-context-engineering",
+  "mb-research-deontic",
+  "mb-research-goal-conditioned",
+  "mb-research-intention-schema",
+  "mb-research-prospective",
+  "mb-session-intent-1",
+  "mb-session-intent-2",
+  "mb-session-intent-3",
+  "mb-session-pivot",
+  "mb-stale-ch06-title",
+  "mb-stale-ch10-plan",
+  "mb-stale-nexus-selects",
+  "mb-stale-sqlite",
+  "mb-style-build",
+  "mb-style-citations",
+  "mb-style-conventions",
+  "mb-style-frontmatter"
+ ],
+ "derived_consulted": [
+  "frozen:B1P:d29ae52f0ff32714"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "mb-arch-definition",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-arch-layers",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-arch-q6-open",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-arch-spine",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch03-admission-note",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch03-baseline-role",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch03-baseline-strength",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch04-result",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch06-result",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch07-result",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch08-result",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch09-handoff",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch09-result",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-concepts",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-experiment-pending",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-prose-opening",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-prose-schema",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-refs",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch11-opening",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-contract-failure-classes",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-contract-frozen-run",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-contract-q6",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-1",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-2",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-3",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-4",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-ch9-result-1",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-impl-graphrag",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-impl-postgres",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-impl-test-paths",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-impl-zeromq",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-ch10-experiment",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-ch11-recap",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-readme-drift",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-real-corpus",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-method-baseline-rule",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-method-earn",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-method-evidence-discipline",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-refutes-ch9-scope",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-research-context-engineering",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-research-deontic",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-research-goal-conditioned",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-research-intention-schema",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-research-prospective",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-intent-1",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-intent-2",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-intent-3",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-pivot",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-ch06-title",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-nexus-selects",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-sqlite",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-style-build",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-style-citations",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-style-conventions",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-style-frontmatter",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "mb-arch-definition",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-arch-layers",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-arch-q6-open",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-arch-spine",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch03-admission-note",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch03-baseline-role",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch03-baseline-strength",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch04-result",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch06-result",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch07-result",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch08-result",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch09-handoff",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch09-result",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-concepts",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-experiment-pending",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-prose-opening",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-prose-schema",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-refs",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch11-opening",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-contract-failure-classes",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-contract-frozen-run",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-contract-q6",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-1",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-2",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-3",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-4",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-ch9-result-1",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-impl-graphrag",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-impl-postgres",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-impl-test-paths",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-impl-zeromq",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-ch10-experiment",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-ch11-recap",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-readme-drift",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-real-corpus",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-method-baseline-rule",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-method-earn",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-method-evidence-discipline",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-refutes-ch9-scope",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-research-context-engineering",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-research-deontic",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-research-goal-conditioned",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-research-intention-schema",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-research-prospective",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-intent-1",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-intent-2",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-intent-3",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-pivot",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-ch06-title",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-nexus-selects",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-sqlite",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-style-build",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-style-citations",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-style-conventions",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-style-frontmatter",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "mb-arch-definition",
+  "mb-arch-layers",
+  "mb-arch-q6-open",
+  "mb-arch-spine",
+  "mb-ch03-admission-note",
+  "mb-ch03-baseline-role",
+  "mb-ch03-baseline-strength",
+  "mb-ch04-result",
+  "mb-ch06-result",
+  "mb-ch07-result",
+  "mb-ch08-result",
+  "mb-ch09-handoff",
+  "mb-ch09-result",
+  "mb-ch10-concepts",
+  "mb-ch10-experiment-pending",
+  "mb-ch10-priority-refusal",
+  "mb-ch10-prose-opening",
+  "mb-ch10-prose-schema",
+  "mb-ch10-refs",
+  "mb-ch11-opening",
+  "mb-contract-failure-classes",
+  "mb-contract-frozen-run",
+  "mb-contract-q6",
+  "mb-echo-baseline-1",
+  "mb-echo-baseline-2",
+  "mb-echo-baseline-3",
+  "mb-echo-baseline-4",
+  "mb-echo-ch9-result-1",
+  "mb-impl-graphrag",
+  "mb-impl-postgres",
+  "mb-impl-test-paths",
+  "mb-impl-zeromq",
+  "mb-loop-ch10-experiment",
+  "mb-loop-ch11-recap",
+  "mb-loop-readme-drift",
+  "mb-loop-real-corpus",
+  "mb-method-baseline-rule",
+  "mb-method-earn",
+  "mb-method-evidence-discipline",
+  "mb-refutes-ch9-scope",
+  "mb-research-context-engineering",
+  "mb-research-deontic",
+  "mb-research-goal-conditioned",
+  "mb-research-intention-schema",
+  "mb-research-prospective",
+  "mb-session-intent-1",
+  "mb-session-intent-2",
+  "mb-session-intent-3",
+  "mb-session-pivot",
+  "mb-stale-ch06-title",
+  "mb-stale-ch10-plan",
+  "mb-stale-nexus-selects",
+  "mb-stale-sqlite",
+  "mb-style-build",
+  "mb-style-citations",
+  "mb-style-conventions",
+  "mb-style-frontmatter"
+ ],
+ "rejected": [],
+ "context_tokens": 5495,
+ "context_hash": "d29ae52f0ff32714",
+ "reader_output": {
+  "task_score": 0.0,
+  "frozen": true
+ },
+ "behavioural_score": 0.0,
+ "harm": false,
+ "fallback_events": [
+  {
+   "event": "assembly failure",
+   "action": "bounded simple retrieval fallback engaged",
+   "detail": "context 5495 exceeds budget 1500; frozen trace preserved"
+  }
+ ],
+ "conditional_invocations": []
+}

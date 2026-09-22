@@ -1,0 +1,5 @@
+{"expectation_id": "intent-401", "searched_sources": ["commits", "decisions", "diffs", "issues", "sessions"], "searched_until": "2024-08-31T00:00:00Z", "candidate_closures_examined": 5, "gaps": [], "current_state_checked": false}
+{"expectation_id": "exp-docs", "searched_sources": ["commits", "decisions", "diffs", "issues", "sessions"], "searched_until": "2024-08-31T00:00:00Z", "candidate_closures_examined": 5, "gaps": [], "current_state_checked": false}
+{"expectation_id": "exp-fixtures", "searched_sources": ["commits", "decisions", "diffs", "issues", "sessions"], "searched_until": "2024-08-31T00:00:00Z", "candidate_closures_examined": 5, "gaps": [], "current_state_checked": false}
+{"expectation_id": "exp-tune", "searched_sources": ["commits", "decisions", "diffs", "issues", "sessions"], "searched_until": "2024-08-31T00:00:00Z", "candidate_closures_examined": 7, "gaps": [], "current_state_checked": false}
+{"expectation_id": "exp-staging", "searched_sources": ["commits", "decisions", "diffs", "issues", "sessions"], "searched_until": "2024-08-31T00:00:00Z", "candidate_closures_examined": 6, "gaps": [], "current_state_checked": false}

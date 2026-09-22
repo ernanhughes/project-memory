@@ -1,0 +1,61 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "commits.log",
+    "experiment-contention.md",
+    "incident-021.md",
+    "issue-041.md",
+    "notification-service.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md",
+    "stale-summary.md"
+  ],
+  "answer": "SQLite",
+  "capability_id": "RAW_EVIDENCE",
+  "capability_latency_ms": 2.282800036482513,
+  "cited_ids": [
+    "session-014.md",
+    "production-notes.md"
+  ],
+  "context_tokens": 1248,
+  "cost_units": 2.5,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 6044.658400001936,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "historical_state_accuracy": 1.0,
+    "source_precision": 0.07142857142857142,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "unranked sweep of all source artifacts",
+  "query_id": "q4-historical-march",
+  "reader_latency_ms": 6042.00930002844,
+  "retrieved_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "commits.log",
+    "experiment-contention.md",
+    "incident-021.md",
+    "issue-041.md",
+    "notification-service.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md",
+    "stale-summary.md"
+  ]
+}

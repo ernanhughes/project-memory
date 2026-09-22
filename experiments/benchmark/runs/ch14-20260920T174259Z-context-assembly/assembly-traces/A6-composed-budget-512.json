@@ -1,0 +1,3083 @@
+{
+  "T1-architecture": {
+    "task_id": "T1-architecture",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1500
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.next-mechanism",
+            "unit_id": "mb-arch-q6-open"
+          },
+          {
+            "claim_key": "arch.spine",
+            "unit_id": "mb-arch-spine"
+          },
+          {
+            "claim_key": "baseline.admission-vs-retrieval",
+            "unit_id": "mb-ch03-admission-note"
+          },
+          {
+            "claim_key": "baseline.ch3-config",
+            "unit_id": "mb-ch03-baseline-role"
+          },
+          {
+            "claim_key": "baseline.ch3-strength",
+            "unit_id": "mb-ch03-baseline-strength"
+          },
+          {
+            "claim_key": "contract.failure-classes",
+            "unit_id": "mb-contract-failure-classes"
+          },
+          {
+            "claim_key": "contract.frozen-run",
+            "unit_id": "mb-contract-frozen-run"
+          },
+          {
+            "claim_key": "contract.q6",
+            "unit_id": "mb-contract-q6"
+          },
+          {
+            "claim_key": "loop.ch10-experiment",
+            "unit_id": "mb-loop-ch10-experiment"
+          },
+          {
+            "claim_key": "method.baseline-ladder",
+            "unit_id": "mb-method-baseline-rule"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-method-earn"
+          },
+          {
+            "claim_key": "method.evidence-discipline",
+            "unit_id": "mb-method-evidence-discipline"
+          },
+          {
+            "claim_key": "result.ch4",
+            "unit_id": "mb-ch04-result"
+          },
+          {
+            "claim_key": "result.ch6",
+            "unit_id": "mb-ch06-result"
+          },
+          {
+            "claim_key": "result.ch8",
+            "unit_id": "mb-ch08-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-refutes-ch9-scope"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-ch09-result"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 17,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-baseline-strength",
+        "reason": "DROP_BUDGET tier=2 saving=114 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-admission-note",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-baseline-role",
+        "reason": "DROP_BUDGET tier=2 saving=125 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-q6",
+        "reason": "DROP_BUDGET tier=2 saving=82 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-failure-classes",
+        "reason": "DROP_BUDGET tier=2 saving=68 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-frozen-run",
+        "reason": "DROP_BUDGET tier=2 saving=90 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch06-result",
+        "reason": "DROP_BUDGET tier=2 saving=79 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch08-result",
+        "reason": "DROP_BUDGET tier=2 saving=102 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch09-result",
+        "reason": "DROP_BUDGET tier=2 saving=113 covered_by=mb-refutes-ch9-scope",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule"
+        ],
+        "dropped": [
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine"
+        ],
+        "spent": 488
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 442,
+        "budget_after": 335,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 335,
+        "budget_after": 285,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 121,
+        "budget_after": 24,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 285,
+        "budget_after": 196,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 196,
+        "budget_after": 121,
+        "tokens": 75,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 442,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.36950000048818765,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T1-publication": {
+    "task_id": "T1-publication",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ],
+        "bundle_tokens": 1085
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ]
+      },
+      {
+        "operation": "dedup",
+        "claim_key": "method.earn-complexity",
+        "representative": "mb-echo-baseline-1",
+        "folded": [
+          "mb-echo-baseline-2"
+        ],
+        "sources_preserved": [
+          "planning/chapter-04-graphrag-research.md",
+          "planning/chapter-05-associative-memory-research.md"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "ch10.concepts",
+            "unit_id": "mb-ch10-concepts"
+          },
+          {
+            "claim_key": "ch10.continuity",
+            "unit_id": "mb-ch09-handoff"
+          },
+          {
+            "claim_key": "ch10.continuity",
+            "unit_id": "mb-ch11-opening"
+          },
+          {
+            "claim_key": "ch10.current-content",
+            "unit_id": "mb-ch10-prose-opening"
+          },
+          {
+            "claim_key": "ch10.current-content",
+            "unit_id": "mb-ch10-prose-schema"
+          },
+          {
+            "claim_key": "ch10.no-result",
+            "unit_id": "mb-ch10-experiment-pending"
+          },
+          {
+            "claim_key": "ch10.priority-belongs-to-policy",
+            "unit_id": "mb-ch10-priority-refusal"
+          },
+          {
+            "claim_key": "ch10.references",
+            "unit_id": "mb-ch10-refs"
+          },
+          {
+            "claim_key": "loop.ch10-experiment",
+            "unit_id": "mb-loop-ch10-experiment"
+          },
+          {
+            "claim_key": "loop.ch11-recap",
+            "unit_id": "mb-loop-ch11-recap"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-echo-baseline-1"
+          },
+          {
+            "claim_key": "style.build",
+            "unit_id": "mb-style-build"
+          },
+          {
+            "claim_key": "style.citations",
+            "unit_id": "mb-style-citations"
+          },
+          {
+            "claim_key": "style.frontmatter",
+            "unit_id": "mb-style-frontmatter"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 14,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-prose-opening",
+        "reason": "DROP_BUDGET tier=2 saving=119 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-prose-schema",
+        "reason": "DROP_BUDGET tier=2 saving=103 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-refs",
+        "reason": "DROP_BUDGET tier=2 saving=85 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-frontmatter",
+        "reason": "DROP_BUDGET tier=2 saving=83 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-citations",
+        "reason": "DROP_BUDGET tier=2 saving=78 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-build",
+        "reason": "DROP_BUDGET tier=2 saving=56 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-echo-baseline-1",
+        "reason": "DROP_BUDGET tier=2 saving=34 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-ch10-experiment-pending",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-concepts"
+        ],
+        "dropped": [
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1"
+        ],
+        "spent": 500
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-ch10-concepts",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 98,
+        "budget_after": 12,
+        "tokens": 86,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch09-handoff",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 326,
+        "budget_after": 249,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch11-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 175,
+        "budget_after": 98,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 424,
+        "tokens": 88,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-priority-refusal",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 249,
+        "budget_after": 175,
+        "tokens": 74,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 424,
+        "budget_after": 374,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch11-recap",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 374,
+        "budget_after": 326,
+        "tokens": 48,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch11-recap"
+        ]
+      }
+    ],
+    "latency_ms": 0.3818000004685018,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-cocoder": {
+    "task_id": "T2-cocoder",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "cc-context-window",
+          "cc-memory-notes",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-evidence-refs"
+        ],
+        "bundle_tokens": 233
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "cc-context-window",
+          "cc-memory-notes",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-evidence-refs"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "cocoder.context",
+            "unit_id": "cc-context-window"
+          },
+          {
+            "claim_key": "cocoder.eval",
+            "unit_id": "cc-eval-harness"
+          },
+          {
+            "claim_key": "cocoder.evidence",
+            "unit_id": "cc-evidence-refs"
+          },
+          {
+            "claim_key": "cocoder.memory",
+            "unit_id": "cc-memory-notes"
+          },
+          {
+            "claim_key": "cocoder.roadmap",
+            "unit_id": "cc-improve-context"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 5,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "cc-context-window",
+          "cc-memory-notes",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-evidence-refs"
+        ],
+        "dropped": [],
+        "spent": 233
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "cc-context-window",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 455,
+        "tokens": 57,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "cc-eval-harness",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 372,
+        "budget_after": 326,
+        "tokens": 46,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "cc-evidence-refs",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 326,
+        "budget_after": 279,
+        "tokens": 47,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "cc-memory-notes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 455,
+        "budget_after": 413,
+        "tokens": 42,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "cc-improve-context",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 413,
+        "budget_after": 372,
+        "tokens": 41,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      }
+    ],
+    "latency_ms": 0.3114000001005479,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-memory-book": {
+    "task_id": "T2-memory-book",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-graphrag",
+          "mb-impl-zeromq",
+          "mb-impl-postgres",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1315
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-impl-graphrag",
+          "mb-impl-zeromq",
+          "mb-impl-postgres",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-research-context-engineering",
+          "mb-echo-baseline-1",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes"
+        ]
+      },
+      {
+        "operation": "dedup",
+        "claim_key": "method.earn-complexity",
+        "representative": "mb-method-earn",
+        "folded": [
+          "mb-echo-baseline-1"
+        ],
+        "sources_preserved": [
+          "AGENTS.md",
+          "planning/book-architecture.md",
+          "planning/chapter-04-graphrag-research.md"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.definition",
+            "unit_id": "mb-arch-definition"
+          },
+          {
+            "claim_key": "arch.layers",
+            "unit_id": "mb-arch-layers"
+          },
+          {
+            "claim_key": "arch.next-mechanism",
+            "unit_id": "mb-arch-q6-open"
+          },
+          {
+            "claim_key": "arch.spine",
+            "unit_id": "mb-arch-spine"
+          },
+          {
+            "claim_key": "baseline.admission-vs-retrieval",
+            "unit_id": "mb-ch03-admission-note"
+          },
+          {
+            "claim_key": "contract.failure-classes",
+            "unit_id": "mb-contract-failure-classes"
+          },
+          {
+            "claim_key": "impl.graphrag",
+            "unit_id": "mb-impl-graphrag"
+          },
+          {
+            "claim_key": "impl.store-backend",
+            "unit_id": "mb-impl-postgres"
+          },
+          {
+            "claim_key": "impl.zeromq",
+            "unit_id": "mb-impl-zeromq"
+          },
+          {
+            "claim_key": "method.baseline-ladder",
+            "unit_id": "mb-method-baseline-rule"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-method-earn"
+          },
+          {
+            "claim_key": "method.evidence-discipline",
+            "unit_id": "mb-method-evidence-discipline"
+          },
+          {
+            "claim_key": "research.context-engineering",
+            "unit_id": "mb-research-context-engineering"
+          },
+          {
+            "claim_key": "result.ch4",
+            "unit_id": "mb-ch04-result"
+          },
+          {
+            "claim_key": "result.ch6",
+            "unit_id": "mb-ch06-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-refutes-ch9-scope"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 16,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-layers",
+        "reason": "DROP_BUDGET tier=2 saving=100 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-method-baseline-rule",
+        "reason": "DROP_BUDGET tier=2 saving=97 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-method-earn",
+        "reason": "DROP_BUDGET tier=2 saving=89 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-method-evidence-discipline",
+        "reason": "DROP_BUDGET tier=2 saving=75 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-research-context-engineering",
+        "reason": "DROP_BUDGET tier=1 saving=87 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-admission-note",
+        "reason": "DROP_BUDGET tier=1 saving=84 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-failure-classes",
+        "reason": "DROP_BUDGET tier=1 saving=68 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-impl-graphrag",
+          "mb-impl-zeromq",
+          "mb-impl-postgres",
+          "mb-ch06-result"
+        ],
+        "dropped": [
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes"
+        ],
+        "spent": 459
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 442,
+        "budget_after": 335,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-graphrag",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 335,
+        "budget_after": 272,
+        "tokens": 63,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-postgres",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 201,
+        "budget_after": 132,
+        "tokens": 69,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-zeromq",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 272,
+        "budget_after": 201,
+        "tokens": 71,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 132,
+        "budget_after": 53,
+        "tokens": 79,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 442,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.34719999985100003,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-writer": {
+    "task_id": "T2-writer",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "wr-context-runtime",
+          "wr-memory-store",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "bundle_tokens": 255
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "wr-context-runtime",
+          "wr-memory-store",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "writer.baseline",
+            "unit_id": "wr-rag-baseline"
+          },
+          {
+            "claim_key": "writer.context-runtime",
+            "unit_id": "wr-context-runtime"
+          },
+          {
+            "claim_key": "writer.eval",
+            "unit_id": "wr-retrieval-eval"
+          },
+          {
+            "claim_key": "writer.memory",
+            "unit_id": "wr-memory-store"
+          },
+          {
+            "claim_key": "writer.roadmap",
+            "unit_id": "wr-improve-context"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 5,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "wr-context-runtime",
+          "wr-memory-store",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "dropped": [],
+        "spent": 255
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "wr-rag-baseline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 357,
+        "budget_after": 313,
+        "tokens": 44,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-context-runtime",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 446,
+        "tokens": 66,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-retrieval-eval",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 313,
+        "budget_after": 257,
+        "tokens": 56,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-memory-store",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 446,
+        "budget_after": 407,
+        "tokens": 39,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-improve-context",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 407,
+        "budget_after": 357,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      }
+    ],
+    "latency_ms": 0.37650000012945384,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T3-goal-switch": {
+    "task_id": "T3-goal-switch",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch07-result",
+          "mb-ch09-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch06-result",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition"
+        ],
+        "bundle_tokens": 1498
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch07-result",
+          "mb-ch09-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.definition",
+            "unit_id": "mb-arch-definition"
+          },
+          {
+            "claim_key": "arch.next-mechanism",
+            "unit_id": "mb-arch-q6-open"
+          },
+          {
+            "claim_key": "arch.spine",
+            "unit_id": "mb-arch-spine"
+          },
+          {
+            "claim_key": "baseline.admission-vs-retrieval",
+            "unit_id": "mb-ch03-admission-note"
+          },
+          {
+            "claim_key": "baseline.ch3-config",
+            "unit_id": "mb-ch03-baseline-role"
+          },
+          {
+            "claim_key": "baseline.ch3-strength",
+            "unit_id": "mb-ch03-baseline-strength"
+          },
+          {
+            "claim_key": "contract.failure-classes",
+            "unit_id": "mb-contract-failure-classes"
+          },
+          {
+            "claim_key": "contract.frozen-run",
+            "unit_id": "mb-contract-frozen-run"
+          },
+          {
+            "claim_key": "contract.q6",
+            "unit_id": "mb-contract-q6"
+          },
+          {
+            "claim_key": "method.baseline-ladder",
+            "unit_id": "mb-method-baseline-rule"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-method-earn"
+          },
+          {
+            "claim_key": "method.evidence-discipline",
+            "unit_id": "mb-method-evidence-discipline"
+          },
+          {
+            "claim_key": "result.ch4",
+            "unit_id": "mb-ch04-result"
+          },
+          {
+            "claim_key": "result.ch6",
+            "unit_id": "mb-ch06-result"
+          },
+          {
+            "claim_key": "result.ch7",
+            "unit_id": "mb-ch07-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-ch09-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-refutes-ch9-scope"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 17,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-baseline-strength",
+        "reason": "DROP_BUDGET tier=2 saving=114 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-admission-note",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-baseline-role",
+        "reason": "DROP_BUDGET tier=2 saving=125 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-q6",
+        "reason": "DROP_BUDGET tier=2 saving=82 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-frozen-run",
+        "reason": "DROP_BUDGET tier=2 saving=90 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch07-result",
+        "reason": "DROP_BUDGET tier=2 saving=83 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch09-result",
+        "reason": "DROP_BUDGET tier=2 saving=113 covered_by=mb-refutes-ch9-scope",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch06-result",
+        "reason": "DROP_BUDGET tier=2 saving=79 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-contract-failure-classes"
+        ],
+        "dropped": [
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch07-result",
+          "mb-ch09-result",
+          "mb-ch06-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-definition"
+        ],
+        "spent": 506
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 442,
+        "budget_after": 335,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-failure-classes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 74,
+        "budget_after": 6,
+        "tokens": 68,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 246,
+        "budget_after": 149,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 335,
+        "budget_after": 246,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 149,
+        "budget_after": 74,
+        "tokens": 75,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 442,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.3803999998126528,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T4-current-vs-stale": {
+    "task_id": "T4-current-vs-stale",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch09-result",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-session-pivot",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1396
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch09-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-ch06-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-echo-baseline-4",
+          "mb-session-pivot",
+          "mb-echo-ch9-result-1",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ]
+      },
+      {
+        "operation": "dedup",
+        "claim_key": "result.ch9",
+        "representative": "mb-ch09-result",
+        "folded": [
+          "mb-echo-ch9-result-1"
+        ],
+        "sources_preserved": [
+          "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/metrics.json",
+          "planning/continuity-audit.md"
+        ]
+      },
+      {
+        "operation": "dedup",
+        "claim_key": "method.earn-complexity",
+        "representative": "mb-method-earn",
+        "folded": [
+          "mb-echo-baseline-4",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ],
+        "sources_preserved": [
+          "AGENTS.md",
+          "planning/book-architecture.md",
+          "planning/continuity-audit.md",
+          "planning/chapter-04-graphrag-research.md"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.definition",
+            "unit_id": "mb-arch-definition"
+          },
+          {
+            "claim_key": "arch.next-mechanism",
+            "unit_id": "mb-arch-q6-open"
+          },
+          {
+            "claim_key": "arch.spine",
+            "unit_id": "mb-arch-spine"
+          },
+          {
+            "claim_key": "impl.graphrag",
+            "unit_id": "mb-impl-graphrag"
+          },
+          {
+            "claim_key": "impl.store-backend",
+            "unit_id": "mb-impl-postgres"
+          },
+          {
+            "claim_key": "impl.tests",
+            "unit_id": "mb-impl-test-paths"
+          },
+          {
+            "claim_key": "impl.zeromq",
+            "unit_id": "mb-impl-zeromq"
+          },
+          {
+            "claim_key": "method.baseline-ladder",
+            "unit_id": "mb-method-baseline-rule"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-method-earn"
+          },
+          {
+            "claim_key": "method.evidence-discipline",
+            "unit_id": "mb-method-evidence-discipline"
+          },
+          {
+            "claim_key": "result.ch6",
+            "unit_id": "mb-ch06-result"
+          },
+          {
+            "claim_key": "result.ch7",
+            "unit_id": "mb-ch07-result"
+          },
+          {
+            "claim_key": "result.ch8",
+            "unit_id": "mb-ch08-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-ch09-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-refutes-ch9-scope"
+          },
+          {
+            "claim_key": "session.pivot",
+            "unit_id": "mb-session-pivot"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 16,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch09-result",
+        "reason": "DROP_BUDGET tier=2 saving=113 covered_by=mb-refutes-ch9-scope",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch08-result",
+        "reason": "DROP_BUDGET tier=2 saving=102 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch07-result",
+        "reason": "DROP_BUDGET tier=2 saving=83 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-method-earn",
+        "reason": "DROP_BUDGET tier=2 saving=89 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-method-baseline-rule",
+        "reason": "DROP_BUDGET tier=2 saving=97 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-method-evidence-discipline",
+        "reason": "DROP_BUDGET tier=2 saving=75 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-session-pivot",
+        "reason": "DROP_BUDGET tier=1 saving=63 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch06-result"
+        ],
+        "dropped": [
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-session-pivot"
+        ],
+        "spent": 511
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 442,
+        "budget_after": 335,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-graphrag",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 143,
+        "budget_after": 80,
+        "tokens": 63,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-postgres",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 335,
+        "budget_after": 266,
+        "tokens": 69,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-test-paths",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 195,
+        "budget_after": 143,
+        "tokens": 52,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-zeromq",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 266,
+        "budget_after": 195,
+        "tokens": 71,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 80,
+        "budget_after": 1,
+        "tokens": 79,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 442,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.38379999932658393,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T5-support-vs-topicality": {
+    "task_id": "T5-support-vs-topicality",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1476
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-loop-ch10-experiment"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.definition",
+            "unit_id": "mb-arch-definition"
+          },
+          {
+            "claim_key": "arch.layers",
+            "unit_id": "mb-arch-layers"
+          },
+          {
+            "claim_key": "baseline.admission-vs-retrieval",
+            "unit_id": "mb-ch03-admission-note"
+          },
+          {
+            "claim_key": "baseline.ch3-config",
+            "unit_id": "mb-ch03-baseline-role"
+          },
+          {
+            "claim_key": "baseline.ch3-strength",
+            "unit_id": "mb-ch03-baseline-strength"
+          },
+          {
+            "claim_key": "contract.failure-classes",
+            "unit_id": "mb-contract-failure-classes"
+          },
+          {
+            "claim_key": "contract.frozen-run",
+            "unit_id": "mb-contract-frozen-run"
+          },
+          {
+            "claim_key": "contract.q6",
+            "unit_id": "mb-contract-q6"
+          },
+          {
+            "claim_key": "loop.ch10-experiment",
+            "unit_id": "mb-loop-ch10-experiment"
+          },
+          {
+            "claim_key": "method.baseline-ladder",
+            "unit_id": "mb-method-baseline-rule"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-method-earn"
+          },
+          {
+            "claim_key": "method.evidence-discipline",
+            "unit_id": "mb-method-evidence-discipline"
+          },
+          {
+            "claim_key": "result.ch4",
+            "unit_id": "mb-ch04-result"
+          },
+          {
+            "claim_key": "result.ch6",
+            "unit_id": "mb-ch06-result"
+          },
+          {
+            "claim_key": "result.ch8",
+            "unit_id": "mb-ch08-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-ch09-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-refutes-ch9-scope"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 17,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-baseline-strength",
+        "reason": "DROP_BUDGET tier=2 saving=114 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-admission-note",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-failure-classes",
+        "reason": "DROP_BUDGET tier=2 saving=68 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-q6",
+        "reason": "DROP_BUDGET tier=2 saving=82 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-frozen-run",
+        "reason": "DROP_BUDGET tier=2 saving=90 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch06-result",
+        "reason": "DROP_BUDGET tier=2 saving=79 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch09-result",
+        "reason": "DROP_BUDGET tier=2 saving=113 covered_by=mb-refutes-ch9-scope",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch08-result",
+        "reason": "DROP_BUDGET tier=2 saving=102 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-layers",
+        "reason": "DROP_BUDGET tier=2 saving=100 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-loop-ch10-experiment",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role"
+        ],
+        "dropped": [
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers"
+        ],
+        "spent": 506
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 131,
+        "budget_after": 6,
+        "tokens": 125,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 442,
+        "budget_after": 392,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 392,
+        "budget_after": 295,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 295,
+        "budget_after": 206,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 206,
+        "budget_after": 131,
+        "tokens": 75,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 442,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.36129999989498174,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T6-echo-coalescing": {
+    "task_id": "T6-echo-coalescing",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-contract-failure-classes",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine"
+        ],
+        "bundle_tokens": 1485
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-contract-failure-classes",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.definition",
+            "unit_id": "mb-arch-definition"
+          },
+          {
+            "claim_key": "arch.layers",
+            "unit_id": "mb-arch-layers"
+          },
+          {
+            "claim_key": "arch.next-mechanism",
+            "unit_id": "mb-arch-q6-open"
+          },
+          {
+            "claim_key": "arch.spine",
+            "unit_id": "mb-arch-spine"
+          },
+          {
+            "claim_key": "baseline.admission-vs-retrieval",
+            "unit_id": "mb-ch03-admission-note"
+          },
+          {
+            "claim_key": "baseline.ch3-config",
+            "unit_id": "mb-ch03-baseline-role"
+          },
+          {
+            "claim_key": "baseline.ch3-strength",
+            "unit_id": "mb-ch03-baseline-strength"
+          },
+          {
+            "claim_key": "contract.failure-classes",
+            "unit_id": "mb-contract-failure-classes"
+          },
+          {
+            "claim_key": "contract.frozen-run",
+            "unit_id": "mb-contract-frozen-run"
+          },
+          {
+            "claim_key": "contract.q6",
+            "unit_id": "mb-contract-q6"
+          },
+          {
+            "claim_key": "method.baseline-ladder",
+            "unit_id": "mb-method-baseline-rule"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-method-earn"
+          },
+          {
+            "claim_key": "method.evidence-discipline",
+            "unit_id": "mb-method-evidence-discipline"
+          },
+          {
+            "claim_key": "result.ch4",
+            "unit_id": "mb-ch04-result"
+          },
+          {
+            "claim_key": "result.ch6",
+            "unit_id": "mb-ch06-result"
+          },
+          {
+            "claim_key": "result.ch7",
+            "unit_id": "mb-ch07-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-refutes-ch9-scope"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 17,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-baseline-strength",
+        "reason": "DROP_BUDGET tier=2 saving=114 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-admission-note",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch03-baseline-role",
+        "reason": "DROP_BUDGET tier=2 saving=125 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-q6",
+        "reason": "DROP_BUDGET tier=2 saving=82 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-frozen-run",
+        "reason": "DROP_BUDGET tier=2 saving=90 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch06-result",
+        "reason": "DROP_BUDGET tier=2 saving=79 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch07-result",
+        "reason": "DROP_BUDGET tier=2 saving=83 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-layers",
+        "reason": "DROP_BUDGET tier=2 saving=100 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-contract-failure-classes"
+        ],
+        "dropped": [
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-spine"
+        ],
+        "spent": 506
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 442,
+        "budget_after": 335,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-failure-classes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 74,
+        "budget_after": 6,
+        "tokens": 68,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 246,
+        "budget_after": 149,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 335,
+        "budget_after": 246,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 149,
+        "budget_after": 74,
+        "tokens": 75,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 442,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.4220000000714208,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-publication": {
+    "task_id": "T7-publication",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-arch-q6-open",
+          "mb-session-pivot",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1183
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-arch-q6-open",
+          "mb-session-pivot",
+          "mb-research-deontic"
+        ]
+      },
+      {
+        "operation": "dedup",
+        "claim_key": "method.earn-complexity",
+        "representative": "mb-echo-baseline-1",
+        "folded": [
+          "mb-echo-baseline-2"
+        ],
+        "sources_preserved": [
+          "planning/chapter-04-graphrag-research.md",
+          "planning/chapter-05-associative-memory-research.md"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.next-mechanism",
+            "unit_id": "mb-arch-q6-open"
+          },
+          {
+            "claim_key": "ch10.concepts",
+            "unit_id": "mb-ch10-concepts"
+          },
+          {
+            "claim_key": "ch10.continuity",
+            "unit_id": "mb-ch09-handoff"
+          },
+          {
+            "claim_key": "ch10.continuity",
+            "unit_id": "mb-ch11-opening"
+          },
+          {
+            "claim_key": "ch10.current-content",
+            "unit_id": "mb-ch10-prose-opening"
+          },
+          {
+            "claim_key": "ch10.current-content",
+            "unit_id": "mb-ch10-prose-schema"
+          },
+          {
+            "claim_key": "ch10.no-result",
+            "unit_id": "mb-ch10-experiment-pending"
+          },
+          {
+            "claim_key": "ch10.priority-belongs-to-policy",
+            "unit_id": "mb-ch10-priority-refusal"
+          },
+          {
+            "claim_key": "ch10.references",
+            "unit_id": "mb-ch10-refs"
+          },
+          {
+            "claim_key": "method.earn-complexity",
+            "unit_id": "mb-echo-baseline-1"
+          },
+          {
+            "claim_key": "research.deontic",
+            "unit_id": "mb-research-deontic"
+          },
+          {
+            "claim_key": "session.pivot",
+            "unit_id": "mb-session-pivot"
+          },
+          {
+            "claim_key": "style.build",
+            "unit_id": "mb-style-build"
+          },
+          {
+            "claim_key": "style.frontmatter",
+            "unit_id": "mb-style-frontmatter"
+          },
+          {
+            "claim_key": "style.prose",
+            "unit_id": "mb-style-conventions"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 15,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-prose-opening",
+        "reason": "DROP_BUDGET tier=2 saving=119 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-prose-schema",
+        "reason": "DROP_BUDGET tier=2 saving=103 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-refs",
+        "reason": "DROP_BUDGET tier=2 saving=85 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-conventions",
+        "reason": "DROP_BUDGET tier=2 saving=66 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-frontmatter",
+        "reason": "DROP_BUDGET tier=2 saving=83 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-build",
+        "reason": "DROP_BUDGET tier=2 saving=56 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-echo-baseline-1",
+        "reason": "DROP_BUDGET tier=2 saving=34 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-session-pivot",
+        "reason": "DROP_BUDGET tier=1 saving=63 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-research-deontic",
+        "reason": "DROP_BUDGET tier=1 saving=38 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-ch10-experiment-pending",
+          "mb-arch-q6-open",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-concepts"
+        ],
+        "dropped": [
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-session-pivot",
+          "mb-research-deontic"
+        ],
+        "spent": 509
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 424,
+        "budget_after": 317,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-concepts",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 89,
+        "budget_after": 3,
+        "tokens": 86,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch09-handoff",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 317,
+        "budget_after": 240,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch11-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 240,
+        "budget_after": 163,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 424,
+        "tokens": 88,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-priority-refusal",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 163,
+        "budget_after": 89,
+        "tokens": 74,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      }
+    ],
+    "latency_ms": 0.36559999989549397,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-release": {
+    "task_id": "T7-release",
+    "condition": "A6-composed",
+    "budget": 512,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-arch-q6-open",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1488
+      },
+      {
+        "operation": "order",
+        "mode": "evidence-first",
+        "order": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-arch-q6-open",
+          "mb-research-deontic"
+        ]
+      },
+      {
+        "operation": "group",
+        "groups": [
+          {
+            "claim_key": "arch.next-mechanism",
+            "unit_id": "mb-arch-q6-open"
+          },
+          {
+            "claim_key": "ch10.continuity",
+            "unit_id": "mb-ch09-handoff"
+          },
+          {
+            "claim_key": "ch10.continuity",
+            "unit_id": "mb-ch11-opening"
+          },
+          {
+            "claim_key": "ch10.current-content",
+            "unit_id": "mb-ch10-prose-opening"
+          },
+          {
+            "claim_key": "ch10.current-content",
+            "unit_id": "mb-ch10-prose-schema"
+          },
+          {
+            "claim_key": "ch10.priority-belongs-to-policy",
+            "unit_id": "mb-ch10-priority-refusal"
+          },
+          {
+            "claim_key": "impl.graphrag",
+            "unit_id": "mb-impl-graphrag"
+          },
+          {
+            "claim_key": "impl.store-backend",
+            "unit_id": "mb-impl-postgres"
+          },
+          {
+            "claim_key": "impl.zeromq",
+            "unit_id": "mb-impl-zeromq"
+          },
+          {
+            "claim_key": "loop.ch10-experiment",
+            "unit_id": "mb-loop-ch10-experiment"
+          },
+          {
+            "claim_key": "loop.ch11-recap",
+            "unit_id": "mb-loop-ch11-recap"
+          },
+          {
+            "claim_key": "loop.real-corpus",
+            "unit_id": "mb-loop-real-corpus"
+          },
+          {
+            "claim_key": "research.deontic",
+            "unit_id": "mb-research-deontic"
+          },
+          {
+            "claim_key": "result.ch4",
+            "unit_id": "mb-ch04-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-ch09-result"
+          },
+          {
+            "claim_key": "result.ch9",
+            "unit_id": "mb-refutes-ch9-scope"
+          },
+          {
+            "claim_key": "style.build",
+            "unit_id": "mb-style-build"
+          },
+          {
+            "claim_key": "style.citations",
+            "unit_id": "mb-style-citations"
+          },
+          {
+            "claim_key": "style.frontmatter",
+            "unit_id": "mb-style-frontmatter"
+          },
+          {
+            "claim_key": "style.prose",
+            "unit_id": "mb-style-conventions"
+          }
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 20,
+        "as_of": "2026-09-20T12:00:00Z"
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-citations",
+        "reason": "DROP_BUDGET tier=2 saving=78 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-style-conventions",
+        "reason": "DROP_BUDGET tier=2 saving=66 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch09-result",
+        "reason": "DROP_BUDGET tier=2 saving=113 covered_by=mb-refutes-ch9-scope",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch09-handoff",
+        "reason": "DROP_BUDGET tier=2 saving=77 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch11-opening",
+        "reason": "DROP_BUDGET tier=2 saving=77 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-prose-opening",
+        "reason": "DROP_BUDGET tier=2 saving=119 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-prose-schema",
+        "reason": "DROP_BUDGET tier=2 saving=103 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch10-priority-refusal",
+        "reason": "DROP_BUDGET tier=2 saving=74 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-impl-zeromq",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-impl-graphrag",
+        "reason": "DROP_BUDGET tier=2 saving=63 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-impl-postgres",
+        "reason": "DROP_BUDGET tier=2 saving=69 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 512,
+        "kept": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-research-deontic"
+        ],
+        "dropped": [
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres"
+        ],
+        "spent": 507
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 289,
+        "budget_after": 182,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 409,
+        "budget_after": 359,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch11-recap",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 457,
+        "budget_after": 409,
+        "tokens": 48,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch11-recap"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-real-corpus",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 512,
+        "budget_after": 457,
+        "tokens": 55,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-real-corpus"
+        ]
+      },
+      {
+        "unit_id": "mb-research-deontic",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 43,
+        "budget_after": 5,
+        "tokens": 38,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 359,
+        "budget_after": 289,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      },
+      {
+        "unit_id": "mb-style-build",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 182,
+        "budget_after": 126,
+        "tokens": 56,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-style-frontmatter",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 126,
+        "budget_after": 43,
+        "tokens": 83,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      }
+    ],
+    "latency_ms": 0.3826000001936336,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  }
+}

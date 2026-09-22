@@ -1,0 +1,32 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "None",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 73201.97850000113,
+  "cited_ids": [
+    "Data: session-044 (18)",
+    "Data: session-040 (17)",
+    "adr-009.md"
+  ],
+  "context_tokens": 323,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "FAILED_ABSTENTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 133236.86950001866,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "source_precision": 1.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.6666666666666666
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-abs-cache",
+  "reader_latency_ms": 60034.63140001986,
+  "retrieved_ids": []
+}

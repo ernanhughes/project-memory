@@ -1,0 +1,476 @@
+[
+  {
+    "task_id": "t-full-scope",
+    "decisions": [
+      {
+        "candidate_id": "c-docs-flags",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-docs-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by contract: partner-note-004",
+        "legs_cited": [
+          "snap-facade-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-tests-remove",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by intentional-preservation: tests-compat-122",
+        "legs_cited": [
+          "snap-tests-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-docs-deferral",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by deferral: docs-note-012",
+        "legs_cited": [
+          "snap-docs-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-cli-half",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-cli-0207",
+          "issue-088"
+        ]
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-web-0207",
+          "issue-089"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-full-scope",
+      "genuine": [
+        "c-cli-half",
+        "c-docs-flags",
+        "c-web"
+      ],
+      "admitted": [
+        "c-cli-half",
+        "c-docs-flags",
+        "c-web"
+      ],
+      "true_positives": [
+        "c-cli-half",
+        "c-docs-flags",
+        "c-web"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "inferred_precision": 1.0,
+      "inferred_recall": 1.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 3,
+      "evidence_total": 3,
+      "evidence_correctness": 1.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-facade-delete": "S4",
+        "c-tests-remove": "S4",
+        "c-docs-deferral": "S4"
+      }
+    }
+  },
+  {
+    "task_id": "t-hidden-only",
+    "decisions": [
+      {
+        "candidate_id": "c-docs-flags",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-docs-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-guess",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-docs-0207",
+          "inferred-assumption"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-hidden-only",
+      "genuine": [
+        "c-docs-flags"
+      ],
+      "admitted": [
+        "c-docs-flags",
+        "c-guess"
+      ],
+      "true_positives": [
+        "c-docs-flags"
+      ],
+      "false_positives": [
+        "c-guess"
+      ],
+      "false_negatives": [],
+      "inferred_precision": 0.5,
+      "inferred_recall": 1.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 1,
+      "evidence_total": 1,
+      "evidence_correctness": 1.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {}
+    }
+  },
+  {
+    "task_id": "t-trap-only",
+    "decisions": [
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by contract: partner-note-004",
+        "legs_cited": [
+          "snap-facade-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-tests-remove",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by intentional-preservation: tests-compat-122",
+        "legs_cited": [
+          "snap-tests-0207",
+          "adr-013"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-trap-only",
+      "genuine": [],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [],
+      "inferred_precision": 0.0,
+      "inferred_recall": 0.0,
+      "abstention_ok": true,
+      "trap_only": true,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": 0.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-facade-delete": "S4",
+        "c-tests-remove": "S4"
+      }
+    }
+  },
+  {
+    "task_id": "t-deferral",
+    "decisions": [
+      {
+        "candidate_id": "c-docs-deferral",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by deferral: docs-note-012",
+        "legs_cited": [
+          "snap-docs-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-docs-flags",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-docs-0207",
+          "adr-013"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-deferral",
+      "genuine": [
+        "c-docs-flags"
+      ],
+      "admitted": [
+        "c-docs-flags"
+      ],
+      "true_positives": [
+        "c-docs-flags"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "inferred_precision": 1.0,
+      "inferred_recall": 1.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 1,
+      "evidence_total": 1,
+      "evidence_correctness": 1.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-docs-deferral": "S4"
+      }
+    }
+  },
+  {
+    "task_id": "t-partial",
+    "decisions": [
+      {
+        "candidate_id": "c-cli-half",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-cli-0207",
+          "issue-088"
+        ]
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-web-0207",
+          "issue-089"
+        ]
+      },
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by contract: partner-note-004",
+        "legs_cited": [
+          "snap-facade-0207",
+          "adr-013"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-partial",
+      "genuine": [
+        "c-cli-half",
+        "c-web"
+      ],
+      "admitted": [
+        "c-cli-half",
+        "c-web"
+      ],
+      "true_positives": [
+        "c-cli-half",
+        "c-web"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "inferred_precision": 1.0,
+      "inferred_recall": 1.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 2,
+      "evidence_total": 2,
+      "evidence_correctness": 1.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-facade-delete": "S4"
+      }
+    }
+  },
+  {
+    "task_id": "t-stale-leg",
+    "decisions": [
+      {
+        "candidate_id": "c-backup-stale",
+        "admitted": false,
+        "stage_failed": "S3",
+        "reason": "current-state leg stale: observed 2024-08-01, standpoint 2025-02-07",
+        "legs_cited": [
+          "snap-stale-0102",
+          "commit-118"
+        ]
+      },
+      {
+        "candidate_id": "c-cli-half",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-cli-0207",
+          "issue-088"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-stale-leg",
+      "genuine": [
+        "c-cli-half"
+      ],
+      "admitted": [
+        "c-cli-half"
+      ],
+      "true_positives": [
+        "c-cli-half"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "inferred_precision": 1.0,
+      "inferred_recall": 1.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 1,
+      "evidence_total": 1,
+      "evidence_correctness": 1.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-backup-stale": "S3"
+      }
+    }
+  },
+  {
+    "task_id": "t-guess",
+    "decisions": [
+      {
+        "candidate_id": "c-guess",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-docs-0207",
+          "inferred-assumption"
+        ]
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-web-0207",
+          "issue-089"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-guess",
+      "genuine": [
+        "c-web"
+      ],
+      "admitted": [
+        "c-guess",
+        "c-web"
+      ],
+      "true_positives": [
+        "c-web"
+      ],
+      "false_positives": [
+        "c-guess"
+      ],
+      "false_negatives": [],
+      "inferred_precision": 0.5,
+      "inferred_recall": 1.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 1,
+      "evidence_total": 1,
+      "evidence_correctness": 1.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {}
+    }
+  },
+  {
+    "task_id": "t-contract-harm",
+    "decisions": [
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "S4",
+        "reason": "cancelled by contract: partner-note-004",
+        "legs_cited": [
+          "snap-facade-0207",
+          "adr-013"
+        ]
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": true,
+        "stage_failed": null,
+        "reason": "all three legs cited, none cancelled",
+        "legs_cited": [
+          "snap-web-0207",
+          "issue-089"
+        ]
+      }
+    ],
+    "score": {
+      "task_id": "t-contract-harm",
+      "genuine": [
+        "c-web"
+      ],
+      "admitted": [
+        "c-web"
+      ],
+      "true_positives": [
+        "c-web"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "inferred_precision": 1.0,
+      "inferred_recall": 1.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 1,
+      "evidence_total": 1,
+      "evidence_correctness": 1.0,
+      "harmful_listed": [],
+      "harmful_rate": 0.0,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-facade-delete": "S4"
+      }
+    }
+  }
+]

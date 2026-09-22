@@ -1,0 +1,322 @@
+{
+  "bundle_id": "cb-T4-current-vs-stale-C1",
+  "condition": "C1",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1496,
+  "bundle_digest": "89bacef8baed660e",
+  "items": [
+    {
+      "item_id": "item-mb-impl-postgres",
+      "members": [
+        "mb-impl-postgres"
+      ],
+      "source_refs": [
+        "solution/memory_baseline/storage.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.store-backend",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 69
+    },
+    {
+      "item_id": "item-mb-session-pivot",
+      "members": [
+        "mb-session-pivot"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.pivot",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-echo-baseline-4",
+      "members": [
+        "mb-echo-baseline-4"
+      ],
+      "source_refs": [
+        "planning/continuity-audit.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 23
+    },
+    {
+      "item_id": "item-mb-ch09-result",
+      "members": [
+        "mb-ch09-result"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/metrics.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 113
+    },
+    {
+      "item_id": "item-mb-echo-ch9-result-1",
+      "members": [
+        "mb-echo-ch9-result-1"
+      ],
+      "source_refs": [
+        "planning/continuity-audit.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "result.ch9",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 26
+    },
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-arch-spine",
+      "members": [
+        "mb-arch-spine"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.spine",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-mb-echo-baseline-1",
+      "members": [
+        "mb-echo-baseline-1"
+      ],
+      "source_refs": [
+        "planning/chapter-04-graphrag-research.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 34
+    },
+    {
+      "item_id": "item-mb-research-prospective",
+      "members": [
+        "mb-research-prospective"
+      ],
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ],
+      "kind": "research_note",
+      "claim_key": "research.prospective-memory",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 86
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-role",
+      "members": [
+        "mb-ch03-baseline-role"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-config",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 125
+    },
+    {
+      "item_id": "item-wr-rag-baseline",
+      "members": [
+        "wr-rag-baseline"
+      ],
+      "source_refs": [
+        "writer/context/retrieval.py"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "writer.baseline",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 44
+    },
+    {
+      "item_id": "item-mb-echo-baseline-3",
+      "members": [
+        "mb-echo-baseline-3"
+      ],
+      "source_refs": [
+        "planning/continuity-audit.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 29
+    },
+    {
+      "item_id": "item-mb-session-intent-1",
+      "members": [
+        "mb-session-intent-1"
+      ],
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.intentions",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 55
+    },
+    {
+      "item_id": "item-mb-contract-q6",
+      "members": [
+        "mb-contract-q6"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.q6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 82
+    },
+    {
+      "item_id": "item-mb-stale-sqlite",
+      "members": [
+        "mb-stale-sqlite"
+      ],
+      "source_refs": [
+        "solution/memory_baseline/storage.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.store-backend",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 44
+    },
+    {
+      "item_id": "item-mb-stale-nexus-selects",
+      "members": [
+        "mb-stale-nexus-selects"
+      ],
+      "source_refs": [
+        "planning/chapter-06-memory-nexus-research.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "arch.nexus-role",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 46
+    },
+    {
+      "item_id": "item-mb-impl-zeromq",
+      "members": [
+        "mb-impl-zeromq"
+      ],
+      "source_refs": [
+        "solution/temporal_memory/transport.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.zeromq",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 71
+    },
+    {
+      "item_id": "item-mb-ch07-result",
+      "members": [
+        "mb-ch07-result"
+      ],
+      "source_refs": [
+        "content/books/memory/07-chapter.md",
+        "experiments/benchmark/runs/ch7-20260919-e7"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch7",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 83
+    },
+    {
+      "item_id": "item-mb-arch-q6-open",
+      "members": [
+        "mb-arch-q6-open"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 107
+    },
+    {
+      "item_id": "item-mb-ch10-priority-refusal",
+      "members": [
+        "mb-ch10-priority-refusal"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.priority-belongs-to-policy",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 74
+    },
+    {
+      "item_id": "item-mb-method-baseline-rule",
+      "members": [
+        "mb-method-baseline-rule"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.baseline-ladder",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 97
+    },
+    {
+      "item_id": "item-mb-impl-test-paths",
+      "members": [
+        "mb-impl-test-paths"
+      ],
+      "source_refs": [
+        "solution/pyproject.toml",
+        "solution/README.md"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.tests",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 52
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

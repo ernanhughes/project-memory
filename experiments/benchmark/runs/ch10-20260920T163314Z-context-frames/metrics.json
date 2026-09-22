@@ -1,0 +1,133 @@
+{
+  "ladder_mean": {
+    "C0": {
+      "must_include_recall": 0.7727,
+      "useful_recall": 0.578,
+      "context_precision": 0.1943,
+      "distractor_admission": 0.7089,
+      "harmful_admission": 0.0485,
+      "cross_project_leakage": 0.2124,
+      "redundancy_rate": 0.0953,
+      "provenance_completeness": 1.0,
+      "bundle_tokens": 1485.2727,
+      "label": "strong RAG, query only"
+    },
+    "C1": {
+      "must_include_recall": 0.7727,
+      "useful_recall": 0.6299,
+      "context_precision": 0.2106,
+      "distractor_admission": 0.705,
+      "harmful_admission": 0.036,
+      "cross_project_leakage": 0.1948,
+      "redundancy_rate": 0.0871,
+      "provenance_completeness": 1.0,
+      "bundle_tokens": 1489.1818,
+      "label": "strong RAG + recent work"
+    },
+    "C2": {
+      "must_include_recall": 0.7727,
+      "useful_recall": 0.6159,
+      "context_precision": 0.3386,
+      "distractor_admission": 0.5397,
+      "harmful_admission": 0.0491,
+      "cross_project_leakage": 0.0,
+      "redundancy_rate": 0.0892,
+      "provenance_completeness": 1.0,
+      "bundle_tokens": 1245.7273,
+      "label": "strong RAG + project scope"
+    },
+    "C3": {
+      "must_include_recall": 0.6212,
+      "useful_recall": 0.4369,
+      "context_precision": 0.3392,
+      "distractor_admission": 0.5328,
+      "harmful_admission": 0.0637,
+      "cross_project_leakage": 0.0,
+      "redundancy_rate": 0.0321,
+      "provenance_completeness": 1.0,
+      "bundle_tokens": 1145.0,
+      "label": "+ ProjectFrame"
+    },
+    "C4": {
+      "must_include_recall": 0.9015,
+      "useful_recall": 0.8467,
+      "context_precision": 0.4596,
+      "distractor_admission": 0.4402,
+      "harmful_admission": 0.0257,
+      "cross_project_leakage": 0.0,
+      "redundancy_rate": 0.0283,
+      "provenance_completeness": 1.0,
+      "bundle_tokens": 1173.2727,
+      "label": "+ WorkFrame"
+    },
+    "C5": {
+      "must_include_recall": 0.9015,
+      "useful_recall": 0.8597,
+      "context_precision": 0.4741,
+      "distractor_admission": 0.4456,
+      "harmful_admission": 0.0,
+      "cross_project_leakage": 0.0,
+      "redundancy_rate": 0.0235,
+      "provenance_completeness": 1.0,
+      "bundle_tokens": 1174.0,
+      "label": "+ Ch7/Ch8/Ch9"
+    },
+    "C6": {
+      "must_include_recall": 0.9015,
+      "useful_recall": 0.8597,
+      "context_precision": 0.4636,
+      "distractor_admission": 0.4457,
+      "harmful_admission": 0.0,
+      "cross_project_leakage": 0.0,
+      "redundancy_rate": 0.0563,
+      "provenance_completeness": 1.0,
+      "bundle_tokens": 1161.0,
+      "label": "full context builder"
+    }
+  },
+  "goal_divergence": {
+    "baseline_jaccard": 1.0,
+    "full_jaccard": 0.0323
+  },
+  "cross_project_leakage": {
+    "C0": 0.6667,
+    "C1": 0.6667,
+    "C2": 0.0,
+    "C4": 0.0,
+    "C6": 0.0
+  },
+  "frame_builder": {
+    "keyword_work_type_accuracy": 0.7273,
+    "declared_mean_must_recall": 0.9015,
+    "keyword_mean_must_recall": 0.8712,
+    "inferred_work_type_accuracy": 0.6364,
+    "inferred_mean_must_recall": 0.7803
+  },
+  "answers": {
+    "C0": {
+      "mean_key_claim_coverage": 0.9545,
+      "mean_forbidden_claim_rate": 0.0909,
+      "mean_context_tokens": 1485.3
+    },
+    "C4": {
+      "mean_key_claim_coverage": 0.8939,
+      "mean_forbidden_claim_rate": 0.0909,
+      "mean_context_tokens": 1173.3
+    },
+    "C6": {
+      "mean_key_claim_coverage": 0.9545,
+      "mean_forbidden_claim_rate": 0.0,
+      "mean_context_tokens": 1161.0
+    }
+  },
+  "policy_backtest": {
+    "promoted": [
+      "v2-contract-in-implementation",
+      "v2-wider-class-pull"
+    ],
+    "rejected": [
+      "v2-prose-earlier",
+      "v3-combined"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "bundle_id": "cb-T7-release-CO",
+  "condition": "CO",
+  "budget_tokens": 1500,
+  "bundle_tokens": 354,
+  "bundle_digest": "ced2d62c74f23a47",
+  "items": [
+    {
+      "item_id": "item-mb-loop-ch10-experiment",
+      "members": [
+        "mb-loop-ch10-experiment"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "open_loop",
+      "claim_key": "loop.ch10-experiment",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 50
+    },
+    {
+      "item_id": "item-mb-loop-readme-drift",
+      "members": [
+        "mb-loop-readme-drift"
+      ],
+      "source_refs": [
+        "solution/README.md"
+      ],
+      "kind": "open_loop",
+      "claim_key": "loop.readme-drift",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 57
+    },
+    {
+      "item_id": "item-mb-loop-ch11-recap",
+      "members": [
+        "mb-loop-ch11-recap"
+      ],
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ],
+      "kind": "open_loop",
+      "claim_key": "loop.ch11-recap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 48
+    },
+    {
+      "item_id": "item-mb-loop-real-corpus",
+      "members": [
+        "mb-loop-real-corpus"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "open_loop",
+      "claim_key": "loop.real-corpus",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 55
+    },
+    {
+      "item_id": "item-mb-ch10-experiment-pending",
+      "members": [
+        "mb-ch10-experiment-pending"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.no-result",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 88
+    },
+    {
+      "item_id": "item-mb-style-build",
+      "members": [
+        "mb-style-build"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.build",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 56
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

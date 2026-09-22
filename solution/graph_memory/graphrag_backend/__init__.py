@@ -1,0 +1,1 @@
+"""Backend boundary for structured memory (book §6)."""

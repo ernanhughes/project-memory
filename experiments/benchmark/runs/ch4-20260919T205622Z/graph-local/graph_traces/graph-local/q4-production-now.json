@@ -1,0 +1,8 @@
+{
+  "graph_answer": "The event store is currently running on **PostgreSQL** in production, replacing the earlier SQLite implementation.\n\nThe migration from SQLite to PostgreSQL was driven by performance issues under concurrent write loads. SQLite demonstrated significant contention when multiple writers accessed the database simultaneously, leading to degraded performance and operational disruptions [Data: Production state notes (14), Incident evt-203 (11), Experiment evt-202 (10)]. Specifically, write throughput collapsed by 62% at 8 concurrent writers and 84% at 16 writers, with median write latency rising from 3ms to 210ms [Data: Experiment evt-202 (10)]. This was further confirmed during an incident where event ingestion stalled for 40 minutes due to write contention [Data: Incident evt-203 (11)].\n\nPostgreSQL was selected as the replacement because it maintained flat throughput up to 32 concurrent writers, with a p99 write latency of 11ms, despite having a higher operational cost than SQLite [Data: Benchmark evt-204 (2)]. The decision to migrate to PostgreSQL was formalized in **ADR-007** [Data: ADR-007 (0)], which superseded the earlier SQLite prototype decision (evt-201) [Data: ADR-007 (0)]. The event store has been running on PostgreSQL since **July 2024** [Data: Production state notes (14)].",
+  "graph_latency_ms": 52095.1,
+  "implicated_sources": [],
+  "linked_entities": [],
+  "mode": "local",
+  "task_id": "q4-production-now"
+}

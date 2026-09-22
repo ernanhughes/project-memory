@@ -1,0 +1,30 @@
+{
+ "task_id": "review-arch",
+ "condition": "C0",
+ "bcode": "B0",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [],
+ "derived_consulted": [
+  "frozen:B0:e3b0c44298fc1c14"
+ ],
+ "temporal_decisions": [],
+ "trust_decisions": [],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [],
+ "rejected": [],
+ "context_tokens": 1,
+ "context_hash": "e3b0c44298fc1c14",
+ "reader_output": {
+  "task_score": 0.75,
+  "frozen": true
+ },
+ "behavioural_score": 0.75,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

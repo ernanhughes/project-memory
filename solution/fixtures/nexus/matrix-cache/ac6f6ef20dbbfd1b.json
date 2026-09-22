@@ -1,0 +1,30 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "A database index is a specialized data structure designed to optimize the speed and efficiency of data retrieval operations within a database management system (DBMS).",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 57319.54360002419,
+  "cited_ids": [
+    "[derived:global search over persistent graph memory; linked entities: none; implicated sources: none]"
+  ],
+  "context_tokens": 1319,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 66274.67800001614,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 1.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-nomem-index",
+  "reader_latency_ms": 8954.966300050728,
+  "retrieved_ids": []
+}

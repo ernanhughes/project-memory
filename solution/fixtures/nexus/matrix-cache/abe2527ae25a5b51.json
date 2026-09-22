@@ -1,0 +1,34 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md"
+  ],
+  "answer": "session-014.md",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 77871.0125000216,
+  "cited_ids": [
+    "[derived:global search over persistent graph memory; linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md]"
+  ],
+  "context_tokens": 917,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 81553.03340003593,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 1.0,
+    "source_recall": 0.3333333333333333,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q1-locate-eventstore",
+  "reader_latency_ms": 3681.88479996752,
+  "retrieved_ids": [
+    "session-014.md"
+  ]
+}

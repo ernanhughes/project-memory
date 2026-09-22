@@ -1,0 +1,1 @@
+"""Graph-memory health: structural checks, never semantic proof."""

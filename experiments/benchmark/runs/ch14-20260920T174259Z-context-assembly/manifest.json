@@ -1,0 +1,39 @@
+{
+  "suite": "E-14-context-assembly",
+  "run_id": "ch14-20260920T174259Z-context-assembly",
+  "created_at": "20260920T174259Z",
+  "ch10_source_run": "ch10-20260920T163314Z-context-frames",
+  "ch11_source_run": "ch11-20260920T171039Z-derived-loops",
+  "selection_input": "C5",
+  "assembly_version": "assembly-v1",
+  "drop_policy_version": "drop-preference-outside-first-v1",
+  "render_version": "sectioned-evidence-v1",
+  "token_convention": "estimate_tokens chars//4 (counted=text, rendered=+headers/marks)",
+  "budgets": [
+    "384",
+    "512",
+    "768",
+    "1024",
+    "1280",
+    "1536",
+    "full"
+  ],
+  "conditions": [
+    "A0-raw",
+    "A1-order",
+    "A2-dedup",
+    "A3-group",
+    "A4-mark",
+    "A5-drop",
+    "A6-composed",
+    "CO-content",
+    "CO-auditable",
+    "C6-ch10",
+    "empty",
+    "random-drop"
+  ],
+  "code_commit": "a810e59",
+  "fixture_digest": "c0814d6256fb6ffb",
+  "reader": "llama3.1:8b (bounded probe: 55 calls, 5 conditions; see reader-probe.json; CO-auditable re-probed on final render; probe code identical to a810e59)",
+  "note": "evidence-sufficiency headline; reader behaviour secondary via frozen Ch10 answer coverage"
+}

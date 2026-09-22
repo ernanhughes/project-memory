@@ -1,0 +1,7 @@
+{
+  "projection_version": "temporal-projection-v0.1",
+  "fixture_version": "e8-fixture-v0.1",
+  "standpoint": "project",
+  "zmq_ready_timeout_s": 10.0,
+  "zmq_poll_timeout_ms": 2000
+}

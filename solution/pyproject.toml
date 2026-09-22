@@ -1,0 +1,42 @@
+[project]
+name = "memory-baseline"
+version = "0.1.0"
+# NOTE: the installed distribution name is kept as "memory-baseline" to avoid
+# churn in existing workflows (imports, venvs, CI). It now covers the full
+# companion system (Ch3 RAG, Ch4 graph memory, Ch5 associative retrieval,
+# Ch6 Memory Nexus, Ch7 evidence lineage), not only the Chapter 3 baseline.
+description = "Companion implementation for the Memory book: RAG, graph memory, associative retrieval, routing, evidence lineage, temporal memory, open loops, and goal-conditioned context construction."
+requires-python = ">=3.11"
+dependencies = [
+    "psycopg[binary]>=3.1",
+    "numpy>=1.26",
+    "pandas>=3.0",
+    "pyarrow>=25.0",
+    "pyzmq>=24.0",
+]
+
+[project.optional-dependencies]
+local-models = [
+    "sentence-transformers>=3.0",
+]
+test = [
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["memory_baseline*", "graph_memory*", "associative_memory*",
+           "memory_nexus*", "evidence_lineage*", "temporal_memory*",
+           "open_loops*", "context_frames*", "derived_loops*",
+           "behavior_eval*", "providers*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "capstone/tests", "graph_memory/tests", "associative_memory/tests",
+             "memory_nexus/tests", "evidence_lineage/tests",
+             "temporal_memory/tests", "open_loops/tests",
+              "context_frames/tests", "derived_loops/tests",
+              "behavior_eval/tests", "providers/tests"]

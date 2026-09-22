@@ -1,0 +1,4 @@
+# Generated GraphRAG work state is rebuildable derived memory: never commit it.
+graph_memory/work/
+# Local virtualenv carrying the graphrag package (see §59 install notes).
+.venv/

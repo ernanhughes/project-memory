@@ -1,0 +1,16 @@
+{
+  "graph_answer": "The June ingestion stall (evt-203) and the PostgreSQL decision (evt-205) are directly connected through a sequence of observations and experiments that exposed critical limitations in the initial SQLite-based event store prototype.\n\n### **Root Cause: SQLite Contention Under Load**\nDuring the June load window, the SQLite event store experienced a **40-minute write stall** due to **concurrent-write contention** [Data: incident-021 (1)]. This was not an isolated incident but part of a broader pattern: the SQLite prototype struggled under concurrent writes, as demonstrated in earlier experiments [Data: experiment-contention (10), session-019 (16)].\n\n- **Experiment evt-202** (June 2024) showed that write throughput **collapsed by 62% at 8 writers and 84% at 16 writers**, while median write latency **rose from 3ms to 210ms** [Data: experiment-contention (10)]. Reads remained unaffected, but the write bottleneck made the SQLite choice unsustainable for a shared, write-heavy service.\n- **Session 019** (June 2024) reviewed these findings, confirming that the SQLite prototype **failed to scale under concurrent writes** [Data: session-019 (16)]. The team agreed that the SQLite approach needed a **proper experiment** before any second service copied it.\n\n### **PostgreSQL as the Solution**\nThe team evaluated **PostgreSQL as an alternative** and conducted a benchmark (evt-204) to compare its performance under the same workload:\n\n- **Benchmark evt-204** (July 2024) demonstrated that PostgreSQL **held flat throughput to 32 writers**, with a **p99 write latency of 11ms** [Data: benchmark-note (2)]. While PostgreSQL introduced higher operational complexity (e.g., managed backups), its **ability to handle concurrent writes decisively made it the better choice** for a shared event store.\n\n### **Decision: Migrate to PostgreSQL**\nThe team formally accepted **ADR-007** (July 2024), which **superseded the SQLite prototype** and directed new event-store work to PostgreSQL. This decision was driven by:\n1. **Proven failure of SQLite under load** (evt-203, evt-202).\n2. **PostgreSQL\u2019s scalability** (evt-204), which met the team\u2019s requirements for a shared, write-heavy service.\n3. **Operational trade-offs** (e.g., managed backups) being outweighed by the need for **concurrency resilience**.\n\n### **Outcome**\nThe event-store service migrated to PostgreSQL, and new services were instructed to **copy the PostgreSQL setup rather than the SQLite prototype** [Data: adr-007 (4)]. This resolved the June ingestion stall and ensured the event store could scale under concurrent writes.",
+  "graph_latency_ms": 63490.9,
+  "implicated_sources": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "linked_entities": [
+    "EVENT INGESTION",
+    "JUNE LOAD WINDOW",
+    "POSTGRESQL"
+  ],
+  "mode": "local",
+  "task_id": "q-rel-trace"
+}

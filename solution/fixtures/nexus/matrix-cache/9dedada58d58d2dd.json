@@ -1,0 +1,31 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "Write contention in a database refers to the performance degradation that occurs when multiple processes or threads compete for the same write resources, such as locks on tables or rows, leading to delays, slower write operations, and reduced throughput.",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 20444.45100001758,
+  "cited_ids": [
+    "[derived:local search over persistent graph memory; linked entities: none; implicated sources: none]"
+  ],
+  "context_tokens": 88,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 28222.269799967762,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 1.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-nomem-contention",
+  "reader_latency_ms": 7777.5373999611475,
+  "retrieved_ids": []
+}

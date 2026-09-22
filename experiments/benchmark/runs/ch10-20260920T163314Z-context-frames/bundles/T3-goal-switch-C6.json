@@ -1,0 +1,260 @@
+{
+  "bundle_id": "cb-T3-goal-switch-C6",
+  "condition": "C6",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1498,
+  "bundle_digest": "5537fd8a2a39051b",
+  "items": [
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn",
+        "mb-echo-baseline-3",
+        "mb-echo-baseline-1"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md",
+        "planning/continuity-audit.md",
+        "planning/chapter-04-graphrag-research.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-method-baseline-rule",
+      "members": [
+        "mb-method-baseline-rule"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.baseline-ladder",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 97
+    },
+    {
+      "item_id": "item-mb-method-evidence-discipline",
+      "members": [
+        "mb-method-evidence-discipline"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.evidence-discipline",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 75
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-strength",
+      "members": [
+        "mb-ch03-baseline-strength"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-strength",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 114
+    },
+    {
+      "item_id": "item-mb-ch03-admission-note",
+      "members": [
+        "mb-ch03-admission-note"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.admission-vs-retrieval",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-role",
+      "members": [
+        "mb-ch03-baseline-role"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-config",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 125
+    },
+    {
+      "item_id": "item-mb-contract-q6",
+      "members": [
+        "mb-contract-q6"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.q6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 82
+    },
+    {
+      "item_id": "item-mb-contract-failure-classes",
+      "members": [
+        "mb-contract-failure-classes"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.failure-classes",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 68
+    },
+    {
+      "item_id": "item-mb-contract-frozen-run",
+      "members": [
+        "mb-contract-frozen-run"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.frozen-run",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 90
+    },
+    {
+      "item_id": "item-mb-ch07-result",
+      "members": [
+        "mb-ch07-result"
+      ],
+      "source_refs": [
+        "content/books/memory/07-chapter.md",
+        "experiments/benchmark/runs/ch7-20260919-e7"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch7",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 83
+    },
+    {
+      "item_id": "item-mb-ch09-result",
+      "members": [
+        "mb-ch09-result"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/metrics.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 113
+    },
+    {
+      "item_id": "item-mb-refutes-ch9-scope",
+      "members": [
+        "mb-refutes-ch9-scope"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/results.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [
+        "item-mb-ch09-result"
+      ],
+      "temporal_note": "",
+      "tokens": 70
+    },
+    {
+      "item_id": "item-mb-ch06-result",
+      "members": [
+        "mb-ch06-result"
+      ],
+      "source_refs": [
+        "content/books/memory/06-chapter.md",
+        "experiments/benchmark/runs/ch6-20260919-nexus"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 79
+    },
+    {
+      "item_id": "item-mb-ch04-result",
+      "members": [
+        "mb-ch04-result"
+      ],
+      "source_refs": [
+        "content/books/memory/04-chapter.md",
+        "experiments/benchmark/runs/ch4-20260919T205622Z"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch4",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 71
+    },
+    {
+      "item_id": "item-mb-arch-q6-open",
+      "members": [
+        "mb-arch-q6-open"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 107
+    },
+    {
+      "item_id": "item-mb-arch-spine",
+      "members": [
+        "mb-arch-spine"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.spine",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-mb-arch-definition",
+      "members": [
+        "mb-arch-definition"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md",
+        "content/books/memory/01-chapter.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.definition",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 67
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

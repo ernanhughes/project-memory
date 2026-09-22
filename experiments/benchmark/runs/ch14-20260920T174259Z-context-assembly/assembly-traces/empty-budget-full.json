@@ -1,0 +1,377 @@
+{
+  "T1-architecture": {
+    "task_id": "T1-architecture",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1500
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.25719999939610716,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T1-publication": {
+    "task_id": "T1-publication",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ],
+        "bundle_tokens": 1085
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.24200000007112976,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-cocoder": {
+    "task_id": "T2-cocoder",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "cc-context-window",
+          "cc-memory-notes",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-evidence-refs"
+        ],
+        "bundle_tokens": 233
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.2217999999629683,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-memory-book": {
+    "task_id": "T2-memory-book",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-graphrag",
+          "mb-impl-zeromq",
+          "mb-impl-postgres",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1315
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.26679999973566737,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-writer": {
+    "task_id": "T2-writer",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "wr-context-runtime",
+          "wr-memory-store",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "bundle_tokens": 255
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.2641000000949134,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T3-goal-switch": {
+    "task_id": "T3-goal-switch",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch07-result",
+          "mb-ch09-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch06-result",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition"
+        ],
+        "bundle_tokens": 1498
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.22770000032323878,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T4-current-vs-stale": {
+    "task_id": "T4-current-vs-stale",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch09-result",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-session-pivot",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1396
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.22499999977299012,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T5-support-vs-topicality": {
+    "task_id": "T5-support-vs-topicality",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1476
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.24289999964821618,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T6-echo-coalescing": {
+    "task_id": "T6-echo-coalescing",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-contract-failure-classes",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine"
+        ],
+        "bundle_tokens": 1485
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.26330000036978163,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-publication": {
+    "task_id": "T7-publication",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-arch-q6-open",
+          "mb-session-pivot",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1183
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.2260999999634805,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-release": {
+    "task_id": "T7-release",
+    "condition": "empty",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-arch-q6-open",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1488
+      }
+    ],
+    "items": [],
+    "latency_ms": 0.22879999960423447,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  }
+}

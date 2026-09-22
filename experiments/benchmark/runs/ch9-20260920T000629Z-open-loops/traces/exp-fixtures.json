@@ -1,0 +1,90 @@
+[
+  {
+    "valid_at": "2024-07-20T00:00:00Z",
+    "expectation_id": "exp-fixtures",
+    "status": "OPEN",
+    "confidence_class": "CORROBORATED_OPEN",
+    "opening_evidence": [
+      "ch9-docs-open"
+    ],
+    "closing_evidence": [],
+    "closure_tier": "",
+    "footprint": {
+      "expectation_id": "exp-fixtures",
+      "searched_sources": [
+        "commits",
+        "decisions",
+        "diffs",
+        "issues",
+        "sessions"
+      ],
+      "searched_until": "2024-07-20T00:00:00Z",
+      "candidate_closures_examined": 0,
+      "gaps": [],
+      "current_state_checked": false
+    },
+    "deadline_passed": false,
+    "last_verified_at": null,
+    "detail": "no valid closing transition as of 2024-07-20T00:00:00Z; searched 4/4 expected evidence channels"
+  },
+  {
+    "valid_at": "2024-08-25T00:00:00Z",
+    "expectation_id": "exp-fixtures",
+    "status": "SATISFIED",
+    "confidence_class": "CLOSED_WITH_EVIDENCE",
+    "opening_evidence": [
+      "ch9-docs-open"
+    ],
+    "closing_evidence": [
+      "ch9-refactor"
+    ],
+    "closure_tier": "state-transition",
+    "footprint": {
+      "expectation_id": "exp-fixtures",
+      "searched_sources": [
+        "commits",
+        "decisions",
+        "diffs",
+        "issues",
+        "sessions"
+      ],
+      "searched_until": "2024-08-25T00:00:00Z",
+      "candidate_closures_examined": 3,
+      "gaps": [],
+      "current_state_checked": false
+    },
+    "deadline_passed": false,
+    "last_verified_at": null,
+    "detail": "closed by ch9-refactor [state-transition]"
+  },
+  {
+    "valid_at": "2024-08-31T00:00:00Z",
+    "expectation_id": "exp-fixtures",
+    "status": "SATISFIED",
+    "confidence_class": "CLOSED_WITH_EVIDENCE",
+    "opening_evidence": [
+      "ch9-docs-open"
+    ],
+    "closing_evidence": [
+      "ch9-refactor"
+    ],
+    "closure_tier": "state-transition",
+    "footprint": {
+      "expectation_id": "exp-fixtures",
+      "searched_sources": [
+        "commits",
+        "decisions",
+        "diffs",
+        "issues",
+        "sessions"
+      ],
+      "searched_until": "2024-08-31T00:00:00Z",
+      "candidate_closures_examined": 5,
+      "gaps": [],
+      "current_state_checked": false
+    },
+    "deadline_passed": false,
+    "last_verified_at": null,
+    "detail": "closed by ch9-refactor [state-transition]"
+  }
+]

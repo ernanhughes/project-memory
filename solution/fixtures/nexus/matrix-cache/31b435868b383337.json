@@ -1,0 +1,39 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md"
+  ],
+  "answer": "The team undertook a series of structured, data-driven initiatives to enhance the reliability of the event-store backend, primarily addressing performance bottlenecks, scalability limitations, and incident response.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 65353.37590001291,
+  "cited_ids": [
+    "session-014.md",
+    "adr-007.md",
+    "EVT-205",
+    "Benchmark EVT-204",
+    "Incident EVT-203"
+  ],
+  "context_tokens": 1195,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 72906.38460003538,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.6
+  },
+  "model_calls": 7,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q-global-reliability",
+  "reader_latency_ms": 7552.845099999104,
+  "retrieved_ids": [
+    "session-014.md"
+  ]
+}

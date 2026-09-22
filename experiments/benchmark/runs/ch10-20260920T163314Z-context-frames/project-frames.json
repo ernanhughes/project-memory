@@ -1,0 +1,133 @@
+{
+  "memory-book": {
+    "project_id": "memory-book",
+    "version": "v1",
+    "purpose": "Build and empirically test an architecture for AI memory.",
+    "objectives": [
+      "mechanisms earn their complexity experimentally",
+      "compare every layer against the Chapter 3 retrieval baseline",
+      "preserve provenance and historical truth",
+      "distinguish hypothesis from result"
+    ],
+    "constraints": [
+      "same reader, corpus and context budget across conditions",
+      "publish per-question results before any aggregate",
+      "prefer the simpler mechanism when results tie"
+    ],
+    "include_projects": [
+      "memory-book"
+    ],
+    "evidence_preferences": {
+      "publication_review": [
+        "chapter_prose",
+        "chapter_concepts",
+        "citation",
+        "style_rule",
+        "planning_note"
+      ],
+      "architecture_review": [
+        "method_rule",
+        "baseline_result",
+        "measurement_contract",
+        "experiment_result",
+        "architecture_note",
+        "chapter_prose"
+      ],
+      "release_readiness": [
+        "open_loop",
+        "style_rule",
+        "experiment_result",
+        "chapter_prose",
+        "implementation_detail"
+      ],
+      "experiment_analysis": [
+        "experiment_result",
+        "baseline_result",
+        "measurement_contract",
+        "method_rule"
+      ],
+      "implementation_review": [
+        "implementation_detail",
+        "experiment_result",
+        "architecture_note",
+        "method_rule"
+      ],
+      "default": [
+        "experiment_result",
+        "architecture_note",
+        "chapter_prose"
+      ]
+    },
+    "preserve_conflicts": true,
+    "penalise_stale": true,
+    "require_provenance": true,
+    "class_pull_width": 3,
+    "schema_version": "project-frame/v0.1"
+  },
+  "writer": {
+    "project_id": "writer",
+    "version": "v1",
+    "purpose": "Draft and revise long documents with cited sources.",
+    "objectives": [
+      "keep every claim traceable to a source passage",
+      "reduce redundant context per section"
+    ],
+    "constraints": [
+      "surface contradictory sources rather than reconcile"
+    ],
+    "include_projects": [
+      "writer"
+    ],
+    "evidence_preferences": {
+      "implementation_review": [
+        "implementation_detail",
+        "planning_note",
+        "baseline_result",
+        "experiment_result"
+      ],
+      "default": [
+        "implementation_detail",
+        "planning_note",
+        "experiment_result"
+      ]
+    },
+    "preserve_conflicts": true,
+    "penalise_stale": true,
+    "require_provenance": true,
+    "class_pull_width": 3,
+    "schema_version": "project-frame/v0.1"
+  },
+  "cocoder": {
+    "project_id": "cocoder",
+    "version": "v1",
+    "purpose": "Assist code changes inside a repository under a token budget.",
+    "objectives": [
+      "raise patch acceptance",
+      "cut unused admitted context"
+    ],
+    "constraints": [
+      "every edit names the files and symbols that justify it"
+    ],
+    "include_projects": [
+      "cocoder"
+    ],
+    "evidence_preferences": {
+      "implementation_review": [
+        "implementation_detail",
+        "planning_note",
+        "experiment_result",
+        "method_rule"
+      ],
+      "default": [
+        "implementation_detail",
+        "planning_note",
+        "experiment_result"
+      ]
+    },
+    "preserve_conflicts": true,
+    "penalise_stale": true,
+    "require_provenance": true,
+    "class_pull_width": 3,
+    "schema_version": "project-frame/v0.1"
+  }
+}

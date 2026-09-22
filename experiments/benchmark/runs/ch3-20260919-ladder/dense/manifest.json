@@ -1,0 +1,25 @@
+{
+  "chunking_policy": "sentence:2000:300",
+  "code_commit": "b42c065",
+  "condition": "dense",
+  "context_budget": "chars=6000,passages=6",
+  "corpus_version": "ch3-fixture-v0.1",
+  "embedding_model": "ollama:bge-m3:1024",
+  "generator_seed": null,
+  "grader_identity": "mechanical-only",
+  "grader_version": "unspecified",
+  "instrument_version": "0.1.0",
+  "memory_configuration": "dense",
+  "model_identity": "ollama",
+  "model_version": "llama3.1:8b",
+  "notes": "Chapter 3 fixture run; n=10 tasks.",
+  "prompts": [
+    "Answer questions about a software project's recorded history. Use only the supplied project evidence. Quote or name the evidence identifiers you rely on. If the evidence does not determine an answer, say so plainly instead of guessing. Distinguish what was decided from what was merely proposed."
+  ],
+  "reranker": "cross-encoder",
+  "retrieval_budget": "candidates=30",
+  "run_id": "ch3-20260919-ladder",
+  "scorer_version": "0.1.0",
+  "system_name": "rag-baseline-llama3.1:8b",
+  "task_set_version": "ch3-tasks-v0.1"
+}

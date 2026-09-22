@@ -1,0 +1,48 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "session-040.md",
+    "benchmark-note.md",
+    "incident-021.md",
+    "stale-summary.md",
+    "experiment-contention.md",
+    "session-014.md",
+    "notification-service.md"
+  ],
+  "answer": "Incident evt-203 and Experiment evt-202 influenced the event-store decision.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6657.835599966347,
+  "cited_ids": [
+    "incident-021.md",
+    "experiment-contention.md"
+  ],
+  "context_tokens": 803,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 82098.88549998868,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.5,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3338",
+  "query_id": "q-rel-influences",
+  "reader_latency_ms": 75440.80509996274,
+  "retrieved_ids": [
+    "adr-007.md",
+    "session-040.md",
+    "benchmark-note.md",
+    "incident-021.md",
+    "stale-summary.md",
+    "experiment-contention.md",
+    "session-014.md",
+    "notification-service.md"
+  ]
+}

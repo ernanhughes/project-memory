@@ -1,0 +1,35 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 30339.67680000933,
+  "cited_ids": [
+    "Data: Sources (0)",
+    "Data: Sources (2)",
+    "Data: Sources (14)"
+  ],
+  "context_tokens": 640,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 65656.63409995614,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "current_state_accuracy": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q4-current-eventstore",
+  "reader_latency_ms": 35316.7870999896,
+  "retrieved_ids": []
+}

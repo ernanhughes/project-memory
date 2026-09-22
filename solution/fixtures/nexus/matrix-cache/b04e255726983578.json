@@ -1,0 +1,30 @@
+{
+  "abstained": true,
+  "admitted_ids": [],
+  "answer": "Unknown",
+  "capability_id": "NONE",
+  "capability_latency_ms": 0.0,
+  "cited_ids": [],
+  "context_tokens": 0,
+  "cost_units": 0.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNNECESSARY_ABSTENTION",
+    "UNNECESSARY_ABSTENTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 2672.774799983017,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "current_state_accuracy": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0
+  },
+  "model_calls": 1,
+  "notes": "no history retrieved",
+  "query_id": "q4-production-now",
+  "reader_latency_ms": 2672.645899991039,
+  "retrieved_ids": []
+}

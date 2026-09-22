@@ -1,0 +1,36 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 61245.07419997826,
+  "cited_ids": [
+    "EVT-205 (ADR-007)",
+    "Benchmark EVT-204",
+    "session-040.md",
+    "PROTOTYPE (EVT-201)"
+  ],
+  "context_tokens": 861,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 99916.09329998028,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.75
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q6-use-new-service",
+  "reader_latency_ms": 38670.79110001214,
+  "retrieved_ids": []
+}

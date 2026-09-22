@@ -1,0 +1,86 @@
+{
+  "fix-store": {
+    "bt_units": [
+      "mb-ch10-concepts",
+      "mb-echo-ch9-result-1"
+    ],
+    "bt_tokens": 112,
+    "bt_target": 102,
+    "bt_ratio": 1.098,
+    "ba_tokens": null,
+    "br_tokens": null,
+    "base": "B4"
+  },
+  "ship-ch10": {
+    "bt_units": [
+      "mb-research-context-engineering"
+    ],
+    "bt_tokens": 87,
+    "bt_target": 81,
+    "bt_ratio": 1.074,
+    "ba_tokens": null,
+    "br_tokens": null,
+    "base": "B4"
+  },
+  "release-blockers": {
+    "bt_units": [
+      "mb-research-context-engineering",
+      "mb-arch-spine"
+    ],
+    "bt_tokens": 171,
+    "bt_target": 166,
+    "bt_ratio": 1.03,
+    "ba_tokens": null,
+    "br_tokens": null,
+    "base": "B3"
+  },
+  "credit-rule": {
+    "bt_units": [
+      "mb-style-build",
+      "mb-research-intention-schema"
+    ],
+    "bt_tokens": 126,
+    "bt_target": 120,
+    "bt_ratio": 1.05,
+    "ba_tokens": null,
+    "br_tokens": null,
+    "base": "B4"
+  },
+  "cite-rule": {
+    "bt_units": [
+      "mb-research-context-engineering",
+      "mb-echo-baseline-4"
+    ],
+    "bt_tokens": 110,
+    "bt_target": 102,
+    "bt_ratio": 1.078,
+    "ba_tokens": null,
+    "br_tokens": null,
+    "base": "B4"
+  },
+  "review-arch": {
+    "bt_units": [
+      "mb-loop-readme-drift",
+      "mb-loop-ch11-recap",
+      "mb-echo-baseline-2"
+    ],
+    "bt_tokens": 132,
+    "bt_target": 121,
+    "bt_ratio": 1.091,
+    "ba_tokens": null,
+    "br_tokens": null,
+    "base": "B3"
+  },
+  "corpus-cleanup": {
+    "bt_units": [
+      "mb-ch10-prose-schema",
+      "mb-research-deontic"
+    ],
+    "bt_tokens": 141,
+    "bt_target": 131,
+    "bt_ratio": 1.076,
+    "ba_tokens": null,
+    "br_tokens": null,
+    "base": null
+  }
+}

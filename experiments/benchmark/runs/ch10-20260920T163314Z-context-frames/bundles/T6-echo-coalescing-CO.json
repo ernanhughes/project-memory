@@ -1,0 +1,68 @@
+{
+  "bundle_id": "cb-T6-echo-coalescing-CO",
+  "condition": "CO",
+  "budget_tokens": 1500,
+  "bundle_tokens": 386,
+  "bundle_digest": "75ad3d124aff2b1b",
+  "items": [
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-method-baseline-rule",
+      "members": [
+        "mb-method-baseline-rule"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.baseline-ladder",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 97
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-role",
+      "members": [
+        "mb-ch03-baseline-role"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-config",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 125
+    },
+    {
+      "item_id": "item-mb-method-evidence-discipline",
+      "members": [
+        "mb-method-evidence-discipline"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.evidence-discipline",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 75
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

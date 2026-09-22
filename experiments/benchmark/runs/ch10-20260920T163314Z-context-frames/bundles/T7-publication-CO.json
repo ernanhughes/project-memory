@@ -1,0 +1,124 @@
+{
+  "bundle_id": "cb-T7-publication-CO",
+  "condition": "CO",
+  "budget_tokens": 1500,
+  "bundle_tokens": 696,
+  "bundle_digest": "b8dc854d9a97abb2",
+  "items": [
+    {
+      "item_id": "item-mb-ch10-prose-opening",
+      "members": [
+        "mb-ch10-prose-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.current-content",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 119
+    },
+    {
+      "item_id": "item-mb-ch10-prose-schema",
+      "members": [
+        "mb-ch10-prose-schema"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.current-content",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 103
+    },
+    {
+      "item_id": "item-mb-style-conventions",
+      "members": [
+        "mb-style-conventions"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.prose",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 66
+    },
+    {
+      "item_id": "item-mb-ch10-refs",
+      "members": [
+        "mb-ch10-refs"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md",
+        "research/bibliography.yaml"
+      ],
+      "kind": "citation",
+      "claim_key": "ch10.references",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 85
+    },
+    {
+      "item_id": "item-mb-ch10-concepts",
+      "members": [
+        "mb-ch10-concepts"
+      ],
+      "source_refs": [
+        "content/books/memory/10-concepts.txt"
+      ],
+      "kind": "chapter_concepts",
+      "claim_key": "ch10.concepts",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 86
+    },
+    {
+      "item_id": "item-mb-style-frontmatter",
+      "members": [
+        "mb-style-frontmatter"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "hugo.toml"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.frontmatter",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 83
+    },
+    {
+      "item_id": "item-mb-ch11-opening",
+      "members": [
+        "mb-ch11-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    },
+    {
+      "item_id": "item-mb-ch09-handoff",
+      "members": [
+        "mb-ch09-handoff"
+      ],
+      "source_refs": [
+        "content/books/memory/09-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

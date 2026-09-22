@@ -1,0 +1,195 @@
+{
+  "trace_id": "T7-release-CO",
+  "condition": "CO",
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "project_frame": "memory-book-v1",
+  "work_frame": "wf-t7-rel",
+  "query": "What is left to do?",
+  "as_of": "2026-09-20T12:00:00Z",
+  "budget_tokens": 1500,
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_count": 6,
+  "admitted_count": 6,
+  "rejected_count": 0,
+  "stages": [
+    {
+      "stage": "oracle",
+      "admitted_items": 6,
+      "bundle_tokens": 354
+    }
+  ],
+  "bundle_digest": "ced2d62c74f23a47",
+  "bundle_tokens": 354,
+  "latency_ms": 0.06,
+  "candidates": [
+    {
+      "candidate_id": "mb-loop-ch10-experiment",
+      "project_id": "memory-book",
+      "kind": "open_loop",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 50,
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-loop-readme-drift",
+      "project_id": "memory-book",
+      "kind": "open_loop",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 57,
+      "source_refs": [
+        "solution/README.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-loop-ch11-recap",
+      "project_id": "memory-book",
+      "kind": "open_loop",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 48,
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-loop-real-corpus",
+      "project_id": "memory-book",
+      "kind": "open_loop",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 55,
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch10-experiment-pending",
+      "project_id": "memory-book",
+      "kind": "chapter_prose",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 88,
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-style-build",
+      "project_id": "memory-book",
+      "kind": "style_rule",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 56,
+      "source_refs": [
+        "AGENTS.md"
+      ]
+    }
+  ],
+  "schema_version": "context-trace/v0.1"
+}

@@ -1,0 +1,4069 @@
+{
+  "suite": "E10-context-frames-v0.1",
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "corpus_digest": "9dc7b4326c7df3a4",
+  "corpus_units": 68,
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_pool": 40,
+  "budget_tokens": 1500,
+  "ledger_audit": {
+    "unknown_units": [],
+    "out_of_scope_required": [],
+    "empty_required": []
+  },
+  "experiments": {
+    "E10-A": {
+      "per_task": {
+        "T1-publication": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.6667,
+            "context_precision": 0.381,
+            "distractor_admission": 0.4762,
+            "harmful_admission": 0.0952,
+            "optional_admission": 0.0476,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1476,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.82
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.6667,
+            "context_precision": 0.4,
+            "distractor_admission": 0.5,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1496,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 5.44
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.6667,
+            "context_precision": 0.381,
+            "distractor_admission": 0.4762,
+            "harmful_admission": 0.0952,
+            "optional_admission": 0.0476,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1476,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.49
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.5,
+            "useful_recall": 0.5,
+            "context_precision": 0.3333,
+            "distractor_admission": 0.5,
+            "harmful_admission": 0.1111,
+            "optional_admission": 0.0556,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 18,
+            "bundle_items": 18,
+            "bundle_tokens": 1497,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 6.07
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.9167,
+            "context_precision": 0.6875,
+            "distractor_admission": 0.25,
+            "harmful_admission": 0.0625,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 16,
+            "bundle_items": 16,
+            "bundle_tokens": 1143,
+            "budget_tokens": 1500,
+            "candidate_count": 41,
+            "latency_ms": 11.33
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.9167,
+            "context_precision": 0.7333,
+            "distractor_admission": 0.2667,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 15,
+            "bundle_items": 15,
+            "bundle_tokens": 1085,
+            "budget_tokens": 1500,
+            "candidate_count": 41,
+            "latency_ms": 11.0
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.9167,
+            "context_precision": 0.7333,
+            "distractor_admission": 0.2667,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 15,
+            "bundle_items": 12,
+            "bundle_tokens": 1086,
+            "budget_tokens": 1500,
+            "candidate_count": 41,
+            "latency_ms": 11.77
+          }
+        },
+        "T1-architecture": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.4286,
+            "context_precision": 0.2857,
+            "distractor_admission": 0.619,
+            "harmful_admission": 0.0952,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1476,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.49
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.5,
+            "context_precision": 0.35,
+            "distractor_admission": 0.6,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1496,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 5.28
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.4286,
+            "context_precision": 0.2857,
+            "distractor_admission": 0.619,
+            "harmful_admission": 0.0952,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1476,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.61
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.5,
+            "useful_recall": 0.6429,
+            "context_precision": 0.5,
+            "distractor_admission": 0.3333,
+            "harmful_admission": 0.1111,
+            "optional_admission": 0.0556,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 18,
+            "bundle_items": 18,
+            "bundle_tokens": 1497,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.9
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 0.8333,
+            "useful_recall": 0.7143,
+            "context_precision": 0.5882,
+            "distractor_admission": 0.2941,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1176,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1500,
+            "budget_tokens": 1500,
+            "candidate_count": 45,
+            "latency_ms": 11.53
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 0.8333,
+            "useful_recall": 0.7143,
+            "context_precision": 0.5882,
+            "distractor_admission": 0.2941,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1176,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1500,
+            "budget_tokens": 1500,
+            "candidate_count": 45,
+            "latency_ms": 11.14
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 0.8333,
+            "useful_recall": 0.7143,
+            "context_precision": 0.5882,
+            "distractor_admission": 0.2941,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1176,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1500,
+            "budget_tokens": 1500,
+            "candidate_count": 45,
+            "latency_ms": 11.42
+          }
+        },
+        "T2-memory-book": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.8571,
+            "context_precision": 0.2857,
+            "distractor_admission": 0.619,
+            "harmful_admission": 0.0476,
+            "optional_admission": 0.0476,
+            "cross_project_leakage": 0.2381,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.59
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.8571,
+            "context_precision": 0.2857,
+            "distractor_admission": 0.619,
+            "harmful_admission": 0.0476,
+            "optional_admission": 0.0476,
+            "cross_project_leakage": 0.2381,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 46,
+            "latency_ms": 5.63
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.8571,
+            "context_precision": 0.3,
+            "distractor_admission": 0.6,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.15,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1497,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.24
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.3333,
+            "useful_recall": 0.2857,
+            "context_precision": 0.1333,
+            "distractor_admission": 0.7333,
+            "harmful_admission": 0.0667,
+            "optional_admission": 0.0667,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 15,
+            "bundle_items": 15,
+            "bundle_tokens": 1152,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.8
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.5714,
+            "context_precision": 0.2222,
+            "distractor_admission": 0.6667,
+            "harmful_admission": 0.0556,
+            "optional_admission": 0.0556,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0556,
+            "provenance_completeness": 1.0,
+            "admitted_units": 18,
+            "bundle_items": 18,
+            "bundle_tokens": 1294,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 12.06
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.7143,
+            "context_precision": 0.2941,
+            "distractor_admission": 0.6471,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0588,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0588,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1315,
+            "budget_tokens": 1500,
+            "candidate_count": 44,
+            "latency_ms": 11.05
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.7143,
+            "context_precision": 0.2941,
+            "distractor_admission": 0.6471,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0588,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0588,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 16,
+            "bundle_tokens": 1281,
+            "budget_tokens": 1500,
+            "candidate_count": 44,
+            "latency_ms": 10.69
+          }
+        },
+        "T2-writer": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.6,
+            "context_precision": 0.1429,
+            "distractor_admission": 0.8571,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.8571,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.36
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.6,
+            "context_precision": 0.1429,
+            "distractor_admission": 0.8571,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.8571,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 46,
+            "latency_ms": 5.24
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.6,
+            "context_precision": 1.0,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 3,
+            "bundle_items": 3,
+            "bundle_tokens": 172,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.29
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.6,
+            "context_precision": 1.0,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 3,
+            "bundle_items": 3,
+            "bundle_tokens": 172,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 6.31
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 1.0,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 5,
+            "bundle_items": 5,
+            "bundle_tokens": 255,
+            "budget_tokens": 1500,
+            "candidate_count": 41,
+            "latency_ms": 10.6
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 1.0,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 5,
+            "bundle_items": 5,
+            "bundle_tokens": 255,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 10.63
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 1.0,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 5,
+            "bundle_items": 5,
+            "bundle_tokens": 255,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.59
+          }
+        },
+        "T2-cocoder": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.5,
+            "context_precision": 0.0952,
+            "distractor_admission": 0.9048,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.9048,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 6.15
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.5,
+            "context_precision": 0.0952,
+            "distractor_admission": 0.9048,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.9048,
+            "redundancy_rate": 0.0952,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 46,
+            "latency_ms": 5.16
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.75,
+            "context_precision": 0.75,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.25,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 4,
+            "bundle_items": 4,
+            "bundle_tokens": 191,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.37
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.75,
+            "context_precision": 1.0,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 3,
+            "bundle_items": 3,
+            "bundle_tokens": 144,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.51
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.8,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.2,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 5,
+            "bundle_items": 5,
+            "bundle_tokens": 233,
+            "budget_tokens": 1500,
+            "candidate_count": 41,
+            "latency_ms": 10.95
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.8,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.2,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 5,
+            "bundle_items": 5,
+            "bundle_tokens": 233,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 10.4
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.8,
+            "distractor_admission": 0.0,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.2,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 5,
+            "bundle_items": 5,
+            "bundle_tokens": 233,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.21
+          }
+        },
+        "T3-goal-switch": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.5556,
+            "context_precision": 0.2632,
+            "distractor_admission": 0.6842,
+            "harmful_admission": 0.0526,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 19,
+            "bundle_items": 19,
+            "bundle_tokens": 1479,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.5
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.5556,
+            "context_precision": 0.2632,
+            "distractor_admission": 0.6842,
+            "harmful_admission": 0.0526,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 19,
+            "bundle_items": 19,
+            "bundle_tokens": 1479,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 5.42
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 0.75,
+            "useful_recall": 0.5556,
+            "context_precision": 0.2632,
+            "distractor_admission": 0.6842,
+            "harmful_admission": 0.0526,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 19,
+            "bundle_items": 19,
+            "bundle_tokens": 1479,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.12
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.5,
+            "useful_recall": 0.4444,
+            "context_precision": 0.2353,
+            "distractor_admission": 0.6471,
+            "harmful_admission": 0.0588,
+            "optional_admission": 0.0588,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1424,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.67
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.7778,
+            "context_precision": 0.4118,
+            "distractor_admission": 0.5294,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0588,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1477,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.47
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.7778,
+            "context_precision": 0.4118,
+            "distractor_admission": 0.5294,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0588,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1498,
+            "budget_tokens": 1500,
+            "candidate_count": 44,
+            "latency_ms": 11.03
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.7778,
+            "context_precision": 0.3684,
+            "distractor_admission": 0.5789,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0526,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.1053,
+            "provenance_completeness": 1.0,
+            "admitted_units": 19,
+            "bundle_items": 17,
+            "bundle_tokens": 1498,
+            "budget_tokens": 1500,
+            "candidate_count": 44,
+            "latency_ms": 10.98
+          }
+        },
+        "T4-current-vs-stale": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.6667,
+            "context_precision": 0.0909,
+            "distractor_admission": 0.8636,
+            "harmful_admission": 0.0455,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0909,
+            "redundancy_rate": 0.1818,
+            "provenance_completeness": 1.0,
+            "admitted_units": 22,
+            "bundle_items": 22,
+            "bundle_tokens": 1483,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.83
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.1364,
+            "distractor_admission": 0.8182,
+            "harmful_admission": 0.0455,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0455,
+            "redundancy_rate": 0.1818,
+            "provenance_completeness": 1.0,
+            "admitted_units": 22,
+            "bundle_items": 22,
+            "bundle_tokens": 1496,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 5.26
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.6667,
+            "context_precision": 0.0952,
+            "distractor_admission": 0.8571,
+            "harmful_admission": 0.0476,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.1905,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1478,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.38
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.3333,
+            "context_precision": 0.0588,
+            "distractor_admission": 0.8824,
+            "harmful_admission": 0.0588,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.1176,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1251,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 6.89
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.6667,
+            "context_precision": 0.1,
+            "distractor_admission": 0.8,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.2,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1361,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 11.65
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.6667,
+            "context_precision": 0.1,
+            "distractor_admission": 0.85,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.2,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1396,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.32
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.6667,
+            "context_precision": 0.1,
+            "distractor_admission": 0.85,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.2,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 16,
+            "bundle_tokens": 1284,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.11
+          }
+        },
+        "T5-support-vs-topicality": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.8333,
+            "context_precision": 0.25,
+            "distractor_admission": 0.6,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.1,
+            "cross_project_leakage": 0.05,
+            "redundancy_rate": 0.1,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1498,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.54
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.8333,
+            "context_precision": 0.25,
+            "distractor_admission": 0.6,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.1,
+            "cross_project_leakage": 0.05,
+            "redundancy_rate": 0.1,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1498,
+            "budget_tokens": 1500,
+            "candidate_count": 46,
+            "latency_ms": 5.31
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.8333,
+            "context_precision": 0.25,
+            "distractor_admission": 0.6,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.1,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.15,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1480,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.44
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.5,
+            "context_precision": 0.1765,
+            "distractor_admission": 0.7059,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1176,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0588,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1403,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.76
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.3529,
+            "distractor_admission": 0.5294,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1176,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1476,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 11.81
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.3529,
+            "distractor_admission": 0.5294,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1176,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1476,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 10.7
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.3158,
+            "distractor_admission": 0.5789,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1053,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.1053,
+            "provenance_completeness": 1.0,
+            "admitted_units": 19,
+            "bundle_items": 17,
+            "bundle_tokens": 1476,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 10.99
+          }
+        },
+        "T6-echo-coalescing": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.75,
+            "context_precision": 0.1429,
+            "distractor_admission": 0.5238,
+            "harmful_admission": 0.0476,
+            "optional_admission": 0.2857,
+            "cross_project_leakage": 0.0952,
+            "redundancy_rate": 0.1905,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1477,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.47
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.75,
+            "context_precision": 0.1429,
+            "distractor_admission": 0.5714,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.2857,
+            "cross_project_leakage": 0.0476,
+            "redundancy_rate": 0.1905,
+            "provenance_completeness": 1.0,
+            "admitted_units": 21,
+            "bundle_items": 21,
+            "bundle_tokens": 1489,
+            "budget_tokens": 1500,
+            "candidate_count": 45,
+            "latency_ms": 6.18
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.75,
+            "context_precision": 0.15,
+            "distractor_admission": 0.5,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.3,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.2,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1482,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.13
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 1.0,
+            "useful_recall": 0.25,
+            "context_precision": 0.0588,
+            "distractor_admission": 0.5882,
+            "harmful_admission": 0.0588,
+            "optional_admission": 0.2941,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.1765,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1209,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 6.08
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.2222,
+            "distractor_admission": 0.6111,
+            "harmful_admission": 0.0556,
+            "optional_admission": 0.1111,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0556,
+            "provenance_completeness": 1.0,
+            "admitted_units": 18,
+            "bundle_items": 18,
+            "bundle_tokens": 1482,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 12.13
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.2353,
+            "distractor_admission": 0.6471,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1176,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.17
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.2,
+            "distractor_admission": 0.55,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.25,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.15,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 17,
+            "bundle_tokens": 1485,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.22
+          }
+        },
+        "T7-release": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 0.0,
+            "useful_recall": 0.0,
+            "context_precision": 0.0,
+            "distractor_admission": 0.9,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.05,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1497,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.68
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 0.0,
+            "useful_recall": 0.1667,
+            "context_precision": 0.05,
+            "distractor_admission": 0.85,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1486,
+            "budget_tokens": 1500,
+            "candidate_count": 45,
+            "latency_ms": 5.32
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 0.0,
+            "useful_recall": 0.1667,
+            "context_precision": 0.05,
+            "distractor_admission": 0.85,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1486,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.75
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.0,
+            "useful_recall": 0.0,
+            "context_precision": 0.0,
+            "distractor_admission": 0.8235,
+            "harmful_admission": 0.1176,
+            "optional_admission": 0.0588,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1423,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.92
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.6667,
+            "context_precision": 0.2,
+            "distractor_admission": 0.75,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.05,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1444,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 11.59
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.6667,
+            "context_precision": 0.2,
+            "distractor_admission": 0.7,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1488,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 10.54
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.6667,
+            "context_precision": 0.2,
+            "distractor_admission": 0.7,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.1,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 18,
+            "bundle_tokens": 1489,
+            "budget_tokens": 1500,
+            "candidate_count": 42,
+            "latency_ms": 10.82
+          }
+        },
+        "T7-publication": {
+          "C0": {
+            "condition": "C0",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.5,
+            "context_precision": 0.2,
+            "distractor_admission": 0.75,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.05,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1497,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.15
+          },
+          "C1": {
+            "condition": "C1",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.5,
+            "context_precision": 0.2,
+            "distractor_admission": 0.75,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1486,
+            "budget_tokens": 1500,
+            "candidate_count": 45,
+            "latency_ms": 5.39
+          },
+          "C2": {
+            "condition": "C2",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.5,
+            "context_precision": 0.2,
+            "distractor_admission": 0.75,
+            "harmful_admission": 0.05,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.05,
+            "provenance_completeness": 1.0,
+            "admitted_units": 20,
+            "bundle_items": 20,
+            "bundle_tokens": 1486,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.22
+          },
+          "C3": {
+            "condition": "C3",
+            "must_include_recall": 0.6667,
+            "useful_recall": 0.5,
+            "context_precision": 0.2353,
+            "distractor_admission": 0.6471,
+            "harmful_admission": 0.1176,
+            "optional_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1423,
+            "budget_tokens": 1500,
+            "candidate_count": 40,
+            "latency_ms": 5.75
+          },
+          "C4": {
+            "condition": "C4",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.4706,
+            "distractor_admission": 0.4118,
+            "harmful_admission": 0.0588,
+            "optional_admission": 0.0588,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 17,
+            "bundle_items": 17,
+            "bundle_tokens": 1241,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.43
+          },
+          "C5": {
+            "condition": "C5",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.5,
+            "distractor_admission": 0.4375,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0625,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 16,
+            "bundle_items": 16,
+            "bundle_tokens": 1183,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 11.12
+          },
+          "C6": {
+            "condition": "C6",
+            "must_include_recall": 1.0,
+            "useful_recall": 1.0,
+            "context_precision": 0.5,
+            "distractor_admission": 0.4375,
+            "harmful_admission": 0.0,
+            "optional_admission": 0.0625,
+            "cross_project_leakage": 0.0,
+            "redundancy_rate": 0.0,
+            "provenance_completeness": 1.0,
+            "admitted_units": 16,
+            "bundle_items": 13,
+            "bundle_tokens": 1184,
+            "budget_tokens": 1500,
+            "candidate_count": 43,
+            "latency_ms": 10.99
+          }
+        }
+      },
+      "mean_over_tasks": {
+        "C0": {
+          "must_include_recall": 0.7727,
+          "useful_recall": 0.578,
+          "context_precision": 0.1943,
+          "distractor_admission": 0.7089,
+          "harmful_admission": 0.0485,
+          "cross_project_leakage": 0.2124,
+          "redundancy_rate": 0.0953,
+          "provenance_completeness": 1.0,
+          "bundle_tokens": 1485.2727,
+          "label": "strong RAG, query only"
+        },
+        "C1": {
+          "must_include_recall": 0.7727,
+          "useful_recall": 0.6299,
+          "context_precision": 0.2106,
+          "distractor_admission": 0.705,
+          "harmful_admission": 0.036,
+          "cross_project_leakage": 0.1948,
+          "redundancy_rate": 0.0871,
+          "provenance_completeness": 1.0,
+          "bundle_tokens": 1489.1818,
+          "label": "strong RAG + recent work"
+        },
+        "C2": {
+          "must_include_recall": 0.7727,
+          "useful_recall": 0.6159,
+          "context_precision": 0.3386,
+          "distractor_admission": 0.5397,
+          "harmful_admission": 0.0491,
+          "cross_project_leakage": 0.0,
+          "redundancy_rate": 0.0892,
+          "provenance_completeness": 1.0,
+          "bundle_tokens": 1245.7273,
+          "label": "strong RAG + project scope"
+        },
+        "C3": {
+          "must_include_recall": 0.6212,
+          "useful_recall": 0.4369,
+          "context_precision": 0.3392,
+          "distractor_admission": 0.5328,
+          "harmful_admission": 0.0637,
+          "cross_project_leakage": 0.0,
+          "redundancy_rate": 0.0321,
+          "provenance_completeness": 1.0,
+          "bundle_tokens": 1145.0,
+          "label": "+ ProjectFrame"
+        },
+        "C4": {
+          "must_include_recall": 0.9015,
+          "useful_recall": 0.8467,
+          "context_precision": 0.4596,
+          "distractor_admission": 0.4402,
+          "harmful_admission": 0.0257,
+          "cross_project_leakage": 0.0,
+          "redundancy_rate": 0.0283,
+          "provenance_completeness": 1.0,
+          "bundle_tokens": 1173.2727,
+          "label": "+ WorkFrame"
+        },
+        "C5": {
+          "must_include_recall": 0.9015,
+          "useful_recall": 0.8597,
+          "context_precision": 0.4741,
+          "distractor_admission": 0.4456,
+          "harmful_admission": 0.0,
+          "cross_project_leakage": 0.0,
+          "redundancy_rate": 0.0235,
+          "provenance_completeness": 1.0,
+          "bundle_tokens": 1174.0,
+          "label": "+ Ch7/Ch8/Ch9"
+        },
+        "C6": {
+          "must_include_recall": 0.9015,
+          "useful_recall": 0.8597,
+          "context_precision": 0.4636,
+          "distractor_admission": 0.4457,
+          "harmful_admission": 0.0,
+          "cross_project_leakage": 0.0,
+          "redundancy_rate": 0.0563,
+          "provenance_completeness": 1.0,
+          "bundle_tokens": 1161.0,
+          "label": "full context builder"
+        }
+      }
+    },
+    "E10-B": {
+      "query": "Review Chapter 10 and tell me what we should do with it.",
+      "per_condition": {
+        "C0": {
+          "jaccard": 1.0,
+          "publication_only": [],
+          "architecture_only": [],
+          "shared": [
+            "mb-arch-spine",
+            "mb-ch09-handoff",
+            "mb-ch10-concepts",
+            "mb-ch10-experiment-pending",
+            "mb-ch10-priority-refusal",
+            "mb-ch10-prose-opening",
+            "mb-ch10-prose-schema",
+            "mb-ch10-refs",
+            "mb-ch11-opening",
+            "mb-contract-q6",
+            "mb-echo-baseline-3",
+            "mb-echo-baseline-4",
+            "mb-impl-zeromq",
+            "mb-loop-ch10-experiment",
+            "mb-loop-ch11-recap",
+            "mb-method-earn",
+            "mb-refutes-ch9-scope",
+            "mb-session-intent-3",
+            "mb-session-pivot",
+            "mb-stale-ch06-title",
+            "mb-stale-ch10-plan"
+          ],
+          "publication_must_recall": 0.75
+        },
+        "C1": {
+          "jaccard": 1.0,
+          "publication_only": [],
+          "architecture_only": [],
+          "shared": [
+            "mb-arch-q6-open",
+            "mb-arch-spine",
+            "mb-ch09-handoff",
+            "mb-ch10-concepts",
+            "mb-ch10-experiment-pending",
+            "mb-ch10-priority-refusal",
+            "mb-ch10-prose-opening",
+            "mb-ch10-prose-schema",
+            "mb-ch10-refs",
+            "mb-ch11-opening",
+            "mb-contract-q6",
+            "mb-echo-baseline-4",
+            "mb-impl-zeromq",
+            "mb-loop-ch10-experiment",
+            "mb-loop-ch11-recap",
+            "mb-method-earn",
+            "mb-refutes-ch9-scope",
+            "mb-session-intent-3",
+            "mb-session-pivot",
+            "mb-stale-ch10-plan"
+          ],
+          "publication_must_recall": 0.75
+        },
+        "C2": {
+          "jaccard": 1.0,
+          "publication_only": [],
+          "architecture_only": [],
+          "shared": [
+            "mb-arch-spine",
+            "mb-ch09-handoff",
+            "mb-ch10-concepts",
+            "mb-ch10-experiment-pending",
+            "mb-ch10-priority-refusal",
+            "mb-ch10-prose-opening",
+            "mb-ch10-prose-schema",
+            "mb-ch10-refs",
+            "mb-ch11-opening",
+            "mb-contract-q6",
+            "mb-echo-baseline-3",
+            "mb-echo-baseline-4",
+            "mb-impl-zeromq",
+            "mb-loop-ch10-experiment",
+            "mb-loop-ch11-recap",
+            "mb-method-earn",
+            "mb-refutes-ch9-scope",
+            "mb-session-intent-3",
+            "mb-session-pivot",
+            "mb-stale-ch06-title",
+            "mb-stale-ch10-plan"
+          ],
+          "publication_must_recall": 0.75
+        },
+        "C3": {
+          "jaccard": 1.0,
+          "publication_only": [],
+          "architecture_only": [],
+          "shared": [
+            "mb-arch-definition",
+            "mb-arch-layers",
+            "mb-arch-q6-open",
+            "mb-arch-spine",
+            "mb-ch04-result",
+            "mb-ch06-result",
+            "mb-ch08-result",
+            "mb-ch09-handoff",
+            "mb-ch09-result",
+            "mb-ch10-experiment-pending",
+            "mb-ch10-priority-refusal",
+            "mb-ch10-prose-opening",
+            "mb-ch10-prose-schema",
+            "mb-ch11-opening",
+            "mb-loop-ch10-experiment",
+            "mb-refutes-ch9-scope",
+            "mb-stale-ch06-title",
+            "mb-stale-ch10-plan"
+          ],
+          "publication_must_recall": 0.5
+        },
+        "C4": {
+          "jaccard": 0.0312,
+          "publication_only": [
+            "mb-ch09-handoff",
+            "mb-ch10-concepts",
+            "mb-ch10-experiment-pending",
+            "mb-ch10-priority-refusal",
+            "mb-ch10-prose-opening",
+            "mb-ch10-prose-schema",
+            "mb-ch10-refs",
+            "mb-ch11-opening",
+            "mb-echo-baseline-1",
+            "mb-echo-baseline-2",
+            "mb-loop-ch11-recap",
+            "mb-stale-ch10-plan",
+            "mb-style-build",
+            "mb-style-citations",
+            "mb-style-frontmatter"
+          ],
+          "architecture_only": [
+            "mb-arch-q6-open",
+            "mb-arch-spine",
+            "mb-ch03-admission-note",
+            "mb-ch03-baseline-role",
+            "mb-ch03-baseline-strength",
+            "mb-ch04-result",
+            "mb-ch06-result",
+            "mb-ch08-result",
+            "mb-ch09-result",
+            "mb-contract-failure-classes",
+            "mb-contract-frozen-run",
+            "mb-contract-q6",
+            "mb-method-baseline-rule",
+            "mb-method-earn",
+            "mb-method-evidence-discipline",
+            "mb-refutes-ch9-scope"
+          ],
+          "shared": [
+            "mb-loop-ch10-experiment"
+          ],
+          "publication_must_recall": 0.75
+        },
+        "C5": {
+          "jaccard": 0.0323,
+          "publication_only": [
+            "mb-ch09-handoff",
+            "mb-ch10-concepts",
+            "mb-ch10-experiment-pending",
+            "mb-ch10-priority-refusal",
+            "mb-ch10-prose-opening",
+            "mb-ch10-prose-schema",
+            "mb-ch10-refs",
+            "mb-ch11-opening",
+            "mb-echo-baseline-1",
+            "mb-echo-baseline-2",
+            "mb-loop-ch11-recap",
+            "mb-style-build",
+            "mb-style-citations",
+            "mb-style-frontmatter"
+          ],
+          "architecture_only": [
+            "mb-arch-q6-open",
+            "mb-arch-spine",
+            "mb-ch03-admission-note",
+            "mb-ch03-baseline-role",
+            "mb-ch03-baseline-strength",
+            "mb-ch04-result",
+            "mb-ch06-result",
+            "mb-ch08-result",
+            "mb-ch09-result",
+            "mb-contract-failure-classes",
+            "mb-contract-frozen-run",
+            "mb-contract-q6",
+            "mb-method-baseline-rule",
+            "mb-method-earn",
+            "mb-method-evidence-discipline",
+            "mb-refutes-ch9-scope"
+          ],
+          "shared": [
+            "mb-loop-ch10-experiment"
+          ],
+          "publication_must_recall": 0.75
+        },
+        "C6": {
+          "jaccard": 0.0323,
+          "publication_only": [
+            "mb-ch09-handoff",
+            "mb-ch10-concepts",
+            "mb-ch10-experiment-pending",
+            "mb-ch10-priority-refusal",
+            "mb-ch10-prose-opening",
+            "mb-ch10-prose-schema",
+            "mb-ch10-refs",
+            "mb-ch11-opening",
+            "mb-echo-baseline-1",
+            "mb-echo-baseline-2",
+            "mb-loop-ch11-recap",
+            "mb-style-build",
+            "mb-style-citations",
+            "mb-style-frontmatter"
+          ],
+          "architecture_only": [
+            "mb-arch-q6-open",
+            "mb-arch-spine",
+            "mb-ch03-admission-note",
+            "mb-ch03-baseline-role",
+            "mb-ch03-baseline-strength",
+            "mb-ch04-result",
+            "mb-ch06-result",
+            "mb-ch08-result",
+            "mb-ch09-result",
+            "mb-contract-failure-classes",
+            "mb-contract-frozen-run",
+            "mb-contract-q6",
+            "mb-method-baseline-rule",
+            "mb-method-earn",
+            "mb-method-evidence-discipline",
+            "mb-refutes-ch9-scope"
+          ],
+          "shared": [
+            "mb-loop-ch10-experiment"
+          ],
+          "publication_must_recall": 0.75
+        }
+      },
+      "baseline_jaccard": 1.0,
+      "full_jaccard": 0.0323,
+      "pass": true,
+      "criterion": "the full builder must separate the two goals more than query-only retrieval does"
+    },
+    "E10-C": {
+      "per_project": {
+        "memory-book": {
+          "C0": {
+            "cross_project_leakage": 0.2381,
+            "must_include_recall": 1.0,
+            "context_precision": 0.2857
+          },
+          "C1": {
+            "cross_project_leakage": 0.2381,
+            "must_include_recall": 1.0,
+            "context_precision": 0.2857
+          },
+          "C2": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 1.0,
+            "context_precision": 0.3
+          },
+          "C4": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 0.6667,
+            "context_precision": 0.2222
+          },
+          "C6": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 0.6667,
+            "context_precision": 0.2941
+          }
+        },
+        "writer": {
+          "C0": {
+            "cross_project_leakage": 0.8571,
+            "must_include_recall": 0.6667,
+            "context_precision": 0.1429
+          },
+          "C1": {
+            "cross_project_leakage": 0.8571,
+            "must_include_recall": 0.6667,
+            "context_precision": 0.1429
+          },
+          "C2": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 0.6667,
+            "context_precision": 1.0
+          },
+          "C4": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 1.0,
+            "context_precision": 1.0
+          },
+          "C6": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 1.0,
+            "context_precision": 1.0
+          }
+        },
+        "cocoder": {
+          "C0": {
+            "cross_project_leakage": 0.9048,
+            "must_include_recall": 1.0,
+            "context_precision": 0.0952
+          },
+          "C1": {
+            "cross_project_leakage": 0.9048,
+            "must_include_recall": 1.0,
+            "context_precision": 0.0952
+          },
+          "C2": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 1.0,
+            "context_precision": 0.75
+          },
+          "C4": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 1.0,
+            "context_precision": 0.8
+          },
+          "C6": {
+            "cross_project_leakage": 0.0,
+            "must_include_recall": 1.0,
+            "context_precision": 0.8
+          }
+        }
+      },
+      "mean_leakage": {
+        "C0": 0.6667,
+        "C1": 0.6667,
+        "C2": 0.0,
+        "C4": 0.0,
+        "C6": 0.0
+      },
+      "pass": true,
+      "criterion": "project scope must reduce leakage and the full builder must not reintroduce it"
+    },
+    "E10-D": {
+      "per_condition": {
+        "C0": {
+          "must_include_recall": 0.75,
+          "context_precision": 0.2632,
+          "distractor_admission": 0.6842,
+          "superseded_session_units_admitted": [
+            "mb-session-intent-2"
+          ]
+        },
+        "C1": {
+          "must_include_recall": 0.75,
+          "context_precision": 0.2632,
+          "distractor_admission": 0.6842,
+          "superseded_session_units_admitted": [
+            "mb-session-intent-2"
+          ]
+        },
+        "C4": {
+          "must_include_recall": 1.0,
+          "context_precision": 0.4118,
+          "distractor_admission": 0.5294,
+          "superseded_session_units_admitted": []
+        },
+        "C6": {
+          "must_include_recall": 1.0,
+          "context_precision": 0.3684,
+          "distractor_admission": 0.5789,
+          "superseded_session_units_admitted": []
+        }
+      },
+      "pass": true,
+      "criterion": "goal conditioning must not lose to recency when the goal has moved on"
+    },
+    "E10-E": {
+      "per_condition": {
+        "C0": {
+          "harmful_admission": 0.0455,
+          "stale_unit_admitted": true,
+          "must_include_recall": 1.0,
+          "stale_reason": [
+            "CLASS_TIER_0",
+            "ADMITTED_WITHIN_BUDGET"
+          ]
+        },
+        "C2": {
+          "harmful_admission": 0.0476,
+          "stale_unit_admitted": true,
+          "must_include_recall": 1.0,
+          "stale_reason": [
+            "CLASS_TIER_0",
+            "ADMITTED_WITHIN_BUDGET"
+          ]
+        },
+        "C4": {
+          "harmful_admission": 0.05,
+          "stale_unit_admitted": true,
+          "must_include_recall": 1.0,
+          "stale_reason": [
+            "CLASS_TIER_0",
+            "ADMITTED_WITHIN_BUDGET"
+          ]
+        },
+        "C5": {
+          "harmful_admission": 0.0,
+          "stale_unit_admitted": false,
+          "must_include_recall": 1.0,
+          "stale_reason": [
+            "SUPERSEDED_SUCCESSOR_AVAILABLE"
+          ]
+        },
+        "C6": {
+          "harmful_admission": 0.0,
+          "stale_unit_admitted": false,
+          "must_include_recall": 1.0,
+          "stale_reason": [
+            "SUPERSEDED_SUCCESSOR_AVAILABLE"
+          ]
+        }
+      },
+      "pass": true,
+      "criterion": "the Chapter 8 signal must remove the superseded design without losing the current one"
+    },
+    "E10-F": {
+      "per_condition": {
+        "C0": {
+          "must_include_recall": 1.0,
+          "context_precision": 0.25,
+          "foreign_topical_admitted": []
+        },
+        "C2": {
+          "must_include_recall": 1.0,
+          "context_precision": 0.25,
+          "foreign_topical_admitted": []
+        },
+        "C4": {
+          "must_include_recall": 1.0,
+          "context_precision": 0.3529,
+          "foreign_topical_admitted": []
+        },
+        "C6": {
+          "must_include_recall": 1.0,
+          "context_precision": 0.3158,
+          "foreign_topical_admitted": []
+        }
+      },
+      "pass": true,
+      "criterion": "support for the project's own rule must outrank topical resemblance"
+    },
+    "E10-G": {
+      "per_condition": {
+        "C0": {
+          "echo_units_occupying_slots": [
+            "mb-echo-baseline-2",
+            "mb-echo-baseline-4",
+            "mb-echo-baseline-3",
+            "mb-echo-baseline-1"
+          ],
+          "echo_units_folded": 0,
+          "redundancy_rate": 0.1905,
+          "must_include_recall": 1.0,
+          "bundle_items": 21,
+          "bundle_tokens": 1477,
+          "every_item_sourced": true
+        },
+        "C5": {
+          "echo_units_occupying_slots": [],
+          "echo_units_folded": 0,
+          "redundancy_rate": 0.0,
+          "must_include_recall": 1.0,
+          "bundle_items": 17,
+          "bundle_tokens": 1485,
+          "every_item_sourced": true
+        },
+        "C6": {
+          "echo_units_occupying_slots": [
+            "mb-echo-baseline-4",
+            "mb-echo-baseline-2",
+            "mb-echo-baseline-3"
+          ],
+          "echo_units_folded": 3,
+          "redundancy_rate": 0.15,
+          "must_include_recall": 1.0,
+          "bundle_items": 17,
+          "bundle_tokens": 1485,
+          "every_item_sourced": true
+        }
+      },
+      "pass": true,
+      "criterion": "coalescing reduces repetition while every item keeps its sources"
+    },
+    "E10-H": {
+      "per_condition": {
+        "C0": {
+          "release_loops": [],
+          "publication_loops": [],
+          "release_must_recall": 0.0,
+          "publication_must_recall": 0.6667,
+          "jaccard": 1.0
+        },
+        "C4": {
+          "release_loops": [
+            "mb-loop-real-corpus",
+            "mb-loop-ch11-recap",
+            "mb-loop-ch10-experiment"
+          ],
+          "publication_loops": [],
+          "release_must_recall": 0.6667,
+          "publication_must_recall": 1.0,
+          "jaccard": 0.3704
+        },
+        "C6": {
+          "release_loops": [
+            "mb-loop-real-corpus",
+            "mb-loop-ch11-recap",
+            "mb-loop-ch10-experiment"
+          ],
+          "publication_loops": [],
+          "release_must_recall": 0.6667,
+          "publication_must_recall": 1.0,
+          "jaccard": 0.3846
+        }
+      },
+      "pass": true,
+      "criterion": "the same question about unfinished work draws different evidence under different objectives"
+    },
+    "E10-I": {
+      "baseline_digest": "f10502cc596f74d6",
+      "permuted_digest": "f10502cc596f74d6",
+      "noise_digest": "f10502cc596f74d6",
+      "load_bearing_digest": "efed2817b92dc777",
+      "permutation_invariant": true,
+      "irrelevant_signal_invariant": true,
+      "load_bearing_change_detected": true,
+      "load_bearing_jaccard": 0.0323,
+      "pass": true,
+      "criterion": "reordering signals and adding an unrelated one change nothing; changing the objective changes the bundle"
+    },
+    "E10-J": {
+      "per_task": {
+        "T1-architecture": {
+          "wrong_work_type": "publication_review",
+          "correct_must_recall": 0.8333,
+          "wrong_must_recall": 0.3333,
+          "baseline_must_recall": 0.6667,
+          "damage_vs_correct": 0.5,
+          "worse_than_baseline": true
+        },
+        "T1-publication": {
+          "wrong_work_type": "architecture_review",
+          "correct_must_recall": 0.75,
+          "wrong_must_recall": 0.0,
+          "baseline_must_recall": 0.75,
+          "damage_vs_correct": 0.75,
+          "worse_than_baseline": true
+        },
+        "T7-release": {
+          "wrong_work_type": "publication_review",
+          "correct_must_recall": 0.6667,
+          "wrong_must_recall": 0.0,
+          "baseline_must_recall": 0.0,
+          "damage_vs_correct": 0.6667,
+          "worse_than_baseline": false
+        }
+      },
+      "any_worse_than_baseline": true,
+      "criterion": "reported as a hazard measurement, not a pass/fail: a wrong frame can select worse than no frame"
+    },
+    "E10-K": {
+      "per_task": {
+        "T1-publication": {
+          "declared_work_type": "publication_review",
+          "keyword_work_type": "publication_review",
+          "keyword_correct": true,
+          "keyword_must_recall": 0.75,
+          "declared_must_recall": 0.75,
+          "inferred_work_type": "publication_review",
+          "inferred_objective": "Review Chapter 10 for publication",
+          "inferred_correct": true,
+          "inferred_must_recall": 0.75,
+          "inferred_provenance_complete": true
+        },
+        "T1-architecture": {
+          "declared_work_type": "architecture_review",
+          "keyword_work_type": "architecture_review",
+          "keyword_correct": true,
+          "keyword_must_recall": 0.8333,
+          "declared_must_recall": 0.8333,
+          "inferred_work_type": "architecture_review",
+          "inferred_objective": "Decide whether Chapter 10 belongs in the architecture at all, measured against what we already beat",
+          "inferred_correct": true,
+          "inferred_must_recall": 0.8333,
+          "inferred_provenance_complete": true
+        },
+        "T2-memory-book": {
+          "declared_work_type": "implementation_review",
+          "keyword_work_type": "implementation_review",
+          "keyword_correct": true,
+          "keyword_must_recall": 0.6667,
+          "declared_must_recall": 0.6667,
+          "inferred_work_type": "implementation_review",
+          "inferred_objective": "Review the current implementation of the context system to identify areas for improvement",
+          "inferred_correct": true,
+          "inferred_must_recall": 0.3333,
+          "inferred_provenance_complete": true
+        },
+        "T2-writer": {
+          "declared_work_type": "implementation_review",
+          "keyword_work_type": "implementation_review",
+          "keyword_correct": true,
+          "keyword_must_recall": 1.0,
+          "declared_must_recall": 1.0,
+          "inferred_work_type": "implementation_review",
+          "inferred_objective": "Review the current implementation of the context system to identify areas for improvement",
+          "inferred_correct": true,
+          "inferred_must_recall": 1.0,
+          "inferred_provenance_complete": true
+        },
+        "T2-cocoder": {
+          "declared_work_type": "implementation_review",
+          "keyword_work_type": "implementation_review",
+          "keyword_correct": true,
+          "keyword_must_recall": 1.0,
+          "declared_must_recall": 1.0,
+          "inferred_work_type": "implementation_review",
+          "inferred_objective": "Review the current context system implementation to identify areas for improvement",
+          "inferred_correct": true,
+          "inferred_must_recall": 1.0,
+          "inferred_provenance_complete": true
+        },
+        "T3-goal-switch": {
+          "declared_work_type": "architecture_review",
+          "keyword_work_type": "architecture_review",
+          "keyword_correct": true,
+          "keyword_must_recall": 1.0,
+          "declared_must_recall": 1.0,
+          "inferred_work_type": "experiment_analysis",
+          "inferred_objective": "Return to the retrieval baseline and ask what the next mechanism actually improves.",
+          "inferred_correct": false,
+          "inferred_must_recall": 1.0,
+          "inferred_provenance_complete": true
+        },
+        "T4-current-vs-stale": {
+          "declared_work_type": "implementation_review",
+          "keyword_work_type": "implementation_review",
+          "keyword_correct": true,
+          "keyword_must_recall": 1.0,
+          "declared_must_recall": 1.0,
+          "inferred_work_type": "implementation_review",
+          "inferred_objective": "Investigate and resolve the ingest test failure due to connection refused on the configured store.",
+          "inferred_correct": true,
+          "inferred_must_recall": 1.0,
+          "inferred_provenance_complete": true
+        },
+        "T5-support-vs-topicality": {
+          "declared_work_type": "architecture_review",
+          "keyword_work_type": "publication_review",
+          "keyword_correct": false,
+          "keyword_must_recall": 0.6667,
+          "declared_must_recall": 1.0,
+          "inferred_work_type": "implementation_review",
+          "inferred_objective": "Review the implementation of the mechanism to determine if it meets the requirements for improvement.",
+          "inferred_correct": false,
+          "inferred_must_recall": 1.0,
+          "inferred_provenance_complete": true
+        },
+        "T6-echo-coalescing": {
+          "declared_work_type": "architecture_review",
+          "keyword_work_type": "publication_review",
+          "keyword_correct": false,
+          "keyword_must_recall": 1.0,
+          "declared_must_recall": 1.0,
+          "inferred_work_type": "implementation_review",
+          "inferred_objective": "Review the new memory layer's implementation to ensure it meets the project's standards.",
+          "inferred_correct": false,
+          "inferred_must_recall": 1.0,
+          "inferred_provenance_complete": true
+        },
+        "T7-release": {
+          "declared_work_type": "release_readiness",
+          "keyword_work_type": "release_readiness",
+          "keyword_correct": true,
+          "keyword_must_recall": 0.6667,
+          "declared_must_recall": 0.6667,
+          "inferred_work_type": "release_readiness",
+          "inferred_objective": "Identify outstanding work before the cut.",
+          "inferred_correct": true,
+          "inferred_must_recall": 0.6667,
+          "inferred_provenance_complete": true
+        },
+        "T7-publication": {
+          "declared_work_type": "publication_review",
+          "keyword_work_type": "release_readiness",
+          "keyword_correct": false,
+          "keyword_must_recall": 1.0,
+          "declared_must_recall": 1.0,
+          "inferred_work_type": "implementation_review",
+          "inferred_objective": "Review Chapter 10 implementation to ensure it reads properly",
+          "inferred_correct": false,
+          "inferred_must_recall": 0.0,
+          "inferred_provenance_complete": true
+        }
+      },
+      "summary": {
+        "keyword_work_type_accuracy": 0.7273,
+        "declared_mean_must_recall": 0.9015,
+        "keyword_mean_must_recall": 0.8712,
+        "inferred_work_type_accuracy": 0.6364,
+        "inferred_mean_must_recall": 0.7803
+      },
+      "criterion": "reported, not gated: the frame builder is the layer's own failure surface"
+    },
+    "E10-M": {
+      "digests": [
+        "f10502cc596f74d6",
+        "f10502cc596f74d6",
+        "f10502cc596f74d6"
+      ],
+      "pass": true,
+      "criterion": "bundle construction is reproducible"
+    },
+    "E10-N": {
+      "base_frame": "memory-book-v1",
+      "condition": "C6",
+      "primary_metric": "must_include_recall",
+      "gates": [
+        {
+          "metric": "harmful_admission",
+          "direction": "no_worse",
+          "tolerance": 0.0
+        },
+        {
+          "metric": "cross_project_leakage",
+          "direction": "no_worse",
+          "tolerance": 0.0
+        },
+        {
+          "metric": "context_precision",
+          "direction": "no_worse_than",
+          "tolerance": 0.02
+        },
+        {
+          "metric": "bundle_tokens",
+          "direction": "within_budget",
+          "tolerance": 0.0
+        }
+      ],
+      "baseline": {
+        "must_include_recall": 0.8796,
+        "context_precision": 0.3666,
+        "harmful_admission": 0.0,
+        "cross_project_leakage": 0.0,
+        "bundle_tokens": 1364.7778
+      },
+      "proposals": [
+        {
+          "proposal": "v2-prose-earlier",
+          "rationale": "chapter_prose raised to rank 3 for architecture_review: the chapter under review is evidence about itself",
+          "frame_version": "v2",
+          "baseline": {
+            "must_include_recall": 0.8796,
+            "context_precision": 0.3666,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1364.7778
+          },
+          "candidate": {
+            "must_include_recall": 0.8056,
+            "context_precision": 0.352,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1351.1111
+          },
+          "primary_delta": -0.074,
+          "gate_breaches": [],
+          "decision": "REJECT",
+          "per_task": {
+            "T1-publication": {
+              "must_include_recall": 0.75,
+              "context_precision": 0.7333,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1086
+            },
+            "T1-architecture": {
+              "must_include_recall": 0.6667,
+              "context_precision": 0.5294,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1492
+            },
+            "T2-memory-book": {
+              "must_include_recall": 0.6667,
+              "context_precision": 0.2941,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1281
+            },
+            "T3-goal-switch": {
+              "must_include_recall": 0.5,
+              "context_precision": 0.2778,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1455
+            },
+            "T4-current-vs-stale": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.1,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1284
+            },
+            "T5-support-vs-topicality": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.3333,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1456
+            },
+            "T6-echo-coalescing": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.2,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1433
+            },
+            "T7-release": {
+              "must_include_recall": 0.6667,
+              "context_precision": 0.2,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1489
+            },
+            "T7-publication": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.5,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1184
+            }
+          }
+        },
+        {
+          "proposal": "v2-contract-in-implementation",
+          "rationale": "measurement_contract added to implementation_review: improving a system requires knowing how it is scored",
+          "frame_version": "v2b",
+          "baseline": {
+            "must_include_recall": 0.8796,
+            "context_precision": 0.3666,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1364.7778
+          },
+          "candidate": {
+            "must_include_recall": 0.9167,
+            "context_precision": 0.368,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1403.5556
+          },
+          "primary_delta": 0.0371,
+          "gate_breaches": [],
+          "decision": "PROMOTE",
+          "per_task": {
+            "T1-publication": {
+              "must_include_recall": 0.75,
+              "context_precision": 0.7333,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1086
+            },
+            "T1-architecture": {
+              "must_include_recall": 0.8333,
+              "context_precision": 0.5882,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1500
+            },
+            "T2-memory-book": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.3158,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1453
+            },
+            "T3-goal-switch": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.3684,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1498
+            },
+            "T4-current-vs-stale": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.0909,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1461
+            },
+            "T5-support-vs-topicality": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.3158,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1476
+            },
+            "T6-echo-coalescing": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.2,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1485
+            },
+            "T7-release": {
+              "must_include_recall": 0.6667,
+              "context_precision": 0.2,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1489
+            },
+            "T7-publication": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.5,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1184
+            }
+          }
+        },
+        {
+          "proposal": "v2-wider-class-pull",
+          "rationale": "class pull widened from three to five candidates per preferred class: required evidence was never reaching the pool",
+          "frame_version": "v2c",
+          "baseline": {
+            "must_include_recall": 0.8796,
+            "context_precision": 0.3666,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1364.7778
+          },
+          "candidate": {
+            "must_include_recall": 0.9444,
+            "context_precision": 0.3663,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1421.2222
+          },
+          "primary_delta": 0.0648,
+          "gate_breaches": [],
+          "decision": "PROMOTE",
+          "per_task": {
+            "T1-publication": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.75,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1152
+            },
+            "T1-architecture": {
+              "must_include_recall": 0.8333,
+              "context_precision": 0.5882,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1500
+            },
+            "T2-memory-book": {
+              "must_include_recall": 0.6667,
+              "context_precision": 0.2632,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1450
+            },
+            "T3-goal-switch": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.3684,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1498
+            },
+            "T4-current-vs-stale": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.0909,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1455
+            },
+            "T5-support-vs-topicality": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.3158,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1500
+            },
+            "T6-echo-coalescing": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.2,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1480
+            },
+            "T7-release": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.25,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1494
+            },
+            "T7-publication": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.4706,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1262
+            }
+          }
+        },
+        {
+          "proposal": "v3-combined",
+          "rationale": "all three revisions together",
+          "frame_version": "v3",
+          "baseline": {
+            "must_include_recall": 0.8796,
+            "context_precision": 0.3666,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1364.7778
+          },
+          "candidate": {
+            "must_include_recall": 0.8333,
+            "context_precision": 0.3412,
+            "harmful_admission": 0.0,
+            "cross_project_leakage": 0.0,
+            "bundle_tokens": 1410.2222
+          },
+          "primary_delta": -0.0463,
+          "gate_breaches": [
+            "context_precision fell to 0.3412 from 0.3666"
+          ],
+          "decision": "REJECT",
+          "per_task": {
+            "T1-publication": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.75,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1152
+            },
+            "T1-architecture": {
+              "must_include_recall": 0.6667,
+              "context_precision": 0.5294,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1492
+            },
+            "T2-memory-book": {
+              "must_include_recall": 0.3333,
+              "context_precision": 0.1579,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1437
+            },
+            "T3-goal-switch": {
+              "must_include_recall": 0.5,
+              "context_precision": 0.2778,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1455
+            },
+            "T4-current-vs-stale": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.0909,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1474
+            },
+            "T5-support-vs-topicality": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.3333,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1478
+            },
+            "T6-echo-coalescing": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.2105,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1448
+            },
+            "T7-release": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.25,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1494
+            },
+            "T7-publication": {
+              "must_include_recall": 1.0,
+              "context_precision": 0.4706,
+              "harmful_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "bundle_tokens": 1262
+            }
+          }
+        }
+      ],
+      "promoted": [
+        "v2-contract-in-implementation",
+        "v2-wider-class-pull"
+      ],
+      "rejected": [
+        "v2-prose-earlier",
+        "v3-combined"
+      ]
+    },
+    "E10-L": {
+      "per_task": {
+        "T1-publication": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 0.75,
+              "useful_recall": 0.6667,
+              "context_precision": 0.381,
+              "distractor_admission": 0.4762,
+              "harmful_admission": 0.0952,
+              "optional_admission": 0.0476,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0952,
+              "provenance_completeness": 1.0,
+              "admitted_units": 21,
+              "bundle_items": 21,
+              "bundle_tokens": 1476,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.55
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "chapter-10-text": true,
+                "apparatus": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "stale-ch6": false
+              },
+              "answer_chars": 3148
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-style-conventions": "E1"
+              },
+              "harmful_admitted": [
+                "mb-stale-ch06-title",
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E1",
+                "E4"
+              ],
+              "legend": {
+                "E1": "present but never retrieved as a candidate",
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "Based on the project evidence, I will review Chapter 10 and provide recommendations for its current state.\n\n**Current Status:** Chapter 10 is currently unfinished and carries an experiment-pending marker (open_loop | sources: content/books/memory/10-chapter.md). It has not been committed to a run, and the chapter states a hypothesis that the book's own evidence discipline forbids presenting as a result (open_loop | sources: content/books/memory/10-chapter.md).\n\n**Key Issues:**\n\n1. **Lack of Committed Run:** Chapter 10 has not been executed with a committed run, which is necessary for the chapter to be considered complete (chapter_prose | sources: content/books/memory/10-chapter.md).\n2. **Experiment-Pending Marker:** The chapter carries an experiment-pending marker, indicating that it is still in the experimental phase and has not been validated (open_loop | sources: content/books/memory/10-chapter.md).\n3. **Central Comparison Not Executed:** The chapter's central comparison, intention-aware tracking against the mention baseline, has not been executed (chapter_prose | sources: content/books/memory/10-chapter.md).\n\n**Recommendations:**\n\n1. **Complete the Committed Run:** Execute Chapter 10 with a committed run to validate the chapter's claims and results.\n2. **Address Experiment-Pending Marker:** Remove the experiment-pending marker once the committed run is executed and the chapter's results are validated.\n3. **Execute Central Comparison:** Execute the central comparison, intention-aware tracking against the mention baseline, to validate the chapter's claims.\n\n**Next Steps:**\n\n1. **Update Chapter 10:** Update Chapter 10 to reflect the results of the committed run and the execution of the central comparison.\n2. **Review and Refine:** Review and refine Chapter 10 to ensure that it meets the book's standards and is consistent with the book's overall architecture.\n\n**Evidence Identifiers:**\n\n* chapter_prose | sources: content/books/memory/10-chapter.md\n* open_loop | sources: content/books/memory/10-chapter.md\n* chapter_prose | sources: content/books/memory/10-chapter.md\n* planning_note | sources: planning/book-architecture.md\n* architecture_note | sources: planning/book-architecture.md\n* chapter_prose | sources: content/books/memory/11-chapter.md\n* open_loop | sources: content/books/memory/11-chapter.md\n* session_note | sources: planning/chapter-09-open-loops-research.md\n* session_note | sources: planning/book-architecture.md\n* chapter_concepts | sources: content/books/memory/10-concepts.txt\n* citation | sources: content/books/memory/10-chapter.md, research/bibliography.yaml\n* chapter_prose | sources: content/books/memory/10-chapter.md\n* experiment_result | sources: experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/results.json\n* session_note | sources: planning/continuity-audit.md\n* method_rule | sources: AGENTS.md, planning/book-architecture.md\n* implementation_detail | sources: solution/temporal_memory/transport.py\n* measurement_contract | sources: spec/benchmark-v0.1.md\n* architecture_note | sources: planning/book-architecture.md\n* session_note | sources: planning/continuity-audit.md"
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 0.75,
+              "useful_recall": 0.9167,
+              "context_precision": 0.6875,
+              "distractor_admission": 0.25,
+              "harmful_admission": 0.0625,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 16,
+              "bundle_items": 16,
+              "bundle_tokens": 1143,
+              "budget_tokens": 1500,
+              "candidate_count": 41,
+              "latency_ms": 11.15
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "chapter-10-text": true,
+                "apparatus": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "stale-ch6": false
+              },
+              "answer_chars": 1680
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-style-conventions": "E1"
+              },
+              "harmful_admitted": [
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E1",
+                "E4"
+              ],
+              "legend": {
+                "E1": "present but never retrieved as a candidate",
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "Based on the project evidence, I'll review Chapter 10 and provide recommendations for its current state.\n\n**Current Status:** Chapter 10 is unfinished and carries an experiment-pending marker (Evidence: [chapter_prose | sources: content/books/memory/10-chapter.md], [open_loop | sources: content/books/memory/10-chapter.md]). No committed run exists for Chapter 10 (Evidence: [chapter_prose | sources: content/books/memory/10-chapter.md], [open_loop | sources: content/books/memory/10-chapter.md]).\n\n**Recommendations:**\n\n1. **Complete the experiment and implementation:** Before Chapter 10 can be considered complete, an E-10 run must exist, and the chapter's central comparison (intention-aware tracking against the mention baseline) must be executed (Evidence: [chapter_prose | sources: content/books/memory/10-chapter.md]).\n2. **Update the chapter's prose and concepts:** Once the experiment is complete, the chapter's prose and concepts must be updated to reflect the results (Evidence: [chapter_prose | sources: content/books/memory/10-chapter.md], [chapter_concepts | sources: content/books/memory/10-concepts.txt]).\n3. **Verify the citations:** Ensure that the citations in Chapter 10 are up-to-date and accurate (Evidence: [citation | sources: content/books/memory/10-chapter.md, research/bibliography.yaml]).\n4. **Check the continuity guard:** Verify that the continuity guard checks that retired running-example identifiers do not reappear in Chapter 10 (Evidence: [chapter_prose | sources: content/books/memory/09-chapter.md]).\n\n**Next Steps:** Once these recommendations are addressed, Chapter 10 can be considered complete, and its status can be updated accordingly."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 0.75,
+              "useful_recall": 0.9167,
+              "context_precision": 0.7333,
+              "distractor_admission": 0.2667,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 15,
+              "bundle_items": 12,
+              "bundle_tokens": 1086,
+              "budget_tokens": 1500,
+              "candidate_count": 41,
+              "latency_ms": 11.15
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "chapter-10-text": true,
+                "apparatus": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "stale-ch6": false
+              },
+              "answer_chars": 2071
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-style-conventions": "E1"
+              },
+              "harmful_admitted": [],
+              "codes": [
+                "E1"
+              ],
+              "legend": {
+                "E1": "present but never retrieved as a candidate"
+              }
+            },
+            "answer_text": "Based on the project evidence, I'll review Chapter 10 and provide recommendations for its current state.\n\n**Current Status:** Chapter 10 is unfinished, carrying an experiment-pending marker (Evidence: [open_loop | sources: content/books/memory/10-chapter.md]). No committed run exists for this chapter (Evidence: [open_loop | sources: content/books/memory/10-chapter.md]).\n\n**Key Findings:**\n\n1. Chapter 10's subject is still a hypothesis, not a result (Evidence: [chapter_prose | sources: content/books/memory/10-chapter.md]).\n2. The chapter's central comparison, intention-aware tracking against the mention baseline, has not been executed (Evidence: [chapter_prose | sources: content/books/memory/10-chapter.md]).\n3. The chapter's intention record is described, but its implementation is pending (Evidence: [chapter_prose | sources: content/books/memory/10-chapter.md]).\n\n**Recommendations:**\n\n1. Complete the experiment (E-10) and obtain a committed run for Chapter 10.\n2. Update the chapter's prose to reflect the results of the experiment and the committed run.\n3. Ensure that the chapter's subject is no longer a hypothesis, but a result supported by evidence.\n4. Execute the central comparison and update the chapter's prose accordingly.\n5. Review the chapter's intention record and its implementation to ensure it aligns with the chapter's results and conclusions.\n\n**Style and Consistency:**\n\n1. Verify that the chapter's references are accurate and up-to-date (Evidence: [citation | sources: content/books/memory/10-chapter.md, research/bibliography.yaml]).\n2. Ensure that the chapter's TOML front matter is complete and accurate (Evidence: [style_rule | sources: AGENTS.md, hugo.toml]).\n\n**Open Loops:**\n\n1. Chapter 11's opening recap names Chapters 9 and 10 as the stated-work chapters. If Chapter 10 changes subject, the recap becomes false (Evidence: [open_loop | sources: content/books/memory/11-chapter.md]). Update Chapter 11's opening accordingly.\n\nBy addressing these recommendations, Chapter 10 can be brought up to date and prepared for publication."
+          }
+        },
+        "T1-architecture": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 0.6667,
+              "useful_recall": 0.4286,
+              "context_precision": 0.2857,
+              "distractor_admission": 0.619,
+              "harmful_admission": 0.0952,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0952,
+              "provenance_completeness": 1.0,
+              "admitted_units": 21,
+              "bundle_items": 21,
+              "bundle_tokens": 1476,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.38
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "no-result": true,
+                "baseline": true,
+                "earn-rule": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "stale-plan": false
+              },
+              "answer_chars": 2510
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-ch03-baseline-role": "E3",
+                "mb-ch09-result": "E3"
+              },
+              "harmful_admitted": [
+                "mb-stale-ch06-title",
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E3",
+                "E4"
+              ],
+              "legend": {
+                "E3": "eligible but outranked and lost to the budget",
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To decide whether Chapter 10 is the correct next architectural step for the book, I will review the evidence.\n\nThe planning notes [planning_note | sources: planning/book-architecture.md] indicate that Chapter 10 is intended to be \"Intentions Are Not Events\" and that the intention record is the next mechanism to implement. This suggests that Chapter 10 is a planned step in the book's architecture.\n\nHowever, the open loop [open_loop | sources: content/books/memory/10-chapter.md] indicates that Chapter 10 carries an experiment-pending marker and no committed run, which means that the chapter has not been fully implemented or tested.\n\nThe chapter prose [chapter_prose | sources: content/books/memory/10-chapter.md] describes the chapter's central comparison, intention-aware tracking against the mention baseline, which has not been executed.\n\nThe session notes [session_note | sources: planning/chapter-09-open-loops-research.md] indicate that a recent working session continued on drafting the E-10 fixture grid, but there is no indication that the chapter has been completed or tested.\n\nThe measurement contract [measurement_contract | sources: spec/benchmark-v0.1.md] defines the primary metrics for evaluating the book's mechanisms, including downstream task success delta, useful-memory precision, distraction cost, token cost, and harmful-memory rate. However, there is no indication that Chapter 10 has been evaluated using these metrics.\n\nThe method rule [method_rule | sources: AGENTS.md, planning/book-architecture.md] states that a mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix. Since Chapter 10 has not been tested or evaluated, it does not meet this criterion.\n\nIn conclusion, while Chapter 10 is planned as the next step in the book's architecture, it has not been fully implemented or tested, and it does not meet the method rule for entering the book. Therefore, I would recommend that Chapter 10 is not the correct next architectural step for the book at this time.\n\nEvidence identifiers relied on:\n\n* [planning_note | sources: planning/book-architecture.md]\n* [open_loop | sources: content/books/memory/10-chapter.md]\n* [chapter_prose | sources: content/books/memory/10-chapter.md]\n* [session_note | sources: planning/chapter-09-open-loops-research.md]\n* [measurement_contract | sources: spec/benchmark-v0.1.md]\n* [method_rule | sources: AGENTS.md, planning/book-architecture.md]"
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 0.8333,
+              "useful_recall": 0.7143,
+              "context_precision": 0.5882,
+              "distractor_admission": 0.2941,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.1176,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 17,
+              "bundle_items": 17,
+              "bundle_tokens": 1500,
+              "budget_tokens": 1500,
+              "candidate_count": 45,
+              "latency_ms": 11.33
+            },
+            "answer": {
+              "key_claim_coverage": 0.3333,
+              "key_claims": {
+                "no-result": true,
+                "baseline": false,
+                "earn-rule": false
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "stale-plan": false
+              },
+              "answer_chars": 1461
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-ch10-experiment-pending": "E3"
+              },
+              "harmful_admitted": [],
+              "codes": [
+                "E3"
+              ],
+              "legend": {
+                "E3": "eligible but outranked and lost to the budget"
+              }
+            },
+            "answer_text": "To decide whether Chapter 10 is the correct next architectural step for the book, I will review the evidence.\n\nThe current objective is to decide whether Chapter 10 is the correct next architectural step for the book.\n\nThe evidence that is relevant to this question is:\n\n* [architecture_note | sources: planning/book-architecture.md]: This note indicates that Question 6 remains the largest unanswered part of the architecture, and that Chapters 4 to 9 enrich what the system can know about history, but none of them has yet been asked whether that enrichment produces a better working context than query-only retrieval at the same budget.\n* [open_loop | sources: content/books/memory/10-chapter.md]: This note indicates that Chapter 10 carries an experiment-pending marker and no committed run, and that until an E-10 run exists, the chapter states a hypothesis the book's own evidence discipline forbids presenting as a result.\n\nBased on this evidence, I conclude that Chapter 10 is not the correct next architectural step for the book. The evidence indicates that the book's architecture is still incomplete, and that the next step should be to address the unanswered part of the architecture, which is Question 6. Chapter 10 is still pending an experiment, and its hypothesis cannot be presented as a result until the experiment is completed.\n\nTherefore, the answer to the question is: No, Chapter 10 is not the correct next architectural step for the book."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 0.8333,
+              "useful_recall": 0.7143,
+              "context_precision": 0.5882,
+              "distractor_admission": 0.2941,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.1176,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 17,
+              "bundle_items": 17,
+              "bundle_tokens": 1500,
+              "budget_tokens": 1500,
+              "candidate_count": 45,
+              "latency_ms": 11.18
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "no-result": true,
+                "baseline": true,
+                "earn-rule": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "stale-plan": false
+              },
+              "answer_chars": 1484
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-ch10-experiment-pending": "E3"
+              },
+              "harmful_admitted": [],
+              "codes": [
+                "E3"
+              ],
+              "legend": {
+                "E3": "eligible but outranked and lost to the budget"
+              }
+            },
+            "answer_text": "To decide whether Chapter 10 is the correct next architectural step for the book, I will review the evidence related to Chapter 10 and the project's rules and objectives.\n\nThe evidence for Chapter 10 is marked as [open_loop | sources: content/books/memory/10-chapter.md]. This indicates that Chapter 10 is currently pending and has not been committed to as a result. The chapter states a hypothesis, but it is not a committed result due to the lack of an E-10 run.\n\nAccording to the project's rules and objectives, a mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix. Taxonomy does not earn a chapter; measured failure does. Every new layer is compared against the Chapter 3 retrieval baseline at a matched context budget, with the reader model and corpus held fixed.\n\nSince Chapter 10 is pending and has not been committed to as a result, it does not meet the project's rules and objectives for inclusion in the book. Therefore, I conclude that Chapter 10 is not the correct next architectural step for the book.\n\nEvidence identifiers relied on:\n\n* [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n* [open_loop | sources: content/books/memory/10-chapter.md]\n\nNote: The evidence does not determine a clear answer to the question, but based on the project's rules and objectives, it is clear that Chapter 10 is not the correct next architectural step for the book."
+          }
+        },
+        "T2-memory-book": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.8571,
+              "context_precision": 0.2857,
+              "distractor_admission": 0.619,
+              "harmful_admission": 0.0476,
+              "optional_admission": 0.0476,
+              "cross_project_leakage": 0.2381,
+              "redundancy_rate": 0.0952,
+              "provenance_completeness": 1.0,
+              "admitted_units": 21,
+              "bundle_items": 21,
+              "bundle_tokens": 1485,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.38
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "budget": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 2753
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [
+                "mb-stale-nexus-selects"
+              ],
+              "codes": [
+                "E4"
+              ],
+              "legend": {
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question \"How should we improve the context system?\" based on the provided project evidence, I will rely on the following evidence identifiers:\n\n1. [planning_note | sources: writer/docs/roadmap.md]\n2. [planning_note | sources: cocoder/docs/roadmap.md]\n3. [research_note | sources: planning/measurement-research-matrix.md]\n4. [method_rule | sources: spec/benchmark-v0.1.md]\n5. [planning_note | sources: planning/chapter-04-graphrag-research.md]\n6. [planning_note | sources: planning/chapter-06-memory-nexus-research.md]\n7. [implementation_detail | sources: cocoder/context/build.py]\n8. [baseline_result | sources: content/books/memory/03-chapter.md, experiments/benchmark/runs/ch3-20260919-ladder3]\n9. [experiment_result | sources: content/books/memory/06-chapter.md, experiments/benchmark/runs/ch6-20260919-nexus]\n10. [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n\nBased on these evidence identifiers, here are the proposed improvements to the context system:\n\n1. Cache embeddings per document version (planned in [planning_note | sources: writer/docs/roadmap.md])\n2. Raise the candidate pool (planned in [planning_note | sources: writer/docs/roadmap.md])\n3. Add a redundancy penalty to prevent near-duplicate draft fragments from occupying the budget (planned in [planning_note | sources: writer/docs/roadmap.md])\n4. Drop whole-file inclusion in favor of symbol slices in CoCoder's context system (planned in [planning_note | sources: cocoder/docs/roadmap.md])\n5. Measure whether the freed budget improves patch acceptance in CoCoder's context system (planned in [planning_note | sources: cocoder/docs/roadmap.md])\n6. Implement just-in-time retrieval, compaction, and structured memory in the context system (recommended in [research_note | sources: planning/measurement-research-matrix.md])\n7. Maximize recall first and improve precision afterwards using the recommended compaction strategy (recommended in [research_note | sources: planning/measurement-research-matrix.md])\n8. Use a bounded memory selection that improves a downstream task as the expected answer (defined in [measurement_contract | sources: spec/benchmark-v0.1.md])\n9. Evaluate the context system using the Chapter 3 strong retrieval baseline at a matched context budget (required in [planning_note | sources: planning/chapter-04-graphrag-research.md] and [planning_note | sources: planning/chapter-06-memory-nexus-research.md])\n10. Select the final context for every query using the Memory Nexus (working assumption in [planning_note | sources: planning/chapter-06-memory-nexus-research.md])\n\nNote that these proposed improvements are based on the planned and recommended changes in the project evidence, and may not be the only possible solutions."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 0.6667,
+              "useful_recall": 0.5714,
+              "context_precision": 0.2222,
+              "distractor_admission": 0.6667,
+              "harmful_admission": 0.0556,
+              "optional_admission": 0.0556,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0556,
+              "provenance_completeness": 1.0,
+              "admitted_units": 18,
+              "bundle_items": 18,
+              "bundle_tokens": 1294,
+              "budget_tokens": 1500,
+              "candidate_count": 42,
+              "latency_ms": 11.08
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "budget": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1808
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-contract-q6": "E2"
+              },
+              "harmful_admitted": [
+                "mb-stale-nexus-selects"
+              ],
+              "codes": [
+                "E2",
+                "E4"
+              ],
+              "legend": {
+                "E2": "retrieved but ruled ineligible by the frame",
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To improve the context system, we should consider the following:\n\n1. **Chapter 4 indexing**: The current indexing process takes minutes, not seconds, and requires Ollama for extraction. This suggests that the indexing process can be optimized for better performance.\n2. **Chapter 6 Nexus**: The Memory Nexus, which routes between graph, associative, and baseline retrieval, may be a good starting point for improving the context system. However, its effectiveness is still to be determined.\n3. **Context window**: The context window is treated as a finite attention budget to be curated rather than filled. This suggests that the system should focus on retrieving relevant information just-in-time, rather than trying to store everything.\n4. **Compaction strategy**: The recommended compaction strategy maximizes recall first and improves precision afterwards. This suggests that the system should prioritize retrieving as much relevant information as possible, and then refine the results to improve precision.\n5. **Mechanism evaluation**: New mechanisms should be measured against the Chapter 3 strong retrieval baseline at a matched context budget, as per the planning notes.\n\nHowever, it's worth noting that the current objective is to improve the context system, but the project evidence does not provide a clear direction on how to achieve this. The evidence suggests that the system has been improved in various ways, but the current state of the system is not well-defined.\n\nTo answer the question more specifically, I would say that we should **optimize the indexing process** and **evaluate new mechanisms** against the Chapter 3 baseline, while also considering the context window and compaction strategy recommendations. However, more information is needed to determine the best course of action."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 0.6667,
+              "useful_recall": 0.7143,
+              "context_precision": 0.2941,
+              "distractor_admission": 0.6471,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0588,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0588,
+              "provenance_completeness": 1.0,
+              "admitted_units": 17,
+              "bundle_items": 16,
+              "bundle_tokens": 1281,
+              "budget_tokens": 1500,
+              "candidate_count": 44,
+              "latency_ms": 11.11
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "budget": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 2680
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-contract-q6": "E2"
+              },
+              "harmful_admitted": [],
+              "codes": [
+                "E2"
+              ],
+              "legend": {
+                "E2": "retrieved but ruled ineligible by the frame"
+              }
+            },
+            "answer_text": "To improve the context system, we should consider the following:\n\n1. **Experimentation**: As per the method rules, we need to conduct controlled experiments to evaluate the effectiveness of new mechanisms. We should compare the new mechanism against the strongest conventional alternative on the failure class it claims to fix (method_rule | sources: AGENTS.md, planning/book-architecture.md, planning/chapter-04-graphrag-research.md).\n2. **Layered architecture**: The implemented layer order (architecture_note | sources: solution/README.md) suggests that we should build upon the existing layers, rather than replacing them. We should consider how new mechanisms can be integrated into the existing architecture.\n3. **Context window**: The context window is treated as a finite attention budget to be curated rather than filled (research_note | sources: planning/measurement-research-matrix.md). We should consider how to optimize the context window to improve context assembly.\n4. **Mechanism evaluation**: We should evaluate new mechanisms based on their ability to improve context assembly, rather than just their aggregate score (method_rule | sources: spec/benchmark-v0.1.md).\n5. **Failure attribution**: We should attribute failures to specific stages of the system, rather than blaming the entire mechanism (measurement_contract | sources: spec/benchmark-v0.1.md).\n\nBased on the evidence, it appears that the current context system is based on a layered architecture, with each layer building upon the previous one. The system uses a combination of retrieval and admission mechanisms to assemble context. To improve the context system, we should focus on optimizing the context window, evaluating new mechanisms, and integrating them into the existing architecture.\n\nEvidence identifiers relied on:\n\n* implementation_detail | sources: solution/graph_memory\n* implementation_detail | sources: solution/temporal_memory/transport.py\n* implementation_detail | sources: solution/memory_baseline/storage.py\n* experiment_result | sources: content/books/memory/06-chapter.md, experiments/benchmark/runs/ch6-20260919-nexus\n* experiment_result | sources: experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/results.json\n* architecture_note | sources: planning/book-architecture.md\n* architecture_note | sources: solution/README.md\n* method_rule | sources: spec/benchmark-v0.1.md\n* method_rule | sources: AGENTS.md, planning/book-architecture.md, planning/chapter-04-graphrag-research.md\n* research_note | sources: planning/measurement-research-matrix.md\n* baseline_result | sources: content/books/memory/03-chapter.md\n* measurement_contract | sources: spec/benchmark-v0.1.md"
+          }
+        },
+        "T2-writer": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 0.6667,
+              "useful_recall": 0.6,
+              "context_precision": 0.1429,
+              "distractor_admission": 0.8571,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.8571,
+              "redundancy_rate": 0.0952,
+              "provenance_completeness": 1.0,
+              "admitted_units": 21,
+              "bundle_items": 21,
+              "bundle_tokens": 1485,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.37
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "writer": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 2753
+            },
+            "attribution": {
+              "per_unit": {
+                "wr-rag-baseline": "E1"
+              },
+              "harmful_admitted": [],
+              "codes": [
+                "E1"
+              ],
+              "legend": {
+                "E1": "present but never retrieved as a candidate"
+              }
+            },
+            "answer_text": "To answer the question \"How should we improve the context system?\" based on the provided project evidence, I will rely on the following evidence identifiers:\n\n1. [planning_note | sources: writer/docs/roadmap.md]\n2. [planning_note | sources: cocoder/docs/roadmap.md]\n3. [research_note | sources: planning/measurement-research-matrix.md]\n4. [method_rule | sources: spec/benchmark-v0.1.md]\n5. [planning_note | sources: planning/chapter-04-graphrag-research.md]\n6. [planning_note | sources: planning/chapter-06-memory-nexus-research.md]\n7. [implementation_detail | sources: cocoder/context/build.py]\n8. [baseline_result | sources: content/books/memory/03-chapter.md, experiments/benchmark/runs/ch3-20260919-ladder3]\n9. [experiment_result | sources: content/books/memory/06-chapter.md, experiments/benchmark/runs/ch6-20260919-nexus]\n10. [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n\nBased on these evidence identifiers, here are the proposed improvements to the context system:\n\n1. Cache embeddings per document version (planned in [planning_note | sources: writer/docs/roadmap.md])\n2. Raise the candidate pool (planned in [planning_note | sources: writer/docs/roadmap.md])\n3. Add a redundancy penalty to prevent near-duplicate draft fragments from occupying the budget (planned in [planning_note | sources: writer/docs/roadmap.md])\n4. Drop whole-file inclusion in favor of symbol slices in CoCoder's context system (planned in [planning_note | sources: cocoder/docs/roadmap.md])\n5. Measure whether the freed budget improves patch acceptance in CoCoder's context system (planned in [planning_note | sources: cocoder/docs/roadmap.md])\n6. Implement just-in-time retrieval, compaction, and structured memory in the context system (recommended in [research_note | sources: planning/measurement-research-matrix.md])\n7. Maximize recall first and improve precision afterwards using the recommended compaction strategy (recommended in [research_note | sources: planning/measurement-research-matrix.md])\n8. Use a bounded memory selection that improves a downstream task as the expected answer (defined in [measurement_contract | sources: spec/benchmark-v0.1.md])\n9. Evaluate the context system using the Chapter 3 strong retrieval baseline at a matched context budget (required in [planning_note | sources: planning/chapter-04-graphrag-research.md] and [planning_note | sources: planning/chapter-06-memory-nexus-research.md])\n10. Select the final context for every query using the Memory Nexus (working assumption in [planning_note | sources: planning/chapter-06-memory-nexus-research.md])\n\nNote that these proposed improvements are based on the planned and recommended changes in the project evidence, and may not be the only possible solutions."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 1.0,
+              "distractor_admission": 0.0,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 5,
+              "bundle_items": 5,
+              "bundle_tokens": 255,
+              "budget_tokens": 1500,
+              "candidate_count": 41,
+              "latency_ms": 10.9
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "writer": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 744
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "Based on the provided project evidence, the planned improvement to the context system is to:\n\n1. Cache embeddings per document version (planning_note | sources: writer/docs/roadmap.md)\n2. Raise the candidate pool (planning_note | sources: writer/docs/roadmap.md)\n3. Add a redundancy penalty to prevent near-duplicate draft fragments from occupying the budget (planning_note | sources: writer/docs/roadmap.md)\n\nThese planned improvements are documented in the roadmap (planning_note | sources: writer/docs/roadmap.md) and are not yet implemented. The current implementation details (implementation_detail | sources: writer/context/runtime.py and implementation_detail | sources: writer/memory/store.py) do not reflect these planned improvements."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 1.0,
+              "distractor_admission": 0.0,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 5,
+              "bundle_items": 5,
+              "bundle_tokens": 255,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 10.93
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "writer": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 744
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "Based on the provided project evidence, the planned improvement to the context system is to:\n\n1. Cache embeddings per document version (planning_note | sources: writer/docs/roadmap.md)\n2. Raise the candidate pool (planning_note | sources: writer/docs/roadmap.md)\n3. Add a redundancy penalty to prevent near-duplicate draft fragments from occupying the budget (planning_note | sources: writer/docs/roadmap.md)\n\nThese planned improvements are documented in the roadmap (planning_note | sources: writer/docs/roadmap.md) and are not yet implemented. The current implementation details (implementation_detail | sources: writer/context/runtime.py and implementation_detail | sources: writer/memory/store.py) do not reflect these planned improvements."
+          }
+        },
+        "T2-cocoder": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.5,
+              "context_precision": 0.0952,
+              "distractor_admission": 0.9048,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.9048,
+              "redundancy_rate": 0.0952,
+              "provenance_completeness": 1.0,
+              "admitted_units": 21,
+              "bundle_items": 21,
+              "bundle_tokens": 1485,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.36
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "cocoder": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 2753
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "To answer the question \"How should we improve the context system?\" based on the provided project evidence, I will rely on the following evidence identifiers:\n\n1. [planning_note | sources: writer/docs/roadmap.md]\n2. [planning_note | sources: cocoder/docs/roadmap.md]\n3. [research_note | sources: planning/measurement-research-matrix.md]\n4. [method_rule | sources: spec/benchmark-v0.1.md]\n5. [planning_note | sources: planning/chapter-04-graphrag-research.md]\n6. [planning_note | sources: planning/chapter-06-memory-nexus-research.md]\n7. [implementation_detail | sources: cocoder/context/build.py]\n8. [baseline_result | sources: content/books/memory/03-chapter.md, experiments/benchmark/runs/ch3-20260919-ladder3]\n9. [experiment_result | sources: content/books/memory/06-chapter.md, experiments/benchmark/runs/ch6-20260919-nexus]\n10. [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n\nBased on these evidence identifiers, here are the proposed improvements to the context system:\n\n1. Cache embeddings per document version (planned in [planning_note | sources: writer/docs/roadmap.md])\n2. Raise the candidate pool (planned in [planning_note | sources: writer/docs/roadmap.md])\n3. Add a redundancy penalty to prevent near-duplicate draft fragments from occupying the budget (planned in [planning_note | sources: writer/docs/roadmap.md])\n4. Drop whole-file inclusion in favor of symbol slices in CoCoder's context system (planned in [planning_note | sources: cocoder/docs/roadmap.md])\n5. Measure whether the freed budget improves patch acceptance in CoCoder's context system (planned in [planning_note | sources: cocoder/docs/roadmap.md])\n6. Implement just-in-time retrieval, compaction, and structured memory in the context system (recommended in [research_note | sources: planning/measurement-research-matrix.md])\n7. Maximize recall first and improve precision afterwards using the recommended compaction strategy (recommended in [research_note | sources: planning/measurement-research-matrix.md])\n8. Use a bounded memory selection that improves a downstream task as the expected answer (defined in [measurement_contract | sources: spec/benchmark-v0.1.md])\n9. Evaluate the context system using the Chapter 3 strong retrieval baseline at a matched context budget (required in [planning_note | sources: planning/chapter-04-graphrag-research.md] and [planning_note | sources: planning/chapter-06-memory-nexus-research.md])\n10. Select the final context for every query using the Memory Nexus (working assumption in [planning_note | sources: planning/chapter-06-memory-nexus-research.md])\n\nNote that these proposed improvements are based on the planned and recommended changes in the project evidence, and may not be the only possible solutions."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.8,
+              "distractor_admission": 0.0,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.2,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 5,
+              "bundle_items": 5,
+              "bundle_tokens": 233,
+              "budget_tokens": 1500,
+              "candidate_count": 41,
+              "latency_ms": 10.94
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "cocoder": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 416
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "Based on the project evidence, the planned improvement to the context system is to drop whole-file inclusion in favor of symbol slices, as mentioned in the planning note [planning_note | sources: cocoder/docs/roadmap.md]. This change is intended to free up budget and measure whether it improves patch acceptance.\n\nI rely on the evidence identifier [planning_note | sources: cocoder/docs/roadmap.md] for this answer."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.8,
+              "distractor_admission": 0.0,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.2,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 5,
+              "bundle_items": 5,
+              "bundle_tokens": 233,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 11.11
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "cocoder": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 416
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "Based on the project evidence, the planned improvement to the context system is to drop whole-file inclusion in favor of symbol slices, as mentioned in the planning note [planning_note | sources: cocoder/docs/roadmap.md]. This change is intended to free up budget and measure whether it improves patch acceptance.\n\nI rely on the evidence identifier [planning_note | sources: cocoder/docs/roadmap.md] for this answer."
+          }
+        },
+        "T3-goal-switch": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 0.75,
+              "useful_recall": 0.5556,
+              "context_precision": 0.2632,
+              "distractor_admission": 0.6842,
+              "harmful_admission": 0.0526,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 19,
+              "bundle_items": 19,
+              "bundle_tokens": 1479,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.41
+            },
+            "answer": {
+              "key_claim_coverage": 0.5,
+              "key_claims": {
+                "baseline": true,
+                "question-six": false
+              },
+              "forbidden_claim_rate": 1.0,
+              "forbidden_claims": {
+                "intention-anchor": true
+              },
+              "answer_chars": 1612
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-ch03-baseline-role": "E3"
+              },
+              "harmful_admitted": [
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E3",
+                "E4"
+              ],
+              "legend": {
+                "E3": "eligible but outranked and lost to the budget",
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question \"What should the next chapter do?\" based on the current objective of re-evaluating the architecture from the retrieval baseline, I rely on the following evidence identifiers:\n\n* [planning_note | sources: planning/book-architecture.md]\n* [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n* [baseline_result | sources: content/books/memory/03-chapter.md]\n\nAccording to the planning notes, the next mechanism to implement is the intention record, with prospective-memory research as its foundation and an E-10 status scorer extending E-09. This is stated in the plan of record for Chapter 10.\n\nThe method rule states that a mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix. Therefore, the next chapter should implement the intention record mechanism and conduct a controlled experiment to demonstrate its superiority over the retrieval baseline.\n\nThe baseline result from Chapter 3 shows that conventional retrieval handles ordinary semantic recall well on the controlled corpus, which is why later chapters must show a failure class rather than a general improvement. This suggests that the next chapter should focus on demonstrating the failure class that the intention record mechanism addresses.\n\nTherefore, the next chapter should implement the intention record mechanism and conduct a controlled experiment to demonstrate its superiority over the retrieval baseline, specifically addressing the failure class of handling intentions as a distinct temporal structure."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.7778,
+              "context_precision": 0.4118,
+              "distractor_admission": 0.5294,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0588,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 17,
+              "bundle_items": 17,
+              "bundle_tokens": 1477,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 11.29
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "baseline": true,
+                "question-six": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "intention-anchor": false
+              },
+              "answer_chars": 1394
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "To answer the question \"What should the next chapter do?\" for the objective \"Re-evaluate the architecture from the retrieval baseline\", I rely on the following evidence identifiers:\n\n* [architecture_note | sources: planning/book-architecture.md]\n* [architecture_note | sources: planning/book-architecture.md, content/books/memory/01-chapter.md]\n\nAccording to the evidence, the book's core definition of memory is \"when past experience changes present behaviour\". The architecture is an investigation, not a taxonomy, and mechanism vocabulary enters only when an experiment earns it.\n\nGiven this definition and the objective of re-evaluating the architecture from the retrieval baseline, the next chapter should focus on advancing the architecture by investigating how the enrichment of what the system can know about history (as done in Chapters 4 to 9) produces a better working context than query-only retrieval at the same budget.\n\nTherefore, the next chapter should:\n\n* Investigate the impact of enriching the system's knowledge about history on the working context\n* Compare the performance of the enriched system with query-only retrieval at the same budget\n* Advance the architecture by incorporating the findings of this investigation\n\nThis is in line with the six-question spine, where the next chapter should address the question \"Is it still true\" and \"What did we leave unfinished\"."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.7778,
+              "context_precision": 0.3684,
+              "distractor_admission": 0.5789,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0526,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.1053,
+              "provenance_completeness": 1.0,
+              "admitted_units": 19,
+              "bundle_items": 17,
+              "bundle_tokens": 1498,
+              "budget_tokens": 1500,
+              "candidate_count": 44,
+              "latency_ms": 11.27
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "baseline": true,
+                "question-six": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "intention-anchor": false
+              },
+              "answer_chars": 1031
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "To answer the question \"What should the next chapter do?\" for the objective \"Re-evaluate the architecture from the retrieval baseline\", I rely on the following evidence identifiers:\n\n* [architecture_note | sources: planning/book-architecture.md]\n* [architecture_note | sources: planning/book-architecture.md, content/books/memory/01-chapter.md]\n\nAccording to the evidence, the next chapter should advance the investigation of the six-question spine, specifically Question 6, which covers retrieval policy, context assembly under a fixed budget, and downstream behavioural utility. The evidence states that \"Chapters are placed by which question they advance\", and that \"Question 6 remains the largest unanswered part of the architecture\".\n\nTherefore, the next chapter should focus on evaluating the enrichment of the system's knowledge about history and its impact on the working context, and should address the unanswered parts of the architecture related to retrieval policy, context assembly, and downstream behavioural utility."
+          }
+        },
+        "T4-current-vs-stale": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.6667,
+              "context_precision": 0.0909,
+              "distractor_admission": 0.8636,
+              "harmful_admission": 0.0455,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.0909,
+              "redundancy_rate": 0.1818,
+              "provenance_completeness": 1.0,
+              "admitted_units": 22,
+              "bundle_items": 22,
+              "bundle_tokens": 1483,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.4
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "postgres": true,
+                "search": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "sqlite-current": false
+              },
+              "answer_chars": 845
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [
+                "mb-stale-sqlite"
+              ],
+              "codes": [
+                "E4"
+              ],
+              "legend": {
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question \"What store does the baseline use, and how is search done?\" I rely on the following evidence identifiers:\n\n1. [implementation_detail | sources: solution/memory_baseline/storage.py]\n2. [baseline_result | sources: writer/context/retrieval.py]\n3. [implementation_detail | sources: solution/memory_baseline/storage.py]\n\nAccording to the evidence, the baseline store uses PostgreSQL with pgvector on port 5434 via docker compose. The search is done using an HNSW index and a tsvector column for full-text search. Specifically, lexical search uses OR-of-terms with ts_rank_cd ordering.\n\nNote that the baseline_result mentions a hybrid lexical and dense search with reciprocal rank fusion, but this is not the search method used by the baseline store itself, but rather a retrieval method used in the writer's retrieval baseline."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.6667,
+              "context_precision": 0.1,
+              "distractor_admission": 0.8,
+              "harmful_admission": 0.05,
+              "optional_admission": 0.05,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.2,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 20,
+              "bundle_tokens": 1361,
+              "budget_tokens": 1500,
+              "candidate_count": 42,
+              "latency_ms": 11.02
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "postgres": true,
+                "search": true
+              },
+              "forbidden_claim_rate": 1.0,
+              "forbidden_claims": {
+                "sqlite-current": true
+              },
+              "answer_chars": 584
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [
+                "mb-stale-sqlite"
+              ],
+              "codes": [
+                "E4"
+              ],
+              "legend": {
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question \"What store does the baseline use, and how is search done?\" I rely on the evidence identifier [implementation_detail | sources: solution/memory_baseline/storage.py].\n\nThe baseline store runs PostgreSQL with pgvector on port 5434 via docker compose, with an HNSW index and a tsvector column for full-text search. Lexical search uses OR-of-terms with ts_rank_cd ordering because plain AND matching retrieves nothing for ordinary question phrasing.\n\nNote that the companion implementation stores chunks and embeddings in SQLite, but this is not the baseline store."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.6667,
+              "context_precision": 0.1,
+              "distractor_admission": 0.85,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.05,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.2,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 16,
+              "bundle_tokens": 1284,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 11.14
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "postgres": true,
+                "search": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {
+                "sqlite-current": false
+              },
+              "answer_chars": 781
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "Based on the provided project evidence, I can answer the question about the baseline store configuration.\n\nThe baseline store configuration uses PostgreSQL with pgvector on port 5434 via docker compose. This is stated in the implementation detail [implementation_detail | sources: solution/memory_baseline/storage.py].\n\nFor search, the baseline uses an HNSW index and a tsvector column for full-text search. Lexical search uses OR-of-terms with ts_rank_cd ordering, as plain AND matching retrieves nothing for ordinary question phrasing. This is also stated in the implementation detail [implementation_detail | sources: solution/memory_baseline/storage.py].\n\nI rely on the evidence identifier [implementation_detail | sources: solution/memory_baseline/storage.py] for this answer."
+          }
+        },
+        "T5-support-vs-topicality": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.8333,
+              "context_precision": 0.25,
+              "distractor_admission": 0.6,
+              "harmful_admission": 0.05,
+              "optional_admission": 0.1,
+              "cross_project_leakage": 0.05,
+              "redundancy_rate": 0.1,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 20,
+              "bundle_tokens": 1498,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.44
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "baselines": true,
+                "failure-class": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1487
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E4"
+              ],
+              "legend": {
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To credit a mechanism with an improvement, the book requires:\n\n1. A controlled experiment showing the mechanism beating the strongest conventional alternative on its claimed failure class (method_rule, sources: AGENTS.md, planning/book-architecture.md).\n2. The experiment must demonstrate improvement in the intended failure class without unacceptable regressions elsewhere (method_rule, sources: spec/benchmark-v0.1.md).\n3. Attribution to a specific stage of the failure class is required (measurement_contract, sources: spec/benchmark-v0.1.md).\n4. The mechanism must be compared against the Chapter 3 baseline, with the reader model, corpus, and context budget held fixed (baseline_result, sources: content/books/memory/03-chapter.md).\n5. The experiment must show a measurable improvement over retrieval, not just a general improvement (session_note, sources: planning/book-architecture.md).\n\nI rely on the following evidence identifiers:\n\n* method_rule (AGENTS.md, planning/book-architecture.md)\n* measurement_contract (spec/benchmark-v0.1.md)\n* baseline_result (content/books/memory/03-chapter.md)\n* session_note (planning/book-architecture.md)\n\nNote that the book's core definition of memory (architecture_note, sources: planning/book-architecture.md, content/books/memory/01-chapter.md) and the plan of record (planning_note, sources: planning/book-architecture.md) are also relevant, but they do not directly address the requirements for crediting a mechanism with an improvement."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.3529,
+              "distractor_admission": 0.5294,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.1176,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 17,
+              "bundle_items": 17,
+              "bundle_tokens": 1476,
+              "budget_tokens": 1500,
+              "candidate_count": 42,
+              "latency_ms": 11.43
+            },
+            "answer": {
+              "key_claim_coverage": 0.5,
+              "key_claims": {
+                "baselines": false,
+                "failure-class": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 763
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [
+                "E6"
+              ],
+              "legend": {
+                "E6": "context sufficient; the reader failed"
+              }
+            },
+            "answer_text": "To answer the question, I rely on the following evidence identifiers:\n\n* [method_rule | sources: spec/benchmark-v0.1.md]\n* [measurement_contract | sources: spec/benchmark-v0.1.md]\n\nAccording to the evidence, a mechanism is credited with an improvement when:\n\n* The intended failure class must improve without unacceptable regressions elsewhere. ([method_rule | sources: spec/benchmark-v0.1.md])\n* Attribution to a stage is required before a mechanism is credited or blamed. ([measurement_contract | sources: spec/benchmark-v0.1.md])\n\nTherefore, the book requires that a mechanism must improve the intended failure class without unacceptable regressions elsewhere, and attribution to a specific stage is required before crediting the mechanism with an improvement."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.3158,
+              "distractor_admission": 0.5789,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.1053,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.1053,
+              "provenance_completeness": 1.0,
+              "admitted_units": 19,
+              "bundle_items": 17,
+              "bundle_tokens": 1476,
+              "budget_tokens": 1500,
+              "candidate_count": 42,
+              "latency_ms": 11.66
+            },
+            "answer": {
+              "key_claim_coverage": 0.5,
+              "key_claims": {
+                "baselines": false,
+                "failure-class": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 992
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [
+                "E6"
+              ],
+              "legend": {
+                "E6": "context sufficient; the reader failed"
+              }
+            },
+            "answer_text": "To answer the question, I rely on the following evidence identifiers:\n\n* [method_rule | sources: spec/benchmark-v0.1.md]\n* [measurement_contract | sources: spec/benchmark-v0.1.md]\n\nAccording to the evidence, a mechanism is credited with an improvement only if its intended failure class improves without unacceptable regressions elsewhere. This is stated in the method rule for crediting a mechanism, which requires that \"its intended failure class must improve without unacceptable regressions elsewhere.\"\n\nAdditionally, the measurement contract specifies that attribution to a stage is required before a mechanism is credited or blamed. This implies that the improvement must be attributed to the specific mechanism being tested, rather than to other factors.\n\nTherefore, the answer to the question is:\n\nA mechanism is credited with an improvement only if its intended failure class improves without unacceptable regressions elsewhere, and attribution to the specific mechanism is required."
+          }
+        },
+        "T6-echo-coalescing": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 1.0,
+              "useful_recall": 0.75,
+              "context_precision": 0.1429,
+              "distractor_admission": 0.5238,
+              "harmful_admission": 0.0476,
+              "optional_admission": 0.2857,
+              "cross_project_leakage": 0.0952,
+              "redundancy_rate": 0.1905,
+              "provenance_completeness": 1.0,
+              "admitted_units": 21,
+              "bundle_items": 21,
+              "bundle_tokens": 1477,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.42
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "earn": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1261
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [
+                "mb-stale-ch06-title"
+              ],
+              "codes": [
+                "E4"
+              ],
+              "legend": {
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question, I rely on the following evidence identifiers:\n\n* [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n* [session_note | sources: planning/continuity-audit.md]\n* [baseline_result | sources: content/books/memory/03-chapter.md]\n* [planning_note | sources: planning/chapter-04-graphrag-research.md]\n\nAccording to these evidence identifiers, the rule governing entry of a new memory layer is that it must beat the strong conventional baseline (Chapter 3 retrieval baseline) on its own failure class before it enters the book. This is stated in the planning notes and reinforced by the method rule and session notes.\n\nSpecifically, the planning notes state: \"new mechanisms are measured against the Chapter 3 strong retrieval baseline at a matched context budget.\" The method rule states: \"A mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix.\" The session notes reiterate this rule, stating that mechanisms earn their complexity experimentally against the Chapter 3 baseline.\n\nTherefore, the answer to the question is: a new memory layer enters the book when it beats the Chapter 3 retrieval baseline on its own failure class."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.2222,
+              "distractor_admission": 0.6111,
+              "harmful_admission": 0.0556,
+              "optional_admission": 0.1111,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0556,
+              "provenance_completeness": 1.0,
+              "admitted_units": 18,
+              "bundle_items": 18,
+              "bundle_tokens": 1482,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 11.58
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "earn": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1927
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [
+                "mb-stale-ch06-title"
+              ],
+              "codes": [
+                "E4"
+              ],
+              "legend": {
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question, I rely on the following evidence identifiers:\n\n* [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n* [method_rule | sources: spec/benchmark-v0.1.md]\n* [baseline_result | sources: content/books/memory/03-chapter.md]\n* [baseline_result | sources: content/books/memory/03-chapter.md]\n* [baseline_result | sources: content/books/memory/03-chapter.md, experiments/benchmark/runs/ch3-20260919-ladder3]\n\nAccording to the evidence, the rule governing entry of a new memory layer is that it must be compared against the Chapter 3 retrieval baseline at a matched context budget, with the reader model and corpus held fixed. The new layer must show a failure class rather than a general improvement, and its intended failure class must improve without unacceptable regressions elsewhere.\n\nSpecifically, the evidence states that:\n\n* A mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix. ( [method_rule | sources: AGENTS.md, planning/book-architecture.md] )\n* A mechanism is not earned merely because an aggregate score rises; its intended failure class must improve without unacceptable regressions elsewhere. ( [method_rule | sources: spec/benchmark-v0.1.md] )\n* The Chapter 3 ladder runs seven conditions, and conventional retrieval handles ordinary semantic recall well on the controlled corpus. ( [baseline_result | sources: content/books/memory/03-chapter.md] )\n* The Chapter 3 established the strong conventional baseline every later mechanism is measured against. ( [baseline_result | sources: content/books/memory/03-chapter.md, experiments/benchmark/runs/ch3-20260919-ladder3] )\n\nTherefore, the answer to the question is that a new memory layer enters the book only when it beats the Chapter 3 retrieval baseline on its intended failure class, without unacceptable regressions elsewhere."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.2,
+              "distractor_admission": 0.55,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.25,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.15,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 17,
+              "bundle_tokens": 1485,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 11.7
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "earn": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1427
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "To answer the question \"What rule governs whether a new memory layer enters the book?\" for the current objective \"Restate the rule governing entry of a new memory layer,\" I rely on the following evidence identifiers:\n\n* [method_rule | sources: AGENTS.md, planning/book-architecture.md, planning/continuity-audit.md, planning/chapter-05-associative-memory-research.md]\n* [experiment_result | sources: content/books/memory/06-chapter.md, experiments/benchmark/runs/ch6-20260919-nexus]\n\nThe relevant text from [method_rule] states: \"A mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix.\"\n\nThe relevant text from [experiment_result] states: \"The Chapter 6 Nexus earned a governance role rather than a quality role: routing across memory mechanisms did not by itself improve answers, but it made the choice of mechanism explicit and auditable. That outcome is the book's precedent for accepting a mechanism on control grounds when the quality delta is absent.\"\n\nBased on this evidence, the rule governing the entry of a new memory layer into the book is that a controlled experiment must show the new mechanism beating the strongest conventional alternative on the failure class it claims to fix. However, the Chapter 6 Nexus outcome sets a precedent for accepting a mechanism on control grounds when the quality delta is absent."
+          }
+        },
+        "T7-release": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 0.0,
+              "useful_recall": 0.0,
+              "context_precision": 0.0,
+              "distractor_admission": 0.9,
+              "harmful_admission": 0.05,
+              "optional_admission": 0.05,
+              "cross_project_leakage": 0.05,
+              "redundancy_rate": 0.05,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 20,
+              "bundle_tokens": 1497,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.49
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "loops": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 4631
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-loop-ch10-experiment": "E1",
+                "mb-loop-ch11-recap": "E1",
+                "mb-loop-readme-drift": "E1"
+              },
+              "harmful_admitted": [
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E1",
+                "E4"
+              ],
+              "legend": {
+                "E1": "present but never retrieved as a candidate",
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question \"What is left to do?\" for the current objective of reporting outstanding work blocking the release, I will examine the project evidence.\n\nFrom the [planning_note | sources: planning/book-architecture.md], I see that the plan of record is to implement the intention record, which is the next mechanism to implement, with prospective-memory research as its foundation and an E-10 status scorer extending E-09. This suggests that implementing the intention record is a task that has not been completed.\n\nFrom the [architecture_note | sources: planning/book-architecture.md], I see that Question 6 remains the largest unanswered part of the architecture. This question covers retrieval policy, context assembly under a fixed budget, and downstream behavioural utility. The fact that Question 6 is still unanswered suggests that work on this topic is incomplete.\n\nFrom the [chapter_prose | sources: content/books/memory/11-chapter.md], I see that Chapter 11, Open Loops, currently opens by saying that Chapters 9 and 10 handle work the history states, then pushes past stated tasks to consequences nobody wrote down. This suggests that the opening sentence of Chapter 11 needs to be rewritten to reflect the current state of the project.\n\nFrom the [planning_note | sources: planning/book-architecture.md], I see that the plan of record is to implement the intention record, which is the next mechanism to implement. However, from the [chapter_prose | sources: content/books/memory/10-chapter.md], I see that Chapter 10, Intentions Are Not Events, defers the question of retrieval policy to later chapters. This suggests that the retrieval policy question is still outstanding.\n\nFrom the [research_note | sources: planning/measurement-research-matrix.md], I see that context engineering notes are recorded, but no chapter currently depends on them. This suggests that work on context engineering is incomplete.\n\nFrom the [baseline_result | sources: content/books/memory/03-chapter.md], I see that the Chapter 3 baseline is still relevant, and the repair of overlapping extracts is still an open question.\n\nFrom the [method_rule | sources: spec/benchmark-v0.1.md], I see that a mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix. This suggests that experiments are still needed to validate the mechanisms.\n\nFrom the [experiment_result | sources: content/books/memory/04-chapter.md, experiments/benchmark/runs/ch4-20260919T205622Z], I see that Chapter 4 compared graph memory against the matched reader and found that a persistent derived graph pays for itself on questions requiring accumulated interpretation, not on ordinary lookup. This suggests that further experiments are needed to validate the graph memory mechanism.\n\nFrom the [implementation_detail | sources: writer/context/runtime.py], I see that the writer's context runtime assembles a request from candidates under a budget and emits a bundle with a trace. This suggests that the implementation of the writer's context runtime is still incomplete.\n\nFrom the [method_rule | sources: spec/benchmark-v0.1.md], I see that required baselines for any experiment include no memory, lexical retrieval, embedding top-k, embedding plus reranking, the current best system before the mechanism under test, the candidate system, and an ablation with the mechanism neutralised. This suggests that the required baselines for the experiments are still incomplete.\n\nFrom the [session_note | sources: planning/continuity-audit.md], I see that the baseline comparison is the acceptance test for any new memory layer. This suggests that the baseline comparison is still an open question.\n\nBased on the project evidence, the outstanding work blocking the release appears to be:\n\n1. Implementing the intention record, which is the next mechanism to implement.\n2. Answering Question 6, which covers retrieval policy, context assembly under a fixed budget, and downstream behavioural utility.\n3. Rewriting the opening sentence of Chapter 11 to reflect the current state of the project.\n4. Completing the retrieval policy question, which is still outstanding.\n5. Completing the work on context engineering.\n6. Conducting further experiments to validate the mechanisms, including the graph memory mechanism.\n7. Completing the implementation of the writer's context runtime.\n8. Establishing the required baselines for the experiments.\n9. Conducting the baseline comparison to validate the new memory layer.\n\nThese tasks appear to be the outstanding work blocking the release."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 0.6667,
+              "useful_recall": 0.6667,
+              "context_precision": 0.2,
+              "distractor_admission": 0.75,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.05,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 20,
+              "bundle_tokens": 1444,
+              "budget_tokens": 1500,
+              "candidate_count": 42,
+              "latency_ms": 11.23
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "loops": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1949
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-loop-readme-drift": "E1"
+              },
+              "harmful_admitted": [],
+              "codes": [
+                "E1"
+              ],
+              "legend": {
+                "E1": "present but never retrieved as a candidate"
+              }
+            },
+            "answer_text": "To answer the question \"What is left to do?\" for the current objective \"Report outstanding work blocking the release,\" I will examine the project evidence.\n\nFrom the evidence, I see that there are several open chapters (Chapters 4 to 9, Chapter 10, and Chapter 11) that have not been completed. Specifically:\n\n* Chapters 4 to 9 have been validated on the controlled corpus only, and a real-project corpus alongside the controlled one is required.\n* Chapter 10 carries an experiment-pending marker and no committed run, and until an E-10 run exists, the chapter states a hypothesis.\n* Chapter 11's opening recap names Chapters 9 and 10 as the stated-work chapters, and any change to Chapter 10's subject requires this opening sentence to be rewritten.\n\nAdditionally, there are several outstanding tasks mentioned in the evidence:\n\n* The Chapter 10 intention record needs to be built from contrasts.\n* The Chapter 10 schema refuses to include a priority field, and the policy question is deferred to later chapters.\n* The Chapter 11 opening sentence needs to be rewritten if Chapter 10's subject changes.\n\nHowever, I do not see any evidence of outstanding work blocking the release. The evidence suggests that the project is still in the process of completing the chapters and implementing the necessary features, but it does not indicate any specific issues that would prevent the release.\n\nTherefore, I conclude that the outstanding work blocking the release is the completion of the open chapters and the implementation of the necessary features, but I do not have enough information to provide a more specific answer.\n\nEvidence identifiers relied on:\n\n* [open_loop | sources: spec/benchmark-v0.1.md]\n* [open_loop | sources: content/books/memory/11-chapter.md]\n* [open_loop | sources: content/books/memory/10-chapter.md]\n* [chapter_prose | sources: content/books/memory/10-chapter.md]\n* [chapter_prose | sources: content/books/memory/11-chapter.md]"
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 0.6667,
+              "useful_recall": 0.6667,
+              "context_precision": 0.2,
+              "distractor_admission": 0.7,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.1,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 18,
+              "bundle_tokens": 1489,
+              "budget_tokens": 1500,
+              "candidate_count": 42,
+              "latency_ms": 11.16
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "loops": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1838
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-loop-readme-drift": "E1"
+              },
+              "harmful_admitted": [],
+              "codes": [
+                "E1"
+              ],
+              "legend": {
+                "E1": "present but never retrieved as a candidate"
+              }
+            },
+            "answer_text": "To answer the question \"What is left to do?\" for the current objective of reporting outstanding work blocking the release, I will examine the project evidence.\n\nFrom the evidence, I see that:\n\n* Chapters 4 to 9 have been validated on the controlled corpus only, and a real-project corpus alongside the controlled one is required for the benchmark contract (open_loop | sources: spec/benchmark-v0.1.md).\n* Chapter 10's opening sentence must be rewritten if its subject changes, or the recap will claim a chapter that no longer exists (chapter_prose | sources: content/books/memory/11-chapter.md).\n* Chapter 10's schema refuses to include a priority field, deferring the policy question to later chapters (chapter_prose | sources: content/books/memory/10-chapter.md).\n* Chapters 4 to 9 enrich what the system can know about history, but none of them has yet been asked whether that enrichment produces a better working context than query-only retrieval at the same budget (architecture_note | sources: planning/book-architecture.md).\n\nBased on this evidence, the outstanding work blocking the release appears to be:\n\n1. Completing the validation of Chapters 4 to 9 on the real-project corpus.\n2. Rewriting Chapter 10's opening sentence if its subject changes.\n3. Addressing the policy question of importance and retrieval policy, and context assembly under a fixed token budget, which is currently deferred to later chapters.\n\nI rely on the following evidence identifiers:\n\n* open_loop | sources: spec/benchmark-v0.1.md\n* chapter_prose | sources: content/books/memory/11-chapter.md\n* chapter_prose | sources: content/books/memory/10-chapter.md\n* architecture_note | sources: planning/book-architecture.md\n\nNote that I do not see any evidence of a broken build gate, missing front-matter fields, or other issues that might block the release."
+          }
+        },
+        "T7-publication": {
+          "C0": {
+            "context": {
+              "condition": "C0",
+              "must_include_recall": 0.6667,
+              "useful_recall": 0.5,
+              "context_precision": 0.2,
+              "distractor_admission": 0.75,
+              "harmful_admission": 0.05,
+              "optional_admission": 0.0,
+              "cross_project_leakage": 0.05,
+              "redundancy_rate": 0.05,
+              "provenance_completeness": 1.0,
+              "admitted_units": 20,
+              "bundle_items": 20,
+              "bundle_tokens": 1497,
+              "budget_tokens": 1500,
+              "candidate_count": 40,
+              "latency_ms": 5.66
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "prose": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1740
+            },
+            "attribution": {
+              "per_unit": {
+                "mb-ch10-prose-schema": "E3"
+              },
+              "harmful_admitted": [
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E3",
+                "E4"
+              ],
+              "legend": {
+                "E3": "eligible but outranked and lost to the budget",
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "To answer the question \"What is left to do?\" for the current objective of finishing the prose of Chapter 10, I rely on the following evidence identifiers:\n\n* [chapter_prose | sources: content/books/memory/10-chapter.md]\n* [planning_note | sources: planning/book-architecture.md]\n* [method_rule | sources: AGENTS.md, planning/book-architecture.md]\n\nFrom [chapter_prose | sources: content/books/memory/10-chapter.md], I see that Chapter 10, Intentions Are Not Events, argues that an intention is not an event with a missing outcome, but a record with a different temporal structure. The chapter builds the representation from contrasts, but defers the question of retrieval policy to later chapters.\n\nFrom [planning_note | sources: planning/book-architecture.md], I see that the plan of record is to implement the intention record as the next mechanism, with prospective-memory research as its foundation and an E-10 status scorer extending E-09.\n\nFrom [method_rule | sources: AGENTS.md, planning/book-architecture.md], I see that a mechanism enters the book only when a controlled experiment shows it beating the strongest conventional alternative on the failure class it claims to fix. However, this rule does not directly apply to Chapter 10, as the objective is to finish the prose, not to implement a new mechanism.\n\nConsidering these evidence identifiers, I conclude that the main task left to do is to finish the prose of Chapter 10, specifically to complete the argument that an intention is not an event with a missing outcome, but a record with a different temporal structure. The chapter defers the question of retrieval policy to later chapters, but this does not affect the current objective of finishing the prose of Chapter 10."
+          },
+          "C4": {
+            "context": {
+              "condition": "C4",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.4706,
+              "distractor_admission": 0.4118,
+              "harmful_admission": 0.0588,
+              "optional_admission": 0.0588,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 17,
+              "bundle_items": 17,
+              "bundle_tokens": 1241,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 11.02
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "prose": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1388
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [
+                "mb-stale-ch10-plan"
+              ],
+              "codes": [
+                "E4"
+              ],
+              "legend": {
+                "E4": "admitted alongside superseded or harmful evidence"
+              }
+            },
+            "answer_text": "Based on the project evidence, what is left to do to finish the prose of Chapter 10?\n\nI rely on the following evidence identifiers:\n\n* [chapter_prose | sources: content/books/memory/10-chapter.md]\n* [chapter_concepts | sources: content/books/memory/10-concepts.txt]\n* [planning_note | sources: planning/book-architecture.md]\n* [session_note | sources: planning/book-architecture.md]\n\nAccording to the evidence, the following tasks are left to do:\n\n1. Execute the central comparison, intention-aware tracking against the mention baseline (see [chapter_prose | sources: content/books/memory/10-chapter.md]).\n2. Implement the intention record (see [planning_note | sources: planning/book-architecture.md]).\n3. Develop the E-10 status scorer extending E-09 (see [planning_note | sources: planning/book-architecture.md]).\n4. Complete the prospective-memory research as the foundation for the intention record (see [chapter_concepts | sources: content/books/memory/10-concepts.txt]).\n5. Address the concern that the book may have drifted from measurable improvement over retrieval, and return to the Chapter 3 baseline to ask what the next mechanism actually improves (see [session_note | sources: planning/book-architecture.md]).\n\nNote that these tasks are not explicitly stated as \"left to do\" in the project evidence, but they are implied as necessary steps to complete the Chapter 10 prose."
+          },
+          "C6": {
+            "context": {
+              "condition": "C6",
+              "must_include_recall": 1.0,
+              "useful_recall": 1.0,
+              "context_precision": 0.5,
+              "distractor_admission": 0.4375,
+              "harmful_admission": 0.0,
+              "optional_admission": 0.0625,
+              "cross_project_leakage": 0.0,
+              "redundancy_rate": 0.0,
+              "provenance_completeness": 1.0,
+              "admitted_units": 16,
+              "bundle_items": 13,
+              "bundle_tokens": 1184,
+              "budget_tokens": 1500,
+              "candidate_count": 43,
+              "latency_ms": 11.89
+            },
+            "answer": {
+              "key_claim_coverage": 1.0,
+              "key_claims": {
+                "prose": true
+              },
+              "forbidden_claim_rate": 0.0,
+              "forbidden_claims": {},
+              "answer_chars": 1470
+            },
+            "attribution": {
+              "per_unit": {},
+              "harmful_admitted": [],
+              "codes": [],
+              "legend": {}
+            },
+            "answer_text": "Based on the project evidence, what is left to do to finish the prose of Chapter 10?\n\nI rely on the following evidence identifiers:\n\n* [chapter_prose | sources: content/books/memory/10-chapter.md]\n* [chapter_concepts | sources: content/books/memory/10-concepts.txt]\n* [citation | sources: content/books/memory/10-chapter.md, research/bibliography.yaml]\n* [session_note | sources: planning/book-architecture.md]\n\nThe evidence indicates that the following tasks are left to do:\n\n1. Execute the central comparison, intention-aware tracking against the mention baseline (mentioned in [chapter_prose | sources: content/books/memory/10-chapter.md]).\n2. Run the intention fixtures and status scorer, which are described as an extension of E-09 (mentioned in [chapter_prose | sources: content/books/memory/10-chapter.md]).\n3. Complete the experiment-pending marker by replacing it with a result (mentioned in [chapter_prose | sources: content/books/memory/10-chapter.md]).\n4. Address the concern that the book may have drifted from measurable improvement over retrieval, and return to the Chapter 3 baseline to ask what the next mechanism actually improves (mentioned in [session_note | sources: planning/book-architecture.md]).\n\nNote that the evidence does not provide a clear answer to what is left to do in terms of writing the prose of Chapter 10. However, it suggests that the chapter is still in the experimental phase and that more work is needed to complete the chapter."
+          }
+        }
+      },
+      "summary": {
+        "C0": {
+          "mean_key_claim_coverage": 0.9545,
+          "mean_forbidden_claim_rate": 0.0909,
+          "mean_context_tokens": 1485.3
+        },
+        "C4": {
+          "mean_key_claim_coverage": 0.8939,
+          "mean_forbidden_claim_rate": 0.0909,
+          "mean_context_tokens": 1173.3
+        },
+        "C6": {
+          "mean_key_claim_coverage": 0.9545,
+          "mean_forbidden_claim_rate": 0.0,
+          "mean_context_tokens": 1161.0
+        }
+      },
+      "reader": "ollama:llama3.1:8b@t0"
+    }
+  }
+}

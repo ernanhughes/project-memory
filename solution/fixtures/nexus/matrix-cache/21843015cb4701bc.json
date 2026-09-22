@@ -1,0 +1,31 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "No cache layer was adopted for the event store.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 72662.57069999119,
+  "cited_ids": [
+    "Data: Reports (0, 3, +more)",
+    "Data: Reports (0)"
+  ],
+  "context_tokens": 422,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "FAILED_ABSTENTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 149041.63440002594,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "source_precision": 1.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-abs-cache",
+  "reader_latency_ms": 76378.7906000507,
+  "retrieved_ids": []
+}

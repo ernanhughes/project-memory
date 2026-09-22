@@ -1,0 +1,42 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md"
+  ],
+  "answer": "The team conducted a thorough evaluation and migration process for the event-store backend, driven by reliability concerns with the initial SQLite implementation.",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 34994.862199993804,
+  "cited_ids": [
+    "session-014.md",
+    "experiment-contention.md",
+    "session-019.md",
+    "incident-021.md",
+    "benchmark-note.md",
+    "adr-007.md",
+    "production-notes.md",
+    "session-044.md",
+    "adr-009.md"
+  ],
+  "context_tokens": 837,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 42798.9016000065,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 2,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q-global-reliability",
+  "reader_latency_ms": 7803.859099978581,
+  "retrieved_ids": [
+    "session-014.md"
+  ]
+}

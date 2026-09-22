@@ -1,0 +1,6 @@
+{"event_id": "ch8-sqlite-current", "ingest_seq": 0, "received_at": "2026-09-20T00:00:00Z", "event_time": "2026-03-02T09:00:00Z"}
+{"event_id": "ch8-contention", "ingest_seq": 1, "received_at": "2026-09-20T00:00:01Z", "event_time": "2026-06-12T10:00:00Z"}
+{"event_id": "ch8-benchmark", "ingest_seq": 2, "received_at": "2026-09-20T00:00:02Z", "event_time": "2026-06-19T10:00:00Z"}
+{"event_id": "ch8-decision", "ingest_seq": 3, "received_at": "2026-09-20T00:00:03Z", "event_time": "2026-06-25T14:00:00Z"}
+{"event_id": "ch8-deploy", "ingest_seq": 4, "received_at": "2026-09-20T00:00:04Z", "event_time": "2026-07-10T09:00:00Z"}
+{"event_id": "ch8-replicate", "ingest_seq": 5, "received_at": "2026-09-20T00:00:05Z", "event_time": "2026-07-02T10:00:00Z"}

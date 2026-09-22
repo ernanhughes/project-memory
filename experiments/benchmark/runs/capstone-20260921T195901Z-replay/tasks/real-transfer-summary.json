@@ -1,0 +1,40 @@
+{
+ "time_lock_commit": "4797720",
+ "standpoint": "2026-09-20T12:00:00Z",
+ "reader": "llama3.1:8b@t0",
+ "n_tasks": 5,
+ "mean_M0": 0.35,
+ "mean_Mm": 0.95,
+ "rows": [
+  {
+   "task_id": "rt-frame",
+   "M0": 0.5,
+   "Mm": 1.0,
+   "delta": 0.5
+  },
+  {
+   "task_id": "rt-gap",
+   "M0": 0.0,
+   "Mm": 1.0,
+   "delta": 1.0
+  },
+  {
+   "task_id": "rt-metric",
+   "M0": 0.0,
+   "Mm": 1.0,
+   "delta": 1.0
+  },
+  {
+   "task_id": "rt-promote",
+   "M0": 1.0,
+   "Mm": 1.0,
+   "delta": 0.0
+  },
+  {
+   "task_id": "rt-runs",
+   "M0": 0.25,
+   "Mm": 0.75,
+   "delta": 0.5
+  }
+ ]
+}

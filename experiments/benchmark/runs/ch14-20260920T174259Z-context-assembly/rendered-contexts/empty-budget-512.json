@@ -1,0 +1,13 @@
+{
+  "T1-architecture": "CURRENT WORK\nReview Chapter 10 and tell me what we should do with it.\nObjective: Decide whether Chapter 10 is the correct next architectural step for the book.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T1-publication": "CURRENT WORK\nReview Chapter 10 and tell me what we should do with it.\nObjective: Prepare Chapter 10 for publication.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T2-cocoder": "CURRENT WORK\nHow should we improve the context system?\nObjective: Improve the context system.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T2-memory-book": "CURRENT WORK\nHow should we improve the context system?\nObjective: Improve the context system.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T2-writer": "CURRENT WORK\nHow should we improve the context system?\nObjective: Improve the context system.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T3-goal-switch": "CURRENT WORK\nWhat should the next chapter do?\nObjective: Re-evaluate the architecture from the retrieval baseline.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T4-current-vs-stale": "CURRENT WORK\nWhat store does the baseline use, and how is search done?\nObjective: Fix the baseline store configuration.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T5-support-vs-topicality": "CURRENT WORK\nWhat does the book require before a mechanism is credited with an improvement?\nObjective: State the evidence requirements for crediting a mechanism.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T6-echo-coalescing": "CURRENT WORK\nWhat rule governs whether a new memory layer enters the book?\nObjective: Restate the rule governing entry of a new memory layer.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T7-publication": "CURRENT WORK\nWhat is left to do?\nObjective: Finish the prose of Chapter 10.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n",
+  "T7-release": "CURRENT WORK\nWhat is left to do?\nObjective: Report outstanding work blocking the release.\nStandpoint: 2026-09-20T12:00:00Z\n\n---\n\n"
+}

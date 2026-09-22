@@ -1,0 +1,47 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md"
+  ],
+  "answer": "The team did a controlled benchmark (evt-204) and load tests (session-019) to evaluate the reliability of the event-store backend.",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.362000046763569,
+  "cited_ids": [
+    "benchmark-note.md",
+    "session-019.md"
+  ],
+  "context_tokens": 681,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 7,
+  "latency_ms": 4868.690300034359,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.2857142857142857,
+    "source_recall": 0.5,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=7 stopped=activation-exhausted",
+  "query_id": "q-global-reliability",
+  "reader_latency_ms": 4865.136000036728,
+  "retrieved_ids": [
+    "adr-007.md",
+    "session-014.md",
+    "session-019.md",
+    "benchmark-note.md",
+    "stale-summary.md",
+    "adr-009.md",
+    "production-notes.md"
+  ]
+}

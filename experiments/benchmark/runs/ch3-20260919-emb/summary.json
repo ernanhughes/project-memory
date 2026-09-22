@@ -1,0 +1,37 @@
+{
+  "chunking_comparison": {
+    "fixed": {
+      "error": "name 'store' is not defined"
+    },
+    "section": {
+      "error": "name 'store' is not defined"
+    },
+    "sentence": {
+      "error": "name 'store' is not defined"
+    }
+  },
+  "code_commit": "b42c065",
+  "corpus_version": "ch3-fixture-v0.1",
+  "embedding_comparison": {
+    "ollama/all-minilm:l6-v2": {
+      "error": "NameError: name 'store' is not defined"
+    },
+    "ollama/bge-m3": {
+      "error": "NameError: name 'store' is not defined"
+    },
+    "ollama/mxbai-embed-large": {
+      "error": "NameError: name 'store' is not defined"
+    },
+    "ollama/nomic-embed-text": {
+      "error": "NameError: name 'store' is not defined"
+    },
+    "ollama/qwen3-embedding:8b": {
+      "error": "NameError: name 'store' is not defined"
+    },
+    "sentence-transformers/sentence-transformers/all-MiniLM-L6-v2": {
+      "error": "NameError: name 'store' is not defined"
+    }
+  },
+  "run_id": "ch3-20260919-emb",
+  "task_set_version": "ch3-tasks-v0.1"
+}

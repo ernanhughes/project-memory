@@ -1,0 +1,16 @@
+{
+  "graph_answer": "### Evolution of the Event Store Backend: From SQLite to PostgreSQL\n\nThe **March prototype** of the Event Store utilized **SQLite** as its initial backend database. This decision was documented within the context of the **prototype phase (PROTOTYPE EVT-201)**, where SQLite was selected for its simplicity and ease of backup, despite its known limitations under concurrent write loads [Data: Reports (1, 4, +more)].\n\n#### Key Observations:\n1. **Purpose of SQLite in the Prototype**:\n   - SQLite was chosen as a pragmatic solution during the early stages of development, prioritizing ease of implementation and maintenance over scalability or performance under heavy loads.\n   - The decision was explicitly documented in **Report 4**, which outlines the iterative design process that led to its eventual replacement [Data: Reports (4)].\n\n2. **Transition to PostgreSQL**:\n   - The SQLite-based prototype was later superseded by a migration to **PostgreSQL**, driven by performance bottlenecks identified during testing and usage. This shift was formalized in **ADR-007** and subsequent reports [Data: Reports (1, 3, 4, +more)].\n   - The migration reflects a broader architectural evolution aimed at addressing scalability and concurrency challenges inherent in the Event Store's design.\n\n#### Implications:\n- The use of SQLite in the March prototype served as a foundational step, allowing for rapid iteration and validation of core concepts before scaling up to a more robust database solution.\n- The eventual adoption of PostgreSQL underscores the importance of performance and reliability in production environments, even if it required a departure from the initial simplicity of SQLite.\n\nFor further details, refer to the cited reports, particularly **Reports (1, 3, 4, +more)**.",
+  "graph_latency_ms": 60220.8,
+  "implicated_sources": [
+    "experiment-contention.md",
+    "session-014.md",
+    "session-019.md"
+  ],
+  "linked_entities": [
+    "PROTOTYPE EVENT LOG",
+    "PROTOTYPE (EVT-201)",
+    "PROTOTYPE"
+  ],
+  "mode": "global",
+  "task_id": "q4-historical-march"
+}

@@ -1,0 +1,279 @@
+{
+  "bundle_id": "cb-T3-goal-switch-C0",
+  "condition": "C0",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1479,
+  "bundle_digest": "d4d40357eb6d3cbe",
+  "items": [
+    {
+      "item_id": "item-mb-session-pivot",
+      "members": [
+        "mb-session-pivot"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.pivot",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-arch-spine",
+      "members": [
+        "mb-arch-spine"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.spine",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-mb-stale-ch10-plan",
+      "members": [
+        "mb-stale-ch10-plan"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 58
+    },
+    {
+      "item_id": "item-mb-ch09-handoff",
+      "members": [
+        "mb-ch09-handoff"
+      ],
+      "source_refs": [
+        "content/books/memory/09-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    },
+    {
+      "item_id": "item-mb-arch-layers",
+      "members": [
+        "mb-arch-layers"
+      ],
+      "source_refs": [
+        "solution/README.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.layers",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 100
+    },
+    {
+      "item_id": "item-mb-ch11-opening",
+      "members": [
+        "mb-ch11-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    },
+    {
+      "item_id": "item-mb-contract-q6",
+      "members": [
+        "mb-contract-q6"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.q6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 82
+    },
+    {
+      "item_id": "item-mb-stale-ch06-title",
+      "members": [
+        "mb-stale-ch06-title"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.ch6-title",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 58
+    },
+    {
+      "item_id": "item-mb-ch10-priority-refusal",
+      "members": [
+        "mb-ch10-priority-refusal"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.priority-belongs-to-policy",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 74
+    },
+    {
+      "item_id": "item-mb-arch-q6-open",
+      "members": [
+        "mb-arch-q6-open"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 107
+    },
+    {
+      "item_id": "item-mb-loop-ch11-recap",
+      "members": [
+        "mb-loop-ch11-recap"
+      ],
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ],
+      "kind": "open_loop",
+      "claim_key": "loop.ch11-recap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 48
+    },
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-strength",
+      "members": [
+        "mb-ch03-baseline-strength"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-strength",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 114
+    },
+    {
+      "item_id": "item-mb-ch10-prose-opening",
+      "members": [
+        "mb-ch10-prose-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.current-content",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 119
+    },
+    {
+      "item_id": "item-mb-impl-graphrag",
+      "members": [
+        "mb-impl-graphrag"
+      ],
+      "source_refs": [
+        "solution/graph_memory"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.graphrag",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-style-frontmatter",
+      "members": [
+        "mb-style-frontmatter"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "hugo.toml"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.frontmatter",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 83
+    },
+    {
+      "item_id": "item-mb-ch04-result",
+      "members": [
+        "mb-ch04-result"
+      ],
+      "source_refs": [
+        "content/books/memory/04-chapter.md",
+        "experiments/benchmark/runs/ch4-20260919T205622Z"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch4",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 71
+    },
+    {
+      "item_id": "item-mb-loop-ch10-experiment",
+      "members": [
+        "mb-loop-ch10-experiment"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "open_loop",
+      "claim_key": "loop.ch10-experiment",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 50
+    },
+    {
+      "item_id": "item-mb-session-intent-2",
+      "members": [
+        "mb-session-intent-2"
+      ],
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.intentions",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 62
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

@@ -1,0 +1,38 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-009.md"
+  ],
+  "answer": "The team rejected the proposal to introduce Redis as a lookup cache.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 43981.73240001779,
+  "cited_ids": [
+    "session-040.md",
+    "Data: Reports (0)"
+  ],
+  "context_tokens": 692,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "MISSED_SUPERSESSION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 61015.67649998469,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 1.0,
+    "source_recall": 0.5,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.5
+  },
+  "model_calls": 7,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q2-decision-redis",
+  "reader_latency_ms": 17033.75290002441,
+  "retrieved_ids": [
+    "adr-009.md"
+  ]
+}

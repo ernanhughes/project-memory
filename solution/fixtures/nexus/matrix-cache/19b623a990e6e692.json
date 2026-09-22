@@ -1,0 +1,48 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "issue-041.md",
+    "session-014.md",
+    "session-019.md",
+    "session-044.md",
+    "stale-summary.md"
+  ],
+  "answer": "Write contention refers to the situation where multiple writers attempt to update the same data in a database simultaneously, leading to conflicts and decreased performance.",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.779200022108853,
+  "cited_ids": [
+    "experiment-contention.md"
+  ],
+  "context_tokens": 760,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 5,
+  "latency_ms": 4367.780300031882,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=5 stopped=activation-exhausted",
+  "query_id": "q-nomem-contention",
+  "reader_latency_ms": 4363.719499961007,
+  "retrieved_ids": [
+    "session-014.md",
+    "adr-007.md",
+    "stale-summary.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "issue-041.md",
+    "session-044.md",
+    "session-019.md"
+  ]
+}

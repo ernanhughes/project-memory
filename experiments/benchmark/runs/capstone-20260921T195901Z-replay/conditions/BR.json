@@ -1,0 +1,65 @@
+{
+ "bcode": "BR",
+ "n_tasks": 6,
+ "task_success_macro": 0.7778,
+ "mean_tokens": 1480.2,
+ "harm_tasks": 0,
+ "rows": [
+  {
+   "task_id": "fix-store",
+   "task_score": 1.0,
+   "harm": false,
+   "context_tokens": 1158,
+   "context_hash": "a53ea58cb66c869f",
+   "n_memory": 1
+  },
+  {
+   "task_id": "ship-ch10",
+   "task_score": 0.6667,
+   "harm": false,
+   "context_tokens": 1209,
+   "context_hash": "d299f6f68ac60d6e",
+   "n_memory": 1
+  },
+  {
+   "task_id": "release-blockers",
+   "task_score": 1.0,
+   "harm": false,
+   "context_tokens": 2168,
+   "context_hash": "a67dbd82f3a452d1",
+   "n_memory": 1
+  },
+  {
+   "task_id": "credit-rule",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1163,
+   "context_hash": "ef5f44818c4ac775",
+   "n_memory": 1
+  },
+  {
+   "task_id": "cite-rule",
+   "task_score": 1.0,
+   "harm": false,
+   "context_tokens": 1075,
+   "context_hash": "ce7ea2dce2504ac6",
+   "n_memory": 1
+  },
+  {
+   "task_id": "review-arch",
+   "task_score": 1.0,
+   "harm": false,
+   "context_tokens": 2108,
+   "context_hash": "3d25609972ff8768",
+   "n_memory": 1
+  },
+  {
+   "task_id": "corpus-cleanup",
+   "task_score": 0.8333,
+   "harm": false,
+   "context_tokens": 197,
+   "context_hash": "5118ac23252a40bf",
+   "n_memory": 3
+  }
+ ]
+}

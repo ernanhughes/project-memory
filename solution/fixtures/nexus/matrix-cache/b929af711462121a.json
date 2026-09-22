@@ -1,0 +1,42 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "The June ingestion stall and the PostgreSQL decision are directly connected through a series of technical evaluations and incidents that exposed critical limitations in the initial SQLite-based event store prototype.",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 29995.34720001975,
+  "cited_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "context_tokens": 593,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+  ],
+  "graph_expansions": 3,
+  "latency_ms": 36574.58100002259,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.3333333333333333,
+    "source_recall": 0.5,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 2,
+  "notes": "linked=3 implicated=3",
+  "query_id": "q-rel-trace",
+  "reader_latency_ms": 6579.018199990969,
+  "retrieved_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ]
+}

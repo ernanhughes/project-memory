@@ -1,0 +1,12 @@
+{
+  "graph_answer": "### Decision on Introducing Redis as a Lookup Cache\n\nThe team ultimately **rejected the proposal to introduce Redis as a lookup cache** for the event store. This decision was based on a combination of empirical measurements and operational considerations, as outlined in the following key artifacts:\n\n#### **1. Working Set Fits in Memory**\nThe team determined that the **hot working set of data fits comfortably within application memory**, making a dedicated cache like Redis unnecessary. This conclusion was reached during **Session 044** (2024-08-19), where measurements confirmed that the workload could be handled efficiently without additional caching infrastructure [Data: session-044 (18)].\n\n#### **2. Lack of Measured Bottleneck**\nBefore introducing Redis, the team insisted on **evidence that read latency was a bottleneck**. In **Session 040** (2024-08-05), J. Lindqvist proposed Redis to reduce read latency for hot keys, but A. Novak and M. Okafor required **quantifiable proof** that reads were the limiting factor. Without such evidence, the proposal was deemed premature [Data: session-040 (17)].\n\n#### **3. Operational Overhead Without Clear Benefit**\nRedis would introduce **additional operational complexity** (e.g., managing another service, backups, and monitoring) without a demonstrated need. The team preferred to **revisit the cache decision only if read latency became a measurable issue** [Data: session-044 (18)].\n\n#### **4. Decision Record (ADR-009)**\nThe final decision was formalized in **ADR-009** (2024-08-26), where the team explicitly stated:\n> *\"The working set fits in memory (session-044), so a lookup cache buys nothing. Revisit only with measured read-latency evidence. The session-040 proposal is rejected.\"*\n[Data: adr-009 (1)].\n\n### **Conclusion**\nThe team chose to **forgo Redis** and instead rely on in-memory caching (where feasible) or only introduce Redis if future measurements confirm that read latency is a bottleneck. This approach aligns with a **principle of avoiding unnecessary operational complexity** unless there is clear empirical justification.",
+  "graph_latency_ms": 37609.0,
+  "implicated_sources": [
+    "adr-009.md"
+  ],
+  "linked_entities": [
+    "REDIS"
+  ],
+  "mode": "local",
+  "task_id": "q2-decision-redis"
+}

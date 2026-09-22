@@ -1,0 +1,49 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "experiment-contention.md",
+    "incident-021.md",
+    "session-014.md",
+    "adr-007.md",
+    "issue-041.md",
+    "commits.log",
+    "session-019.md",
+    "notification-service.md"
+  ],
+  "answer": "Write contention in a database refers to the situation where multiple writers are trying to update the same data simultaneously, leading to delays, stalls, or even crashes.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 5804.6465999796055,
+  "cited_ids": [
+    "experiment-contention.md",
+    "incident-021.md"
+  ],
+  "context_tokens": 755,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 12987.957599980291,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=2685",
+  "query_id": "q-nomem-contention",
+  "reader_latency_ms": 7183.1088999751955,
+  "retrieved_ids": [
+    "experiment-contention.md",
+    "incident-021.md",
+    "session-014.md",
+    "adr-007.md",
+    "issue-041.md",
+    "commits.log",
+    "session-019.md",
+    "notification-service.md"
+  ]
+}

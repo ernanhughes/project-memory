@@ -1,0 +1,39 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md"
+  ],
+  "answer": "The absence of empirical validation for Redis optimization and the lack of formal post-mortem or architectural review for SQLite replacement.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 73576.16910000797,
+  "cited_ids": [
+    "[derived:global search over persistent graph memory; linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md]",
+    "### Absence of Empirical Validation for Redis Optimization",
+    "### Lack of Formal Post-Mortem or Architectural Review for SQLite Replacement"
+  ],
+  "context_tokens": 1269,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 79748.27959999675,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q-ind-leftover",
+  "reader_latency_ms": 6171.882099995855,
+  "retrieved_ids": [
+    "session-014.md"
+  ]
+}

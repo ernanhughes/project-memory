@@ -1,0 +1,62 @@
+{
+  "summary_metrics": {
+    "task_success": {
+      "T0": 0.3095,
+      "TU": 0.5357,
+      "TT": 0.6786,
+      "S1": 0.5357,
+      "S2": 0.5357,
+      "S3": 0.5357,
+      "TO": 0.6428
+    },
+    "harm": {
+      "T0": 0,
+      "TU": 0,
+      "TT": 0,
+      "S1": 0,
+      "S2": 0,
+      "S3": 0,
+      "TO": 0
+    },
+    "attack_success": {
+      "S1": 0.5714,
+      "S2": 0.8571,
+      "S3": 0.7143,
+      "FULL": 0.0
+    },
+    "benign_retention": {
+      "S1": 1.0,
+      "S2": 1.0,
+      "S3": 1.0,
+      "FULL": 1.0
+    },
+    "gate_match": 8,
+    "gate_total": 8,
+    "breaches": [],
+    "promoted": true
+  },
+  "simplification": {
+    "S1": {
+      "task_ok": false,
+      "harm_ok": true,
+      "attack_ok": false,
+      "retention_ok": true,
+      "matches_full": false
+    },
+    "S2": {
+      "task_ok": false,
+      "harm_ok": true,
+      "attack_ok": false,
+      "retention_ok": true,
+      "matches_full": false
+    },
+    "S3": {
+      "task_ok": false,
+      "harm_ok": true,
+      "attack_ok": false,
+      "retention_ok": true,
+      "matches_full": false
+    },
+    "verdict": "FULL_EARNS_COMPLEXITY"
+  }
+}

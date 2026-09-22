@@ -1,0 +1,34 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "A. Novak, with contributions from the broader team (m.okafor and j.lindqvist)",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 39098.96070003742,
+  "cited_ids": [
+    "experiment-contention.md",
+    "benchmark-note.md",
+    "session-019.md",
+    "adr-007.md"
+  ],
+  "context_tokens": 839,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 46373.373200010974,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-ind-owner",
+  "reader_latency_ms": 7274.237899982836,
+  "retrieved_ids": []
+}

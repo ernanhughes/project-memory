@@ -1,0 +1,52 @@
+{
+ "task_id": "review-prose",
+ "condition": "CO",
+ "bcode": "BO",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "frozen-render"
+ ],
+ "derived_consulted": [
+  "frozen:BO:0362b0069e8ae493"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "frozen-render",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "frozen-render",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "frozen-render"
+ ],
+ "rejected": [],
+ "context_tokens": 1624,
+ "context_hash": "0362b0069e8ae493",
+ "reader_output": {
+  "task_score": 0.0,
+  "frozen": true
+ },
+ "behavioural_score": 0.0,
+ "harm": false,
+ "fallback_events": [
+  {
+   "event": "assembly failure",
+   "action": "bounded simple retrieval fallback engaged",
+   "detail": "context 1624 exceeds budget 1500; frozen trace preserved"
+  }
+ ],
+ "conditional_invocations": []
+}

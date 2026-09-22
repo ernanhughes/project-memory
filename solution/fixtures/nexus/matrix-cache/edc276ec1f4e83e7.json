@@ -1,0 +1,38 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 38894.65360000031,
+  "cited_ids": [
+    "adr-007.md",
+    "Benchmark evt-204 (2)",
+    "Data: Experiment evt-202 (10)",
+    "Data: Incident evt-203 (11)",
+    "Data: Production Notes (14)",
+    "Data: Stale Summary (19)"
+  ],
+  "context_tokens": 701,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 90341.59490000457,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.8333333333333334
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q6-use-new-service",
+  "reader_latency_ms": 51446.72700000228,
+  "retrieved_ids": []
+}

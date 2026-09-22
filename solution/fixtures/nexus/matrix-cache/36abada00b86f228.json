@@ -1,0 +1,48 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "notification-service.md",
+    "stale-summary.md",
+    "adr-007.md",
+    "session-014.md",
+    "benchmark-note.md",
+    "session-019.md",
+    "production-notes.md",
+    "incident-021.md"
+  ],
+  "answer": "The notification service",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6705.445899977349,
+  "cited_ids": [
+    "notification-service.md"
+  ],
+  "context_tokens": 772,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 10568.22179997107,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.125,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3351",
+  "query_id": "q-ind-separate-store",
+  "reader_latency_ms": 3862.551199970767,
+  "retrieved_ids": [
+    "notification-service.md",
+    "stale-summary.md",
+    "adr-007.md",
+    "session-014.md",
+    "benchmark-note.md",
+    "session-019.md",
+    "production-notes.md",
+    "incident-021.md"
+  ]
+}

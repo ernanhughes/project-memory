@@ -1,0 +1,50 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "incident-021.md",
+    "session-014.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md",
+    "stale-summary.md"
+  ],
+  "answer": "PostgreSQL",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 4.484499979298562,
+  "cited_ids": [
+    "adr-007.md"
+  ],
+  "context_tokens": 773,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 6,
+  "latency_ms": 60163.61719998531,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.25,
+    "source_recall": 1.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=6 stopped=activation-exhausted",
+  "query_id": "q-stale-trap",
+  "reader_latency_ms": 60158.92100002384,
+  "retrieved_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md",
+    "incident-021.md",
+    "session-040.md",
+    "session-044.md",
+    "benchmark-note.md"
+  ]
+}

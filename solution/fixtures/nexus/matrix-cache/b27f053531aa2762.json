@@ -1,0 +1,36 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "Concurrency Threshold Collapse, 40-Minute Stall During June Load Window (Incident EVT-203), Benchmark EVT-204/EVT-205",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 511633.32050002646,
+  "cited_ids": [
+    "adr-007.md",
+    "PROTOTYPE (33, 43)",
+    "LOAD-TEST REVIEW (34)",
+    "Reports (1, 5, +more)",
+    "Reports (5)",
+    "Reports (3)"
+  ],
+  "context_tokens": 811,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 976448.9360000007,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.8333333333333334
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-rel-influences",
+  "reader_latency_ms": 464815.4114000499,
+  "retrieved_ids": []
+}

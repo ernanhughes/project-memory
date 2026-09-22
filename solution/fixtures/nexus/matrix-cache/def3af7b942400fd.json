@@ -1,0 +1,45 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "notification-service.md",
+    "production-notes.md",
+    "session-044.md",
+    "session-014.md",
+    "experiment-contention.md",
+    "session-019.md",
+    "adr-007.md",
+    "adr-009.md"
+  ],
+  "answer": "A database index is a data structure that improves the speed of data retrieval by allowing for efficient location of specific data within a database.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6543.300699966494,
+  "cited_ids": [],
+  "context_tokens": 711,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 11407.083600002807,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 1.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3387",
+  "query_id": "q-nomem-index",
+  "reader_latency_ms": 4863.5651000076905,
+  "retrieved_ids": [
+    "notification-service.md",
+    "production-notes.md",
+    "session-044.md",
+    "session-014.md",
+    "experiment-contention.md",
+    "session-019.md",
+    "adr-007.md",
+    "adr-009.md"
+  ]
+}

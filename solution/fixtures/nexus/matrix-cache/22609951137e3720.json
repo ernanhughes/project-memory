@@ -1,0 +1,24 @@
+{
+  "abstained": true,
+  "admitted_ids": [],
+  "answer": "Unknown",
+  "capability_id": "NONE",
+  "capability_latency_ms": 0.0,
+  "cited_ids": [],
+  "context_tokens": 0,
+  "cost_units": 0.0,
+  "failure_classes": [],
+  "graph_expansions": 0,
+  "latency_ms": 2720.1066999696195,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 1.0,
+    "source_recall": 1.0
+  },
+  "model_calls": 1,
+  "notes": "no history retrieved",
+  "query_id": "q-abs-provider",
+  "reader_latency_ms": 2719.943699950818,
+  "retrieved_ids": []
+}

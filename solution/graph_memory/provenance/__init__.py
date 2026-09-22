@@ -1,0 +1,1 @@
+"""Derived-state provenance: every graph object traces toward sources."""

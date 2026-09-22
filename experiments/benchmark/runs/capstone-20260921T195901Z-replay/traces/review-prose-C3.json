@@ -1,0 +1,214 @@
+{
+ "task_id": "review-prose",
+ "condition": "C3",
+ "bcode": "B3",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "mb-ch09-handoff",
+  "mb-ch10-priority-refusal",
+  "mb-ch11-opening",
+  "mb-ch10-experiment-pending",
+  "mb-ch10-prose-opening",
+  "mb-ch10-prose-schema",
+  "mb-ch10-concepts",
+  "mb-ch10-refs",
+  "mb-style-frontmatter",
+  "mb-style-citations",
+  "mb-style-build",
+  "mb-echo-baseline-1",
+  "mb-echo-baseline-2",
+  "mb-loop-ch10-experiment",
+  "mb-loop-ch11-recap"
+ ],
+ "derived_consulted": [
+  "frozen:B3:da25f686d5f90a3f"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "mb-ch09-handoff",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch11-opening",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-experiment-pending",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-prose-opening",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-prose-schema",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-concepts",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-refs",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-style-frontmatter",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-style-citations",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-style-build",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-1",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-2",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-ch10-experiment",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-ch11-recap",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "mb-ch09-handoff",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch11-opening",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-experiment-pending",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-prose-opening",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-prose-schema",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-concepts",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-refs",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-style-frontmatter",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-style-citations",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-style-build",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-1",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-2",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-ch10-experiment",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-ch11-recap",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "DECLARED",
+  "action": "HARD"
+ },
+ "selected": [
+  "mb-ch09-handoff",
+  "mb-ch10-priority-refusal",
+  "mb-ch11-opening",
+  "mb-ch10-experiment-pending",
+  "mb-ch10-prose-opening",
+  "mb-ch10-prose-schema",
+  "mb-ch10-concepts",
+  "mb-ch10-refs",
+  "mb-style-frontmatter",
+  "mb-style-citations",
+  "mb-style-build",
+  "mb-echo-baseline-1",
+  "mb-echo-baseline-2",
+  "mb-loop-ch10-experiment",
+  "mb-loop-ch11-recap"
+ ],
+ "rejected": [],
+ "context_tokens": 1464,
+ "context_hash": "da25f686d5f90a3f",
+ "reader_output": {
+  "task_score": 0.0,
+  "frozen": true
+ },
+ "behavioural_score": 0.0,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

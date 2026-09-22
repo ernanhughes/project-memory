@@ -1,0 +1,1974 @@
+{
+  "config": {
+    "code_commit": "ea27709",
+    "cue_path": "fixtures/assoc/cues-v0.1.json",
+    "graph_path": "fixtures/assoc/graph-v0.1.json",
+    "learning": {
+      "enabled": false,
+      "idle_decay": 0.01,
+      "max_association": 0.95,
+      "min_association": 0.05,
+      "min_evidence_confidence": 0.25,
+      "policy_version": "assoc-learn-v0.1",
+      "reinforce_step": 0.05,
+      "require_provenance": true,
+      "weaken_step": 0.05
+    },
+    "notes": "",
+    "propagation": {
+      "activation_threshold": 0.02,
+      "conditioning_floor": 0.1,
+      "conditioning_strength": 1.0,
+      "damping": 0.85,
+      "fan_division": true,
+      "frontier_top_m": 7,
+      "inhibition": true,
+      "inhibition_strength": 0.5,
+      "max_hops": 3,
+      "max_nodes_expanded": 120,
+      "pagerank_iterations": 30,
+      "pagerank_tolerance": 1e-06,
+      "retention": 0.5,
+      "spread_factor": 0.8,
+      "strategy": "spreading"
+    },
+    "seeding": {
+      "embedding_dimension": 256,
+      "embedding_model": "hashing-256",
+      "embedding_provider": "hashing",
+      "lexical_weight": 0.5,
+      "method": "lexical",
+      "min_score": 0.05,
+      "top_k": 5
+    },
+    "selection": {
+      "activation_weight": 0.6,
+      "importance_weight": 0.1,
+      "max_memories": 8,
+      "max_sources": 8,
+      "similarity_weight": 0.3
+    }
+  },
+  "corpus_version": "running-examples-2026-09",
+  "cue_set_version": "assoc-cues-v0.1",
+  "experiments": {
+    "E5-A": {
+      "conditions": {
+        "conditioned": {
+          "cases": 20,
+          "condition": "conditioned",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "lexical",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "lexical",
+            "strategy": "conditioned"
+          },
+          "mean_context_tokens": 31.35,
+          "mean_latency_ms": 0.12422999716363847,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.9468832867598642,
+            "distractor_rate": 0.36666666666666664,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.24238095238095236,
+            "path_precision": 0.4458333333333333,
+            "path_recall": 0.9,
+            "source_precision": 0.4458333333333333,
+            "source_recall": 0.9,
+            "useful_hop_distance": 0.15789473684210525
+          },
+          "total_edges_traversed": 1361,
+          "total_nodes_expanded": 136,
+          "wall_seconds": 0.0096
+        },
+        "conditioned-pagerank": {
+          "cases": 20,
+          "condition": "conditioned-pagerank",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "lexical",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "lexical",
+            "strategy": "conditioned-pagerank"
+          },
+          "mean_context_tokens": 45.0,
+          "mean_latency_ms": 1.3043650018516928,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.7637298834986092,
+            "distractor_rate": 0.4333333333333333,
+            "expansion_factor": 1.26875,
+            "hub_capture": 0.29583333333333334,
+            "path_precision": 0.2463888888888889,
+            "path_recall": 0.9166666666666666,
+            "source_precision": 0.2866666666666667,
+            "source_recall": 0.9,
+            "useful_hop_distance": 0.2
+          },
+          "total_edges_traversed": 4040,
+          "total_nodes_expanded": 201,
+          "wall_seconds": 0.0351
+        },
+        "direct": {
+          "cases": 20,
+          "condition": "direct",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "lexical",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "lexical",
+            "strategy": "direct"
+          },
+          "mean_context_tokens": 43.5,
+          "mean_latency_ms": 0.420115003362298,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.4884951270205956,
+            "distractor_rate": 0.4333333333333333,
+            "expansion_factor": 5.91875,
+            "hub_capture": 0.3,
+            "path_precision": 0.05546045139437642,
+            "path_recall": 1.0,
+            "source_precision": 0.2833333333333333,
+            "source_recall": 0.8916666666666666,
+            "useful_hop_distance": 0.4
+          },
+          "total_edges_traversed": 2448,
+          "total_nodes_expanded": 947,
+          "wall_seconds": 0.0169
+        },
+        "oracle-seed-spreading": {
+          "cases": 20,
+          "condition": "oracle-seed-spreading",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "oracle",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "oracle",
+            "strategy": "spreading"
+          },
+          "mean_context_tokens": 38.5,
+          "mean_latency_ms": 0.06401499267667532,
+          "means": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.8122199666828733,
+            "distractor_rate": 0.5666666666666667,
+            "expansion_factor": 0.95,
+            "hub_capture": 0.18333333333333332,
+            "path_precision": 0.2475,
+            "path_recall": 0.7,
+            "source_precision": 0.2475,
+            "source_recall": 0.7,
+            "useful_hop_distance": 1.0
+          },
+          "total_edges_traversed": 1242,
+          "total_nodes_expanded": 142,
+          "wall_seconds": 0.0027
+        },
+        "pagerank": {
+          "cases": 20,
+          "condition": "pagerank",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "lexical",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "lexical",
+            "strategy": "pagerank"
+          },
+          "mean_context_tokens": 44.05,
+          "mean_latency_ms": 1.2822799937566742,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.6840316786855902,
+            "distractor_rate": 0.5,
+            "expansion_factor": 1.4875,
+            "hub_capture": 0.32053571428571426,
+            "path_precision": 0.2248015873015873,
+            "path_recall": 0.9666666666666666,
+            "source_precision": 0.2683333333333333,
+            "source_recall": 0.85,
+            "useful_hop_distance": 0.3
+          },
+          "total_edges_traversed": 4040,
+          "total_nodes_expanded": 237,
+          "wall_seconds": 0.0348
+        },
+        "seed-only": {
+          "cases": 20,
+          "condition": "seed-only",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "lexical",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "lexical",
+            "strategy": "spreading"
+          },
+          "mean_context_tokens": 25.8,
+          "mean_latency_ms": 0.2994149981532246,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 1.0,
+            "distractor_rate": 0.3416666666666667,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.2533333333333333,
+            "path_precision": 0.4625,
+            "path_recall": 0.85,
+            "source_precision": 0.4625,
+            "source_recall": 0.85,
+            "useful_hop_distance": 0.0
+          },
+          "total_edges_traversed": 0,
+          "total_nodes_expanded": 97,
+          "wall_seconds": 0.0082
+        },
+        "seedmethod-embedding": {
+          "cases": 20,
+          "condition": "seedmethod-embedding",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "embedding",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "embedding",
+            "strategy": "spreading"
+          },
+          "mean_context_tokens": 43.8,
+          "mean_latency_ms": 0.13998500653542578,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.775613528067072,
+            "distractor_rate": 0.21666666666666665,
+            "expansion_factor": 1.175,
+            "hub_capture": 0.27351190476190473,
+            "path_precision": 0.20095238095238094,
+            "path_recall": 0.675,
+            "source_precision": 0.19,
+            "source_recall": 0.5833333333333333,
+            "useful_hop_distance": 0.42857142857142855
+          },
+          "total_edges_traversed": 2081,
+          "total_nodes_expanded": 228,
+          "wall_seconds": 0.0369
+        },
+        "seedmethod-hybrid": {
+          "cases": 20,
+          "condition": "seedmethod-hybrid",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "hybrid",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "hybrid",
+            "strategy": "spreading"
+          },
+          "mean_context_tokens": 45.15,
+          "mean_latency_ms": 0.1697600120678544,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.7238816665889134,
+            "distractor_rate": 0.38333333333333336,
+            "expansion_factor": 1.4375,
+            "hub_capture": 0.25625,
+            "path_precision": 0.23160714285714284,
+            "path_recall": 0.9666666666666666,
+            "source_precision": 0.24166666666666664,
+            "source_recall": 0.75,
+            "useful_hop_distance": 0.5
+          },
+          "total_edges_traversed": 2564,
+          "total_nodes_expanded": 265,
+          "wall_seconds": 0.0444
+        },
+        "spreading": {
+          "cases": 20,
+          "condition": "spreading",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "lexical",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 101,
+            "graph_version": "assoc-ledger-v0.1",
+            "nodes": 73,
+            "seeder": "lexical",
+            "strategy": "spreading"
+          },
+          "mean_context_tokens": 40.95,
+          "mean_latency_ms": 0.1027499936753884,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.841225381848902,
+            "distractor_rate": 0.38333333333333336,
+            "expansion_factor": 1.08125,
+            "hub_capture": 0.25797619047619047,
+            "path_precision": 0.34750000000000003,
+            "path_recall": 0.9,
+            "source_precision": 0.35,
+            "source_recall": 0.875,
+            "useful_hop_distance": 0.2222222222222222
+          },
+          "total_edges_traversed": 2035,
+          "total_nodes_expanded": 201,
+          "wall_seconds": 0.009
+        },
+        "spreading-shuffled-control": {
+          "cases": 20,
+          "condition": "spreading-shuffled-control",
+          "manifest": {
+            "config": {
+              "code_commit": "ea27709",
+              "cue_path": "fixtures/assoc/cues-v0.1.json",
+              "graph_path": "fixtures/assoc/graph-v0.1.json",
+              "learning": {
+                "enabled": false,
+                "idle_decay": 0.01,
+                "max_association": 0.95,
+                "min_association": 0.05,
+                "min_evidence_confidence": 0.25,
+                "policy_version": "assoc-learn-v0.1",
+                "reinforce_step": 0.05,
+                "require_provenance": true,
+                "weaken_step": 0.05
+              },
+              "notes": "",
+              "propagation": {
+                "activation_threshold": 0.02,
+                "conditioning_floor": 0.1,
+                "conditioning_strength": 1.0,
+                "damping": 0.85,
+                "fan_division": true,
+                "frontier_top_m": 7,
+                "inhibition": true,
+                "inhibition_strength": 0.5,
+                "max_hops": 3,
+                "max_nodes_expanded": 120,
+                "pagerank_iterations": 30,
+                "pagerank_tolerance": 1e-06,
+                "retention": 0.5,
+                "spread_factor": 0.8,
+                "strategy": "spreading"
+              },
+              "seeding": {
+                "embedding_dimension": 256,
+                "embedding_model": "hashing-256",
+                "embedding_provider": "hashing",
+                "lexical_weight": 0.5,
+                "method": "lexical",
+                "min_score": 0.05,
+                "top_k": 5
+              },
+              "selection": {
+                "activation_weight": 0.6,
+                "importance_weight": 0.1,
+                "max_memories": 8,
+                "max_sources": 8,
+                "similarity_weight": 0.3
+              }
+            },
+            "corpus_version": "running-examples-2026-09",
+            "edges": 98,
+            "graph_version": "assoc-ledger-v0.1+shuffled17",
+            "nodes": 73,
+            "seeder": "lexical",
+            "strategy": "spreading"
+          },
+          "mean_context_tokens": 41.35,
+          "mean_latency_ms": 0.13195499777793884,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.7233350770095744,
+            "distractor_rate": 0.31666666666666665,
+            "expansion_factor": 1.26875,
+            "hub_capture": 0.20767857142857143,
+            "path_precision": 0.19744047619047617,
+            "path_recall": 0.8,
+            "source_precision": 0.2188095238095238,
+            "source_recall": 0.675,
+            "useful_hop_distance": 0.0
+          },
+          "total_edges_traversed": 2142,
+          "total_nodes_expanded": 246,
+          "wall_seconds": 0.0097
+        }
+      },
+      "experiment": "E5-A",
+      "question": "Does graph propagation recover useful memories that direct similarity misses?",
+      "seeding_note": "The default seeder is lexical. seedmethod-embedding and seedmethod-hybrid use the deterministic hashing embedder, which preserves no semantics; they are a lower bound on dense seeding, not a measurement of it."
+    },
+    "E5-B": {
+      "experiment": "E5-B",
+      "question": "Does the active cue, rather than entity identity, determine which neighbourhood activates?",
+      "strategies": {
+        "conditioned": {
+          "admitted": {
+            "c-cond-lindqvist-backend": [
+              "session-033"
+            ],
+            "c-cond-lindqvist-procedure": [
+              "procedure-123",
+              "session-033"
+            ],
+            "c-cond-silva-corpus": [
+              "adr-013",
+              "issue-088",
+              "session-031"
+            ],
+            "c-cond-silva-eventstore": [
+              "session-031",
+              "adr-007"
+            ],
+            "c-cond-silva-orphans": [
+              "incident-034",
+              "session-031"
+            ]
+          },
+          "mean_branch_overlap": 0.3333333333333333,
+          "mean_branch_recall": 1.0,
+          "overlaps": {
+            "a.silva:c-cond-silva-corpus|c-cond-silva-orphans": 0.25,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-corpus": 0.25,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-orphans": 0.3333,
+            "j.lindqvist:c-cond-lindqvist-backend|c-cond-lindqvist-procedure": 0.5
+          },
+          "recall": {
+            "c-cond-lindqvist-backend": 1.0,
+            "c-cond-lindqvist-procedure": 1.0,
+            "c-cond-silva-corpus": 1.0,
+            "c-cond-silva-eventstore": 1.0,
+            "c-cond-silva-orphans": 1.0
+          }
+        },
+        "conditioned-pagerank": {
+          "admitted": {
+            "c-cond-lindqvist-backend": [
+              "session-033",
+              "adr-007",
+              "adr-003",
+              "procedure-123"
+            ],
+            "c-cond-lindqvist-procedure": [
+              "procedure-123",
+              "session-033",
+              "incident-026",
+              "adr-007",
+              "partner-note-004"
+            ],
+            "c-cond-silva-corpus": [
+              "adr-013",
+              "issue-088",
+              "session-031",
+              "adr-007",
+              "issue-089"
+            ],
+            "c-cond-silva-eventstore": [
+              "adr-007",
+              "session-031",
+              "adr-003",
+              "deployment-101"
+            ],
+            "c-cond-silva-orphans": [
+              "incident-034",
+              "adr-007",
+              "session-031",
+              "session-051"
+            ]
+          },
+          "mean_branch_overlap": 0.35119047619047616,
+          "mean_branch_recall": 1.0,
+          "overlaps": {
+            "a.silva:c-cond-silva-corpus|c-cond-silva-orphans": 0.2857,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-corpus": 0.2857,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-orphans": 0.3333,
+            "j.lindqvist:c-cond-lindqvist-backend|c-cond-lindqvist-procedure": 0.5
+          },
+          "recall": {
+            "c-cond-lindqvist-backend": 1.0,
+            "c-cond-lindqvist-procedure": 1.0,
+            "c-cond-silva-corpus": 1.0,
+            "c-cond-silva-eventstore": 1.0,
+            "c-cond-silva-orphans": 1.0
+          }
+        },
+        "direct": {
+          "admitted": {
+            "c-cond-lindqvist-backend": [
+              "adr-007",
+              "session-033",
+              "adr-003",
+              "procedure-123"
+            ],
+            "c-cond-lindqvist-procedure": [
+              "procedure-123",
+              "session-033",
+              "adr-007",
+              "incident-026",
+              "run-124"
+            ],
+            "c-cond-silva-corpus": [
+              "adr-013",
+              "issue-088",
+              "session-031",
+              "adr-007",
+              "issue-089"
+            ],
+            "c-cond-silva-eventstore": [
+              "adr-007",
+              "session-031",
+              "adr-003",
+              "session-014"
+            ],
+            "c-cond-silva-orphans": [
+              "incident-034",
+              "session-031",
+              "adr-007",
+              "adr-013"
+            ]
+          },
+          "mean_branch_overlap": 0.40476190476190477,
+          "mean_branch_recall": 1.0,
+          "overlaps": {
+            "a.silva:c-cond-silva-corpus|c-cond-silva-orphans": 0.5,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-corpus": 0.2857,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-orphans": 0.3333,
+            "j.lindqvist:c-cond-lindqvist-backend|c-cond-lindqvist-procedure": 0.5
+          },
+          "recall": {
+            "c-cond-lindqvist-backend": 1.0,
+            "c-cond-lindqvist-procedure": 1.0,
+            "c-cond-silva-corpus": 1.0,
+            "c-cond-silva-eventstore": 1.0,
+            "c-cond-silva-orphans": 1.0
+          }
+        },
+        "spreading": {
+          "admitted": {
+            "c-cond-lindqvist-backend": [
+              "session-033"
+            ],
+            "c-cond-lindqvist-procedure": [
+              "procedure-123",
+              "session-033"
+            ],
+            "c-cond-silva-corpus": [
+              "adr-013",
+              "issue-088",
+              "docs-note-012",
+              "issue-089",
+              "session-031"
+            ],
+            "c-cond-silva-eventstore": [
+              "adr-007",
+              "session-031",
+              "adr-003",
+              "deployment-101"
+            ],
+            "c-cond-silva-orphans": [
+              "incident-034",
+              "session-031",
+              "session-051"
+            ]
+          },
+          "mean_branch_overlap": 0.23363095238095238,
+          "mean_branch_recall": 1.0,
+          "overlaps": {
+            "a.silva:c-cond-silva-corpus|c-cond-silva-orphans": 0.1429,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-corpus": 0.125,
+            "a.silva:c-cond-silva-eventstore|c-cond-silva-orphans": 0.1667,
+            "j.lindqvist:c-cond-lindqvist-backend|c-cond-lindqvist-procedure": 0.5
+          },
+          "recall": {
+            "c-cond-lindqvist-backend": 1.0,
+            "c-cond-lindqvist-procedure": 1.0,
+            "c-cond-silva-corpus": 1.0,
+            "c-cond-silva-eventstore": 1.0,
+            "c-cond-silva-orphans": 1.0
+          }
+        }
+      }
+    },
+    "E5-C": {
+      "direct_cases": [
+        "c-direct-target",
+        "c-direct-redis",
+        "c-direct-production"
+      ],
+      "experiment": "E5-C",
+      "indirect_cases": [
+        "c-hop-backup",
+        "c-hop-why",
+        "c-hop-fixtures",
+        "c-hop-facade",
+        "c-hop-orphans",
+        "c-cond-silva-eventstore",
+        "c-cond-silva-corpus",
+        "c-cond-silva-orphans",
+        "c-cond-lindqvist-backend",
+        "c-cond-lindqvist-procedure",
+        "c-cond-okafor-callers"
+      ],
+      "question": "Can associative retrieval solve cases where the evidence is two or more edges away, without harming the direct cases?",
+      "strategies": {
+        "conditioned": {
+          "direct_control": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.9256750163979186,
+            "distractor_rate": 0.6666666666666666,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.24603174603174602,
+            "path_precision": 0.47222222222222215,
+            "path_recall": 1.0,
+            "source_precision": 0.47222222222222215,
+            "source_recall": 1.0,
+            "useful_hop_distance": 0.6666666666666666
+          },
+          "indirect": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.9534411883833513,
+            "distractor_rate": 0.3181818181818182,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.2424242424242424,
+            "path_precision": 0.446969696969697,
+            "path_recall": 0.8636363636363636,
+            "source_precision": 0.446969696969697,
+            "source_recall": 0.8636363636363636,
+            "useful_hop_distance": 0.1
+          }
+        },
+        "direct": {
+          "direct_control": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.5430309881892205,
+            "distractor_rate": 1.0,
+            "expansion_factor": 6.083333333333333,
+            "hub_capture": 0.25,
+            "path_precision": 0.07226399331662489,
+            "path_recall": 1.0,
+            "source_precision": 0.31666666666666665,
+            "source_recall": 1.0,
+            "useful_hop_distance": 0.6666666666666666
+          },
+          "indirect": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.490259944388718,
+            "distractor_rate": 0.36363636363636365,
+            "expansion_factor": 5.738636363636363,
+            "hub_capture": 0.29545454545454547,
+            "path_precision": 0.05507814830362859,
+            "path_recall": 1.0,
+            "source_precision": 0.2515151515151515,
+            "source_recall": 0.8484848484848485,
+            "useful_hop_distance": 0.45454545454545453
+          }
+        },
+        "pagerank": {
+          "direct_control": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.731606734577166,
+            "distractor_rate": 1.0,
+            "expansion_factor": 1.375,
+            "hub_capture": 0.30357142857142855,
+            "path_precision": 0.3,
+            "path_recall": 1.0,
+            "source_precision": 0.3444444444444444,
+            "source_recall": 1.0,
+            "useful_hop_distance": 0.6666666666666666
+          },
+          "indirect": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.6839881701869296,
+            "distractor_rate": 0.4393939393939394,
+            "expansion_factor": 1.5113636363636365,
+            "hub_capture": 0.3068181818181818,
+            "path_precision": 0.2015873015873016,
+            "path_recall": 0.9393939393939394,
+            "source_precision": 0.2303030303030303,
+            "source_recall": 0.7727272727272727,
+            "useful_hop_distance": 0.2727272727272727
+          }
+        },
+        "seed-only": {
+          "direct_control": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 1.0,
+            "distractor_rate": 0.6666666666666666,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.20000000000000004,
+            "path_precision": 0.47222222222222215,
+            "path_recall": 1.0,
+            "source_precision": 0.47222222222222215,
+            "source_recall": 1.0,
+            "useful_hop_distance": 0.0
+          },
+          "indirect": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 1.0,
+            "distractor_rate": 0.3181818181818182,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.2606060606060606,
+            "path_precision": 0.4772727272727273,
+            "path_recall": 0.7727272727272727,
+            "source_precision": 0.4772727272727273,
+            "source_recall": 0.7727272727272727,
+            "useful_hop_distance": 0.0
+          }
+        },
+        "spreading": {
+          "direct_control": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.8314254973390676,
+            "distractor_rate": 0.6666666666666666,
+            "expansion_factor": 1.125,
+            "hub_capture": 0.3055555555555555,
+            "path_precision": 0.45555555555555555,
+            "path_recall": 1.0,
+            "source_precision": 0.45555555555555555,
+            "source_recall": 1.0,
+            "useful_hop_distance": 0.6666666666666666
+          },
+          "indirect": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.860322099136276,
+            "distractor_rate": 0.3181818181818182,
+            "expansion_factor": 1.0568181818181819,
+            "hub_capture": 0.2538961038961039,
+            "path_precision": 0.3318181818181818,
+            "path_recall": 0.8181818181818182,
+            "source_precision": 0.32727272727272727,
+            "source_recall": 0.7727272727272727,
+            "useful_hop_distance": 0.1111111111111111
+          }
+        }
+      }
+    },
+    "E5-D": {
+      "ablations": {
+        "full": {
+          "mean_context_tokens": 40.95,
+          "mean_latency_ms": 0.12974500132258981,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.841225381848902,
+            "distractor_rate": 0.38333333333333336,
+            "expansion_factor": 1.08125,
+            "hub_capture": 0.25797619047619047,
+            "path_precision": 0.34750000000000003,
+            "path_recall": 0.9,
+            "source_precision": 0.35,
+            "source_recall": 0.875,
+            "useful_hop_distance": 0.2222222222222222
+          },
+          "total_edges_traversed": 2035,
+          "total_nodes_expanded": 201
+        },
+        "hops-1": {
+          "mean_context_tokens": 44.4,
+          "mean_latency_ms": 0.08143999439198524,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.8211004206123276,
+            "distractor_rate": 0.4583333333333333,
+            "expansion_factor": 1.20625,
+            "hub_capture": 0.2833333333333333,
+            "path_precision": 0.26458333333333334,
+            "path_recall": 0.8916666666666666,
+            "source_precision": 0.2966666666666667,
+            "source_recall": 0.875,
+            "useful_hop_distance": 0.21052631578947367
+          },
+          "total_edges_traversed": 395,
+          "total_nodes_expanded": 191
+        },
+        "hops-5": {
+          "mean_context_tokens": 33.45,
+          "mean_latency_ms": 0.12318499793764204,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.8913864184393688,
+            "distractor_rate": 0.26666666666666666,
+            "expansion_factor": 1.0375,
+            "hub_capture": 0.2550595238095238,
+            "path_precision": 0.475,
+            "path_recall": 0.875,
+            "source_precision": 0.4791666666666667,
+            "source_recall": 0.875,
+            "useful_hop_distance": 0.2222222222222222
+          },
+          "total_edges_traversed": 2994,
+          "total_nodes_expanded": 201
+        },
+        "no-decay": {
+          "mean_context_tokens": 16.25,
+          "mean_latency_ms": 0.06910999654792249,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.9731927711076832,
+            "distractor_rate": 0.19166666666666668,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.17648809523809522,
+            "path_precision": 0.49749999999999994,
+            "path_recall": 0.55,
+            "source_precision": 0.49749999999999994,
+            "source_recall": 0.55,
+            "useful_hop_distance": 0.0
+          },
+          "total_edges_traversed": 1361,
+          "total_nodes_expanded": 211
+        },
+        "no-fan-division": {
+          "mean_context_tokens": 46.65,
+          "mean_latency_ms": 0.4807049932423979,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.6030733334085944,
+            "distractor_rate": 0.4083333333333333,
+            "expansion_factor": 4.34375,
+            "hub_capture": 0.25,
+            "path_precision": 0.07530849706323066,
+            "path_recall": 1.0,
+            "source_precision": 0.265,
+            "source_recall": 0.8666666666666666,
+            "useful_hop_distance": 0.4
+          },
+          "total_edges_traversed": 3670,
+          "total_nodes_expanded": 699
+        },
+        "no-inhibition": {
+          "mean_context_tokens": 40.65,
+          "mean_latency_ms": 0.1059800066286698,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.8210251614415357,
+            "distractor_rate": 0.38333333333333336,
+            "expansion_factor": 1.16875,
+            "hub_capture": 0.25797619047619047,
+            "path_precision": 0.32958333333333334,
+            "path_recall": 0.9166666666666666,
+            "source_precision": 0.3525,
+            "source_recall": 0.875,
+            "useful_hop_distance": 0.2631578947368421
+          },
+          "total_edges_traversed": 2209,
+          "total_nodes_expanded": 249
+        },
+        "no-threshold": {
+          "mean_context_tokens": 45.7,
+          "mean_latency_ms": 0.7872500020312145,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.6840776498260503,
+            "distractor_rate": 0.4583333333333333,
+            "expansion_factor": 7.1625,
+            "hub_capture": 0.29375,
+            "path_precision": 0.042184002242038374,
+            "path_recall": 1.0,
+            "source_precision": 0.27166666666666667,
+            "source_recall": 0.875,
+            "useful_hop_distance": 0.4
+          },
+          "total_edges_traversed": 4180,
+          "total_nodes_expanded": 1146
+        },
+        "unconstrained": {
+          "mean_context_tokens": 43.25,
+          "mean_latency_ms": 2.0257749914890155,
+          "means": {
+            "abstention_correctness": 0.95,
+            "activation_concentration": 0.3458358094680655,
+            "distractor_rate": 0.20833333333333334,
+            "expansion_factor": 8.9125,
+            "hub_capture": 0.35625,
+            "path_precision": 0.03209297948428383,
+            "path_recall": 1.0,
+            "source_precision": 0.24083333333333332,
+            "source_recall": 0.7416666666666667,
+            "useful_hop_distance": 0.4
+          },
+          "total_edges_traversed": 11509,
+          "total_nodes_expanded": 1427
+        }
+      },
+      "experiment": "E5-D",
+      "question": "How much irrelevant material does propagation introduce, and which constraint prevents it?"
+    },
+    "E5-E": {
+      "adversarial_cases": [
+        "c-adv-echo",
+        "c-adv-tempting",
+        "c-adv-stale",
+        "c-adv-hub",
+        "c-adv-superseded-task"
+      ],
+      "experiment": "E5-E",
+      "graph_hubs": [
+        [
+          "claim:evt-205",
+          13
+        ],
+        [
+          "entity:a.silva",
+          7
+        ],
+        [
+          "entity:event-store",
+          7
+        ],
+        [
+          "source:procedure-123",
+          7
+        ],
+        [
+          "entity:j.lindqvist",
+          6
+        ]
+      ],
+      "question": "Does propagation avoid high-degree distractors?",
+      "variants": {
+        "full:conditioned": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.9435115930712396,
+          "distractor_rate": 0.26666666666666666,
+          "expansion_factor": 1.0,
+          "hub_capture": 0.2552380952380952,
+          "path_precision": 0.5166666666666667,
+          "path_recall": 0.9,
+          "source_precision": 0.5166666666666667,
+          "source_recall": 0.9,
+          "useful_hop_distance": 0.0
+        },
+        "full:pagerank": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.6757193720329837,
+          "distractor_rate": 0.3333333333333333,
+          "expansion_factor": 1.475,
+          "hub_capture": 0.35,
+          "path_precision": 0.2757142857142857,
+          "path_recall": 1.0,
+          "source_precision": 0.36,
+          "source_recall": 0.9,
+          "useful_hop_distance": 0.2
+        },
+        "full:spreading": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.8316745580168794,
+          "distractor_rate": 0.3333333333333333,
+          "expansion_factor": 1.075,
+          "hub_capture": 0.215,
+          "path_precision": 0.38666666666666666,
+          "path_recall": 1.0,
+          "source_precision": 0.4066666666666666,
+          "source_recall": 1.0,
+          "useful_hop_distance": 0.2
+        },
+        "no-fan-division:conditioned": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.806094126935242,
+          "distractor_rate": 0.16666666666666666,
+          "expansion_factor": 1.325,
+          "hub_capture": 0.3,
+          "path_precision": 0.2861111111111111,
+          "path_recall": 1.0,
+          "source_precision": 0.41,
+          "source_recall": 1.0,
+          "useful_hop_distance": 0.2
+        },
+        "no-fan-division:pagerank": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.6757193720329837,
+          "distractor_rate": 0.3333333333333333,
+          "expansion_factor": 1.475,
+          "hub_capture": 0.35,
+          "path_precision": 0.2757142857142857,
+          "path_recall": 1.0,
+          "source_precision": 0.36,
+          "source_recall": 0.9,
+          "useful_hop_distance": 0.2
+        },
+        "no-fan-division:spreading": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.5997597333198739,
+          "distractor_rate": 0.3333333333333333,
+          "expansion_factor": 4.0,
+          "hub_capture": 0.275,
+          "path_precision": 0.09322747939755613,
+          "path_recall": 1.0,
+          "source_precision": 0.35,
+          "source_recall": 1.0,
+          "useful_hop_distance": 0.2
+        },
+        "no-inhibition:conditioned": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.9435115930712396,
+          "distractor_rate": 0.26666666666666666,
+          "expansion_factor": 1.0,
+          "hub_capture": 0.2552380952380952,
+          "path_precision": 0.5166666666666667,
+          "path_recall": 0.9,
+          "source_precision": 0.5166666666666667,
+          "source_recall": 0.9,
+          "useful_hop_distance": 0.0
+        },
+        "no-inhibition:pagerank": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.6757193720329837,
+          "distractor_rate": 0.3333333333333333,
+          "expansion_factor": 1.475,
+          "hub_capture": 0.35,
+          "path_precision": 0.2757142857142857,
+          "path_recall": 1.0,
+          "source_precision": 0.36,
+          "source_recall": 0.9,
+          "useful_hop_distance": 0.2
+        },
+        "no-inhibition:spreading": {
+          "abstention_correctness": 1.0,
+          "activation_concentration": 0.8225091871882473,
+          "distractor_rate": 0.3333333333333333,
+          "expansion_factor": 1.075,
+          "hub_capture": 0.215,
+          "path_precision": 0.38666666666666666,
+          "path_recall": 1.0,
+          "source_precision": 0.4166666666666667,
+          "source_recall": 1.0,
+          "useful_hop_distance": 0.2
+        }
+      }
+    },
+    "E5-F": {
+      "affected_case": {
+        "clean": {
+          "admitted_sources": [
+            "incident-026",
+            "incident-106",
+            "procedure-123"
+          ],
+          "explored_sources": [
+            "incident-026",
+            "incident-106",
+            "procedure-123"
+          ],
+          "means": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 1.0,
+            "distractor_rate": 0.5,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.2,
+            "path_precision": 0.3333333333333333,
+            "path_recall": 1.0,
+            "source_precision": 0.3333333333333333,
+            "source_recall": 1.0,
+            "useful_hop_distance": 0.0
+          }
+        },
+        "false-edge": {
+          "admitted_sources": [
+            "incident-026",
+            "adr-007",
+            "incident-106",
+            "procedure-123"
+          ],
+          "explored_sources": [
+            "incident-026",
+            "adr-007",
+            "incident-106",
+            "procedure-123"
+          ],
+          "means": {
+            "abstention_correctness": 1.0,
+            "activation_concentration": 0.9433559021500354,
+            "distractor_rate": 0.5,
+            "expansion_factor": 1.0,
+            "hub_capture": 0.3333333333333333,
+            "path_precision": 0.25,
+            "path_recall": 1.0,
+            "source_precision": 0.25,
+            "source_recall": 1.0,
+            "useful_hop_distance": 0.0
+          }
+        }
+      },
+      "conditions": {
+        "clean:conditioned": {
+          "abstention_correctness": 0.95,
+          "activation_concentration": 0.9468832867598642,
+          "distractor_rate": 0.36666666666666664,
+          "expansion_factor": 1.0,
+          "hub_capture": 0.24238095238095236,
+          "path_precision": 0.4458333333333333,
+          "path_recall": 0.9,
+          "source_precision": 0.4458333333333333,
+          "source_recall": 0.9,
+          "useful_hop_distance": 0.15789473684210525
+        },
+        "clean:pagerank": {
+          "abstention_correctness": 0.95,
+          "activation_concentration": 0.6840316786855902,
+          "distractor_rate": 0.5,
+          "expansion_factor": 1.4875,
+          "hub_capture": 0.32053571428571426,
+          "path_precision": 0.2248015873015873,
+          "path_recall": 0.9666666666666666,
+          "source_precision": 0.2683333333333333,
+          "source_recall": 0.85,
+          "useful_hop_distance": 0.3
+        },
+        "clean:spreading": {
+          "abstention_correctness": 0.95,
+          "activation_concentration": 0.841225381848902,
+          "distractor_rate": 0.38333333333333336,
+          "expansion_factor": 1.08125,
+          "hub_capture": 0.25797619047619047,
+          "path_precision": 0.34750000000000003,
+          "path_recall": 0.9,
+          "source_precision": 0.35,
+          "source_recall": 0.875,
+          "useful_hop_distance": 0.2222222222222222
+        },
+        "false-edge:conditioned": {
+          "abstention_correctness": 0.95,
+          "activation_concentration": 0.9468832867598642,
+          "distractor_rate": 0.36666666666666664,
+          "expansion_factor": 1.0,
+          "hub_capture": 0.24238095238095236,
+          "path_precision": 0.4458333333333333,
+          "path_recall": 0.9,
+          "source_precision": 0.4458333333333333,
+          "source_recall": 0.9,
+          "useful_hop_distance": 0.15789473684210525
+        },
+        "false-edge:pagerank": {
+          "abstention_correctness": 0.95,
+          "activation_concentration": 0.6847398818251771,
+          "distractor_rate": 0.5,
+          "expansion_factor": 1.475,
+          "hub_capture": 0.32053571428571426,
+          "path_precision": 0.22259920634920632,
+          "path_recall": 0.9416666666666667,
+          "source_precision": 0.27,
+          "source_recall": 0.85,
+          "useful_hop_distance": 0.25
+        },
+        "false-edge:spreading": {
+          "abstention_correctness": 0.95,
+          "activation_concentration": 0.8365874457457443,
+          "distractor_rate": 0.38333333333333336,
+          "expansion_factor": 1.0875,
+          "hub_capture": 0.2646428571428571,
+          "path_precision": 0.335,
+          "path_recall": 0.9,
+          "source_precision": 0.3458333333333333,
+          "source_recall": 0.875,
+          "useful_hop_distance": 0.2222222222222222
+        }
+      },
+      "experiment": "E5-F",
+      "health_flags_it": true,
+      "injected_edge": {
+        "edge_id": "false-001",
+        "evidence_confidence": 0.0,
+        "from": "claim:evt-205",
+        "relation": "SUPPORTED_BY",
+        "to": "source:incident-106"
+      },
+      "question": "What does one incorrect derived relation do to propagation, and is it visible?"
+    },
+    "E5-G": {
+      "adapted": {
+        "abstention_correctness": 0.95,
+        "activation_concentration": 0.8431533708706322,
+        "distractor_rate": 0.38333333333333336,
+        "expansion_factor": 1.0875,
+        "hub_capture": 0.25916666666666666,
+        "path_precision": 0.35583333333333333,
+        "path_recall": 0.9,
+        "source_precision": 0.3683333333333333,
+        "source_recall": 0.9,
+        "useful_hop_distance": 0.2222222222222222
+      },
+      "experiment": "E5-G",
+      "question": "Does experience using memory improve later traversal?",
+      "refusals": {},
+      "replay_reproduces_weights": true,
+      "rollback_reproduces_base": true,
+      "sequence": [
+        "c-hop-why",
+        "c-hop-backup",
+        "c-hop-fixtures"
+      ],
+      "static": {
+        "abstention_correctness": 0.95,
+        "activation_concentration": 0.841225381848902,
+        "distractor_rate": 0.38333333333333336,
+        "expansion_factor": 1.08125,
+        "hub_capture": 0.25797619047619047,
+        "path_precision": 0.34750000000000003,
+        "path_recall": 0.9,
+        "source_precision": 0.35,
+        "source_recall": 0.875,
+        "useful_hop_distance": 0.2222222222222222
+      },
+      "strengthened": 1,
+      "training_trace": [
+        {
+          "admitted": [
+            "adr-007",
+            "commit-112",
+            "adr-003",
+            "session-051"
+          ],
+          "case_id": "c-hop-why",
+          "reached_but_not_admitted": [
+            "commit-110",
+            "validation-102"
+          ],
+          "routes_judged": 3,
+          "updates_so_far": 3
+        },
+        {
+          "admitted": [
+            "session-051",
+            "release-024",
+            "migration-run-103",
+            "incident-034",
+            "commit-112"
+          ],
+          "case_id": "c-hop-backup",
+          "reached_but_not_admitted": [
+            "commit-118"
+          ],
+          "routes_judged": 4,
+          "updates_so_far": 7
+        },
+        {
+          "admitted": [
+            "commit-120",
+            "fixture-scan-109",
+            "adr-007",
+            "procedure-123",
+            "staging-run-104",
+            "platform-note-125"
+          ],
+          "case_id": "c-hop-fixtures",
+          "reached_but_not_admitted": [],
+          "routes_judged": 3,
+          "updates_so_far": 10
+        }
+      ],
+      "updates_recorded": 10,
+      "weakened": 9
+    },
+    "E5-H": {
+      "cue": "What caused the nine-minute outage during a migration?",
+      "experiment": "E5-H",
+      "policies": {
+        "frequency-only": {
+          "final_false_edge_weight": 0.95,
+          "health_flags": [
+            "unprovenanced-edges",
+            "dominant-hub",
+            "frequency-reinforcement"
+          ],
+          "history": [
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "incident-106",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.65,
+              "round": 0
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "incident-106",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.7,
+              "round": 1
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "incident-106",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.75,
+              "round": 2
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "procedure-123",
+                "incident-106"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.8,
+              "round": 3
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "procedure-123",
+                "incident-106"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.85,
+              "round": 4
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "procedure-123",
+                "incident-106"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.9,
+              "round": 5
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "procedure-123",
+                "incident-106"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.95,
+              "round": 6
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "procedure-123",
+                "incident-106"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.95,
+              "round": 7
+            }
+          ],
+          "initial_false_edge_weight": 0.6,
+          "refusals": {},
+          "updates": 22
+        },
+        "outcome-gated": {
+          "final_false_edge_weight": 0.3,
+          "health_flags": [
+            "unprovenanced-edges",
+            "dominant-hub"
+          ],
+          "history": [
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "incident-106",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.55,
+              "round": 0
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "adr-007",
+                "incident-106",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.5,
+              "round": 1
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "incident-106",
+                "adr-007",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.45,
+              "round": 2
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "incident-106",
+                "adr-007",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.4,
+              "round": 3
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "incident-106",
+                "adr-007",
+                "procedure-123"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.35,
+              "round": 4
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "incident-106",
+                "adr-007"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.3,
+              "round": 5
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "incident-106"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.3,
+              "round": 6
+            },
+            {
+              "admitted": [
+                "incident-026",
+                "incident-106"
+              ],
+              "distractor_admitted": true,
+              "false_edge_weight": 0.3,
+              "round": 7
+            }
+          ],
+          "initial_false_edge_weight": 0.6,
+          "refusals": {},
+          "updates": 13
+        }
+      },
+      "question": "Can repeated wrong retrieval create self-reinforcing error, and do the safeguards stop it?",
+      "rounds": 8
+    }
+  },
+  "generated_at": "2026-09-19T20:16:38.233788+00:00",
+  "graph_health": {
+    "average_degree": 2.767123287671233,
+    "base_graph_version": null,
+    "cycles_detected": true,
+    "decayed": 0,
+    "derived_edges": 101,
+    "edges_without_provenance": 0,
+    "healthy": false,
+    "hubs": [
+      [
+        "claim:evt-205",
+        13
+      ],
+      [
+        "entity:a.silva",
+        7
+      ],
+      [
+        "entity:event-store",
+        7
+      ],
+      [
+        "source:procedure-123",
+        7
+      ],
+      [
+        "entity:j.lindqvist",
+        6
+      ]
+    ],
+    "injected_errors": 0,
+    "issues": [
+      {
+        "check": "dominant-hub",
+        "detail": "highest-degree node has 13 neighbours against an average of 2.8; expect hub capture"
+      }
+    ],
+    "last_update": null,
+    "max_association": 0.85,
+    "max_degree": 13,
+    "min_association": 0.3,
+    "nodes": 73,
+    "nodes_without_sources": 17,
+    "orphan_nodes": [],
+    "policy_version": null,
+    "semantic_edges": 101,
+    "stale_pathways": 0,
+    "strengthened": 0,
+    "updates_total": 0,
+    "weakened": 0
+  },
+  "graph_version": "assoc-ledger-v0.1",
+  "limitation": "Retrieval-level only: no reader, no generated answers. Answer correctness against the Chapter 3 baseline and the Chapter 4 graph requires those chapters' frozen runs and is not claimed here. Seeding uses a deterministic hashing embedder, which preserves no semantics; embedding-seeded conditions are a lower bound, not a measurement of dense seeding.",
+  "suite_version": "E5-v0.1",
+  "wall_seconds": 0.594
+}

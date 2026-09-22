@@ -1,0 +1,30 @@
+{
+  "abstained": true,
+  "admitted_ids": [],
+  "answer": "There is not enough information to determine what the new service should use instead of the wiki's SQLite setup.",
+  "capability_id": "NONE",
+  "capability_latency_ms": 0.0,
+  "cited_ids": [],
+  "context_tokens": 0,
+  "cost_units": 0.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNNECESSARY_ABSTENTION",
+    "UNNECESSARY_ABSTENTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 2999.0303999511525,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0
+  },
+  "model_calls": 1,
+  "notes": "no history retrieved",
+  "query_id": "q-stale-trap",
+  "reader_latency_ms": 2998.8319000112824,
+  "retrieved_ids": []
+}

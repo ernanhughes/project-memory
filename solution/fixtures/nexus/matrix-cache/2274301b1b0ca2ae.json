@@ -1,0 +1,33 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "Redis",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 38246.87979998998,
+  "cited_ids": [
+    "Data: Reports (0)"
+  ],
+  "context_tokens": 482,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 44007.685900025535,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-ind-separate-store",
+  "reader_latency_ms": 5760.594199993648,
+  "retrieved_ids": []
+}

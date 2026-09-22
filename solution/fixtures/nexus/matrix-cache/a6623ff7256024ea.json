@@ -1,0 +1,41 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "Not specified",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.253400034736842,
+  "cited_ids": [
+    "adr-007.md",
+    "production-notes.md"
+  ],
+  "context_tokens": 391,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION",
+    "FAILED_ABSTENTION"
+  ],
+  "graph_expansions": 6,
+  "latency_ms": 5093.7226000241935,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=6 stopped=hop-budget",
+  "query_id": "q-abs-provider",
+  "reader_latency_ms": 5090.270999993663,
+  "retrieved_ids": [
+    "production-notes.md",
+    "stale-summary.md",
+    "adr-007.md",
+    "benchmark-note.md"
+  ]
+}

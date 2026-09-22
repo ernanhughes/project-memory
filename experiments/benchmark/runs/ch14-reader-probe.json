@@ -1,0 +1,332 @@
+{
+  "T1-publication|A0-raw|full": {
+    "key_claim_coverage": 0.5,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1085,
+    "required_recall": 0.75
+  },
+  "T1-architecture|A0-raw|full": {
+    "key_claim_coverage": 0.6667,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1500,
+    "required_recall": 0.8333
+  },
+  "T2-memory-book|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1315,
+    "required_recall": 0.6667
+  },
+  "T2-writer|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 255,
+    "required_recall": 1.0
+  },
+  "T2-cocoder|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 233,
+    "required_recall": 1.0
+  },
+  "T3-goal-switch|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1498,
+    "required_recall": 1.0
+  },
+  "T4-current-vs-stale|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1396,
+    "required_recall": 1.0
+  },
+  "T5-support-vs-topicality|A0-raw|full": {
+    "key_claim_coverage": 0.5,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1476,
+    "required_recall": 1.0
+  },
+  "T6-echo-coalescing|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1485,
+    "required_recall": 1.0
+  },
+  "T7-release|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1488,
+    "required_recall": 0.6667
+  },
+  "T7-publication|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1183,
+    "required_recall": 1.0
+  },
+  "T1-publication|A6-composed|768": {
+    "key_claim_coverage": 0.5,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 756,
+    "required_recall": 0.5
+  },
+  "T1-architecture|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 768,
+    "required_recall": 0.3333
+  },
+  "T2-memory-book|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 756,
+    "required_recall": 0.3333
+  },
+  "T2-writer|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 255,
+    "required_recall": 1.0
+  },
+  "T2-cocoder|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 233,
+    "required_recall": 1.0
+  },
+  "T3-goal-switch|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 761,
+    "required_recall": 0.75
+  },
+  "T4-current-vs-stale|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 726,
+    "required_recall": 1.0
+  },
+  "T5-support-vs-topicality|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 704,
+    "required_recall": 0.6667
+  },
+  "T6-echo-coalescing|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 761,
+    "required_recall": 1.0
+  },
+  "T7-release|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 764,
+    "required_recall": 0.6667
+  },
+  "T7-publication|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 765,
+    "required_recall": 0.6667
+  },
+  "T1-publication|A6-composed|full": {
+    "key_claim_coverage": 0.5,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1058,
+    "required_recall": 0.75
+  },
+  "T1-architecture|A6-composed|full": {
+    "key_claim_coverage": 0.3333,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1500,
+    "required_recall": 0.8333
+  },
+  "T2-memory-book|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1281,
+    "required_recall": 0.6667
+  },
+  "T2-writer|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 255,
+    "required_recall": 1.0
+  },
+  "T2-cocoder|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 233,
+    "required_recall": 1.0
+  },
+  "T3-goal-switch|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1498,
+    "required_recall": 1.0
+  },
+  "T4-current-vs-stale|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1284,
+    "required_recall": 1.0
+  },
+  "T5-support-vs-topicality|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1476,
+    "required_recall": 1.0
+  },
+  "T6-echo-coalescing|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1485,
+    "required_recall": 1.0
+  },
+  "T7-release|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1488,
+    "required_recall": 0.6667
+  },
+  "T7-publication|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1156,
+    "required_recall": 1.0
+  },
+  "T1-publication|CO-auditable|full": {
+    "key_claim_coverage": 0.5,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1090,
+    "required_recall": 1.0
+  },
+  "T1-architecture|CO-auditable|full": {
+    "key_claim_coverage": 0.6667,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1421,
+    "required_recall": 1.0
+  },
+  "T2-memory-book|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 744,
+    "required_recall": 1.0
+  },
+  "T2-writer|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 255,
+    "required_recall": 1.0
+  },
+  "T2-cocoder|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 186,
+    "required_recall": 1.0
+  },
+  "T3-goal-switch|CO-auditable|full": {
+    "key_claim_coverage": 0.5,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 932,
+    "required_recall": 1.0
+  },
+  "T4-current-vs-stale|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 423,
+    "required_recall": 1.0
+  },
+  "T5-support-vs-topicality|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 621,
+    "required_recall": 1.0
+  },
+  "T6-echo-coalescing|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 563,
+    "required_recall": 1.0
+  },
+  "T7-release|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 531,
+    "required_recall": 1.0
+  },
+  "T7-publication|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 891,
+    "required_recall": 1.0
+  },
+  "T1-publication|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1086,
+    "required_recall": 0.75
+  },
+  "T1-architecture|C6-ch10|full": {
+    "key_claim_coverage": 0.3333,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1500,
+    "required_recall": 0.8333
+  },
+  "T2-memory-book|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1281,
+    "required_recall": 0.6667
+  },
+  "T2-writer|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 255,
+    "required_recall": 1.0
+  },
+  "T2-cocoder|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 233,
+    "required_recall": 1.0
+  },
+  "T3-goal-switch|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1498,
+    "required_recall": 1.0
+  },
+  "T4-current-vs-stale|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1284,
+    "required_recall": 1.0
+  },
+  "T5-support-vs-topicality|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1476,
+    "required_recall": 1.0
+  },
+  "T6-echo-coalescing|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1485,
+    "required_recall": 1.0
+  },
+  "T7-release|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1489,
+    "required_recall": 0.6667
+  },
+  "T7-publication|C6-ch10|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1184,
+    "required_recall": 1.0
+  }
+}

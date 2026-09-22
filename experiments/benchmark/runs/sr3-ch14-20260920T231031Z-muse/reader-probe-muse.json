@@ -1,0 +1,222 @@
+{
+  "T1-publication|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1385
+  },
+  "T1-architecture|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1900
+  },
+  "T2-memory-book|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1683
+  },
+  "T2-writer|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 368
+  },
+  "T2-cocoder|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 343
+  },
+  "T3-goal-switch|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1900
+  },
+  "T4-current-vs-stale|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1841
+  },
+  "T5-support-vs-topicality|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1884
+  },
+  "T6-echo-coalescing|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1882
+  },
+  "T7-release|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1881
+  },
+  "T7-publication|A0-raw|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1482
+  },
+  "T1-publication|A6-composed|768": {
+    "key_claim_coverage": 0.5,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1196
+  },
+  "T1-architecture|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1165
+  },
+  "T2-memory-book|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1190
+  },
+  "T2-writer|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 451
+  },
+  "T2-cocoder|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 426
+  },
+  "T3-goal-switch|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1118
+  },
+  "T4-current-vs-stale|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1160
+  },
+  "T5-support-vs-topicality|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1077
+  },
+  "T6-echo-coalescing|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1122
+  },
+  "T7-release|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1223
+  },
+  "T7-publication|A6-composed|768": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1147
+  },
+  "T1-publication|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1624
+  },
+  "T1-architecture|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 2218
+  },
+  "T2-memory-book|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1938
+  },
+  "T2-writer|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 451
+  },
+  "T2-cocoder|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 426
+  },
+  "T3-goal-switch|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 2205
+  },
+  "T4-current-vs-stale|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1991
+  },
+  "T5-support-vs-topicality|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 2194
+  },
+  "T6-echo-coalescing|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 2184
+  },
+  "T7-release|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 2262
+  },
+  "T7-publication|A6-composed|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1721
+  },
+  "T1-publication|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1624
+  },
+  "T1-architecture|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 2107
+  },
+  "T2-memory-book|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1091
+  },
+  "T2-writer|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 451
+  },
+  "T2-cocoder|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 350
+  },
+  "T3-goal-switch|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1361
+  },
+  "T4-current-vs-stale|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 683
+  },
+  "T5-support-vs-topicality|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 967
+  },
+  "T6-echo-coalescing|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 848
+  },
+  "T7-release|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 906
+  },
+  "T7-publication|CO-auditable|full": {
+    "key_claim_coverage": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "counted_tokens": 1274
+  }
+}

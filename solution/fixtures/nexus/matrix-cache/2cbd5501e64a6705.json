@@ -1,0 +1,43 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "The event store was migrated to PostgreSQL due to the SQLite prototype's failure under concurrent writes, as evidenced by the benchmark results in evt-204 and the decision in ADR-007.",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 4.0206999983638525,
+  "cited_ids": [
+    "adr-007.md",
+    "benchmark-note.md"
+  ],
+  "context_tokens": 391,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+  ],
+  "graph_expansions": 6,
+  "latency_ms": 4169.39990001265,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.25,
+    "source_recall": 0.3333333333333333,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=6 stopped=hop-budget",
+  "query_id": "q3-why-postgres",
+  "reader_latency_ms": 4165.082000021357,
+  "retrieved_ids": [
+    "adr-007.md",
+    "stale-summary.md",
+    "production-notes.md",
+    "benchmark-note.md"
+  ]
+}

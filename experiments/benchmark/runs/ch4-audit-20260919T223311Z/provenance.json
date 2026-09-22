@@ -1,0 +1,2751 @@
+{
+  "chains": [
+    {
+      "derived_kind": "entity",
+      "derived_id": "7085a207-a675-4b8b-b7ad-99e0b4599ecd",
+      "derived_name": "SQLITE",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "adr-007.md.txt",
+        "benchmark-note.md.txt",
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "290ca356-f5e3-45f2-9485-773ab8a10e1e",
+      "derived_name": "EVENT-STORE",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "ba69c77b-8529-41cf-905c-29b885c7e139",
+      "derived_name": "EVT-201",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "d1e6d02c-92a8-4fb7-bce3-c72b82929e99",
+      "derived_name": "EVT-202",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "a8bebc2b-00e8-45e3-b3a2-3a02e307da0b",
+      "derived_name": "EVT-203",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "50f19cd0-744d-44ac-966e-60bc93b52a0d",
+      "derived_name": "EVT-204",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "a3edfb3d-8bba-4f79-89c6-d7969f66705d",
+      "derived_name": "EVT-205",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "3dbe8ac1-dd79-4d67-84f8-6061c775c603",
+      "derived_name": "ADR-007",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "adr-007.md.txt",
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md",
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "3daaceed-cf7d-443b-acdf-188aeff2affe",
+      "derived_name": "M. OKAFOR",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83",
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "adr-007.md.txt",
+        "adr-009.md.txt",
+        "session-014.md.txt",
+        "session-019.md.txt",
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md",
+        "adr-009.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "1baba1f6-fc33-4e52-a45c-23efcf072339",
+      "derived_name": "J. LINDQVIST",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83",
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "adr-007.md.txt",
+        "session-014.md.txt",
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md",
+        "session-014.md",
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "f0b3bd92-ae5f-43eb-b400-8dafb98dd9fa",
+      "derived_name": "SESSION-040",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7",
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "adr-009.md.txt",
+        "session-040.md.txt",
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "94b9ef0f-ab17-41a7-8f4f-93438fb4888b",
+      "derived_name": "REDIS",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "1d507e1a-7c48-4e29-9564-49155b4fbd1f",
+      "derived_name": "A. NOVAK",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934",
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "adr-009.md.txt",
+        "session-019.md.txt",
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md",
+        "session-019.md",
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "66b640d3-c9af-4f55-8706-e67408dd499a",
+      "derived_name": "TEAM",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "1ec282a0-b1c1-43af-9e25-b04b83c754b8",
+      "derived_name": "EVENT STORE",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "a50fa795-2ff8-4113-837f-5e6ffba68bff",
+      "derived_name": "BENCHMARK EVT-204",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "ffec05ab-6f35-48cf-8342-90110203a830",
+      "derived_name": "A.NOVAK",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a",
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c",
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8",
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "benchmark-note.md.txt",
+        "experiment-contention.md.txt",
+        "issue-041.md.txt",
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "issue-041.md",
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "133163a1-6d68-4d88-8021-a36e93bd7e8a",
+      "derived_name": "EXPERIMENT EVT-202",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "b6b4e0a8-03a4-4fba-9715-de0a43c70993",
+      "derived_name": "PROTOTYPE EVENT LOG",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "2a43bc99-8539-4417-b051-37f99d111aa1",
+      "derived_name": "EVENT INGESTION",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "ca500a51-4826-4dd3-8061-80d6fbd3ed36",
+      "derived_name": "WRITER QUEUE",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "63e60d0d-28e9-43f7-89d7-a6e1032b4914",
+      "derived_name": "JUNE LOAD WINDOW",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "01914fab-b1fd-4746-915d-c6ad27d7cf8e",
+      "derived_name": "MITIGATION",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "7570e89a-c119-4541-acaa-95c8189d45e0",
+      "derived_name": "FOLLOW-UP",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "1da9a04d-b772-4f0d-9f2d-0bac6f272cbe",
+      "derived_name": "INCIDENT EVT-203",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "1d07a7ee-e851-4ae7-995f-8ece575587e3",
+      "derived_name": "LOAD-TEST DIRECTORY",
+      "text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "documents": [
+        "issue-041.md.txt"
+      ],
+      "artifacts": [
+        "issue-041.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "e2def7cb-675d-4af9-8476-0130a764bc32",
+      "derived_name": "PERFORMANCE REVIEW",
+      "text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "documents": [
+        "issue-041.md.txt"
+      ],
+      "artifacts": [
+        "issue-041.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "f59cd851-5a50-4c88-aa1a-606ed8bbb2ce",
+      "derived_name": "ISSUE 041",
+      "text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "documents": [
+        "issue-041.md.txt"
+      ],
+      "artifacts": [
+        "issue-041.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "9ce12379-5392-4eb4-933c-e96f1df2b7c9",
+      "derived_name": "POSTGRESQL",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "production-notes.md.txt",
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "b7af5c71-2a62-4ba5-a3d3-796d1c28a34e",
+      "derived_name": "FACT-301",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "08d09e1e-a147-4204-88c6-f34564ff1260",
+      "derived_name": "FACT-302",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "b2b0600b-6763-4248-8490-cb8974920c02",
+      "derived_name": "EVENT-STORE BACKEND",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "de77e825-aebd-4a62-8cd4-f4f5ee323d25",
+      "derived_name": "PROTOTYPE (EVT-201)",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "6bca8ecb-d030-4f79-b070-06119867fbeb",
+      "derived_name": "PROTOTYPE",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "eb0d3cb5-a0cb-48c9-a84b-df684ecccb63",
+      "derived_name": "LOAD-TEST REVIEW",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "24a89ece-3ad3-42a8-904b-c780d4fe55f9",
+      "derived_name": "J. LINQVIST",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "28635f4b-c047-44de-9fc1-39da03112525",
+      "derived_name": "SESSION-044",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "eb73f1cd-82f4-4963-944a-277e3ebb1d79",
+      "derived_name": "APPLICATION MEMORY",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "entity",
+      "derived_id": "850c18f0-a80b-4a5f-ac12-39614c2b0f5a",
+      "derived_name": "M.OKAFOR",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "ea9bad85-5301-4de1-9579-9934b089f405",
+      "derived_name": "POSTGRESQL -> EVENT-STORE",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "196a40db-3aa4-4fcd-9852-a2298ee74791",
+      "derived_name": "SQLITE -> EVENT-STORE",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "ead65647-6d6b-43e5-9a3f-ed65f13f6da1",
+      "derived_name": "EVT-201 -> EVENT-STORE",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "ab61609e-0827-488c-a372-d6e4e57dc819",
+      "derived_name": "EVT-202 -> EVT-201",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "e40d1c14-38bf-486a-a1ef-fa2bbd46673b",
+      "derived_name": "EVT-203 -> EVT-201",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "ffed246b-7f2f-4336-9ec4-0cb590292413",
+      "derived_name": "EVT-204 -> POSTGRESQL",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "9dc95278-8a2b-4acf-8b03-98b2d7aefddf",
+      "derived_name": "EVT-205 -> POSTGRESQL",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "6f63a298-a004-4853-9597-3cddda3e0e9d",
+      "derived_name": "ADR-007 -> EVT-205",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "4201162d-f321-4797-b06e-241446cfe20c",
+      "derived_name": "M. OKAFOR -> ADR-007",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "3cdcd8e9-251e-48c2-babb-12e39fd9d1f1",
+      "derived_name": "J. LINDQVIST -> ADR-007",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "1b9bd686-3b1f-45fc-ae35-8beca8689cbc",
+      "derived_name": "EVT-201 -> SQLITE",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "98a62b3b-25ad-44db-bd35-273986d0227f",
+      "derived_name": "TEAM -> REDIS",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "62c99566-0a5c-49e4-b6db-5148a3ca0f20",
+      "derived_name": "SESSION-044 -> TEAM",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "a0474bb0-3032-413d-af82-441607b15e29",
+      "derived_name": "SESSION-040 -> TEAM",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "55771f2c-b1f8-4889-8537-7948f43e3fc6",
+      "derived_name": "M. OKAFOR -> TEAM",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "704e6b1b-4b13-4d61-b7ab-f351c446d1bf",
+      "derived_name": "A. NOVAK -> TEAM",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "a00c5de7-56c5-45ea-82c8-8774a4261e0f",
+      "derived_name": "SESSION-044 -> SESSION-040",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "adr-009.md.txt",
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md",
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "d5b452a6-2bfb-478c-87a0-24c127bb5fb4",
+      "derived_name": "POSTGRESQL -> BENCHMARK EVT-204",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "616db121-83ef-4a66-a99a-323e30eab62e",
+      "derived_name": "SQLITE -> BENCHMARK EVT-204",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "e0534b43-b783-4581-8a70-6cf74a10350d",
+      "derived_name": "BENCHMARK EVT-204 -> EVENT STORE",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "06debfe8-2073-4429-bad9-4a155d51a7e0",
+      "derived_name": "A.NOVAK -> BENCHMARK EVT-204",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "d13bb465-94ef-42d4-abe8-29b02b8610ee",
+      "derived_name": "EXPERIMENT EVT-202 -> SQLITE",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "b843cbb7-16f8-4b43-bf88-f4448627cd91",
+      "derived_name": "EXPERIMENT EVT-202 -> PROTOTYPE EVENT LOG",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "2abd2717-885b-4e92-86b4-75718c96e49b",
+      "derived_name": "SQLITE -> PROTOTYPE EVENT LOG",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "56c3b87a-64bd-47f2-99c9-eec5cee4c350",
+      "derived_name": "A.NOVAK -> EXPERIMENT EVT-202",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "b7703a39-7899-4f58-b012-ae9b10969ea1",
+      "derived_name": "SQLITE -> EVENT INGESTION",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "0b663646-910b-489b-8493-36dd2758c6fa",
+      "derived_name": "WRITER QUEUE -> EVENT INGESTION",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "fc219dec-6bf1-47ef-ae6c-10c4ccf81e28",
+      "derived_name": "JUNE LOAD WINDOW -> EVENT INGESTION",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "0362a49e-f542-4803-ae12-cef873319c4f",
+      "derived_name": "MITIGATION -> INCIDENT EVT-203",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "b24cecee-0490-4b5d-88b5-ac384a5020ed",
+      "derived_name": "FOLLOW-UP -> SQLITE",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "90bdff9c-7042-4215-a3fd-166670841ee9",
+      "derived_name": "INCIDENT EVT-203 -> WRITER QUEUE",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "dd94c935-c824-41cb-9dda-27fd250d0a0a",
+      "derived_name": "A.NOVAK -> ISSUE 041",
+      "text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "documents": [
+        "issue-041.md.txt"
+      ],
+      "artifacts": [
+        "issue-041.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "327c7282-adcf-4cd4-9a07-80b551ba9d7e",
+      "derived_name": "ISSUE 041 -> PERFORMANCE REVIEW",
+      "text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "documents": [
+        "issue-041.md.txt"
+      ],
+      "artifacts": [
+        "issue-041.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "caf0e26d-dda9-4e90-b26a-2095da141f76",
+      "derived_name": "SQLITE -> FACT-301",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "830193d9-4919-4ca1-a329-26abe2ace12d",
+      "derived_name": "POSTGRESQL -> FACT-302",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "b4543e28-1915-4dba-abb3-0f839b23d3fc",
+      "derived_name": "FACT-301 -> FACT-302",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "d964a69d-fc42-452b-a020-412cb3bba6d6",
+      "derived_name": "SQLITE -> POSTGRESQL",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "560e5c0a-afd9-4235-9082-d47d226d8b02",
+      "derived_name": "M. OKAFOR -> SQLITE",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "d8374cd3-6e3d-4f9c-8388-3acb612d7b57",
+      "derived_name": "J. LINDQVIST -> SQLITE",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "d91af566-40fa-4104-8015-cbc6778c7689",
+      "derived_name": "EVENT-STORE BACKEND -> SQLITE",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "b1818922-6ebd-4b57-9950-4da1c99d9641",
+      "derived_name": "PROTOTYPE (EVT-201) -> SQLITE",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "d8475fd7-9a3f-4111-93aa-418b0ef4ef92",
+      "derived_name": "M. OKAFOR -> EVENT-STORE BACKEND",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "44e703e9-050e-45fe-a9e5-537b7b8dd019",
+      "derived_name": "J. LINDQVIST -> EVENT-STORE BACKEND",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "a9253b40-6e3d-4855-b808-297620d1d8f8",
+      "derived_name": "PROTOTYPE -> SQLITE",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "0d18f064-a10e-4800-9820-2d7cc96258e3",
+      "derived_name": "LOAD-TEST REVIEW -> PROTOTYPE",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "f080e166-5cb9-4cde-8481-a4fa7b5b6f72",
+      "derived_name": "LOAD-TEST REVIEW -> SQLITE",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "66a21dfd-6f79-4cf0-af18-b9da38cf4600",
+      "derived_name": "M. OKAFOR -> LOAD-TEST REVIEW",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "5fb10def-26b7-4314-b493-45beb7a7d950",
+      "derived_name": "J. LINDQVIST -> LOAD-TEST REVIEW",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "d7086620-f4f6-45ac-8af2-b2af1f949e2e",
+      "derived_name": "A. NOVAK -> LOAD-TEST REVIEW",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "190f5178-1fcf-4c81-99f1-d4baabe3089a",
+      "derived_name": "J. LINQVIST -> SESSION-040",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "80964ae0-e72d-4c03-93a8-8b6e910252ef",
+      "derived_name": "A. NOVAK -> SESSION-040",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "794dcb4c-b5f7-48a5-a57d-1a18be1435cc",
+      "derived_name": "REDIS -> EVENT STORE",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "92ccf8ba-9fb6-4f52-b821-8ec324817e63",
+      "derived_name": "J. LINQVIST -> REDIS",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "56d8c80c-6470-4226-8175-d195944ba831",
+      "derived_name": "J. LINQVIST -> EVENT STORE",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "da7cc50b-a8fc-47cc-8608-34d0e6e5d9af",
+      "derived_name": "SESSION-044 -> APPLICATION MEMORY",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "bd30caa2-67fa-40a3-ae4a-5a748f85c46e",
+      "derived_name": "A.NOVAK -> SESSION-044",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "db256b61-ae6b-4bb6-bbd0-9a78b00c4c10",
+      "derived_name": "M.OKAFOR -> SESSION-044",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "e6836242-b2f8-4f11-90d3-ce0ef195ef83",
+      "derived_name": "A.NOVAK -> APPLICATION MEMORY",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "58976b8a-f9f2-419e-924b-ca05fc61935a",
+      "derived_name": "M.OKAFOR -> APPLICATION MEMORY",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "94a8e4c9-88ae-4039-b5b3-0f4c168eae91",
+      "derived_name": "EVENT STORE -> SQLITE",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "f51eb5ba-311b-4482-822e-b6ff3fe75cae",
+      "derived_name": "EVENT STORE -> POSTGRESQL",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "ea105ea7-0f14-4615-a496-ab36a29ca5eb",
+      "derived_name": "EVENT STORE -> ADR-007",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "fee835fa-ff30-4fb7-96e7-e59b779f4a29",
+      "derived_name": "M. OKAFOR -> EVENT STORE",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "1b8121cc-f21b-47c9-8408-604867e1d730",
+      "derived_name": "SQLITE -> ADR-007",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "relationship",
+      "derived_id": "80c07b17-b20a-40fd-ad33-2de182d2c36d",
+      "derived_name": "POSTGRESQL -> ADR-007",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "5bbaa072-d872-4045-b145-30cf6288ba24",
+      "derived_name": "Here is the analysis based on the provided text, entity specification, and claim description:\n\n```\n(POSTGRESQL",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "2a731d82-f1aa-4b14-9103-99380391acff",
+      "derived_name": "SQLITE",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "aeec453a-21c5-4ab8-a09e-8e93f106d13f",
+      "derived_name": "EVENT-STORE TEAM",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "0ed00223-0815-4d59-bff0-643a7570cd65",
+      "derived_name": "EVT-201",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "545d91e7-b6ba-443e-8e94-3225998b7485",
+      "derived_name": "EVT-202",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "74b896bf-5ca9-4722-bfd3-cd4b9024db94",
+      "derived_name": "EVT-203",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "5d9ce947-786a-453d-9220-bfbc9d8d54b1",
+      "derived_name": "EVT-204",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "8509135d-c14a-43b7-b3d2-f0aaf1690128",
+      "derived_name": "M. OKAFOR",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "e95ce758-e66b-4e75-b95e-09072644c5ea",
+      "derived_name": "J. LINDQVIST",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "3086a105-44b8-4c09-b8d1-81012eebdd79",
+      "derived_name": "2024-07-11",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "a79cbf26-e829-4f8a-a627-3ebd3f6439f3",
+      "derived_name": "Based on the provided text, no claims or facts relevant to information discovery against the specified entity types (`organization`, `person`, `geo`, `event`) a",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "db435df2-46ec-4840-b12e-6145df1ccbd0",
+      "derived_name": "# Output:",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "documents": [
+        "adr-009.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "98ac2946-c91c-4606-b934-040744ff1234",
+      "derived_name": "Here is the analysis based on the provided text and entity specification:\n\n```\n(POSTGRESQL",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "00c91960-9ba6-48e2-8c25-a6458efaebbe",
+      "derived_name": "A.NOVAK",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "096d6947-fc09-4256-a678-9f0c4d973a08",
+      "derived_name": "NONE",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "c27e81da-87e2-42ad-86d8-58252c724ed3",
+      "derived_name": "EVENT evt-204",
+      "text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "60394bea-0cdc-41b9-9ada-2fc89dd6dc08",
+      "derived_name": "Given the provided text, no claims or facts relevant to information discovery can be extracted based on the entity specification and claim description. The text",
+      "text_units": [
+        "d5a1b5e191e33c125f36627651bd30a19f7595f1c2f02a5b7f0550156c15a7cd8e5343bdb45a6f05bda704e1d15483d961b0734f8a1d0bb575da91b34d7fda60"
+      ],
+      "documents": [
+        "commits.log#L1.txt"
+      ],
+      "artifacts": [
+        "commits.log#L1"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "b3eefcb4-b0e9-47e5-a696-48e84d0f77f1",
+      "derived_name": "Given the provided text, no specific claims or facts relevant to information discovery can be extracted because the log entry is a generic commit message withou",
+      "text_units": [
+        "52c75c69de1dc3a885c1166de4ff3176c12e3f6cd90c080bbeb6c4c0c819eba385ac8728f0de12d27576bb996951649f9289b9a7fbcab4078c73af67cd94527e"
+      ],
+      "documents": [
+        "commits.log#L2.txt"
+      ],
+      "artifacts": [
+        "commits.log#L2"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "a76e0cb3-ac94-4ac6-bd96-2064b36d4752",
+      "derived_name": "# Output:",
+      "text_units": [
+        "52c75c69de1dc3a885c1166de4ff3176c12e3f6cd90c080bbeb6c4c0c819eba385ac8728f0de12d27576bb996951649f9289b9a7fbcab4078c73af67cd94527e"
+      ],
+      "documents": [
+        "commits.log#L2.txt"
+      ],
+      "artifacts": [
+        "commits.log#L2"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "72cf96d2-7a20-4dad-8fff-423044f692da",
+      "derived_name": "Given the provided text, no clear claims or facts relevant to information discovery can be extracted because the log entry is a technical commit message without",
+      "text_units": [
+        "4c240c526efb31a302a8a3a0d874ad8fa09b7a1fc644901b203bc216133d5feaff79aa3cabaa0d5f46741eb2515663ef77dcb8f33ddb72c71f68a752b7a9fd14"
+      ],
+      "documents": [
+        "commits.log#L3.txt"
+      ],
+      "artifacts": [
+        "commits.log#L3"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "2f29f9c1-bcac-4813-ad20-1bbbb3a6414c",
+      "derived_name": "# Output:",
+      "text_units": [
+        "4c240c526efb31a302a8a3a0d874ad8fa09b7a1fc644901b203bc216133d5feaff79aa3cabaa0d5f46741eb2515663ef77dcb8f33ddb72c71f68a752b7a9fd14"
+      ],
+      "documents": [
+        "commits.log#L3.txt"
+      ],
+      "artifacts": [
+        "commits.log#L3"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "a74af6a7-727b-41c0-b016-59e6b3218cbe",
+      "derived_name": "Based on the provided text, no clear claims or facts relevant to information discovery can be extracted for the specified entity types (`organization`, `person`",
+      "text_units": [
+        "f72b94e4572dfee36958dd9ada223f66fdfa209490d6352f39258f33376c0333a8058043ed6f2dfe4cbf85f31eee1255f144131eb0ae7898a0d86732a134adf4"
+      ],
+      "documents": [
+        "commits.log#L4.txt"
+      ],
+      "artifacts": [
+        "commits.log#L4"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "fbf42e6f-c1a7-476d-9f9b-22e847aea61f",
+      "derived_name": "Based on the provided text, no clear claims or facts relevant to information discovery can be extracted for the specified entity types (`organization`, `person`",
+      "text_units": [
+        "2c1b9f331d67ec3c01a0bb729d659e2b66375caf7463bfda5f95443e60cafd97bc3c49e25c037aab47faa0ea316ab7b0e1e0ef99a1504b74298896f4b0632fd0"
+      ],
+      "documents": [
+        "commits.log#L5.txt"
+      ],
+      "artifacts": [
+        "commits.log#L5"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "a8b0f0f8-8b51-4972-a2d4-3ad6aecd1695",
+      "derived_name": "# Output:",
+      "text_units": [
+        "2c1b9f331d67ec3c01a0bb729d659e2b66375caf7463bfda5f95443e60cafd97bc3c49e25c037aab47faa0ea316ab7b0e1e0ef99a1504b74298896f4b0632fd0"
+      ],
+      "documents": [
+        "commits.log#L5.txt"
+      ],
+      "artifacts": [
+        "commits.log#L5"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "54ee41eb-ee1e-4c80-8c1a-d2ecdc562661",
+      "derived_name": "Given the provided text, no named entities matching the entity specification (`organization`, `person`, `geo`, `event`) are explicitly mentioned or implied in a",
+      "text_units": [
+        "04c5f037084c8f67b05532eee2e2fc3b28ca8c14c18bacf8acf052c7582c9f393284875bfca5816c8605384db034fa3d2c87a5cdc187f4af0ed322d2b7632128"
+      ],
+      "documents": [
+        "commits.log#L6.txt"
+      ],
+      "artifacts": [
+        "commits.log#L6"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "1996a1fd-944d-4855-ac37-b8173d8d3cdf",
+      "derived_name": "Based on the provided text, no meaningful claims or facts related to entities (organization, person, geo, or event) can be extracted. The log entry is a technic",
+      "text_units": [
+        "25dcbc0625aefe54c3cd6433e2935aa2976ce9d44009baf88a8bd0ffcfd01951b1a5258b63bb0c8d0f9cbdc34aa5856fe57356be6dc960ef79d27af371ecf284"
+      ],
+      "documents": [
+        "commits.log#L7.txt"
+      ],
+      "artifacts": [
+        "commits.log#L7"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "453c8ca3-08f4-4e00-8421-125e63c4514a",
+      "derived_name": "Here is the analysis based on the provided text, entity specification, and claim description:\n\n```\n(ORGANIZATION",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "2c09cd7c-5477-4680-8571-69793a511053",
+      "derived_name": "PERSON",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "44478f8b-de3a-43e9-9e82-80d397580ff4",
+      "derived_name": "GEO",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "64cc0264-a5de-4dc5-8ece-bcc6d9265bc7",
+      "derived_name": "EVENT",
+      "text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "documents": [
+        "experiment-contention.md.txt"
+      ],
+      "artifacts": [
+        "experiment-contention.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "1dcdbceb-6f89-473b-8e7c-90160883ab1b",
+      "derived_name": "Here is the analysis based on the provided text and entity specification:\n\n```",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "03ef629c-c5ef-4cdf-ac51-a7a0b65a8c15",
+      "derived_name": "UNKNOWN",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "f47aa984-03a1-40e3-be15-f83d3c05128d",
+      "derived_name": "UNKNOWN",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "8c203b60-eb12-46e7-8869-6b99b91a9f0f",
+      "derived_name": "UNKNOWN",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "36fca2a9-ba2b-4658-ba95-00bd4d4c7b14",
+      "derived_name": "```\n**Notes:**\n1. **Entities Identified:**\n   - No explicit organizations, persons, or geo-locations are mentioned in the text. Thus, the claims are associated ",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "ff354f66-442f-4e37-9466-a22fc0cee1c5",
+      "derived_name": "Based on the provided text and the entity specification (organization, person, geo, event), there are no explicit claims or facts that could be relevant to info",
+      "text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "documents": [
+        "issue-041.md.txt"
+      ],
+      "artifacts": [
+        "issue-041.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "7336944b-7018-4cae-96ac-caa46e5441ed",
+      "derived_name": "Based on the provided text and the entity specification (organization, person, geo, event), there are no claims or facts relevant to information discovery again",
+      "text_units": [
+        "81c3100b0e1faedadfc305bc5ea0d5f37ea1f9bdde5570c396f49536ccb0c2c2551ead94cdf2cc9f4dedac549702354c7f19ca0cc4dc51de7101e600372c96d1"
+      ],
+      "documents": [
+        "notification-service.md.txt"
+      ],
+      "artifacts": [
+        "notification-service.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "b5c9597c-08de-4383-89a4-560cf368ac34",
+      "derived_name": "Here is the analysis based on the provided text and specifications:\n\n```\n(POSTGRESQL",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "8c738b7a-af3c-4524-b92d-a3a0dddd34c1",
+      "derived_name": "SQLITE",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "58ec0433-3e68-4111-b6a8-9cb9bc3cd6c8",
+      "derived_name": "EVENT_STORE",
+      "text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "documents": [
+        "production-notes.md.txt"
+      ],
+      "artifacts": [
+        "production-notes.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "425c6efc-3813-4e64-80a2-f6bc3089d6b9",
+      "derived_name": "Here is the analysis based on the provided text and entity specification:\n\n```",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "22e80dca-4f8b-46cc-9d71-4b780e1bc51a",
+      "derived_name": "PROJECT TEAM",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "f128f43c-1932-4fe3-9471-3469678e54ad",
+      "derived_name": "M. OKAFOR",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "cdc232bc-c3f2-4ee9-9e4b-58c574dbd093",
+      "derived_name": "J. LINDSVIT",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "83b06315-5631-4ae0-af97-1550a8f055ae",
+      "derived_name": "PROTOTYPE PHASE (EVT-201)",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "9df18028-a6d2-4400-b22f-ca869c790f54",
+      "derived_name": "```",
+      "text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "documents": [
+        "session-014.md.txt"
+      ],
+      "artifacts": [
+        "session-014.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "1584e16f-e7d1-4900-9d2a-31c9d7e10475",
+      "derived_name": "Based on the provided text, no explicit claims or facts are made against entities that match the specified entity types (`organization`, `person`, `geo`, `event",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "f9ac94eb-3e05-4672-a0b6-be7ebd064661",
+      "derived_name": "# Output:\n```\n<|COMPLETE|>\n```",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "documents": [
+        "session-019.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "077a2c74-bd18-4b3f-ad11-b65e50d7798b",
+      "derived_name": "Based on the provided text, no claims or facts relevant to information discovery (as per the claim description) are present. The text is a technical discussion ",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "17322d4b-af3a-41f7-9639-7468cadcae04",
+      "derived_name": "# Output:",
+      "text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "456c4cfc-f8dd-491a-92f3-16f2c5e7c5e7",
+      "derived_name": "Based on the provided text and the entity specification (organization, person, geo, event), there are no explicit claims or facts that could be relevant to info",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "5233ff7e-8edb-4bd3-a381-d2b7e0174e95",
+      "derived_name": "# Output:",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "documents": [
+        "session-044.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "d44aedcf-6a30-4d38-ae81-0a0e5ad46e91",
+      "derived_name": "Here is the analysis based on the provided text, entity specification, and claim description:\n\n```\n(ORGANIZATION",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "19a5ef10-e5aa-475d-92a9-1032e93d35fe",
+      "derived_name": "PERSON",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "76bdb571-23cc-4bd0-afaa-8d4e1260843c",
+      "derived_name": "GEO",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "claim",
+      "derived_id": "cc828619-789a-4b20-ad96-d06ffa1ee729",
+      "derived_name": "EVENT",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "documents": [
+        "stale-summary.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "community",
+      "derived_id": "0",
+      "derived_name": "Community 0",
+      "text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "documents": [
+        "adr-009.md.txt",
+        "session-040.md.txt"
+      ],
+      "artifacts": [
+        "adr-009.md",
+        "session-040.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "community",
+      "derived_id": "1",
+      "derived_name": "Community 1",
+      "text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934",
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83",
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d",
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "session-019.md.txt",
+        "session-014.md.txt",
+        "incident-021.md.txt",
+        "stale-summary.md.txt",
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "session-019.md",
+        "session-014.md",
+        "incident-021.md",
+        "stale-summary.md",
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "community",
+      "derived_id": "2",
+      "derived_name": "Community 2",
+      "text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e",
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c",
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "documents": [
+        "session-044.md.txt",
+        "experiment-contention.md.txt",
+        "issue-041.md.txt"
+      ],
+      "artifacts": [
+        "session-044.md",
+        "experiment-contention.md",
+        "issue-041.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "community",
+      "derived_id": "3",
+      "derived_name": "Community 3",
+      "text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d",
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d",
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "documents": [
+        "stale-summary.md.txt",
+        "adr-007.md.txt",
+        "production-notes.md.txt",
+        "benchmark-note.md.txt"
+      ],
+      "artifacts": [
+        "stale-summary.md",
+        "adr-007.md",
+        "production-notes.md",
+        "benchmark-note.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "community",
+      "derived_id": "4",
+      "derived_name": "Community 4",
+      "text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "documents": [
+        "adr-007.md.txt"
+      ],
+      "artifacts": [
+        "adr-007.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    },
+    {
+      "derived_kind": "community",
+      "derived_id": "5",
+      "derived_name": "Community 5",
+      "text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "documents": [
+        "incident-021.md.txt"
+      ],
+      "artifacts": [
+        "incident-021.md"
+      ],
+      "broken_links": [],
+      "is_orphan": false
+    }
+  ],
+  "orphan_rates": {
+    "entity": 0.0,
+    "relationship": 0.0,
+    "claim": 0.0,
+    "community": 0.0
+  },
+  "overall_orphan_rate": 0.0
+}

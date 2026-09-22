@@ -1,0 +1,1076 @@
+{
+  "config": {
+    "claim_extractor": "c2-claimify-inspired-v0.1",
+    "code_commit": "unspecified",
+    "corpus_version": "ch7-fixture-v0.1",
+    "echo_threshold": 0.55,
+    "layer_version": "evidence-lineage-v0.1",
+    "notes": "",
+    "support_verifier": "ledger-deterministic-v0.1"
+  },
+  "costs": {
+    "graph_edges": 20,
+    "graph_nodes": 26,
+    "latency_ms": 1.2,
+    "llm_calls": 0,
+    "tokens": 0
+  },
+  "experiments": {
+    "E7-A": {
+      "question": "single pointer vs explicit support relation",
+      "question_id": "E7-A",
+      "results": {
+        "P0_pointer": {
+          "multi_coverage": 0.25,
+          "overall": {
+            "f1": 0.2857142857142857,
+            "fn": 5,
+            "fp": 5,
+            "precision": 0.2857142857142857,
+            "recall": 0.2857142857142857,
+            "support_coverage": 0.2857142857142857,
+            "support_f1": 0.2857142857142857,
+            "support_precision": 0.2857142857142857,
+            "tp": 2
+          },
+          "per_case": {
+            "claim-atomic": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 1
+            },
+            "claim-budget": {
+              "f1": 0.0,
+              "fn": 0,
+              "fp": 1,
+              "precision": 0.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 0.0,
+              "support_precision": 0.0,
+              "tp": 0
+            },
+            "claim-causal-gap": {
+              "f1": 0.0,
+              "fn": 0,
+              "fp": 1,
+              "precision": 0.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 0.0,
+              "support_precision": 0.0,
+              "tp": 0
+            },
+            "claim-contention": {
+              "f1": 0.0,
+              "fn": 1,
+              "fp": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support_coverage": 0.0,
+              "support_f1": 0.0,
+              "support_precision": 0.0,
+              "tp": 0
+            },
+            "claim-main": {
+              "f1": 0.4,
+              "fn": 3,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 0.25,
+              "support_coverage": 0.25,
+              "support_f1": 0.4,
+              "support_precision": 1.0,
+              "tp": 1
+            },
+            "claim-narrow": {
+              "f1": 0.0,
+              "fn": 1,
+              "fp": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support_coverage": 0.0,
+              "support_f1": 0.0,
+              "support_precision": 0.0,
+              "tp": 0
+            },
+            "claim-perf": {
+              "f1": 0.0,
+              "fn": 0,
+              "fp": 1,
+              "precision": 0.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 0.0,
+              "support_precision": 0.0,
+              "tp": 0
+            }
+          },
+          "simple_mean_coverage": 0.3333333333333333,
+          "trap_precision": 0.0
+        },
+        "P1_direct": {
+          "multi_coverage": 1.0,
+          "overall": {
+            "f1": 0.6666666666666666,
+            "fn": 0,
+            "fp": 7,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support_coverage": 1.0,
+            "support_f1": 0.6666666666666666,
+            "support_precision": 0.5,
+            "tp": 7
+          },
+          "per_case": {
+            "claim-atomic": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 1
+            },
+            "claim-budget": {
+              "f1": 0.0,
+              "fn": 0,
+              "fp": 1,
+              "precision": 0.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 0.0,
+              "support_precision": 0.0,
+              "tp": 0
+            },
+            "claim-causal-gap": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 0
+            },
+            "claim-contention": {
+              "f1": 0.6666666666666666,
+              "fn": 0,
+              "fp": 1,
+              "precision": 0.5,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 0.6666666666666666,
+              "support_precision": 0.5,
+              "tp": 1
+            },
+            "claim-main": {
+              "f1": 0.6666666666666666,
+              "fn": 0,
+              "fp": 4,
+              "precision": 0.5,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 0.6666666666666666,
+              "support_precision": 0.5,
+              "tp": 4
+            },
+            "claim-narrow": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 1
+            },
+            "claim-perf": {
+              "f1": 0.0,
+              "fn": 0,
+              "fp": 1,
+              "precision": 0.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 0.0,
+              "support_precision": 0.0,
+              "tp": 0
+            }
+          },
+          "simple_mean_coverage": 1.0,
+          "trap_precision": 0.3333333333333333
+        },
+        "P2_support": {
+          "multi_coverage": 1.0,
+          "overall": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support_coverage": 1.0,
+            "support_f1": 1.0,
+            "support_precision": 1.0,
+            "tp": 7
+          },
+          "per_case": {
+            "claim-atomic": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 1
+            },
+            "claim-budget": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 0
+            },
+            "claim-causal-gap": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 0
+            },
+            "claim-contention": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 1
+            },
+            "claim-main": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 4
+            },
+            "claim-narrow": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 1
+            },
+            "claim-perf": {
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support_coverage": 1.0,
+              "support_f1": 1.0,
+              "support_precision": 1.0,
+              "tp": 0
+            }
+          },
+          "simple_mean_coverage": 1.0,
+          "trap_precision": 1.0
+        }
+      }
+    },
+    "E7-B": {
+      "question": "claim extraction omissions, inventions, flags",
+      "question_id": "E7-B",
+      "results": {
+        "C0": {
+          "coverage": 0.7,
+          "expected": 10,
+          "invented_extra": 1,
+          "matched": 7,
+          "missed_qualifiers": 3,
+          "per_case": [
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "PostgreSQL was selected."
+            },
+            {
+              "expected": 4,
+              "got": 1,
+              "matched": 1,
+              "sentence": "PostgreSQL was selected because SQLite contentio"
+            },
+            {
+              "expected": 2,
+              "got": 1,
+              "matched": 2,
+              "sentence": "We chose PostgreSQL after reviewing the benchmar"
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "The importer never failed under SQLite."
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "If contention returns, we will revisit the decis"
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "The operator reported that the importer timed ou"
+            },
+            {
+              "expected": 0,
+              "got": 1,
+              "matched": 0,
+              "sentence": "They fixed it next quarter."
+            }
+          ],
+          "report": {
+            "abstentions": 0,
+            "ambiguous": 0,
+            "attributed": 0,
+            "claims": 2,
+            "conditional": 0,
+            "negated": 0
+          }
+        },
+        "C1": {
+          "coverage": 0.7,
+          "expected": 10,
+          "invented_extra": 2,
+          "matched": 7,
+          "missed_qualifiers": 0,
+          "per_case": [
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "PostgreSQL was selected."
+            },
+            {
+              "expected": 4,
+              "got": 2,
+              "matched": 1,
+              "sentence": "PostgreSQL was selected because SQLite contentio"
+            },
+            {
+              "expected": 2,
+              "got": 1,
+              "matched": 2,
+              "sentence": "We chose PostgreSQL after reviewing the benchmar"
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "The importer never failed under SQLite."
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "If contention returns, we will revisit the decis"
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "The operator reported that the importer timed ou"
+            },
+            {
+              "expected": 0,
+              "got": 1,
+              "matched": 0,
+              "sentence": "They fixed it next quarter."
+            }
+          ],
+          "report": {
+            "abstentions": 0,
+            "ambiguous": 1,
+            "attributed": 0,
+            "claims": 3,
+            "conditional": 0,
+            "negated": 0
+          }
+        },
+        "C2": {
+          "coverage": 0.7,
+          "expected": 10,
+          "invented_extra": 1,
+          "matched": 7,
+          "missed_qualifiers": 0,
+          "per_case": [
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "PostgreSQL was selected."
+            },
+            {
+              "expected": 4,
+              "got": 2,
+              "matched": 1,
+              "sentence": "PostgreSQL was selected because SQLite contentio"
+            },
+            {
+              "expected": 2,
+              "got": 1,
+              "matched": 2,
+              "sentence": "We chose PostgreSQL after reviewing the benchmar"
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "The importer never failed under SQLite."
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "If contention returns, we will revisit the decis"
+            },
+            {
+              "expected": 1,
+              "got": 1,
+              "matched": 1,
+              "sentence": "The operator reported that the importer timed ou"
+            },
+            {
+              "expected": 0,
+              "got": 0,
+              "matched": 0,
+              "sentence": "They fixed it next quarter."
+            }
+          ],
+          "report": {
+            "abstentions": 1,
+            "ambiguous": 0,
+            "attributed": 0,
+            "claims": 2,
+            "conditional": 0,
+            "negated": 0
+          }
+        }
+      }
+    },
+    "E7-C": {
+      "group_validity": {
+        "P0_pointer": {
+          "group_exact_match_rate": 0.1111111111111111,
+          "group_soft_match_mean": 0.14814814814814814
+        },
+        "P1_direct": {
+          "group_exact_match_rate": 0.4444444444444444,
+          "group_soft_match_mean": 0.5416666666666666
+        },
+        "P2_support": {
+          "group_exact_match_rate": 1.0,
+          "group_soft_match_mean": 1.0
+        }
+      },
+      "question": "support-group correctness incl. alternatives",
+      "question_id": "E7-C",
+      "satisfied_groups_claim_main": [
+        "claim-main-g0",
+        "claim-main-g1"
+      ],
+      "statuses": {
+        "claim-14pct": "NOT_SUPPORTED",
+        "claim-atomic": "FULLY_SUPPORTED",
+        "claim-budget": "NOT_SUPPORTED",
+        "claim-causal-gap": "NOT_SUPPORTED",
+        "claim-contention": "FULLY_SUPPORTED",
+        "claim-main": "FULLY_SUPPORTED",
+        "claim-narrow": "FULLY_SUPPORTED",
+        "claim-perf": "NOT_SUPPORTED",
+        "claim-redis": "NOT_SUPPORTED"
+      }
+    },
+    "E7-D": {
+      "note": "overlap heuristic handles near-duplicates; heavy paraphrase needs recorded derivation edges",
+      "per_rung": [
+        {
+          "detected_at_0.55": true,
+          "id": "e0-exact",
+          "overlap": 1.0
+        },
+        {
+          "detected_at_0.55": true,
+          "id": "e1-near",
+          "overlap": 0.667
+        },
+        {
+          "detected_at_0.55": false,
+          "id": "e2-heavy",
+          "overlap": 0.067
+        },
+        {
+          "detected_at_0.55": false,
+          "id": "e3-summary",
+          "overlap": 0.444
+        },
+        {
+          "detected_at_0.55": false,
+          "id": "e4-terminology",
+          "overlap": 0.125
+        }
+      ],
+      "question": "repetition identified as derivation, not evidence",
+      "question_id": "E7-D",
+      "threshold_sweep": [
+        {
+          "detected": [
+            "e0-exact",
+            "e1-near",
+            "e3-summary"
+          ],
+          "recall": 0.6,
+          "threshold": 0.3
+        },
+        {
+          "detected": [
+            "e0-exact",
+            "e1-near"
+          ],
+          "recall": 0.4,
+          "threshold": 0.55
+        },
+        {
+          "detected": [
+            "e0-exact"
+          ],
+          "recall": 0.2,
+          "threshold": 0.8
+        }
+      ]
+    },
+    "E7-E": {
+      "question": "connected does not imply supporting",
+      "question_id": "E7-E",
+      "results": {
+        "claim-budget": {
+          "kept": [],
+          "rejected": [
+            "inv183-span"
+          ],
+          "rejection_recall": 1.0
+        },
+        "claim-main": {
+          "kept": [
+            "a07-rationale",
+            "i21-incident",
+            "s19-benchmark"
+          ],
+          "rejected": [
+            "r06-echo",
+            "s17-sqlite-case",
+            "s40-other-importer",
+            "w10-summary"
+          ],
+          "rejection_recall": 1.0
+        }
+      }
+    },
+    "E7-F": {
+      "claim_14pct_grounded": [
+        "a07-rationale",
+        "i21-incident",
+        "s14-contention",
+        "s19-benchmark"
+      ],
+      "claim_14pct_trail": [
+        {
+          "depth": 0,
+          "node": "claim-14pct",
+          "relation": "DERIVED_FROM",
+          "target": "ans-5"
+        },
+        {
+          "depth": 1,
+          "node": "ans-5",
+          "relation": "DERIVED_FROM",
+          "target": "ctx-9"
+        },
+        {
+          "depth": 2,
+          "node": "ctx-9",
+          "relation": "DERIVED_FROM",
+          "target": "comm-17"
+        },
+        {
+          "depth": 3,
+          "node": "comm-17",
+          "relation": "DERIVED_FROM",
+          "target": "ext-rel-1"
+        },
+        {
+          "depth": 4,
+          "node": "ext-rel-1",
+          "relation": "DERIVED_FROM",
+          "target": "a07-rationale"
+        },
+        {
+          "depth": 5,
+          "node": "a07-rationale",
+          "relation": "GROUND"
+        },
+        {
+          "depth": 4,
+          "node": "ext-rel-1",
+          "relation": "DERIVED_FROM",
+          "target": "s19-benchmark"
+        },
+        {
+          "depth": 5,
+          "node": "s19-benchmark",
+          "relation": "GROUND"
+        },
+        {
+          "depth": 3,
+          "node": "comm-17",
+          "relation": "DERIVED_FROM",
+          "target": "s14-contention"
+        },
+        {
+          "depth": 4,
+          "node": "s14-contention",
+          "relation": "GROUND"
+        },
+        {
+          "depth": 2,
+          "node": "ctx-9",
+          "relation": "DERIVED_FROM",
+          "target": "i21-incident"
+        },
+        {
+          "depth": 3,
+          "node": "i21-incident",
+          "relation": "GROUND"
+        }
+      ],
+      "claim_main_grounded": [
+        "a07-rationale",
+        "i21-incident",
+        "s19-benchmark",
+        "s44-replicate"
+      ],
+      "completeness": {
+        "complete": 5,
+        "lineage_completeness": 0.5555555555555556,
+        "raw_grounding_rate": 0.5555555555555556,
+        "total": 9
+      },
+      "question": "claim to raw evidence through every stage",
+      "question_id": "E7-F"
+    },
+    "E7-G": {
+      "details": {
+        "claim-14pct": {
+          "claim_id": "claim-14pct",
+          "error_stage": "summary",
+          "evidence_trail": [
+            "claim-14pct::graph_node",
+            "claim-14pct::extraction",
+            "claim-14pct::source"
+          ],
+          "final_verdict": "NOT_FULLY_SUPPORTED",
+          "stages": [
+            {
+              "basis": "recorded",
+              "detail": "",
+              "node": "claim-14pct::source",
+              "stage": "source",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-14pct::extraction",
+              "stage": "extraction",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-14pct::graph_node",
+              "stage": "graph_node",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-14pct::summary",
+              "stage": "summary",
+              "supported_by_inputs": false
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-14pct::context",
+              "stage": "context",
+              "supported_by_inputs": false
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-14pct::reader",
+              "stage": "reader",
+              "supported_by_inputs": false
+            }
+          ]
+        },
+        "claim-main": {
+          "claim_id": "claim-main",
+          "error_stage": null,
+          "evidence_trail": [
+            "claim-main::source",
+            "claim-main::extraction",
+            "claim-main::graph_node",
+            "claim-main::summary",
+            "claim-main::context",
+            "claim-main::reader"
+          ],
+          "final_verdict": "FULLY_SUPPORTED",
+          "stages": [
+            {
+              "basis": "recorded",
+              "detail": "",
+              "node": "claim-main::source",
+              "stage": "source",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-main::extraction",
+              "stage": "extraction",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-main::graph_node",
+              "stage": "graph_node",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-main::summary",
+              "stage": "summary",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-main::context",
+              "stage": "context",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-main::reader",
+              "stage": "reader",
+              "supported_by_inputs": true
+            }
+          ]
+        },
+        "claim-redis": {
+          "claim_id": "claim-redis",
+          "error_stage": "graph_node",
+          "evidence_trail": [
+            "claim-redis::extraction",
+            "claim-redis::source"
+          ],
+          "final_verdict": "NOT_FULLY_SUPPORTED",
+          "stages": [
+            {
+              "basis": "recorded",
+              "detail": "",
+              "node": "claim-redis::source",
+              "stage": "source",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-redis::extraction",
+              "stage": "extraction",
+              "supported_by_inputs": true
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-redis::graph_node",
+              "stage": "graph_node",
+              "supported_by_inputs": false
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-redis::summary",
+              "stage": "summary",
+              "supported_by_inputs": false
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-redis::context",
+              "stage": "context",
+              "supported_by_inputs": false
+            },
+            {
+              "basis": "reconstructed",
+              "detail": "",
+              "node": "claim-redis::reader",
+              "stage": "reader",
+              "supported_by_inputs": false
+            }
+          ]
+        }
+      },
+      "predicted": {
+        "claim-14pct": "summary",
+        "claim-main": null,
+        "claim-redis": "graph_node"
+      },
+      "question": "where did unsupported content first appear",
+      "question_id": "E7-G",
+      "scores": {
+        "error_localisation_accuracy": 1.0,
+        "hits": 3,
+        "total": 3
+      },
+      "truth": {
+        "claim-14pct": "summary",
+        "claim-main": null,
+        "claim-redis": "graph_node"
+      }
+    },
+    "E7-H": {
+      "a07_impact": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "impact_precision": 1.0,
+        "impact_recall": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "question": "keystone retraction marks dependents",
+      "question_id": "E7-H",
+      "retract_a07": {
+        "after": {
+          "claim-14pct": "NOT_SUPPORTED",
+          "claim-atomic": "NOT_SUPPORTED",
+          "claim-budget": "NOT_SUPPORTED",
+          "claim-causal-gap": "NOT_SUPPORTED",
+          "claim-contention": "FULLY_SUPPORTED",
+          "claim-main": "PARTIALLY_SUPPORTED",
+          "claim-narrow": "FULLY_SUPPORTED",
+          "claim-perf": "NOT_SUPPORTED",
+          "claim-redis": "NOT_SUPPORTED"
+        },
+        "before": {
+          "claim-14pct": "NOT_SUPPORTED",
+          "claim-atomic": "FULLY_SUPPORTED",
+          "claim-budget": "NOT_SUPPORTED",
+          "claim-causal-gap": "NOT_SUPPORTED",
+          "claim-contention": "FULLY_SUPPORTED",
+          "claim-main": "FULLY_SUPPORTED",
+          "claim-narrow": "FULLY_SUPPORTED",
+          "claim-perf": "NOT_SUPPORTED",
+          "claim-redis": "NOT_SUPPORTED"
+        },
+        "evidence_id": "a07-rationale",
+        "impact": {
+          "affected_claims": [
+            "claim-atomic",
+            "claim-main"
+          ],
+          "evidence_id": "a07-rationale",
+          "status_after": {
+            "claim-14pct": "NOT_SUPPORTED",
+            "claim-atomic": "NOT_SUPPORTED",
+            "claim-main": "PARTIALLY_SUPPORTED"
+          },
+          "still_supported": []
+        },
+        "requires_reevaluation": [
+          "claim-atomic",
+          "claim-main"
+        ]
+      },
+      "retract_s19": {
+        "after": {
+          "claim-14pct": "NOT_SUPPORTED",
+          "claim-atomic": "FULLY_SUPPORTED",
+          "claim-budget": "NOT_SUPPORTED",
+          "claim-causal-gap": "NOT_SUPPORTED",
+          "claim-contention": "FULLY_SUPPORTED",
+          "claim-main": "FULLY_SUPPORTED",
+          "claim-narrow": "NOT_SUPPORTED",
+          "claim-perf": "NOT_SUPPORTED",
+          "claim-redis": "NOT_SUPPORTED"
+        },
+        "before": {
+          "claim-14pct": "NOT_SUPPORTED",
+          "claim-atomic": "FULLY_SUPPORTED",
+          "claim-budget": "NOT_SUPPORTED",
+          "claim-causal-gap": "NOT_SUPPORTED",
+          "claim-contention": "FULLY_SUPPORTED",
+          "claim-main": "FULLY_SUPPORTED",
+          "claim-narrow": "FULLY_SUPPORTED",
+          "claim-perf": "NOT_SUPPORTED",
+          "claim-redis": "NOT_SUPPORTED"
+        },
+        "evidence_id": "s19-benchmark",
+        "impact": {
+          "affected_claims": [
+            "claim-narrow"
+          ],
+          "evidence_id": "s19-benchmark",
+          "status_after": {
+            "claim-14pct": "NOT_SUPPORTED",
+            "claim-main": "FULLY_SUPPORTED",
+            "claim-narrow": "NOT_SUPPORTED"
+          },
+          "still_supported": [
+            "claim-main"
+          ]
+        },
+        "requires_reevaluation": [
+          "claim-narrow"
+        ]
+      },
+      "s19_impact": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "impact_precision": 1.0,
+        "impact_recall": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      }
+    },
+    "E7-I": {
+      "claim_main_after": "FULLY_SUPPORTED",
+      "question": "redundant evidence removal keeps support",
+      "question_id": "E7-I",
+      "report": {
+        "after": {
+          "claim-14pct": "NOT_SUPPORTED",
+          "claim-atomic": "FULLY_SUPPORTED",
+          "claim-budget": "NOT_SUPPORTED",
+          "claim-causal-gap": "NOT_SUPPORTED",
+          "claim-contention": "FULLY_SUPPORTED",
+          "claim-main": "FULLY_SUPPORTED",
+          "claim-narrow": "FULLY_SUPPORTED",
+          "claim-perf": "NOT_SUPPORTED",
+          "claim-redis": "NOT_SUPPORTED"
+        },
+        "before": {
+          "claim-14pct": "NOT_SUPPORTED",
+          "claim-atomic": "FULLY_SUPPORTED",
+          "claim-budget": "NOT_SUPPORTED",
+          "claim-causal-gap": "NOT_SUPPORTED",
+          "claim-contention": "FULLY_SUPPORTED",
+          "claim-main": "FULLY_SUPPORTED",
+          "claim-narrow": "FULLY_SUPPORTED",
+          "claim-perf": "NOT_SUPPORTED",
+          "claim-redis": "NOT_SUPPORTED"
+        },
+        "evidence_id": "s44-replicate",
+        "impact": {
+          "affected_claims": [],
+          "evidence_id": "s44-replicate",
+          "status_after": {
+            "claim-main": "FULLY_SUPPORTED"
+          },
+          "still_supported": [
+            "claim-main"
+          ]
+        },
+        "requires_reevaluation": []
+      }
+    },
+    "E7-J": {
+      "cells": {
+        "correct_answer_correct_evidence": 1,
+        "correct_answer_wrong_evidence": 1,
+        "wrong_answer_correct_evidence": 1,
+        "wrong_answer_wrong_evidence": 1
+      },
+      "justification_failures": 1,
+      "question": "right answer with wrong chain fails justification",
+      "question_id": "E7-J"
+    }
+  },
+  "frozen_at": "20260919T215516Z",
+  "health": {
+    "claims": 9,
+    "claims_with_no_lineage": [
+      "claim-perf",
+      "claim-causal-gap",
+      "claim-budget"
+    ],
+    "dangling_edges": [],
+    "derived_without_provenance": [
+      "rel-redis-1"
+    ],
+    "echo_resolutions": [
+      {
+        "echo": "r06-echo",
+        "resolves_to": "a07-decision"
+      },
+      {
+        "echo": "w10-summary",
+        "resolves_to": "a07-decision"
+      }
+    ],
+    "edges": 20,
+    "nodes": 26
+  },
+  "model_dependency": "none (ledger-deterministic-v0.1)",
+  "suite": "e7-suite-v0.1"
+}

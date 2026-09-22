@@ -1,0 +1,385 @@
+{
+  "cases": [
+    {
+      "case_id": "c-direct-target",
+      "cue": "What event store should new work target?",
+      "distractor_sources": [
+        "adr-003"
+      ],
+      "expected_path": [
+        "entity:event-store",
+        "claim:evt-205",
+        "source:adr-007"
+      ],
+      "expected_sources": [
+        "adr-007"
+      ],
+      "family": "decision",
+      "hop_class": "direct",
+      "notes": "Control: a direct hit. Associative retrieval must not degrade it."
+    },
+    {
+      "case_id": "c-direct-redis",
+      "cue": "What did the team decide about introducing Redis as a lookup cache?",
+      "distractor_sources": [
+        "session-040"
+      ],
+      "expected_path": [
+        "entity:redis",
+        "claim:evt-206",
+        "source:adr-009"
+      ],
+      "expected_sources": [
+        "adr-009",
+        "session-044"
+      ],
+      "family": "decision",
+      "hop_class": "direct",
+      "notes": "Control: the rejected proposal is the tempting nearby passage."
+    },
+    {
+      "case_id": "c-direct-production",
+      "cue": "What runs in production for the event store now?",
+      "distractor_sources": [
+        "deployment-001"
+      ],
+      "expected_path": [
+        "entity:event-store",
+        "claim:fact-302",
+        "source:deployment-101"
+      ],
+      "expected_sources": [
+        "deployment-101"
+      ],
+      "family": "temporal",
+      "hop_class": "direct",
+      "notes": "Control: production state, distinct from the decision."
+    },
+    {
+      "case_id": "c-hop-backup",
+      "cue": "What still had to move before the first release after the event-store migration?",
+      "distractor_sources": [
+        "adr-007",
+        "runbook-006"
+      ],
+      "expected_path": [
+        "entity:event-store",
+        "claim:evt-205",
+        "source:commit-110",
+        "source:commit-112",
+        "claim:intent-401",
+        "source:commit-118"
+      ],
+      "expected_sources": [
+        "session-051",
+        "commit-118"
+      ],
+      "family": "open-loop",
+      "hop_class": "indirect",
+      "notes": "The completing artifact never names the release; it is reachable only through the migration chain."
+    },
+    {
+      "case_id": "c-hop-why",
+      "cue": "Why was the event-store backend changed?",
+      "distractor_sources": [
+        "session-033",
+        "runbook-006"
+      ],
+      "expected_path": [
+        "entity:event-store",
+        "claim:evt-205",
+        "claim:evt-203",
+        "source:session-019"
+      ],
+      "expected_sources": [
+        "session-014",
+        "session-019",
+        "incident-021"
+      ],
+      "family": "provenance",
+      "hop_class": "indirect",
+      "notes": "Evidence is two hops from the decision and does not name the decision."
+    },
+    {
+      "case_id": "c-hop-fixtures",
+      "cue": "Which test fixtures were left encoding assumptions from the old backend?",
+      "distractor_sources": [
+        "benchmark-128"
+      ],
+      "expected_path": [
+        "entity:event-store",
+        "claim:evt-205",
+        "entity:benchmark-fixtures",
+        "source:fixture-scan-109"
+      ],
+      "expected_sources": [
+        "fixture-scan-109",
+        "commit-120"
+      ],
+      "family": "open-loop",
+      "hop_class": "indirect",
+      "notes": "Weakly connected truth: the correct memories have low degree."
+    },
+    {
+      "case_id": "c-hop-facade",
+      "cue": "What prevents the compatibility facade from being deleted?",
+      "distractor_sources": [
+        "docs-note-012",
+        "tests-compat-122"
+      ],
+      "expected_path": [
+        "entity:corpus_import",
+        "source:adr-013",
+        "entity:partner-facade",
+        "source:partner-note-004"
+      ],
+      "expected_sources": [
+        "partner-note-004"
+      ],
+      "family": "decision",
+      "hop_class": "indirect",
+      "notes": "The constraint is one hop past the decision that created the facade."
+    },
+    {
+      "case_id": "c-hop-orphans",
+      "cue": "What made the importer backfill permit orphaned rows?",
+      "distractor_sources": [
+        "incident-021"
+      ],
+      "expected_path": [
+        "entity:importer",
+        "entity:strategy-x",
+        "entity:foreign-key-checks",
+        "source:incident-034"
+      ],
+      "expected_sources": [
+        "incident-034"
+      ],
+      "family": "provenance",
+      "hop_class": "indirect",
+      "notes": "The cause is an entity-mediated chain, not a lexical match."
+    },
+    {
+      "case_id": "c-cond-silva-eventstore",
+      "cue": "What did a.silva propose about the event-store backend?",
+      "distractor_sources": [
+        "adr-013",
+        "issue-088",
+        "incident-034"
+      ],
+      "expected_path": [
+        "entity:a.silva",
+        "source:session-031"
+      ],
+      "expected_sources": [
+        "session-031"
+      ],
+      "family": "locate",
+      "hop_class": "indirect",
+      "notes": "Same actor, event-store branch."
+    },
+    {
+      "case_id": "c-cond-silva-corpus",
+      "cue": "What did a.silva do about the legacy corpus_import callers?",
+      "distractor_sources": [
+        "session-031",
+        "incident-034"
+      ],
+      "expected_path": [
+        "entity:a.silva",
+        "source:issue-088"
+      ],
+      "expected_sources": [
+        "issue-088",
+        "adr-013"
+      ],
+      "family": "locate",
+      "hop_class": "indirect",
+      "notes": "Same actor, corpus_import branch."
+    },
+    {
+      "case_id": "c-cond-silva-orphans",
+      "cue": "What did a.silva report about foreign-key checks and orphaned rows?",
+      "distractor_sources": [
+        "session-031",
+        "issue-088"
+      ],
+      "expected_path": [
+        "entity:a.silva",
+        "source:incident-034"
+      ],
+      "expected_sources": [
+        "incident-034"
+      ],
+      "family": "locate",
+      "hop_class": "indirect",
+      "notes": "Same actor, Strategy X branch."
+    },
+    {
+      "case_id": "c-cond-lindqvist-backend",
+      "cue": "What did j.lindqvist say about the SQLite backend preference?",
+      "distractor_sources": [
+        "partner-note-004",
+        "procedure-123"
+      ],
+      "expected_path": [
+        "entity:j.lindqvist",
+        "source:session-033"
+      ],
+      "expected_sources": [
+        "session-033"
+      ],
+      "family": "locate",
+      "hop_class": "indirect",
+      "notes": "Same actor, backend-preference branch."
+    },
+    {
+      "case_id": "c-cond-lindqvist-procedure",
+      "cue": "What schema-migration procedure did j.lindqvist record?",
+      "distractor_sources": [
+        "session-033",
+        "partner-note-004"
+      ],
+      "expected_path": [
+        "entity:j.lindqvist",
+        "source:procedure-123"
+      ],
+      "expected_sources": [
+        "procedure-123"
+      ],
+      "family": "locate",
+      "hop_class": "indirect",
+      "notes": "Same actor, procedure branch."
+    },
+    {
+      "case_id": "c-cond-okafor-callers",
+      "cue": "What corpus_import caller work was m.okafor assigned?",
+      "distractor_sources": [
+        "adr-007",
+        "deployment-101"
+      ],
+      "expected_path": [
+        "entity:m.okafor",
+        "source:issue-089"
+      ],
+      "expected_sources": [
+        "issue-089"
+      ],
+      "family": "locate",
+      "hop_class": "indirect",
+      "notes": "Same actor, web-caller branch; the event-store hub competes."
+    },
+    {
+      "case_id": "c-adv-echo",
+      "cue": "Which episodes independently show a schema-first migration failing?",
+      "distractor_sources": [
+        "staging-log-018",
+        "incident-106"
+      ],
+      "expected_path": [
+        "entity:schema-migration",
+        "source:incident-026"
+      ],
+      "expected_sources": [
+        "incident-026",
+        "incident-105",
+        "staging-run-104"
+      ],
+      "family": "provenance",
+      "hop_class": "adversarial",
+      "notes": "The echo restates one episode and the same-symptom incident has a different cause; neither is independent support."
+    },
+    {
+      "case_id": "c-adv-tempting",
+      "cue": "What caused the nine-minute outage during a migration?",
+      "distractor_sources": [
+        "incident-106",
+        "staging-log-018"
+      ],
+      "expected_path": [
+        "entity:schema-migration",
+        "source:incident-026"
+      ],
+      "expected_sources": [
+        "incident-026"
+      ],
+      "family": "provenance",
+      "hop_class": "adversarial",
+      "notes": "A semantically tempting branch points at the wrong incident."
+    },
+    {
+      "case_id": "c-adv-stale",
+      "cue": "Is the recorded compatibility-first migration procedure still the one to follow?",
+      "distractor_sources": [
+        "run-124",
+        "change-061"
+      ],
+      "expected_path": [
+        "entity:schema-migration",
+        "source:procedure-123",
+        "source:platform-note-125"
+      ],
+      "expected_sources": [
+        "procedure-123",
+        "platform-note-125"
+      ],
+      "family": "temporal",
+      "hop_class": "adversarial",
+      "notes": "Stale association: the pathway was useful before the platform note."
+    },
+    {
+      "case_id": "c-adv-hub",
+      "cue": "Which importer throughput baseline is current?",
+      "distractor_sources": [
+        "adr-007",
+        "deployment-101",
+        "benchmark-128"
+      ],
+      "expected_path": [
+        "entity:importer",
+        "source:benchmark-126"
+      ],
+      "expected_sources": [
+        "benchmark-126"
+      ],
+      "family": "locate",
+      "hop_class": "adversarial",
+      "notes": "Hub distraction: the event-store region dominates degree."
+    },
+    {
+      "case_id": "c-adv-superseded-task",
+      "cue": "Is the SQLite performance-tuning work still worth doing?",
+      "distractor_sources": [
+        "session-033"
+      ],
+      "expected_path": [
+        "entity:sqlite",
+        "source:issue-041",
+        "claim:evt-205"
+      ],
+      "expected_sources": [
+        "issue-041",
+        "adr-007"
+      ],
+      "family": "open-loop",
+      "hop_class": "adversarial",
+      "notes": "The task is superseded; the preference passage is the distractor."
+    },
+    {
+      "case_id": "c-abs-cache",
+      "cue": "What cache layer was adopted in front of the event store?",
+      "distractor_sources": [
+        "session-040",
+        "adr-009"
+      ],
+      "expected_path": [],
+      "expected_sources": [],
+      "family": "decision",
+      "hop_class": "unanswerable",
+      "notes": "No cache was adopted; the Redis region is the temptation."
+    }
+  ],
+  "corpus_version": "running-examples-2026-09",
+  "cue_set_version": "assoc-cues-v0.1",
+  "graph_version": "assoc-ledger-v0.1"
+}

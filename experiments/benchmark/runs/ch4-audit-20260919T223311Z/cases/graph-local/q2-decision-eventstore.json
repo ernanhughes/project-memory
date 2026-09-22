@@ -1,0 +1,801 @@
+{
+  "task_id": "q2-decision-eventstore",
+  "mode": "local",
+  "answer_text": "PostgreSQL",
+  "abstained": false,
+  "cited_source_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "production-notes.md"
+  ],
+  "retrieved_source_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "notification-service.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-040.md",
+    "commits.log"
+  ],
+  "admitted_source_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "notification-service.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-014.md"
+  ],
+  "context_tokens_estimate": 1161,
+  "latencies_ms": {
+    "graph": 43618.2,
+    "raw_retrieval": 5372.736100049224,
+    "generate": 4634.9812999833375,
+    "total": 53840.9
+  },
+  "graph_result": {
+    "question": "What event store should new services use?",
+    "method": "local",
+    "answer_text": "### Event Store Recommendation for New Services\n\nThe decision regarding the event store backend for new services has been clearly documented in **ADR-007** (record id: 0), which supersedes the earlier SQLite prototype (evt-201). Here\u2019s a summary of the key points and supporting evidence:\n\n#### **Decision: PostgreSQL is the Target for New Event Stores**\nThe team has decided to migrate the event store to **PostgreSQL** for new services. This decision was driven by performance concerns with the SQLite prototype under concurrent write loads. Specifically, the SQLite setup demonstrated severe write contention, leading to degraded performance and operational issues [Data: **experiment-contention** (10), **incident-021** (11), **session-019** (16)].\n\n#### **Key Evidence Supporting PostgreSQL**\n1. **Concurrent Write Performance**:\n   - The SQLite prototype suffered from **write contention** under load, with throughput collapsing past eight writers and median write latency spiking to **210ms** (compared to 3ms under single-writer conditions) [Data: **experiment-contention** (10)].\n   - A **high-severity incident** (evt-203) occurred in June 2024, where event ingestion stalled for **40 minutes** due to write contention, requiring manual mitigation [Data: **incident-021** (11)].\n\n2. **PostgreSQL Benchmark Results**:\n   - PostgreSQL demonstrated **flat throughput** up to **32 concurrent writers**, with a **p99 write latency of 11ms**, making it suitable for shared write-heavy workloads [Data: **benchmark-note** (2)].\n   - While PostgreSQL has a higher operational cost than SQLite (e.g., managed backups), its **concurrency behavior was decisive** for the shared event-store workload [Data: **benchmark-note** (2)].\n\n3. **Production Migration**:\n   - The team **migrated the event store from SQLite to PostgreSQL in production on July 22, 2024** [Data: **production-notes** (14)].\n   - The SQLite prototype is no longer in use for new services [Data: **production-notes** (14)].\n\n#### **Outdated Documentation**\nThe event store wiki page (record id: 19) was **stale** and incorrectly recommended SQLite for new services. This page was explicitly marked as outdated in September 2024, with a note directing users to the PostgreSQL decision (ADR-007).\n\n#### **Conclusion**\nNew services should **copy the PostgreSQL setup** for the event store, as it has been validated for performance under concurrent writes and is the current production standard. The SQLite prototype is no longer recommended for new deployments.",
+    "wall_seconds": 43.6,
+    "latency_ms": 43618.2,
+    "context_tokens_estimate": 9482,
+    "entities_seen": [],
+    "relationships_seen": [],
+    "text_units_used": [],
+    "communities_used": [],
+    "raw_output": "",
+    "context_data": {
+      "reports": [
+        {
+          "id": "1",
+          "title": "Event-Store Backend Migration: SQLite to PostgreSQL \u2013 M. Okafor & J. Lindqvist\u2019s Leadership",
+          "content": "# Event-Store Backend Migration: SQLite to PostgreSQL \u2013 M. Okafor & J. Lindqvist\u2019s Leadership\n\nThis report examines the **Event-Store Backend Migration Community**, centered around the pivotal transition from **SQLite** to **PostgreSQL** due to performance bottlenecks under concurrent writes. The community\u2019s core entities include **M. Okafor** and **J. Lindqvist**, who drove architectural decisions (e.g., **ADR-007**), alongside the **prototype phase** (SQLite) and **load-testing sessions** (e.g., **Session 019**). Key relationships reveal a structured evolution: initial SQLite adoption for simplicity, followed by performance failures under concurrent writes, culminating in a formal migration to PostgreSQL. The community\u2019s impact stems from its critical role in addressing scalability challenges while documenting decisions transparently via **Architectural Decision Records (ADRs)**. The severity rating reflects high stakes due to the direct impact on system reliability and future-proofing.\n\n## SQLite\u2019s limitations under concurrent writes exposed critical scalability gaps, necessitating a migration to PostgreSQL.\n\nThe **Event-Store Backend** initially relied on **SQLite** during its **prototype phase** (e.g., **PROTOTYPE (EVT-201)**) due to its simplicity and ease of backup. However, performance degraded sharply under concurrent writes, collapsing past **eight writers** [Data: PROTOTYPE (33); PROTOTYPE (43); LOAD-TEST REVIEW (34)]. This bottleneck was formally documented in **ADR-007**, which outlined the migration to **PostgreSQL** to address concurrency limitations, lack of advanced transactional features, and scalability bottlenecks [Data: ADR-007 (7); EVENT-STORE BACKEND (39); FOLLOW-UP (29)]."
+        },
+        {
+          "id": "3",
+          "title": "PostgreSQL Migration in Event Store Infrastructure",
+          "content": "# PostgreSQL Migration in Event Store Infrastructure\n\nThis report examines the community centered around the migration of the **Event Store** from **SQLite** to **PostgreSQL**, driven by performance limitations under high concurrent write loads. The community includes key entities such as **PostgreSQL**, **Event Store**, **Benchmark EVT-204**, and **EVT-205**, which collectively highlight the strategic upgrade, technical benchmarks, and operational transition. The relationships between these entities underscore the rationale behind the migration, its validation through benchmarking, and the formal documentation of the change. The community's impact is significant due to its implications for scalability, reliability, and performance in mission-critical applications.\n\n## Strategic migration from SQLite to PostgreSQL in the Event Store\n\nThe **Event Store** transitioned from **SQLite** to **PostgreSQL** in July 2024 to address performance bottlenecks, specifically under high concurrent write loads. This decision was driven by the need for a more robust and scalable database solution capable of handling mission-critical workloads. The migration was formalized in **EVT-205 (ADR-007)**, which superseded the SQLite prototype and officially targeted **PostgreSQL** as the new database for the event store. The shift reflects a broader trend in modern infrastructure, where durability, scalability, and performance are prioritized [Data: Entities (1, 28, 29); Relationships (0, 6, 34, +more)]."
+        },
+        {
+          "id": "0",
+          "title": "Redis Rejection and Lookup Latency Optimization Community (SESSION-040)",
+          "content": "# Redis Rejection and Lookup Latency Optimization Community (SESSION-040)\n\nThis community revolves around the technical discussions and decision-making process surrounding the proposed use of Redis as a lookup cache during **SESSION-040** (August 5, 2024). Key entities include **Redis**, **SESSION-040**, the **development team (TEAM)**, **A. Novak**, and **J. Lindqvist**, whose interactions and decisions highlight a structured evaluation of caching strategies. The community's dynamics are defined by skepticism toward Redis, lack of empirical evidence, and a preference for data-driven decision-making. The rejection of Redis was driven by concerns over system complexity, maintenance overhead, and insufficient justification for its benefits in the specific use case. This community exemplifies a technical decision-making process where performance metrics and measurable outcomes take precedence over speculative optimizations.\n\n## Rejection of Redis due to insufficient empirical evidence\n\nThe core insight of this community is the **rejection of Redis as a lookup cache** during **SESSION-040**, driven by a lack of compelling empirical evidence demonstrating its effectiveness in reducing read latency for the system's specific use case. The session explicitly noted that the proposal faced **significant scrutiny** due to insufficient data supporting its benefits, with concerns raised about potential trade-offs such as increased system complexity and maintenance overhead [Data: Entities (10, 11, 12, 13); Relationships (13, 51, +more)]."
+        },
+        {
+          "id": "5",
+          "title": "SQLite Event Ingestion Disruption Community",
+          "content": "# SQLite Event Ingestion Disruption Community\n\nThis report examines a technical community centered around a critical incident involving SQLite write contention during the June load window, causing a 40-minute stall in event ingestion. The community includes key entities such as SQLite, the Writer Queue, June Load Window, Incident EVT-203, and Mitigation actions. The relationships between these entities highlight systemic failures in write operations, queue management, and incident response, with significant implications for system reliability and operational continuity. The incident underscores vulnerabilities in event ingestion processes and the necessity for robust mitigation strategies to prevent future disruptions.\n\n## Critical failure in SQLite write operations during June load window\n\nThe core issue in this community revolves around a **40-minute stall in event ingestion** caused by **write contention on the SQLite event log** during the June load window. This stall was a direct consequence of **SQLite's inability to handle high write volumes**, leading to a cascading failure in the system's ability to process events efficiently. The June load window, characterized by high data volumes, exacerbated the problem, as the system was not designed to manage such peak loads without bottlenecks [Data: Entities (19, 21); Relationships (25, 27, +more)]."
+        },
+        {
+          "id": "4",
+          "title": "SQLite Prototype Replacement and Event-Store Decision-Making Community",
+          "content": "# SQLite Prototype Replacement and Event-Store Decision-Making Community\n\nThis community revolves around the decision-making process that led to the replacement of the SQLite prototype with PostgreSQL for the event-store system. The entities EVT-201, EVT-202, and EVT-203 document the issues with the SQLite prototype, including performance problems and concurrent-write contention, which collectively influenced the final decision. The relationships between these entities highlight the iterative nature of the problem documentation and its impact on the technical architecture.\n\n## The central role of EVT-201 in the decision-making process\n\nEVT-201 serves as the foundational document in this community, representing the SQLite prototype for the event-store. It was superseded by the decision to adopt PostgreSQL, marking a pivotal shift in the technical infrastructure. The degree of 4 assigned to EVT-201 underscores its significance as a critical reference point for understanding the broader context of the replacement decision. The relationship between EVT-201 and the event-store is explicitly documented, emphasizing its role as the initial, flawed solution [Data: Entities (2); Relationships (2, +more)]."
+        }
+      ],
+      "relationships": [
+        {
+          "id": "36",
+          "source": "SQLITE",
+          "target": "POSTGRESQL",
+          "description": "PostgreSQL replaced SQLite in production for the event store",
+          "weight": "1.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "59",
+          "source": "EVENT STORE",
+          "target": "SQLITE",
+          "description": "Event Store initially used SQLite for its event log due to its simplicity and ease of backups",
+          "weight": "8.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "37",
+          "source": "M. OKAFOR",
+          "target": "SQLITE",
+          "description": "M. Okafor proposed SQLite for the event-store backend prototype due to its simplicity and ease of backup",
+          "weight": "9.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "63",
+          "source": "SQLITE",
+          "target": "ADR-007",
+          "description": "ADR-007 records the failure of SQLite under concurrent writes as the reason for the migration",
+          "weight": "7.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "10",
+          "source": "EVT-201",
+          "target": "SQLITE",
+          "description": "EVT-201 refers to the SQLite prototype for the event-store",
+          "weight": "1.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "18",
+          "source": "SQLITE",
+          "target": "BENCHMARK EVT-204",
+          "description": "SQLite was compared against PostgreSQL in benchmark evt-204, showing lower operational costs but lacking concurrency for write-heavy workloads",
+          "weight": "7.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "38",
+          "source": "J. LINDQVIST",
+          "target": "SQLITE",
+          "description": "J. Lindqvist raised concerns about concurrent writers in SQLite but agreed to try it for the prototype",
+          "weight": "8.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "1",
+          "source": "SQLITE",
+          "target": "EVENT-STORE",
+          "description": "SQLite was initially prototyped for the event-store but was replaced due to performance issues with concurrent-write contention",
+          "weight": "9.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "39",
+          "source": "EVENT-STORE BACKEND",
+          "target": "SQLITE",
+          "description": "SQLite was selected as the initial database solution for the event-store backend prototype",
+          "weight": "9.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "33",
+          "source": "SQLITE",
+          "target": "FACT-301",
+          "description": "SQLite was used in production for the event store as documented in fact-301",
+          "weight": "9.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "29",
+          "source": "FOLLOW-UP",
+          "target": "SQLITE",
+          "description": "Follow-up involves selecting a store that handles concurrent writes better than SQLite before the next service ships",
+          "weight": "8.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "40",
+          "source": "PROTOTYPE (EVT-201)",
+          "target": "SQLITE",
+          "description": "SQLite was chosen as the database solution for the prototype phase of the event-store backend",
+          "weight": "9.0",
+          "links": "9",
+          "in_context": true
+        },
+        {
+          "id": "60",
+          "source": "EVENT STORE",
+          "target": "POSTGRESQL",
+          "description": "Event Store migrated from SQLite to PostgreSQL in July 2024 to address performance issues with concurrent writes",
+          "weight": "9.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "64",
+          "source": "POSTGRESQL",
+          "target": "ADR-007",
+          "description": "ADR-007 documents the adoption of PostgreSQL as the replacement for SQLite",
+          "weight": "1.0",
+          "links": "4",
+          "in_context": true
+        },
+        {
+          "id": "61",
+          "source": "EVENT STORE",
+          "target": "ADR-007",
+          "description": "ADR-007 documents the architectural decision to migrate Event Store from SQLite to PostgreSQL",
+          "weight": "8.0",
+          "links": "4",
+          "in_context": true
+        },
+        {
+          "id": "62",
+          "source": "M. OKAFOR",
+          "target": "EVENT STORE",
+          "description": "M. Okafor noted the Event Store wiki page was outdated and the team had moved to PostgreSQL",
+          "weight": "7.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "8",
+          "source": "M. OKAFOR",
+          "target": "ADR-007",
+          "description": "M. Okafor was one of the deciders involved in the decision documented in ADR-007",
+          "weight": "8.0",
+          "links": "4",
+          "in_context": true
+        },
+        {
+          "id": "17",
+          "source": "POSTGRESQL",
+          "target": "BENCHMARK EVT-204",
+          "description": "PostgreSQL was tested as a candidate for an event store in benchmark evt-204, showing stable throughput and 11ms p99 write latency with 32 writers",
+          "weight": "9.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "0",
+          "source": "POSTGRESQL",
+          "target": "EVENT-STORE",
+          "description": "PostgreSQL was chosen as the target for the event-store due to its superior handling of concurrent-write contention, replacing the SQLite prototype",
+          "weight": "10.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "19",
+          "source": "BENCHMARK EVT-204",
+          "target": "EVENT STORE",
+          "description": "Benchmark evt-204 evaluated PostgreSQL as a candidate for an event store, focusing on write-heavy workloads",
+          "weight": "8.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "9",
+          "source": "J. LINDQVIST",
+          "target": "ADR-007",
+          "description": "J. Lindqvist was one of the deciders involved in the decision documented in ADR-007",
+          "weight": "8.0",
+          "links": "4",
+          "in_context": true
+        },
+        {
+          "id": "34",
+          "source": "POSTGRESQL",
+          "target": "FACT-302",
+          "description": "PostgreSQL is now used in production for the event store as documented in fact-302",
+          "weight": "9.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "41",
+          "source": "M. OKAFOR",
+          "target": "EVENT-STORE BACKEND",
+          "description": "M. Okafor proposed SQLite for the event-store backend prototype",
+          "weight": "8.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "2",
+          "source": "EVT-201",
+          "target": "EVENT-STORE",
+          "description": "EVT-201 (SQLite prototype) was superseded by the decision to use PostgreSQL for the event-store",
+          "weight": "8.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "42",
+          "source": "J. LINDQVIST",
+          "target": "EVENT-STORE BACKEND",
+          "description": "J. Lindqvist participated in the discussion about the event-store backend prototype",
+          "weight": "1.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "35",
+          "source": "FACT-301",
+          "target": "FACT-302",
+          "description": "Fact-302 supersedes fact-301, marking the transition from SQLite to PostgreSQL in production",
+          "weight": "10.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "45",
+          "source": "LOAD-TEST REVIEW",
+          "target": "SQLITE",
+          "description": "The session reviewed SQLite's performance in the prototype, noting throughput collapse past eight concurrent writers",
+          "weight": "8.0",
+          "links": "3",
+          "in_context": true
+        },
+        {
+          "id": "46",
+          "source": "M. OKAFOR",
+          "target": "LOAD-TEST REVIEW",
+          "description": "M. Okafor participated in the session discussing SQLite's performance in the prototype",
+          "weight": "5.0",
+          "links": "3",
+          "in_context": true
+        },
+        {
+          "id": "47",
+          "source": "J. LINDQVIST",
+          "target": "LOAD-TEST REVIEW",
+          "description": "J. Lindqvist participated in the session discussing SQLite's performance in the prototype",
+          "weight": "5.0",
+          "links": "3",
+          "in_context": true
+        },
+        {
+          "id": "6",
+          "source": "EVT-205",
+          "target": "POSTGRESQL",
+          "description": "EVT-205 (ADR-007) officially targeted PostgreSQL for the event-store work, superseding the SQLite prototype",
+          "weight": "10.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "7",
+          "source": "ADR-007",
+          "target": "EVT-205",
+          "description": "ADR-007 is the architectural decision record documenting the decision recorded in EVT-205",
+          "weight": "9.0",
+          "links": "2",
+          "in_context": true
+        },
+        {
+          "id": "25",
+          "source": "SQLITE",
+          "target": "EVENT INGESTION",
+          "description": "SQLite's write contention caused a stall in event ingestion during the June load window",
+          "weight": "9.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "21",
+          "source": "EXPERIMENT EVT-202",
+          "target": "SQLITE",
+          "description": "The experiment evt-202 specifically tested SQLite's performance under concurrent write contention, revealing significant performance degradation",
+          "weight": "9.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "23",
+          "source": "SQLITE",
+          "target": "PROTOTYPE EVENT LOG",
+          "description": "SQLite was tested on the prototype event log to assess its performance under concurrent write contention",
+          "weight": "7.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "43",
+          "source": "PROTOTYPE",
+          "target": "SQLITE",
+          "description": "The prototype uses SQLite as its database management system, and its performance under concurrent writers (throughput collapse past eight writers) is being scrutinized",
+          "weight": "9.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "14",
+          "source": "M. OKAFOR",
+          "target": "TEAM",
+          "description": "M. Okafor was a decision-maker for rejecting Redis",
+          "weight": "6.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "51",
+          "source": "REDIS",
+          "target": "EVENT STORE",
+          "description": "Redis is proposed to be used as a lookup cache in front of the event store to reduce read latency for hot keys",
+          "weight": "9.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "53",
+          "source": "J. LINQVIST",
+          "target": "EVENT STORE",
+          "description": "J. Lindqvist's proposal involves optimizing the event store by adding Redis",
+          "weight": "1.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "5",
+          "source": "EVT-204",
+          "target": "POSTGRESQL",
+          "description": "EVT-204 demonstrated PostgreSQL's ability to handle concurrent-write contention, making it the preferred choice",
+          "weight": "9.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "20",
+          "source": "A.NOVAK",
+          "target": "BENCHMARK EVT-204",
+          "description": "A.novak conducted benchmark evt-204, which compared PostgreSQL and SQLite for suitability in an event store",
+          "weight": "1.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "3",
+          "source": "EVT-202",
+          "target": "EVT-201",
+          "description": "EVT-202 documented the issue of concurrent-write contention in the SQLite prototype, contributing to its replacement",
+          "weight": "7.0",
+          "links": "1",
+          "in_context": true
+        },
+        {
+          "id": "4",
+          "source": "EVT-203",
+          "target": "EVT-201",
+          "description": "EVT-203 further detailed the performance problems of the SQLite prototype, influencing the decision to switch to PostgreSQL",
+          "weight": "7.0",
+          "links": "1",
+          "in_context": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "7",
+          "entity": "M. OKAFOR",
+          "object_id": "NONE",
+          "status": "TRUE",
+          "start_date": "2024-07-11T00:00:00",
+          "end_date": "2024-07-11T00:00:00",
+          "description": "M. Okafor was a decider in the PostgreSQL migration decision",
+          "in_context": true
+        },
+        {
+          "id": "42",
+          "entity": "M. OKAFOR",
+          "object_id": "NONE",
+          "status": "TRUE",
+          "start_date": "2024-03-04T00:00:00",
+          "end_date": "2024-03-04T00:00:00",
+          "description": "M. Okafor proposed SQLite as the database solution for the event log storage due to its simplicity (single-file, no operational burden, easy backup).",
+          "in_context": true
+        },
+        {
+          "id": "8",
+          "entity": "J. LINDQVIST",
+          "object_id": "NONE",
+          "status": "TRUE",
+          "start_date": "2024-07-11T00:00:00",
+          "end_date": "2024-07-11T00:00:00",
+          "description": "J. Lindqvist was a decider in the PostgreSQL migration decision",
+          "in_context": true
+        },
+        {
+          "id": "1",
+          "entity": "SQLITE",
+          "object_id": "NONE",
+          "status": "TRUE",
+          "start_date": "2024-07-11T00:00:00",
+          "end_date": "2024-07-11T00:00:00",
+          "description": "SQLite prototype demonstrated performance failure under load due to concurrent-write contention, leading to its de-selection for the event-store service",
+          "in_context": true
+        },
+        {
+          "id": "38",
+          "entity": "SQLITE",
+          "object_id": "NONE",
+          "status": "TRUE",
+          "start_date": "2024-03-04T00:00:00",
+          "end_date": "2024-07-22T00:00:00",
+          "description": "SQLite was used in production for the event store (fact-301) but was later deprecated and replaced by PostgreSQL, ceasing to serve traffic",
+          "in_context": true
+        },
+        {
+          "id": "3",
+          "entity": "EVT-201",
+          "object_id": "NONE",
+          "status": "TRUE",
+          "start_date": "2024-07-11T00:00:00",
+          "end_date": "2024-07-11T00:00:00",
+          "description": "SQLite prototype decision (evt-201) was superseded by PostgreSQL decision (evt-205) due to performance evidence",
+          "in_context": true
+        }
+      ],
+      "entities": [
+        {
+          "id": "1",
+          "entity": "EVENT-STORE",
+          "description": "Event-store is a system for storing and managing event data, which has been migrated from SQLite to PostgreSQL to address performance issues related to concurrent-write contention.",
+          "number of relationships": "3",
+          "in_context": true
+        },
+        {
+          "id": "31",
+          "entity": "EVENT-STORE BACKEND",
+          "description": "The event-store backend is a system under development to manage and log service events, with SQLite initially chosen as the database solution for the prototype phase.",
+          "number of relationships": "3",
+          "in_context": true
+        },
+        {
+          "id": "14",
+          "entity": "EVENT STORE",
+          "description": "Benchmark evt-204 evaluates PostgreSQL as a candidate for an event store, focusing on write-heavy workloads and concurrency performance.",
+          "number of relationships": "7",
+          "in_context": true
+        },
+        {
+          "id": "8",
+          "entity": "M. OKAFOR",
+          "description": "**M. Okafor** is a key technical contributor within the team, actively involved in critical infrastructure decisions and system optimizations. As a **decision-maker**, Okafor played a pivotal role in revisiting and ultimately rejecting the use of **Redis** for caching purposes, steering the team toward alternative solutions. Their influence extended to the **event-store migration**, where they were among the primary **deciders** advocating for a shift from the existing system to **PostgreSQL**, citing the need for a more robust and scalable backend. This decision followed observations in **September 2024** that the **Event Store wiki page** was outdated, reflecting the team\u2019s actual transition to PostgreSQL.\n\nOkafor\u2019s technical perspective also shaped the **prototype phase** of the event-store backend. They proposed **SQLite** as an initial solution due to its simplicity and ease of backup, despite reservations about handling concurrent writers. Their involvement persisted into the **load-testing phase**, where Okafor participated in **Session 019**, reviewing the prototype\u2019s performance under SQLite. This engagement underscored their hands-on approach to evaluating trade-offs and ensuring alignment with operational requirements.\n\nAcross these contributions, Okafor demonstrated a balance of **strategic decision-making** and **practical implementation**, driving the team toward solutions that prioritized scalability, maintainability, and clarity\u2014even when navigating the complexities of legacy systems and emerging alternatives.",
+          "number of relationships": "6",
+          "in_context": true
+        },
+        {
+          "id": "32",
+          "entity": "PROTOTYPE (EVT-201)",
+          "description": "Prototype phase of the event-store backend, where SQLite was selected as the initial database solution for storing service event logs.",
+          "number of relationships": "1",
+          "in_context": true
+        },
+        {
+          "id": "9",
+          "entity": "J. LINDQVIST",
+          "description": "**J. Lindqvist** is a key decision-maker within the team responsible for the migration of the event-store backend infrastructure. Their involvement spans critical phases of the project, particularly in evaluating and implementing database solutions.\n\nInitially, Lindqvist played a pivotal role in the decision to transition the event-store from SQLite to PostgreSQL, citing concerns about **concurrent writer performance** in SQLite as a major factor. Despite these reservations, they agreed to test SQLite during the **prototype phase** of the backend development, allowing for an initial assessment of its feasibility before committing to a permanent solution.\n\nLindqvist\u2019s technical engagement extended to **load-testing sessions**, specifically participating in **Session 019**, where they contributed to reviewing the prototype\u2019s SQLite performance under simulated workloads. Their involvement underscores a balanced approach\u2014acknowledging SQLite\u2019s limitations while remaining open to its potential in controlled, early-stage implementations. Ultimately, their contributions reflect a pragmatic stance, prioritizing data integrity and scalability in long-term infrastructure decisions.",
+          "number of relationships": "4",
+          "in_context": true
+        },
+        {
+          "id": "28",
+          "entity": "POSTGRESQL",
+          "description": "**PostgreSQL** is a widely adopted open-source relational database management system (RDBMS) that has gained prominence for its robustness, extensibility, and scalability. As of **July 2024**, **PostgreSQL** was implemented by the **Event Store** team to replace **SQLite** in its production environment. The migration was driven by performance limitations encountered with SQLite under high concurrent write loads, necessitating a more efficient and reliable database solution.\n\nThe transition to **PostgreSQL** marked a strategic upgrade for the Event Store, enabling it to handle increased workload demands with improved transactional consistency and concurrency support. This shift underscores **PostgreSQL**\u2019s reputation as a high-performance alternative for mission-critical applications requiring advanced relational capabilities. The database\u2019s adoption reflects its growing role in modern infrastructure, particularly where durability, scalability, and performance are paramount.",
+          "number of relationships": "8",
+          "in_context": true
+        },
+        {
+          "id": "15",
+          "entity": "BENCHMARK EVT-204",
+          "description": "Benchmark evt-204 conducted on 2024-07-02 by a.novak, comparing PostgreSQL 15 and SQLite under a write-heavy workload to determine suitability for an event store.",
+          "number of relationships": "4",
+          "in_context": true
+        },
+        {
+          "id": "7",
+          "entity": "ADR-007",
+          "description": "**Architectural Decision Record (ADR-007): Migration of the Event Store from SQLite to PostgreSQL**\n\nADR-007 is an architectural decision record (ADR) that formally documents the strategic migration of the **Event Store** database system from **SQLite** to **PostgreSQL**. This decision was made to address scalability, performance, and long-term maintainability challenges associated with SQLite, particularly as the system\u2019s data volume and transaction complexity grew.\n\nThe migration was finalized in **July 2024**, following a thorough evaluation of technical requirements, operational constraints, and future-proofing considerations. PostgreSQL was selected for its robust support for concurrent access, advanced querying capabilities, and enterprise-grade reliability\u2014key advantages over SQLite\u2019s single-file, in-memory limitations. The decision also aligned with broader architectural goals to standardize on a relational database for consistency across microservices and data-intensive workflows.\n\nWhile SQLite had initially been chosen for its simplicity and minimal overhead, its constraints became a bottleneck for the Event Store\u2019s evolving needs, including:\n- **Concurrency limitations** (SQLite\u2019s single-writer, multi-reader model).\n- **Lack of advanced transactional features** (e.g., row-level locking, MVCC).\n- **Scalability bottlenecks** under high write loads.\n- **Limited tooling and ecosystem** for monitoring, backups, and migrations.\n\nPostgreSQL\u2019s adoption resolves these issues while providing:\n- **Superior performance** for read-heavy and write-heavy workloads.\n- **Built-in high availability** (e.g., replication, point-in-time recovery).\n- **Extensibility** via custom data types, functions, and extensions.\n- **Stronger community and vendor support** for enterprise deployments.\n\nThe ADR-007 document serves as a reference for future developers, outlining the rationale, trade-offs, and implementation steps taken during the migration. It also emphasizes the importance of documenting architectural decisions to ensure transparency and reduce technical debt in subsequent iterations.",
+          "number of relationships": "6",
+          "in_context": true
+        },
+        {
+          "id": "0",
+          "entity": "SQLITE",
+          "description": "**SQLite** is an open-source, lightweight, and serverless database management system designed as a file-based solution. Initially prototyped for the Event Store\u2019s event log, SQLite was intended to provide a simple and efficient way to manage data storage. However, its performance under heavy concurrent write loads proved to be a significant limitation. The system suffered from **concurrent-write contention**, leading to scalability issues that ultimately necessitated its replacement by **PostgreSQL** in production environments where high concurrency was required.\n\nWhile SQLite remains a cost-effective option for single-container managed backups\u2014offering lower operational costs compared to PostgreSQL\u2014its lack of robust concurrency support makes it unsuitable for shared, write-heavy workloads. Despite its initial promise as a lightweight alternative, its architectural constraints have restricted its adoption in scenarios demanding high scalability and concurrent access. Today, SQLite is primarily valued for its simplicity and efficiency in low-concurrency environments rather than as a scalable database solution.",
+          "number of relationships": "17",
+          "in_context": true
+        },
+        {
+          "id": "2",
+          "entity": "EVT-201",
+          "description": "EVT-201 refers to the SQLite prototype for the event-store, which was superseded by the decision to use PostgreSQL.",
+          "number of relationships": "4",
+          "in_context": true
+        },
+        {
+          "id": "30",
+          "entity": "FACT-302",
+          "description": "Event marking the transition to PostgreSQL for the event store in production on 2024-07-22.",
+          "number of relationships": "2",
+          "in_context": true
+        },
+        {
+          "id": "29",
+          "entity": "FACT-301",
+          "description": "Event marking the use of SQLite in production for the event store from 2024-03-04 to 2024-07-22.",
+          "number of relationships": "2",
+          "in_context": true
+        },
+        {
+          "id": "23",
+          "entity": "FOLLOW-UP",
+          "description": "Follow-up refers to the planned actions to prevent future occurrences. In this incident, the follow-up involves selecting a store that handles concurrent writes before the next service ships.",
+          "number of relationships": "1",
+          "in_context": true
+        },
+        {
+          "id": "10",
+          "entity": "SESSION-040",
+          "description": "**SESSION-040** was a meeting or discussion session held on **August 5, 2024**, centered on the topic of **lookup latency optimization** within a technical or operational context. The primary focus of the session revolved around evaluating the feasibility of implementing a **lookup cache** to mitigate performance bottlenecks, particularly in systems where query response times were deemed unacceptable.\n\nDuring **SESSION-040**, a **proposal to introduce Redis as a caching solution** was presented. Redis, a widely used in-memory data store, was considered for its ability to reduce latency by storing frequently accessed data in a fast, low-latency layer. However, the proposal faced significant scrutiny due to **insufficient evidence** supporting its effectiveness in the specific use case under discussion. Concerns likely included potential trade-offs such as increased system complexity, maintenance overhead, or the risk of introducing new failure points if not properly managed.\n\nThe session was noted as a **previous meeting** where the Redis proposal was thoroughly examined, though no definitive decision was recorded in the provided context. The outcome implied that while the idea of using Redis as a cache was explored, its adoption was ultimately **rejected** without further implementation due to the lack of compelling justification or empirical data demonstrating its benefits in the given scenario. The discussion likely served as a learning opportunity to refine approaches for addressing lookup latency in future iterations or alternative strategies.",
+          "number of relationships": "4",
+          "in_context": true
+        },
+        {
+          "id": "6",
+          "entity": "EVT-205",
+          "description": "EVT-205 is the decision record (ADR-007) that officially targets PostgreSQL for the event-store work, superseding the SQLite prototype.",
+          "number of relationships": "2",
+          "in_context": true
+        },
+        {
+          "id": "18",
+          "entity": "PROTOTYPE EVENT LOG",
+          "description": "A database or storage system used as a testbed for evaluating SQLite's performance under concurrent write contention. It was subjected to write operations by 1, 4, 8, and 16 concurrent writers.",
+          "number of relationships": "2",
+          "in_context": true
+        },
+        {
+          "id": "35",
+          "entity": "J. LINQVIST",
+          "description": "J. Lindqvist is a participant in the session proposing the use of Redis as a lookup cache to reduce read latency for hot keys.",
+          "number of relationships": "3",
+          "in_context": true
+        },
+        {
+          "id": "11",
+          "entity": "REDIS",
+          "description": "Redis is a key-value data store and cache that was considered but ultimately rejected for use in this project",
+          "number of relationships": "3",
+          "in_context": true
+        },
+        {
+          "id": "19",
+          "entity": "EVENT INGESTION",
+          "description": "Event ingestion refers to the process of receiving and recording events in the system. In this incident, the process stalled for 40 minutes due to write contention on the SQLite event log.",
+          "number of relationships": "3",
+          "in_context": true
+        }
+      ],
+      "sources": [
+        {
+          "id": "0",
+          "text": "ARTIFACT: adr-007.md\nSOURCE_TYPE: decision-record\nACTOR: m.okafor, j.lindqvist\nDATE: 2024-07-11\n\n# ADR-007 \u2014 event-store target\n\ndate: 2024-07-11\nstatus: accepted\ndeciders: m.okafor, j.lindqvist\n\nDecision (evt-205): new event-store work should target PostgreSQL.\n\nContext: the SQLite prototype (evt-201) suffered concurrent-write\ncontention under load (evt-202, evt-203). The PostgreSQL candidate held\nflat throughput to 32 writers (evt-204).\n\nConsequences: the event-store service migrates to PostgreSQL; new\nservices copy the PostgreSQL setup, not the SQLite prototype. This\ndecision supersedes evt-201."
+        },
+        {
+          "id": "15",
+          "text": "ARTIFACT: session-014.md\nSOURCE_TYPE: session\nACTOR: m.okafor, j.lindqvist\nDATE: 2024-03-04\nTHREAD: session-014\n\n# Session 014 \u2014 event-store backend discussion\n\ndate: 2024-03-04\nparticipants: m.okafor, j.lindqvist\n\nWe need somewhere to keep the service event log. M. proposes SQLite:\nsingle file, no operations burden, easy to back up. J. worries about\nconcurrent writers but agrees to try it for the first prototype.\n\nAgreement: start with SQLite for the prototype (evt-201) and revisit if\nwrite contention shows up under load."
+        },
+        {
+          "id": "2",
+          "text": "ARTIFACT: benchmark-note.md\nSOURCE_TYPE: benchmark\nDATE: 2024-07-02\n\n# Benchmark evt-204 \u2014 PostgreSQL candidate for the event store\n\ndate: 2024-07-02\nowner: a.novak\n\nSame write workload against PostgreSQL 15: throughput holds flat to 32\nwriters, p99 write latency 11ms. Operational cost is higher than SQLite\n(single container, managed backups), but the concurrency behaviour is\ndecisive for a shared write-heavy service."
+        },
+        {
+          "id": "1",
+          "text": "ARTIFACT: adr-009.md\nSOURCE_TYPE: decision-record\nACTOR: m.okafor, a.novak\nDATE: 2024-08-26\n\n# ADR-009 \u2014 lookup cache decision\n\ndate: 2024-08-26\nstatus: accepted\ndeciders: m.okafor, a.novak\n\nDecision: the team will not introduce Redis. The working set fits in\nmemory (session-044), so a lookup cache buys nothing. Revisit only with\nmeasured read-latency evidence. The session-040 proposal is rejected."
+        },
+        {
+          "id": "16",
+          "text": "ARTIFACT: session-019.md\nSOURCE_TYPE: session\nACTOR: m.okafor, j.lindqvist, a.novak\nDATE: 2024-06-10\nTHREAD: session-019\n\n# Session 019 \u2014 load-test review\n\ndate: 2024-06-10\nparticipants: m.okafor, j.lindqvist, a.novak\n\nThe prototype slows down once writers run concurrently. A. shows the\ncontrolled benchmark: throughput collapses past eight writers while\nread latency stays flat. The team agrees the SQLite choice needs a\nproper experiment before any second service copies it."
+        },
+        {
+          "id": "19",
+          "text": "ARTIFACT: stale-summary.md\nSOURCE_TYPE: document\n\n# Event-store wiki page (last edited May 2024 \u2014 outdated)\n\nThe event store keeps the service event log in SQLite. The single-file\nlayout makes backups trivial and queries stay simple. New services\nshould copy the SQLite setup described here.\n\nNote pinned by m.okafor in September 2024: this page is stale. The team\nmoved the event store to PostgreSQL in July (see ADR-007) after the\nSQLite prototype failed under concurrent writes. Do not follow the\nSQLite instructions above."
+        },
+        {
+          "id": "14",
+          "text": "ARTIFACT: production-notes.md\nSOURCE_TYPE: database-export\n\n# Production state notes\n\n- 2024-03-04: SQLite runs in production for the event store (fact-301).\n- 2024-07-22: PostgreSQL runs in production for the event store\n  (fact-302), superseding fact-301. SQLite no longer serves traffic."
+        },
+        {
+          "id": "11",
+          "text": "ARTIFACT: incident-021.md\nSOURCE_TYPE: document\nDATE: 2024-06-25\n\n# Incident evt-203 \u2014 write stalls in the SQLite prototype\n\ndate: 2024-06-25\nseverity: high\n\nDuring the June load window, event ingestion stalled for 40 minutes.\nRoot cause: write contention on the SQLite event log under concurrent\nwriters; the writer queue backed up and ingestion timed out. Mitigation:\ndrain the queue and throttle writers. Follow-up: select a store that\nhandles concurrent writes before the next service ships."
+        },
+        {
+          "id": "17",
+          "text": "ARTIFACT: session-040.md\nSOURCE_TYPE: session\nACTOR: j.lindqvist, a.novak\nDATE: 2024-08-05\nTHREAD: session-040\n\n# Session 040 \u2014 lookup latency\n\ndate: 2024-08-05\nparticipants: j.lindqvist, a.novak\n\nJ. proposes adding Redis as a lookup cache in front of the event store\nto cut read latency for hot keys. No measurements yet; A. asks for\nevidence that reads are actually the bottleneck before adding a new\nmoving part."
+        },
+        {
+          "id": "18",
+          "text": "ARTIFACT: session-044.md\nSOURCE_TYPE: session\nACTOR: a.novak, m.okafor\nDATE: 2024-08-19\nTHREAD: session-044\n\n# Session 044 \u2014 working-set measurement\n\ndate: 2024-08-19\nparticipants: a.novak, m.okafor\n\nA. measured the hot working set: it fits comfortably in application\nmemory. The Redis proposal from session-040 would add operations cost\nwithout a demonstrated need. M. agrees: no cache until reads prove slow."
+        },
+        {
+          "id": "10",
+          "text": "ARTIFACT: experiment-contention.md\nSOURCE_TYPE: experiment\nDATE: 2024-06-18\n\n# Experiment evt-202 \u2014 SQLite contention under concurrent writes\n\ndate: 2024-06-18\nowner: a.novak\n\nMethod: 1, 4, 8, 16 concurrent writers against the prototype event log.\nResult: write throughput falls 62% at 8 writers and 84% at 16 writers;\nmedian write latency rises from 3ms to 210ms. Reads unaffected.\nConclusion: concurrent-write contention makes SQLite unsuitable for the\nshared event-store workload."
+        }
+      ]
+    },
+    "source_artifacts": [
+      "adr-007.md",
+      "adr-009.md",
+      "benchmark-note.md",
+      "experiment-contention.md",
+      "incident-021.md",
+      "production-notes.md",
+      "session-014.md",
+      "session-019.md",
+      "session-040.md",
+      "session-044.md",
+      "stale-summary.md"
+    ],
+    "llm_calls": null
+  },
+  "linked_entities": [],
+  "implicated_sources": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "incident-021.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md",
+    "stale-summary.md"
+  ],
+  "observations": [
+    {
+      "metric": "source_recall",
+      "value": 1.0,
+      "failure_class": null,
+      "evidence": [
+        "hit:adr-007.md"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "source_precision",
+      "value": 0.16666666666666666,
+      "failure_class": "CONTEXT_DISTRACTION",
+      "evidence": [
+        "relevant:adr-007.md",
+        "irrelevant:stale-summary.md",
+        "irrelevant:notification-service.md",
+        "irrelevant:benchmark-note.md",
+        "irrelevant:production-notes.md",
+        "irrelevant:session-014.md"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "abstention_correctness",
+      "value": true,
+      "failure_class": null,
+      "evidence": [
+        "answered"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "decision_exactness",
+      "value": true,
+      "failure_class": null,
+      "evidence": [
+        "matched:PostgreSQL"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "supersession_correctness",
+      "value": true,
+      "failure_class": null,
+      "evidence": [
+        "no-superseded-use"
+      ],
+      "grader": "mechanical"
+    },
+    {
+      "metric": "unsupported_source_rate",
+      "value": 0.0,
+      "failure_class": null,
+      "evidence": [
+        "all-cited-known"
+      ],
+      "grader": "mechanical"
+    }
+  ],
+  "final_context": "[source:stale-summary.md chunk:8fb3609bdae263d7]\n# Event-store wiki page (last edited May 2024 \u2014 outdated)\n\nThe event store keeps the service event log in SQLite. The single-file\nlayout makes backups trivial and queries stay simple. New services\nshould copy the SQLite setup described here.\n\nNote pinned by m.okafor in September 2024: this page is stale. The team\nmoved the event store to PostgreSQL in July (see ADR-007) after the\nSQLite prototype failed under concurrent writes. Do not follow the\nSQLite instructions above.\n\n---\n\n[source:adr-007.md chunk:cca8e7c8b1de90a7]\n# ADR-007 \u2014 event-store target\n\ndate: 2024-07-11\nstatus: accepted\ndeciders: m.okafor, j.lindqvist\n\nDecision (evt-205): new event-store work should target PostgreSQL.\n\nContext: the SQLite prototype (evt-201) suffered concurrent-write\ncontention under load (evt-202, evt-203). The PostgreSQL candidate held\nflat throughput to 32 writers (evt-204).\n\nConsequences: the event-store service migrates to PostgreSQL; new\nservices copy the PostgreSQL setup, not the SQLite prototype. This\ndecision supersedes evt-201.\n\n---\n\n[source:notification-service.md chunk:c3ded28c12b96585]\n# Notification service runbook (unrelated distractor)\n\nThe notification service stores queued messages in its own embedded\ndatabase file. Event delivery is at-least-once; duplicate deliveries\nare deduplicated by message id. This service shares no storage with\nthe event-store service and follows a different backup schedule.\n\n---\n\n[source:benchmark-note.md chunk:e8560e5286fd2027]\n# Benchmark evt-204 \u2014 PostgreSQL candidate for the event store\n\ndate: 2024-07-02\nowner: a.novak\n\nSame write workload against PostgreSQL 15: throughput holds flat to 32\nwriters, p99 write latency 11ms. Operational cost is higher than SQLite\n(single container, managed backups), but the concurrency behaviour is\ndecisive for a shared write-heavy service.\n\n---\n\n[source:production-notes.md chunk:28dbcbb43c40d63a]\n# Production state notes\n\n- 2024-03-04: SQLite runs in production for the event store (fact-301).\n- 2024-07-22: PostgreSQL runs in production for the event store\n  (fact-302), superseding fact-301. SQLite no longer serves traffic.\n\n---\n\n[source:session-014.md chunk:5c5e18454baa6b2e]\n# Session 014 \u2014 event-store backend discussion\n\ndate: 2024-03-04\nparticipants: m.okafor, j.lindqvist\n\nWe need somewhere to keep the service event log. M. proposes SQLite:\nsingle file, no operations burden, easy to back up. J. worries about\nconcurrent writers but agrees to try it for the first prototype.\n\nAgreement: start with SQLite for the prototype (evt-201) and revisit if\nwrite contention shows up under load.\n\n---\n\n[derived:local; fallible synthesis, not a canonical source]\n### Event Store Recommendation for New Services\n\nThe decision regarding the event store backend for new services has been clearly documented in **ADR-007** (record id: 0), which supersedes the earlier SQLite prototype (evt-201). Here\u2019s a summary of the key points and supporting evidence:\n\n#### **Decision: PostgreSQL is the Target for New Event Stores**\nThe team has decided to migrate the event store to **PostgreSQL** for new services. This decision was driven by performance concerns with the SQLite prototype under concurrent write loads. Specifically, the SQLite setup demonstrated severe write contention, leading to degraded performance and operational issues [Data: **experiment-contention** (10), **incident-021** (11), **session-019** (16)].\n\n#### **Key Evidence Supporting PostgreSQL**\n1. **Concurrent Write Performance**:\n   - The SQLite prototype suffered from **write contention** under load, with throughput collapsing past eight writers and median write latency spiking to **210ms** (compared to 3ms under single-writer conditions) [Data: **experiment-contention** (10)].\n   - A **high-severity incident** (evt-203) occurred in June 2024, where event ingestion stalled for **40 minutes** due to write contention, requiring manual mitigation [Data: **incident-021** (11)].\n\n2. **PostgreSQL Benchmark Results**:\n   - PostgreSQL demonstrated **flat throughput** up to **32 concurrent writers**, with a **p99 write latency of 11ms**, making it suitable for shared write-heavy workloads [Data: **benchmark-note** (2)].\n   - While PostgreSQL has a higher operational cost than SQLite (e.g., managed backups), its **concurrency behavior was decisive** for the shared event-store workload [Data: **benchmark-note** (2)].\n\n3. **Production Migration**:\n   - The team **migrated the event store from SQLite to PostgreSQL in production on July 22, 2024** [Data: **production-notes** (14)].\n   - The SQLite prototype is no longer in use",
+  "status": "complete",
+  "condition": "graph-local",
+  "family": "decision"
+}

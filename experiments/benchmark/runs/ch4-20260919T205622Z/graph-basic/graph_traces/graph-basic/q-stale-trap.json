@@ -1,0 +1,14 @@
+{
+  "graph_answer": "### **Recommendation: Do Not Use SQLite for the Event Store**\nThe team has already migrated the event store from SQLite to **PostgreSQL** due to severe performance issues under concurrent write loads. The SQLite prototype failed under production conditions, causing critical incidents and stalling event ingestion. Below is a detailed summary of the decision-making process and technical findings that justify this change.\n\n---\n\n### **Key Issues with SQLite in Production**\n1. **Concurrent Write Contention**\n   - Under load, SQLite\u2019s single-file architecture caused **write throughput to collapse by 62% at 8 writers and 84% at 16 writers** [Data: Sources (10, 16, +more)].\n   - **Write latency spiked from 3ms to 210ms** under concurrent writes, while read performance remained unaffected [Data: Sources (10)].\n   - This led to a **40-minute stall in event ingestion** during a June load window, requiring manual mitigation (queue draining and writer throttling) [Data: Sources (11)].\n\n2. **Production Incident and Fallout**\n   - The SQLite-based event store **failed catastrophically** during peak traffic, forcing the team to **abandon the SQLite setup entirely** [Data: Sources (14, 19, +more)].\n   - The team explicitly noted that **SQLite is unsuitable for shared write-heavy workloads** [Data: Sources (10)].\n\n---\n\n### **Why PostgreSQL Was Chosen Instead**\n1. **Scalability Under Load**\n   - Benchmarks showed that **PostgreSQL maintained flat throughput up to 32 concurrent writers**, with a **p99 write latency of 11ms** [Data: Sources (2)].\n   - While PostgreSQL has higher operational costs (e.g., managed backups), its **concurrency behavior was decisive** for a shared write-heavy service [Data: Sources (2)].\n\n2. **Official Decision Record**\n   - The team formally **superseded the SQLite prototype (evt-201)** with a decision (ADR-007) to migrate to PostgreSQL [Data: Sources (0, 14, +more)].\n   - The wiki page was marked **stale** in September 2024, explicitly warning against following the SQLite instructions [Data: Sources (19)].\n\n---\n\n### **Actionable Recommendation**\n- **Do not use SQLite** for the new service\u2019s event log. Instead, **adopt PostgreSQL** to avoid the same performance and reliability issues.\n- Follow the **PostgreSQL-based setup** documented in the updated event-store documentation (post-ADR-007).\n- If caching is needed for read-heavy operations, consider **Redis as a lookup layer** (though evidence-based measurements are still pending) [Data: Sources (17)].\n\n---\n**Key References:**\n[Data: Sources (0, 2, 10, 11, 14, 19, +more)]",
+  "graph_latency_ms": 35903.8,
+  "implicated_sources": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "stale-summary.md"
+  ],
+  "linked_entities": [
+    "SQLITE"
+  ],
+  "mode": "basic",
+  "task_id": "q-stale-trap"
+}

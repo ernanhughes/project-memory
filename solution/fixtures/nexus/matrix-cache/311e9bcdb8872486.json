@@ -1,0 +1,49 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md"
+  ],
+  "answer": "SQLite",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 4.081499995663762,
+  "cited_ids": [
+    "session-014.md",
+    "session-019.md"
+  ],
+  "context_tokens": 678,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 8,
+  "latency_ms": 39306.232500006445,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "historical_state_accuracy": 1.0,
+    "source_precision": 0.14285714285714285,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=8 stopped=hop-budget",
+  "query_id": "q4-historical-march",
+  "reader_latency_ms": 39301.82410002453,
+  "retrieved_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md",
+    "production-notes.md",
+    "benchmark-note.md",
+    "session-040.md",
+    "session-044.md"
+  ]
+}

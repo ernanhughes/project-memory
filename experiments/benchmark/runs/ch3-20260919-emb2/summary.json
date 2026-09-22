@@ -1,0 +1,150 @@
+{
+  "chunking_comparison": {
+    "fixed": {
+      "dense": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "hybrid": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      }
+    },
+    "section": {
+      "dense": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "hybrid": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      }
+    },
+    "sentence": {
+      "dense": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "hybrid": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      }
+    }
+  },
+  "code_commit": "b42c065",
+  "corpus_version": "ch3-fixture-v0.1",
+  "embedding_comparison": {
+    "ollama/all-minilm:l6-v2": {
+      "chunks": 14,
+      "dense": {
+        "source_precision@8": 0.175,
+        "source_recall@8": 0.9333333333333332
+      },
+      "dimension": 384,
+      "embedding_version": "ollama:all-minilm:l6-v2",
+      "healthy": true,
+      "hybrid": {
+        "source_precision@8": 0.175,
+        "source_recall@8": 0.9333333333333332
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      },
+      "seconds": 88.1
+    },
+    "ollama/bge-m3": {
+      "chunks": 14,
+      "dense": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "dimension": 1024,
+      "embedding_version": "ollama:bge-m3",
+      "healthy": true,
+      "hybrid": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.8833333333333332
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      },
+      "seconds": 87.7
+    },
+    "ollama/mxbai-embed-large": {
+      "chunks": 14,
+      "dense": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.9
+      },
+      "dimension": 1024,
+      "embedding_version": "ollama:mxbai-embed-large",
+      "healthy": true,
+      "hybrid": {
+        "source_precision@8": 0.1625,
+        "source_recall@8": 0.9
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      },
+      "seconds": 89.5
+    },
+    "ollama/nomic-embed-text": {
+      "chunks": 14,
+      "dense": {
+        "source_precision@8": 0.175,
+        "source_recall@8": 0.9333333333333332
+      },
+      "dimension": 768,
+      "embedding_version": "ollama:nomic-embed-text",
+      "healthy": true,
+      "hybrid": {
+        "source_precision@8": 0.175,
+        "source_recall@8": 0.9333333333333332
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      },
+      "seconds": 82.0
+    },
+    "ollama/qwen3-embedding:8b": {
+      "error": "ProgramLimitExceeded: column cannot have more than 2000 dimensions for hnsw index"
+    },
+    "sentence-transformers/sentence-transformers/all-MiniLM-L6-v2": {
+      "chunks": 14,
+      "dense": {
+        "source_precision@8": 0.175,
+        "source_recall@8": 0.9333333333333332
+      },
+      "dimension": 384,
+      "embedding_version": "sentence-transformers:sentence-transformers/all-MiniLM-L6-v2",
+      "healthy": true,
+      "hybrid": {
+        "source_precision@8": 0.175,
+        "source_recall@8": 0.9333333333333332
+      },
+      "lexical": {
+        "source_precision@8": 0.4,
+        "source_recall@8": 0.2833333333333333
+      },
+      "seconds": 7.3
+    }
+  },
+  "run_id": "ch3-20260919-emb2",
+  "task_set_version": "ch3-tasks-v0.1"
+}

@@ -1,0 +1,7 @@
+{
+  "expectation_schema_version": "open-loop-expectation-v0.1",
+  "resolver_version": "open-loop-resolver-v0.1",
+  "fixture_version": "e9-fixture-v0.1",
+  "semantic_overlap_threshold": 0.35,
+  "reverify_every_cycles": 3
+}

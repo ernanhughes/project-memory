@@ -1,0 +1,292 @@
+{
+ "task_id": "irrelevant",
+ "condition": "C2",
+ "bcode": "B2",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "mb-ch09-handoff",
+  "mb-ch10-priority-refusal",
+  "mb-loop-ch10-experiment",
+  "mb-ch10-prose-opening",
+  "mb-stale-ch10-plan",
+  "mb-arch-spine",
+  "mb-ch11-opening",
+  "mb-ch10-experiment-pending",
+  "mb-loop-ch11-recap",
+  "mb-session-intent-3",
+  "mb-session-pivot",
+  "mb-ch10-concepts",
+  "mb-ch10-refs",
+  "mb-ch10-prose-schema",
+  "mb-refutes-ch9-scope",
+  "mb-echo-baseline-4",
+  "mb-method-earn",
+  "mb-impl-zeromq",
+  "mb-contract-q6",
+  "mb-stale-ch06-title",
+  "mb-echo-baseline-3"
+ ],
+ "derived_consulted": [
+  "frozen:B2:e6fa5a39761addbc"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "mb-ch09-handoff",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-ch10-experiment",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-prose-opening",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-arch-spine",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch11-opening",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-experiment-pending",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-loop-ch11-recap",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-intent-3",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-pivot",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-concepts",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-refs",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-prose-schema",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-refutes-ch9-scope",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-4",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-method-earn",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-impl-zeromq",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-contract-q6",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-ch06-title",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-3",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "mb-ch09-handoff",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-ch10-experiment",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-prose-opening",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-arch-spine",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch11-opening",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-experiment-pending",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-loop-ch11-recap",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-intent-3",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-pivot",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-concepts",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-refs",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-prose-schema",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-refutes-ch9-scope",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-4",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-method-earn",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-impl-zeromq",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-contract-q6",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-ch06-title",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-3",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "mb-ch09-handoff",
+  "mb-ch10-priority-refusal",
+  "mb-loop-ch10-experiment",
+  "mb-ch10-prose-opening",
+  "mb-stale-ch10-plan",
+  "mb-arch-spine",
+  "mb-ch11-opening",
+  "mb-ch10-experiment-pending",
+  "mb-loop-ch11-recap",
+  "mb-session-intent-3",
+  "mb-session-pivot",
+  "mb-ch10-concepts",
+  "mb-ch10-refs",
+  "mb-ch10-prose-schema",
+  "mb-refutes-ch9-scope",
+  "mb-echo-baseline-4",
+  "mb-method-earn",
+  "mb-impl-zeromq",
+  "mb-contract-q6",
+  "mb-stale-ch06-title",
+  "mb-echo-baseline-3"
+ ],
+ "rejected": [],
+ "context_tokens": 2018,
+ "context_hash": "e6fa5a39761addbc",
+ "reader_output": {
+  "task_score": 0.0,
+  "frozen": true
+ },
+ "behavioural_score": 0.0,
+ "harm": false,
+ "fallback_events": [
+  {
+   "event": "assembly failure",
+   "action": "bounded simple retrieval fallback engaged",
+   "detail": "context 2018 exceeds budget 1500; frozen trace preserved"
+  }
+ ],
+ "conditional_invocations": []
+}

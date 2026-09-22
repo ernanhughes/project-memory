@@ -1,0 +1,51 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "benchmark-note.md",
+    "adr-007.md",
+    "production-notes.md",
+    "stale-summary.md",
+    "commits.log",
+    "notification-service.md",
+    "session-040.md",
+    "session-014.md"
+  ],
+  "answer": "The PostgreSQL candidate held flat throughput to 32 writers and had better concurrency behavior, which was decisive for a shared write-heavy service.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 5830.420099955518,
+  "cited_ids": [
+    "benchmark-note.md",
+    "adr-007.md"
+  ],
+  "context_tokens": 741,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 13331.406700017396,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.125,
+    "source_recall": 0.3333333333333333,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=2659",
+  "query_id": "q3-why-postgres",
+  "reader_latency_ms": 7500.727600010578,
+  "retrieved_ids": [
+    "benchmark-note.md",
+    "adr-007.md",
+    "production-notes.md",
+    "stale-summary.md",
+    "commits.log",
+    "notification-service.md",
+    "session-040.md",
+    "session-014.md"
+  ]
+}

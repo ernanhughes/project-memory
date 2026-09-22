@@ -1,0 +1,1737 @@
+{
+ "controlled": {
+  "C0": {
+   "bcode": "B0",
+   "n_tasks": 7,
+   "task_success_macro": 0.2262,
+   "mean_tokens": 1.0,
+   "harm_tasks": 0
+  },
+  "C1": {
+   "bcode": "B1",
+   "n_tasks": 7,
+   "task_success_macro": 0.0476,
+   "mean_tokens": 6242.0,
+   "harm_tasks": 1
+  },
+  "C1P": {
+   "bcode": "B1P",
+   "n_tasks": 7,
+   "task_success_macro": 0.1786,
+   "mean_tokens": 5495.0,
+   "harm_tasks": 0
+  },
+  "C2": {
+   "bcode": "B2",
+   "n_tasks": 7,
+   "task_success_macro": 0.3929,
+   "mean_tokens": 2028.7,
+   "harm_tasks": 0
+  },
+  "C3": {
+   "bcode": "B3",
+   "n_tasks": 7,
+   "task_success_macro": 0.3571,
+   "mean_tokens": 1909.3,
+   "harm_tasks": 0
+  },
+  "C4": {
+   "bcode": "B4",
+   "n_tasks": 7,
+   "task_success_macro": 0.4881,
+   "mean_tokens": 1179.5,
+   "harm_tasks": 0
+  },
+  "CO": {
+   "bcode": "BO",
+   "n_tasks": 7,
+   "task_success_macro": 0.5238,
+   "mean_tokens": 1328.6,
+   "harm_tasks": 0
+  },
+  "BA": {
+   "bcode": "BA",
+   "n_tasks": 6,
+   "task_success_macro": 0.25,
+   "mean_tokens": 1364.8,
+   "harm_tasks": 1
+  },
+  "BR": {
+   "bcode": "BR",
+   "n_tasks": 6,
+   "task_success_macro": 0.7778,
+   "mean_tokens": 1480.2,
+   "harm_tasks": 0
+  },
+  "BT": {
+   "bcode": "BT",
+   "n_tasks": 21,
+   "task_success_macro": 0.1667,
+   "mean_tokens": 1371.5714,
+   "harm_tasks": 3
+  },
+  "BW": {
+   "bcode": "BW",
+   "n_tasks": 4,
+   "task_success_macro": 0.0417,
+   "mean_tokens": 119.5,
+   "harm_tasks": 2
+  },
+  "BS": {
+   "bcode": "BS",
+   "n_tasks": 2,
+   "task_success_macro": 0.1666,
+   "mean_tokens": 1014.5,
+   "harm_tasks": 0
+  }
+ },
+ "reversals": [
+  {
+   "task_id": "cite-rule",
+   "C4_minus_C0": 0.0,
+   "BR_minus_BA": 1.0
+  },
+  {
+   "task_id": "corpus-cleanup",
+   "C4_minus_C0": 0.8333,
+   "BR_minus_BA": 0.8333
+  },
+  {
+   "task_id": "credit-rule",
+   "C4_minus_C0": 0.0,
+   "BR_minus_BA": 0.0
+  },
+  {
+   "task_id": "fix-store",
+   "C4_minus_C0": 0.6667,
+   "BR_minus_BA": 0.6667
+  },
+  {
+   "task_id": "irrelevant",
+   "C4_minus_C0": null,
+   "BR_minus_BA": null
+  },
+  {
+   "task_id": "release-blockers",
+   "C4_minus_C0": 0.25,
+   "BR_minus_BA": 1.0
+  },
+  {
+   "task_id": "review-arch",
+   "C4_minus_C0": 0.25,
+   "BR_minus_BA": 0.0
+  },
+  {
+   "task_id": "review-prose",
+   "C4_minus_C0": 0.0,
+   "BR_minus_BA": null
+  },
+  {
+   "task_id": "ship-ch10",
+   "C4_minus_C0": 0.6667,
+   "BR_minus_BA": 0.5
+  }
+ ],
+ "real_project": {
+  "time_lock_commit": "4797720",
+  "standpoint": "2026-09-20T12:00:00Z",
+  "reader": "llama3.1:8b@t0",
+  "n_tasks": 5,
+  "mean_M0": 0.35,
+  "mean_Mm": 0.95,
+  "rows": [
+   {
+    "task_id": "rt-frame",
+    "M0": 0.5,
+    "Mm": 1.0,
+    "delta": 0.5
+   },
+   {
+    "task_id": "rt-gap",
+    "M0": 0.0,
+    "Mm": 1.0,
+    "delta": 1.0
+   },
+   {
+    "task_id": "rt-metric",
+    "M0": 0.0,
+    "Mm": 1.0,
+    "delta": 1.0
+   },
+   {
+    "task_id": "rt-promote",
+    "M0": 1.0,
+    "Mm": 1.0,
+    "delta": 0.0
+   },
+   {
+    "task_id": "rt-runs",
+    "M0": 0.25,
+    "Mm": 0.75,
+    "delta": 0.5
+   }
+  ]
+ },
+ "token_control": {
+  "ch12-token-control-20260921T002019Z-llama": {
+   "present": true,
+   "summary": {
+    "mean_by_condition": {
+     "B0": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.0833
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 1.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.1111
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.2857
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 0.0
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.2262
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 1,
+       "micro": 0.1111
+      },
+      "mean_tokens": 1.0
+     },
+     "BA": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.25
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 1.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.3333
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.1429
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 0.0
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.2143
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 3,
+       "micro": 0.3333
+      },
+      "mean_tokens": 1179.3
+     },
+     "BR": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.5833
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 1.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.0
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.5714
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 1.0
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.6429
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 0,
+       "micro": 0.0
+      },
+      "mean_tokens": 1296.9
+     },
+     "BT": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.25
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 0.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.3333
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.1429
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 0.0
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.1667
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 3,
+       "micro": 0.3333
+      },
+      "mean_tokens": 1371.6
+     }
+    },
+    "matched_means": {
+     "B0": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     },
+     "BA": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     },
+     "BR": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     },
+     "BT": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     }
+    },
+    "influence": {
+     "rows": [
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.5,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.5,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.5,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.3333,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.3333,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.3333,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.5,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.5,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.5,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.3333,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.3333,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.3333,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.6667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.6667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.6667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.5,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.5,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.5,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.8333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.8333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.8333,
+       "cell": "memory-failed-to-repair"
+      }
+     ],
+     "counts": {
+      "memory-not-shown-necessary": 0,
+      "beneficial-memory-contribution": 15,
+      "harmful-memory-contribution": 0,
+      "memory-failed-to-repair": 48
+     }
+    },
+    "directional": {
+     "pairs": 63,
+     "behavior_changed": 63,
+     "score_improved": 27,
+     "score_degraded": 9,
+     "score_unchanged": 27
+    },
+    "deltas": {
+     "fix-store|BA": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "ship-ch10|BA": {
+      "task_delta": 0.1667,
+      "repeats": 3
+     },
+     "release-blockers|BA": {
+      "task_delta": -0.5,
+      "repeats": 3
+     },
+     "credit-rule|BA": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "cite-rule|BA": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "review-arch|BA": {
+      "task_delta": 0.25,
+      "repeats": 3
+     },
+     "corpus-cleanup|BA": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "fix-store|BT": {
+      "task_delta": -0.3333,
+      "repeats": 3
+     },
+     "ship-ch10|BT": {
+      "task_delta": 0.1667,
+      "repeats": 3
+     },
+     "release-blockers|BT": {
+      "task_delta": -0.5,
+      "repeats": 3
+     },
+     "credit-rule|BT": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "cite-rule|BT": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "review-arch|BT": {
+      "task_delta": 0.25,
+      "repeats": 3
+     },
+     "corpus-cleanup|BT": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "fix-store|BR": {
+      "task_delta": 0.6667,
+      "repeats": 3
+     },
+     "ship-ch10|BR": {
+      "task_delta": 0.6667,
+      "repeats": 3
+     },
+     "release-blockers|BR": {
+      "task_delta": 0.5,
+      "repeats": 3
+     },
+     "credit-rule|BR": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "cite-rule|BR": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "review-arch|BR": {
+      "task_delta": 0.25,
+      "repeats": 3
+     },
+     "corpus-cleanup|BR": {
+      "task_delta": 0.8333,
+      "repeats": 3
+     }
+    }
+   }
+  },
+  "ch12-token-control-20260921T003600Z-muse": {
+   "present": true,
+   "summary": {
+    "mean_by_condition": {
+     "B0": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.2222
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 1.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.0
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.2381
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 0.3333
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.2619
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 0,
+       "micro": 0.0
+      },
+      "mean_tokens": 1.0
+     },
+     "BA": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.4444
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 1.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.0
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.5714
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 0.3889
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.5476
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 0,
+       "micro": 0.0
+      },
+      "mean_tokens": 1179.3
+     },
+     "BR": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.8056
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 1.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.0
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.8095
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 1.0
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.8532
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 0,
+       "micro": 0.0
+      },
+      "mean_tokens": 1296.9
+     },
+     "BT": {
+      "n": 21,
+      "dimensions": {
+       "constraint_adherence": {
+        "applicable": 18,
+        "macro": 0.4167
+       },
+       "failure_avoidance": {
+        "applicable": 3,
+        "macro": 1.0
+       },
+       "harmful_actions": {
+        "applicable": 9,
+        "macro": 0.0
+       },
+       "goal_adherence": {
+        "applicable": 21,
+        "macro": 0.5714
+       },
+       "open_work_continuation": {
+        "applicable": 9,
+        "macro": 0.5
+       }
+      },
+      "task_success": {
+       "applicable": 21,
+       "macro": 0.5516
+      },
+      "harmful": {
+       "applicable": 9,
+       "harmful_tasks": 0,
+       "micro": 0.0
+      },
+      "mean_tokens": 1371.6
+     }
+    },
+    "matched_means": {
+     "B0": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     },
+     "BA": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     },
+     "BR": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     },
+     "BT": {
+      "tasks": [],
+      "n_tasks": 0,
+      "task_success_macro": null,
+      "mean_tokens": null
+     }
+    },
+    "influence": {
+     "rows": [
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.5,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 1.0,
+       "treated_score": 0.8333,
+       "cell": "harmful-memory-contribution"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 1.0,
+       "treated_score": 0.0,
+       "cell": "harmful-memory-contribution"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BA",
+       "base_score": 1.0,
+       "treated_score": 0.8333,
+       "cell": "harmful-memory-contribution"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.3333,
+       "treated_score": 0.3333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.1667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 1.0,
+       "treated_score": 0.8333,
+       "cell": "harmful-memory-contribution"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 1.0,
+       "treated_score": 0.8333,
+       "cell": "harmful-memory-contribution"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BT",
+       "base_score": 1.0,
+       "treated_score": 0.8333,
+       "cell": "harmful-memory-contribution"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.3333,
+       "treated_score": 0.8333,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.3333,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "fix-store",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.3333,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.6667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.6667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "ship-ch10",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.6667,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "release-blockers",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "credit-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.75,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.0,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "cite-rule",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 1.0,
+       "cell": "beneficial-memory-contribution"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "review-arch",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 0.0,
+       "treated_score": 0.75,
+       "cell": "memory-failed-to-repair"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 1.0,
+       "treated_score": 1.0,
+       "cell": "memory-not-shown-necessary"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 1.0,
+       "treated_score": 1.0,
+       "cell": "memory-not-shown-necessary"
+      },
+      {
+       "task": "corpus-cleanup",
+       "base": "B0",
+       "treated": "BR",
+       "base_score": 1.0,
+       "treated_score": 0.8333,
+       "cell": "harmful-memory-contribution"
+      }
+     ],
+     "counts": {
+      "memory-not-shown-necessary": 2,
+      "beneficial-memory-contribution": 19,
+      "harmful-memory-contribution": 7,
+      "memory-failed-to-repair": 35
+     }
+    },
+    "directional": {
+     "pairs": 63,
+     "behavior_changed": 63,
+     "score_improved": 40,
+     "score_degraded": 7,
+     "score_unchanged": 16
+    },
+    "deltas": {
+     "fix-store|BA": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "ship-ch10|BA": {
+      "task_delta": 0.1667,
+      "repeats": 3
+     },
+     "release-blockers|BA": {
+      "task_delta": 0.75,
+      "repeats": 3
+     },
+     "credit-rule|BA": {
+      "task_delta": 0.25,
+      "repeats": 3
+     },
+     "cite-rule|BA": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "review-arch|BA": {
+      "task_delta": 1.0,
+      "repeats": 3
+     },
+     "corpus-cleanup|BA": {
+      "task_delta": -0.1667,
+      "repeats": 3
+     },
+     "fix-store|BT": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "ship-ch10|BT": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "release-blockers|BT": {
+      "task_delta": 0.75,
+      "repeats": 3
+     },
+     "credit-rule|BT": {
+      "task_delta": 0.25,
+      "repeats": 3
+     },
+     "cite-rule|BT": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "review-arch|BT": {
+      "task_delta": 1.0,
+      "repeats": 3
+     },
+     "corpus-cleanup|BT": {
+      "task_delta": -0.1667,
+      "repeats": 3
+     },
+     "fix-store|BR": {
+      "task_delta": 0.5,
+      "repeats": 3
+     },
+     "ship-ch10|BR": {
+      "task_delta": 0.6667,
+      "repeats": 3
+     },
+     "release-blockers|BR": {
+      "task_delta": 1.0,
+      "repeats": 3
+     },
+     "credit-rule|BR": {
+      "task_delta": 0.25,
+      "repeats": 3
+     },
+     "cite-rule|BR": {
+      "task_delta": 0.0,
+      "repeats": 3
+     },
+     "review-arch|BR": {
+      "task_delta": 0.75,
+      "repeats": 3
+     },
+     "corpus-cleanup|BR": {
+      "task_delta": 0.0,
+      "repeats": 3
+     }
+    }
+   }
+  }
+ }
+}

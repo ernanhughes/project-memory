@@ -1,0 +1,137 @@
+{
+  "summary": {
+    "mean_by_condition": {
+      "F0": {
+        "n": 9,
+        "task_success_macro": 0.3889,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 1.0
+      },
+      "F1": {
+        "n": 9,
+        "task_success_macro": 0.5463,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 2039.4
+      },
+      "F2": {
+        "n": 4,
+        "task_success_macro": 0.6458,
+        "harmful_tasks": 0,
+        "harmful_applicable": 1,
+        "mean_tokens": 1874.2
+      },
+      "F3": {
+        "n": 8,
+        "task_success_macro": 0.625,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 1830.2
+      },
+      "F4": {
+        "n": 9,
+        "task_success_macro": 0.5741,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 2002.2
+      },
+      "F5": {
+        "n": 9,
+        "task_success_macro": 0.5463,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 2039.4
+      },
+      "F6": {
+        "n": 9,
+        "task_success_macro": 0.4537,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 1569.9
+      },
+      "F7": {
+        "n": 9,
+        "task_success_macro": 0.5185,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 1978.3
+      },
+      "F8": {
+        "n": 9,
+        "task_success_macro": 0.1111,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 1.0
+      },
+      "FB": {
+        "n": 9,
+        "task_success_macro": 0.6111,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 1998.6
+      },
+      "FO": {
+        "n": 8,
+        "task_success_macro": 0.5729,
+        "harmful_tasks": 0,
+        "harmful_applicable": 4,
+        "mean_tokens": 1773.8
+      }
+    }
+  },
+  "positive_control": {
+    "cite-rule": {
+      "status": "INSENSITIVE",
+      "f2_mean": 0.0,
+      "f3_mean": 0.0,
+      "gap": 0.0
+    },
+    "fix-store": {
+      "status": "INSENSITIVE",
+      "f2_mean": 0.8333,
+      "f3_mean": 0.8333,
+      "gap": 0.0
+    },
+    "irrelevant": {
+      "status": "NO_PAIR",
+      "f2": [],
+      "f3": []
+    },
+    "review-arch": {
+      "status": "INSENSITIVE",
+      "f2_mean": 0.875,
+      "f3_mean": 1.0,
+      "gap": -0.125
+    },
+    "review-prose": {
+      "status": "NO_PAIR",
+      "f2": [],
+      "f3": [
+        0.0
+      ]
+    },
+    "ship-ch10": {
+      "status": "NO_PAIR",
+      "f2": [],
+      "f3": [
+        0.5
+      ]
+    }
+  },
+  "promotion_gates": {
+    "f6_harmful_tasks": 0,
+    "f1_harmful_tasks": 0,
+    "false_hard": 0,
+    "false_hard_decided": 9,
+    "false_hard_rate": 0.0,
+    "benefit_retention_pairs": 1,
+    "benefit_retention_gap_f2_minus_f6": 0.0,
+    "unnecessary_abstentions": 1,
+    "breaches": [],
+    "promoted": true
+  },
+  "backtest": {
+    "status": "dev-only analysis"
+  }
+}

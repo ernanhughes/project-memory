@@ -1,0 +1,16 @@
+{
+  "graph_answer": "The March 2024 prototype for the event store used **SQLite** as its backend database.\n\nThis decision was made during **Session 014** (March 4, 2024), where the team agreed to start with SQLite for the prototype due to its simplicity\u2014being a single-file database with minimal operational overhead and easy backup procedures [Data: **session-014** (15)]. The choice was intended to be a lightweight solution for the initial phase, with the understanding that it would be revisited if concurrent-write contention became an issue [Data: **session-014** (15)].\n\nHowever, the SQLite prototype quickly proved unsuitable for production workloads. Concurrency tests revealed severe performance degradation under concurrent writes, with write throughput collapsing by **62% at 8 writers** and **84% at 16 writers**, while median write latency spiked from **3ms to 210ms** [Data: **experiment-contention** (10)]. This led to a **high-severity incident** in June 2024, where event ingestion stalled for **40 minutes** due to write contention [Data: **incident-021** (11)].\n\nAs a result, the team **migrated to PostgreSQL** in July 2024, as documented in **ADR-007** (July 11, 2024), which superseded the SQLite prototype. PostgreSQL demonstrated **flat throughput to 32 writers** with a **p99 write latency of 11ms**, making it the definitive choice for the event store [Data: **benchmark-note** (2), **adr-007** (0)]. The migration marked the end of SQLite\u2019s use in production for the event store [Data: **production-notes** (14)].",
+  "graph_latency_ms": 56695.5,
+  "implicated_sources": [
+    "experiment-contention.md",
+    "session-014.md",
+    "session-019.md"
+  ],
+  "linked_entities": [
+    "PROTOTYPE EVENT LOG",
+    "PROTOTYPE (EVT-201)",
+    "PROTOTYPE"
+  ],
+  "mode": "local",
+  "task_id": "q4-historical-march"
+}

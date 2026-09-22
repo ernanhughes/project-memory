@@ -1,0 +1,41 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "PostgreSQL",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.2056999625638127,
+  "cited_ids": [
+    "production-notes.md"
+  ],
+  "context_tokens": 408,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 8,
+  "latency_ms": 3646.1395000224,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "current_state_accuracy": 1.0,
+    "source_precision": 0.25,
+    "source_recall": 1.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=8 stopped=hop-budget",
+  "query_id": "q4-production-now",
+  "reader_latency_ms": 3642.723599972669,
+  "retrieved_ids": [
+    "production-notes.md",
+    "stale-summary.md",
+    "adr-007.md",
+    "benchmark-note.md"
+  ]
+}

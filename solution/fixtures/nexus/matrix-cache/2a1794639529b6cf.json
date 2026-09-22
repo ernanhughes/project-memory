@@ -1,0 +1,41 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "stale-summary.md"
+  ],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 41328.9361000061,
+  "cited_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "stale-summary.md"
+  ],
+  "context_tokens": 531,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 107717.0798999723,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.6666666666666666,
+    "source_recall": 1.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 2,
+  "notes": "linked=1 implicated=3",
+  "query_id": "q-stale-trap",
+  "reader_latency_ms": 66387.91970000602,
+  "retrieved_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "stale-summary.md"
+  ]
+}

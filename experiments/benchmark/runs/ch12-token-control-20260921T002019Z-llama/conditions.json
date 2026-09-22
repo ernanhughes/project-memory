@@ -1,0 +1,2782 @@
+{
+  "B0": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "example_backend"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechananism": "example_mechanism"
+          }
+        ],
+        "answer_chars": 1124,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": []
+          }
+        ],
+        "answer_chars": 925,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "list of open items blocking the release"
+            ]
+          }
+        ],
+        "answer_chars": 872,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.5,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "reason_refs": [
+              "context_precision_decreased"
+            ]
+          }
+        ],
+        "answer_chars": 849,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No information provided about the book's rule governing restated evidence"
+          }
+        ],
+        "answer_chars": 529,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Insufficient information",
+            "blockers": []
+          }
+        ],
+        "answer_chars": 850,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "KEEP_FACADE"
+          }
+        ],
+        "answer_chars": 1147,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "example_backend"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechananism": "example_mechanism"
+          }
+        ],
+        "answer_chars": 1110,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": []
+          }
+        ],
+        "answer_chars": 925,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "list of open items blocking the release"
+            ]
+          }
+        ],
+        "answer_chars": 872,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.5,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "reason_refs": [
+              "context_precision_decreased"
+            ]
+          }
+        ],
+        "answer_chars": 849,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No information provided about the book's rule governing restated evidence"
+          }
+        ],
+        "answer_chars": 529,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Insufficient information",
+            "blockers": []
+          }
+        ],
+        "answer_chars": 850,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "KEEP_FACADE"
+          }
+        ],
+        "answer_chars": 1121,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "example_backend"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechananism": "example_mechanism"
+          }
+        ],
+        "answer_chars": 1120,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No evidence available to make a decision"
+          }
+        ],
+        "answer_chars": 658,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "list of open items blocking the release"
+            ]
+          }
+        ],
+        "answer_chars": 872,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.5,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "reason_refs": [
+              "decrease in context precision"
+            ]
+          }
+        ],
+        "answer_chars": 616,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No information provided about the book's rule governing restated evidence"
+          }
+        ],
+        "answer_chars": 529,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "reason": "inclusion not yet decided",
+            "blockers": []
+          }
+        ],
+        "answer_chars": 727,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "DELETE_FACADE"
+          }
+        ],
+        "answer_chars": 912,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B6"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "no memory"
+    }
+  ],
+  "BA": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BA",
+        "context_hash": "fc0d30cf087e0eab",
+        "context_tokens": 1056,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechanism": "open-loop"
+          }
+        ],
+        "answer_chars": 1178,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BA",
+        "context_hash": "26a93781f88e6ec2",
+        "context_tokens": 1128,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "not validated on real-project corpus",
+            "blockers": [
+              "lack of validation on real-project corpus",
+              "disputed accuracy of Chapter 9's status"
+            ]
+          }
+        ],
+        "answer_chars": 1764,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.1667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BA",
+        "context_hash": "daef1c0ceb2d2fb2",
+        "context_tokens": 2002,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [],
+        "answer_chars": 4768,
+        "parse_ok": false,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BA",
+        "context_hash": "1f124d8027a673a4",
+        "context_tokens": 1043,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "Insufficient evidence to determine entry"
+          }
+        ],
+        "answer_chars": 1711,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BA",
+        "context_hash": "4cbde1dd7029e5f1",
+        "context_tokens": 973,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No evidence to support a rule governing restated passages"
+          }
+        ],
+        "answer_chars": 904,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BA",
+        "context_hash": "4af28c8d036bd5c4",
+        "context_tokens": 1987,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Experiment-pending marker and no committed run",
+            "blockers": [
+              "Question 6 remains unanswered"
+            ]
+          }
+        ],
+        "answer_chars": 1161,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BA",
+        "context_hash": "cdf0f6972e431750",
+        "context_tokens": 66,
+        "memory_ids": [
+          "c-docs-flags"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "DELETE_FACADE"
+          },
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "corpus_import"
+          }
+        ],
+        "answer_chars": 1124,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "staged minus decisive caller loops"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BA",
+        "context_hash": "fc0d30cf087e0eab",
+        "context_tokens": 1056,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "ZeroMQ"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechanism": "open-loop"
+          }
+        ],
+        "answer_chars": 1321,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BA",
+        "context_hash": "26a93781f88e6ec2",
+        "context_tokens": 1128,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Lack of validation on real-project corpus",
+            "blockers": [
+              "mb-loop-real-corpus"
+            ]
+          }
+        ],
+        "answer_chars": 1609,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.1667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BA",
+        "context_hash": "daef1c0ceb2d2fb2",
+        "context_tokens": 2002,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [],
+        "answer_chars": 4768,
+        "parse_ok": false,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BA",
+        "context_hash": "1f124d8027a673a4",
+        "context_tokens": 1043,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "Pending experiment and insufficient evaluation"
+          }
+        ],
+        "answer_chars": 1506,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BA",
+        "context_hash": "4cbde1dd7029e5f1",
+        "context_tokens": 973,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No explicit rule governing restated passages"
+          }
+        ],
+        "answer_chars": 947,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BA",
+        "context_hash": "4af28c8d036bd5c4",
+        "context_tokens": 1987,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "reason": "Experiment pending",
+            "blockers": [
+              "pending experiment outcome"
+            ]
+          }
+        ],
+        "answer_chars": 839,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BA",
+        "context_hash": "cdf0f6972e431750",
+        "context_tokens": 66,
+        "memory_ids": [
+          "c-docs-flags"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "DELETE_FACADE",
+            "scope": "corpus_import"
+          }
+        ],
+        "answer_chars": 1060,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "staged minus decisive caller loops"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BA",
+        "context_hash": "fc0d30cf087e0eab",
+        "context_tokens": 1056,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "ZeroMQ"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechanism": "open-loop"
+          }
+        ],
+        "answer_chars": 1321,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BA",
+        "context_hash": "26a93781f88e6ec2",
+        "context_tokens": 1128,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Lack of validation on real-project corpus",
+            "blockers": [
+              "mb-loop-real-corpus"
+            ]
+          }
+        ],
+        "answer_chars": 1609,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.1667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BA",
+        "context_hash": "daef1c0ceb2d2fb2",
+        "context_tokens": 2002,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [],
+        "answer_chars": 4768,
+        "parse_ok": false,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BA",
+        "context_hash": "1f124d8027a673a4",
+        "context_tokens": 1043,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "Pending experiment and insufficient evaluation"
+          }
+        ],
+        "answer_chars": 1506,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BA",
+        "context_hash": "4cbde1dd7029e5f1",
+        "context_tokens": 973,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No explicit rule governing restated passages"
+          }
+        ],
+        "answer_chars": 947,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BA",
+        "context_hash": "4af28c8d036bd5c4",
+        "context_tokens": 1987,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "reason": "Experiment pending",
+            "blockers": [
+              "pending experiment outcome"
+            ]
+          }
+        ],
+        "answer_chars": 839,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BA",
+        "context_hash": "cdf0f6972e431750",
+        "context_tokens": 66,
+        "memory_ids": [
+          "c-docs-flags"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "DELETE_FACADE"
+          }
+        ],
+        "answer_chars": 1263,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "staged minus decisive caller loops"
+    }
+  ],
+  "BT": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BT",
+        "context_hash": "8d3ee72528e097a1",
+        "context_tokens": 1233,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [],
+        "answer_chars": 1112,
+        "parse_ok": false,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-ch10-concepts', 'mb-echo-ch9-result-1'] (112tok vs decisive 102tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BT",
+        "context_hash": "3d08456c635c21c9",
+        "context_tokens": 1252,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Lack of validation on real-project corpus",
+            "blockers": [
+              "mb-loop-real-corpus"
+            ]
+          }
+        ],
+        "answer_chars": 1587,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.1667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering'] (87tok vs decisive 81tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BT",
+        "context_hash": "6e5045cc31cc385d",
+        "context_tokens": 2243,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [],
+        "answer_chars": 4400,
+        "parse_ok": false,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering', 'mb-arch-spine'] (171tok vs decisive 166tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BT",
+        "context_hash": "95d3a37efe5ffaac",
+        "context_tokens": 1232,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "reason_refs": [
+              "mb-candidate-result",
+              "mb-method-baseline-rule",
+              "mb-refutes-ch9-scope"
+            ]
+          }
+        ],
+        "answer_chars": 1754,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-style-build', 'mb-research-intention-schema'] (126tok vs decisive 120tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BT",
+        "context_hash": "c60156b7f8fdf0d5",
+        "context_tokens": 1152,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No evidence found on restated passages"
+          }
+        ],
+        "answer_chars": 1065,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering', 'mb-echo-baseline-4'] (110tok vs decisive 102tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BT",
+        "context_hash": "a24cb7f215853a75",
+        "context_tokens": 2217,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Experiment-pending marker and no committed run",
+            "blockers": [
+              "Experiment not completed",
+              "Does not advance Question 6 discussion"
+            ]
+          }
+        ],
+        "answer_chars": 1300,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-loop-readme-drift', 'mb-loop-ch11-recap', 'mb-echo-baseline-2'] (132tok vs decisive 121tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BT",
+        "context_hash": "3a3b6664d831ddf8",
+        "context_tokens": 272,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "DELETE_FACADE"
+          }
+        ],
+        "answer_chars": 1078,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-ch10-prose-schema', 'mb-research-deontic'] (141tok vs decisive 131tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BT",
+        "context_hash": "8d3ee72528e097a1",
+        "context_tokens": 1233,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [],
+        "answer_chars": 1112,
+        "parse_ok": false,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-ch10-concepts', 'mb-echo-ch9-result-1'] (112tok vs decisive 102tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BT",
+        "context_hash": "3d08456c635c21c9",
+        "context_tokens": 1252,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Lack of validation on real-project corpus",
+            "blockers": [
+              "mb-loop-real-corpus"
+            ]
+          }
+        ],
+        "answer_chars": 1587,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.1667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering'] (87tok vs decisive 81tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BT",
+        "context_hash": "6e5045cc31cc385d",
+        "context_tokens": 2243,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [],
+        "answer_chars": 4400,
+        "parse_ok": false,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering', 'mb-arch-spine'] (171tok vs decisive 166tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BT",
+        "context_hash": "95d3a37efe5ffaac",
+        "context_tokens": 1232,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "reason_refs": [
+              "mb-candidate-result",
+              "mb-method-baseline-rule",
+              "mb-refutes-ch9-scope"
+            ]
+          }
+        ],
+        "answer_chars": 1754,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-style-build', 'mb-research-intention-schema'] (126tok vs decisive 120tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BT",
+        "context_hash": "c60156b7f8fdf0d5",
+        "context_tokens": 1152,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No evidence found on restated passages"
+          }
+        ],
+        "answer_chars": 1065,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering', 'mb-echo-baseline-4'] (110tok vs decisive 102tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BT",
+        "context_hash": "a24cb7f215853a75",
+        "context_tokens": 2217,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Experiment-pending marker and no committed run",
+            "blockers": [
+              "Experiment not completed",
+              "Does not advance Question 6 discussion"
+            ]
+          }
+        ],
+        "answer_chars": 1300,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-loop-readme-drift', 'mb-loop-ch11-recap', 'mb-echo-baseline-2'] (132tok vs decisive 121tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BT",
+        "context_hash": "3a3b6664d831ddf8",
+        "context_tokens": 272,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "DELETE_FACADE"
+          }
+        ],
+        "answer_chars": 1078,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-ch10-prose-schema', 'mb-research-deontic'] (141tok vs decisive 131tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BT",
+        "context_hash": "8d3ee72528e097a1",
+        "context_tokens": 1233,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [],
+        "answer_chars": 1112,
+        "parse_ok": false,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-ch10-concepts', 'mb-echo-ch9-result-1'] (112tok vs decisive 102tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BT",
+        "context_hash": "3d08456c635c21c9",
+        "context_tokens": 1252,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Lack of validation on real-project corpus",
+            "blockers": [
+              "mb-loop-real-corpus"
+            ]
+          }
+        ],
+        "answer_chars": 1587,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.1667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering'] (87tok vs decisive 81tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BT",
+        "context_hash": "6e5045cc31cc385d",
+        "context_tokens": 2243,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [],
+        "answer_chars": 4400,
+        "parse_ok": false,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering', 'mb-arch-spine'] (171tok vs decisive 166tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BT",
+        "context_hash": "95d3a37efe5ffaac",
+        "context_tokens": 1232,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "reason_refs": [
+              "mb-candidate-result",
+              "mb-method-baseline-rule",
+              "mb-refutes-ch9-scope"
+            ]
+          }
+        ],
+        "answer_chars": 1754,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-style-build', 'mb-research-intention-schema'] (126tok vs decisive 120tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BT",
+        "context_hash": "c60156b7f8fdf0d5",
+        "context_tokens": 1152,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No evidence found on restated passages"
+          }
+        ],
+        "answer_chars": 1065,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-research-context-engineering', 'mb-echo-baseline-4'] (110tok vs decisive 102tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BT",
+        "context_hash": "a24cb7f215853a75",
+        "context_tokens": 2217,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Experiment-pending marker and no committed run",
+            "blockers": [
+              "Experiment not completed",
+              "Does not advance Question 6 discussion"
+            ]
+          }
+        ],
+        "answer_chars": 1300,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-loop-readme-drift', 'mb-loop-ch11-recap', 'mb-echo-baseline-2'] (132tok vs decisive 121tok)"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BT",
+        "context_hash": "3a3b6664d831ddf8",
+        "context_tokens": 272,
+        "memory_ids": [
+          "token-matched"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import"
+          },
+          {
+            "action_type": "DELETE_FACADE"
+          }
+        ],
+        "answer_chars": 1169,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus nondecisive ['mb-ch10-prose-schema', 'mb-research-deontic'] (141tok vs decisive 131tok)"
+    }
+  ],
+  "BR": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BR",
+        "context_hash": "a53ea58cb66c869f",
+        "context_tokens": 1158,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "PostgreSQL"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechanism": "lexical search with OR-of-terms and ts_rank_cd ordering"
+          }
+        ],
+        "answer_chars": 972,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BR",
+        "context_hash": "d299f6f68ac60d6e",
+        "context_tokens": 1209,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Experiment-pending marker and no committed run",
+            "blockers": [
+              "mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 662,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.6667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BR",
+        "context_hash": "a67dbd82f3a452d1",
+        "context_tokens": 2168,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "item-mb-loop-real-corpus",
+              "item-mb-loop-ch11-recap",
+              "item-mb-loop-ch10-experiment",
+              "mb-loop-readme-drift"
+            ]
+          }
+        ],
+        "answer_chars": 1714,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BR",
+        "context_hash": "ef5f44818c4ac775",
+        "context_tokens": 1163,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "Insufficient evidence to determine if the candidate mechanism enters the book"
+          }
+        ],
+        "answer_chars": 1514,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BR",
+        "context_hash": "ce7ea2dce2504ac6",
+        "context_tokens": 1075,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "The rule does not provide a clear answer to the question."
+          }
+        ],
+        "answer_chars": 832,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BR",
+        "context_hash": "3d25609972ff8768",
+        "context_tokens": 2108,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "reason": "Experiment pending",
+            "blockers": [
+              "pending experiment",
+              "no committed run"
+            ]
+          }
+        ],
+        "answer_chars": 1692,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BR",
+        "context_hash": "5118ac23252a40bf",
+        "context_tokens": 197,
+        "memory_ids": [
+          "c-docs-flags",
+          "c-cli-half",
+          "c-web"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "CLI"
+          },
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "WEB"
+          },
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "docs"
+          },
+          {
+            "action_type": "KEEP_FACADE",
+            "reason": "pending review"
+          }
+        ],
+        "answer_chars": 1278,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [
+          "B0",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus restored caller loops"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BR",
+        "context_hash": "a53ea58cb66c869f",
+        "context_tokens": 1158,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "PostgreSQL"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechanism": "lexical search with OR-of-terms and ts_rank_cd ordering"
+          }
+        ],
+        "answer_chars": 972,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BR",
+        "context_hash": "d299f6f68ac60d6e",
+        "context_tokens": 1209,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Experiment-pending marker and no committed run",
+            "blockers": [
+              "mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 662,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.6667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BR",
+        "context_hash": "a67dbd82f3a452d1",
+        "context_tokens": 2168,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "item-mb-loop-real-corpus",
+              "item-mb-loop-ch11-recap",
+              "item-mb-loop-ch10-experiment",
+              "mb-loop-readme-drift"
+            ]
+          }
+        ],
+        "answer_chars": 1714,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BR",
+        "context_hash": "ef5f44818c4ac775",
+        "context_tokens": 1163,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "Insufficient evidence to determine if the candidate mechanism enters the book"
+          }
+        ],
+        "answer_chars": 1514,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BR",
+        "context_hash": "ce7ea2dce2504ac6",
+        "context_tokens": 1075,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "The rule does not provide a clear answer to the question."
+          }
+        ],
+        "answer_chars": 832,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BR",
+        "context_hash": "3d25609972ff8768",
+        "context_tokens": 2108,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "reason": "Experiment pending",
+            "blockers": [
+              "pending experiment",
+              "no committed run"
+            ]
+          }
+        ],
+        "answer_chars": 1692,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BR",
+        "context_hash": "5118ac23252a40bf",
+        "context_tokens": 197,
+        "memory_ids": [
+          "c-docs-flags",
+          "c-cli-half",
+          "c-web"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "CLI"
+          },
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "WEB"
+          },
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "docs"
+          }
+        ],
+        "answer_chars": 1123,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [
+          "B0",
+          "B5"
+        ],
+        "repeat_index": 1,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus restored caller loops"
+    },
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BR",
+        "context_hash": "a53ea58cb66c869f",
+        "context_tokens": 1158,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "PostgreSQL"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "mechanism": "lexical search with OR-of-terms and ts_rank_cd ordering"
+          }
+        ],
+        "answer_chars": 972,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BR",
+        "context_hash": "d299f6f68ac60d6e",
+        "context_tokens": 1209,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "Chapter 10",
+            "reason": "Experiment-pending marker and no committed run",
+            "blockers": [
+              "mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 662,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.6667,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BR",
+        "context_hash": "a67dbd82f3a452d1",
+        "context_tokens": 2168,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "item-mb-loop-real-corpus",
+              "item-mb-loop-ch11-recap",
+              "item-mb-loop-ch10-experiment",
+              "mb-loop-readme-drift"
+            ]
+          }
+        ],
+        "answer_chars": 1714,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BR",
+        "context_hash": "ef5f44818c4ac775",
+        "context_tokens": 1163,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "Insufficient evidence to determine if the candidate mechanism enters the book"
+          }
+        ],
+        "answer_chars": 1514,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BR",
+        "context_hash": "ce7ea2dce2504ac6",
+        "context_tokens": 1075,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "The rule does not provide a clear answer to the question."
+          }
+        ],
+        "answer_chars": 832,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BR",
+        "context_hash": "3d25609972ff8768",
+        "context_tokens": 2108,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "reason": "Experiment pending",
+            "blockers": [
+              "pending experiment",
+              "no committed run"
+            ]
+          }
+        ],
+        "answer_chars": 1692,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BR",
+        "context_hash": "5118ac23252a40bf",
+        "context_tokens": 197,
+        "memory_ids": [
+          "c-docs-flags",
+          "c-cli-half",
+          "c-web"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "CLI"
+          },
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "WEB"
+          },
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "docs"
+          }
+        ],
+        "answer_chars": 1123,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [
+          "B0",
+          "B5"
+        ],
+        "repeat_index": 2,
+        "reader": "llama3.1:8b@t0",
+        "grader_version": "behavior-grader-v2"
+      },
+      "note": "BA plus restored caller loops"
+    }
+  ]
+}

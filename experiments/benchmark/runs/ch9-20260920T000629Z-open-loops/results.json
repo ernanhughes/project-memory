@@ -1,0 +1,236 @@
+{
+  "suite": "e9-suite-v0.1",
+  "config": {
+    "expectation_schema_version": "open-loop-expectation-v0.1",
+    "resolver_version": "open-loop-resolver-v0.1",
+    "fixture_version": "e9-fixture-v0.1",
+    "semantic_overlap_threshold": 0.35,
+    "reverify_every_cycles": 3
+  },
+  "frozen_at": "20260920T000629Z",
+  "model_dependency": "none (ledger-deterministic-v0.1)",
+  "experiments": {
+    "E9-A": {
+      "question": "mention recall without precision",
+      "M0_open": [
+        "ch9-backup-checklist",
+        "ch9-backup-remark",
+        "ch9-backup-todo",
+        "ch9-docs-open",
+        "ch9-redis-remark"
+      ],
+      "M1_open": [
+        "ch9-backup-checklist",
+        "ch9-backup-remark",
+        "ch9-backup-todo",
+        "ch9-docs-open",
+        "ch9-redis-remark"
+      ],
+      "M0_false_positives": [
+        "ch9-redis-remark"
+      ],
+      "M1_false_positives": [
+        "ch9-redis-remark"
+      ],
+      "redis_remark_flagged_M0": true,
+      "redis_remark_flagged_M1": true,
+      "M0_recall_genuine": 0.8,
+      "question_id": "E9-A"
+    },
+    "E9-B": {
+      "question": "same opening, four trajectories, four statuses",
+      "rows": {
+        "H1": {
+          "got": "SATISFIED",
+          "want": "SATISFIED",
+          "tier": "state-transition",
+          "detail": [
+            "ch9-h1-migrate"
+          ],
+          "pass": true
+        },
+        "H2": {
+          "got": "CANCELLED",
+          "want": "CANCELLED",
+          "tier": "explicit",
+          "detail": [
+            "ch9-h2-scope"
+          ],
+          "pass": true
+        },
+        "H3": {
+          "got": "SUPERSEDED",
+          "want": "SUPERSEDED",
+          "tier": "explicit",
+          "detail": [
+            "ch9-h3-arch"
+          ],
+          "pass": true
+        },
+        "H4": {
+          "got": "OPEN",
+          "want": "OPEN",
+          "tier": "",
+          "detail": [],
+          "pass": true
+        }
+      },
+      "pass": true,
+      "question_id": "E9-B"
+    },
+    "E9-C": {
+      "question": "promise linked to fulfilment across artifact types",
+      "status": "SATISFIED",
+      "tier": "semantic",
+      "mention_baseline_lists_opening": true,
+      "pass": true,
+      "question_id": "E9-C"
+    },
+    "E9-D": {
+      "question": "outcomes tracked, not keywords",
+      "status": "SATISFIED",
+      "tier": "state-transition",
+      "mention_baseline_sees_anything": false,
+      "pass": true,
+      "question_id": "E9-D"
+    },
+    "E9-E": {
+      "question": "maintained status vs on-demand derivation",
+      "derived": {
+        "intent-401": "SATISFIED",
+        "exp-docs": "SATISFIED",
+        "exp-fixtures": "SATISFIED",
+        "exp-tune": "SUPERSEDED",
+        "exp-staging": "CANCELLED"
+      },
+      "maintained": {
+        "intent-401": "SATISFIED",
+        "exp-docs": "SATISFIED",
+        "exp-fixtures": "SATISFIED",
+        "exp-tune": "SUPERSEDED",
+        "exp-staging": "CANCELLED"
+      },
+      "agree": true,
+      "derived_query_ms": 0.29,
+      "materialized_list_ms": 0.0,
+      "stale_without_refresh": "OPEN",
+      "after_refresh": "SATISFIED",
+      "rebuild_digest_match": true,
+      "pass": true,
+      "question_id": "E9-E"
+    },
+    "E9-F": {
+      "question": "does the footprint change auditability",
+      "status_identical": true,
+      "footprint_channels": [
+        "commits",
+        "decisions",
+        "diffs",
+        "issues",
+        "sessions"
+      ],
+      "confidence": "CORROBORATED_OPEN",
+      "pass": true,
+      "question_id": "E9-F"
+    },
+    "E9-G": {
+      "question": "absence calibrated by history completeness",
+      "status": "UNKNOWN",
+      "gaps": [
+        {
+          "source_id": "commit-118",
+          "expected_seq": 6,
+          "observed_seq": 7,
+          "status": "GAP_DETECTED"
+        }
+      ],
+      "pass": true,
+      "question_id": "E9-G"
+    },
+    "E9-H": {
+      "question": "what was open vs what was believed open",
+      "actual_aug28": "SATISFIED",
+      "believed_aug28": "OPEN",
+      "pass": true,
+      "question_id": "E9-H"
+    },
+    "E9-I": {
+      "question": "do open lists accumulate mistakes without rechecking",
+      "stale_open_cycles_without_reverify": 3,
+      "stale_open_cycles_with_reverify": 0,
+      "pass": true,
+      "question_id": "E9-I"
+    },
+    "E9-J": {
+      "question": "does a snapshot change anything beyond confidence",
+      "history_only": [
+        "OPEN",
+        "INCOMPLETE_SEARCH"
+      ],
+      "corroborated": [
+        "OPEN",
+        true
+      ],
+      "pass": true,
+      "question_id": "E9-J"
+    },
+    "E9-K": {
+      "question": "history perfect, assistance failed",
+      "opening_present": true,
+      "closing_present": true,
+      "ch8_current_belief": "PostgreSQL",
+      "historian_passes": true,
+      "M0_reports_stale_open": true,
+      "M3_status": "SATISFIED",
+      "pass": true,
+      "question_id": "E9-K"
+    },
+    "E9-deadline": {
+      "question": "bounded obligation finitely decidable",
+      "before_deadline": [
+        "OPEN",
+        false
+      ],
+      "after_deadline": [
+        "OPEN",
+        true
+      ],
+      "pass": true,
+      "question_id": "E9-deadline"
+    },
+    "E9-second-domain": {
+      "question": "mechanism generalises beyond migrations",
+      "status": "SATISFIED",
+      "tier": "state-transition",
+      "pass": true,
+      "question_id": "E9-second-domain"
+    }
+  },
+  "costs": {
+    "llm_calls": 0,
+    "tokens": 0,
+    "latency_ms": 4.2
+  },
+  "log_digest": "aba9b61a9447f4ff",
+  "metrics": {
+    "status_accuracy": 1.0,
+    "cross_artifact_closure_accuracy": 1.0,
+    "side_effect_completion_accuracy": 1.0,
+    "open_loop_precision": 0.8,
+    "open_loop_recall": 0.8,
+    "false_open_rate": 1.0,
+    "canonical_status_accuracy": 1.0,
+    "false_closed_rate": 0.0,
+    "stale_open_rate": 1.0,
+    "reverification_repair_rate": 1.0,
+    "bitemporal_status_accuracy": 1.0,
+    "historical_status_accuracy": 1.0,
+    "history_gap_calibration": 1.0,
+    "search_footprint_coverage": 1.0,
+    "projection_rebuild_equivalence": 1.0,
+    "maintenance_derivation_agreement": 1.0,
+    "historian_colleague_demo": 1.0,
+    "deadline_flag_accuracy": 1.0,
+    "second_domain_accuracy": 1.0
+  }
+}

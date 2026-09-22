@@ -1,0 +1,46 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "issue-041.md",
+    "session-014.md",
+    "session-019.md",
+    "session-044.md"
+  ],
+  "answer": "Benchmark fixtures were left behind by the measurements.",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.8745999918319285,
+  "cited_ids": [
+    "issue-041.md"
+  ],
+  "context_tokens": 641,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 5,
+  "latency_ms": 3821.3059999980032,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.14285714285714285,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=5 stopped=activation-exhausted",
+  "query_id": "q-ind-leftover",
+  "reader_latency_ms": 3817.1955999569036,
+  "retrieved_ids": [
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "issue-041.md",
+    "session-044.md",
+    "adr-007.md",
+    "session-014.md",
+    "session-019.md"
+  ]
+}

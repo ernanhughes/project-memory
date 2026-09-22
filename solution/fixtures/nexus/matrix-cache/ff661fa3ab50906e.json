@@ -1,0 +1,49 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-040.md",
+    "stale-summary.md",
+    "production-notes.md",
+    "benchmark-note.md",
+    "commits.log",
+    "adr-007.md",
+    "notification-service.md",
+    "session-014.md"
+  ],
+  "answer": "None",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6554.628400015645,
+  "cited_ids": [
+    "session-040.md",
+    "adr-007.md"
+  ],
+  "context_tokens": 741,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION",
+    "FAILED_ABSTENTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 15898.474499990698,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3317",
+  "query_id": "q-abs-cache",
+  "reader_latency_ms": 9343.693499977235,
+  "retrieved_ids": [
+    "session-040.md",
+    "stale-summary.md",
+    "production-notes.md",
+    "benchmark-note.md",
+    "commits.log",
+    "adr-007.md",
+    "notification-service.md",
+    "session-014.md"
+  ]
+}

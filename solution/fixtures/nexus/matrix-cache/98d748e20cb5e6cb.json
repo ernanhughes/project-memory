@@ -1,0 +1,46 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md"
+  ],
+  "answer": "The project's event store target was changed from SQLite to PostgreSQL.",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.787200024817139,
+  "cited_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md"
+  ],
+  "context_tokens": 526,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 5,
+  "latency_ms": 5633.55029997183,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.2,
+    "source_recall": 0.25,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=5 stopped=activation-exhausted",
+  "query_id": "q-global-themes",
+  "reader_latency_ms": 5629.483700031415,
+  "retrieved_ids": [
+    "adr-007.md",
+    "session-014.md",
+    "session-019.md",
+    "benchmark-note.md",
+    "stale-summary.md"
+  ]
+}

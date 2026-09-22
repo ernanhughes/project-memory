@@ -1,0 +1,36 @@
+{
+  "abstained": true,
+  "admitted_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "I am unable to determine the answer",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 27557.15379997855,
+  "cited_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "context_tokens": 54,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 33589.44419998443,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 7,
+  "notes": "linked=1 implicated=2",
+  "query_id": "q-abs-provider",
+  "reader_latency_ms": 6032.145000004675,
+  "retrieved_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ]
+}

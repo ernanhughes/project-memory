@@ -1,0 +1,304 @@
+{
+ "task_id": "fix-store",
+ "condition": "C2",
+ "bcode": "B2",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "mb-impl-postgres",
+  "wr-rag-baseline",
+  "mb-stale-sqlite",
+  "mb-session-pivot",
+  "mb-echo-baseline-4",
+  "mb-method-earn",
+  "mb-ch09-result",
+  "mb-echo-ch9-result-1",
+  "mb-stale-nexus-selects",
+  "mb-arch-spine",
+  "mb-echo-baseline-1",
+  "mb-research-prospective",
+  "mb-ch03-baseline-role",
+  "mb-echo-baseline-3",
+  "mb-contract-q6",
+  "mb-session-intent-1",
+  "mb-impl-zeromq",
+  "mb-ch07-result",
+  "wr-memory-store",
+  "mb-arch-q6-open",
+  "mb-ch10-priority-refusal",
+  "mb-method-baseline-rule"
+ ],
+ "derived_consulted": [
+  "frozen:B2:e961e5ce71f55081"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "mb-impl-postgres",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "wr-rag-baseline",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-sqlite",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-pivot",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-4",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-method-earn",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch09-result",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-ch9-result-1",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-nexus-selects",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-arch-spine",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-1",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-research-prospective",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch03-baseline-role",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-echo-baseline-3",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-contract-q6",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-session-intent-1",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-impl-zeromq",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch07-result",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "wr-memory-store",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-arch-q6-open",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-method-baseline-rule",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "mb-impl-postgres",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "wr-rag-baseline",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-sqlite",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-pivot",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-4",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-method-earn",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch09-result",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-ch9-result-1",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-stale-nexus-selects",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-arch-spine",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-1",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-research-prospective",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch03-baseline-role",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-echo-baseline-3",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-contract-q6",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-session-intent-1",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-impl-zeromq",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch07-result",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "wr-memory-store",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-arch-q6-open",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-ch10-priority-refusal",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "mb-method-baseline-rule",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "mb-impl-postgres",
+  "wr-rag-baseline",
+  "mb-stale-sqlite",
+  "mb-session-pivot",
+  "mb-echo-baseline-4",
+  "mb-method-earn",
+  "mb-ch09-result",
+  "mb-echo-ch9-result-1",
+  "mb-stale-nexus-selects",
+  "mb-arch-spine",
+  "mb-echo-baseline-1",
+  "mb-research-prospective",
+  "mb-ch03-baseline-role",
+  "mb-echo-baseline-3",
+  "mb-contract-q6",
+  "mb-session-intent-1",
+  "mb-impl-zeromq",
+  "mb-ch07-result",
+  "wr-memory-store",
+  "mb-arch-q6-open",
+  "mb-ch10-priority-refusal",
+  "mb-method-baseline-rule"
+ ],
+ "rejected": [],
+ "context_tokens": 2073,
+ "context_hash": "e961e5ce71f55081",
+ "reader_output": {
+  "task_score": 0.8333,
+  "frozen": true
+ },
+ "behavioural_score": 0.8333,
+ "harm": false,
+ "fallback_events": [
+  {
+   "event": "assembly failure",
+   "action": "bounded simple retrieval fallback engaged",
+   "detail": "context 2073 exceeds budget 1500; frozen trace preserved"
+  }
+ ],
+ "conditional_invocations": []
+}

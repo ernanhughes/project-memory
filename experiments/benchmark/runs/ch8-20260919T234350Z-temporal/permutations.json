@@ -1,0 +1,105 @@
+{
+  "sensitive": {
+    "question": "does the system change its rationale exactly when order changes meaning",
+    "canonical_motivated_admissible": true,
+    "canonical_note": "evidence precedes decision: admissible antecedent",
+    "permuted_motivated_admissible": false,
+    "permuted_note": "evidence is later than the decision: cannot have motivated it; corroboration only",
+    "expected": {
+      "canonical": true,
+      "permuted": false
+    },
+    "pass": true,
+    "current_by_condition": {
+      "canonical": {
+        "T0-bag": "PostgreSQL",
+        "T1-arrival": "PostgreSQL",
+        "T1b-event-time": "PostgreSQL",
+        "T2-ordered": "PostgreSQL",
+        "T3-temporal": "PostgreSQL"
+      },
+      "permuted": {
+        "T0-bag": "PostgreSQL",
+        "T1-arrival": "PostgreSQL",
+        "T1b-event-time": "PostgreSQL",
+        "T2-ordered": "PostgreSQL",
+        "T3-temporal": "PostgreSQL"
+      }
+    }
+  },
+  "invariant": {
+    "question": "invariance where order should not matter",
+    "rows": {
+      "event-store.backend": {
+        "base": {
+          "T0-bag": "PostgreSQL",
+          "T1-arrival": "PostgreSQL",
+          "T1b-event-time": "PostgreSQL",
+          "T2-ordered": "PostgreSQL",
+          "T3-temporal": "PostgreSQL"
+        },
+        "swapped": {
+          "T0-bag": "PostgreSQL",
+          "T1-arrival": "PostgreSQL",
+          "T1b-event-time": "PostgreSQL",
+          "T2-ordered": "PostgreSQL",
+          "T3-temporal": "PostgreSQL"
+        },
+        "stable": {
+          "T0-bag": true,
+          "T1-arrival": true,
+          "T1b-event-time": true,
+          "T2-ordered": true,
+          "T3-temporal": true
+        }
+      },
+      "docs.readme": {
+        "base": {
+          "T0-bag": null,
+          "T1-arrival": "updated",
+          "T1b-event-time": "updated",
+          "T2-ordered": null,
+          "T3-temporal": null
+        },
+        "swapped": {
+          "T0-bag": null,
+          "T1-arrival": "updated",
+          "T1b-event-time": "updated",
+          "T2-ordered": null,
+          "T3-temporal": null
+        },
+        "stable": {
+          "T0-bag": true,
+          "T1-arrival": true,
+          "T1b-event-time": true,
+          "T2-ordered": true,
+          "T3-temporal": true
+        }
+      },
+      "frontend.css": {
+        "base": {
+          "T0-bag": null,
+          "T1-arrival": "fixed",
+          "T1b-event-time": "fixed",
+          "T2-ordered": null,
+          "T3-temporal": null
+        },
+        "swapped": {
+          "T0-bag": null,
+          "T1-arrival": "fixed",
+          "T1b-event-time": "fixed",
+          "T2-ordered": null,
+          "T3-temporal": null
+        },
+        "stable": {
+          "T0-bag": true,
+          "T1-arrival": true,
+          "T1b-event-time": true,
+          "T2-ordered": true,
+          "T3-temporal": true
+        }
+      }
+    },
+    "pass": true
+  }
+}

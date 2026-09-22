@@ -1,0 +1,13 @@
+{
+  "suite": "e8-suite-v0.1",
+  "frozen_at": "20260919T234353Z",
+  "code_commit": "48caf8a",
+  "event_schema_version": "temporal-event-v0.1",
+  "reducer_version": "temporal-reducer-v0.1",
+  "fixture_version": "e8-fixture-v0.1",
+  "projection_version": "temporal-projection-v0.1",
+  "transport_mode": "live-zeromq",
+  "pyzmq_version": "27.2.0",
+  "event_log_hash": "7d0faf6d10e4a083",
+  "instrument_version": "benchmark-v0.1"
+}

@@ -1,0 +1,61 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "commits.log",
+    "experiment-contention.md",
+    "incident-021.md",
+    "issue-041.md",
+    "notification-service.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md",
+    "stale-summary.md"
+  ],
+  "answer": "Incident evt-203 and Benchmark evt-204 influenced the event-store decision.",
+  "capability_id": "RAW_EVIDENCE",
+  "capability_latency_ms": 1.3345000334084034,
+  "cited_ids": [
+    "incident-021.md:65392e92ee19ff32",
+    "benchmark-note.md:e8560e5286fd2027"
+  ],
+  "context_tokens": 1248,
+  "cost_units": 2.5,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 4803.861899999902,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.2857142857142857,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 1,
+  "notes": "unranked sweep of all source artifacts",
+  "query_id": "q-rel-influences",
+  "reader_latency_ms": 4802.300799987279,
+  "retrieved_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "commits.log",
+    "experiment-contention.md",
+    "incident-021.md",
+    "issue-041.md",
+    "notification-service.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md",
+    "stale-summary.md"
+  ]
+}

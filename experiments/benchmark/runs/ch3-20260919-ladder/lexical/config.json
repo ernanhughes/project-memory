@@ -1,0 +1,37 @@
+{
+  "chunking": {
+    "chunker_version": "0.1.0",
+    "overlap_chars": 300,
+    "policy": "sentence",
+    "target_chars": 2000
+  },
+  "context": {
+    "max_chars": 6000,
+    "max_passages": 6
+  },
+  "dsn": "postgresql://postgres:postgres@localhost:5434/memory_baseline",
+  "embedding": {
+    "dimension": 1024,
+    "model": "bge-m3",
+    "ollama_host": "http://localhost:11434",
+    "provider": "ollama"
+  },
+  "generator": {
+    "model": "llama3.1:8b",
+    "ollama_host": "http://localhost:11434",
+    "provider": "ollama",
+    "system_prompt": "Answer questions about a software project's recorded history. Use only the supplied project evidence. Quote or name the evidence identifiers you rely on. If the evidence does not determine an answer, say so plainly instead of guessing. Distinguish what was decided from what was merely proposed.",
+    "temperature": 0.0
+  },
+  "retrieval": {
+    "candidate_k": 30,
+    "dense_k": 30,
+    "fusion_k": 60,
+    "lexical_k": 30,
+    "mode": "hybrid",
+    "rerank_k": 8,
+    "reranker": "cross-encoder",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  },
+  "schema": "ch3_ladder"
+}

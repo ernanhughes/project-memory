@@ -1,0 +1,404 @@
+[
+  {
+    "task_id": "t-full-scope",
+    "decisions": [
+      {
+        "candidate_id": "c-docs-flags",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-tests-remove",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-docs-deferral",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-cli-half",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-full-scope",
+      "genuine": [
+        "c-cli-half",
+        "c-docs-flags",
+        "c-web"
+      ],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        "c-cli-half",
+        "c-docs-flags",
+        "c-web"
+      ],
+      "inferred_precision": null,
+      "inferred_recall": 0.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-docs-flags": "ABSTAIN",
+        "c-facade-delete": "ABSTAIN",
+        "c-tests-remove": "ABSTAIN",
+        "c-docs-deferral": "ABSTAIN",
+        "c-cli-half": "ABSTAIN",
+        "c-web": "ABSTAIN"
+      }
+    }
+  },
+  {
+    "task_id": "t-hidden-only",
+    "decisions": [
+      {
+        "candidate_id": "c-docs-flags",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-guess",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-hidden-only",
+      "genuine": [
+        "c-docs-flags"
+      ],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        "c-docs-flags"
+      ],
+      "inferred_precision": null,
+      "inferred_recall": 0.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-docs-flags": "ABSTAIN",
+        "c-guess": "ABSTAIN"
+      }
+    }
+  },
+  {
+    "task_id": "t-trap-only",
+    "decisions": [
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-tests-remove",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-trap-only",
+      "genuine": [],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [],
+      "inferred_precision": null,
+      "inferred_recall": null,
+      "abstention_ok": true,
+      "trap_only": true,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-facade-delete": "ABSTAIN",
+        "c-tests-remove": "ABSTAIN"
+      }
+    }
+  },
+  {
+    "task_id": "t-deferral",
+    "decisions": [
+      {
+        "candidate_id": "c-docs-deferral",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-docs-flags",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-deferral",
+      "genuine": [
+        "c-docs-flags"
+      ],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        "c-docs-flags"
+      ],
+      "inferred_precision": null,
+      "inferred_recall": 0.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-docs-deferral": "ABSTAIN",
+        "c-docs-flags": "ABSTAIN"
+      }
+    }
+  },
+  {
+    "task_id": "t-partial",
+    "decisions": [
+      {
+        "candidate_id": "c-cli-half",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-partial",
+      "genuine": [
+        "c-cli-half",
+        "c-web"
+      ],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        "c-cli-half",
+        "c-web"
+      ],
+      "inferred_precision": null,
+      "inferred_recall": 0.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-cli-half": "ABSTAIN",
+        "c-web": "ABSTAIN",
+        "c-facade-delete": "ABSTAIN"
+      }
+    }
+  },
+  {
+    "task_id": "t-stale-leg",
+    "decisions": [
+      {
+        "candidate_id": "c-backup-stale",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-cli-half",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-stale-leg",
+      "genuine": [
+        "c-cli-half"
+      ],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        "c-cli-half"
+      ],
+      "inferred_precision": null,
+      "inferred_recall": 0.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-backup-stale": "ABSTAIN",
+        "c-cli-half": "ABSTAIN"
+      }
+    }
+  },
+  {
+    "task_id": "t-guess",
+    "decisions": [
+      {
+        "candidate_id": "c-guess",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-guess",
+      "genuine": [
+        "c-web"
+      ],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        "c-web"
+      ],
+      "inferred_precision": null,
+      "inferred_recall": 0.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-guess": "ABSTAIN",
+        "c-web": "ABSTAIN"
+      }
+    }
+  },
+  {
+    "task_id": "t-contract-harm",
+    "decisions": [
+      {
+        "candidate_id": "c-facade-delete",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      },
+      {
+        "candidate_id": "c-web",
+        "admitted": false,
+        "stage_failed": "ABSTAIN",
+        "reason": "trivial always-abstain control",
+        "legs_cited": []
+      }
+    ],
+    "score": {
+      "task_id": "t-contract-harm",
+      "genuine": [
+        "c-web"
+      ],
+      "admitted": [],
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        "c-web"
+      ],
+      "inferred_precision": null,
+      "inferred_recall": 0.0,
+      "abstention_ok": false,
+      "trap_only": false,
+      "evidence_correct": 0,
+      "evidence_total": 0,
+      "evidence_correctness": null,
+      "harmful_listed": [],
+      "harmful_rate": null,
+      "explicit_leak": [],
+      "stage_failures": {
+        "c-facade-delete": "ABSTAIN",
+        "c-web": "ABSTAIN"
+      }
+    }
+  }
+]

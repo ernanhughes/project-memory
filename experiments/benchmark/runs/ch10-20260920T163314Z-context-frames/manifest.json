@@ -1,0 +1,56 @@
+{
+  "suite": "E10-context-frames-v0.1",
+  "run_id": "ch10-20260920T163314Z-context-frames",
+  "created_at": "20260920T163314Z",
+  "corpus_digest": "9dc7b4326c7df3a4",
+  "corpus_units": 68,
+  "task_count": 11,
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "project_frame_schema": "project-frame/v0.1",
+  "work_frame_schema": "work-frame/v0.1",
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_pool": 40,
+  "budget_tokens": 1500,
+  "conditions": [
+    {
+      "name": "C0",
+      "label": "strong RAG, query only"
+    },
+    {
+      "name": "C1",
+      "label": "strong RAG + recent work"
+    },
+    {
+      "name": "C2",
+      "label": "strong RAG + project scope"
+    },
+    {
+      "name": "C3",
+      "label": "+ ProjectFrame"
+    },
+    {
+      "name": "C4",
+      "label": "+ WorkFrame"
+    },
+    {
+      "name": "C5",
+      "label": "+ Ch7/Ch8/Ch9"
+    },
+    {
+      "name": "C6",
+      "label": "full context builder"
+    },
+    {
+      "name": "CO",
+      "label": "ledger oracle ceiling"
+    }
+  ],
+  "reader": "ollama:llama3.1:8b@t0",
+  "reader_prompt_sha": "5bf71ff2d8dca3c6",
+  "code_commit": "6c2e197",
+  "ledger_audit": {
+    "unknown_units": [],
+    "out_of_scope_required": [],
+    "empty_required": []
+  }
+}

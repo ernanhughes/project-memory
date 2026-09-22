@@ -1,0 +1,2602 @@
+{
+  "corpus_version": "running-examples-2026-09",
+  "edges": [
+    {
+      "association": 0.85,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The PostgreSQL event-store decision as recorded",
+      "edge_id": "e001",
+      "evidence_confidence": 0.95,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "source:adr-007"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Write contention evidence supporting the backend decision",
+      "edge_id": "e002",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "SUPPORTED_BY",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "session-014"
+      ],
+      "target": "claim:evt-202"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Benchmark evidence supporting the backend decision",
+      "edge_id": "e003",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUPPORTED_BY",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "session-019"
+      ],
+      "target": "claim:evt-203"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Incident evidence supporting the backend decision",
+      "edge_id": "e004",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUPPORTED_BY",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "incident-021"
+      ],
+      "target": "claim:evt-204"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The PostgreSQL decision supersedes the earlier SQLite decision",
+      "edge_id": "e005",
+      "evidence_confidence": 0.95,
+      "injected_error": null,
+      "relation": "SUPERSEDES",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "adr-007",
+        "adr-003"
+      ],
+      "target": "claim:evt-201"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Contention observation session",
+      "edge_id": "e006",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:evt-202",
+      "source_ids": [
+        "session-014"
+      ],
+      "target": "source:session-014"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Benchmark session confirming contention",
+      "edge_id": "e007",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:evt-203",
+      "source_ids": [
+        "session-019"
+      ],
+      "target": "source:session-019"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Importer failure incident report",
+      "edge_id": "e008",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:evt-204",
+      "source_ids": [
+        "incident-021"
+      ],
+      "target": "source:incident-021"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The original SQLite decision record",
+      "edge_id": "e009",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:evt-201",
+      "source_ids": [
+        "adr-003"
+      ],
+      "target": "source:adr-003"
+    },
+    {
+      "association": 0.75,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Event-store backend target decision",
+      "edge_id": "e010",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUBJECT_OF",
+      "source": "entity:event-store",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "claim:evt-205"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Event-store backend original choice",
+      "edge_id": "e011",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUBJECT_OF",
+      "source": "entity:event-store",
+      "source_ids": [
+        "adr-003"
+      ],
+      "target": "claim:evt-201"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "PostgreSQL named as the event-store target",
+      "edge_id": "e012",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "NAMED_IN",
+      "source": "entity:postgresql",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "claim:evt-205"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "SQLite named as the original backend",
+      "edge_id": "e013",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "NAMED_IN",
+      "source": "entity:sqlite",
+      "source_ids": [
+        "adr-003"
+      ],
+      "target": "claim:evt-201"
+    },
+    {
+      "association": 0.55,
+      "bidirectional": true,
+      "derived": true,
+      "description": "SQLite write contention under concurrency",
+      "edge_id": "e014",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "IMPLICATED_IN",
+      "source": "entity:sqlite",
+      "source_ids": [
+        "session-014"
+      ],
+      "target": "claim:evt-202"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva proposes the PostgreSQL move; a proposal is not a decision",
+      "edge_id": "e015",
+      "evidence_confidence": 0.4,
+      "injected_error": null,
+      "relation": "PROPOSED",
+      "source": "source:session-031",
+      "source_ids": [
+        "session-031"
+      ],
+      "target": "claim:evt-205"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "j.lindqvist states a personal preference for SQLite; a preference is not support",
+      "edge_id": "e016",
+      "evidence_confidence": 0.3,
+      "injected_error": null,
+      "relation": "PREFERRED",
+      "source": "source:session-033",
+      "source_ids": [
+        "session-033"
+      ],
+      "target": "entity:sqlite"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "PostgreSQL production deployment",
+      "edge_id": "e017",
+      "evidence_confidence": 0.95,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:fact-302",
+      "source_ids": [
+        "deployment-101"
+      ],
+      "target": "source:deployment-101"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "SQLite production deployment",
+      "edge_id": "e018",
+      "evidence_confidence": 0.95,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:fact-301",
+      "source_ids": [
+        "deployment-001"
+      ],
+      "target": "source:deployment-001"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Production backend state transition",
+      "edge_id": "e019",
+      "evidence_confidence": 0.95,
+      "injected_error": null,
+      "relation": "SUPERSEDES",
+      "source": "claim:fact-302",
+      "source_ids": [
+        "deployment-101"
+      ],
+      "target": "claim:fact-301"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Current production event-store backend",
+      "edge_id": "e020",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUBJECT_OF",
+      "source": "entity:event-store",
+      "source_ids": [
+        "deployment-101"
+      ],
+      "target": "claim:fact-302"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Compatibility mode enabled on the migration branch",
+      "edge_id": "e021",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "IMPLEMENTED_BY",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "commit-110"
+      ],
+      "target": "source:commit-110"
+    },
+    {
+      "association": 0.65,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Compatibility before the write-path change",
+      "edge_id": "e022",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "PRECEDES",
+      "source": "source:commit-110",
+      "source_ids": [
+        "commit-110",
+        "commit-112"
+      ],
+      "target": "source:commit-112"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Staging writes before shadow read validation",
+      "edge_id": "e023",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "PRECEDES",
+      "source": "source:commit-112",
+      "source_ids": [
+        "commit-112",
+        "validation-102"
+      ],
+      "target": "source:validation-102"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Validation clears the production migration",
+      "edge_id": "e024",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "CLEARED",
+      "source": "source:validation-102",
+      "source_ids": [
+        "validation-102"
+      ],
+      "target": "source:deployment-101"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The successful migration episode",
+      "edge_id": "e025",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "DESCRIBES",
+      "source": "source:migration-run-103",
+      "source_ids": [
+        "migration-run-103"
+      ],
+      "target": "source:deployment-101"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The staged write-path change leaves backup configuration behind",
+      "edge_id": "e026",
+      "evidence_confidence": 0.7,
+      "injected_error": null,
+      "relation": "RAISED",
+      "source": "source:commit-112",
+      "source_ids": [
+        "session-051"
+      ],
+      "target": "claim:intent-401"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Backup configuration obligation before the release",
+      "edge_id": "e027",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:intent-401",
+      "source_ids": [
+        "session-051"
+      ],
+      "target": "source:session-051"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Backup targets and restore checks",
+      "edge_id": "e028",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "ABOUT",
+      "source": "claim:intent-401",
+      "source_ids": [
+        "session-051"
+      ],
+      "target": "entity:backup-configuration"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Backup configuration and restore check moved to PostgreSQL",
+      "edge_id": "e029",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "COMPLETED_BY",
+      "source": "claim:intent-401",
+      "source_ids": [
+        "commit-118"
+      ],
+      "target": "source:commit-118"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The obligation is due before the first post-migration release",
+      "edge_id": "e030",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "DUE_BEFORE",
+      "source": "claim:intent-401",
+      "source_ids": [
+        "session-051",
+        "release-024"
+      ],
+      "target": "source:release-024"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The first release after the migration",
+      "edge_id": "e031",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "INSTANCE_OF",
+      "source": "source:release-024",
+      "source_ids": [
+        "release-024"
+      ],
+      "target": "entity:release"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Deploy documentation refreshed without linking to the obligation",
+      "edge_id": "e032",
+      "evidence_confidence": 0.6,
+      "injected_error": null,
+      "relation": "COMPLETED_BY",
+      "source": "entity:deployment-documentation",
+      "source_ids": [
+        "commit-117"
+      ],
+      "target": "source:commit-117"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The backend decision implies documentation work",
+      "edge_id": "e033",
+      "evidence_confidence": 0.5,
+      "injected_error": null,
+      "relation": "CONSEQUENCE_FOR",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "entity:deployment-documentation"
+    },
+    {
+      "association": 0.3,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The backend decision implies fixture review",
+      "edge_id": "e034",
+      "evidence_confidence": 0.5,
+      "injected_error": null,
+      "relation": "CONSEQUENCE_FOR",
+      "source": "claim:evt-205",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "entity:benchmark-fixtures"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Fixtures still encode SQLite timing and locking assumptions",
+      "edge_id": "e035",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "STATE_OBSERVED_IN",
+      "source": "entity:benchmark-fixtures",
+      "source_ids": [
+        "fixture-scan-109"
+      ],
+      "target": "source:fixture-scan-109"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "PostgreSQL-aware benchmark fixtures replace the old assumptions",
+      "edge_id": "e036",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "COMPLETED_BY",
+      "source": "entity:benchmark-fixtures",
+      "source_ids": [
+        "commit-120"
+      ],
+      "target": "source:commit-120"
+    },
+    {
+      "association": 0.3,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The runbook echoes the decision; it is derived evidence, not independent support",
+      "edge_id": "e037",
+      "evidence_confidence": 0.2,
+      "injected_error": null,
+      "relation": "DERIVED_FROM",
+      "source": "claim:evt-207",
+      "source_ids": [
+        "runbook-006"
+      ],
+      "target": "claim:evt-205"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Operator runbook naming PostgreSQL",
+      "edge_id": "e038",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:evt-207",
+      "source_ids": [
+        "runbook-006"
+      ],
+      "target": "source:runbook-006"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The decision not to introduce Redis",
+      "edge_id": "e039",
+      "evidence_confidence": 0.95,
+      "injected_error": null,
+      "relation": "RECORDED_IN",
+      "source": "claim:evt-206",
+      "source_ids": [
+        "adr-009"
+      ],
+      "target": "source:adr-009"
+    },
+    {
+      "association": 0.75,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The working set fits in memory, so a lookup cache is unnecessary",
+      "edge_id": "e040",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUPPORTED_BY",
+      "source": "claim:evt-206",
+      "source_ids": [
+        "session-044"
+      ],
+      "target": "source:session-044"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Redis proposed for lookup latency",
+      "edge_id": "e041",
+      "evidence_confidence": 0.4,
+      "injected_error": null,
+      "relation": "PROPOSED",
+      "source": "source:session-040",
+      "source_ids": [
+        "session-040"
+      ],
+      "target": "claim:evt-206"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Redis lookup cache decision",
+      "edge_id": "e042",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUBJECT_OF",
+      "source": "entity:redis",
+      "source_ids": [
+        "adr-009"
+      ],
+      "target": "claim:evt-206"
+    },
+    {
+      "association": 0.3,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A lookup cache was proposed in front of the event store",
+      "edge_id": "e043",
+      "evidence_confidence": 0.6,
+      "injected_error": null,
+      "relation": "PROPOSED_FOR",
+      "source": "entity:event-store",
+      "source_ids": [
+        "session-040"
+      ],
+      "target": "entity:redis"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "SQLite performance tuning work",
+      "edge_id": "e044",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "TUNING_TASK",
+      "source": "entity:sqlite",
+      "source_ids": [
+        "issue-041"
+      ],
+      "target": "source:issue-041"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Tuning the old backend is superseded by the migration",
+      "edge_id": "e045",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "SUPERSEDED_BY",
+      "source": "source:issue-041",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "claim:evt-205"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A new-service discussion assumes PostgreSQL",
+      "edge_id": "e046",
+      "evidence_confidence": 0.7,
+      "injected_error": null,
+      "relation": "ASSUMES",
+      "source": "source:session-072",
+      "source_ids": [
+        "session-072"
+      ],
+      "target": "entity:postgresql"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva proposes the event-store move to PostgreSQL",
+      "edge_id": "e047",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "AUTHORED",
+      "source": "entity:a.silva",
+      "source_ids": [
+        "session-031"
+      ],
+      "target": "source:session-031"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva on the corpus_import removal decision",
+      "edge_id": "e048",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "DECIDED",
+      "source": "entity:a.silva",
+      "source_ids": [
+        "adr-013"
+      ],
+      "target": "source:adr-013"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva migrates CLI callers away from corpus_import",
+      "edge_id": "e049",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "ASSIGNED",
+      "source": "entity:a.silva",
+      "source_ids": [
+        "issue-088"
+      ],
+      "target": "source:issue-088"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva reports the Strategy X foreign-key failure",
+      "edge_id": "e050",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "REPORTED",
+      "source": "entity:a.silva",
+      "source_ids": [
+        "incident-034"
+      ],
+      "target": "source:incident-034"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva reports a schema-first migration failure",
+      "edge_id": "e051",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "REPORTED",
+      "source": "entity:a.silva",
+      "source_ids": [
+        "incident-105"
+      ],
+      "target": "source:incident-105"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva retains partner facade regression tests",
+      "edge_id": "e052",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "AUTHORED",
+      "source": "entity:a.silva",
+      "source_ids": [
+        "tests-compat-122"
+      ],
+      "target": "source:tests-compat-122"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "a.silva on the successful event-store migration run",
+      "edge_id": "e053",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "RAN",
+      "source": "entity:a.silva",
+      "source_ids": [
+        "migration-run-103"
+      ],
+      "target": "source:migration-run-103"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "j.lindqvist prefers SQLite for the event store",
+      "edge_id": "e054",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "AUTHORED",
+      "source": "entity:j.lindqvist",
+      "source_ids": [
+        "session-033"
+      ],
+      "target": "source:session-033"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "j.lindqvist co-decides the PostgreSQL event-store target",
+      "edge_id": "e055",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "DECIDED",
+      "source": "entity:j.lindqvist",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "source:adr-007"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "j.lindqvist records the partner facade commitment",
+      "edge_id": "e056",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "AUTHORED",
+      "source": "entity:j.lindqvist",
+      "source_ids": [
+        "partner-note-004"
+      ],
+      "target": "source:partner-note-004"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "j.lindqvist records the compatibility-first schema migration procedure",
+      "edge_id": "e057",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "AUTHORED",
+      "source": "entity:j.lindqvist",
+      "source_ids": [
+        "procedure-123"
+      ],
+      "target": "source:procedure-123"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "j.lindqvist runs the compatibility-first production migration",
+      "edge_id": "e058",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "RAN",
+      "source": "entity:j.lindqvist",
+      "source_ids": [
+        "run-124"
+      ],
+      "target": "source:run-124"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "j.lindqvist hits a schema-first staging failure",
+      "edge_id": "e059",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "RAN",
+      "source": "entity:j.lindqvist",
+      "source_ids": [
+        "staging-run-104"
+      ],
+      "target": "source:staging-run-104"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "m.okafor co-decides the PostgreSQL event-store target",
+      "edge_id": "e060",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "DECIDED",
+      "source": "entity:m.okafor",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "source:adr-007"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "m.okafor deploys PostgreSQL to production",
+      "edge_id": "e061",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "DEPLOYED",
+      "source": "entity:m.okafor",
+      "source_ids": [
+        "deployment-101"
+      ],
+      "target": "source:deployment-101"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "m.okafor migrates web callers away from corpus_import",
+      "edge_id": "e062",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "ASSIGNED",
+      "source": "entity:m.okafor",
+      "source_ids": [
+        "issue-089"
+      ],
+      "target": "source:issue-089"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "m.okafor reports the nine-minute schema outage",
+      "edge_id": "e063",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "REPORTED",
+      "source": "entity:m.okafor",
+      "source_ids": [
+        "incident-026"
+      ],
+      "target": "source:incident-026"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "m.okafor defers corpus_import documentation cleanup",
+      "edge_id": "e064",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "AUTHORED",
+      "source": "entity:m.okafor",
+      "source_ids": [
+        "docs-note-012"
+      ],
+      "target": "source:docs-note-012"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "m.okafor records an additive migration exception",
+      "edge_id": "e065",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "AUTHORED",
+      "source": "entity:m.okafor",
+      "source_ids": [
+        "change-061"
+      ],
+      "target": "source:change-061"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The legacy corpus_import domain is removed",
+      "edge_id": "e066",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "REMOVED_BY",
+      "source": "entity:corpus_import",
+      "source_ids": [
+        "adr-013"
+      ],
+      "target": "source:adr-013"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "CLI caller migration away from corpus_import",
+      "edge_id": "e067",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "SPAWNED",
+      "source": "source:adr-013",
+      "source_ids": [
+        "adr-013",
+        "issue-088"
+      ],
+      "target": "source:issue-088"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Web caller migration away from corpus_import",
+      "edge_id": "e068",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "SPAWNED",
+      "source": "source:adr-013",
+      "source_ids": [
+        "adr-013",
+        "issue-089"
+      ],
+      "target": "source:issue-089"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A compatibility facade is kept for the partner commitment",
+      "edge_id": "e069",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "PRESERVED_BY",
+      "source": "entity:partner-facade",
+      "source_ids": [
+        "adr-013"
+      ],
+      "target": "source:adr-013"
+    },
+    {
+      "association": 0.8,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The partner commitment preserves the facade until the end of Q1 2025",
+      "edge_id": "e070",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "CONSTRAINED_BY",
+      "source": "entity:partner-facade",
+      "source_ids": [
+        "partner-note-004"
+      ],
+      "target": "source:partner-note-004"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Regression tests for the partner facade remain intentionally",
+      "edge_id": "e071",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "PROTECTED_BY",
+      "source": "entity:partner-facade",
+      "source_ids": [
+        "tests-compat-122"
+      ],
+      "target": "source:tests-compat-122"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Documentation cleanup deferred; not an open migration task",
+      "edge_id": "e072",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "DEFERRED_WORK",
+      "source": "entity:corpus_import",
+      "source_ids": [
+        "docs-note-012"
+      ],
+      "target": "source:docs-note-012"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The later compatibility release ships with the facade",
+      "edge_id": "e073",
+      "evidence_confidence": 0.75,
+      "injected_error": null,
+      "relation": "SHIPPED_WITH",
+      "source": "source:release-121",
+      "source_ids": [
+        "release-121"
+      ],
+      "target": "entity:partner-facade"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A schema-first migration drops a live column, causing a nine-minute outage",
+      "edge_id": "e074",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "FAILED_IN",
+      "source": "entity:schema-migration",
+      "source_ids": [
+        "incident-026"
+      ],
+      "target": "source:incident-026"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A schema-first migration breaks a live caller",
+      "edge_id": "e075",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "FAILED_IN",
+      "source": "entity:schema-migration",
+      "source_ids": [
+        "incident-105"
+      ],
+      "target": "source:incident-105"
+    },
+    {
+      "association": 0.65,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A schema-first staging migration invalidates the old reader",
+      "edge_id": "e076",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "FAILED_IN",
+      "source": "entity:schema-migration",
+      "source_ids": [
+        "staging-run-104"
+      ],
+      "target": "source:staging-run-104"
+    },
+    {
+      "association": 0.3,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A staging log restating the outage; it is not an independent failure episode",
+      "edge_id": "e077",
+      "evidence_confidence": 0.2,
+      "injected_error": null,
+      "relation": "ECHOES",
+      "source": "source:staging-log-018",
+      "source_ids": [
+        "staging-log-018"
+      ],
+      "target": "source:incident-026"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The compatibility-first procedure learns from the schema-first outage",
+      "edge_id": "e078",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "LEARNED_FROM",
+      "source": "source:procedure-123",
+      "source_ids": [
+        "procedure-123"
+      ],
+      "target": "source:incident-026"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A compatibility-first migration completes with shadow reads and validation",
+      "edge_id": "e079",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "VALIDATED_BY",
+      "source": "source:procedure-123",
+      "source_ids": [
+        "run-124"
+      ],
+      "target": "source:run-124"
+    },
+    {
+      "association": 0.75,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The recorded procedure for breaking schema migrations",
+      "edge_id": "e080",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "PROCEDURE_FOR",
+      "source": "entity:schema-migration",
+      "source_ids": [
+        "procedure-123"
+      ],
+      "target": "source:procedure-123"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A platform change removes the assumptions behind the procedure",
+      "edge_id": "e081",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUPERSEDES",
+      "source": "source:platform-note-125",
+      "source_ids": [
+        "platform-note-125"
+      ],
+      "target": "source:procedure-123"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A small additive migration is safe without the full sequence",
+      "edge_id": "e082",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "EXCEPTION_TO",
+      "source": "source:change-061",
+      "source_ids": [
+        "change-061"
+      ],
+      "target": "source:procedure-123"
+    },
+    {
+      "association": 0.45,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A nine-minute-looking timeout with the same symptom and a different cause",
+      "edge_id": "e083",
+      "evidence_confidence": 0.15,
+      "injected_error": null,
+      "relation": "RESEMBLES",
+      "source": "source:incident-106",
+      "source_ids": [
+        "incident-106"
+      ],
+      "target": "source:incident-026"
+    },
+    {
+      "association": 0.75,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Strategy X permits orphaned rows after an exception",
+      "edge_id": "e084",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "FAILED_IN",
+      "source": "entity:strategy-x",
+      "source_ids": [
+        "incident-034"
+      ],
+      "target": "source:incident-034"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Strategy X disables foreign-key checks while copying rows",
+      "edge_id": "e085",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "DISABLES",
+      "source": "entity:strategy-x",
+      "source_ids": [
+        "incident-034"
+      ],
+      "target": "entity:foreign-key-checks"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Foreign-key checks are not restored after the exception, permitting orphaned rows",
+      "edge_id": "e086",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "NOT_RESTORED_IN",
+      "source": "entity:foreign-key-checks",
+      "source_ids": [
+        "incident-034"
+      ],
+      "target": "source:incident-034"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The importer backfill uses Strategy X",
+      "edge_id": "e087",
+      "evidence_confidence": 0.7,
+      "injected_error": null,
+      "relation": "USED_BY",
+      "source": "entity:strategy-x",
+      "source_ids": [
+        "incident-034"
+      ],
+      "target": "entity:importer"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The event-store migration is an early instance of the compatibility-first sequence",
+      "edge_id": "e088",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "EARLY_INSTANCE_OF",
+      "source": "source:migration-run-103",
+      "source_ids": [
+        "migration-run-103"
+      ],
+      "target": "source:procedure-123"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Schema migration applied to the event store",
+      "edge_id": "e089",
+      "evidence_confidence": 0.7,
+      "injected_error": null,
+      "relation": "APPLIED_TO",
+      "source": "entity:schema-migration",
+      "source_ids": [
+        "commit-112"
+      ],
+      "target": "entity:event-store"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "An early SQLite-only importer throughput baseline",
+      "edge_id": "e090",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "BASELINE_IN",
+      "source": "entity:importer",
+      "source_ids": [
+        "benchmark-128"
+      ],
+      "target": "source:benchmark-128"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The PostgreSQL importer throughput baseline",
+      "edge_id": "e091",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "BASELINE_IN",
+      "source": "entity:importer",
+      "source_ids": [
+        "benchmark-126"
+      ],
+      "target": "source:benchmark-126"
+    },
+    {
+      "association": 0.6,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The PostgreSQL baseline supersedes the SQLite-only one",
+      "edge_id": "e092",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "SUPERSEDES",
+      "source": "source:benchmark-126",
+      "source_ids": [
+        "benchmark-126"
+      ],
+      "target": "source:benchmark-128"
+    },
+    {
+      "association": 0.7,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Schema migrations must be reversible with a passing rollback test",
+      "edge_id": "e093",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "CONSTRAINED_BY",
+      "source": "entity:schema-migration",
+      "source_ids": [
+        "policy-129"
+      ],
+      "target": "source:policy-129"
+    },
+    {
+      "association": 0.65,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The importer must accept the v1 event representation until 2025-06-30",
+      "edge_id": "e094",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "CONSTRAINED_BY",
+      "source": "entity:importer",
+      "source_ids": [
+        "requirement-127"
+      ],
+      "target": "source:requirement-127"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "A concurrent importer run fails under write contention",
+      "edge_id": "e095",
+      "evidence_confidence": 0.85,
+      "injected_error": null,
+      "relation": "FAILED_IN",
+      "source": "entity:importer",
+      "source_ids": [
+        "incident-021"
+      ],
+      "target": "source:incident-021"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "SQLite-only importer throughput",
+      "edge_id": "e096",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "MEASURED_IN",
+      "source": "entity:sqlite",
+      "source_ids": [
+        "benchmark-128"
+      ],
+      "target": "source:benchmark-128"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "PostgreSQL importer throughput",
+      "edge_id": "e097",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "MEASURED_IN",
+      "source": "entity:postgresql",
+      "source_ids": [
+        "benchmark-126"
+      ],
+      "target": "source:benchmark-126"
+    },
+    {
+      "association": 0.35,
+      "bidirectional": true,
+      "derived": true,
+      "description": "The runbook instructs operators on PostgreSQL",
+      "edge_id": "e098",
+      "evidence_confidence": 0.6,
+      "injected_error": null,
+      "relation": "OPERATED_BY",
+      "source": "entity:postgresql",
+      "source_ids": [
+        "runbook-006"
+      ],
+      "target": "source:runbook-006"
+    },
+    {
+      "association": 0.5,
+      "bidirectional": true,
+      "derived": true,
+      "description": "Backup configuration targets PostgreSQL after the move",
+      "edge_id": "e099",
+      "evidence_confidence": 0.8,
+      "injected_error": null,
+      "relation": "TARGETS",
+      "source": "entity:backup-configuration",
+      "source_ids": [
+        "commit-118"
+      ],
+      "target": "entity:postgresql"
+    },
+    {
+      "association": 0.4,
+      "bidirectional": true,
+      "derived": true,
+      "description": "SQLite was the former event-store backend",
+      "edge_id": "e100",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "FORMER_BACKEND",
+      "source": "entity:event-store",
+      "source_ids": [
+        "adr-003"
+      ],
+      "target": "entity:sqlite"
+    },
+    {
+      "association": 0.75,
+      "bidirectional": true,
+      "derived": true,
+      "description": "PostgreSQL is the current event-store backend",
+      "edge_id": "e101",
+      "evidence_confidence": 0.9,
+      "injected_error": null,
+      "relation": "CURRENT_BACKEND",
+      "source": "entity:event-store",
+      "source_ids": [
+        "adr-007"
+      ],
+      "target": "entity:postgresql"
+    }
+  ],
+  "nodes": [
+    {
+      "derived": false,
+      "description": "decision-record: Decision to use SQLite for the first production event store.",
+      "kind": "source",
+      "label": "adr-003",
+      "node_id": "source:adr-003",
+      "source_ids": [
+        "adr-003"
+      ],
+      "terms": [
+        "decision-record",
+        "adr-003"
+      ],
+      "timestamp": "2024-03-01"
+    },
+    {
+      "derived": false,
+      "description": "deployment: SQLite becomes the production event store.",
+      "kind": "source",
+      "label": "deployment-001",
+      "node_id": "source:deployment-001",
+      "source_ids": [
+        "deployment-001"
+      ],
+      "terms": [
+        "deployment",
+        "deployment-001"
+      ],
+      "timestamp": "2024-03-04"
+    },
+    {
+      "derived": false,
+      "description": "issue: SQLite performance-tuning work opens.",
+      "kind": "source",
+      "label": "issue-041",
+      "node_id": "source:issue-041",
+      "source_ids": [
+        "issue-041"
+      ],
+      "terms": [
+        "issue",
+        "issue-041"
+      ],
+      "timestamp": "2024-05-06"
+    },
+    {
+      "derived": false,
+      "description": "session: Concurrent-write contention observed under the target workload.",
+      "kind": "source",
+      "label": "session-014",
+      "node_id": "source:session-014",
+      "source_ids": [
+        "session-014"
+      ],
+      "terms": [
+        "session",
+        "session-014"
+      ],
+      "timestamp": "2024-06-14"
+    },
+    {
+      "derived": false,
+      "description": "session: Controlled benchmark confirms the write-contention problem.",
+      "kind": "source",
+      "label": "session-019",
+      "node_id": "source:session-019",
+      "source_ids": [
+        "session-019"
+      ],
+      "terms": [
+        "session",
+        "session-019"
+      ],
+      "timestamp": "2024-06-19"
+    },
+    {
+      "derived": false,
+      "description": "incident: A concurrent importer run fails because of SQLite write contention.",
+      "kind": "source",
+      "label": "incident-021",
+      "node_id": "source:incident-021",
+      "source_ids": [
+        "incident-021"
+      ],
+      "terms": [
+        "incident",
+        "incident-021"
+      ],
+      "timestamp": "2024-06-24"
+    },
+    {
+      "derived": false,
+      "description": "session: a.silva proposes moving the event store from SQLite to PostgreSQL.",
+      "kind": "source",
+      "label": "session-031",
+      "node_id": "source:session-031",
+      "source_ids": [
+        "session-031"
+      ],
+      "terms": [
+        "session",
+        "session-031"
+      ],
+      "timestamp": "2024-07-08"
+    },
+    {
+      "derived": false,
+      "description": "session: j.lindqvist states a personal preference for staying on SQLite.",
+      "kind": "source",
+      "label": "session-033",
+      "node_id": "source:session-033",
+      "source_ids": [
+        "session-033"
+      ],
+      "terms": [
+        "session",
+        "session-033"
+      ],
+      "timestamp": "2024-07-09"
+    },
+    {
+      "derived": false,
+      "description": "decision-record: New event-store work should target PostgreSQL.",
+      "kind": "source",
+      "label": "adr-007",
+      "node_id": "source:adr-007",
+      "source_ids": [
+        "adr-007"
+      ],
+      "terms": [
+        "decision-record",
+        "adr-007"
+      ],
+      "timestamp": "2024-07-11"
+    },
+    {
+      "derived": false,
+      "description": "commit: Compatibility mode enabled on the migration branch and in staging.",
+      "kind": "source",
+      "label": "commit-110",
+      "node_id": "source:commit-110",
+      "source_ids": [
+        "commit-110"
+      ],
+      "terms": [
+        "commit",
+        "commit-110"
+      ],
+      "timestamp": "2024-07-15"
+    },
+    {
+      "derived": false,
+      "description": "commit: Application writes changed to PostgreSQL and exercised in staging.",
+      "kind": "source",
+      "label": "commit-112",
+      "node_id": "source:commit-112",
+      "source_ids": [
+        "commit-112"
+      ],
+      "terms": [
+        "commit",
+        "commit-112"
+      ],
+      "timestamp": "2024-07-15"
+    },
+    {
+      "derived": false,
+      "description": "session: Backup configuration still targets SQLite and must move before the release.",
+      "kind": "source",
+      "label": "session-051",
+      "node_id": "source:session-051",
+      "source_ids": [
+        "session-051"
+      ],
+      "terms": [
+        "session",
+        "session-051"
+      ],
+      "timestamp": "2024-07-17"
+    },
+    {
+      "derived": false,
+      "description": "validation: Staging shadow reads from both backends agree; migration cleared.",
+      "kind": "source",
+      "label": "validation-102",
+      "node_id": "source:validation-102",
+      "source_ids": [
+        "validation-102"
+      ],
+      "terms": [
+        "validation",
+        "validation-102"
+      ],
+      "timestamp": "2024-07-19"
+    },
+    {
+      "derived": false,
+      "description": "deployment: PostgreSQL becomes the production event store.",
+      "kind": "source",
+      "label": "deployment-101",
+      "node_id": "source:deployment-101",
+      "source_ids": [
+        "deployment-101"
+      ],
+      "terms": [
+        "deployment",
+        "deployment-101"
+      ],
+      "timestamp": "2024-07-22"
+    },
+    {
+      "derived": false,
+      "description": "migration-run: The event-store migration succeeds after compatibility mode, schema change, shadow reads, and validation.",
+      "kind": "source",
+      "label": "migration-run-103",
+      "node_id": "source:migration-run-103",
+      "source_ids": [
+        "migration-run-103"
+      ],
+      "terms": [
+        "migration-run",
+        "migration-run-103"
+      ],
+      "timestamp": "2024-07-22"
+    },
+    {
+      "derived": false,
+      "description": "scan: Benchmark fixtures still encode SQLite timing and locking assumptions.",
+      "kind": "source",
+      "label": "fixture-scan-109",
+      "node_id": "source:fixture-scan-109",
+      "source_ids": [
+        "fixture-scan-109"
+      ],
+      "terms": [
+        "scan",
+        "fixture-scan-109"
+      ],
+      "timestamp": "2024-07-23"
+    },
+    {
+      "derived": false,
+      "description": "session: Redis is proposed for lookup latency.",
+      "kind": "source",
+      "label": "session-040",
+      "node_id": "source:session-040",
+      "source_ids": [
+        "session-040"
+      ],
+      "terms": [
+        "session",
+        "session-040"
+      ],
+      "timestamp": "2024-08-05"
+    },
+    {
+      "derived": false,
+      "description": "session: The working set fits in memory; Redis is judged unnecessary.",
+      "kind": "source",
+      "label": "session-044",
+      "node_id": "source:session-044",
+      "source_ids": [
+        "session-044"
+      ],
+      "terms": [
+        "session",
+        "session-044"
+      ],
+      "timestamp": "2024-08-08"
+    },
+    {
+      "derived": false,
+      "description": "decision-record: Do not introduce Redis.",
+      "kind": "source",
+      "label": "adr-009",
+      "node_id": "source:adr-009",
+      "source_ids": [
+        "adr-009"
+      ],
+      "terms": [
+        "decision-record",
+        "adr-009"
+      ],
+      "timestamp": "2024-08-12"
+    },
+    {
+      "derived": false,
+      "description": "runbook: Operator runbook tells operators to use PostgreSQL, echoing adr-007.",
+      "kind": "source",
+      "label": "runbook-006",
+      "node_id": "source:runbook-006",
+      "source_ids": [
+        "runbook-006"
+      ],
+      "terms": [
+        "runbook",
+        "runbook-006"
+      ],
+      "timestamp": "2024-08-16"
+    },
+    {
+      "derived": false,
+      "description": "commit: A commit titled refresh deploy docs updates deployment documentation.",
+      "kind": "source",
+      "label": "commit-117",
+      "node_id": "source:commit-117",
+      "source_ids": [
+        "commit-117"
+      ],
+      "terms": [
+        "commit",
+        "commit-117"
+      ],
+      "timestamp": "2024-08-21"
+    },
+    {
+      "derived": false,
+      "description": "commit: Backup configuration and its restore check move to PostgreSQL.",
+      "kind": "source",
+      "label": "commit-118",
+      "node_id": "source:commit-118",
+      "source_ids": [
+        "commit-118"
+      ],
+      "terms": [
+        "commit",
+        "commit-118"
+      ],
+      "timestamp": "2024-08-27"
+    },
+    {
+      "derived": false,
+      "description": "release: The first product release after the migration ships.",
+      "kind": "source",
+      "label": "release-024",
+      "node_id": "source:release-024",
+      "source_ids": [
+        "release-024"
+      ],
+      "terms": [
+        "release",
+        "release-024"
+      ],
+      "timestamp": "2024-08-30"
+    },
+    {
+      "derived": false,
+      "description": "commit: PostgreSQL-aware benchmark fixtures replace SQLite-dependent assumptions.",
+      "kind": "source",
+      "label": "commit-120",
+      "node_id": "source:commit-120",
+      "source_ids": [
+        "commit-120"
+      ],
+      "terms": [
+        "commit",
+        "commit-120"
+      ],
+      "timestamp": "2024-09-03"
+    },
+    {
+      "derived": false,
+      "description": "session: A new-service discussion assumes PostgreSQL.",
+      "kind": "source",
+      "label": "session-072",
+      "node_id": "source:session-072",
+      "source_ids": [
+        "session-072"
+      ],
+      "terms": [
+        "session",
+        "session-072"
+      ],
+      "timestamp": "2024-10-07"
+    },
+    {
+      "derived": false,
+      "description": "decision-record: Remove the legacy corpus_import domain, keeping a compatibility facade for the external partner commitment.",
+      "kind": "source",
+      "label": "adr-013",
+      "node_id": "source:adr-013",
+      "source_ids": [
+        "adr-013"
+      ],
+      "terms": [
+        "decision-record",
+        "adr-013"
+      ],
+      "timestamp": "2025-01-13"
+    },
+    {
+      "derived": false,
+      "description": "issue: Migrate CLI callers away from corpus_import.",
+      "kind": "source",
+      "label": "issue-088",
+      "node_id": "source:issue-088",
+      "source_ids": [
+        "issue-088"
+      ],
+      "terms": [
+        "issue",
+        "issue-088"
+      ],
+      "timestamp": "2025-01-14"
+    },
+    {
+      "derived": false,
+      "description": "issue: Migrate web callers away from corpus_import.",
+      "kind": "source",
+      "label": "issue-089",
+      "node_id": "source:issue-089",
+      "source_ids": [
+        "issue-089"
+      ],
+      "terms": [
+        "issue",
+        "issue-089"
+      ],
+      "timestamp": "2025-01-14"
+    },
+    {
+      "derived": false,
+      "description": "constraint: Preserve the partner-facing facade until the end of Q1 2025.",
+      "kind": "source",
+      "label": "partner-note-004",
+      "node_id": "source:partner-note-004",
+      "source_ids": [
+        "partner-note-004"
+      ],
+      "terms": [
+        "constraint",
+        "partner-note-004"
+      ],
+      "timestamp": "2025-01-16"
+    },
+    {
+      "derived": false,
+      "description": "constraint: Regression tests for the partner facade remain intentionally.",
+      "kind": "source",
+      "label": "tests-compat-122",
+      "node_id": "source:tests-compat-122",
+      "source_ids": [
+        "tests-compat-122"
+      ],
+      "terms": [
+        "constraint",
+        "tests-compat-122"
+      ],
+      "timestamp": "2025-01-30"
+    },
+    {
+      "derived": false,
+      "description": "deferral: Documentation cleanup is deferred; it is not an open migration task.",
+      "kind": "source",
+      "label": "docs-note-012",
+      "node_id": "source:docs-note-012",
+      "source_ids": [
+        "docs-note-012"
+      ],
+      "terms": [
+        "deferral",
+        "docs-note-012"
+      ],
+      "timestamp": "2025-01-31"
+    },
+    {
+      "derived": false,
+      "description": "incident: A schema-first migration drops a column live code still reads, causing a nine-minute outage until rollback.",
+      "kind": "source",
+      "label": "incident-026",
+      "node_id": "source:incident-026",
+      "source_ids": [
+        "incident-026"
+      ],
+      "terms": [
+        "incident",
+        "incident-026"
+      ],
+      "timestamp": "2024-11-14"
+    },
+    {
+      "derived": false,
+      "description": "log: A staging log restating incident-026; it adds no independent episode.",
+      "kind": "source",
+      "label": "staging-log-018",
+      "node_id": "source:staging-log-018",
+      "source_ids": [
+        "staging-log-018"
+      ],
+      "terms": [
+        "log",
+        "staging-log-018"
+      ],
+      "timestamp": "2024-11-18"
+    },
+    {
+      "derived": false,
+      "description": "incident: A schema-first migration breaks a live caller before compatibility behaviour is available.",
+      "kind": "source",
+      "label": "incident-105",
+      "node_id": "source:incident-105",
+      "source_ids": [
+        "incident-105"
+      ],
+      "terms": [
+        "incident",
+        "incident-105"
+      ],
+      "timestamp": "2025-02-11"
+    },
+    {
+      "derived": false,
+      "description": "staging-run: A schema-first staging migration invalidates the old reader before the compatibility path is deployed.",
+      "kind": "source",
+      "label": "staging-run-104",
+      "node_id": "source:staging-run-104",
+      "source_ids": [
+        "staging-run-104"
+      ],
+      "terms": [
+        "staging-run",
+        "staging-run-104"
+      ],
+      "timestamp": "2025-03-20"
+    },
+    {
+      "derived": false,
+      "description": "migration-run: A compatibility-first production migration completes with shadow reads and validation.",
+      "kind": "source",
+      "label": "run-124",
+      "node_id": "source:run-124",
+      "source_ids": [
+        "run-124"
+      ],
+      "terms": [
+        "migration-run",
+        "run-124"
+      ],
+      "timestamp": "2025-04-10"
+    },
+    {
+      "derived": false,
+      "description": "procedure: The compatibility-first sequence is recorded as the project procedure for breaking schema migrations.",
+      "kind": "source",
+      "label": "procedure-123",
+      "node_id": "source:procedure-123",
+      "source_ids": [
+        "procedure-123"
+      ],
+      "terms": [
+        "procedure",
+        "procedure-123"
+      ],
+      "timestamp": "2025-04-15"
+    },
+    {
+      "derived": false,
+      "description": "incident: Strategy X disables foreign-key checks before copying rows and fails to restore them after an exception, permitting orphaned rows.",
+      "kind": "source",
+      "label": "incident-034",
+      "node_id": "source:incident-034",
+      "source_ids": [
+        "incident-034"
+      ],
+      "terms": [
+        "incident",
+        "incident-034"
+      ],
+      "timestamp": "2025-06-18"
+    },
+    {
+      "derived": false,
+      "description": "incident: A nine-minute-looking timeout caused by network saturation, not schema ordering.",
+      "kind": "source",
+      "label": "incident-106",
+      "node_id": "source:incident-106",
+      "source_ids": [
+        "incident-106"
+      ],
+      "terms": [
+        "incident",
+        "incident-106"
+      ],
+      "timestamp": "2025-08-12"
+    },
+    {
+      "derived": false,
+      "description": "change: A small additive migration is safe without the full breaking-change sequence.",
+      "kind": "source",
+      "label": "change-061",
+      "node_id": "source:change-061",
+      "source_ids": [
+        "change-061"
+      ],
+      "terms": [
+        "change",
+        "change-061"
+      ],
+      "timestamp": "2026-02-10"
+    },
+    {
+      "derived": false,
+      "description": "supersession: A platform change removes the assumptions behind procedure-123.",
+      "kind": "source",
+      "label": "platform-note-125",
+      "node_id": "source:platform-note-125",
+      "source_ids": [
+        "platform-note-125"
+      ],
+      "terms": [
+        "supersession",
+        "platform-note-125"
+      ],
+      "timestamp": "2027-03-15"
+    },
+    {
+      "derived": false,
+      "description": "benchmark: An early SQLite-only importer throughput baseline.",
+      "kind": "source",
+      "label": "benchmark-128",
+      "node_id": "source:benchmark-128",
+      "source_ids": [
+        "benchmark-128"
+      ],
+      "terms": [
+        "benchmark",
+        "benchmark-128"
+      ],
+      "timestamp": "2024-04-18"
+    },
+    {
+      "derived": false,
+      "description": "policy: All schema migrations must be reversible with a passing rollback test.",
+      "kind": "source",
+      "label": "policy-129",
+      "node_id": "source:policy-129",
+      "source_ids": [
+        "policy-129"
+      ],
+      "terms": [
+        "policy",
+        "policy-129"
+      ],
+      "timestamp": "2024-09-06"
+    },
+    {
+      "derived": false,
+      "description": "requirement: The importer must accept the v1 event representation until 2025-06-30.",
+      "kind": "source",
+      "label": "requirement-127",
+      "node_id": "source:requirement-127",
+      "source_ids": [
+        "requirement-127"
+      ],
+      "terms": [
+        "requirement",
+        "requirement-127"
+      ],
+      "timestamp": "2024-09-12"
+    },
+    {
+      "derived": false,
+      "description": "benchmark: The PostgreSQL importer baseline supersedes benchmark-128.",
+      "kind": "source",
+      "label": "benchmark-126",
+      "node_id": "source:benchmark-126",
+      "source_ids": [
+        "benchmark-126"
+      ],
+      "terms": [
+        "benchmark",
+        "benchmark-126"
+      ],
+      "timestamp": "2024-11-25"
+    },
+    {
+      "derived": false,
+      "description": "release: The later compatibility release ships.",
+      "kind": "source",
+      "label": "release-121",
+      "node_id": "source:release-121",
+      "source_ids": [
+        "release-121"
+      ],
+      "terms": [
+        "release",
+        "release-121"
+      ],
+      "timestamp": "2025-02-14"
+    },
+    {
+      "derived": true,
+      "description": "Engineer on the event-store migration, the corpus_import removal, and the Strategy X backfill failure.",
+      "kind": "entity",
+      "label": "a.silva",
+      "node_id": "entity:a.silva",
+      "source_ids": [],
+      "terms": [
+        "silva",
+        "engineer"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Engineer who preferred SQLite, holds the partner facade commitment, and recorded the migration procedure.",
+      "kind": "entity",
+      "label": "j.lindqvist",
+      "node_id": "entity:j.lindqvist",
+      "source_ids": [],
+      "terms": [
+        "lindqvist",
+        "engineer"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Engineer on event-store decisions, production deployments, and the web caller migration.",
+      "kind": "entity",
+      "label": "m.okafor",
+      "node_id": "entity:m.okafor",
+      "source_ids": [],
+      "terms": [
+        "okafor",
+        "engineer"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "The original event-store backend, superseded for new work.",
+      "kind": "entity",
+      "label": "SQLite",
+      "node_id": "entity:sqlite",
+      "source_ids": [],
+      "terms": [
+        "sqlite",
+        "backend",
+        "database"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "The current event-store backend.",
+      "kind": "entity",
+      "label": "PostgreSQL",
+      "node_id": "entity:postgresql",
+      "source_ids": [],
+      "terms": [
+        "postgresql",
+        "postgres",
+        "backend",
+        "database"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "A lookup cache that was proposed and rejected.",
+      "kind": "entity",
+      "label": "Redis",
+      "node_id": "entity:redis",
+      "source_ids": [],
+      "terms": [
+        "redis",
+        "cache",
+        "lookup",
+        "latency"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "The event-store subsystem and its backend choice.",
+      "kind": "entity",
+      "label": "event store",
+      "node_id": "entity:event-store",
+      "source_ids": [],
+      "terms": [
+        "event",
+        "store",
+        "backend"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Backup targets and restore checks for the event store.",
+      "kind": "entity",
+      "label": "backup configuration",
+      "node_id": "entity:backup-configuration",
+      "source_ids": [],
+      "terms": [
+        "backup",
+        "restore",
+        "configuration"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Documentation describing how the system is deployed.",
+      "kind": "entity",
+      "label": "deployment documentation",
+      "node_id": "entity:deployment-documentation",
+      "source_ids": [],
+      "terms": [
+        "deployment",
+        "documentation",
+        "docs"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Test fixtures encoding backend timing and locking assumptions.",
+      "kind": "entity",
+      "label": "benchmark fixtures",
+      "node_id": "entity:benchmark-fixtures",
+      "source_ids": [],
+      "terms": [
+        "benchmark",
+        "fixtures",
+        "timing",
+        "locking"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "The legacy import domain removed in 2025.",
+      "kind": "entity",
+      "label": "corpus_import",
+      "node_id": "entity:corpus_import",
+      "source_ids": [],
+      "terms": [
+        "corpus_import",
+        "legacy",
+        "domain",
+        "callers"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "The compatibility facade preserved for an external partner commitment.",
+      "kind": "entity",
+      "label": "partner facade",
+      "node_id": "entity:partner-facade",
+      "source_ids": [],
+      "terms": [
+        "partner",
+        "facade",
+        "compatibility",
+        "commitment"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Breaking schema changes and the order in which they are applied.",
+      "kind": "entity",
+      "label": "schema migration",
+      "node_id": "entity:schema-migration",
+      "source_ids": [],
+      "terms": [
+        "schema",
+        "migration",
+        "breaking",
+        "ordering"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "A backfill strategy that disables foreign key checks while copying rows.",
+      "kind": "entity",
+      "label": "Strategy X",
+      "node_id": "entity:strategy-x",
+      "source_ids": [],
+      "terms": [
+        "strategy",
+        "backfill",
+        "copying"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Referential integrity checks that must be restored after a backfill.",
+      "kind": "entity",
+      "label": "foreign-key checks",
+      "node_id": "entity:foreign-key-checks",
+      "source_ids": [],
+      "terms": [
+        "foreign",
+        "key",
+        "integrity",
+        "orphaned"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "The corpus importer and its throughput baselines.",
+      "kind": "entity",
+      "label": "importer",
+      "node_id": "entity:importer",
+      "source_ids": [],
+      "terms": [
+        "importer",
+        "throughput",
+        "import"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Product releases that gate outstanding work.",
+      "kind": "entity",
+      "label": "release",
+      "node_id": "entity:release",
+      "source_ids": [],
+      "terms": [
+        "release",
+        "ship",
+        "deadline"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Use SQLite for the first production event store.",
+      "kind": "claim",
+      "label": "evt-201 SQLite decision",
+      "node_id": "claim:evt-201",
+      "source_ids": [
+        "adr-003"
+      ],
+      "terms": [
+        "evt-201"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Concurrent-write contention is observed under the target workload.",
+      "kind": "claim",
+      "label": "evt-202 contention evidence",
+      "node_id": "claim:evt-202",
+      "source_ids": [
+        "session-014"
+      ],
+      "terms": [
+        "evt-202"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "A controlled benchmark confirms the contention problem.",
+      "kind": "claim",
+      "label": "evt-203 benchmark evidence",
+      "node_id": "claim:evt-203",
+      "source_ids": [
+        "session-019"
+      ],
+      "terms": [
+        "evt-203"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "A concurrent importer run fails because of write contention.",
+      "kind": "claim",
+      "label": "evt-204 incident evidence",
+      "node_id": "claim:evt-204",
+      "source_ids": [
+        "incident-021"
+      ],
+      "terms": [
+        "evt-204"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "New event-store work should target PostgreSQL.",
+      "kind": "claim",
+      "label": "evt-205 PostgreSQL decision",
+      "node_id": "claim:evt-205",
+      "source_ids": [
+        "adr-007"
+      ],
+      "terms": [
+        "evt-205"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Do not introduce Redis.",
+      "kind": "claim",
+      "label": "evt-206 Redis decision",
+      "node_id": "claim:evt-206",
+      "source_ids": [
+        "adr-009"
+      ],
+      "terms": [
+        "evt-206"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "The runbook restates the PostgreSQL target for operators.",
+      "kind": "claim",
+      "label": "evt-207 runbook restatement",
+      "node_id": "claim:evt-207",
+      "source_ids": [
+        "runbook-006"
+      ],
+      "terms": [
+        "evt-207"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "SQLite runs in production, from March to July 2024.",
+      "kind": "claim",
+      "label": "fact-301 SQLite in production",
+      "node_id": "claim:fact-301",
+      "source_ids": [
+        "deployment-001"
+      ],
+      "terms": [
+        "fact-301"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "PostgreSQL runs in production from July 2024.",
+      "kind": "claim",
+      "label": "fact-302 PostgreSQL in production",
+      "node_id": "claim:fact-302",
+      "source_ids": [
+        "deployment-101"
+      ],
+      "terms": [
+        "fact-302"
+      ],
+      "timestamp": null
+    },
+    {
+      "derived": true,
+      "description": "Backup configuration must move to PostgreSQL before the release.",
+      "kind": "claim",
+      "label": "intent-401 backup obligation",
+      "node_id": "claim:intent-401",
+      "source_ids": [
+        "session-051"
+      ],
+      "terms": [
+        "intent-401"
+      ],
+      "timestamp": null
+    }
+  ],
+  "notes": "Derived from the project's canonical running examples. Source artifacts are authoritative; entity and claim nodes are derived interpretation and may be rebuilt.",
+  "version": "assoc-ledger-v0.1"
+}

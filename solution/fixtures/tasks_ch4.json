@@ -1,0 +1,245 @@
+{
+  "corpus_version": "ch3-fixture-v0.1",
+  "task_set_version": "ch4-tasks-v0.1",
+  "history_source_ids": [
+    "session-014.md",
+    "session-019.md",
+    "experiment-contention.md",
+    "incident-021.md",
+    "benchmark-note.md",
+    "adr-007.md",
+    "session-040.md",
+    "session-044.md",
+    "adr-009.md",
+    "stale-summary.md",
+    "production-notes.md",
+    "notification-service.md",
+    "commits.log",
+    "issue-041.md"
+  ],
+  "tasks": [
+    {
+      "task_id": "q1-locate-eventstore",
+      "family": "locate",
+      "prompt": "Where did we discuss the event-store backend?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "session-014.md",
+        "session-019.md",
+        "adr-007.md"
+      ]
+    },
+    {
+      "task_id": "q2-decision-eventstore",
+      "family": "decision",
+      "prompt": "What event store should new services use?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "adr-007.md"
+      ],
+      "expected_state": "PostgreSQL",
+      "superseded_options": [
+        "SQLite"
+      ]
+    },
+    {
+      "task_id": "q2-decision-redis",
+      "family": "decision",
+      "prompt": "What did the team decide about introducing Redis as a lookup cache?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "adr-009.md",
+        "session-044.md"
+      ],
+      "expected_state": "will not introduce Redis",
+      "expected_aliases": [
+        "decided against redis",
+        "redis was rejected",
+        "rejected the redis proposal",
+        "no redis",
+        "not introduce a lookup cache",
+        "not to introduce redis",
+        "decided not to introduce"
+      ],
+      "superseded_options": [
+        "introduce Redis",
+        "add Redis"
+      ]
+    },
+    {
+      "task_id": "q3-why-postgres",
+      "family": "provenance",
+      "prompt": "Why was PostgreSQL chosen for the event store?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "experiment-contention.md",
+        "incident-021.md",
+        "adr-007.md"
+      ],
+      "expected_state": "concurrent-write contention"
+    },
+    {
+      "task_id": "q4-current-eventstore",
+      "family": "temporal",
+      "prompt": "What event store should new code target today?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "adr-007.md"
+      ],
+      "temporal_mode": "current",
+      "expected_current": "PostgreSQL",
+      "expected_historical": "SQLite",
+      "superseded_options": [
+        "SQLite"
+      ]
+    },
+    {
+      "task_id": "q4-historical-march",
+      "family": "temporal",
+      "prompt": "What event store did the March prototype use?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "session-014.md"
+      ],
+      "temporal_mode": "historical",
+      "expected_current": "PostgreSQL",
+      "expected_historical": "SQLite"
+    },
+    {
+      "task_id": "q4-production-now",
+      "family": "temporal",
+      "prompt": "What runs in production for the event store now?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "production-notes.md"
+      ],
+      "temporal_mode": "current",
+      "expected_current": "PostgreSQL runs in production",
+      "expected_aliases": [
+        "PostgreSQL"
+      ],
+      "expected_historical": "SQLite runs in production",
+      "superseded_options": [
+        "SQLite runs in production"
+      ]
+    },
+    {
+      "task_id": "q6-use-new-service",
+      "family": "use",
+      "prompt": "A second service needs its own event log. What should it use and why?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "adr-007.md",
+        "experiment-contention.md"
+      ],
+      "expected_state": "PostgreSQL",
+      "superseded_options": [
+        "SQLite"
+      ]
+    },
+    {
+      "task_id": "q-stale-trap",
+      "family": "decision",
+      "prompt": "A new service is about to copy the wiki's SQLite setup for its event log. What should it use instead?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "adr-007.md",
+        "stale-summary.md"
+      ],
+      "expected_state": "PostgreSQL",
+      "superseded_options": [
+        "SQLite"
+      ],
+      "notes": "Adversarial: stale summary dominates on SQLite vocabulary; the September pin reverses it."
+    },
+    {
+      "task_id": "q-abs-cache",
+      "family": "decision",
+      "prompt": "What cache layer was adopted for the event store?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [],
+      "expected_status": "unanswerable",
+      "notes": "No cache was adopted; abstention is correct."
+    },
+    {
+      "task_id": "q-rel-influences",
+      "family": "relational",
+      "prompt": "Which incidents and measurements influenced the event-store decision?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "session-014.md",
+        "experiment-contention.md",
+        "incident-021.md",
+        "benchmark-note.md",
+        "adr-007.md"
+      ],
+      "expected_state": "contention",
+      "expected_aliases": [
+        "write contention",
+        "concurrent-write contention",
+        "concurrent write",
+        "stall",
+        "load window",
+        "throughput"
+      ]
+    },
+    {
+      "task_id": "q-rel-trace",
+      "family": "relational",
+      "prompt": "How is the June ingestion stall connected to the PostgreSQL decision?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "incident-021.md",
+        "adr-007.md"
+      ],
+      "expected_state": "PostgreSQL",
+      "expected_aliases": [
+        "postgres",
+        "moved",
+        "migration",
+        "target"
+      ]
+    },
+    {
+      "task_id": "q-global-themes",
+      "family": "global",
+      "prompt": "What major architectural changes occurred in this project's history?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "adr-007.md",
+        "adr-009.md",
+        "production-notes.md"
+      ],
+      "expected_state": "PostgreSQL",
+      "expected_aliases": [
+        "postgres",
+        "migration",
+        "no redis",
+        "rejected redis",
+        "will not introduce redis",
+        "moved"
+      ]
+    },
+    {
+      "task_id": "q-global-reliability",
+      "family": "global",
+      "prompt": "What reliability work did the team do around the event-store backend?",
+      "history_ref": "ch3-fixture-v0.1",
+      "expected_sources": [
+        "session-014.md",
+        "experiment-contention.md",
+        "incident-021.md",
+        "benchmark-note.md"
+      ],
+      "expected_state": "contention",
+      "expected_aliases": [
+        "write contention",
+        "load window",
+        "benchmark",
+        "throughput",
+        "latency",
+        "experiment"
+      ]
+    }
+  ]
+}

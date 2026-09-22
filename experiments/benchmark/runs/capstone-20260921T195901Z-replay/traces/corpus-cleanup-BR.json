@@ -1,0 +1,70 @@
+{
+ "task_id": "corpus-cleanup",
+ "condition": "BR",
+ "bcode": "BR",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "c-docs-flags",
+  "c-cli-half",
+  "c-web"
+ ],
+ "derived_consulted": [
+  "frozen:BR:5118ac23252a40bf"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "c-docs-flags",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "c-cli-half",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "c-web",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "c-docs-flags",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "c-cli-half",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  },
+  {
+   "unit_id": "c-web",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "c-docs-flags",
+  "c-cli-half",
+  "c-web"
+ ],
+ "rejected": [],
+ "context_tokens": 197,
+ "context_hash": "5118ac23252a40bf",
+ "reader_output": {
+  "task_score": 0.8333,
+  "frozen": true
+ },
+ "behavioural_score": 0.8333,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

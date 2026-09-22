@@ -1,0 +1,164 @@
+{
+  "dominance": {
+    "single_capability_dominates": null,
+    "tasks_measured": 20,
+    "tasks_with_a_score_difference": 20,
+    "unique_wins": {
+      "ASSOCIATIVE": [
+        "q-ind-leftover",
+        "q-rel-trace",
+        "q1-locate-eventstore",
+        "q2-decision-redis",
+        "q4-current-eventstore",
+        "q4-production-now"
+      ],
+      "GRAPH_BASIC": [
+        "q-stale-trap"
+      ],
+      "GRAPH_LOCAL": [
+        "q4-historical-march"
+      ],
+      "NONE": [
+        "q-abs-cache",
+        "q-abs-provider",
+        "q-nomem-contention",
+        "q-nomem-index"
+      ],
+      "RAG": [
+        "q-ind-owner",
+        "q-ind-separate-store",
+        "q-rel-influences",
+        "q2-decision-eventstore",
+        "q6-use-new-service"
+      ],
+      "RAW_EVIDENCE": [
+        "q-global-reliability",
+        "q-global-themes",
+        "q3-why-postgres"
+      ]
+    },
+    "win_counts": {
+      "ASSOCIATIVE": 6,
+      "GRAPH_BASIC": 1,
+      "GRAPH_LOCAL": 1,
+      "NONE": 4,
+      "RAG": 5,
+      "RAW_EVIDENCE": 3
+    },
+    "wins": {
+      "ASSOCIATIVE": [
+        "q-ind-leftover",
+        "q-rel-trace",
+        "q1-locate-eventstore",
+        "q2-decision-redis",
+        "q4-current-eventstore",
+        "q4-production-now"
+      ],
+      "GRAPH_BASIC": [
+        "q-stale-trap"
+      ],
+      "GRAPH_LOCAL": [
+        "q4-historical-march"
+      ],
+      "NONE": [
+        "q-abs-cache",
+        "q-abs-provider",
+        "q-nomem-contention",
+        "q-nomem-index"
+      ],
+      "RAG": [
+        "q-ind-owner",
+        "q-ind-separate-store",
+        "q-rel-influences",
+        "q2-decision-eventstore",
+        "q6-use-new-service"
+      ],
+      "RAW_EVIDENCE": [
+        "q-global-reliability",
+        "q-global-themes",
+        "q3-why-postgres"
+      ]
+    }
+  },
+  "fixed_policies": {
+    "ASSOCIATIVE": {
+      "context_tokens": 590.1,
+      "cost_units": 1.2,
+      "evidence": 0.4508,
+      "harm": 0.05,
+      "latency_ms": 16173.9,
+      "quality": 0.825,
+      "tasks": 20,
+      "utility": 1.0134
+    },
+    "GRAPH_BASIC": {
+      "context_tokens": 673.9,
+      "cost_units": 1.5,
+      "evidence": 0.3417,
+      "harm": 0.7825,
+      "latency_ms": 66983.7,
+      "quality": 0.9,
+      "tasks": 20,
+      "utility": 0.6646
+    },
+    "GRAPH_GLOBAL": {
+      "context_tokens": 758.4,
+      "cost_units": 12.0,
+      "evidence": 0.3417,
+      "harm": 0.685,
+      "latency_ms": 121536.6,
+      "quality": 0.7833,
+      "tasks": 20,
+      "utility": 0.4917
+    },
+    "GRAPH_LOCAL": {
+      "context_tokens": 630.1,
+      "cost_units": 3.0,
+      "evidence": 0.3417,
+      "harm": 0.4975,
+      "latency_ms": 79632.8,
+      "quality": 0.85,
+      "tasks": 20,
+      "utility": 0.7421
+    },
+    "NONE": {
+      "context_tokens": 0.0,
+      "cost_units": 0.0,
+      "evidence": 0.2,
+      "harm": 0.0,
+      "latency_ms": 3242.5,
+      "quality": 0.2,
+      "tasks": 20,
+      "utility": 0.3
+    },
+    "RAG": {
+      "context_tokens": 753.9,
+      "cost_units": 1.0,
+      "evidence": 0.5437,
+      "harm": 0.05,
+      "latency_ms": 17110.6,
+      "quality": 0.925,
+      "tasks": 20,
+      "utility": 1.1619
+    },
+    "RAW_EVIDENCE": {
+      "context_tokens": 1248.0,
+      "cost_units": 2.5,
+      "evidence": 0.5607,
+      "harm": 0.05,
+      "latency_ms": 8524.0,
+      "quality": 0.95,
+      "tasks": 20,
+      "utility": 1.1804
+    }
+  },
+  "utility_weights": {
+    "adequacy_threshold": 0.75,
+    "evidence_weight": 0.5,
+    "lambda_cost": 0.01,
+    "lambda_harm": 0.5,
+    "lambda_latency": 0.0,
+    "quality_weight": 1.0,
+    "version": "nexus-utility-v0.1"
+  }
+}

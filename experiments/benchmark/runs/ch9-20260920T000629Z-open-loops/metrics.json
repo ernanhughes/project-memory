@@ -1,0 +1,21 @@
+{
+  "status_accuracy": 1.0,
+  "cross_artifact_closure_accuracy": 1.0,
+  "side_effect_completion_accuracy": 1.0,
+  "open_loop_precision": 0.8,
+  "open_loop_recall": 0.8,
+  "false_open_rate": 1.0,
+  "canonical_status_accuracy": 1.0,
+  "false_closed_rate": 0.0,
+  "stale_open_rate": 1.0,
+  "reverification_repair_rate": 1.0,
+  "bitemporal_status_accuracy": 1.0,
+  "historical_status_accuracy": 1.0,
+  "history_gap_calibration": 1.0,
+  "search_footprint_coverage": 1.0,
+  "projection_rebuild_equivalence": 1.0,
+  "maintenance_derivation_agreement": 1.0,
+  "historian_colleague_demo": 1.0,
+  "deadline_flag_accuracy": 1.0,
+  "second_domain_accuracy": 1.0
+}

@@ -1,0 +1,163 @@
+{
+  "status": "running",
+  "evidence_status": "local development; not canonical book result",
+  "git_commit": "48caf8a419d15ee70993bc7c216fe7ad344f2185",
+  "graph": {
+    "graphrag_version": "3.1.2",
+    "chat_model": "ollama/ministral-3:8b",
+    "embedding_model": "ollama/bge-m3",
+    "entity_types": [
+      "organization",
+      "person",
+      "geo",
+      "event",
+      "technology"
+    ],
+    "claim_extraction": true,
+    "max_gleanings": 0,
+    "gr_chunking": {
+      "size": 1200,
+      "overlap": 100
+    },
+    "community_level": 2,
+    "corpus_version": "ch3-fixture-v0.1",
+    "corpus_hash": "04aac3543ff36746",
+    "index_timestamp": "",
+    "code_commit": "",
+    "settings_sha1": "a8030c0649097f87",
+    "prompt_hashes": {
+      "basic_search_system_prompt.txt": "eb071062418e",
+      "community_report_graph.txt": "d7808b4e3779",
+      "community_report_text.txt": "cc406865f022",
+      "drift_reduce_prompt.txt": "19660bac1495",
+      "drift_search_system_prompt.txt": "1aabe2dad8bc",
+      "extract_claims.txt": "43209978b77a",
+      "extract_graph.txt": "3bab17519c86",
+      "global_search_knowledge_system_prompt.txt": "e589959c2f6f",
+      "global_search_map_system_prompt.txt": "0dbec7704777",
+      "global_search_reduce_system_prompt.txt": "f6381c8e58e5",
+      "local_search_system_prompt.txt": "a98b6cd64c8c",
+      "question_gen_system_prompt.txt": "fd2b3191a19a",
+      "summarize_descriptions.txt": "4f695be90ab2"
+    },
+    "config": {
+      "project_root": "graph_memory/work/ch4",
+      "graphrag_version": "3.1.2",
+      "graphrag_executable": ".venv/Scripts/graphrag.exe",
+      "chat_provider": "ollama",
+      "chat_model": "ministral-3:8b",
+      "embedding_provider": "ollama",
+      "embedding_model": "bge-m3",
+      "ollama_host": "http://localhost:11434",
+      "entity_types": [
+        "organization",
+        "person",
+        "geo",
+        "event",
+        "technology"
+      ],
+      "gr_chunk_size": 1200,
+      "gr_chunk_overlap": 100,
+      "max_gleanings": 0,
+      "claim_extraction": true,
+      "community_level": 2,
+      "corpus_version": "ch3-fixture-v0.1",
+      "source_root": "fixtures/history",
+      "index_timestamp": "",
+      "code_commit": "",
+      "notes": "",
+      "query_timeout_seconds": 90,
+      "index_timeout_seconds": 7200
+    },
+    "lineage_status": "observed-legacy-index",
+    "output_hashes": {
+      "communities.parquet": "3192c2916e9bc68ccb408a99d38a3f9fb09bcd79a661f26e645d76fcbaa66b2b",
+      "community_reports.parquet": "2c09c0962baff596838228a95838e81175592bffb0e8002ce782ca9ad0465ec0",
+      "covariates.parquet": "df6d9d174b72c8f2e09d7e79dde732a47b0c6609f1dd58b410acf2802a66b810",
+      "documents.parquet": "c8092a1ccb50fc5aa8ca7c1a901ae181003fcbf988efe76b56653c434d3c2d9f",
+      "entities.parquet": "69d4158f0b49d38e36a25015a5bab404235eaa1588473df5bcbd9b9f156bba78",
+      "relationships.parquet": "c2262451959e443676f79f9006b26d1e55f16f692664c26a4aadd86774099799",
+      "text_units.parquet": "df15a47551f2a676d69d1cb1dc0650faf98a912cb3de9c73abb0135cdbbaabe0"
+    }
+  },
+  "baseline": {
+    "dsn": "postgresql://postgres:postgres@localhost:5434/memory_baseline",
+    "schema": "baseline",
+    "chunking": {
+      "policy": "sentence",
+      "target_chars": 2000,
+      "overlap_chars": 300,
+      "chunker_version": "0.1.0"
+    },
+    "embedding": {
+      "provider": "ollama",
+      "model": "bge-m3",
+      "dimension": 1024,
+      "ollama_host": "http://localhost:11434"
+    },
+    "retrieval": {
+      "mode": "hybrid",
+      "candidate_k": 30,
+      "lexical_k": 30,
+      "dense_k": 30,
+      "fusion_k": 60,
+      "reranker": "cross-encoder",
+      "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "rerank_k": 8
+    },
+    "context": {
+      "max_chars": 6000,
+      "max_passages": 6
+    },
+    "generator": {
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "ollama_host": "http://localhost:11434",
+      "temperature": 0.0,
+      "system_prompt": "Answer questions about a software project's recorded history. Use only the supplied project evidence. Quote or name the evidence identifiers you rely on. If the evidence does not determine an answer, say so plainly instead of guessing. Distinguish what was decided from what was merely proposed."
+    }
+  },
+  "tasks": [
+    "q2-decision-eventstore"
+  ],
+  "conditions": [
+    "best",
+    "graph-basic",
+    "graph-local",
+    "graph-global",
+    "graph-drift"
+  ],
+  "tasks_sha256": "b9371b59afa5bfbc826666ca005174be92da41f1eca3b1a6cc9e3371625490a0",
+  "code_hashes": {
+    "run_ch4.py": "eba2ff9550781732ed0d2c9d93012fde89ffa1f95ff62000c1c4f2b549fb1c32",
+    "graph_memory\\cli.py": "96f3709913fd129d1b84c459ad4b3b77225d2b9597b3e93813e3af5dbd04c1f8",
+    "graph_memory\\config.py": "3ffe172498521a4f17eaf36fda229bb0162997000f533b866dc116234cb8716b",
+    "graph_memory\\__init__.py": "aa642a65dcc8fde152ff0c769be3a7d3777e5dccb5b4491de2f9489d9ca35bd7",
+    "graph_memory\\evaluation\\adapter.py": "a1bd7d16a576d913384d21e3f01af4df02a8ff7b3f8029cdf0ec3a553c885d00",
+    "graph_memory\\evaluation\\consistency.py": "4544cc30d435aeaaa1f21676462c36bf42536fcd74ec3c456943146247d303e3",
+    "graph_memory\\evaluation\\routing.py": "39b40484224c230a80b2e8634b94f168a8adf55050ba47701c4a4271e119c048",
+    "graph_memory\\evaluation\\__init__.py": "3bd8ccffd3a993efccfa1f4897caeab97955bd4c318ac6f67c1e187e70a6d3b7",
+    "graph_memory\\graphrag_backend\\backend.py": "52a147993d6c25acb313a18f0f4ed75106dc2b584bc40357a30660cdf155d502",
+    "graph_memory\\graphrag_backend\\microsoft.py": "6bbc00220412f6f3dca46b15d071c2450f4d96aa2e2f7e4c523543cd645cd03a",
+    "graph_memory\\graphrag_backend\\process.py": "455e29368c3f15ff10ae0c3ef1c8ff238b4ff67f3f8bd803ff154cd170da39c8",
+    "graph_memory\\graphrag_backend\\query_worker.py": "b953b23be39b8027785b32f18dd73d55e3fd854a029efe6938f578245490e411",
+    "graph_memory\\graphrag_backend\\__init__.py": "3de38a5f83fa551a4342966bbc3462ac0f8ced5f15771fdafccaae7062a52576",
+    "graph_memory\\health\\checks.py": "c81937f95c769236cbdfa5167b7bf1746cef207239562980a49d48502fc42b64",
+    "graph_memory\\health\\__init__.py": "84261f22bbcf44138a20188462dc5a575adb82ef22c758501b34510a5ff727a8",
+    "graph_memory\\provenance\\mapping.py": "6da5655c903754b17ec404e91617813cdfc153683821066e6be654a8df527a85",
+    "graph_memory\\provenance\\__init__.py": "87295ef390dcb441a208cbfc821e4c464f388a0c1f8ef15f3c1f7c66fded6dce",
+    "graph_memory\\sources\\adapters.py": "5d2fc1a9676bfc1b28514512ffc3760247112a3b3e484026103c52f0de3e8021",
+    "graph_memory\\sources\\normalize.py": "d5b94114c17e64c246a16f025778962f1cbb22fbe3399309ed683823d438f1ef",
+    "graph_memory\\sources\\__init__.py": "6a06a73e48c253738bab4cf47349aad1e8869eee534a3a47fa9486c0ad5ee75f",
+    "graph_memory\\tests\\test_graph_memory.py": "503aec354eab53298bd3834ec4965173202a80e4c9ddbc52f902cb4b15e54cba"
+  },
+  "comparison": {
+    "final_context_chars": 6000,
+    "derived_max_fraction": 0.3333333333333333,
+    "raw_passages": "whole passages including headers",
+    "source_metrics": "direct raw evidence admitted to final reader",
+    "graph_lineage": "separate from admitted evidence",
+    "extra_graph_calls": "not controlled; count unavailable",
+    "latency_caveat": "shared local Ollama; other experiments may contend"
+  }
+}

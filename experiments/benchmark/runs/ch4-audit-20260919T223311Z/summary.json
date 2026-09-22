@@ -1,0 +1,144 @@
+{
+  "conditions": {
+    "best": {
+      "attempted": 1,
+      "planned": 1,
+      "completed": 1,
+      "failed": 0,
+      "observed_wall_ms": 6557.2,
+      "metrics_successful_cases_only": {
+        "decision/source_recall": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/source_precision": {
+          "mean": 0.16666666666666666,
+          "n": 1
+        },
+        "decision/abstention_correctness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/decision_exactness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/supersession_correctness": {
+          "mean": 1.0,
+          "n": 1
+        }
+      }
+    },
+    "graph-basic": {
+      "attempted": 1,
+      "planned": 1,
+      "completed": 1,
+      "failed": 0,
+      "observed_wall_ms": 73482.8,
+      "metrics_successful_cases_only": {
+        "decision/source_recall": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/source_precision": {
+          "mean": 0.16666666666666666,
+          "n": 1
+        },
+        "decision/abstention_correctness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/decision_exactness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/supersession_correctness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/unsupported_source_rate": {
+          "mean": 0.0,
+          "n": 1
+        }
+      }
+    },
+    "graph-local": {
+      "attempted": 1,
+      "planned": 1,
+      "completed": 1,
+      "failed": 0,
+      "observed_wall_ms": 53840.9,
+      "metrics_successful_cases_only": {
+        "decision/source_recall": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/source_precision": {
+          "mean": 0.16666666666666666,
+          "n": 1
+        },
+        "decision/abstention_correctness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/decision_exactness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/supersession_correctness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/unsupported_source_rate": {
+          "mean": 0.0,
+          "n": 1
+        }
+      }
+    },
+    "graph-global": {
+      "attempted": 1,
+      "planned": 1,
+      "completed": 1,
+      "failed": 0,
+      "observed_wall_ms": 80534.4,
+      "metrics_successful_cases_only": {
+        "decision/source_recall": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/source_precision": {
+          "mean": 0.16666666666666666,
+          "n": 1
+        },
+        "decision/abstention_correctness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/decision_exactness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/supersession_correctness": {
+          "mean": 1.0,
+          "n": 1
+        },
+        "decision/unsupported_source_rate": {
+          "mean": 0.0,
+          "n": 1
+        }
+      }
+    },
+    "graph-drift": {
+      "attempted": 1,
+      "planned": 1,
+      "completed": 0,
+      "failed": 1,
+      "observed_wall_ms": 90236.4,
+      "metrics_successful_cases_only": {}
+    }
+  },
+  "output_unchanged": true,
+  "status": "finished",
+  "cross_query_consistency": "not inferred from cross-mode agreement",
+  "crossover": "not estimated: complete internal call/token costs unavailable"
+}

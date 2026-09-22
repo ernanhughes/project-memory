@@ -1,0 +1,50 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "stale-summary.md",
+    "session-014.md",
+    "adr-007.md",
+    "benchmark-note.md",
+    "notification-service.md",
+    "session-040.md",
+    "experiment-contention.md",
+    "production-notes.md"
+  ],
+  "answer": "The team experimented with SQLite as a prototype for the event-store backend, but due to concurrent-write contention, they decided to migrate to PostgreSQL.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6493.325699993875,
+  "cited_ids": [
+    "session-014.md",
+    "adr-007.md",
+    "experiment-contention.md"
+  ],
+  "context_tokens": 753,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 11767.764499993064,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.25,
+    "source_recall": 0.5,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3275",
+  "query_id": "q-global-reliability",
+  "reader_latency_ms": 5274.181700020563,
+  "retrieved_ids": [
+    "stale-summary.md",
+    "session-014.md",
+    "adr-007.md",
+    "benchmark-note.md",
+    "notification-service.md",
+    "session-040.md",
+    "experiment-contention.md",
+    "production-notes.md"
+  ]
+}

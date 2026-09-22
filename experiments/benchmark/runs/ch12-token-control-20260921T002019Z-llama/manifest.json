@@ -1,0 +1,40 @@
+{
+  "suite": "SR-1d token-matched control",
+  "run_id": "ch12-token-control-20260921T002019Z-llama",
+  "created_at": "20260921T002019Z",
+  "behavior_schema_version": "behavior-task-v1",
+  "grader_version": "behavior-grader-v2",
+  "fixture_version": "behavior-fixtures-v1",
+  "prompt_version": "behavior-prompt-v2",
+  "benchmark_contract": "benchmark-v0.1 plus diagnostic behavioural dimensions (no contract change)",
+  "conditions_run": [
+    "B0",
+    "BA",
+    "BT",
+    "BR"
+  ],
+  "repeats": 3,
+  "tasks": [
+    "fix-store",
+    "ship-ch10",
+    "release-blockers",
+    "credit-rule",
+    "cite-rule",
+    "review-arch",
+    "corpus-cleanup"
+  ],
+  "ch10_source_run": "ch10-20260920T163314Z-context-frames",
+  "ch11_source_run": "ch11-20260920T171039Z-derived-loops",
+  "ch14_source_run": "ch14-20260920T174259Z-context-assembly",
+  "token_estimator": "chars//4 (estimated tokens)",
+  "code_commit": "7209d20",
+  "reader_cache_calls": 84,
+  "reader_cache_hits": 0,
+  "cost": "not computed",
+  "reader": "llama3.1:8b@t0",
+  "reader_provider": "ollama-local",
+  "reader_model": "llama3.1:8b",
+  "temperature": 0.0,
+  "session_scheme": "n/a (local)",
+  "code_note": "driver unchanged since 7209d20; request path identical"
+}

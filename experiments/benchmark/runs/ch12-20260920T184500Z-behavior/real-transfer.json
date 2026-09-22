@@ -1,0 +1,211 @@
+{
+  "time_lock_commit": "4797720",
+  "standpoint": "2026-09-20T12:00:00Z",
+  "reader": "llama3.1:8b@t0",
+  "tasks": {
+    "rt-runs": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "ch10": false,
+            "ch11": false,
+            "ch14": false,
+            "ch11_canonical": "NO_INFORMATION_AVAILABLE"
+          }
+        ],
+        "answer": "Since no project evidence has been supplied, I must report that I do not have enough information to answer the question.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"ch10\": false, \"ch11\": false, \"ch14\": false, \"ch11_canonical\": \"NO_INFORMATION_AVAILABLE\"}]}\n```",
+        "expected": {
+          "ch10": true,
+          "ch11": true,
+          "ch14": true,
+          "ch11_canonical": "ch11-20260920T171039Z"
+        },
+        "field_scores": {
+          "ch10": 0.0,
+          "ch11": 0.0,
+          "ch14": 0.0,
+          "ch11_canonical": 0.0
+        },
+        "task_score": 0.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "ch10": true,
+            "ch11": true,
+            "ch14": false,
+            "ch11_canonical": "ch11-20260920T171039Z-derived-loops"
+          }
+        ],
+        "answer": "Based on the project evidence, Chapters 10 and 11 have canonical frozen runs, but Chapter 14 does not. The canonical Chapter 11 run ID is \"ch11-20260920T171039Z-derived-loops\".\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"ch10\": true, \"ch11\": true, \"ch14\": false, \"ch11_canonical\": \"ch11-20260920T171039Z-derived-loops\"}]}\n```",
+        "expected": {
+          "ch10": true,
+          "ch11": true,
+          "ch14": true,
+          "ch11_canonical": "ch11-20260920T171039Z"
+        },
+        "field_scores": {
+          "ch10": 1.0,
+          "ch11": 1.0,
+          "ch14": 0.0,
+          "ch11_canonical": 1.0
+        },
+        "task_score": 0.75
+      }
+    },
+    "rt-gap": {
+      "M0": {
+        "parse_ok": false,
+        "actions": [],
+        "answer": "Since no project evidence has been supplied, I must report that I do not have enough information to answer the question.\n\n```json\n{\"actions\": [{\"action_type\": \"NO_INFORMATION\", \"message\": \"No evidence supplied to answer the question\"}]}\n```",
+        "expected": {
+          "oracle_tokens": 696,
+          "practical_tokens": 1156
+        },
+        "field_scores": {},
+        "task_score": 0.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_RESULT",
+            "oracle_tokens": 696,
+            "practical_tokens": 1156
+          }
+        ],
+        "answer": "The fair-oracle gap reported in Chapter 14 is 696 versus 1156, which is narrower than the raw gap of 587 versus 1161.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_RESULT\", \"oracle_tokens\": 696, \"practical_tokens\": 1156}]}\n```",
+        "expected": {
+          "oracle_tokens": 696,
+          "practical_tokens": 1156
+        },
+        "field_scores": {
+          "oracle_tokens": 1.0,
+          "practical_tokens": 1.0
+        },
+        "task_score": 1.0
+      }
+    },
+    "rt-promote": {
+      "M0": {
+        "parse_ok": false,
+        "actions": [],
+        "answer": "Since no project evidence has been supplied, I cannot make an informed decision about the drop-policy revision. Therefore, I will not recommend adopting the mechanism.\n\n```json\n{\"actions\": [{\"action_type\": \"NO_ACTION\", \"reason\": \"INSUFFICIENT_EVIDENCE\"}]}\n```",
+        "expected": {
+          "promote": false,
+          "reason": "~contradiction"
+        },
+        "field_scores": {},
+        "task_score": 0.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REJECT_PROPOSAL",
+            "name": "v2-drop-refutes-first",
+            "reason": "Significant reduction in contradiction preservation"
+          }
+        ],
+        "answer": "Based on the evidence, the drop-policy revision has a positive effect on recall, saving 9.2 tokens, but it also significantly reduces contradiction preservation from 1.00 to 0.14. This suggests that the revision may be beneficial in terms of recall and token usage, but it comes at the cost of contradiction preservation.\n\nHowever, the fact that the revision was not promoted (Promoted: false) in the evidence suggests that there may be concerns about the trade-offs involved. Therefore, I would not recommend promoting this revision without further consideration.\n\n```json\n{\"actions\": [{\"action_type\": \"REJECT_PROPOSAL\", \"name\": \"v2-drop-refutes-first\", \"reason\": \"Significant reduction in contradiction preservation\"}]}\n```",
+        "expected": {
+          "promote": false,
+          "reason": "~contradiction"
+        },
+        "field_scores": {
+          "promote": 1.0,
+          "reason": 1.0
+        },
+        "task_score": 1.0
+      }
+    },
+    "rt-frame": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "abstention_path": false,
+            "fallback": "REASSIGN_TASK"
+          }
+        ],
+        "answer": "Since no project evidence is supplied, I must say that I don't know what the frame should provide for cases where recall scores are 0.000.\n\nHowever, I can provide a generic response based on the task state. According to the task state, the task is a prose-finishing task misread as an implementation review. Since the task is misread, it's likely that the frame should provide guidance on how to handle this situation.\n\nHere's a possible response:\n\nThe frame should provide guidance on how to handle misread tasks, such as how to reassign the task, how to notify the team, or how to escalate the issue.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"abstention_path\": false, \"fallback\": \"REASSIGN_TASK\"}]}\n```",
+        "expected": {
+          "abstention_path": true,
+          "fallback": "query-only"
+        },
+        "field_scores": {
+          "abstention_path": 0.0,
+          "fallback": 0.0
+        },
+        "task_score": 0.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "IMPLEMENT_ABSTENTION_PATH",
+            "abstention_path": true,
+            "fallback": "query-only retrieval"
+          }
+        ],
+        "answer": "Based on the evidence, the task state indicates that a prose-finishing task was misread as an implementation review, resulting in a recall score of 0.000. According to Chapter 10, the frame needs an abstention path to handle such cases.\n\nThe evidence suggests that the current implementation does not have an abstention path, which would weaken the frame's conditioning and lead to query-only retrieval. This is supported by the measured harm, which indicates that the current implementation is not suitable for handling such cases.\n\nTherefore, the remedy is to implement an abstention path in the work frame.\n\n```json\n{\"actions\": [{\"action_type\": \"IMPLEMENT_ABSTENTION_PATH\", \"abstention_path\": true, \"fallback\": \"query-only retrieval\"}]}\n```",
+        "expected": {
+          "abstention_path": true,
+          "fallback": "query-only"
+        },
+        "field_scores": {
+          "abstention_path": 1.0,
+          "fallback": 1.0
+        },
+        "task_score": 1.0
+      }
+    },
+    "rt-metric": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "precision": 0.0,
+            "recall": 0.0
+          }
+        ],
+        "answer": "Since no evidence is supplied, I must say that the answer is unknown.\n\nHowever, I can provide a default response based on the context of the task. \n\nThe task mentions a new trap-only fixture with zero genuine positives and the system abstaining on all of them. Under the book's repaired rule, we can infer that the precision and recall values would be 0.0, as there are no true positives to report.\n\nHere is the response:\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"precision\": 0.0, \"recall\": 0.0}]}\n```",
+        "expected": {
+          "precision": null,
+          "recall": null
+        },
+        "field_scores": {
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "task_score": 0.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "precision": null,
+            "recall": null
+          }
+        ],
+        "answer": "The per-task precision and recall values are undefined/null for the new trap-only fixture because it has zero genuine positives and the system abstains on all of them.\n\nThe evidence from [planning/chapter-11-metric-audit.md @ 4797720] states that per-task precision is undefined/null when admitted = 0, and per-task recall is undefined/null when genuine = 0.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"precision\": null, \"recall\": null}]}\n```",
+        "expected": {
+          "precision": null,
+          "recall": null
+        },
+        "field_scores": {
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "task_score": 1.0
+      }
+    }
+  }
+}

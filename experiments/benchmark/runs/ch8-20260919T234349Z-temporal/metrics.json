@@ -1,0 +1,29 @@
+{
+  "current_state_accuracy": {
+    "T0-bag": 1.0,
+    "T1-arrival": 1.0,
+    "T1b-event-time": 1.0,
+    "T2-ordered": 1.0,
+    "T3-temporal": 1.0
+  },
+  "historical_state_accuracy": {
+    "T0-bag": 0.0,
+    "T1-arrival": 0.0,
+    "T1b-event-time": 0.0,
+    "T2-ordered": 1.0,
+    "T3-temporal": 1.0
+  },
+  "temporal_role_accuracy": 1.0,
+  "order_sensitive_change_accuracy": 1.0,
+  "order_invariant_stability": 1.0,
+  "late_arrival_robustness": 1.0,
+  "future_effective_accuracy": 1.0,
+  "correction_revision_accuracy": 1.0,
+  "partial_order_calibration": 1.0,
+  "sequence_gap_detection": 1.0,
+  "projection_rebuild_equivalence": 1.0,
+  "temporal_causality_violation_rate": 0.0,
+  "supersession_accuracy": 1.0,
+  "valid_time_accuracy": 1.0,
+  "transaction_time_accuracy": 1.0
+}

@@ -1,0 +1,95 @@
+{
+  "bundle_id": "cb-T5-support-vs-topicality-CO",
+  "condition": "CO",
+  "budget_tokens": 1500,
+  "bundle_tokens": 501,
+  "bundle_digest": "e721dc09ae41c29e",
+  "items": [
+    {
+      "item_id": "item-mb-method-evidence-discipline",
+      "members": [
+        "mb-method-evidence-discipline"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.evidence-discipline",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 75
+    },
+    {
+      "item_id": "item-mb-method-baseline-rule",
+      "members": [
+        "mb-method-baseline-rule"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.baseline-ladder",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 97
+    },
+    {
+      "item_id": "item-mb-contract-failure-classes",
+      "members": [
+        "mb-contract-failure-classes"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.failure-classes",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 68
+    },
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-contract-frozen-run",
+      "members": [
+        "mb-contract-frozen-run"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.frozen-run",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 90
+    },
+    {
+      "item_id": "item-mb-contract-q6",
+      "members": [
+        "mb-contract-q6"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.q6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 82
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

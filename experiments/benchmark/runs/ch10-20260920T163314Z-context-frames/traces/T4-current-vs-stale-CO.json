@@ -1,0 +1,113 @@
+{
+  "trace_id": "T4-current-vs-stale-CO",
+  "condition": "CO",
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "project_frame": "memory-book-v1",
+  "work_frame": "wf-t4",
+  "query": "What store does the baseline use, and how is search done?",
+  "as_of": "2026-09-20T12:00:00Z",
+  "budget_tokens": 1500,
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_count": 3,
+  "admitted_count": 3,
+  "rejected_count": 0,
+  "stages": [
+    {
+      "stage": "oracle",
+      "admitted_items": 3,
+      "bundle_tokens": 246
+    }
+  ],
+  "bundle_digest": "9d9524d86ca991af",
+  "bundle_tokens": 246,
+  "latency_ms": 0.06,
+  "candidates": [
+    {
+      "candidate_id": "mb-impl-postgres",
+      "project_id": "memory-book",
+      "kind": "implementation_detail",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 69,
+      "source_refs": [
+        "solution/memory_baseline/storage.py"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch03-baseline-role",
+      "project_id": "memory-book",
+      "kind": "baseline_result",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 125,
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ]
+    },
+    {
+      "candidate_id": "mb-impl-test-paths",
+      "project_id": "memory-book",
+      "kind": "implementation_detail",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 52,
+      "source_refs": [
+        "solution/pyproject.toml",
+        "solution/README.md"
+      ]
+    }
+  ],
+  "schema_version": "context-trace/v0.1"
+}

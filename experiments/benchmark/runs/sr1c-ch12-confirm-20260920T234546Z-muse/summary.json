@@ -1,0 +1,1544 @@
+{
+  "mean_by_condition": {
+    "B0": {
+      "n": 21,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 15,
+          "macro": 0.0667
+        },
+        "failure_avoidance": {
+          "applicable": 3,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 6,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 21,
+          "macro": 0.0952
+        },
+        "open_work_continuation": {
+          "applicable": 9,
+          "macro": 0.0
+        }
+      },
+      "task_success": {
+        "applicable": 21,
+        "macro": 0.119
+      },
+      "harmful": {
+        "applicable": 6,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1.0
+    },
+    "B1": {
+      "n": 21,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 15,
+          "macro": 0.6
+        },
+        "failure_avoidance": {
+          "applicable": 3,
+          "macro": 0.0
+        },
+        "harmful_actions": {
+          "applicable": 6,
+          "macro": 0.5
+        },
+        "goal_adherence": {
+          "applicable": 21,
+          "macro": 0.5714
+        },
+        "open_work_continuation": {
+          "applicable": 9,
+          "macro": 0.6667
+        }
+      },
+      "task_success": {
+        "applicable": 21,
+        "macro": 0.5714
+      },
+      "harmful": {
+        "applicable": 6,
+        "harmful_tasks": 3,
+        "micro": 0.5
+      },
+      "mean_tokens": 6242.0
+    },
+    "B1P": {
+      "n": 21,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 15,
+          "macro": 0.6
+        },
+        "failure_avoidance": {
+          "applicable": 3,
+          "macro": 0.0
+        },
+        "harmful_actions": {
+          "applicable": 6,
+          "macro": 0.5
+        },
+        "goal_adherence": {
+          "applicable": 21,
+          "macro": 0.5714
+        },
+        "open_work_continuation": {
+          "applicable": 9,
+          "macro": 0.6667
+        }
+      },
+      "task_success": {
+        "applicable": 21,
+        "macro": 0.5714
+      },
+      "harmful": {
+        "applicable": 6,
+        "harmful_tasks": 3,
+        "micro": 0.5
+      },
+      "mean_tokens": 5495.0
+    },
+    "B2": {
+      "n": 21,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 15,
+          "macro": 0.4667
+        },
+        "failure_avoidance": {
+          "applicable": 3,
+          "macro": 0.0
+        },
+        "harmful_actions": {
+          "applicable": 6,
+          "macro": 0.5
+        },
+        "goal_adherence": {
+          "applicable": 21,
+          "macro": 0.5238
+        },
+        "open_work_continuation": {
+          "applicable": 9,
+          "macro": 0.1111
+        }
+      },
+      "task_success": {
+        "applicable": 21,
+        "macro": 0.4127
+      },
+      "harmful": {
+        "applicable": 6,
+        "harmful_tasks": 3,
+        "micro": 0.5
+      },
+      "mean_tokens": 2028.7
+    },
+    "B3": {
+      "n": 21,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 15,
+          "macro": 0.9
+        },
+        "failure_avoidance": {
+          "applicable": 3,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 6,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 21,
+          "macro": 0.8571
+        },
+        "open_work_continuation": {
+          "applicable": 9,
+          "macro": 0.5
+        }
+      },
+      "task_success": {
+        "applicable": 21,
+        "macro": 0.7857
+      },
+      "harmful": {
+        "applicable": 6,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1909.3
+    },
+    "B4": {
+      "n": 21,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 15,
+          "macro": 0.7333
+        },
+        "failure_avoidance": {
+          "applicable": 3,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 6,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 21,
+          "macro": 0.7143
+        },
+        "open_work_continuation": {
+          "applicable": 9,
+          "macro": 0.5
+        }
+      },
+      "task_success": {
+        "applicable": 21,
+        "macro": 0.6667
+      },
+      "harmful": {
+        "applicable": 6,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1172.7
+    },
+    "BO": {
+      "n": 21,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 15,
+          "macro": 0.7667
+        },
+        "failure_avoidance": {
+          "applicable": 3,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 6,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 21,
+          "macro": 0.7619
+        },
+        "open_work_continuation": {
+          "applicable": 9,
+          "macro": 0.6667
+        }
+      },
+      "task_success": {
+        "applicable": 21,
+        "macro": 0.7262
+      },
+      "harmful": {
+        "applicable": 6,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1328.6
+    }
+  },
+  "matched_means": {
+    "B0": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.119,
+      "mean_tokens": 1.0
+    },
+    "B1": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.5714,
+      "mean_tokens": 6242.0
+    },
+    "B1P": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.5714,
+      "mean_tokens": 5495.0
+    },
+    "B2": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.4127,
+      "mean_tokens": 2028.7
+    },
+    "B3": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.7857,
+      "mean_tokens": 1909.3
+    },
+    "B4": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.6667,
+      "mean_tokens": 1172.7
+    },
+    "BO": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.7262,
+      "mean_tokens": 1328.6
+    }
+  },
+  "influence": {
+    "rows": [
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B1",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B1P",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.5,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.1667,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.5,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.5,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.5,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.3333,
+        "treated_score": 0.8333,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.6667,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      }
+    ],
+    "counts": {
+      "memory-not-shown-necessary": 0,
+      "beneficial-memory-contribution": 55,
+      "harmful-memory-contribution": 0,
+      "memory-failed-to-repair": 71
+    }
+  },
+  "directional": {
+    "pairs": 126,
+    "behavior_changed": 126,
+    "score_improved": 93,
+    "score_degraded": 9,
+    "score_unchanged": 24
+  },
+  "deltas": {
+    "fix-store|B1": {
+      "task_delta": -0.3333,
+      "repeats": 3
+    },
+    "ship-ch10|B1": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "release-blockers|B1": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "credit-rule|B1": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "cite-rule|B1": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "review-prose|B1": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-arch|B1": {
+      "task_delta": 0.75,
+      "repeats": 3
+    },
+    "fix-store|B1P": {
+      "task_delta": -0.3333,
+      "repeats": 3
+    },
+    "ship-ch10|B1P": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "release-blockers|B1P": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "credit-rule|B1P": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "cite-rule|B1P": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "review-prose|B1P": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-arch|B1P": {
+      "task_delta": 0.75,
+      "repeats": 3
+    },
+    "fix-store|B2": {
+      "task_delta": -0.3333,
+      "repeats": 3
+    },
+    "ship-ch10|B2": {
+      "task_delta": 0.5,
+      "repeats": 3
+    },
+    "release-blockers|B2": {
+      "task_delta": 0.5,
+      "repeats": 3
+    },
+    "credit-rule|B2": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "cite-rule|B2": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-prose|B2": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-arch|B2": {
+      "task_delta": 0.75,
+      "repeats": 3
+    },
+    "fix-store|B3": {
+      "task_delta": 0.6667,
+      "repeats": 3
+    },
+    "ship-ch10|B3": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "release-blockers|B3": {
+      "task_delta": 0.75,
+      "repeats": 3
+    },
+    "credit-rule|B3": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "cite-rule|B3": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "review-prose|B3": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-arch|B3": {
+      "task_delta": 0.75,
+      "repeats": 3
+    },
+    "fix-store|B4": {
+      "task_delta": 0.6667,
+      "repeats": 3
+    },
+    "ship-ch10|B4": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "release-blockers|B4": {
+      "task_delta": 0.75,
+      "repeats": 3
+    },
+    "credit-rule|B4": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "cite-rule|B4": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-prose|B4": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-arch|B4": {
+      "task_delta": 0.75,
+      "repeats": 3
+    },
+    "fix-store|BO": {
+      "task_delta": 0.6667,
+      "repeats": 3
+    },
+    "ship-ch10|BO": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "release-blockers|BO": {
+      "task_delta": 1.0,
+      "repeats": 3
+    },
+    "credit-rule|BO": {
+      "task_delta": 0.25,
+      "repeats": 3
+    },
+    "cite-rule|BO": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-prose|BO": {
+      "task_delta": 0.0,
+      "repeats": 3
+    },
+    "review-arch|BO": {
+      "task_delta": 0.75,
+      "repeats": 3
+    }
+  }
+}

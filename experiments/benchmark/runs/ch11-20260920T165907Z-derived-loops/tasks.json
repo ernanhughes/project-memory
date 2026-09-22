@@ -1,0 +1,584 @@
+[
+  {
+    "task_id": "t-full-scope",
+    "scope": "corpus_import removal as of 2025-02-07",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [
+      "issue-088",
+      "issue-089"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "c-docs-flags",
+        "subject": "docs.corpus_import_flags",
+        "difference": "docs still describe corpus_import flags removed by adr-013",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-docs-0207",
+          "statement": "snapshot 2025-02-06: docs page lists corpus_import flags",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013 (2025-01-13): legacy corpus_import domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      },
+      {
+        "candidate_id": "c-facade-delete",
+        "subject": "compat.facade",
+        "difference": "delete the compatibility facade",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-facade-0207",
+          "statement": "snapshot 2025-02-06: facade still serves partner traffic",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: corpus_import domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "contract",
+            "artifact_id": "partner-note-004",
+            "statement": "partner-note-004: preserve facade until end of Q1 2025"
+          }
+        ]
+      },
+      {
+        "candidate_id": "c-tests-remove",
+        "subject": "tests.compat",
+        "difference": "remove old corpus_import regression tests",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-tests-0207",
+          "statement": "snapshot 2025-02-06: old tests still run and pass",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "intentional-preservation",
+            "artifact_id": "tests-compat-122",
+            "statement": "tests-compat-122: regression tests remain intentionally"
+          }
+        ]
+      },
+      {
+        "candidate_id": "c-docs-deferral",
+        "subject": "docs.cleanup",
+        "difference": "update docs now",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-docs-0207",
+          "statement": "snapshot 2025-02-06: docs still describe flags",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "deferral",
+            "artifact_id": "docs-note-012",
+            "statement": "docs-note-012: documentation cleanup deferred until after release"
+          }
+        ]
+      },
+      {
+        "candidate_id": "c-cli-half",
+        "subject": "callers.cli",
+        "difference": "migrate remaining CLI callers off corpus_import",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-cli-0207",
+          "statement": "snapshot 2025-02-06: 4 of 9 CLI call sites still import corpus_import",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "issue-088",
+          "statement": "issue-088: migrate CLI callers away from corpus_import",
+          "observed_at": "2025-01-14",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      },
+      {
+        "candidate_id": "c-web",
+        "subject": "callers.web",
+        "difference": "migrate web callers off corpus_import",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-web-0207",
+          "statement": "snapshot 2025-02-06: web call sites still import corpus_import",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "issue-089",
+          "statement": "issue-089: migrate web callers away from corpus_import",
+          "observed_at": "2025-01-14",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      }
+    ]
+  },
+  {
+    "task_id": "t-hidden-only",
+    "scope": "docs flags consequence only",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [],
+    "candidates": [
+      {
+        "candidate_id": "c-docs-flags",
+        "subject": "docs.corpus_import_flags",
+        "difference": "docs still describe corpus_import flags removed by adr-013",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-docs-0207",
+          "statement": "snapshot 2025-02-06: docs page lists corpus_import flags",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013 (2025-01-13): legacy corpus_import domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      },
+      {
+        "candidate_id": "c-guess",
+        "subject": "perf.flags",
+        "difference": "rebuild flag index (no stated expectation)",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-docs-0207",
+          "statement": "snapshot: flag page is slow",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "inferred-assumption",
+          "statement": "assumed: flags should be indexed (never stated)",
+          "observed_at": "2025-02-06",
+          "inferred": true,
+          "traceable": true
+        },
+        "cancelling": []
+      }
+    ]
+  },
+  {
+    "task_id": "t-trap-only",
+    "scope": "facade plus preserved tests only (silence is correct)",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [],
+    "candidates": [
+      {
+        "candidate_id": "c-facade-delete",
+        "subject": "compat.facade",
+        "difference": "delete the compatibility facade",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-facade-0207",
+          "statement": "snapshot 2025-02-06: facade still serves partner traffic",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: corpus_import domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "contract",
+            "artifact_id": "partner-note-004",
+            "statement": "partner-note-004: preserve facade until end of Q1 2025"
+          }
+        ]
+      },
+      {
+        "candidate_id": "c-tests-remove",
+        "subject": "tests.compat",
+        "difference": "remove old corpus_import regression tests",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-tests-0207",
+          "statement": "snapshot 2025-02-06: old tests still run and pass",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "intentional-preservation",
+            "artifact_id": "tests-compat-122",
+            "statement": "tests-compat-122: regression tests remain intentionally"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": "t-deferral",
+    "scope": "docs cleanup under deferral",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [
+      "docs-note-012"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "c-docs-deferral",
+        "subject": "docs.cleanup",
+        "difference": "update docs now",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-docs-0207",
+          "statement": "snapshot 2025-02-06: docs still describe flags",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "deferral",
+            "artifact_id": "docs-note-012",
+            "statement": "docs-note-012: documentation cleanup deferred until after release"
+          }
+        ]
+      },
+      {
+        "candidate_id": "c-docs-flags",
+        "subject": "docs.corpus_import_flags",
+        "difference": "docs still describe corpus_import flags removed by adr-013",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-docs-0207",
+          "statement": "snapshot 2025-02-06: docs page lists corpus_import flags",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013 (2025-01-13): legacy corpus_import domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      }
+    ]
+  },
+  {
+    "task_id": "t-partial",
+    "scope": "caller migration discharge",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [
+      "issue-088",
+      "issue-089"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "c-cli-half",
+        "subject": "callers.cli",
+        "difference": "migrate remaining CLI callers off corpus_import",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-cli-0207",
+          "statement": "snapshot 2025-02-06: 4 of 9 CLI call sites still import corpus_import",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "issue-088",
+          "statement": "issue-088: migrate CLI callers away from corpus_import",
+          "observed_at": "2025-01-14",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      },
+      {
+        "candidate_id": "c-web",
+        "subject": "callers.web",
+        "difference": "migrate web callers off corpus_import",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-web-0207",
+          "statement": "snapshot 2025-02-06: web call sites still import corpus_import",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "issue-089",
+          "statement": "issue-089: migrate web callers away from corpus_import",
+          "observed_at": "2025-01-14",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      },
+      {
+        "candidate_id": "c-facade-delete",
+        "subject": "compat.facade",
+        "difference": "delete the compatibility facade",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-facade-0207",
+          "statement": "snapshot 2025-02-06: facade still serves partner traffic",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: corpus_import domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "contract",
+            "artifact_id": "partner-note-004",
+            "statement": "partner-note-004: preserve facade until end of Q1 2025"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": "t-stale-leg",
+    "scope": "backup status with pre-fix snapshot",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [],
+    "candidates": [
+      {
+        "candidate_id": "c-backup-stale",
+        "subject": "backup.backend",
+        "difference": "move backup config to PostgreSQL",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-stale-0102",
+          "statement": "snapshot 2024-08-01: backup config names SQLite (superseded by commit-118 on 2024-08-27)",
+          "observed_at": "2024-08-01",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "commit-118",
+          "statement": "commit-118: backup config moved to PostgreSQL",
+          "observed_at": "2024-08-27",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      },
+      {
+        "candidate_id": "c-cli-half",
+        "subject": "callers.cli",
+        "difference": "migrate remaining CLI callers off corpus_import",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-cli-0207",
+          "statement": "snapshot 2025-02-06: 4 of 9 CLI call sites still import corpus_import",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "issue-088",
+          "statement": "issue-088: migrate CLI callers away from corpus_import",
+          "observed_at": "2025-01-14",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      }
+    ]
+  },
+  {
+    "task_id": "t-guess",
+    "scope": "inferred-expectation control",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [],
+    "candidates": [
+      {
+        "candidate_id": "c-guess",
+        "subject": "perf.flags",
+        "difference": "rebuild flag index (no stated expectation)",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-docs-0207",
+          "statement": "snapshot: flag page is slow",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "inferred-assumption",
+          "statement": "assumed: flags should be indexed (never stated)",
+          "observed_at": "2025-02-06",
+          "inferred": true,
+          "traceable": true
+        },
+        "cancelling": []
+      },
+      {
+        "candidate_id": "c-web",
+        "subject": "callers.web",
+        "difference": "migrate web callers off corpus_import",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-web-0207",
+          "statement": "snapshot 2025-02-06: web call sites still import corpus_import",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "issue-089",
+          "statement": "issue-089: migrate web callers away from corpus_import",
+          "observed_at": "2025-01-14",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      }
+    ]
+  },
+  {
+    "task_id": "t-contract-harm",
+    "scope": "facade under live contract",
+    "standpoint": "2025-02-07",
+    "explicit_obligations": [],
+    "candidates": [
+      {
+        "candidate_id": "c-facade-delete",
+        "subject": "compat.facade",
+        "difference": "delete the compatibility facade",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-facade-0207",
+          "statement": "snapshot 2025-02-06: facade still serves partner traffic",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "adr-013",
+          "statement": "adr-013: corpus_import domain removed",
+          "observed_at": "2025-01-13",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": [
+          {
+            "kind": "contract",
+            "artifact_id": "partner-note-004",
+            "statement": "partner-note-004: preserve facade until end of Q1 2025"
+          }
+        ]
+      },
+      {
+        "candidate_id": "c-web",
+        "subject": "callers.web",
+        "difference": "migrate web callers off corpus_import",
+        "current": {
+          "kind": "current",
+          "artifact_id": "snap-web-0207",
+          "statement": "snapshot 2025-02-06: web call sites still import corpus_import",
+          "observed_at": "2025-02-06",
+          "inferred": false,
+          "traceable": true
+        },
+        "expected": {
+          "kind": "expected",
+          "artifact_id": "issue-089",
+          "statement": "issue-089: migrate web callers away from corpus_import",
+          "observed_at": "2025-01-14",
+          "inferred": false,
+          "traceable": true
+        },
+        "cancelling": []
+      }
+    ]
+  }
+]

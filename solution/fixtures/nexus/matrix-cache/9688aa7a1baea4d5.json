@@ -1,0 +1,33 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "The incidents and measurements that influenced the event-store decision were: Concurrent Write Contention (Experiment evt-202), Incident evt-203: Write Stalls in Production, and Benchmark evt-204: PostgreSQL Throughput.",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 161525.2817000146,
+  "cited_ids": [
+    "record 10",
+    "record 11",
+    "record 2"
+  ],
+  "context_tokens": 1541,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 191957.7153000282,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-rel-influences",
+  "reader_latency_ms": 30432.21800000174,
+  "retrieved_ids": []
+}

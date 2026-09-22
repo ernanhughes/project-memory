@@ -1,0 +1,28 @@
+{
+  "abstained": true,
+  "admitted_ids": [],
+  "answer": "No information is available to determine the major architectural changes that occurred in this project's history.",
+  "capability_id": "NONE",
+  "capability_latency_ms": 0.0,
+  "cited_ids": [],
+  "context_tokens": 0,
+  "cost_units": 0.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNNECESSARY_ABSTENTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 3001.4542000135407,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0
+  },
+  "model_calls": 1,
+  "notes": "no history retrieved",
+  "query_id": "q-global-themes",
+  "reader_latency_ms": 3001.3321999576874,
+  "retrieved_ids": []
+}

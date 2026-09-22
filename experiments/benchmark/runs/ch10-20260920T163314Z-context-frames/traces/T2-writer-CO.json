@@ -1,0 +1,167 @@
+{
+  "trace_id": "T2-writer-CO",
+  "condition": "CO",
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "project_frame": "writer-v1",
+  "work_frame": "wf-t2-writer",
+  "query": "How should we improve the context system?",
+  "as_of": "2026-09-20T12:00:00Z",
+  "budget_tokens": 1500,
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_count": 5,
+  "admitted_count": 5,
+  "rejected_count": 0,
+  "stages": [
+    {
+      "stage": "oracle",
+      "admitted_items": 5,
+      "bundle_tokens": 255
+    }
+  ],
+  "bundle_digest": "2f979ba89b6e100c",
+  "bundle_tokens": 255,
+  "latency_ms": 0.04,
+  "candidates": [
+    {
+      "candidate_id": "wr-context-runtime",
+      "project_id": "writer",
+      "kind": "implementation_detail",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 66,
+      "source_refs": [
+        "writer/context/runtime.py"
+      ]
+    },
+    {
+      "candidate_id": "wr-improve-context",
+      "project_id": "writer",
+      "kind": "planning_note",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 50,
+      "source_refs": [
+        "writer/docs/roadmap.md"
+      ]
+    },
+    {
+      "candidate_id": "wr-rag-baseline",
+      "project_id": "writer",
+      "kind": "baseline_result",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 44,
+      "source_refs": [
+        "writer/context/retrieval.py"
+      ]
+    },
+    {
+      "candidate_id": "wr-retrieval-eval",
+      "project_id": "writer",
+      "kind": "experiment_result",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 56,
+      "source_refs": [
+        "writer/eval/retrieval.md"
+      ]
+    },
+    {
+      "candidate_id": "wr-memory-store",
+      "project_id": "writer",
+      "kind": "implementation_detail",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 39,
+      "source_refs": [
+        "writer/memory/store.py"
+      ]
+    }
+  ],
+  "schema_version": "context-trace/v0.1"
+}

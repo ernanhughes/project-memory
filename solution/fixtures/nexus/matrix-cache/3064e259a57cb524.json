@@ -1,0 +1,37 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md"
+  ],
+  "answer": "leaving of scratch fixtures in the load-test directory",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 24035.695200029295,
+  "cited_ids": [
+    "[derived:basic search over persistent graph memory; linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md]",
+    "Issue 041"
+  ],
+  "context_tokens": 326,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 30693.646400002763,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q-ind-leftover",
+  "reader_latency_ms": 6657.797800027765,
+  "retrieved_ids": [
+    "session-014.md"
+  ]
+}

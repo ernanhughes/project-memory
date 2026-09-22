@@ -1,0 +1,40 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "PostgreSQL was chosen for the event store due to its superior scalability, durability, and support for advanced transactional features.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 57665.134600014426,
+  "cited_ids": [
+    "Data: Reports (1, 3)",
+    "EVT-205 (ADR-007)"
+  ],
+  "context_tokens": 930,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 61619.33549999958,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=1 implicated=2",
+  "query_id": "q3-why-postgres",
+  "reader_latency_ms": 3954.0161000331864,
+  "retrieved_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ]
+}

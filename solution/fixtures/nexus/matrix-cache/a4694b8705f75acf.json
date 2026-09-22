@@ -1,0 +1,51 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-009.md",
+    "session-040.md",
+    "session-044.md",
+    "commits.log",
+    "session-019.md",
+    "adr-007.md",
+    "stale-summary.md",
+    "experiment-contention.md"
+  ],
+  "answer": "The team decided not to introduce Redis as a lookup cache.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 5835.8305000001565,
+  "cited_ids": [
+    "adr-009.md",
+    "session-040.md",
+    "session-044.md"
+  ],
+  "context_tokens": 753,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 28157.700999989174,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.25,
+    "source_recall": 1.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=2657",
+  "query_id": "q2-decision-redis",
+  "reader_latency_ms": 22321.658700006083,
+  "retrieved_ids": [
+    "adr-009.md",
+    "session-040.md",
+    "session-044.md",
+    "commits.log",
+    "session-019.md",
+    "adr-007.md",
+    "stale-summary.md",
+    "experiment-contention.md"
+  ]
+}

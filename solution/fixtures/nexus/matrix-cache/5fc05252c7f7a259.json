@@ -1,0 +1,48 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md",
+    "session-040.md",
+    "session-044.md",
+    "issue-041.md",
+    "experiment-contention.md",
+    "adr-007.md",
+    "adr-009.md",
+    "session-019.md"
+  ],
+  "answer": "The contention benchmark left scratch fixtures in the load-test directory.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6567.13470001705,
+  "cited_ids": [
+    "issue-041.md"
+  ],
+  "context_tokens": 706,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 10333.773399994243,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.125,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3357",
+  "query_id": "q-ind-leftover",
+  "reader_latency_ms": 3766.435500001535,
+  "retrieved_ids": [
+    "session-014.md",
+    "session-040.md",
+    "session-044.md",
+    "issue-041.md",
+    "experiment-contention.md",
+    "adr-007.md",
+    "adr-009.md",
+    "session-019.md"
+  ]
+}

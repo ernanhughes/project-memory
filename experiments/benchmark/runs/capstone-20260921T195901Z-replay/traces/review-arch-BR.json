@@ -1,0 +1,52 @@
+{
+ "task_id": "review-arch",
+ "condition": "BR",
+ "bcode": "BR",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "ablated+restored"
+ ],
+ "derived_consulted": [
+  "frozen:BR:3d25609972ff8768"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "ablated+restored",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "ablated+restored",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "ablated+restored"
+ ],
+ "rejected": [],
+ "context_tokens": 2108,
+ "context_hash": "3d25609972ff8768",
+ "reader_output": {
+  "task_score": 1.0,
+  "frozen": true
+ },
+ "behavioural_score": 1.0,
+ "harm": false,
+ "fallback_events": [
+  {
+   "event": "assembly failure",
+   "action": "bounded simple retrieval fallback engaged",
+   "detail": "context 2108 exceeds budget 1500; frozen trace preserved"
+  }
+ ],
+ "conditional_invocations": []
+}

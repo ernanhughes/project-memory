@@ -1,0 +1,66 @@
+{
+  "bundle_id": "cb-T2-cocoder-C2",
+  "condition": "C2",
+  "budget_tokens": 1500,
+  "bundle_tokens": 191,
+  "bundle_digest": "7ded9c9a463b4615",
+  "items": [
+    {
+      "item_id": "item-cc-improve-context",
+      "members": [
+        "cc-improve-context"
+      ],
+      "source_refs": [
+        "cocoder/docs/roadmap.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "cocoder.roadmap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 41
+    },
+    {
+      "item_id": "item-cc-context-window",
+      "members": [
+        "cc-context-window"
+      ],
+      "source_refs": [
+        "cocoder/context/build.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "cocoder.context",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 57
+    },
+    {
+      "item_id": "item-cc-evidence-refs",
+      "members": [
+        "cc-evidence-refs"
+      ],
+      "source_refs": [
+        "cocoder/docs/policy.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "cocoder.evidence",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 47
+    },
+    {
+      "item_id": "item-cc-eval-harness",
+      "members": [
+        "cc-eval-harness"
+      ],
+      "source_refs": [
+        "cocoder/eval/harness.md"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "cocoder.eval",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 46
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

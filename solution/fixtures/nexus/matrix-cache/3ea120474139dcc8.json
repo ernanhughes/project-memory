@@ -1,0 +1,49 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "session-040.md",
+    "production-notes.md",
+    "stale-summary.md",
+    "session-014.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "adr-009.md"
+  ],
+  "answer": "a.novak",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6643.314000044484,
+  "cited_ids": [
+    "experiment-contention.md",
+    "benchmark-note.md"
+  ],
+  "context_tokens": 749,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 10944.574899971485,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.25,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3394",
+  "query_id": "q-ind-owner",
+  "reader_latency_ms": 4301.0541999829,
+  "retrieved_ids": [
+    "adr-007.md",
+    "session-040.md",
+    "production-notes.md",
+    "stale-summary.md",
+    "session-014.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "adr-009.md"
+  ]
+}

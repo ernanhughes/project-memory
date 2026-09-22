@@ -1,0 +1,49 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "experiment-contention.md",
+    "session-019.md",
+    "session-040.md",
+    "adr-009.md",
+    "adr-007.md",
+    "session-044.md",
+    "notification-service.md",
+    "commits.log"
+  ],
+  "answer": "The project switched from using SQLite as the event store to PostgreSQL, and also decided not to use Redis as a lookup cache.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6858.532799989916,
+  "cited_ids": [
+    "adr-007.md",
+    "adr-009.md"
+  ],
+  "context_tokens": 715,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 11981.841799977701,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.375,
+    "source_recall": 0.75,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3384",
+  "query_id": "q-global-themes",
+  "reader_latency_ms": 5123.1362000107765,
+  "retrieved_ids": [
+    "experiment-contention.md",
+    "session-019.md",
+    "session-040.md",
+    "adr-009.md",
+    "adr-007.md",
+    "session-044.md",
+    "notification-service.md",
+    "commits.log"
+  ]
+}

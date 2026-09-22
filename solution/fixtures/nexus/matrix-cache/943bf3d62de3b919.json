@@ -1,0 +1,49 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md"
+  ],
+  "answer": "The team conducted a series of experiments, benchmarks, and decisions to address reliability concerns in the event-store backend, particularly focusing on handling concurrent writes and scalability.",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 39534.078800003044,
+  "cited_ids": [
+    "Session 014 (record 15)",
+    "Data: Sources (15)",
+    "Experiment evt-202 (record 10)",
+    "Data: Sources (10)",
+    "Data: Sources (11)",
+    "Benchmark evt-204 (record 2)",
+    "Data: Sources (2)",
+    "adr-007.md",
+    "Data: Sources (0)",
+    "Production state notes (record 14)",
+    "Data: Sources (14)",
+    "Event-store wiki page (record 19)",
+    "Data: Sources (19)",
+    "Session 040 (record 17)",
+    "Data: Sources (17)"
+  ],
+  "context_tokens": 1018,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 48872.40870000096,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.9333333333333333
+  },
+  "model_calls": 2,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q-global-reliability",
+  "reader_latency_ms": 9338.143200031482,
+  "retrieved_ids": [
+    "session-014.md"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "suite": "SR-3 compact-context transfer",
+  "source": "ch14-20260920T174259Z-context-assembly",
+  "run_id": "sr3-ch14-20260920T231031Z-muse",
+  "created_at": "20260920T231522Z",
+  "conditions": [
+    "A0-raw@full",
+    "A6-composed@768",
+    "A6-composed@full",
+    "CO-auditable@full"
+  ],
+  "reader": "opencode:muse-spark-1.3-contributor@t0",
+  "reader_provider": "opencode-zen-go",
+  "reader_model": "muse-spark-1.3-contributor",
+  "reader_backend": "opencode-responses (opencode.ai)",
+  "reasoning_effort": "low",
+  "temperature": 0.0,
+  "max_output_tokens": 2048,
+  "session_id": "memory-sr3-ch14-20260920T231031Z-muse",
+  "scorer": "context_frames.metrics.score_answer (unchanged)",
+  "code_commit": "89e1175",
+  "muse_usage_totals": {
+    "input_tokens": 54063,
+    "cached_input_tokens": 29437,
+    "output_tokens": 53187,
+    "reasoning_tokens": 29485,
+    "total_tokens": 107250,
+    "calls": 44
+  },
+  "cost": "not computed",
+  "code_note": "commit contains the exact driver code used for all live calls in this run"
+}

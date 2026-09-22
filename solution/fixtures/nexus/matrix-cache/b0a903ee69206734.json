@@ -1,0 +1,30 @@
+{
+  "abstained": true,
+  "admitted_ids": [],
+  "answer": "Unknown",
+  "capability_id": "NONE",
+  "capability_latency_ms": 0.0,
+  "cited_ids": [],
+  "context_tokens": 0,
+  "cost_units": 0.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNNECESSARY_ABSTENTION",
+    "UNNECESSARY_ABSTENTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 2602.4512000149116,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 0.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0
+  },
+  "model_calls": 1,
+  "notes": "no history retrieved",
+  "query_id": "q2-decision-eventstore",
+  "reader_latency_ms": 2602.3218000191264,
+  "retrieved_ids": []
+}

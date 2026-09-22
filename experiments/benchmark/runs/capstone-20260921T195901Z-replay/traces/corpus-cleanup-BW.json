@@ -1,0 +1,49 @@
+{
+ "task_id": "corpus-cleanup",
+ "condition": "BW",
+ "bcode": "BW",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "c-facade-listing"
+ ],
+ "derived_consulted": [
+  "frozen:BW:9af384d76d11fe5b"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "c-facade-listing",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "c-facade-listing",
+   "decision": "REJECT",
+   "reason": "deliberate wrong-memory control: provenance fails authority check"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [],
+ "rejected": [
+  {
+   "unit_id": "c-facade-listing",
+   "reason": "trust gate REJECT: failed authority check"
+  }
+ ],
+ "context_tokens": 48,
+ "context_hash": "9af384d76d11fe5b",
+ "reader_output": {
+  "task_score": 0.0,
+  "frozen": true
+ },
+ "behavioural_score": 0.0,
+ "harm": true,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

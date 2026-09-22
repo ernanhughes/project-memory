@@ -1,0 +1,41 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "experiment-contention.md",
+    "session-014.md",
+    "session-019.md"
+  ],
+  "answer": "SQLite",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 35272.63849996962,
+  "cited_ids": [
+    "{'source': 'Data: Sources (3, 15)'}",
+    "{'source': 'Data: Sources (15)'}",
+    "{'source': 'Data: Sources (14)'}"
+  ],
+  "context_tokens": 374,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 3,
+  "latency_ms": 44611.5703000105,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "historical_state_accuracy": 1.0,
+    "source_precision": 0.3333333333333333,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=3 implicated=3",
+  "query_id": "q4-historical-march",
+  "reader_latency_ms": 9338.692100020126,
+  "retrieved_ids": [
+    "experiment-contention.md",
+    "session-014.md",
+    "session-019.md"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "trace_id": "T6-echo-coalescing-CO",
+  "condition": "CO",
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "project_frame": "memory-book-v1",
+  "work_frame": "wf-t6",
+  "query": "What rule governs whether a new memory layer enters the book?",
+  "as_of": "2026-09-20T12:00:00Z",
+  "budget_tokens": 1500,
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_count": 4,
+  "admitted_count": 4,
+  "rejected_count": 0,
+  "stages": [
+    {
+      "stage": "oracle",
+      "admitted_items": 4,
+      "bundle_tokens": 386
+    }
+  ],
+  "bundle_digest": "75ad3d124aff2b1b",
+  "bundle_tokens": 386,
+  "latency_ms": 0.05,
+  "candidates": [
+    {
+      "candidate_id": "mb-method-earn",
+      "project_id": "memory-book",
+      "kind": "method_rule",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 89,
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-method-baseline-rule",
+      "project_id": "memory-book",
+      "kind": "method_rule",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 97,
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch03-baseline-role",
+      "project_id": "memory-book",
+      "kind": "baseline_result",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 125,
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ]
+    },
+    {
+      "candidate_id": "mb-method-evidence-discipline",
+      "project_id": "memory-book",
+      "kind": "method_rule",
+      "retrieval_rank": 0,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.0,
+      "decision": "admit",
+      "reason_codes": [
+        "ORACLE_LEDGER"
+      ],
+      "coalesced_into": null,
+      "token_cost": 75,
+      "source_refs": [
+        "AGENTS.md"
+      ]
+    }
+  ],
+  "schema_version": "context-trace/v0.1"
+}

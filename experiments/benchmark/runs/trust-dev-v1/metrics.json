@@ -1,0 +1,38 @@
+{
+  "summary_metrics": {
+    "task_success": {
+      "T0": 0.25,
+      "TU": 0.0357,
+      "TT": 0.4405,
+      "S1": 0.0357,
+      "S2": 0.2738,
+      "S3": 0.2976,
+      "TO": 0.5
+    },
+    "harm": {
+      "T0": 0,
+      "TU": 2,
+      "TT": 0,
+      "S1": 1,
+      "S2": 1,
+      "S3": 1,
+      "TO": 0
+    },
+    "attack_success": {
+      "S1": 0.6667,
+      "S2": 0.6667,
+      "S3": 0.5556,
+      "FULL": 0.0
+    },
+    "benign_retention": {
+      "S1": 1.0,
+      "S2": 1.0,
+      "S3": 1.0,
+      "FULL": 1.0
+    },
+    "gate_match": 8,
+    "gate_total": 8,
+    "breaches": [],
+    "promoted": true
+  }
+}

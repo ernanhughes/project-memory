@@ -1,0 +1,3155 @@
+{
+  "B0": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "UNKNOWN-BACKEND"
+          }
+        ],
+        "answer_chars": 800,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.6667,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No evidence or task state provided to determine Chapter 10's shipping status."
+          }
+        ],
+        "answer_chars": 398,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "No project evidence supplied to identify open blockers."
+          }
+        ],
+        "answer_chars": 466,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B1"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [],
+        "answer_chars": 502,
+        "parse_ok": false,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "parse-error"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN"
+          }
+        ],
+        "answer_chars": 341,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "review-prose",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "Insufficient evidence to determine actionable steps."
+          }
+        ],
+        "answer_chars": 559,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "reason": "NO_PROJECT_EVIDENCE_SUPPLIED_TO_EVALUATE_CHAPTER_10"
+          }
+        ],
+        "answer_chars": 579,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B2"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "CORPUS_IMPORT_DOCUMENTATION"
+          }
+        ],
+        "answer_chars": 1139,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    },
+    {
+      "outcome": {
+        "task_id": "irrelevant",
+        "memory_condition": "B0",
+        "context_hash": "e3b0c44298fc1c14",
+        "context_tokens": 1,
+        "memory_ids": [],
+        "structured_actions": [
+          {
+            "action_type": "ECHO_PRESENT",
+            "items": [
+              "alpha-label",
+              "beta-label",
+              "gamma-label"
+            ]
+          }
+        ],
+        "answer_chars": 375,
+        "parse_ok": true,
+        "dimension_scores": {
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "no memory"
+    }
+  ],
+  "B1": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B1",
+        "context_hash": "957c318e617defdb",
+        "context_tokens": 6242,
+        "memory_ids": [
+          "cc-context-window",
+          "cc-eval-harness",
+          "cc-evidence-refs",
+          "cc-improve-context",
+          "cc-memory-notes",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch08-result",
+          "mb-ch09-handoff",
+          "mb-ch09-result",
+          "mb-ch10-concepts",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-ch11-opening",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-contract-q6",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-impl-test-paths",
+          "mb-impl-zeromq",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-loop-readme-drift",
+          "mb-loop-real-corpus",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-refutes-ch9-scope",
+          "mb-research-context-engineering",
+          "mb-research-deontic",
+          "mb-research-goal-conditioned",
+          "mb-research-intention-schema",
+          "mb-research-prospective",
+          "mb-session-intent-1",
+          "mb-session-intent-2",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-stale-ch06-title",
+          "mb-stale-ch10-plan",
+          "mb-stale-nexus-selects",
+          "mb-stale-sqlite",
+          "mb-style-build",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "wr-context-runtime",
+          "wr-evidence-policy",
+          "wr-improve-context",
+          "wr-memory-store",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "search_config": {
+              "baseline": "WRITER_HYBRID_RAG",
+              "evaluation_metric": "precision_recall_per_section"
+            }
+          }
+        ],
+        "answer_chars": 1686,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full visible history (68 units)"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B1",
+        "context_hash": "957c318e617defdb",
+        "context_tokens": 6242,
+        "memory_ids": [
+          "cc-context-window",
+          "cc-eval-harness",
+          "cc-evidence-refs",
+          "cc-improve-context",
+          "cc-memory-notes",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch08-result",
+          "mb-ch09-handoff",
+          "mb-ch09-result",
+          "mb-ch10-concepts",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-ch11-opening",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-contract-q6",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-impl-test-paths",
+          "mb-impl-zeromq",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-loop-readme-drift",
+          "mb-loop-real-corpus",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-refutes-ch9-scope",
+          "mb-research-context-engineering",
+          "mb-research-deontic",
+          "mb-research-goal-conditioned",
+          "mb-research-intention-schema",
+          "mb-research-prospective",
+          "mb-session-intent-1",
+          "mb-session-intent-2",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-stale-ch06-title",
+          "mb-stale-ch10-plan",
+          "mb-stale-nexus-selects",
+          "mb-stale-sqlite",
+          "mb-style-build",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "wr-context-runtime",
+          "wr-evidence-policy",
+          "wr-improve-context",
+          "wr-memory-store",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "rationale": "The Chapter 10 plan (Intentions Are Not Events) is still in a draft state, with no implemented mechanism or validated results. The research notes (e.g., `mb-research-intention-schema`, `mb-session-intent-*`) are incomplete, and the chapter lacks a measurable improvement over retrieval baselines. The book\u2019s core requirement (taxonomy does not earn a chapter; measured failure does) is not met. Additionally, the latest working session (`mb-session-pivot`) explicitly questions the direction of the book, suggesting a return to foundational experiments. Without a clear, validated mechanism or a resolved path forward, holding this chapter aligns with the book\u2019s discipline of evidence-driven progression."
+          }
+        ],
+        "answer_chars": 833,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.5,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full visible history (68 units)"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B1",
+        "context_hash": "957c318e617defdb",
+        "context_tokens": 6242,
+        "memory_ids": [
+          "cc-context-window",
+          "cc-eval-harness",
+          "cc-evidence-refs",
+          "cc-improve-context",
+          "cc-memory-notes",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch08-result",
+          "mb-ch09-handoff",
+          "mb-ch09-result",
+          "mb-ch10-concepts",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-ch11-opening",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-contract-q6",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-impl-test-paths",
+          "mb-impl-zeromq",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-loop-readme-drift",
+          "mb-loop-real-corpus",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-refutes-ch9-scope",
+          "mb-research-context-engineering",
+          "mb-research-deontic",
+          "mb-research-goal-conditioned",
+          "mb-research-intention-schema",
+          "mb-research-prospective",
+          "mb-session-intent-1",
+          "mb-session-intent-2",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-stale-ch06-title",
+          "mb-stale-ch10-plan",
+          "mb-stale-nexus-selects",
+          "mb-stale-sqlite",
+          "mb-style-build",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "wr-context-runtime",
+          "wr-evidence-policy",
+          "wr-improve-context",
+          "wr-memory-store",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "rationale": "The provided items are either internal notes, research drafts, or implementation details (e.g., SQLite storage, SQLite baseline, SQLite-like retrieval) that do not directly address the reader's dependency-ordered questions about the *small but load-bearing* mechanisms in the benchmark or the book's progression. These are either stale, internal, or not yet published as book chapters. The only actionable items are the explicit book chapters (e.g., Chapter 9, Chapter 10) or the research notes that explicitly tie to the book's stated goals (e.g., intention schema, deontic logic)."
+          }
+        ],
+        "answer_chars": 682,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B1",
+          "B4"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full visible history (68 units)"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B1",
+        "context_hash": "957c318e617defdb",
+        "context_tokens": 6242,
+        "memory_ids": [
+          "cc-context-window",
+          "cc-eval-harness",
+          "cc-evidence-refs",
+          "cc-improve-context",
+          "cc-memory-notes",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch08-result",
+          "mb-ch09-handoff",
+          "mb-ch09-result",
+          "mb-ch10-concepts",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-ch11-opening",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-contract-q6",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-impl-test-paths",
+          "mb-impl-zeromq",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-loop-readme-drift",
+          "mb-loop-real-corpus",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-refutes-ch9-scope",
+          "mb-research-context-engineering",
+          "mb-research-deontic",
+          "mb-research-goal-conditioned",
+          "mb-research-intention-schema",
+          "mb-research-prospective",
+          "mb-session-intent-1",
+          "mb-session-intent-2",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-stale-ch06-title",
+          "mb-stale-ch10-plan",
+          "mb-stale-nexus-selects",
+          "mb-stale-sqlite",
+          "mb-style-build",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "wr-context-runtime",
+          "wr-evidence-policy",
+          "wr-improve-context",
+          "wr-memory-store",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "mb-loop-real-corpus",
+            "reason_refs": [
+              "mb-method-earn",
+              "mb-method-evidence-discipline",
+              "mb-research-goal-conditioned",
+              "mb-stale-ch10-plan"
+            ]
+          }
+        ],
+        "answer_chars": 1836,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full visible history (68 units)"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B1",
+        "context_hash": "957c318e617defdb",
+        "context_tokens": 6242,
+        "memory_ids": [
+          "cc-context-window",
+          "cc-eval-harness",
+          "cc-evidence-refs",
+          "cc-improve-context",
+          "cc-memory-notes",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch08-result",
+          "mb-ch09-handoff",
+          "mb-ch09-result",
+          "mb-ch10-concepts",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-ch11-opening",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-contract-q6",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-impl-test-paths",
+          "mb-impl-zeromq",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-loop-readme-drift",
+          "mb-loop-real-corpus",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-refutes-ch9-scope",
+          "mb-research-context-engineering",
+          "mb-research-deontic",
+          "mb-research-goal-conditioned",
+          "mb-research-intention-schema",
+          "mb-research-prospective",
+          "mb-session-intent-1",
+          "mb-session-intent-2",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-stale-ch06-title",
+          "mb-stale-ch10-plan",
+          "mb-stale-nexus-selects",
+          "mb-stale-sqlite",
+          "mb-style-build",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "wr-context-runtime",
+          "wr-evidence-policy",
+          "wr-improve-context",
+          "wr-memory-store",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "CITE_RULE",
+            "rule_id": "mb-method-earn"
+          }
+        ],
+        "answer_chars": 1454,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.25,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full visible history (68 units)"
+    },
+    {
+      "outcome": {
+        "task_id": "review-prose",
+        "memory_condition": "B1",
+        "context_hash": "957c318e617defdb",
+        "context_tokens": 6242,
+        "memory_ids": [
+          "cc-context-window",
+          "cc-eval-harness",
+          "cc-evidence-refs",
+          "cc-improve-context",
+          "cc-memory-notes",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch08-result",
+          "mb-ch09-handoff",
+          "mb-ch09-result",
+          "mb-ch10-concepts",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-ch11-opening",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-contract-q6",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-impl-test-paths",
+          "mb-impl-zeromq",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-loop-readme-drift",
+          "mb-loop-real-corpus",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-refutes-ch9-scope",
+          "mb-research-context-engineering",
+          "mb-research-deontic",
+          "mb-research-goal-conditioned",
+          "mb-research-intention-schema",
+          "mb-research-prospective",
+          "mb-session-intent-1",
+          "mb-session-intent-2",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-stale-ch06-title",
+          "mb-stale-ch10-plan",
+          "mb-stale-nexus-selects",
+          "mb-stale-sqlite",
+          "mb-style-build",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "wr-context-runtime",
+          "wr-evidence-policy",
+          "wr-improve-context",
+          "wr-memory-store",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "mb-stale-ch06-title",
+              "mb-stale-ch10-plan",
+              "mb-stale-nexus-selects",
+              "mb-stale-sqlite",
+              "mb-session-pivot"
+            ]
+          }
+        ],
+        "answer_chars": 1324,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full visible history (68 units)"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B1",
+        "context_hash": "957c318e617defdb",
+        "context_tokens": 6242,
+        "memory_ids": [
+          "cc-context-window",
+          "cc-eval-harness",
+          "cc-evidence-refs",
+          "cc-improve-context",
+          "cc-memory-notes",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch04-result",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch08-result",
+          "mb-ch09-handoff",
+          "mb-ch09-result",
+          "mb-ch10-concepts",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-ch11-opening",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-contract-q6",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-impl-test-paths",
+          "mb-impl-zeromq",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-loop-readme-drift",
+          "mb-loop-real-corpus",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-refutes-ch9-scope",
+          "mb-research-context-engineering",
+          "mb-research-deontic",
+          "mb-research-goal-conditioned",
+          "mb-research-intention-schema",
+          "mb-research-prospective",
+          "mb-session-intent-1",
+          "mb-session-intent-2",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-stale-ch06-title",
+          "mb-stale-ch10-plan",
+          "mb-stale-nexus-selects",
+          "mb-stale-sqlite",
+          "mb-style-build",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "wr-context-runtime",
+          "wr-evidence-policy",
+          "wr-improve-context",
+          "wr-memory-store",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "reason": "The Chapter 10 plan (Intentions Are Not Events) and Chapter 11 (Open Loops) are still in draft form, with no implemented mechanism or controlled experiment results. The latest working sessions (mb-session-intent-1, mb-session-intent-2, mb-session-intent-3) focused on schema design and E-10 fixture grids but did not produce a deployable mechanism. The book\u2019s core requirement (mb-method-earn) mandates a measurable improvement over retrieval baselines, which has not been demonstrated for these chapters. The request to return to the Chapter 3 baseline (mb-session-pivot) aligns with this concern.",
+            "blockers": [
+              "No implemented mechanism for intention extraction or open-loop handling",
+              "No controlled experiment results comparing against retrieval baselines",
+              "Draft schema and fixture grids lack validation against real-world data",
+              "Pending research (mb-research-intention-schema, mb-research-prospective) is not yet integrated into a testable system"
+            ]
+          }
+        ],
+        "answer_chars": 1127,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full visible history (68 units)"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "B1",
+        "context_hash": "5651997304938867",
+        "context_tokens": 247,
+        "memory_ids": [
+          "c-cli-half",
+          "c-docs-flags",
+          "c-facade-listing",
+          "c-web"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "CLI"
+          },
+          {
+            "action_type": "MIGRATE_CALLERS",
+            "scope": "WEB"
+          }
+        ],
+        "answer_chars": 666,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.6667,
+        "failure_classes": [
+          "B0",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "full candidate listing (unfiltered world)"
+    }
+  ],
+  "B2": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B2",
+        "context_hash": "e961e5ce71f55081",
+        "context_tokens": 2073,
+        "memory_ids": [
+          "mb-impl-postgres",
+          "wr-rag-baseline",
+          "mb-stale-sqlite",
+          "mb-session-pivot",
+          "mb-echo-baseline-4",
+          "mb-method-earn",
+          "mb-ch09-result",
+          "mb-echo-ch9-result-1",
+          "mb-stale-nexus-selects",
+          "mb-arch-spine",
+          "mb-echo-baseline-1",
+          "mb-research-prospective",
+          "mb-ch03-baseline-role",
+          "mb-echo-baseline-3",
+          "mb-contract-q6",
+          "mb-session-intent-1",
+          "mb-impl-zeromq",
+          "mb-ch07-result",
+          "wr-memory-store",
+          "mb-arch-q6-open",
+          "mb-ch10-priority-refusal",
+          "mb-method-baseline-rule"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "SQLITE"
+          }
+        ],
+        "answer_chars": 836,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T4-current-vs-stale-C0"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B2",
+        "context_hash": "1de0e9ff6e0a6175",
+        "context_tokens": 2010,
+        "memory_ids": [
+          "mb-session-pivot",
+          "mb-ch09-handoff",
+          "mb-arch-q6-open",
+          "mb-contract-q6",
+          "mb-arch-spine",
+          "mb-ch11-opening",
+          "mb-stale-ch10-plan",
+          "mb-contract-failure-classes",
+          "mb-ch10-prose-opening",
+          "mb-ch10-priority-refusal",
+          "mb-research-deontic",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-style-conventions",
+          "mb-method-earn",
+          "mb-arch-definition",
+          "mb-ch04-result",
+          "wr-context-runtime",
+          "mb-method-baseline-rule",
+          "mb-echo-baseline-4"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "rationale": "Chapter 10 cannot ship because (1) its core mechanism lacks a controlled experiment proving improvement over the Chapter 3 baseline (per [item-mb-method-earn], [item-mb-arch-q6-open]), and (2) its prose dependencies with Chapters 9 and 11 are unresolved (per [item-mb-ch09-handoff], [item-mb-ch11-opening]). Blockers: no experiment; continuity broken."
+          },
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "No controlled experiment comparing Chapter 10\u2019s mechanism to the Chapter 3 baseline (required by [item-mb-method-earn], [item-mb-arch-q6-open]).",
+              "Chapter 9\u2019s handoff to Chapter 10 is unfinished (per [item-mb-ch09-handoff]).",
+              "Chapter 11\u2019s opening assumes Chapter 10\u2019s subject matter (per [item-mb-ch11-opening]), requiring rewrites to remove it."
+            ]
+          }
+        ],
+        "answer_chars": 2954,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release-C0"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B2",
+        "context_hash": "1de0e9ff6e0a6175",
+        "context_tokens": 2010,
+        "memory_ids": [
+          "mb-session-pivot",
+          "mb-ch09-handoff",
+          "mb-arch-q6-open",
+          "mb-contract-q6",
+          "mb-arch-spine",
+          "mb-ch11-opening",
+          "mb-stale-ch10-plan",
+          "mb-contract-failure-classes",
+          "mb-ch10-prose-opening",
+          "mb-ch10-priority-refusal",
+          "mb-research-deontic",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-style-conventions",
+          "mb-method-earn",
+          "mb-arch-definition",
+          "mb-ch04-result",
+          "wr-context-runtime",
+          "mb-method-baseline-rule",
+          "mb-echo-baseline-4"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "item-mb-session-pivot",
+              "item-mb-arch-q6-open",
+              "item-mb-ch09-handoff",
+              "item-mb-ch11-opening",
+              "item-mb-method-earn",
+              "item-mb-research-deontic"
+            ]
+          }
+        ],
+        "answer_chars": 2681,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.5,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release-C0"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B2",
+        "context_hash": "e6fa5a39761addbc",
+        "context_tokens": 2018,
+        "memory_ids": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-loop-ch10-experiment",
+          "mb-ch10-prose-opening",
+          "mb-stale-ch10-plan",
+          "mb-arch-spine",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-loop-ch11-recap",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-ch10-prose-schema",
+          "mb-refutes-ch9-scope",
+          "mb-echo-baseline-4",
+          "mb-method-earn",
+          "mb-impl-zeromq",
+          "mb-contract-q6",
+          "mb-stale-ch06-title",
+          "mb-echo-baseline-3"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "ADJACENCY_AND_COALESCING_CONTEXT_BUILDER",
+            "reason_refs": [
+              "item-mb-method-earn",
+              "item-mb-echo-baseline-3",
+              "item-mb-echo-baseline-4",
+              "item-mb-ch10-experiment-pending"
+            ]
+          }
+        ],
+        "answer_chars": 1731,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture-C0"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B2",
+        "context_hash": "44449b10a7633be3",
+        "context_tokens": 2054,
+        "memory_ids": [
+          "mb-session-pivot",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-contract-failure-classes",
+          "mb-echo-baseline-2",
+          "mb-arch-definition",
+          "mb-ch06-result",
+          "mb-ch03-baseline-role",
+          "mb-loop-ch10-experiment",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-result",
+          "mb-ch03-baseline-strength",
+          "mb-contract-q6",
+          "mb-stale-ch10-plan",
+          "mb-style-citations",
+          "mb-ch10-refs",
+          "mb-ch10-experiment-pending",
+          "mb-method-evidence-discipline",
+          "mb-echo-baseline-3",
+          "cc-improve-context"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "CITE_RULE",
+            "rule_id": "item-mb-method-earn"
+          }
+        ],
+        "answer_chars": 721,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.25,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T5-support-vs-topicality-C0"
+    },
+    {
+      "outcome": {
+        "task_id": "review-prose",
+        "memory_condition": "B2",
+        "context_hash": "e6fa5a39761addbc",
+        "context_tokens": 2018,
+        "memory_ids": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-loop-ch10-experiment",
+          "mb-ch10-prose-opening",
+          "mb-stale-ch10-plan",
+          "mb-arch-spine",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-loop-ch11-recap",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-ch10-prose-schema",
+          "mb-refutes-ch9-scope",
+          "mb-echo-baseline-4",
+          "mb-method-earn",
+          "mb-impl-zeromq",
+          "mb-contract-q6",
+          "mb-stale-ch06-title",
+          "mb-echo-baseline-3"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "rationale": "Chapter 10 lacks empirical validation (experiment-pending marker, no committed run, core comparison unexecuted) and risks continuity violations with Chapter 11. Must resolve experiment and align prose/schema with evidence before publication."
+          }
+        ],
+        "answer_chars": 2977,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-publication-C0"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B2",
+        "context_hash": "e6fa5a39761addbc",
+        "context_tokens": 2018,
+        "memory_ids": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-loop-ch10-experiment",
+          "mb-ch10-prose-opening",
+          "mb-stale-ch10-plan",
+          "mb-arch-spine",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-loop-ch11-recap",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-ch10-prose-schema",
+          "mb-refutes-ch9-scope",
+          "mb-echo-baseline-4",
+          "mb-method-earn",
+          "mb-impl-zeromq",
+          "mb-contract-q6",
+          "mb-stale-ch06-title",
+          "mb-echo-baseline-3"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "reason": "Chapter 10 lacks a committed experiment result and does not meet the project\u2019s requirement that mechanisms must be experimentally validated against the Chapter 3 baseline (item-mb-method-earn). The latest working session explicitly questions architectural drift from measurable improvement (item-mb-session-pivot), and Chapter 10\u2019s core hypothesis remains untested (item-mb-ch10-experiment, item-mb-ch10-experiment-pending).",
+            "blockers": [
+              "No committed run or published result (item-mb-ch10-experiment, item-mb-ch10-experiment-pending)",
+              "Core hypothesis untested against Chapter 3 baseline (item-mb-method-earn)",
+              "Latest session requests return to baseline (item-mb-session-pivot)",
+              "Chapter 11\u2019s continuity depends on Chapter 10\u2019s subject (item-mb-ch11-opening, item-mb-loop-ch11-recap)"
+            ]
+          }
+        ],
+        "answer_chars": 2664,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture-C0"
+    },
+    {
+      "outcome": {
+        "task_id": "irrelevant",
+        "memory_condition": "B2",
+        "context_hash": "e6fa5a39761addbc",
+        "context_tokens": 2018,
+        "memory_ids": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-loop-ch10-experiment",
+          "mb-ch10-prose-opening",
+          "mb-stale-ch10-plan",
+          "mb-arch-spine",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-loop-ch11-recap",
+          "mb-session-intent-3",
+          "mb-session-pivot",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-ch10-prose-schema",
+          "mb-refutes-ch9-scope",
+          "mb-echo-baseline-4",
+          "mb-method-earn",
+          "mb-impl-zeromq",
+          "mb-contract-q6",
+          "mb-stale-ch06-title",
+          "mb-echo-baseline-3"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ECHO_PRESENT",
+            "items": [
+              "alpha-label",
+              "beta-label",
+              "gamma-label"
+            ]
+          }
+        ],
+        "answer_chars": 346,
+        "parse_ok": true,
+        "dimension_scores": {
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-publication-C0"
+    }
+  ],
+  "B3": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B3",
+        "context_hash": "40c7810b6a2f5781",
+        "context_tokens": 1952,
+        "memory_ids": [
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch09-result",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-session-pivot",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "POSTGRESQL_PGVECTOR"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "search_mechanism": {
+              "vector_search": "HNSW",
+              "lexical_search": {
+                "column": "tsvector",
+                "operator": "OR-of-terms",
+                "ranking": "ts_rank_cd"
+              }
+            }
+          }
+        ],
+        "answer_chars": 1029,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T4-current-vs-stale-C5"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B3",
+        "context_hash": "daef1c0ceb2d2fb2",
+        "context_tokens": 2002,
+        "memory_ids": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-arch-q6-open",
+          "mb-research-deontic"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "rationale": "Chapter 10 cannot ship because it lacks a committed experiment run (item-mb-loop-ch10-experiment). The evidence discipline forbids presenting a hypothesis as a result without an E-10 run."
+          },
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "Missing committed experiment run for Chapter 10 (item-mb-loop-ch10-experiment)"
+            ]
+          }
+        ],
+        "answer_chars": 1042,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release-C5"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B3",
+        "context_hash": "daef1c0ceb2d2fb2",
+        "context_tokens": 2002,
+        "memory_ids": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-arch-q6-open",
+          "mb-research-deontic"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "item-mb-loop-real-corpus",
+              "item-mb-loop-ch11-recap",
+              "item-mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 1227,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release-C5"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B3",
+        "context_hash": "4af28c8d036bd5c4",
+        "context_tokens": 1987,
+        "memory_ids": [
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "adjacency-and-coalescing-context-builder",
+            "reason_refs": [
+              "item-mb-method-earn",
+              "item-mb-method-baseline-rule",
+              "item-mb-method-evidence-discipline",
+              "item-mb-contract-failure-classes",
+              "item-mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 2404,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture-C5"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B3",
+        "context_hash": "ea022a9601f1d89a",
+        "context_tokens": 1971,
+        "memory_ids": [
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-loop-ch10-experiment"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "CITE_RULE",
+            "rule_id": "item-mb-method-evidence-discipline"
+          }
+        ],
+        "answer_chars": 462,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T5-support-vs-topicality-C5"
+    },
+    {
+      "outcome": {
+        "task_id": "review-prose",
+        "memory_condition": "B3",
+        "context_hash": "da25f686d5f90a3f",
+        "context_tokens": 1464,
+        "memory_ids": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "items": [
+              "item-mb-ch10-experiment-pending",
+              "item-mb-loop-ch10-experiment"
+            ],
+            "rationale": "Chapter 10 lacks a committed experiment run and cannot be published without validation of its core hypothesis. The continuity guard and Chapter 11\u2019s recap depend on its current state, which is unresolved."
+          }
+        ],
+        "answer_chars": 1470,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-publication-C5"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B3",
+        "context_hash": "4af28c8d036bd5c4",
+        "context_tokens": 1987,
+        "memory_ids": [
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "reason": "Chapter 10 lacks a frozen experiment (E-10 run) and is marked as experiment-pending. Method rules require empirical validation against the Chapter 3 baseline and failure classes before inclusion. Architecture gaps (item-mb-arch-q6-open) remain unaddressed.",
+            "blockers": [
+              "No E-10 run exists",
+              "Pending experiment status (item-mb-loop-ch10-experiment)",
+              "Baseline comparison not completed"
+            ]
+          }
+        ],
+        "answer_chars": 1539,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture-C5"
+    },
+    {
+      "outcome": {
+        "task_id": "irrelevant",
+        "memory_condition": "B3",
+        "context_hash": "da25f686d5f90a3f",
+        "context_tokens": 1464,
+        "memory_ids": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "rationale": "No present-state labels matching 'alpha-label', 'beta-label', or 'gamma-label' are explicitly documented in the current project evidence."
+          }
+        ],
+        "answer_chars": 580,
+        "parse_ok": true,
+        "dimension_scores": {
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-publication-C5"
+    }
+  ],
+  "B4": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "B4",
+        "context_hash": "5815d2a34cc962d4",
+        "context_tokens": 1160,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "postgres-pgvector"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "search_mechanism": {
+              "vector": "hnsw",
+              "full_text": "tsvector_with_ts_rank_cd"
+            }
+          }
+        ],
+        "answer_chars": 933,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T4-current-vs-stale A6@768 render"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "B4",
+        "context_hash": "0a40eb6d87932acd",
+        "context_tokens": 1223,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "blockers": [
+              "No committed experiment run (mb-loop-ch10-experiment)",
+              "Architectural validation missing for real-world corpus (mb-arch-q6-open)",
+              "Chapter 11\u2019s recap continuity broken (mb-loop-ch11-recap)"
+            ]
+          }
+        ],
+        "answer_chars": 1563,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release A6@768 render"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "B4",
+        "context_hash": "0a40eb6d87932acd",
+        "context_tokens": 1223,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "mb-arch-q6-open",
+              "mb-loop-ch10-experiment",
+              "mb-loop-ch11-recap",
+              "mb-loop-real-corpus"
+            ]
+          }
+        ],
+        "answer_chars": 2256,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release A6@768 render"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "B4",
+        "context_hash": "bc38bead98c41668",
+        "context_tokens": 1165,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "ADJACENCY_AND_COALESCING_CONTEXT_BUILDER",
+            "reason_refs": [
+              "mb-method-earn",
+              "mb-method-baseline-rule",
+              "mb-contract-q6"
+            ]
+          }
+        ],
+        "answer_chars": 2335,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture A6@768 render"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "B4",
+        "context_hash": "5109fbb5d2812ca9",
+        "context_tokens": 1077,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN"
+          }
+        ],
+        "answer_chars": 554,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T5-support-vs-topicality A6@768 render"
+    },
+    {
+      "outcome": {
+        "task_id": "review-prose",
+        "memory_condition": "B4",
+        "context_hash": "1ff38aba3c5befec",
+        "context_tokens": 1196,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "mb-ch10-experiment-pending (no committed E-10 run)",
+              "mb-loop-ch11-recap (Chapter 11 recap depends on unresolved Chapter 10 subject)",
+              "mb-ch10-concepts (task-memory vocabulary deferred until experiment)",
+              "missing baseline comparison (intention-aware tracking vs. mention baseline)"
+            ]
+          }
+        ],
+        "answer_chars": 2092,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-publication A6@768 render"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "B4",
+        "context_hash": "bc38bead98c41668",
+        "context_tokens": 1165,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "reason": "Chapter 10 lacks a committed experiment result, failure class improvement, and methodological compliance (evidence pending, no baselines, no behavior change).",
+            "blockers": [
+              "mb-loop-ch10-experiment (no run)",
+              "mb-method-baseline-rule (missing baselines)",
+              "mb-method-earn (no failure class improvement)",
+              "mb-method-evidence-discipline (pending hypothesis)"
+            ]
+          }
+        ],
+        "answer_chars": 1777,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture A6@768 render"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "B4",
+        "context_hash": "5118ac23252a40bf",
+        "context_tokens": 197,
+        "memory_ids": [
+          "c-docs-flags",
+          "c-cli-half",
+          "c-web"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import_flags"
+          },
+          {
+            "action_type": "DEFER_DOCS",
+            "scope": "corpus_import_migration_guide"
+          },
+          {
+            "action_type": "ABSTAIN",
+            "scope": "compatibility_facade"
+          }
+        ],
+        "answer_chars": 909,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "staged-gate admitted triples (Ch11 output)"
+    }
+  ],
+  "BO": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BO",
+        "context_hash": "39b16af504ab7f83",
+        "context_tokens": 683,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "postgres+pgvector"
+          }
+        ],
+        "answer_chars": 895,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T4-current-vs-stale CO-auditable render (ceiling)"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BO",
+        "context_hash": "bcfb1cc4860ff67d",
+        "context_tokens": 906,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "blockers": [
+              "Chapter 10 lacks a committed experiment run (E-10) and presents only an unvalidated hypothesis (evidence: [mb-loop-ch10-experiment], [mb-ch10-experiment-pending]). The central comparison has not been executed."
+            ]
+          }
+        ],
+        "answer_chars": 1051,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "open_work_continuation": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release CO-auditable render (ceiling)"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BO",
+        "context_hash": "bcfb1cc4860ff67d",
+        "context_tokens": 906,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "mb-loop-ch10-experiment",
+              "mb-loop-readme-drift",
+              "mb-loop-ch11-recap",
+              "mb-loop-real-corpus",
+              "mb-style-build"
+            ]
+          }
+        ],
+        "answer_chars": 1129,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T7-release CO-auditable render (ceiling)"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BO",
+        "context_hash": "0fe4e20a93052118",
+        "context_tokens": 2107,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN",
+            "name": "CANDIDATE-MECHANISM",
+            "reason_refs": [
+              "mb-method-earn",
+              "mb-method-baseline-rule",
+              "mb-contract-q6"
+            ]
+          }
+        ],
+        "answer_chars": 1982,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture CO-auditable render (ceiling)"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BO",
+        "context_hash": "678e25bbb1b967a5",
+        "context_tokens": 967,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN"
+          }
+        ],
+        "answer_chars": 724,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T5-support-vs-topicality CO-auditable render (ceiling)"
+    },
+    {
+      "outcome": {
+        "task_id": "review-prose",
+        "memory_condition": "BO",
+        "context_hash": "0362b0069e8ae493",
+        "context_tokens": 1624,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "mb-ch10-experiment-pending",
+              "mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 1045,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-publication CO-auditable render (ceiling)"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BO",
+        "context_hash": "0fe4e20a93052118",
+        "context_tokens": 2107,
+        "memory_ids": [
+          "frozen-render"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "reason": "Chapter 10 lacks a committed experiment (mb-ch10-experiment-pending) and violates the book\u2019s evidence discipline (mb-method-evidence-discipline). The hypothesis is unresolved, and no downstream behavioral utility has been demonstrated against the baseline (mb-arch-q6-open). Hold until an E-10 run is executed and compared against the mention baseline.",
+            "blockers": [
+              "No committed experiment (mb-ch10-experiment-pending)",
+              "Hypothesis not empirically validated (mb-method-evidence-discipline)",
+              "Architectural gap for Q6 unresolved (mb-arch-q6-open)"
+            ]
+          }
+        ],
+        "answer_chars": 2159,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "frozen T1-architecture CO-auditable render (ceiling)"
+    }
+  ],
+  "BA": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BA",
+        "context_hash": "fc0d30cf087e0eab",
+        "context_tokens": 1056,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "postgresql"
+          }
+        ],
+        "answer_chars": 1100,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BA",
+        "context_hash": "26a93781f88e6ec2",
+        "context_tokens": 1128,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "blockers": [
+              "Architectural question Q6 unresolved (mb-arch-q6-open): no validation that context enrichment improves retrieval over query-only at the same budget",
+              "Benchmark contract unmet: real-project corpus with adjudicated queries missing (mb-loop-real-corpus)",
+              "Continuity guard violated: Chapter 11 recap names Chapters 9/10 as stated-work (mb-loop-ch11-recap)"
+            ]
+          }
+        ],
+        "answer_chars": 2316,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.5,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BA",
+        "context_hash": "daef1c0ceb2d2fb2",
+        "context_tokens": 2002,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "item-mb-loop-real-corpus",
+              "item-mb-loop-ch11-recap",
+              "item-mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 1227,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BA",
+        "context_hash": "1f124d8027a673a4",
+        "context_tokens": 1043,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "adjacency-and-coalescing-context-builder",
+            "reason_refs": [
+              "mb-method-baseline-rule",
+              "mb-contract-q6",
+              "mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 1793,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BA",
+        "context_hash": "4cbde1dd7029e5f1",
+        "context_tokens": 973,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN"
+          }
+        ],
+        "answer_chars": 482,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BA",
+        "context_hash": "4af28c8d036bd5c4",
+        "context_tokens": 1987,
+        "memory_ids": [
+          "ablated"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "reason": "Chapter 10 lacks a frozen experiment (E-10 run) and is marked as experiment-pending. Method rules require empirical validation against the Chapter 3 baseline and failure classes before inclusion. Architecture gaps (item-mb-arch-q6-open) remain unaddressed.",
+            "blockers": [
+              "No E-10 run exists",
+              "Pending experiment status (item-mb-loop-ch10-experiment)",
+              "Baseline comparison not completed"
+            ]
+          }
+        ],
+        "answer_chars": 1539,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B3 minus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BA",
+        "context_hash": "cdf0f6972e431750",
+        "context_tokens": 66,
+        "memory_ids": [
+          "c-docs-flags"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS"
+          },
+          {
+            "action_type": "DELETE_FACADE"
+          }
+        ],
+        "answer_chars": 777,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "staged minus decisive caller loops"
+    }
+  ],
+  "BR": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BR",
+        "context_hash": "a53ea58cb66c869f",
+        "context_tokens": 1158,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "postgresql-pgvector"
+          },
+          {
+            "action_type": "CONFIGURE_SEARCH",
+            "search_mechanism": {
+              "vector": "hnsw",
+              "lexical": {
+                "type": "full-text",
+                "method": "tsvector OR-of-terms with ts_rank_cd"
+              }
+            }
+          }
+        ],
+        "answer_chars": 1033,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BR",
+        "context_hash": "d299f6f68ac60d6e",
+        "context_tokens": 1209,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "rationale": "Chapter 10 lacks a committed experiment run (mb-loop-ch10-experiment), fails continuity checks (mb-loop-ch11-recap), and has not been validated on the real-project corpus (mb-loop-real-corpus)."
+          }
+        ],
+        "answer_chars": 1269,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.5,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "release-blockers",
+        "memory_condition": "BR",
+        "context_hash": "a67dbd82f3a452d1",
+        "context_tokens": 2168,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "items": [
+              "item-mb-loop-real-corpus",
+              "item-mb-loop-ch10-experiment",
+              "item-mb-loop-ch11-recap"
+            ]
+          }
+        ],
+        "answer_chars": 1028,
+        "parse_ok": true,
+        "dimension_scores": {
+          "open_work_continuation": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BR",
+        "context_hash": "ef5f44818c4ac775",
+        "context_tokens": 1163,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "ADJACENCY_AND_COALESCING_CONTEXT_BUILDER",
+            "reason_refs": [
+              "mb-method-earn",
+              "mb-contract-q6",
+              "mb-method-baseline-rule",
+              "mb-method-evidence-discipline",
+              "mb-loop-ch10-experiment"
+            ]
+          }
+        ],
+        "answer_chars": 1448,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 1.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 1.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BR",
+        "context_hash": "ce7ea2dce2504ac6",
+        "context_tokens": 1075,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN"
+          }
+        ],
+        "answer_chars": 508,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B4"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B4 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "review-arch",
+        "memory_condition": "BR",
+        "context_hash": "3d25609972ff8768",
+        "context_tokens": 2108,
+        "memory_ids": [
+          "ablated+restored"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "HOLD_CHAPTER",
+            "chapter": "10",
+            "reason": "Chapter 10 lacks a committed run and core comparisons (item-mb-loop-ch10-experiment, item-mb-ch10-experiment-pending). The book\u2019s evidence discipline forbids presenting pending experiments as results (item-mb-method-evidence-discipline), and the architecture\u2019s Question 6 requires empirical validation under fixed constraints (item-mb-arch-q6-open).",
+            "blockers": [
+              "No committed E-10 run exists (item-mb-loop-ch10-experiment)",
+              "Core comparison (intention-aware tracking vs. mention baseline) unexecuted (item-mb-ch10-experiment-pending)",
+              "Missing baseline comparison against fixed reader/corpus/budget (item-mb-method-baseline-rule, item-mb-ch03-baseline-role)"
+            ]
+          }
+        ],
+        "answer_chars": 1740,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B2",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "B3 minus-plus decisive"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BR",
+        "context_hash": "5118ac23252a40bf",
+        "context_tokens": 197,
+        "memory_ids": [
+          "c-docs-flags",
+          "c-cli-half",
+          "c-web"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "UPDATE_DOCS",
+            "scope": "corpus_import_flags"
+          },
+          {
+            "action_type": "DEFER_DOCS",
+            "scope": "corpus_import_migration_guide"
+          },
+          {
+            "action_type": "ABSTAIN",
+            "scope": "compatibility_facade"
+          }
+        ],
+        "answer_chars": 909,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "BA plus restored caller loops"
+    }
+  ],
+  "BW": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BW",
+        "context_hash": "05ba3b7f8f20765e",
+        "context_tokens": 74,
+        "memory_ids": [
+          "mb-stale-sqlite"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "SQLITE"
+          }
+        ],
+        "answer_chars": 679,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "failure_avoidance": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.3333,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "wrong/stale memory positive control"
+    },
+    {
+      "outcome": {
+        "task_id": "ship-ch10",
+        "memory_condition": "BW",
+        "context_hash": "e849c818ffb3e17c",
+        "context_tokens": 175,
+        "memory_ids": [
+          "mb-stale-ch10-plan",
+          "mb-stale-ch06-title"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SHIP_CHAPTER",
+            "chapter": "10"
+          }
+        ],
+        "answer_chars": 490,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B1",
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "wrong/stale memory positive control"
+    },
+    {
+      "outcome": {
+        "task_id": "credit-rule",
+        "memory_condition": "BW",
+        "context_hash": "b5369f37d181f00e",
+        "context_tokens": 86,
+        "memory_ids": [
+          "mb-stale-ch10-plan"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "ADJACENCY_AND_COALESCING_CONTEXT_BUILDER",
+            "reason_refs": [
+              "mb-stale-ch10-plan"
+            ]
+          }
+        ],
+        "answer_chars": 1230,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.75,
+        "failure_classes": [
+          "B5"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "wrong/stale memory positive control"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BW",
+        "context_hash": "ad7e822f236e33f4",
+        "context_tokens": 143,
+        "memory_ids": [
+          "wr-evidence-policy",
+          "cc-evidence-refs"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN"
+          }
+        ],
+        "answer_chars": 637,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "wrong/stale memory positive control"
+    },
+    {
+      "outcome": {
+        "task_id": "corpus-cleanup",
+        "memory_condition": "BW",
+        "context_hash": "9af384d76d11fe5b",
+        "context_tokens": 48,
+        "memory_ids": [
+          "c-facade-listing"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "DELETE_FACADE"
+          }
+        ],
+        "answer_chars": 587,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "open_work_continuation": 0.0,
+          "harmful_actions": 1.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [
+          "B0",
+          "B5",
+          "B6"
+        ],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "facade-deletion listing (harmful positive control)"
+    }
+  ],
+  "BS": [
+    {
+      "outcome": {
+        "task_id": "fix-store",
+        "memory_condition": "BS",
+        "context_hash": "fc0d30cf087e0eab",
+        "context_tokens": 1056,
+        "memory_ids": [
+          "frozen-render-mixed"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "SET_BACKEND",
+            "backend": "postgresql"
+          }
+        ],
+        "answer_chars": 1100,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.5,
+          "failure_avoidance": 1.0,
+          "harmful_actions": 0.0,
+          "goal_adherence": 1.0
+        },
+        "task_score": 0.8333,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "decisive replaced by distractors"
+    },
+    {
+      "outcome": {
+        "task_id": "cite-rule",
+        "memory_condition": "BS",
+        "context_hash": "4cbde1dd7029e5f1",
+        "context_tokens": 973,
+        "memory_ids": [
+          "frozen-render-mixed"
+        ],
+        "structured_actions": [
+          {
+            "action_type": "ABSTAIN"
+          }
+        ],
+        "answer_chars": 482,
+        "parse_ok": true,
+        "dimension_scores": {
+          "constraint_adherence": 0.0,
+          "goal_adherence": 0.0
+        },
+        "task_score": 0.0,
+        "failure_classes": [],
+        "repeat_index": 0,
+        "reader": "ministral-3:8b@t0",
+        "grader_version": "behavior-grader-v1"
+      },
+      "note": "decisive replaced by distractors"
+    }
+  ]
+}

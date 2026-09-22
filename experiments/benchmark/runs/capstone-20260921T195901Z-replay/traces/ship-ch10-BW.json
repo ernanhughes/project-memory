@@ -1,0 +1,64 @@
+{
+ "task_id": "ship-ch10",
+ "condition": "BW",
+ "bcode": "BW",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "mb-stale-ch10-plan",
+  "mb-stale-ch06-title"
+ ],
+ "derived_consulted": [
+  "frozen:BW:e849c818ffb3e17c"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  },
+  {
+   "unit_id": "mb-stale-ch06-title",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "decision": "REJECT",
+   "reason": "deliberate wrong-memory control: provenance fails authority check"
+  },
+  {
+   "unit_id": "mb-stale-ch06-title",
+   "decision": "REJECT",
+   "reason": "deliberate wrong-memory control: provenance fails authority check"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [],
+ "rejected": [
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "reason": "trust gate REJECT: failed authority check"
+  },
+  {
+   "unit_id": "mb-stale-ch06-title",
+   "reason": "trust gate REJECT: failed authority check"
+  }
+ ],
+ "context_tokens": 175,
+ "context_hash": "e849c818ffb3e17c",
+ "reader_output": {
+  "task_score": 0.1667,
+  "frozen": true
+ },
+ "behavioural_score": 0.1667,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

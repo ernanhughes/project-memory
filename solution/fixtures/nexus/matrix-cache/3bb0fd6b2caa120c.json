@@ -1,0 +1,50 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "session-014.md",
+    "experiment-contention.md",
+    "incident-021.md",
+    "production-notes.md",
+    "commits.log",
+    "benchmark-note.md"
+  ],
+  "answer": "SQLite",
+  "capability_id": "RAG",
+  "capability_latency_ms": 5995.341399975587,
+  "cited_ids": [
+    "session-014.md:5c5e18454baa6b2e",
+    "commits.log:c8e9dbf1861f3063"
+  ],
+  "context_tokens": 793,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 11633.558699977584,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "historical_state_accuracy": 1.0,
+    "source_precision": 0.125,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=2802",
+  "query_id": "q4-historical-march",
+  "reader_latency_ms": 5637.99930003006,
+  "retrieved_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "session-014.md",
+    "experiment-contention.md",
+    "incident-021.md",
+    "production-notes.md",
+    "commits.log",
+    "benchmark-note.md"
+  ]
+}

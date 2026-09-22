@@ -1,0 +1,35 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 72966.27809997881,
+  "cited_ids": [
+    "adr-007.md",
+    "Benchmark EVT-204",
+    "Data: Reports (1, 3, +more)"
+  ],
+  "context_tokens": 678,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 89495.15730002895,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "current_state_accuracy": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.6666666666666666
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q4-production-now",
+  "reader_latency_ms": 16528.679199982435,
+  "retrieved_ids": []
+}

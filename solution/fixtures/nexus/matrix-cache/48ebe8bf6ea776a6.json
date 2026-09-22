@@ -1,0 +1,41 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "experiment-contention.md",
+    "session-014.md",
+    "session-019.md"
+  ],
+  "answer": "Event Store",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 49778.79329997813,
+  "cited_ids": [
+    "PROTOTYPE (EVT-201)",
+    "PROTOTYPE"
+  ],
+  "context_tokens": 154,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 3,
+  "latency_ms": 53414.676899963524,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "historical_state_accuracy": 0.0,
+    "source_precision": 0.3333333333333333,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=3 implicated=3",
+  "query_id": "q4-historical-march",
+  "reader_latency_ms": 3635.682599968277,
+  "retrieved_ids": [
+    "experiment-contention.md",
+    "session-014.md",
+    "session-019.md"
+  ]
+}

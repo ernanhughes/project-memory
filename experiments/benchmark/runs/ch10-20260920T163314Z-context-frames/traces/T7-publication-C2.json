@@ -1,0 +1,1202 @@
+{
+  "trace_id": "T7-publication-C2",
+  "condition": "C2",
+  "policy_version": "staged-goal-conditioned-v0.2",
+  "project_frame": "memory-book-v1",
+  "work_frame": "wf-t7-pub",
+  "query": "What is left to do?",
+  "as_of": "2026-09-20T12:00:00Z",
+  "budget_tokens": 1500,
+  "retriever": "bm25+ollama:bge-m3+rrf60",
+  "candidate_count": 40,
+  "admitted_count": 20,
+  "rejected_count": 20,
+  "stages": [
+    {
+      "stage": "retrieve",
+      "mode": "hybrid",
+      "query_pool": 40,
+      "pool": 40
+    },
+    {
+      "stage": "eligibility",
+      "kept": 34,
+      "dropped": 6
+    },
+    {
+      "stage": "rank",
+      "policy": "none",
+      "ranked": 34
+    },
+    {
+      "stage": "budget",
+      "admitted_items": 20,
+      "bundle_tokens": 1486,
+      "budget_tokens": 1500
+    }
+  ],
+  "bundle_digest": "e6b3b4231ce627c7",
+  "bundle_tokens": 1486,
+  "latency_ms": 5.74,
+  "candidates": [
+    {
+      "candidate_id": "mb-session-pivot",
+      "project_id": "memory-book",
+      "kind": "session_note",
+      "retrieval_rank": 1,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 1.0,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 1.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 1.0,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 63,
+      "source_refs": [
+        "planning/book-architecture.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch09-handoff",
+      "project_id": "memory-book",
+      "kind": "chapter_prose",
+      "retrieval_rank": 2,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.975,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 1.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.975,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 77,
+      "source_refs": [
+        "content/books/memory/09-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-arch-q6-open",
+      "project_id": "memory-book",
+      "kind": "architecture_note",
+      "retrieval_rank": 3,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.95,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.95,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 107,
+      "source_refs": [
+        "planning/book-architecture.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-contract-q6",
+      "project_id": "memory-book",
+      "kind": "measurement_contract",
+      "retrieval_rank": 4,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.925,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.925,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 82,
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-arch-spine",
+      "project_id": "memory-book",
+      "kind": "architecture_note",
+      "retrieval_rank": 5,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.9,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.9,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 84,
+      "source_refs": [
+        "planning/book-architecture.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch11-opening",
+      "project_id": "memory-book",
+      "kind": "chapter_prose",
+      "retrieval_rank": 6,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.875,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8333,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.875,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 77,
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-stale-ch10-plan",
+      "project_id": "memory-book",
+      "kind": "planning_note",
+      "retrieval_rank": 7,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.85,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8333,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.85,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 58,
+      "source_refs": [
+        "planning/book-architecture.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-contract-failure-classes",
+      "project_id": "memory-book",
+      "kind": "measurement_contract",
+      "retrieval_rank": 8,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.825,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.825,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 68,
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch10-prose-opening",
+      "project_id": "memory-book",
+      "kind": "chapter_prose",
+      "retrieval_rank": 9,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.8,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8333,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.8,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 119,
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch10-priority-refusal",
+      "project_id": "memory-book",
+      "kind": "chapter_prose",
+      "retrieval_rank": 10,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.775,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8333,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.775,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 74,
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-research-deontic",
+      "project_id": "memory-book",
+      "kind": "research_note",
+      "retrieval_rank": 11,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.75,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9375,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.75,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 38,
+      "source_refs": [
+        "research/bibliography.yaml"
+      ]
+    },
+    {
+      "candidate_id": "mb-research-context-engineering",
+      "project_id": "memory-book",
+      "kind": "research_note",
+      "retrieval_rank": 12,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.725,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.725,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 87,
+      "source_refs": [
+        "planning/measurement-research-matrix.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch03-admission-note",
+      "project_id": "memory-book",
+      "kind": "baseline_result",
+      "retrieval_rank": 13,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.7,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.7,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 84,
+      "source_refs": [
+        "content/books/memory/03-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-style-conventions",
+      "project_id": "memory-book",
+      "kind": "style_rule",
+      "retrieval_rank": 14,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.675,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.675,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 66,
+      "source_refs": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-method-earn",
+      "project_id": "memory-book",
+      "kind": "method_rule",
+      "retrieval_rank": 15,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.65,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.65,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 89,
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-arch-definition",
+      "project_id": "memory-book",
+      "kind": "architecture_note",
+      "retrieval_rank": 16,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.625,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.625,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 67,
+      "source_refs": [
+        "planning/book-architecture.md",
+        "content/books/memory/01-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch04-result",
+      "project_id": "memory-book",
+      "kind": "experiment_result",
+      "retrieval_rank": 17,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.6,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.6,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 71,
+      "source_refs": [
+        "content/books/memory/04-chapter.md",
+        "experiments/benchmark/runs/ch4-20260919T205622Z"
+      ]
+    },
+    {
+      "candidate_id": "wr-context-runtime",
+      "project_id": "writer",
+      "kind": "implementation_detail",
+      "retrieval_rank": 18,
+      "eligible": false,
+      "signals": {
+        "query_relevance": 0.575,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.4225,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.575,
+      "decision": "reject",
+      "reason_codes": [
+        "OUT_OF_PROJECT_SCOPE"
+      ],
+      "coalesced_into": null,
+      "token_cost": 66,
+      "source_refs": [
+        "writer/context/runtime.py"
+      ]
+    },
+    {
+      "candidate_id": "mb-method-baseline-rule",
+      "project_id": "memory-book",
+      "kind": "method_rule",
+      "retrieval_rank": 19,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.55,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.55,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 97,
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-loop-real-corpus",
+      "project_id": "memory-book",
+      "kind": "open_loop",
+      "retrieval_rank": 20,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.525,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.525,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 55,
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch10-prose-schema",
+      "project_id": "memory-book",
+      "kind": "chapter_prose",
+      "retrieval_rank": 21,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.5,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8333,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.5,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 103,
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-style-frontmatter",
+      "project_id": "memory-book",
+      "kind": "style_rule",
+      "retrieval_rank": 22,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.475,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.475,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 83,
+      "source_refs": [
+        "AGENTS.md",
+        "hugo.toml"
+      ]
+    },
+    {
+      "candidate_id": "mb-research-intention-schema",
+      "project_id": "memory-book",
+      "kind": "research_note",
+      "retrieval_rank": 23,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.45,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9375,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.45,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 70,
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ]
+    },
+    {
+      "candidate_id": "wr-rag-baseline",
+      "project_id": "writer",
+      "kind": "baseline_result",
+      "retrieval_rank": 24,
+      "eligible": false,
+      "signals": {
+        "query_relevance": 0.425,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.3947,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.425,
+      "decision": "reject",
+      "reason_codes": [
+        "OUT_OF_PROJECT_SCOPE"
+      ],
+      "coalesced_into": null,
+      "token_cost": 44,
+      "source_refs": [
+        "writer/context/retrieval.py"
+      ]
+    },
+    {
+      "candidate_id": "mb-style-build",
+      "project_id": "memory-book",
+      "kind": "style_rule",
+      "retrieval_rank": 25,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.4,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.4,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 56,
+      "source_refs": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-impl-zeromq",
+      "project_id": "memory-book",
+      "kind": "implementation_detail",
+      "retrieval_rank": 26,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.375,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.375,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 71,
+      "source_refs": [
+        "solution/temporal_memory/transport.py"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch09-result",
+      "project_id": "memory-book",
+      "kind": "experiment_result",
+      "retrieval_rank": 27,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.35,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 1.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.35,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 113,
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/metrics.json"
+      ]
+    },
+    {
+      "candidate_id": "wr-improve-context",
+      "project_id": "writer",
+      "kind": "planning_note",
+      "retrieval_rank": 28,
+      "eligible": false,
+      "signals": {
+        "query_relevance": 0.325,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.6122,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.325,
+      "decision": "reject",
+      "reason_codes": [
+        "OUT_OF_PROJECT_SCOPE"
+      ],
+      "coalesced_into": null,
+      "token_cost": 50,
+      "source_refs": [
+        "writer/docs/roadmap.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-arch-layers",
+      "project_id": "memory-book",
+      "kind": "architecture_note",
+      "retrieval_rank": 29,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.3,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 1.0,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.3,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 100,
+      "source_refs": [
+        "solution/README.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch08-result",
+      "project_id": "memory-book",
+      "kind": "experiment_result",
+      "retrieval_rank": 30,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.275,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.275,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 102,
+      "source_refs": [
+        "experiments/benchmark/runs/ch8-20260919T234350Z-temporal/metrics.json"
+      ]
+    },
+    {
+      "candidate_id": "cc-evidence-refs",
+      "project_id": "cocoder",
+      "kind": "method_rule",
+      "retrieval_rank": 31,
+      "eligible": false,
+      "signals": {
+        "query_relevance": 0.25,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.3448,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.25,
+      "decision": "reject",
+      "reason_codes": [
+        "OUT_OF_PROJECT_SCOPE"
+      ],
+      "coalesced_into": null,
+      "token_cost": 47,
+      "source_refs": [
+        "cocoder/docs/policy.md"
+      ]
+    },
+    {
+      "candidate_id": "wr-memory-store",
+      "project_id": "writer",
+      "kind": "implementation_detail",
+      "retrieval_rank": 32,
+      "eligible": false,
+      "signals": {
+        "query_relevance": 0.225,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.4348,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.225,
+      "decision": "reject",
+      "reason_codes": [
+        "OUT_OF_PROJECT_SCOPE"
+      ],
+      "coalesced_into": null,
+      "token_cost": 39,
+      "source_refs": [
+        "writer/memory/store.py"
+      ]
+    },
+    {
+      "candidate_id": "mb-echo-baseline-4",
+      "project_id": "memory-book",
+      "kind": "session_note",
+      "retrieval_rank": 33,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.2,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.2,
+      "decision": "admit",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "ADMITTED_WITHIN_BUDGET"
+      ],
+      "coalesced_into": null,
+      "token_cost": 23,
+      "source_refs": [
+        "planning/continuity-audit.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-method-evidence-discipline",
+      "project_id": "memory-book",
+      "kind": "method_rule",
+      "retrieval_rank": 34,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.175,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.175,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 75,
+      "source_refs": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-research-prospective",
+      "project_id": "memory-book",
+      "kind": "research_note",
+      "retrieval_rank": 35,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.15,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9375,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.15,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 86,
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-session-intent-1",
+      "project_id": "memory-book",
+      "kind": "session_note",
+      "retrieval_rank": 36,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.125,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.9677,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.125,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 55,
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-ch10-concepts",
+      "project_id": "memory-book",
+      "kind": "chapter_concepts",
+      "retrieval_rank": 37,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.1,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8333,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.1,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 86,
+      "source_refs": [
+        "content/books/memory/10-concepts.txt"
+      ]
+    },
+    {
+      "candidate_id": "mb-contract-frozen-run",
+      "project_id": "memory-book",
+      "kind": "measurement_contract",
+      "retrieval_rank": 38,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.075,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.8571,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.075,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 90,
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ]
+    },
+    {
+      "candidate_id": "cc-improve-context",
+      "project_id": "cocoder",
+      "kind": "planning_note",
+      "retrieval_rank": 39,
+      "eligible": false,
+      "signals": {
+        "query_relevance": 0.05,
+        "goal_relevance": 0.0,
+        "project_relevance": 0.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.625,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.05,
+      "decision": "reject",
+      "reason_codes": [
+        "OUT_OF_PROJECT_SCOPE"
+      ],
+      "coalesced_into": null,
+      "token_cost": 41,
+      "source_refs": [
+        "cocoder/docs/roadmap.md"
+      ]
+    },
+    {
+      "candidate_id": "mb-stale-ch06-title",
+      "project_id": "memory-book",
+      "kind": "architecture_note",
+      "retrieval_rank": 40,
+      "eligible": true,
+      "signals": {
+        "query_relevance": 0.025,
+        "goal_relevance": 0.0,
+        "project_relevance": 1.0,
+        "temporal_validity": 1.0,
+        "evidence_strength": 0.0,
+        "open_loop_relevance": 0.0,
+        "relational_relevance": 0.0,
+        "recency": 0.2128,
+        "redundancy": 0.0
+      },
+      "stage_score": 0.025,
+      "decision": "reject",
+      "reason_codes": [
+        "CLASS_TIER_0",
+        "BUDGET_EXHAUSTED"
+      ],
+      "coalesced_into": null,
+      "token_cost": 58,
+      "source_refs": [
+        "planning/book-architecture.md"
+      ]
+    }
+  ],
+  "schema_version": "context-trace/v0.1"
+}

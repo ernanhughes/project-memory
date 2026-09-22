@@ -1,0 +1,250 @@
+{
+  "bundle_id": "cb-T7-publication-C3",
+  "condition": "C3",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1423,
+  "bundle_digest": "9df0be2227a7be02",
+  "items": [
+    {
+      "item_id": "item-mb-ch04-result",
+      "members": [
+        "mb-ch04-result"
+      ],
+      "source_refs": [
+        "content/books/memory/04-chapter.md",
+        "experiments/benchmark/runs/ch4-20260919T205622Z"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch4",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 71
+    },
+    {
+      "item_id": "item-mb-ch09-result",
+      "members": [
+        "mb-ch09-result"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/metrics.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 113
+    },
+    {
+      "item_id": "item-mb-ch08-result",
+      "members": [
+        "mb-ch08-result"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch8-20260919T234350Z-temporal/metrics.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch8",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 102
+    },
+    {
+      "item_id": "item-mb-arch-q6-open",
+      "members": [
+        "mb-arch-q6-open"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 107
+    },
+    {
+      "item_id": "item-mb-arch-spine",
+      "members": [
+        "mb-arch-spine"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.spine",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-mb-arch-definition",
+      "members": [
+        "mb-arch-definition"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md",
+        "content/books/memory/01-chapter.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.definition",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 67
+    },
+    {
+      "item_id": "item-mb-arch-layers",
+      "members": [
+        "mb-arch-layers"
+      ],
+      "source_refs": [
+        "solution/README.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.layers",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 100
+    },
+    {
+      "item_id": "item-mb-stale-ch06-title",
+      "members": [
+        "mb-stale-ch06-title"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.ch6-title",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 58
+    },
+    {
+      "item_id": "item-mb-ch09-handoff",
+      "members": [
+        "mb-ch09-handoff"
+      ],
+      "source_refs": [
+        "content/books/memory/09-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    },
+    {
+      "item_id": "item-mb-ch11-opening",
+      "members": [
+        "mb-ch11-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    },
+    {
+      "item_id": "item-mb-ch10-prose-opening",
+      "members": [
+        "mb-ch10-prose-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.current-content",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 119
+    },
+    {
+      "item_id": "item-mb-ch10-priority-refusal",
+      "members": [
+        "mb-ch10-priority-refusal"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.priority-belongs-to-policy",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 74
+    },
+    {
+      "item_id": "item-mb-ch10-prose-schema",
+      "members": [
+        "mb-ch10-prose-schema"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.current-content",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 103
+    },
+    {
+      "item_id": "item-mb-session-pivot",
+      "members": [
+        "mb-session-pivot"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.pivot",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-contract-q6",
+      "members": [
+        "mb-contract-q6"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.q6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 82
+    },
+    {
+      "item_id": "item-mb-stale-ch10-plan",
+      "members": [
+        "mb-stale-ch10-plan"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 58
+    },
+    {
+      "item_id": "item-mb-contract-failure-classes",
+      "members": [
+        "mb-contract-failure-classes"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.failure-classes",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 68
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

@@ -1,0 +1,25 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "Write contention in a database refers to the conflict that arises when multiple transactions attempt to write to the same data simultaneously.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 20581.6354000126,
+  "cited_ids": [],
+  "context_tokens": 44,
+  "cost_units": 12.0,
+  "failure_classes": [],
+  "graph_expansions": 0,
+  "latency_ms": 26960.67330002552,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 1.0,
+    "source_recall": 1.0
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-nomem-contention",
+  "reader_latency_ms": 6378.885300015099,
+  "retrieved_ids": []
+}

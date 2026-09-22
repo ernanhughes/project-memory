@@ -1,0 +1,31 @@
+{
+  "summary_metrics": {
+    "gate_match": 12,
+    "gate_total": 12,
+    "anti_promotion_violations": [],
+    "f6_harmful_tasks": 0,
+    "f1_harmful_tasks": 3,
+    "false_hard": 0,
+    "false_hard_decided": 12,
+    "false_hard_rate": 0.0,
+    "benefit_retention_pairs": 3,
+    "benefit_retention_gap_f2_minus_f6": 0.0,
+    "unnecessary_abstentions": 1,
+    "fo_match": {
+      "F6": {
+        "match": 10,
+        "n": 11
+      },
+      "S1": {
+        "match": 10,
+        "n": 11
+      },
+      "S2": {
+        "match": 7,
+        "n": 11
+      }
+    },
+    "breaches": [],
+    "promoted": true
+  }
+}

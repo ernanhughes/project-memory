@@ -1,0 +1,1700 @@
+{
+  "entities": [
+    {
+      "entity_id": "7085a207-a675-4b8b-b7ad-99e0b4599ecd",
+      "name": "SQLITE",
+      "kind": "TECHNOLOGY",
+      "description": "**SQLite** is an open-source, lightweight, and serverless database management system designed as a file-based solution. Initially prototyped for the Event Store\u2019s event log, SQLite was intended to provide a simple and efficient way to manage data storage. However, its performance under heavy concurrent write loads proved to be a significant limitation. The system suffered from **concurrent-write contention**, leading to scalability issues that ultimately necessitated its replacement by **PostgreSQL** in production environments where high concurrency was required.\n\nWhile SQLite remains a cost-effective option for single-container managed backups\u2014offering lower operational costs compared to PostgreSQL\u2014its lack of robust concurrency support makes it unsuitable for shared, write-heavy workloads. Despite its initial promise as a lightweight alternative, its architectural constraints have restricted its adoption in scenarios demanding high scalability and concurrent access. Today, SQLite is primarily valued for its simplicity and efficiency in low-concurrency environments rather than as a scalable database solution.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "degree": 17
+    },
+    {
+      "entity_id": "290ca356-f5e3-45f2-9485-773ab8a10e1e",
+      "name": "EVENT-STORE",
+      "kind": "TECHNOLOGY",
+      "description": "Event-store is a system for storing and managing event data, which has been migrated from SQLite to PostgreSQL to address performance issues related to concurrent-write contention.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "ba69c77b-8529-41cf-905c-29b885c7e139",
+      "name": "EVT-201",
+      "kind": "EVENT",
+      "description": "EVT-201 refers to the SQLite prototype for the event-store, which was superseded by the decision to use PostgreSQL.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "degree": 4
+    },
+    {
+      "entity_id": "d1e6d02c-92a8-4fb7-bce3-c72b82929e99",
+      "name": "EVT-202",
+      "kind": "EVENT",
+      "description": "EVT-202 documents the issue of concurrent-write contention experienced by the SQLite prototype under load.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "a8bebc2b-00e8-45e3-b3a2-3a02e307da0b",
+      "name": "EVT-203",
+      "kind": "EVENT",
+      "description": "EVT-203 further details the performance problems with the SQLite prototype, contributing to the decision to switch to PostgreSQL.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "50f19cd0-744d-44ac-966e-60bc93b52a0d",
+      "name": "EVT-204",
+      "kind": "EVENT",
+      "description": "EVT-204 highlights PostgreSQL's ability to maintain flat throughput up to 32 writers, making it a viable alternative to SQLite.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "a3edfb3d-8bba-4f79-89c6-d7969f66705d",
+      "name": "EVT-205",
+      "kind": "EVENT",
+      "description": "EVT-205 is the decision record (ADR-007) that officially targets PostgreSQL for the event-store work, superseding the SQLite prototype.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "3dbe8ac1-dd79-4d67-84f8-6061c775c603",
+      "name": "ADR-007",
+      "kind": "EVENT",
+      "description": "**Architectural Decision Record (ADR-007): Migration of the Event Store from SQLite to PostgreSQL**\n\nADR-007 is an architectural decision record (ADR) that formally documents the strategic migration of the **Event Store** database system from **SQLite** to **PostgreSQL**. This decision was made to address scalability, performance, and long-term maintainability challenges associated with SQLite, particularly as the system\u2019s data volume and transaction complexity grew.\n\nThe migration was finalized in **July 2024**, following a thorough evaluation of technical requirements, operational constraints, and future-proofing considerations. PostgreSQL was selected for its robust support for concurrent access, advanced querying capabilities, and enterprise-grade reliability\u2014key advantages over SQLite\u2019s single-file, in-memory limitations. The decision also aligned with broader architectural goals to standardize on a relational database for consistency across microservices and data-intensive workflows.\n\nWhile SQLite had initially been chosen for its simplicity and minimal overhead, its constraints became a bottleneck for the Event Store\u2019s evolving needs, including:\n- **Concurrency limitations** (SQLite\u2019s single-writer, multi-reader model).\n- **Lack of advanced transactional features** (e.g., row-level locking, MVCC).\n- **Scalability bottlenecks** under high write loads.\n- **Limited tooling and ecosystem** for monitoring, backups, and migrations.\n\nPostgreSQL\u2019s adoption resolves these issues while providing:\n- **Superior performance** for read-heavy and write-heavy workloads.\n- **Built-in high availability** (e.g., replication, point-in-time recovery).\n- **Extensibility** via custom data types, functions, and extensions.\n- **Stronger community and vendor support** for enterprise deployments.\n\nThe ADR-007 document serves as a reference for future developers, outlining the rationale, trade-offs, and implementation steps taken during the migration. It also emphasizes the importance of documenting architectural decisions to ensure transparency and reduce technical debt in subsequent iterations.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "degree": 6
+    },
+    {
+      "entity_id": "3daaceed-cf7d-443b-acdf-188aeff2affe",
+      "name": "M. OKAFOR",
+      "kind": "PERSON",
+      "description": "**M. Okafor** is a key technical contributor within the team, actively involved in critical infrastructure decisions and system optimizations. As a **decision-maker**, Okafor played a pivotal role in revisiting and ultimately rejecting the use of **Redis** for caching purposes, steering the team toward alternative solutions. Their influence extended to the **event-store migration**, where they were among the primary **deciders** advocating for a shift from the existing system to **PostgreSQL**, citing the need for a more robust and scalable backend. This decision followed observations in **September 2024** that the **Event Store wiki page** was outdated, reflecting the team\u2019s actual transition to PostgreSQL.\n\nOkafor\u2019s technical perspective also shaped the **prototype phase** of the event-store backend. They proposed **SQLite** as an initial solution due to its simplicity and ease of backup, despite reservations about handling concurrent writers. Their involvement persisted into the **load-testing phase**, where Okafor participated in **Session 019**, reviewing the prototype\u2019s performance under SQLite. This engagement underscored their hands-on approach to evaluating trade-offs and ensuring alignment with operational requirements.\n\nAcross these contributions, Okafor demonstrated a balance of **strategic decision-making** and **practical implementation**, driving the team toward solutions that prioritized scalability, maintainability, and clarity\u2014even when navigating the complexities of legacy systems and emerging alternatives.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83",
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "degree": 6
+    },
+    {
+      "entity_id": "1baba1f6-fc33-4e52-a45c-23efcf072339",
+      "name": "J. LINDQVIST",
+      "kind": "PERSON",
+      "description": "**J. Lindqvist** is a key decision-maker within the team responsible for the migration of the event-store backend infrastructure. Their involvement spans critical phases of the project, particularly in evaluating and implementing database solutions.\n\nInitially, Lindqvist played a pivotal role in the decision to transition the event-store from SQLite to PostgreSQL, citing concerns about **concurrent writer performance** in SQLite as a major factor. Despite these reservations, they agreed to test SQLite during the **prototype phase** of the backend development, allowing for an initial assessment of its feasibility before committing to a permanent solution.\n\nLindqvist\u2019s technical engagement extended to **load-testing sessions**, specifically participating in **Session 019**, where they contributed to reviewing the prototype\u2019s SQLite performance under simulated workloads. Their involvement underscores a balanced approach\u2014acknowledging SQLite\u2019s limitations while remaining open to its potential in controlled, early-stage implementations. Ultimately, their contributions reflect a pragmatic stance, prioritizing data integrity and scalability in long-term infrastructure decisions.",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83",
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "degree": 4
+    },
+    {
+      "entity_id": "f0b3bd92-ae5f-43eb-b400-8dafb98dd9fa",
+      "name": "SESSION-040",
+      "kind": "EVENT",
+      "description": "**SESSION-040** was a meeting or discussion session held on **August 5, 2024**, centered on the topic of **lookup latency optimization** within a technical or operational context. The primary focus of the session revolved around evaluating the feasibility of implementing a **lookup cache** to mitigate performance bottlenecks, particularly in systems where query response times were deemed unacceptable.\n\nDuring **SESSION-040**, a **proposal to introduce Redis as a caching solution** was presented. Redis, a widely used in-memory data store, was considered for its ability to reduce latency by storing frequently accessed data in a fast, low-latency layer. However, the proposal faced significant scrutiny due to **insufficient evidence** supporting its effectiveness in the specific use case under discussion. Concerns likely included potential trade-offs such as increased system complexity, maintenance overhead, or the risk of introducing new failure points if not properly managed.\n\nThe session was noted as a **previous meeting** where the Redis proposal was thoroughly examined, though no definitive decision was recorded in the provided context. The outcome implied that while the idea of using Redis as a cache was explored, its adoption was ultimately **rejected** without further implementation due to the lack of compelling justification or empirical data demonstrating its benefits in the given scenario. The discussion likely served as a learning opportunity to refine approaches for addressing lookup latency in future iterations or alternative strategies.",
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7",
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "degree": 4
+    },
+    {
+      "entity_id": "94b9ef0f-ab17-41a7-8f4f-93438fb4888b",
+      "name": "REDIS",
+      "kind": "TECHNOLOGY",
+      "description": "Redis is a key-value data store and cache that was considered but ultimately rejected for use in this project",
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "1d507e1a-7c48-4e29-9564-49155b4fbd1f",
+      "name": "A. NOVAK",
+      "kind": "PERSON",
+      "description": "**A. Novak** is a key participant in technical discussions surrounding database and caching architecture decisions. During session **019**, Novak presented a **controlled benchmark** demonstrating that SQLite\u2019s throughput significantly degraded under high write loads\u2014specifically past eight concurrent writers\u2014highlighting potential performance limitations in the current setup.\n\nIn subsequent deliberations, Novak **challenged the proposal to introduce Redis**, arguing that the decision lacked empirical evidence demonstrating that read operations were a bottleneck in the system. This skepticism contributed to a **rejection of Redis** as a solution, prompting a **re-evaluation of the lookup cache strategy** instead. Novak\u2019s role as a **decision-maker** ensured that the team prioritized data-driven justifications over speculative optimizations, emphasizing the need for measurable performance metrics before adopting new technologies.",
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934",
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "66b640d3-c9af-4f55-8706-e67408dd499a",
+      "name": "TEAM",
+      "kind": "ORGANIZATION",
+      "description": "The development team responsible for the decision to not introduce Redis",
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ],
+      "degree": 5
+    },
+    {
+      "entity_id": "1ec282a0-b1c1-43af-9e25-b04b83c754b8",
+      "name": "EVENT STORE",
+      "kind": "EVENT",
+      "description": "Benchmark evt-204 evaluates PostgreSQL as a candidate for an event store, focusing on write-heavy workloads and concurrency performance.",
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "degree": 7
+    },
+    {
+      "entity_id": "a50fa795-2ff8-4113-837f-5e6ffba68bff",
+      "name": "BENCHMARK EVT-204",
+      "kind": "EVENT",
+      "description": "Benchmark evt-204 conducted on 2024-07-02 by a.novak, comparing PostgreSQL 15 and SQLite under a write-heavy workload to determine suitability for an event store.",
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ],
+      "degree": 4
+    },
+    {
+      "entity_id": "ffec05ab-6f35-48cf-8342-90110203a830",
+      "name": "A.NOVAK",
+      "kind": "PERSON",
+      "description": "**Summary of A.Novak\u2019s Contributions and Responsibilities**\n\nA.Novak is an active participant in **session-044**, where they played a key role in measuring the **hot working set**\u2014a critical metric for assessing database performance under active workloads.\n\nAs the designated owner of **benchmark evt-204**, A.Novak oversees **write workload tests** conducted on **PostgreSQL 15** and **SQLite**, ensuring rigorous evaluation of these database systems under high-write scenarios. Their expertise extends to **contention benchmarking**, where they manage the **Contention Benchmark issue**, focusing on the **cleanup of residual data** to maintain accurate and reproducible results.\n\nAdditionally, A.Novak is responsible for **experiment evt-202**, a **SQLite contention experiment** specifically conducted on **June 18, 2024**. This work likely builds on their broader contributions to database performance analysis, particularly in scenarios involving concurrent access and resource contention.\n\nIn summary, A.Novak\u2019s responsibilities span **benchmarking, workload testing, and data cleanup**, with a focus on **PostgreSQL 15, SQLite, and contention-related performance metrics**. Their contributions are instrumental in advancing database benchmarking practices and ensuring reliable experimental outcomes.",
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a",
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c",
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8",
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "degree": 5
+    },
+    {
+      "entity_id": "133163a1-6d68-4d88-8021-a36e93bd7e8a",
+      "name": "EXPERIMENT EVT-202",
+      "kind": "EVENT",
+      "description": "An experiment conducted on June 18, 2024, to evaluate SQLite's performance under concurrent write contention. The experiment involved 1, 4, 8, and 16 concurrent writers against a prototype event log, demonstrating severe performance degradation in write operations.",
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "b6b4e0a8-03a4-4fba-9715-de0a43c70993",
+      "name": "PROTOTYPE EVENT LOG",
+      "kind": "TECHNOLOGY",
+      "description": "A database or storage system used as a testbed for evaluating SQLite's performance under concurrent write contention. It was subjected to write operations by 1, 4, 8, and 16 concurrent writers.",
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "2a43bc99-8539-4417-b051-37f99d111aa1",
+      "name": "EVENT INGESTION",
+      "kind": "EVENT",
+      "description": "Event ingestion refers to the process of receiving and recording events in the system. In this incident, the process stalled for 40 minutes due to write contention on the SQLite event log.",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "ca500a51-4826-4dd3-8061-80d6fbd3ed36",
+      "name": "WRITER QUEUE",
+      "kind": "TECHNOLOGY",
+      "description": "Writer queue is a component responsible for managing the flow of write operations. In this incident, the queue backed up due to write contention, leading to a timeout in event ingestion.",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "63e60d0d-28e9-43f7-89d7-a6e1032b4914",
+      "name": "JUNE LOAD WINDOW",
+      "kind": "EVENT",
+      "description": "June load window is a specific time period during June when high volumes of data are processed. During this window, event ingestion stalled for 40 minutes.",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "01914fab-b1fd-4746-915d-c6ad27d7cf8e",
+      "name": "MITIGATION",
+      "kind": "EVENT",
+      "description": "Mitigation refers to the actions taken to resolve the issue. In this incident, the mitigation involved draining the queue and throttling writers.",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "7570e89a-c119-4541-acaa-95c8189d45e0",
+      "name": "FOLLOW-UP",
+      "kind": "EVENT",
+      "description": "Follow-up refers to the planned actions to prevent future occurrences. In this incident, the follow-up involves selecting a store that handles concurrent writes before the next service ships.",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "1da9a04d-b772-4f0d-9f2d-0bac6f272cbe",
+      "name": "INCIDENT EVT-203",
+      "kind": "EVENT",
+      "description": "Incident evt-203 is a documented event involving write stalls in the SQLite prototype, resulting in a 40-minute stall in event ingestion due to write contention.",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "1d07a7ee-e851-4ae7-995f-8ece575587e3",
+      "name": "LOAD-TEST DIRECTORY",
+      "kind": "GEO",
+      "description": "Directory where the Contention Benchmark left scratch fixtures during load testing",
+      "source_text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "degree": 0
+    },
+    {
+      "entity_id": "e2def7cb-675d-4af9-8476-0130a764bc32",
+      "name": "PERFORMANCE REVIEW",
+      "kind": "EVENT",
+      "description": "Scheduled review to assess the performance metrics of the system, dependent on the cleanup of residual data from the Contention Benchmark",
+      "source_text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "f59cd851-5a50-4c88-aa1a-606ed8bbb2ce",
+      "name": "ISSUE 041",
+      "kind": "EVENT",
+      "description": "Open issue titled \"benchmark fixture cleanup\" created on 2024-07-15, blocking nothing but required before the next performance review",
+      "source_text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "9ce12379-5392-4eb4-933c-e96f1df2b7c9",
+      "name": "POSTGRESQL",
+      "kind": "TECHNOLOGY",
+      "description": "**PostgreSQL** is a widely adopted open-source relational database management system (RDBMS) that has gained prominence for its robustness, extensibility, and scalability. As of **July 2024**, **PostgreSQL** was implemented by the **Event Store** team to replace **SQLite** in its production environment. The migration was driven by performance limitations encountered with SQLite under high concurrent write loads, necessitating a more efficient and reliable database solution.\n\nThe transition to **PostgreSQL** marked a strategic upgrade for the Event Store, enabling it to handle increased workload demands with improved transactional consistency and concurrency support. This shift underscores **PostgreSQL**\u2019s reputation as a high-performance alternative for mission-critical applications requiring advanced relational capabilities. The database\u2019s adoption reflects its growing role in modern infrastructure, particularly where durability, scalability, and performance are paramount.",
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ],
+      "degree": 8
+    },
+    {
+      "entity_id": "b7af5c71-2a62-4ba5-a3d3-796d1c28a34e",
+      "name": "FACT-301",
+      "kind": "EVENT",
+      "description": "Event marking the use of SQLite in production for the event store from 2024-03-04 to 2024-07-22.",
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "08d09e1e-a147-4204-88c6-f34564ff1260",
+      "name": "FACT-302",
+      "kind": "EVENT",
+      "description": "Event marking the transition to PostgreSQL for the event store in production on 2024-07-22.",
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "b2b0600b-6763-4248-8490-cb8974920c02",
+      "name": "EVENT-STORE BACKEND",
+      "kind": "TECHNOLOGY",
+      "description": "The event-store backend is a system under development to manage and log service events, with SQLite initially chosen as the database solution for the prototype phase.",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "de77e825-aebd-4a62-8cd4-f4f5ee323d25",
+      "name": "PROTOTYPE (EVT-201)",
+      "kind": "EVENT",
+      "description": "Prototype phase of the event-store backend, where SQLite was selected as the initial database solution for storing service event logs.",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ],
+      "degree": 1
+    },
+    {
+      "entity_id": "6bca8ecb-d030-4f79-b070-06119867fbeb",
+      "name": "PROTOTYPE",
+      "kind": "TECHNOLOGY",
+      "description": "The prototype system under development, which experiences performance degradation (slowdown) when multiple writers operate concurrently, specifically past eight writers.",
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "degree": 2
+    },
+    {
+      "entity_id": "eb0d3cb5-a0cb-48c9-a84b-df684ecccb63",
+      "name": "LOAD-TEST REVIEW",
+      "kind": "EVENT",
+      "description": "Session 019 on 2024-06-10 where the team reviewed load-test results for the prototype, focusing on SQLite's performance under concurrent writer conditions.",
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ],
+      "degree": 5
+    },
+    {
+      "entity_id": "24a89ece-3ad3-42a8-904b-c780d4fe55f9",
+      "name": "J. LINQVIST",
+      "kind": "PERSON",
+      "description": "J. Lindqvist is a participant in the session proposing the use of Redis as a lookup cache to reduce read latency for hot keys.",
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "28635f4b-c047-44de-9fc1-39da03112525",
+      "name": "SESSION-044",
+      "kind": "EVENT",
+      "description": "Session-044 is a meeting where the hot working set was measured and the Redis proposal was reconsidered",
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "degree": 5
+    },
+    {
+      "entity_id": "eb73f1cd-82f4-4963-944a-277e3ebb1d79",
+      "name": "APPLICATION MEMORY",
+      "kind": "TECHNOLOGY",
+      "description": "Application memory is the system memory where the hot working set currently resides comfortably",
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "degree": 3
+    },
+    {
+      "entity_id": "850c18f0-a80b-4a5f-ac12-39614c2b0f5a",
+      "name": "M.OKAFOR",
+      "kind": "PERSON",
+      "description": "M.Okafor is a participant in session-044 who agreed with the decision to avoid Redis until performance issues are proven",
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ],
+      "degree": 2
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "ea9bad85-5301-4de1-9579-9934b089f405",
+      "source": "POSTGRESQL",
+      "target": "EVENT-STORE",
+      "description": "PostgreSQL was chosen as the target for the event-store due to its superior handling of concurrent-write contention, replacing the SQLite prototype",
+      "weight": 10.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "196a40db-3aa4-4fcd-9852-a2298ee74791",
+      "source": "SQLITE",
+      "target": "EVENT-STORE",
+      "description": "SQLite was initially prototyped for the event-store but was replaced due to performance issues with concurrent-write contention",
+      "weight": 9.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "ead65647-6d6b-43e5-9a3f-ed65f13f6da1",
+      "source": "EVT-201",
+      "target": "EVENT-STORE",
+      "description": "EVT-201 (SQLite prototype) was superseded by the decision to use PostgreSQL for the event-store",
+      "weight": 8.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "ab61609e-0827-488c-a372-d6e4e57dc819",
+      "source": "EVT-202",
+      "target": "EVT-201",
+      "description": "EVT-202 documented the issue of concurrent-write contention in the SQLite prototype, contributing to its replacement",
+      "weight": 7.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "e40d1c14-38bf-486a-a1ef-fa2bbd46673b",
+      "source": "EVT-203",
+      "target": "EVT-201",
+      "description": "EVT-203 further detailed the performance problems of the SQLite prototype, influencing the decision to switch to PostgreSQL",
+      "weight": 7.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "ffed246b-7f2f-4336-9ec4-0cb590292413",
+      "source": "EVT-204",
+      "target": "POSTGRESQL",
+      "description": "EVT-204 demonstrated PostgreSQL's ability to handle concurrent-write contention, making it the preferred choice",
+      "weight": 9.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "9dc95278-8a2b-4acf-8b03-98b2d7aefddf",
+      "source": "EVT-205",
+      "target": "POSTGRESQL",
+      "description": "EVT-205 (ADR-007) officially targeted PostgreSQL for the event-store work, superseding the SQLite prototype",
+      "weight": 10.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "6f63a298-a004-4853-9597-3cddda3e0e9d",
+      "source": "ADR-007",
+      "target": "EVT-205",
+      "description": "ADR-007 is the architectural decision record documenting the decision recorded in EVT-205",
+      "weight": 9.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "4201162d-f321-4797-b06e-241446cfe20c",
+      "source": "M. OKAFOR",
+      "target": "ADR-007",
+      "description": "M. Okafor was one of the deciders involved in the decision documented in ADR-007",
+      "weight": 8.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "3cdcd8e9-251e-48c2-babb-12e39fd9d1f1",
+      "source": "J. LINDQVIST",
+      "target": "ADR-007",
+      "description": "J. Lindqvist was one of the deciders involved in the decision documented in ADR-007",
+      "weight": 8.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "1b9bd686-3b1f-45fc-ae35-8beca8689cbc",
+      "source": "EVT-201",
+      "target": "SQLITE",
+      "description": "EVT-201 refers to the SQLite prototype for the event-store",
+      "weight": 1.0,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "relationship_id": "98a62b3b-25ad-44db-bd35-273986d0227f",
+      "source": "TEAM",
+      "target": "REDIS",
+      "description": "The team decided not to introduce Redis as a lookup cache because the working set fits in memory",
+      "weight": 9.0,
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ]
+    },
+    {
+      "relationship_id": "62c99566-0a5c-49e4-b6db-5148a3ca0f20",
+      "source": "SESSION-044",
+      "target": "TEAM",
+      "description": "Session-044 concluded that the working set fits in memory, influencing the team's decision",
+      "weight": 8.0,
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ]
+    },
+    {
+      "relationship_id": "a0474bb0-3032-413d-af82-441607b15e29",
+      "source": "SESSION-040",
+      "target": "TEAM",
+      "description": "The proposal in session-040 was rejected due to lack of measured read-latency evidence",
+      "weight": 7.0,
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ]
+    },
+    {
+      "relationship_id": "55771f2c-b1f8-4889-8537-7948f43e3fc6",
+      "source": "M. OKAFOR",
+      "target": "TEAM",
+      "description": "M. Okafor was a decision-maker for rejecting Redis",
+      "weight": 6.0,
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ]
+    },
+    {
+      "relationship_id": "704e6b1b-4b13-4d61-b7ab-f351c446d1bf",
+      "source": "A. NOVAK",
+      "target": "TEAM",
+      "description": "A. Novak was a decision-maker for rejecting Redis",
+      "weight": 6.0,
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ]
+    },
+    {
+      "relationship_id": "a00c5de7-56c5-45ea-82c8-8774a4261e0f",
+      "source": "SESSION-044",
+      "target": "SESSION-040",
+      "description": "**Comprehensive Summary of Sessions 040 and 044**\n\n**Sessions 040 and 044** represent a sequential evaluation process involving a **Redis-related proposal** initially presented in **Session-040**. The core focus of these sessions revolves around the assessment and eventual rejection of this proposal, with **Session-044** playing a pivotal role in determining its fate.\n\nIn **Session-040**, a proposal\u2014later identified as related to **Redis**\u2014was introduced and considered for implementation. However, the outcome of this session was not definitive, as further scrutiny was deemed necessary. **Session-044** was subsequently convened to revisit and reassess the proposal based on findings or concerns that had emerged.\n\nDuring **Session-044**, the Redis proposal from **Session-040** was thoroughly examined. The deliberations led to a unanimous decision: the proposal was deemed unsuitable for implementation. The rationale behind this decision was not explicitly detailed in the provided descriptions, but it is implied that the findings from **Session-044** were decisive in rejecting the proposal.\n\nUltimately, **Session-040\u2019s Redis proposal was rejected following the reassessment conducted in Session-044**, marking the conclusion of this evaluation process. The sequential nature of these sessions underscores a structured approach to decision-making, where preliminary proposals undergo rigorous scrutiny before final approval or rejection.",
+      "weight": 10.0,
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "relationship_id": "d5b452a6-2bfb-478c-87a0-24c127bb5fb4",
+      "source": "POSTGRESQL",
+      "target": "BENCHMARK EVT-204",
+      "description": "PostgreSQL was tested as a candidate for an event store in benchmark evt-204, showing stable throughput and 11ms p99 write latency with 32 writers",
+      "weight": 9.0,
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "relationship_id": "616db121-83ef-4a66-a99a-323e30eab62e",
+      "source": "SQLITE",
+      "target": "BENCHMARK EVT-204",
+      "description": "SQLite was compared against PostgreSQL in benchmark evt-204, showing lower operational costs but lacking concurrency for write-heavy workloads",
+      "weight": 7.0,
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "relationship_id": "e0534b43-b783-4581-8a70-6cf74a10350d",
+      "source": "BENCHMARK EVT-204",
+      "target": "EVENT STORE",
+      "description": "Benchmark evt-204 evaluated PostgreSQL as a candidate for an event store, focusing on write-heavy workloads",
+      "weight": 8.0,
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "relationship_id": "06debfe8-2073-4429-bad9-4a155d51a7e0",
+      "source": "A.NOVAK",
+      "target": "BENCHMARK EVT-204",
+      "description": "A.novak conducted benchmark evt-204, which compared PostgreSQL and SQLite for suitability in an event store",
+      "weight": 1.0,
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "relationship_id": "d13bb465-94ef-42d4-abe8-29b02b8610ee",
+      "source": "EXPERIMENT EVT-202",
+      "target": "SQLITE",
+      "description": "The experiment evt-202 specifically tested SQLite's performance under concurrent write contention, revealing significant performance degradation",
+      "weight": 9.0,
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "relationship_id": "b843cbb7-16f8-4b43-bf88-f4448627cd91",
+      "source": "EXPERIMENT EVT-202",
+      "target": "PROTOTYPE EVENT LOG",
+      "description": "The experiment evt-202 was conducted using the prototype event log as the testbed for evaluating SQLite's performance",
+      "weight": 8.0,
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "relationship_id": "2abd2717-885b-4e92-86b4-75718c96e49b",
+      "source": "SQLITE",
+      "target": "PROTOTYPE EVENT LOG",
+      "description": "SQLite was tested on the prototype event log to assess its performance under concurrent write contention",
+      "weight": 7.0,
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "relationship_id": "56c3b87a-64bd-47f2-99c9-eec5cee4c350",
+      "source": "A.NOVAK",
+      "target": "EXPERIMENT EVT-202",
+      "description": "A.Novak owned and conducted the experiment evt-202",
+      "weight": 9.0,
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "relationship_id": "b7703a39-7899-4f58-b012-ae9b10969ea1",
+      "source": "SQLITE",
+      "target": "EVENT INGESTION",
+      "description": "SQLite's write contention caused a stall in event ingestion during the June load window",
+      "weight": 9.0,
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "relationship_id": "0b663646-910b-489b-8493-36dd2758c6fa",
+      "source": "WRITER QUEUE",
+      "target": "EVENT INGESTION",
+      "description": "The writer queue backed up due to write contention, causing the event ingestion to stall",
+      "weight": 9.0,
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "relationship_id": "fc219dec-6bf1-47ef-ae6c-10c4ccf81e28",
+      "source": "JUNE LOAD WINDOW",
+      "target": "EVENT INGESTION",
+      "description": "During the June load window, event ingestion stalled for 40 minutes",
+      "weight": 9.0,
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "relationship_id": "0362a49e-f542-4803-ae12-cef873319c4f",
+      "source": "MITIGATION",
+      "target": "INCIDENT EVT-203",
+      "description": "Mitigation actions (draining the queue and throttling writers) were taken to resolve the write stall in the SQLite event log",
+      "weight": 9.0,
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "relationship_id": "b24cecee-0490-4b5d-88b5-ac384a5020ed",
+      "source": "FOLLOW-UP",
+      "target": "SQLITE",
+      "description": "Follow-up involves selecting a store that handles concurrent writes better than SQLite before the next service ships",
+      "weight": 8.0,
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "relationship_id": "90bdff9c-7042-4215-a3fd-166670841ee9",
+      "source": "INCIDENT EVT-203",
+      "target": "WRITER QUEUE",
+      "description": "The incident involved a backup in the writer queue due to write contention",
+      "weight": 1.0,
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "relationship_id": "dd94c935-c824-41cb-9dda-27fd250d0a0a",
+      "source": "A.NOVAK",
+      "target": "ISSUE 041",
+      "description": "A.Novak is the owner of Issue 041, which involves cleanup of residual data from the Contention Benchmark",
+      "weight": 9.0,
+      "source_text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ]
+    },
+    {
+      "relationship_id": "327c7282-adcf-4cd4-9a07-80b551ba9d7e",
+      "source": "ISSUE 041",
+      "target": "PERFORMANCE REVIEW",
+      "description": "Issue 041 must be resolved before the next performance review",
+      "weight": 1.0,
+      "source_text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ]
+    },
+    {
+      "relationship_id": "caf0e26d-dda9-4e90-b26a-2095da141f76",
+      "source": "SQLITE",
+      "target": "FACT-301",
+      "description": "SQLite was used in production for the event store as documented in fact-301",
+      "weight": 9.0,
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ]
+    },
+    {
+      "relationship_id": "830193d9-4919-4ca1-a329-26abe2ace12d",
+      "source": "POSTGRESQL",
+      "target": "FACT-302",
+      "description": "PostgreSQL is now used in production for the event store as documented in fact-302",
+      "weight": 9.0,
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ]
+    },
+    {
+      "relationship_id": "b4543e28-1915-4dba-abb3-0f839b23d3fc",
+      "source": "FACT-301",
+      "target": "FACT-302",
+      "description": "Fact-302 supersedes fact-301, marking the transition from SQLite to PostgreSQL in production",
+      "weight": 10.0,
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ]
+    },
+    {
+      "relationship_id": "d964a69d-fc42-452b-a020-412cb3bba6d6",
+      "source": "SQLITE",
+      "target": "POSTGRESQL",
+      "description": "PostgreSQL replaced SQLite in production for the event store",
+      "weight": 1.0,
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ]
+    },
+    {
+      "relationship_id": "560e5c0a-afd9-4235-9082-d47d226d8b02",
+      "source": "M. OKAFOR",
+      "target": "SQLITE",
+      "description": "M. Okafor proposed SQLite for the event-store backend prototype due to its simplicity and ease of backup",
+      "weight": 9.0,
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "relationship_id": "d8374cd3-6e3d-4f9c-8388-3acb612d7b57",
+      "source": "J. LINDQVIST",
+      "target": "SQLITE",
+      "description": "J. Lindqvist raised concerns about concurrent writers in SQLite but agreed to try it for the prototype",
+      "weight": 8.0,
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "relationship_id": "d91af566-40fa-4104-8015-cbc6778c7689",
+      "source": "EVENT-STORE BACKEND",
+      "target": "SQLITE",
+      "description": "SQLite was selected as the initial database solution for the event-store backend prototype",
+      "weight": 9.0,
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "relationship_id": "b1818922-6ebd-4b57-9950-4da1c99d9641",
+      "source": "PROTOTYPE (EVT-201)",
+      "target": "SQLITE",
+      "description": "SQLite was chosen as the database solution for the prototype phase of the event-store backend",
+      "weight": 9.0,
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "relationship_id": "d8475fd7-9a3f-4111-93aa-418b0ef4ef92",
+      "source": "M. OKAFOR",
+      "target": "EVENT-STORE BACKEND",
+      "description": "M. Okafor proposed SQLite for the event-store backend prototype",
+      "weight": 8.0,
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "relationship_id": "44e703e9-050e-45fe-a9e5-537b7b8dd019",
+      "source": "J. LINDQVIST",
+      "target": "EVENT-STORE BACKEND",
+      "description": "J. Lindqvist participated in the discussion about the event-store backend prototype",
+      "weight": 1.0,
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "relationship_id": "a9253b40-6e3d-4855-b808-297620d1d8f8",
+      "source": "PROTOTYPE",
+      "target": "SQLITE",
+      "description": "The prototype uses SQLite as its database management system, and its performance under concurrent writers (throughput collapse past eight writers) is being scrutinized",
+      "weight": 9.0,
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "relationship_id": "0d18f064-a10e-4800-9820-2d7cc96258e3",
+      "source": "LOAD-TEST REVIEW",
+      "target": "PROTOTYPE",
+      "description": "The load-test review session (019) specifically analyzed the prototype's performance under concurrent writer conditions",
+      "weight": 8.0,
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "relationship_id": "f080e166-5cb9-4cde-8481-a4fa7b5b6f72",
+      "source": "LOAD-TEST REVIEW",
+      "target": "SQLITE",
+      "description": "The session reviewed SQLite's performance in the prototype, noting throughput collapse past eight concurrent writers",
+      "weight": 8.0,
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "relationship_id": "66a21dfd-6f79-4cf0-af18-b9da38cf4600",
+      "source": "M. OKAFOR",
+      "target": "LOAD-TEST REVIEW",
+      "description": "M. Okafor participated in the session discussing SQLite's performance in the prototype",
+      "weight": 5.0,
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "relationship_id": "5fb10def-26b7-4314-b493-45beb7a7d950",
+      "source": "J. LINDQVIST",
+      "target": "LOAD-TEST REVIEW",
+      "description": "J. Lindqvist participated in the session discussing SQLite's performance in the prototype",
+      "weight": 5.0,
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "relationship_id": "d7086620-f4f6-45ac-8af2-b2af1f949e2e",
+      "source": "A. NOVAK",
+      "target": "LOAD-TEST REVIEW",
+      "description": "A. Novak presented benchmark data during the session, highlighting SQLite's throughput collapse",
+      "weight": 1.0,
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "relationship_id": "190f5178-1fcf-4c81-99f1-d4baabe3089a",
+      "source": "J. LINQVIST",
+      "target": "SESSION-040",
+      "description": "J. Lindqvist proposed adding Redis as a lookup cache during Session-040",
+      "weight": 9.0,
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "relationship_id": "80964ae0-e72d-4c03-93a8-8b6e910252ef",
+      "source": "A. NOVAK",
+      "target": "SESSION-040",
+      "description": "A. Novak questioned the proposal to add Redis during Session-040, requesting evidence that read operations are a bottleneck",
+      "weight": 9.0,
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "relationship_id": "794dcb4c-b5f7-48a5-a57d-1a18be1435cc",
+      "source": "REDIS",
+      "target": "EVENT STORE",
+      "description": "Redis is proposed to be used as a lookup cache in front of the event store to reduce read latency for hot keys",
+      "weight": 9.0,
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "relationship_id": "92ccf8ba-9fb6-4f52-b821-8ec324817e63",
+      "source": "J. LINQVIST",
+      "target": "REDIS",
+      "description": "J. Lindqvist proposed the use of Redis as a cache solution",
+      "weight": 7.0,
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "relationship_id": "56d8c80c-6470-4226-8175-d195944ba831",
+      "source": "J. LINQVIST",
+      "target": "EVENT STORE",
+      "description": "J. Lindqvist's proposal involves optimizing the event store by adding Redis",
+      "weight": 1.0,
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "relationship_id": "da7cc50b-a8fc-47cc-8608-34d0e6e5d9af",
+      "source": "SESSION-044",
+      "target": "APPLICATION MEMORY",
+      "description": "Session-044 confirmed that the hot working set fits comfortably in application memory, negating the need for Redis",
+      "weight": 9.0,
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "relationship_id": "bd30caa2-67fa-40a3-ae4a-5a748f85c46e",
+      "source": "A.NOVAK",
+      "target": "SESSION-044",
+      "description": "A.Novak participated in session-044 and measured the hot working set",
+      "weight": 8.0,
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "relationship_id": "db256b61-ae6b-4bb6-bbd0-9a78b00c4c10",
+      "source": "M.OKAFOR",
+      "target": "SESSION-044",
+      "description": "M.Okafor participated in session-044 and agreed with the decision to avoid Redis",
+      "weight": 8.0,
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "relationship_id": "e6836242-b2f8-4f11-90d3-ce0ef195ef83",
+      "source": "A.NOVAK",
+      "target": "APPLICATION MEMORY",
+      "description": "A.Novak's measurement confirmed that the hot working set fits comfortably in application memory",
+      "weight": 7.0,
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "relationship_id": "58976b8a-f9f2-419e-924b-ca05fc61935a",
+      "source": "M.OKAFOR",
+      "target": "APPLICATION MEMORY",
+      "description": "M.Okafor agreed that the hot working set fits comfortably in application memory, avoiding the need for Redis",
+      "weight": 1.0,
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "relationship_id": "94a8e4c9-88ae-4039-b5b3-0f4c168eae91",
+      "source": "EVENT STORE",
+      "target": "SQLITE",
+      "description": "Event Store initially used SQLite for its event log due to its simplicity and ease of backups",
+      "weight": 8.0,
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "relationship_id": "f51eb5ba-311b-4482-822e-b6ff3fe75cae",
+      "source": "EVENT STORE",
+      "target": "POSTGRESQL",
+      "description": "Event Store migrated from SQLite to PostgreSQL in July 2024 to address performance issues with concurrent writes",
+      "weight": 9.0,
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "relationship_id": "ea105ea7-0f14-4615-a496-ab36a29ca5eb",
+      "source": "EVENT STORE",
+      "target": "ADR-007",
+      "description": "ADR-007 documents the architectural decision to migrate Event Store from SQLite to PostgreSQL",
+      "weight": 8.0,
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "relationship_id": "fee835fa-ff30-4fb7-96e7-e59b779f4a29",
+      "source": "M. OKAFOR",
+      "target": "EVENT STORE",
+      "description": "M. Okafor noted the Event Store wiki page was outdated and the team had moved to PostgreSQL",
+      "weight": 7.0,
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "relationship_id": "1b8121cc-f21b-47c9-8408-604867e1d730",
+      "source": "SQLITE",
+      "target": "ADR-007",
+      "description": "ADR-007 records the failure of SQLite under concurrent writes as the reason for the migration",
+      "weight": 7.0,
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "relationship_id": "80c07b17-b20a-40fd-ad33-2de182d2c36d",
+      "source": "POSTGRESQL",
+      "target": "ADR-007",
+      "description": "ADR-007 documents the adoption of PostgreSQL as the replacement for SQLite",
+      "weight": 1.0,
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "5bbaa072-d872-4045-b145-30cf6288ba24",
+      "subject": "Here is the analysis based on the provided text, entity specification, and claim description:\n\n```\n(POSTGRESQL",
+      "description": "PostgreSQL was selected as the target database for the event-store due to superior performance under load, demonstrating flat throughput to 32 writers compared to SQLite's concurrent-write contention issues. This decision supersedes the SQLite prototype (evt-201)",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "2a731d82-f1aa-4b14-9103-99380391acff",
+      "subject": "SQLITE",
+      "description": "SQLite prototype demonstrated performance failure under load due to concurrent-write contention, leading to its de-selection for the event-store service",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "aeec453a-21c5-4ab8-a09e-8e93f106d13f",
+      "subject": "EVENT-STORE TEAM",
+      "description": "Decision-makers (m.okafor, j.lindqvist) accepted the migration of event-store to PostgreSQL, superseding the SQLite prototype (evt-201) due to performance evidence",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "0ed00223-0815-4d59-bff0-643a7570cd65",
+      "subject": "EVT-201",
+      "description": "SQLite prototype decision (evt-201) was superseded by PostgreSQL decision (evt-205) due to performance evidence",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "545d91e7-b6ba-443e-8e94-3225998b7485",
+      "subject": "EVT-202",
+      "description": "Concurrent-write contention issue documented in evt-202 contributed to SQLite's performance failure",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "74b896bf-5ca9-4722-bfd3-cd4b9024db94",
+      "subject": "EVT-203",
+      "description": "Concurrent-write contention issue documented in evt-203 contributed to SQLite's performance failure",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "5d9ce947-786a-453d-9220-bfbc9d8d54b1",
+      "subject": "EVT-204",
+      "description": "PostgreSQL demonstrated flat throughput to 32 writers, providing performance advantage over SQLite",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "8509135d-c14a-43b7-b3d2-f0aaf1690128",
+      "subject": "M. OKAFOR",
+      "description": "M. Okafor was a decider in the PostgreSQL migration decision",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "e95ce758-e66b-4e75-b95e-09072644c5ea",
+      "subject": "J. LINDQVIST",
+      "description": "J. Lindqvist was a decider in the PostgreSQL migration decision",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "3086a105-44b8-4c09-b8d1-81012eebdd79",
+      "subject": "2024-07-11",
+      "description": "Decision record dated 2024-07-11 documents the PostgreSQL migration decision",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "claim_id": "a79cbf26-e829-4f8a-a627-3ebd3f6439f3",
+      "subject": "Based on the provided text, no claims or facts relevant to information discovery against the specified entity types (`organization`, `person`, `geo`, `event`) a",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ]
+    },
+    {
+      "claim_id": "db435df2-46ec-4840-b12e-6145df1ccbd0",
+      "subject": "# Output:",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058"
+      ]
+    },
+    {
+      "claim_id": "98ac2946-c91c-4606-b934-040744ff1234",
+      "subject": "Here is the analysis based on the provided text and entity specification:\n\n```\n(POSTGRESQL",
+      "description": "PostgreSQL 15 shows flat throughput up to 32 writers with p99 write latency of 11ms, but has higher operational costs than SQLite. Its concurrency behavior is deemed decisive for shared write-heavy services.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "claim_id": "00c91960-9ba6-48e2-8c25-a6458efaebbe",
+      "subject": "A.NOVAK",
+      "description": "A.Novak is identified as the owner of the benchmark note for PostgreSQL 15.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "claim_id": "096d6947-fc09-4256-a678-9f0c4d973a08",
+      "subject": "NONE",
+      "description": "Benchmark note titled \"benchmark-note.md\" documents PostgreSQL 15 performance against SQLite in a write-heavy workload scenario.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "claim_id": "c27e81da-87e2-42ad-86d8-58252c724ed3",
+      "subject": "EVENT evt-204",
+      "description": "Event evt-204 specifically benchmarks PostgreSQL 15 as a candidate for event store with write-heavy workloads.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "claim_id": "60394bea-0cdc-41b9-9ada-2fc89dd6dc08",
+      "subject": "Given the provided text, no claims or facts relevant to information discovery can be extracted based on the entity specification and claim description. The text",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "d5a1b5e191e33c125f36627651bd30a19f7595f1c2f02a5b7f0550156c15a7cd8e5343bdb45a6f05bda704e1d15483d961b0734f8a1d0bb575da91b34d7fda60"
+      ]
+    },
+    {
+      "claim_id": "b3eefcb4-b0e9-47e5-a696-48e84d0f77f1",
+      "subject": "Given the provided text, no specific claims or facts relevant to information discovery can be extracted because the log entry is a generic commit message withou",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "52c75c69de1dc3a885c1166de4ff3176c12e3f6cd90c080bbeb6c4c0c819eba385ac8728f0de12d27576bb996951649f9289b9a7fbcab4078c73af67cd94527e"
+      ]
+    },
+    {
+      "claim_id": "a76e0cb3-ac94-4ac6-bd96-2064b36d4752",
+      "subject": "# Output:",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "52c75c69de1dc3a885c1166de4ff3176c12e3f6cd90c080bbeb6c4c0c819eba385ac8728f0de12d27576bb996951649f9289b9a7fbcab4078c73af67cd94527e"
+      ]
+    },
+    {
+      "claim_id": "72cf96d2-7a20-4dad-8fff-423044f692da",
+      "subject": "Given the provided text, no clear claims or facts relevant to information discovery can be extracted because the log entry is a technical commit message without",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "4c240c526efb31a302a8a3a0d874ad8fa09b7a1fc644901b203bc216133d5feaff79aa3cabaa0d5f46741eb2515663ef77dcb8f33ddb72c71f68a752b7a9fd14"
+      ]
+    },
+    {
+      "claim_id": "2f29f9c1-bcac-4813-ad20-1bbbb3a6414c",
+      "subject": "# Output:",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "4c240c526efb31a302a8a3a0d874ad8fa09b7a1fc644901b203bc216133d5feaff79aa3cabaa0d5f46741eb2515663ef77dcb8f33ddb72c71f68a752b7a9fd14"
+      ]
+    },
+    {
+      "claim_id": "a74af6a7-727b-41c0-b016-59e6b3218cbe",
+      "subject": "Based on the provided text, no clear claims or facts relevant to information discovery can be extracted for the specified entity types (`organization`, `person`",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "f72b94e4572dfee36958dd9ada223f66fdfa209490d6352f39258f33376c0333a8058043ed6f2dfe4cbf85f31eee1255f144131eb0ae7898a0d86732a134adf4"
+      ]
+    },
+    {
+      "claim_id": "fbf42e6f-c1a7-476d-9f9b-22e847aea61f",
+      "subject": "Based on the provided text, no clear claims or facts relevant to information discovery can be extracted for the specified entity types (`organization`, `person`",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "2c1b9f331d67ec3c01a0bb729d659e2b66375caf7463bfda5f95443e60cafd97bc3c49e25c037aab47faa0ea316ab7b0e1e0ef99a1504b74298896f4b0632fd0"
+      ]
+    },
+    {
+      "claim_id": "a8b0f0f8-8b51-4972-a2d4-3ad6aecd1695",
+      "subject": "# Output:",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "2c1b9f331d67ec3c01a0bb729d659e2b66375caf7463bfda5f95443e60cafd97bc3c49e25c037aab47faa0ea316ab7b0e1e0ef99a1504b74298896f4b0632fd0"
+      ]
+    },
+    {
+      "claim_id": "54ee41eb-ee1e-4c80-8c1a-d2ecdc562661",
+      "subject": "Given the provided text, no named entities matching the entity specification (`organization`, `person`, `geo`, `event`) are explicitly mentioned or implied in a",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "04c5f037084c8f67b05532eee2e2fc3b28ca8c14c18bacf8acf052c7582c9f393284875bfca5816c8605384db034fa3d2c87a5cdc187f4af0ed322d2b7632128"
+      ]
+    },
+    {
+      "claim_id": "1996a1fd-944d-4855-ac37-b8173d8d3cdf",
+      "subject": "Based on the provided text, no meaningful claims or facts related to entities (organization, person, geo, or event) can be extracted. The log entry is a technic",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "25dcbc0625aefe54c3cd6433e2935aa2976ce9d44009baf88a8bd0ffcfd01951b1a5258b63bb0c8d0f9cbdc34aa5856fe57356be6dc960ef79d27af371ecf284"
+      ]
+    },
+    {
+      "claim_id": "453c8ca3-08f4-4e00-8421-125e63c4514a",
+      "subject": "Here is the analysis based on the provided text, entity specification, and claim description:\n\n```\n(ORGANIZATION",
+      "description": "SQLite's write throughput drops significantly (62% at 8 writers, 84% at 16 writers) and median write latency increases from 3ms to 210ms under concurrent writes, while reads remain unaffected. This makes SQLite unsuitable for shared event-store workloads.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "claim_id": "2c09cd7c-5477-4680-8571-69793a511053",
+      "subject": "PERSON",
+      "description": "Person 'a.novak' is identified as the owner of the experiment evt-202.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "claim_id": "44478f8b-de3a-43e9-9e82-80d397580ff4",
+      "subject": "GEO",
+      "description": "No geographic location or claim related to geo-entities is present in the text.",
+      "claim_type": "claim",
+      "status": "FALSE",
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "claim_id": "64cc0264-a5de-4dc5-8ece-bcc6d9265bc7",
+      "subject": "EVENT",
+      "description": "Experiment evt-202 demonstrates SQLite contention under concurrent writes, highlighting performance degradation (throughput drop and latency increase) for shared event-store workloads.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c"
+      ]
+    },
+    {
+      "claim_id": "1dcdbceb-6f89-473b-8e7c-90160883ab1b",
+      "subject": "Here is the analysis based on the provided text and entity specification:\n\n```",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "claim_id": "03ef629c-c5ef-4cdf-ac51-a7a0b65a8c15",
+      "subject": "UNKNOWN",
+      "description": "During the June load window, event ingestion stalled for 40 minutes due to write contention on the SQLite event log under concurrent writers. The writer queue backed up and ingestion timed out. This indicates a critical system performance issue in the SQLite prototype.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "claim_id": "f47aa984-03a1-40e3-be15-f83d3c05128d",
+      "subject": "UNKNOWN",
+      "description": "Mitigation steps were taken to address the write contention issue: the queue was drained and writers were throttled. This suggests an operational response to the system failure.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "claim_id": "8c203b60-eb12-46e7-8869-6b99b91a9f0f",
+      "subject": "UNKNOWN",
+      "description": "Follow-up action recommended: select a store that handles concurrent writes before the next service ships. This indicates a long-term solution is needed to prevent future incidents.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "claim_id": "36fca2a9-ba2b-4658-ba95-00bd4d4c7b14",
+      "subject": "```\n**Notes:**\n1. **Entities Identified:**\n   - No explicit organizations, persons, or geo-locations are mentioned in the text. Thus, the claims are associated ",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    },
+    {
+      "claim_id": "ff354f66-442f-4e37-9466-a22fc0cee1c5",
+      "subject": "Based on the provided text and the entity specification (organization, person, geo, event), there are no explicit claims or facts that could be relevant to info",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ]
+    },
+    {
+      "claim_id": "7336944b-7018-4cae-96ac-caa46e5441ed",
+      "subject": "Based on the provided text and the entity specification (organization, person, geo, event), there are no claims or facts relevant to information discovery again",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "81c3100b0e1faedadfc305bc5ea0d5f37ea1f9bdde5570c396f49536ccb0c2c2551ead94cdf2cc9f4dedac549702354c7f19ca0cc4dc51de7101e600372c96d1"
+      ]
+    },
+    {
+      "claim_id": "b5c9597c-08de-4383-89a4-560cf368ac34",
+      "subject": "Here is the analysis based on the provided text and specifications:\n\n```\n(POSTGRESQL",
+      "description": "PostgreSQL replaced SQLite as the production database for the event store, superseding SQLite (fact-301) and taking over all traffic",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ]
+    },
+    {
+      "claim_id": "8c738b7a-af3c-4524-b92d-a3a0dddd34c1",
+      "subject": "SQLITE",
+      "description": "SQLite was used in production for the event store (fact-301) but was later deprecated and replaced by PostgreSQL, ceasing to serve traffic",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ]
+    },
+    {
+      "claim_id": "58ec0433-3e68-4111-b6a8-9cb9bc3cd6c8",
+      "subject": "EVENT_STORE",
+      "description": "The event store underwent a database migration from SQLite to PostgreSQL, with SQLite being phased out",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d"
+      ]
+    },
+    {
+      "claim_id": "425c6efc-3813-4e64-80a2-f6bc3089d6b9",
+      "subject": "Here is the analysis based on the provided text and entity specification:\n\n```",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "claim_id": "22e80dca-4f8b-46cc-9d71-4b780e1bc51a",
+      "subject": "PROJECT TEAM",
+      "description": "The project team (m.okafor and j.lindqvist) selected SQLite as the initial database solution for the event log storage in the prototype phase (evt-201). This decision was made due to its simplicity (single-file, no operational burden, easy backup) despite concerns about concurrent writers. The team agreed to revisit this choice if write contention becomes an issue under load.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "claim_id": "f128f43c-1932-4fe3-9471-3469678e54ad",
+      "subject": "M. OKAFOR",
+      "description": "M. Okafor proposed SQLite as the database solution for the event log storage due to its simplicity (single-file, no operational burden, easy backup).",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "claim_id": "cdc232bc-c3f2-4ee9-9e4b-58c574dbd093",
+      "subject": "J. LINDSVIT",
+      "description": "J. Lindqvist expressed concern about concurrent writers for the SQLite proposal but agreed to try it for the prototype phase.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "claim_id": "83b06315-5631-4ae0-af97-1550a8f055ae",
+      "subject": "PROTOTYPE PHASE (EVT-201)",
+      "description": "The team agreed to start with SQLite for the prototype phase (evt-201) and revisit the decision if write contention issues arise under load.",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "claim_id": "9df18028-a6d2-4400-b22f-ca869c790f54",
+      "subject": "```",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83"
+      ]
+    },
+    {
+      "claim_id": "1584e16f-e7d1-4900-9d2a-31c9d7e10475",
+      "subject": "Based on the provided text, no explicit claims or facts are made against entities that match the specified entity types (`organization`, `person`, `geo`, `event",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "claim_id": "f9ac94eb-3e05-4672-a0b6-be7ebd064661",
+      "subject": "# Output:\n```\n<|COMPLETE|>\n```",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934"
+      ]
+    },
+    {
+      "claim_id": "077a2c74-bd18-4b3f-ad11-b65e50d7798b",
+      "subject": "Based on the provided text, no claims or facts relevant to information discovery (as per the claim description) are present. The text is a technical discussion ",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "claim_id": "17322d4b-af3a-41f7-9639-7468cadcae04",
+      "subject": "# Output:",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "claim_id": "456c4cfc-f8dd-491a-92f3-16f2c5e7c5e7",
+      "subject": "Based on the provided text and the entity specification (organization, person, geo, event), there are no explicit claims or facts that could be relevant to info",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "claim_id": "5233ff7e-8edb-4bd3-a381-d2b7e0174e95",
+      "subject": "# Output:",
+      "description": "nan",
+      "claim_type": "claim",
+      "status": "nan",
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e"
+      ]
+    },
+    {
+      "claim_id": "d44aedcf-6a30-4d38-ae81-0a0e5ad46e91",
+      "subject": "Here is the analysis based on the provided text, entity specification, and claim description:\n\n```\n(ORGANIZATION",
+      "description": "The event store was migrated from SQLite to PostgreSQL in July 2024 due to SQLite's failure under concurrent writes. This change was documented in ADR-007 and is reflected in the note by m.okafor (September 2024)",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "claim_id": "19a5ef10-e5aa-475d-92a9-1032e93d35fe",
+      "subject": "PERSON",
+      "description": "Person m.okafor pinned a note in September 2024 indicating the wiki page is outdated and should not be followed for SQLite instructions, as the event store was migrated to PostgreSQL",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "claim_id": "76bdb571-23cc-4bd0-afaa-8d4e1260843c",
+      "subject": "GEO",
+      "description": "No geo-related claims or facts found in the text",
+      "claim_type": "claim",
+      "status": "FALSE",
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    },
+    {
+      "claim_id": "cc828619-789a-4b20-ad96-d06ffa1ee729",
+      "subject": "EVENT",
+      "description": "Event store migration from SQLite to PostgreSQL occurred in July 2024 due to SQLite's failure under concurrent writes, as documented in ADR-007",
+      "claim_type": "claim",
+      "status": "TRUE",
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d"
+      ]
+    }
+  ],
+  "communities": [
+    {
+      "community_id": "0",
+      "title": "Community 0",
+      "summary": "This community revolves around the technical discussions and decision-making process surrounding the proposed use of Redis as a lookup cache during **SESSION-040** (August 5, 2024). Key entities include **Redis**, **SESSION-040**, the **development team (TEAM)**, **A. Novak**, and **J. Lindqvist**, whose interactions and decisions highlight a structured evaluation of caching strategies. The community's dynamics are defined by skepticism toward Redis, lack of empirical evidence, and a preference for data-driven decision-making. The rejection of Redis was driven by concerns over system complexity, maintenance overhead, and insufficient justification for its benefits in the specific use case. This community exemplifies a technical decision-making process where performance metrics and measurable outcomes take precedence over speculative optimizations.",
+      "level": 0,
+      "size": 5,
+      "source_text_units": [
+        "1f9262cfc34ea794b1eb77bed92460229158d159bfbcc8cd6bd370e6dbfc5dd0906a2034704f744bb3a4775da98d9eb53f599285d1b53353db681dfaa8634058",
+        "b353b3c3968afc9c347ec103ffa5353cd0e94159c72356b7f6046a42935c4f4aebc31f3291dd828f3d44a722e1d42270ee37996f853cdd3918d65031e58276d7"
+      ]
+    },
+    {
+      "community_id": "1",
+      "title": "Community 1",
+      "summary": "This report examines the **Event-Store Backend Migration Community**, centered around the pivotal transition from **SQLite** to **PostgreSQL** due to performance bottlenecks under concurrent writes. The community\u2019s core entities include **M. Okafor** and **J. Lindqvist**, who drove architectural decisions (e.g., **ADR-007**), alongside the **prototype phase** (SQLite) and **load-testing sessions** (e.g., **Session 019**). Key relationships reveal a structured evolution: initial SQLite adoption for simplicity, followed by performance failures under concurrent writes, culminating in a formal migration to PostgreSQL. The community\u2019s impact stems from its critical role in addressing scalability challenges while documenting decisions transparently via **Architectural Decision Records (ADRs)**. The severity rating reflects high stakes due to the direct impact on system reliability and future-proofing.",
+      "level": 0,
+      "size": 9,
+      "source_text_units": [
+        "1c8188e01f8d53f5bacb7d6ad4ac2f0bbf21328afa4dc2e314d85f77effc4c06cbb6c4aa2ddb3082677d5c5154b7fb7ee3a078bf13ef82c9b9827101a5c3e934",
+        "393ce297ef0e4ab124d45c138134c5a97eee035dab00138e59c14392568481531c5a319ed1a3c932358f2d66b00ded31f994d2a8ce83d16d3a0b9e135f6eff83",
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e",
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d",
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "community_id": "2",
+      "title": "Community 2",
+      "summary": "",
+      "level": 0,
+      "size": 8,
+      "source_text_units": [
+        "353f3e66c8c149a163bc788c71da83f9ccbadafe1dfa2143898e6e12c9db661d6d7fe77f0634170a4a80d346b4ca07228f7b64d9fdb47ff7079421c145d15b7e",
+        "abb2c52baabd2ff05d0fddb7beb3e3d0dd0b3dfbc73c6bd6eb912fbff397186a78bf3249c3d3922c9c40053c20704a0a58c9403c895ad645a8be99a2dd456d5c",
+        "f7f531279b15cdc3c3307e92876ef180949a5cdfe98ccc98b0929020a05f5a69e862e99bfa3fe66edb460202e6b0a944971a3554a385a5c6cd1894ef8c367ef8"
+      ]
+    },
+    {
+      "community_id": "3",
+      "title": "Community 3",
+      "summary": "This report examines the community centered around the migration of the **Event Store** from **SQLite** to **PostgreSQL**, driven by performance limitations under high concurrent write loads. The community includes key entities such as **PostgreSQL**, **Event Store**, **Benchmark EVT-204**, and **EVT-205**, which collectively highlight the strategic upgrade, technical benchmarks, and operational transition. The relationships between these entities underscore the rationale behind the migration, its validation through benchmarking, and the formal documentation of the change. The community's impact is significant due to its implications for scalability, reliability, and performance in mission-critical applications.",
+      "level": 0,
+      "size": 8,
+      "source_text_units": [
+        "4d772122137abfe9562878506b5f8f72b2861d1232232f89391ac7192c64dfacbdb1712857e26c432fa3748d73a22178ce058136f21d6b44b76f7c0f1eae9f1d",
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b",
+        "ca7f777fe54c00707c13f59eb93759d8a234e989fd7bbc0caf02203a13b7c803acd4247c1ce0d42c045854df12d1e05fdaf0168ab66f03a7a7fc698447712d5d",
+        "fa4ef8f66d3b9a53e31a273db41f7532811f48f11b88667926d07722acdada26a8c1379854d1b30768751341019af4185684b980c14f5c8d56be0130df80946a"
+      ]
+    },
+    {
+      "community_id": "4",
+      "title": "Community 4",
+      "summary": "This community revolves around the decision-making process that led to the replacement of the SQLite prototype with PostgreSQL for the event-store system. The entities EVT-201, EVT-202, and EVT-203 document the issues with the SQLite prototype, including performance problems and concurrent-write contention, which collectively influenced the final decision. The relationships between these entities highlight the iterative nature of the problem documentation and its impact on the technical architecture.",
+      "level": 0,
+      "size": 3,
+      "source_text_units": [
+        "75db32b23e9588d6abce721ae9cea5bb7be47641307d2eb270f9e574d615c54c5e6d2ee9b53d872fb559ea050676d4d034c371c6669662ab726348d1e2cd4b4b"
+      ]
+    },
+    {
+      "community_id": "5",
+      "title": "Community 5",
+      "summary": "This report examines a technical community centered around a critical incident involving SQLite write contention during the June load window, causing a 40-minute stall in event ingestion. The community includes key entities such as SQLite, the Writer Queue, June Load Window, Incident EVT-203, and Mitigation actions. The relationships between these entities highlight systemic failures in write operations, queue management, and incident response, with significant implications for system reliability and operational continuity. The incident underscores vulnerabilities in event ingestion processes and the necessity for robust mitigation strategies to prevent future disruptions.",
+      "level": 0,
+      "size": 5,
+      "source_text_units": [
+        "48ccc8fdb83bf35d1f87788941feb921f6aa1e5f52d98bac03079d43106f152e11b3ea6fc238649c9ca918151ec87bece2e87e723bc1df3b93a66bef9ff0221e"
+      ]
+    }
+  ],
+  "text_units": 20,
+  "documents": 20
+}

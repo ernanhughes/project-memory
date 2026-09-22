@@ -1,0 +1,248 @@
+{
+  "bundle_id": "cb-T4-current-vs-stale-C6",
+  "condition": "C6",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1284,
+  "bundle_digest": "acdd254924687796",
+  "items": [
+    {
+      "item_id": "item-mb-impl-postgres",
+      "members": [
+        "mb-impl-postgres"
+      ],
+      "source_refs": [
+        "solution/memory_baseline/storage.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.store-backend",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 69
+    },
+    {
+      "item_id": "item-mb-impl-zeromq",
+      "members": [
+        "mb-impl-zeromq"
+      ],
+      "source_refs": [
+        "solution/temporal_memory/transport.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.zeromq",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 71
+    },
+    {
+      "item_id": "item-mb-impl-test-paths",
+      "members": [
+        "mb-impl-test-paths"
+      ],
+      "source_refs": [
+        "solution/pyproject.toml",
+        "solution/README.md"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.tests",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 52
+    },
+    {
+      "item_id": "item-mb-impl-graphrag",
+      "members": [
+        "mb-impl-graphrag"
+      ],
+      "source_refs": [
+        "solution/graph_memory"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.graphrag",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-ch09-result",
+      "members": [
+        "mb-ch09-result",
+        "mb-echo-ch9-result-1"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/metrics.json",
+        "planning/continuity-audit.md"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 113
+    },
+    {
+      "item_id": "item-mb-refutes-ch9-scope",
+      "members": [
+        "mb-refutes-ch9-scope"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/results.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [
+        "item-mb-ch09-result"
+      ],
+      "temporal_note": "",
+      "tokens": 70
+    },
+    {
+      "item_id": "item-mb-ch06-result",
+      "members": [
+        "mb-ch06-result"
+      ],
+      "source_refs": [
+        "content/books/memory/06-chapter.md",
+        "experiments/benchmark/runs/ch6-20260919-nexus"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 79
+    },
+    {
+      "item_id": "item-mb-ch08-result",
+      "members": [
+        "mb-ch08-result"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch8-20260919T234350Z-temporal/metrics.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch8",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 102
+    },
+    {
+      "item_id": "item-mb-ch07-result",
+      "members": [
+        "mb-ch07-result"
+      ],
+      "source_refs": [
+        "content/books/memory/07-chapter.md",
+        "experiments/benchmark/runs/ch7-20260919-e7"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch7",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 83
+    },
+    {
+      "item_id": "item-mb-arch-q6-open",
+      "members": [
+        "mb-arch-q6-open"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 107
+    },
+    {
+      "item_id": "item-mb-arch-spine",
+      "members": [
+        "mb-arch-spine"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.spine",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-mb-arch-definition",
+      "members": [
+        "mb-arch-definition"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md",
+        "content/books/memory/01-chapter.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.definition",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 67
+    },
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn",
+        "mb-echo-baseline-4",
+        "mb-echo-baseline-3",
+        "mb-echo-baseline-1"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md",
+        "planning/continuity-audit.md",
+        "planning/chapter-04-graphrag-research.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-method-baseline-rule",
+      "members": [
+        "mb-method-baseline-rule"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.baseline-ladder",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 97
+    },
+    {
+      "item_id": "item-mb-method-evidence-discipline",
+      "members": [
+        "mb-method-evidence-discipline"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.evidence-discipline",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 75
+    },
+    {
+      "item_id": "item-mb-session-pivot",
+      "members": [
+        "mb-session-pivot"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.pivot",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

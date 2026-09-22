@@ -1,0 +1,12 @@
+{
+  "suite": "e9-suite-v0.1",
+  "frozen_at": "20260920T000629Z",
+  "code_commit": "8887414",
+  "event_schema_version": "temporal-event-v0.1",
+  "expectation_schema_version": "open-loop-expectation-v0.1",
+  "resolver_version": "open-loop-resolver-v0.1",
+  "fixture_version": "e9-fixture-v0.1",
+  "temporal_memory": "temporal-event-v0.1 / temporal-reducer-v0.1",
+  "instrument_version": "benchmark-v0.1",
+  "event_log_hash": "aba9b61a9447f4ff"
+}

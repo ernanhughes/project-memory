@@ -1,0 +1,44 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "The June ingestion stall exposed fundamental limitations in SQLite\u2019s architecture, particularly under high write loads, and served as the primary catalyst for the architectural shift to PostgreSQL.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 64254.826199961826,
+  "cited_ids": [
+    "Data: Reports (5)",
+    "Data: Reports (1, 5)",
+    "Data: Reports (1, 4)",
+    "adr-007.md"
+  ],
+  "context_tokens": 1323,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 3,
+  "latency_ms": 72735.17350002658,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.3333333333333333,
+    "source_recall": 0.5,
+    "unsupported_source_rate": 0.75
+  },
+  "model_calls": 7,
+  "notes": "linked=3 implicated=3",
+  "query_id": "q-rel-trace",
+  "reader_latency_ms": 8480.165200016927,
+  "retrieved_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ]
+}

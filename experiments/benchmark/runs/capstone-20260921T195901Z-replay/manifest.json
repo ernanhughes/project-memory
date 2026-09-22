@@ -1,0 +1,38 @@
+{
+ "experiment": "capstone-integrated-v1",
+ "created_at": "20260921T195901Z",
+ "code_commit": "151204d6088766dc9b2ad81314a6be985abebff0",
+ "dirty_fingerprint": "6aca84f3e6d7b005",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "grader": "behavior-grader-v2",
+ "prompt": "behavior-prompt-v2",
+ "task_set_version": "behavior-tasks-v1",
+ "real_corpus_version": "real-transfer-v1@4797720",
+ "conditions": [
+  "C0",
+  "C1",
+  "C1P",
+  "C2",
+  "C3",
+  "C4",
+  "CO",
+  "BA",
+  "BR",
+  "BT",
+  "BW",
+  "BS"
+ ],
+ "budgets": {
+  "controlled": 1500,
+  "assembled": 768
+ },
+ "source_runs": {
+  "ch12": "ch12-20260920T204414Z-behavior",
+  "ch10": "ch10-20260920T163314Z-context-frames",
+  "ch14": "ch14-20260920T174259Z-context-assembly",
+  "token_control_llama": "ch12-token-control-20260921T002019Z-llama",
+  "token_control_muse": "ch12-token-control-20260921T003600Z-muse"
+ },
+ "decoding": "temperature 0 (frozen replay); live runs record seed",
+ "manifest_id": "20c668d09bc6dd6e"
+}

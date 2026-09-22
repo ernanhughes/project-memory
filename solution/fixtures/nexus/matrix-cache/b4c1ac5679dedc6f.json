@@ -1,0 +1,40 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "The project underwent significant architectural shifts primarily driven by performance bottlenecks and scalability concerns, particularly around the event store component. The major changes include the migration from SQLite to PostgreSQL, the rejection of Redis for lookup caching, and the deprecation of outdated documentation.",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 41435.55410002591,
+  "cited_ids": [
+    "Data: Sources (19)",
+    "Data: Sources (10)",
+    "Data: Sources (11)",
+    "Data: Sources (16)",
+    "adr-007.md",
+    "Data: Sources (8)",
+    "adr-009.md",
+    "Data: Sources (1)",
+    "Data: Sources (18)",
+    "Data: Sources (17)"
+  ],
+  "context_tokens": 1078,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 50055.3280999884,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.8
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-global-themes",
+  "reader_latency_ms": 8619.600499980152,
+  "retrieved_ids": []
+}

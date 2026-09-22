@@ -1,0 +1,36 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "The project underwent three major architectural changes: 1) migration from SQLite to PostgreSQL as the primary database backend, 2) rejection of Redis as a lookup cache, and 3) iterative replacement of the SQLite prototype with PostgreSQL.",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 54746.71809998108,
+  "cited_ids": [
+    "adr-007.md",
+    "EVT-205",
+    "Data: Reports (5, +more)",
+    "EVT-204",
+    "EVT-201",
+    "session-040.md"
+  ],
+  "context_tokens": 957,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 63624.26870001946,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.6666666666666666
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-global-themes",
+  "reader_latency_ms": 8877.394500013907,
+  "retrieved_ids": []
+}

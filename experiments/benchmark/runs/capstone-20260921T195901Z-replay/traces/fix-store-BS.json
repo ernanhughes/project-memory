@@ -1,0 +1,46 @@
+{
+ "task_id": "fix-store",
+ "condition": "BS",
+ "bcode": "BS",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "frozen-render-mixed"
+ ],
+ "derived_consulted": [
+  "frozen:BS:fc0d30cf087e0eab"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "frozen-render-mixed",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "frozen-render-mixed",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "frozen-render-mixed"
+ ],
+ "rejected": [],
+ "context_tokens": 1056,
+ "context_hash": "fc0d30cf087e0eab",
+ "reader_output": {
+  "task_score": 0.3333,
+  "frozen": true
+ },
+ "behavioural_score": 0.3333,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

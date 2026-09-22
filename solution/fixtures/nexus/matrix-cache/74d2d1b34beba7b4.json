@@ -1,0 +1,43 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md"
+  ],
+  "answer": "Session 014",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.513399977236986,
+  "cited_ids": [
+    "session-014.md"
+  ],
+  "context_tokens": 623,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 7,
+  "latency_ms": 5950.021600001492,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.5,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=7 stopped=hop-budget",
+  "query_id": "q1-locate-eventstore",
+  "reader_latency_ms": 5946.310000028461,
+  "retrieved_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "stale-summary.md",
+    "session-014.md",
+    "session-019.md",
+    "adr-009.md"
+  ]
+}

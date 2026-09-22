@@ -1,0 +1,98 @@
+{
+  "suite": "SR-1 strong-reader transfer",
+  "source": "ch12-20260920T204414Z-behavior",
+  "run_id": "sr1-ch12-20260920T230129Z-muse",
+  "created_at": "20260920T230558Z",
+  "behavior_schema_version": "behavior-task-v1",
+  "grader_version": "behavior-grader-v2",
+  "fixture_version": "behavior-fixtures-v1",
+  "prompt_version": "behavior-prompt-v2",
+  "benchmark_contract": "benchmark-v0.1 plus diagnostic behavioural dimensions (no contract change; see spec/ch9-14-issues.md item 5 note)",
+  "reader": "opencode:muse-spark-1.3-contributor@t0",
+  "reader_provider": "opencode-zen-go",
+  "reader_model": "muse-spark-1.3-contributor",
+  "reader_backend": "opencode-responses (opencode.ai)",
+  "reasoning_effort": "low",
+  "temperature": 0.0,
+  "max_output_tokens": 2048,
+  "output_retry": "once at 2x on empty output",
+  "session_id": "memory-sr1-ch12-20260920T230129Z-muse",
+  "conditions_run": [
+    "B0",
+    "B1",
+    "B1P",
+    "B2",
+    "B3",
+    "B4",
+    "BA",
+    "BO",
+    "BR",
+    "BS",
+    "BW"
+  ],
+  "ch10_source_run": "ch10-20260920T163314Z-context-frames",
+  "ch11_source_run": "ch11-20260920T171039Z-derived-loops",
+  "ch14_source_run": "ch14-20260920T174259Z-context-assembly",
+  "token_estimator": "chars//4 (estimated tokens)",
+  "code_commit": "bfbfb60",
+  "reader_cache_calls": 0,
+  "reader_cache_hits": 70,
+  "muse_usage_totals": {
+    "input_tokens": 146776,
+    "cached_input_tokens": 17477,
+    "output_tokens": 60971,
+    "reasoning_tokens": 51471,
+    "total_tokens": 207747,
+    "calls": 77,
+    "attempts_recorded": 24,
+    "attempts_note": "per-call attempts kept for 23 pass-1 records; 54 records rebuilt from cache (each >=1 attempt)"
+  },
+  "cost": "not computed",
+  "passes": [
+    {
+      "pass": 1,
+      "conditions": [
+        "B2",
+        "B3",
+        "B4",
+        "BO"
+      ],
+      "repeats": false,
+      "run_dir": "sr1-ch12-pass1-core",
+      "note": "core ladder; 23 live calls, 17 resumed pilot-cache hits"
+    },
+    {
+      "pass": 2,
+      "conditions": [
+        "BA",
+        "BR",
+        "BW",
+        "B1",
+        "B1P",
+        "BS"
+      ],
+      "repeats": false,
+      "note": "interventions + full-history/scrambled; 31 live calls, 5 exact-prompt cache hits, B0 rows resumed"
+    },
+    {
+      "pass": 3,
+      "conditions": [
+        "B4"
+      ],
+      "repeats": true,
+      "tasks": [
+        "fix-store",
+        "ship-ch10",
+        "corpus-cleanup"
+      ],
+      "note": "canonical B4 repeats (rep1/rep2) on repeat tasks; 6 calls"
+    },
+    {
+      "pass": 4,
+      "conditions": "full ladder",
+      "repeats": true,
+      "note": "rebuild merged artifact from cache; 0 live calls"
+    }
+  ],
+  "assembly_note": "model calls generated under bfbfb60; muse_calls.jsonl append behavior + backfill assembled after; no change to prompts, parser, grader, or request config"
+}

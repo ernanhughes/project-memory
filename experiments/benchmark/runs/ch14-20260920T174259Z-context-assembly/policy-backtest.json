@@ -1,0 +1,13 @@
+{
+  "candidate": "v2-drop-refutes-first",
+  "rationale": "treat contradiction as ordinary budget weight (repair for a crowding dissent)",
+  "base_required_recall": 0.5758,
+  "candidate_required_recall": 0.6061,
+  "base_tokens": 452.7,
+  "candidate_tokens": 443.5,
+  "token_delta": -9.2,
+  "breaches": [
+    "contradiction_preservation: 1.0 -> 0.1429"
+  ],
+  "promoted": false
+}

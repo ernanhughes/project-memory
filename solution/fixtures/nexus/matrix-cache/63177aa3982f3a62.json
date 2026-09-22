@@ -1,0 +1,39 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 55289.58760004025,
+  "cited_ids": [
+    "Data: Sources (0, +more)",
+    "Data: Sources (2, +more)",
+    "Data: Sources (10, +more)",
+    "Data: Sources (11, +more)",
+    "Data: Sources (14, +more)",
+    "Data: Sources (15, +more)",
+    "Data: Sources (19, +more)"
+  ],
+  "context_tokens": 620,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 75991.42390000634,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "current_state_accuracy": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q4-production-now",
+  "reader_latency_ms": 20701.66329998756,
+  "retrieved_ids": []
+}

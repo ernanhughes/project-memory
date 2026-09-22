@@ -1,0 +1,2240 @@
+{
+  "T1-architecture": {
+    "task_id": "T1-architecture",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1500
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch09-result",
+        "reason": "DROP_BUDGET tier=2 saving=113 covered_by=mb-refutes-ch9-scope",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch08-result"
+        ],
+        "dropped": [
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine"
+        ],
+        "spent": 1232
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1053,
+        "budget_after": 964,
+        "tokens": 89,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 964,
+        "budget_after": 889,
+        "tokens": 75,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 889,
+        "budget_after": 792,
+        "tokens": 97,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-strength",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 792,
+        "budget_after": 678,
+        "tokens": 114,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-admission-note",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 678,
+        "budget_after": 594,
+        "tokens": 84,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 594,
+        "budget_after": 469,
+        "tokens": 125,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 469,
+        "budget_after": 387,
+        "tokens": 82,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-failure-classes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 387,
+        "budget_after": 319,
+        "tokens": 68,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-frozen-run",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 319,
+        "budget_after": 229,
+        "tokens": 90,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 229,
+        "budget_after": 150,
+        "tokens": 79,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1210,
+        "tokens": 70,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch08-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 150,
+        "budget_after": 48,
+        "tokens": 102,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1210,
+        "budget_after": 1103,
+        "tokens": 107,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1103,
+        "budget_after": 1053,
+        "tokens": 50,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.3314000005048001,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T1-publication": {
+    "task_id": "T1-publication",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ],
+        "bundle_tokens": 1085
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-ch10-experiment-pending",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap",
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2"
+        ],
+        "dropped": [],
+        "spent": 1085
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-ch09-handoff",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1094,
+        "budget_after": 1017,
+        "tokens": 77,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-priority-refusal",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1017,
+        "budget_after": 943,
+        "tokens": 74,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch11-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 943,
+        "budget_after": 866,
+        "tokens": 77,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1192,
+        "tokens": 88,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-prose-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 866,
+        "budget_after": 747,
+        "tokens": 119,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-prose-schema",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 747,
+        "budget_after": 644,
+        "tokens": 103,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-concepts",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 644,
+        "budget_after": 558,
+        "tokens": 86,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-refs",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 558,
+        "budget_after": 473,
+        "tokens": 85,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-frontmatter",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 473,
+        "budget_after": 390,
+        "tokens": 83,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-citations",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 390,
+        "budget_after": 312,
+        "tokens": 78,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-build",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 312,
+        "budget_after": 256,
+        "tokens": 56,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-echo-baseline-1",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 256,
+        "budget_after": 222,
+        "tokens": 34,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-echo-baseline-2",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 222,
+        "budget_after": 195,
+        "tokens": 27,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1192,
+        "budget_after": 1142,
+        "tokens": 50,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-loop-ch11-recap",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1142,
+        "budget_after": 1094,
+        "tokens": 48,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.33119999989139615,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-cocoder": {
+    "task_id": "T2-cocoder",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "cc-context-window",
+          "cc-memory-notes",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-evidence-refs"
+        ],
+        "bundle_tokens": 233
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "cc-context-window",
+          "cc-memory-notes",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-evidence-refs"
+        ],
+        "dropped": [],
+        "spent": 233
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "cc-context-window",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1223,
+        "tokens": 57,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "cc-memory-notes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1223,
+        "budget_after": 1181,
+        "tokens": 42,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "cc-improve-context",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1181,
+        "budget_after": 1140,
+        "tokens": 41,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "cc-eval-harness",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1140,
+        "budget_after": 1094,
+        "tokens": 46,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "cc-evidence-refs",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1094,
+        "budget_after": 1047,
+        "tokens": 47,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.28219999967404874,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-memory-book": {
+    "task_id": "T2-memory-book",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-graphrag",
+          "mb-impl-zeromq",
+          "mb-impl-postgres",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1315
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-contract-failure-classes",
+        "reason": "DROP_BUDGET tier=1 saving=68 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-impl-graphrag",
+          "mb-impl-zeromq",
+          "mb-impl-postgres",
+          "mb-ch06-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-echo-baseline-1"
+        ],
+        "dropped": [
+          "mb-contract-failure-classes"
+        ],
+        "spent": 1247
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-impl-graphrag",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1103,
+        "budget_after": 1040,
+        "tokens": 63,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-impl-zeromq",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1040,
+        "budget_after": 969,
+        "tokens": 71,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-impl-postgres",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 969,
+        "budget_after": 900,
+        "tokens": 69,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 900,
+        "budget_after": 821,
+        "tokens": 79,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1210,
+        "tokens": 70,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch04-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 821,
+        "budget_after": 750,
+        "tokens": 71,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1210,
+        "budget_after": 1103,
+        "tokens": 107,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-spine",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 750,
+        "budget_after": 666,
+        "tokens": 84,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-definition",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 666,
+        "budget_after": 599,
+        "tokens": 67,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-layers",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 599,
+        "budget_after": 499,
+        "tokens": 100,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 499,
+        "budget_after": 402,
+        "tokens": 97,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 402,
+        "budget_after": 313,
+        "tokens": 89,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 313,
+        "budget_after": 238,
+        "tokens": 75,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-research-context-engineering",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 238,
+        "budget_after": 151,
+        "tokens": 87,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-admission-note",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 151,
+        "budget_after": 67,
+        "tokens": 84,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-echo-baseline-1",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 67,
+        "budget_after": 33,
+        "tokens": 34,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.3259999994043028,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-writer": {
+    "task_id": "T2-writer",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "wr-context-runtime",
+          "wr-memory-store",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "bundle_tokens": 255
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "wr-context-runtime",
+          "wr-memory-store",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "dropped": [],
+        "spent": 255
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "wr-context-runtime",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1214,
+        "tokens": 66,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "wr-memory-store",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1214,
+        "budget_after": 1175,
+        "tokens": 39,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "wr-improve-context",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1175,
+        "budget_after": 1125,
+        "tokens": 50,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "wr-rag-baseline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1125,
+        "budget_after": 1081,
+        "tokens": 44,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "wr-retrieval-eval",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1081,
+        "budget_after": 1025,
+        "tokens": 56,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.2678000000742031,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T3-goal-switch": {
+    "task_id": "T3-goal-switch",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch07-result",
+          "mb-ch09-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch06-result",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition"
+        ],
+        "bundle_tokens": 1498
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch07-result",
+          "mb-ch09-result",
+          "mb-ch06-result"
+        ],
+        "dropped": [
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-definition"
+        ],
+        "spent": 1276
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1103,
+        "budget_after": 1014,
+        "tokens": 89,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1014,
+        "budget_after": 917,
+        "tokens": 97,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 917,
+        "budget_after": 842,
+        "tokens": 75,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-strength",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 842,
+        "budget_after": 728,
+        "tokens": 114,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-admission-note",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 728,
+        "budget_after": 644,
+        "tokens": 84,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 644,
+        "budget_after": 519,
+        "tokens": 125,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 519,
+        "budget_after": 437,
+        "tokens": 82,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-failure-classes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 437,
+        "budget_after": 369,
+        "tokens": 68,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-frozen-run",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 369,
+        "budget_after": 279,
+        "tokens": 90,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch07-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 279,
+        "budget_after": 196,
+        "tokens": 83,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch09-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 196,
+        "budget_after": 83,
+        "tokens": 113,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1210,
+        "tokens": 70,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 83,
+        "budget_after": 4,
+        "tokens": 79,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1210,
+        "budget_after": 1103,
+        "tokens": 107,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.3129999995508115,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T4-current-vs-stale": {
+    "task_id": "T4-current-vs-stale",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch09-result",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-session-pivot",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1396
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-session-pivot",
+        "reason": "DROP_BUDGET tier=1 saving=63 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-echo-baseline-3",
+        "reason": "DROP_BUDGET tier=1 saving=29 covered_by=mb-method-earn",
+        "tier": 1
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-echo-baseline-1",
+        "reason": "DROP_BUDGET tier=1 saving=34 covered_by=mb-method-earn",
+        "tier": 1
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch09-result",
+          "mb-ch06-result",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1"
+        ],
+        "dropped": [
+          "mb-session-pivot",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ],
+        "spent": 1270
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-impl-postgres",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1103,
+        "budget_after": 1034,
+        "tokens": 69,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-impl-zeromq",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1034,
+        "budget_after": 963,
+        "tokens": 71,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-impl-test-paths",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 963,
+        "budget_after": 911,
+        "tokens": 52,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-impl-graphrag",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 911,
+        "budget_after": 848,
+        "tokens": 63,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch09-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 848,
+        "budget_after": 735,
+        "tokens": 113,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 735,
+        "budget_after": 656,
+        "tokens": 79,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1210,
+        "tokens": 70,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch08-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 656,
+        "budget_after": 554,
+        "tokens": 102,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch07-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 554,
+        "budget_after": 471,
+        "tokens": 83,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1210,
+        "budget_after": 1103,
+        "tokens": 107,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-spine",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 471,
+        "budget_after": 387,
+        "tokens": 84,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-definition",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 387,
+        "budget_after": 320,
+        "tokens": 67,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 320,
+        "budget_after": 231,
+        "tokens": 89,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 231,
+        "budget_after": 134,
+        "tokens": 97,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 134,
+        "budget_after": 59,
+        "tokens": 75,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-echo-baseline-4",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 59,
+        "budget_after": 36,
+        "tokens": 23,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-echo-ch9-result-1",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 36,
+        "budget_after": 10,
+        "tokens": 26,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.3480000004856265,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T5-support-vs-topicality": {
+    "task_id": "T5-support-vs-topicality",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1476
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-ch04-result",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-layers",
+        "reason": "DROP_BUDGET tier=2 saving=100 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-loop-ch10-experiment",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-ch08-result"
+        ],
+        "dropped": [
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers"
+        ],
+        "spent": 1238
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1160,
+        "budget_after": 1063,
+        "tokens": 97,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1063,
+        "budget_after": 974,
+        "tokens": 89,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 974,
+        "budget_after": 899,
+        "tokens": 75,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 899,
+        "budget_after": 774,
+        "tokens": 125,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-strength",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 774,
+        "budget_after": 660,
+        "tokens": 114,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-admission-note",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 660,
+        "budget_after": 576,
+        "tokens": 84,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-failure-classes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 576,
+        "budget_after": 508,
+        "tokens": 68,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 508,
+        "budget_after": 426,
+        "tokens": 82,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-frozen-run",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 426,
+        "budget_after": 336,
+        "tokens": 90,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 336,
+        "budget_after": 257,
+        "tokens": 79,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch09-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 257,
+        "budget_after": 144,
+        "tokens": 113,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch08-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 144,
+        "budget_after": 42,
+        "tokens": 102,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1210,
+        "tokens": 70,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1210,
+        "budget_after": 1160,
+        "tokens": 50,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.3254999992350349,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T6-echo-coalescing": {
+    "task_id": "T6-echo-coalescing",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-contract-failure-classes",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine"
+        ],
+        "bundle_tokens": 1485
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-definition",
+        "reason": "DROP_BUDGET tier=2 saving=67 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-layers",
+        "reason": "DROP_BUDGET tier=2 saving=100 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-arch-spine",
+        "reason": "DROP_BUDGET tier=2 saving=84 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-contract-failure-classes",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-ch04-result"
+        ],
+        "dropped": [
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-spine"
+        ],
+        "spent": 1234
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1103,
+        "budget_after": 1014,
+        "tokens": 89,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1014,
+        "budget_after": 917,
+        "tokens": 97,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 917,
+        "budget_after": 842,
+        "tokens": 75,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-strength",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 842,
+        "budget_after": 728,
+        "tokens": 114,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-admission-note",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 728,
+        "budget_after": 644,
+        "tokens": 84,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 644,
+        "budget_after": 519,
+        "tokens": 125,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 519,
+        "budget_after": 437,
+        "tokens": 82,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-frozen-run",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 437,
+        "budget_after": 347,
+        "tokens": 90,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-contract-failure-classes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 347,
+        "budget_after": 279,
+        "tokens": 68,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 279,
+        "budget_after": 200,
+        "tokens": 79,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch07-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 200,
+        "budget_after": 117,
+        "tokens": 83,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1210,
+        "tokens": 70,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch04-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 117,
+        "budget_after": 46,
+        "tokens": 71,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1210,
+        "budget_after": 1103,
+        "tokens": 107,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.3328000002511544,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-publication": {
+    "task_id": "T7-publication",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-arch-q6-open",
+          "mb-session-pivot",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1183
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-ch10-experiment-pending",
+          "mb-arch-q6-open",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-session-pivot",
+          "mb-research-deontic"
+        ],
+        "dropped": [],
+        "spent": 1183
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-ch09-handoff",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1085,
+        "budget_after": 1008,
+        "tokens": 77,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch11-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1008,
+        "budget_after": 931,
+        "tokens": 77,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-priority-refusal",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 931,
+        "budget_after": 857,
+        "tokens": 74,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-prose-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 857,
+        "budget_after": 738,
+        "tokens": 119,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-prose-schema",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 738,
+        "budget_after": 635,
+        "tokens": 103,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1192,
+        "tokens": 88,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-concepts",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 635,
+        "budget_after": 549,
+        "tokens": 86,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-refs",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 549,
+        "budget_after": 464,
+        "tokens": 85,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-conventions",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 464,
+        "budget_after": 398,
+        "tokens": 66,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-frontmatter",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 398,
+        "budget_after": 315,
+        "tokens": 83,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-build",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 315,
+        "budget_after": 259,
+        "tokens": 56,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-echo-baseline-1",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 259,
+        "budget_after": 225,
+        "tokens": 34,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-echo-baseline-2",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 225,
+        "budget_after": 198,
+        "tokens": 27,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1192,
+        "budget_after": 1085,
+        "tokens": 107,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-session-pivot",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 198,
+        "budget_after": 135,
+        "tokens": 63,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-research-deontic",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 135,
+        "budget_after": 97,
+        "tokens": 38,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.3440000000409782,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-release": {
+    "task_id": "T7-release",
+    "condition": "A5-drop",
+    "budget": 1280,
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-arch-q6-open",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1488
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-impl-zeromq",
+        "reason": "DROP_BUDGET tier=2 saving=71 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-impl-graphrag",
+        "reason": "DROP_BUDGET tier=2 saving=63 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-impl-postgres",
+        "reason": "DROP_BUDGET tier=2 saving=69 covered_by=none",
+        "tier": 2
+      },
+      {
+        "operation": "drop-one",
+        "unit_id": "mb-research-deontic",
+        "reason": "DROP_BUDGET tier=1 saving=38 covered_by=none",
+        "tier": 1
+      },
+      {
+        "operation": "drop",
+        "policy": "drop-preference-outside-first-v1",
+        "budget": 1280,
+        "kept": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal"
+        ],
+        "dropped": [
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-research-deontic"
+        ],
+        "spent": 1247
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-loop-real-corpus",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1280,
+        "budget_after": 1225,
+        "tokens": 55,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-loop-ch11-recap",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1225,
+        "budget_after": 1177,
+        "tokens": 48,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1177,
+        "budget_after": 1127,
+        "tokens": 50,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-build",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 950,
+        "budget_after": 894,
+        "tokens": 56,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-frontmatter",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 894,
+        "budget_after": 811,
+        "tokens": 83,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-citations",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 811,
+        "budget_after": 733,
+        "tokens": 78,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-style-conventions",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 733,
+        "budget_after": 667,
+        "tokens": 66,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch09-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 667,
+        "budget_after": 554,
+        "tokens": 113,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch04-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 554,
+        "budget_after": 483,
+        "tokens": 71,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1127,
+        "budget_after": 1057,
+        "tokens": 70,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch09-handoff",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 483,
+        "budget_after": 406,
+        "tokens": 77,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch11-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 406,
+        "budget_after": 329,
+        "tokens": 77,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-prose-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 329,
+        "budget_after": 210,
+        "tokens": 119,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-prose-schema",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 210,
+        "budget_after": 107,
+        "tokens": 103,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-ch10-priority-refusal",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 107,
+        "budget_after": 33,
+        "tokens": 74,
+        "represents": [],
+        "marks": []
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": 1057,
+        "budget_after": 950,
+        "tokens": 107,
+        "represents": [],
+        "marks": []
+      }
+    ],
+    "latency_ms": 0.33460000031482195,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  }
+}

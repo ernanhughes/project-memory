@@ -1,0 +1,233 @@
+{
+  "time_lock_commit": "4797720",
+  "standpoint": "2026-09-20T12:00:00Z",
+  "reader": "llama3.1:8b@t0",
+  "tasks": {
+    "rt-runs": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "ch10": false,
+            "ch11": false,
+            "ch14": false,
+            "ch11_canonical": ""
+          }
+        ],
+        "answer": "Since no project evidence has been supplied, I must say that I don't have enough information to answer the question.\n\nHowever, I can provide a response with empty values, indicating that I don't have any evidence to rely on.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"ch10\": false, \"ch11\": false, \"ch14\": false, \"ch11_canonical\": \"\"}]}\n```",
+        "expected": {
+          "ch10": true,
+          "ch11": true,
+          "ch14": true,
+          "ch11_canonical": "ch11-20260920T171039Z"
+        },
+        "field_scores": {
+          "ch10": 0.0,
+          "ch11": 0.0,
+          "ch14": 0.0,
+          "ch11_canonical": 1.0
+        },
+        "task_score": 0.25
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "ch10": true,
+            "ch11": true,
+            "ch14": false,
+            "ch11_canonical": "ch11-20260920T171039Z-derived-loops"
+          }
+        ],
+        "answer": "Based on the project evidence, Chapters 10 and 11 have canonical frozen runs, but Chapter 14 does not. The canonical Chapter 11 run ID is \"ch11-20260920T171039Z-derived-loops\".\n\nRationale: The evidence states that Chapter 10 has a \"redirected and run\" status, which implies that it has a frozen run. Chapter 11 has a \"rebuilt and run\" status, and it is explicitly stated that \"ch11-20260920T171039Z-derived-loops\" is the canonical run. Chapter 14 has a \"built and run\" status, but it is not mentioned as having a canonical run.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"ch10\": true, \"ch11\": true, \"ch14\": false, \"ch11_canonical\": \"ch11-20260920T171039Z-derived-loops\"}]}\n```",
+        "expected": {
+          "ch10": true,
+          "ch11": true,
+          "ch14": true,
+          "ch11_canonical": "ch11-20260920T171039Z"
+        },
+        "field_scores": {
+          "ch10": 1.0,
+          "ch11": 1.0,
+          "ch14": 0.0,
+          "ch11_canonical": 1.0
+        },
+        "task_score": 0.75
+      }
+    },
+    "rt-gap": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [],
+        "answer": "Since no project evidence has been supplied, I must say that I don't have enough information to answer the question.\n\nHowever, I can still provide a response with a brief rationale and an empty \"actions\" list, as per the instructions.\n\nRationale: No project evidence is available to determine the fair-oracle gap reported in Chapter 14.\n\n```json\n{\"actions\": []}\n```",
+        "expected": {
+          "oracle_tokens": 696,
+          "practical_tokens": 1156
+        },
+        "field_scores": {
+          "oracle_tokens": 0.0,
+          "practical_tokens": 0.0
+        },
+        "task_score": 0.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_RESULT",
+            "oracle_tokens": 696,
+            "practical_tokens": 1156
+          }
+        ],
+        "answer": "The fair-oracle gap reported in Chapter 14 is 696 versus 1156, in counted tokens.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_RESULT\", \"oracle_tokens\": 696, \"practical_tokens\": 1156}]}\n```",
+        "expected": {
+          "oracle_tokens": 696,
+          "practical_tokens": 1156
+        },
+        "field_scores": {
+          "oracle_tokens": 1.0,
+          "practical_tokens": 1.0
+        },
+        "task_score": 1.0
+      }
+    },
+    "rt-promote": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REJECT_PROPOSAL",
+            "name": "drop-policy revision",
+            "reason": "insufficient evidence"
+          },
+          {
+            "action_type": "ADOPT_MECHANISM",
+            "name": "drop-policy revision",
+            "reason": "potential benefits outweighed by contradiction preservation loss"
+          },
+          {
+            "action_type": "REJECT_MECHANISM",
+            "name": "drop-policy revision",
+            "reason": "contradiction preservation loss outweighs potential benefits"
+          }
+        ],
+        "answer": "Since no project evidence is supplied, I must say that the answer to the repository question is \"I don't know\" because there is no information to base a decision on.\n\nHowever, I can still provide a brief rationale and a list of possible actions, but with no specific values filled in.\n\nRationale: Without any evidence, it's impossible to determine the impact of the drop-policy revision on the project's goals and objectives.\n\nPossible actions:\n\n```json\n{\n  \"actions\": [\n    {\"action_type\": \"REJECT_PROPOSAL\", \"name\": \"drop-policy revision\", \"reason\": \"insufficient evidence\"},\n    {\"action_type\": \"ADOPT_MECHANISM\", \"name\": \"drop-policy revision\", \"reason\": \"potential benefits outweighed by contradiction preservation loss\"},\n    {\"action_type\": \"REJECT_MECHANISM\", \"name\": \"drop-policy revision\", \"reason\": \"contradiction preservation loss outweighs potential benefits\"}\n  ]\n}\n```",
+        "expected": {
+          "promote": false,
+          "reason": "~contradiction"
+        },
+        "field_scores": {
+          "promote": 1.0,
+          "reason": 1.0
+        },
+        "task_score": 1.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REJECT_PROPOSAL",
+            "name": "v2-drop-refutes-first",
+            "reason": "contradiction preservation fell significantly"
+          }
+        ],
+        "answer": "The proposed drop-policy revision saves 9.2 tokens and improves recall, but it also significantly reduces contradiction preservation from 1.00 to 0.14. This suggests that the revision may be effective in some aspects but has a negative impact on another important metric.\n\nGiven the evidence, I would recommend rejecting the proposal because the negative impact on contradiction preservation outweighs the benefits of improved recall and token savings.\n\n```json\n{\"actions\": [{\"action_type\": \"REJECT_PROPOSAL\", \"name\": \"v2-drop-refutes-first\", \"reason\": \"contradiction preservation fell significantly\"}]}\n```",
+        "expected": {
+          "promote": false,
+          "reason": "~contradiction"
+        },
+        "field_scores": {
+          "promote": 1.0,
+          "reason": 1.0
+        },
+        "task_score": 1.0
+      }
+    },
+    "rt-frame": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "IMPLEMENT_ABSTENTION_PATH",
+            "abstention_path": true,
+            "fallback": "default-fallback-value"
+          }
+        ],
+        "answer": "Since no project evidence is supplied, I'll rely on the task description to provide a rationale and the required JSON block.\n\nRationale: The task mentions a prose-finishing task misread as implementation review, which resulted in recall scores of 0.000. According to Chapter 10, the frame must provide a fallback or abstention path for such cases.\n\nJSON block:\n```json\n{\n  \"actions\": [\n    {\n      \"action_type\": \"IMPLEMENT_ABSTENTION_PATH\",\n      \"abstention_path\": true,\n      \"fallback\": \"default-fallback-value\"\n    }\n  ]\n}\n```\nNote that I used `IMPLEMENT_ABSTENTION_PATH` instead of `REPORT_BLOCKERS` because the task description specifically mentions the need for a fallback or abstention path, which aligns with the `IMPLEMENT_ABSTENTION_PATH` action.",
+        "expected": {
+          "abstention_path": true,
+          "fallback": "query-only"
+        },
+        "field_scores": {
+          "abstention_path": 1.0,
+          "fallback": 0.0
+        },
+        "task_score": 0.5
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "IMPLEMENT_ABSTENTION_PATH",
+            "abstention_path": true,
+            "fallback": "query-only retrieval"
+          }
+        ],
+        "answer": "The task requires implementing an abstention path in the work frame to handle cases where the work type is misassigned. This is necessary to prevent the recall from falling to 0.000.\n\n```json\n{\n  \"actions\": [\n    {\n      \"action_type\": \"IMPLEMENT_ABSTENTION_PATH\",\n      \"abstention_path\": true,\n      \"fallback\": \"query-only retrieval\"\n    }\n  ]\n}\n```\n\nI relied on the evidence identifier [content/books/memory/10-chapter.md @ 4797720] and the text within it, specifically the section discussing the need for an abstention path in the work frame.",
+        "expected": {
+          "abstention_path": true,
+          "fallback": "query-only"
+        },
+        "field_scores": {
+          "abstention_path": 1.0,
+          "fallback": 1.0
+        },
+        "task_score": 1.0
+      }
+    },
+    "rt-metric": {
+      "M0": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "precision": 0.0,
+            "recall": 0.0
+          }
+        ],
+        "answer": "Since no evidence is supplied, we cannot determine the per-task precision and recall values for the new trap-only fixture. However, we can report the blockage of the fixture as a blocker.\n\nRationale: No evidence is provided to calculate the precision and recall values.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"precision\": 0.0, \"recall\": 0.0}]}\n```",
+        "expected": {
+          "precision": null,
+          "recall": null
+        },
+        "field_scores": {
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "task_score": 0.0
+      },
+      "Mm": {
+        "parse_ok": true,
+        "actions": [
+          {
+            "action_type": "REPORT_BLOCKERS",
+            "precision": null,
+            "recall": null
+          }
+        ],
+        "answer": "The per-task precision and recall values are undefined/null for the new trap-only fixture because it has zero genuine positives and the system abstains on all of them.\n\nThe evidence from [planning/chapter-11-metric-audit.md @ 4797720] states that per-task precision is undefined/null when admitted = 0, and per-task recall is undefined/null when genuine = 0.\n\n```json\n{\"actions\": [{\"action_type\": \"REPORT_BLOCKERS\", \"precision\": null, \"recall\": null}]}\n```",
+        "expected": {
+          "precision": null,
+          "recall": null
+        },
+        "field_scores": {
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "task_score": 1.0
+      }
+    }
+  }
+}

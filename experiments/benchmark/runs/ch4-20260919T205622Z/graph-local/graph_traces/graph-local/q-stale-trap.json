@@ -1,0 +1,14 @@
+{
+  "graph_answer": "### Response\n\nThe team has **already migrated the event store from SQLite to PostgreSQL** due to performance issues under concurrent writes. The original SQLite setup was only intended as a **prototype** and was found to be unsuitable for production workloads with high write contention.\n\n#### Key Reasons for the Migration\n1. **Concurrent Write Contention**:\n   - The SQLite prototype suffered severe performance degradation under concurrent writes, with write throughput dropping by **62% at 8 writers** and **84% at 16 writers** [Data: `experiment-contention.md` (10)].\n   - This led to **write stalls and ingestion failures** during production load windows [Data: `incident-021.md` (11)].\n   - Read latency remained unaffected, but the bottleneck was clearly on writes.\n\n2. **PostgreSQL Performance**:\n   - Benchmarks showed that PostgreSQL maintained **flat throughput up to 32 writers** with a **p99 write latency of 11ms** [Data: `benchmark-note.md` (2)].\n   - While PostgreSQL has a higher operational cost (e.g., managed backups), its ability to handle concurrent writes made it the clear choice for a shared, write-heavy service.\n\n3. **Decision Record**:\n   - The team formally decided in **ADR-007** to migrate to PostgreSQL, superseding the SQLite prototype [Data: `adr-007.md` (0)].\n   - The wiki page referencing SQLite is now **stale** and should not be followed [Data: `stale-summary.md` (19)].\n\n#### Recommendation\n**Do not use the SQLite setup for the new service.** Instead, adopt the **PostgreSQL configuration** used by the event store. This ensures scalability and reliability under concurrent write loads, which was the primary failure mode of the SQLite prototype.\n\nFor further details, refer to the **ADR-007 decision record** and the **benchmark notes** linked above.",
+  "graph_latency_ms": 50142.2,
+  "implicated_sources": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "stale-summary.md"
+  ],
+  "linked_entities": [
+    "SQLITE"
+  ],
+  "mode": "local",
+  "task_id": "q-stale-trap"
+}

@@ -1,0 +1,44 @@
+{
+  "healthy": false,
+  "issues": [
+    {
+      "check": "community-reports",
+      "detail": "communities without reports: ['2'] (extraction/generation failure \u2014 see index logs)"
+    }
+  ],
+  "stats": {
+    "index_failures": 0,
+    "documents": 20,
+    "text_units": 20,
+    "entities": 39,
+    "relationships": 65,
+    "claims": 56,
+    "communities": 6,
+    "community_reports": 5,
+    "entities_without_sources": 0,
+    "relationships_without_sources": 0,
+    "claims_without_sources": 0,
+    "overall_orphan_rate": 0.0,
+    "duplicate_entities": [
+      "EVENT-STORE ~ EVENT STORE",
+      "A. NOVAK ~ A.NOVAK",
+      "M. OKAFOR ~ M.OKAFOR",
+      "EVT-201 ~ EVT-202",
+      "EVT-201 ~ EVT-203",
+      "EVT-201 ~ EVT-204",
+      "EVT-201 ~ EVT-205",
+      "EVT-202 ~ EVT-203",
+      "EVT-202 ~ EVT-204",
+      "EVT-202 ~ EVT-205",
+      "EVT-203 ~ EVT-204",
+      "EVT-203 ~ EVT-205",
+      "EVT-204 ~ EVT-205",
+      "FACT-301 ~ FACT-302",
+      "J. LINDQVIST ~ J. LINQVIST",
+      "SESSION-040 ~ SESSION-044"
+    ],
+    "communities_without_reports": [
+      "2"
+    ]
+  }
+}

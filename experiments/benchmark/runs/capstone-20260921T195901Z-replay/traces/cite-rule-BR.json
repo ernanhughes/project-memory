@@ -1,0 +1,46 @@
+{
+ "task_id": "cite-rule",
+ "condition": "BR",
+ "bcode": "BR",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "ablated+restored"
+ ],
+ "derived_consulted": [
+  "frozen:BR:ce7ea2dce2504ac6"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "ablated+restored",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "ablated+restored",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [
+  "ablated+restored"
+ ],
+ "rejected": [],
+ "context_tokens": 1075,
+ "context_hash": "ce7ea2dce2504ac6",
+ "reader_output": {
+  "task_score": 1.0,
+  "frozen": true
+ },
+ "behavioural_score": 1.0,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

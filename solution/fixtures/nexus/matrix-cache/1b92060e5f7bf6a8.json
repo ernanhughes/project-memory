@@ -1,0 +1,46 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "PostgreSQL was chosen for the event store because it demonstrated scalable throughput and acceptable latency under concurrent writes, whereas SQLite failed to perform under such conditions, causing production incidents and degraded performance.",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 34443.02050000988,
+  "cited_ids": [
+    "Sources (10)",
+    "Sources (11)",
+    "Sources (2)",
+    "adr-007.md",
+    "session-014.md",
+    "Sources (15)",
+    "Sources (19)",
+    "Sources (14)"
+  ],
+  "context_tokens": 932,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 47995.782700018026,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.75
+  },
+  "model_calls": 2,
+  "notes": "linked=1 implicated=2",
+  "query_id": "q3-why-postgres",
+  "reader_latency_ms": 13552.57729999721,
+  "retrieved_ids": [
+    "production-notes.md",
+    "stale-summary.md"
+  ]
+}

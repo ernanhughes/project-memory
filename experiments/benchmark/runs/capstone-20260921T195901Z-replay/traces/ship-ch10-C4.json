@@ -1,0 +1,52 @@
+{
+ "task_id": "ship-ch10",
+ "condition": "C4",
+ "bcode": "B4",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "frozen-render"
+ ],
+ "derived_consulted": [
+  "frozen:B4:0a40eb6d87932acd"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "frozen-render",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "frozen-render",
+   "decision": "ADMIT",
+   "reason": "provenance + validity + authority stages pass"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "DECLARED",
+  "action": "HARD"
+ },
+ "selected": [
+  "frozen-render"
+ ],
+ "rejected": [],
+ "context_tokens": 1223,
+ "context_hash": "0a40eb6d87932acd",
+ "reader_output": {
+  "task_score": 0.6667,
+  "frozen": true
+ },
+ "behavioural_score": 0.6667,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": [
+  {
+   "mechanism": "none",
+   "reason": "frozen C4 bundle needs no conditional layer on this task",
+   "effect": "strong RAG + frames + gate + assembly sufficient"
+  }
+ ]
+}

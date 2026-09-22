@@ -1,0 +1,332 @@
+{
+  "suite": "e8-suite-v0.1",
+  "config": {
+    "projection_version": "temporal-projection-v0.1",
+    "fixture_version": "e8-fixture-v0.1",
+    "standpoint": "project",
+    "zmq_ready_timeout_s": 10.0,
+    "zmq_poll_timeout_ms": 2000
+  },
+  "frozen_at": "20260919T234349Z",
+  "model_dependency": "none (ledger-deterministic-v0.1)",
+  "experiments": {
+    "E8-A": {
+      "question": "does order add information over the event set",
+      "current": {
+        "T0-bag": {
+          "value": "PostgreSQL",
+          "status": "OK",
+          "detail": "bag: majority 2/3"
+        },
+        "T1-arrival": {
+          "value": "PostgreSQL",
+          "status": "OK",
+          "detail": "arrival-recency: ch8-deploy"
+        },
+        "T1b-event-time": {
+          "value": "PostgreSQL",
+          "status": "OK",
+          "detail": "event-recency: ch8-deploy"
+        },
+        "T2-ordered": {
+          "value": "PostgreSQL",
+          "status": "OK",
+          "detail": "valid_from=2026-07-10T09:00:00Z"
+        },
+        "T3-temporal": {
+          "value": "PostgreSQL",
+          "status": "OK",
+          "detail": "valid_from=2026-07-10T09:00:00Z"
+        }
+      },
+      "historical_april": {
+        "T0-bag": {
+          "value": "PostgreSQL"
+        },
+        "T1-arrival": {
+          "value": "PostgreSQL"
+        },
+        "T1b-event-time": {
+          "value": "PostgreSQL"
+        },
+        "T2-ordered": {
+          "value": "SQLite"
+        },
+        "T3-temporal": {
+          "value": "SQLite"
+        }
+      },
+      "truth": {
+        "current": "PostgreSQL",
+        "april": "SQLite"
+      },
+      "question_id": "E8-A"
+    },
+    "E8-B": {
+      "question": "does the system change its rationale exactly when order changes meaning",
+      "canonical_motivated_admissible": true,
+      "canonical_note": "evidence precedes decision: admissible antecedent",
+      "permuted_motivated_admissible": false,
+      "permuted_note": "evidence is later than the decision: cannot have motivated it; corroboration only",
+      "expected": {
+        "canonical": true,
+        "permuted": false
+      },
+      "pass": true,
+      "current_by_condition": {
+        "canonical": {
+          "T0-bag": "PostgreSQL",
+          "T1-arrival": "PostgreSQL",
+          "T1b-event-time": "PostgreSQL",
+          "T2-ordered": "PostgreSQL",
+          "T3-temporal": "PostgreSQL"
+        },
+        "permuted": {
+          "T0-bag": "PostgreSQL",
+          "T1-arrival": "PostgreSQL",
+          "T1b-event-time": "PostgreSQL",
+          "T2-ordered": "PostgreSQL",
+          "T3-temporal": "PostgreSQL"
+        }
+      },
+      "question_id": "E8-B"
+    },
+    "E8-C": {
+      "question": "invariance where order should not matter",
+      "rows": {
+        "event-store.backend": {
+          "base": {
+            "T0-bag": "PostgreSQL",
+            "T1-arrival": "PostgreSQL",
+            "T1b-event-time": "PostgreSQL",
+            "T2-ordered": "PostgreSQL",
+            "T3-temporal": "PostgreSQL"
+          },
+          "swapped": {
+            "T0-bag": "PostgreSQL",
+            "T1-arrival": "PostgreSQL",
+            "T1b-event-time": "PostgreSQL",
+            "T2-ordered": "PostgreSQL",
+            "T3-temporal": "PostgreSQL"
+          },
+          "stable": {
+            "T0-bag": true,
+            "T1-arrival": true,
+            "T1b-event-time": true,
+            "T2-ordered": true,
+            "T3-temporal": true
+          }
+        },
+        "docs.readme": {
+          "base": {
+            "T0-bag": null,
+            "T1-arrival": "updated",
+            "T1b-event-time": "updated",
+            "T2-ordered": null,
+            "T3-temporal": null
+          },
+          "swapped": {
+            "T0-bag": null,
+            "T1-arrival": "updated",
+            "T1b-event-time": "updated",
+            "T2-ordered": null,
+            "T3-temporal": null
+          },
+          "stable": {
+            "T0-bag": true,
+            "T1-arrival": true,
+            "T1b-event-time": true,
+            "T2-ordered": true,
+            "T3-temporal": true
+          }
+        },
+        "frontend.css": {
+          "base": {
+            "T0-bag": null,
+            "T1-arrival": "fixed",
+            "T1b-event-time": "fixed",
+            "T2-ordered": null,
+            "T3-temporal": null
+          },
+          "swapped": {
+            "T0-bag": null,
+            "T1-arrival": "fixed",
+            "T1b-event-time": "fixed",
+            "T2-ordered": null,
+            "T3-temporal": null
+          },
+          "stable": {
+            "T0-bag": true,
+            "T1-arrival": true,
+            "T1b-event-time": true,
+            "T2-ordered": true,
+            "T3-temporal": true
+          }
+        }
+      },
+      "pass": true,
+      "question_id": "E8-C"
+    },
+    "E8-D": {
+      "question": "transport order is an observation; temporal order is the model",
+      "semantic_order": [
+        "ch8-benchmark",
+        "ch8-decision",
+        "ch8-deploy"
+      ],
+      "arrival_order": [
+        "ch8-deploy",
+        "ch8-benchmark",
+        "ch8-decision"
+      ],
+      "resolved_temporal_order": [
+        "ch8-benchmark",
+        "ch8-decision",
+        "ch8-deploy"
+      ],
+      "arrival_resolver": {
+        "value": "PostgreSQL",
+        "status": "OK"
+      },
+      "temporal_resolver": {
+        "value": "PostgreSQL",
+        "status": "OK",
+        "detail": "valid_from=2026-07-10T09:00:00Z"
+      },
+      "transport_mode": "emulated-disorder",
+      "question_id": "E8-D"
+    },
+    "E8-E": {
+      "question": "what was true vs what was known",
+      "true_july20_known_aug10": {
+        "value": "PostgreSQL",
+        "detail": "as of ch8-deploy eff=2026-07-10T09:00:00+00:00"
+      },
+      "known_july20": {
+        "value": "SQLite",
+        "detail": "as of ch8-decision eff=2026-07-10T09:00:00+00:00"
+      },
+      "truth": {
+        "actual": "PostgreSQL",
+        "believed_at_time": "SQLite"
+      },
+      "pass": true,
+      "question_id": "E8-E"
+    },
+    "E8-F": {
+      "question": "a decision can exist before it takes effect",
+      "sept10": {
+        "value": "SQLite",
+        "detail": "as of ch8-fe-current eff=2026-08-01T09:00:00+00:00"
+      },
+      "sept16": {
+        "value": "PostgreSQL",
+        "detail": "as of ch8-fe-release eff=2026-09-15T09:00:00+00:00"
+      },
+      "current": {
+        "value": "PostgreSQL"
+      },
+      "truth": {
+        "sept10": "SQLite",
+        "sept16": "PostgreSQL"
+      },
+      "pass": true,
+      "question_id": "E8-F"
+    },
+    "E8-G": {
+      "question": "correcting history without deleting it",
+      "benchmark_recorded": "40x",
+      "correction_value": "35x",
+      "correction_target": [
+        "ch8-c-bench"
+      ],
+      "earlier_record_preserved": true,
+      "log_is_append_only": true,
+      "pass": true,
+      "decision_context": {
+        "value": null
+      },
+      "question_id": "E8-G"
+    },
+    "E8-H": {
+      "question": "concurrent events keep unknown order",
+      "a_before_b": null,
+      "a_before_c": true,
+      "b_before_c": true,
+      "pass": true,
+      "question_id": "E8-H"
+    },
+    "E8-I": {
+      "question": "missing events must surface uncertainty",
+      "gaps": [
+        {
+          "source_id": "benchmark-svc",
+          "expected_seq": 18,
+          "observed_seq": 19,
+          "status": "GAP_DETECTED"
+        }
+      ],
+      "answer": {
+        "value": null,
+        "status": "UNKNOWN",
+        "detail": "no state established [INCOMPLETE_HISTORY: sequence gap]"
+      },
+      "pass": true,
+      "question_id": "E8-I"
+    },
+    "E8-J": {
+      "question": "computed vs materialized belief",
+      "replay_ms": 0.0,
+      "ingest_ms": 0.04,
+      "query_ms": 0.01,
+      "projection_equivalent": true,
+      "correction_equivalent": true,
+      "rebuild_equivalent": true,
+      "storage_events": 7,
+      "pass": true,
+      "question_id": "E8-J"
+    },
+    "E8-second-domain": {
+      "question": "mechanism generalises beyond the database migration",
+      "flag_first_current": "off",
+      "incident_first_current": "off",
+      "note": "precedence rules out contribution claims; it never proves them",
+      "question_id": "E8-second-domain"
+    }
+  },
+  "costs": {
+    "llm_calls": 0,
+    "tokens": 0,
+    "latency_ms": 1.8
+  },
+  "log_digest": "7d0faf6d10e4a083",
+  "metrics": {
+    "current_state_accuracy": {
+      "T0-bag": 1.0,
+      "T1-arrival": 1.0,
+      "T1b-event-time": 1.0,
+      "T2-ordered": 1.0,
+      "T3-temporal": 1.0
+    },
+    "historical_state_accuracy": {
+      "T0-bag": 0.0,
+      "T1-arrival": 0.0,
+      "T1b-event-time": 0.0,
+      "T2-ordered": 1.0,
+      "T3-temporal": 1.0
+    },
+    "temporal_role_accuracy": 1.0,
+    "order_sensitive_change_accuracy": 1.0,
+    "order_invariant_stability": 1.0,
+    "late_arrival_robustness": 1.0,
+    "future_effective_accuracy": 1.0,
+    "correction_revision_accuracy": 1.0,
+    "partial_order_calibration": 1.0,
+    "sequence_gap_detection": 1.0,
+    "projection_rebuild_equivalence": 1.0,
+    "temporal_causality_violation_rate": 0.0,
+    "supersession_accuracy": 1.0,
+    "valid_time_accuracy": 1.0,
+    "transaction_time_accuracy": 1.0
+  }
+}

@@ -1,0 +1,49 @@
+{
+ "task_id": "credit-rule",
+ "condition": "BW",
+ "bcode": "BW",
+ "history_id": "ch12-20260920T204414Z-behavior",
+ "reader_id": "llama3.1:8b@t0-frozen-replay",
+ "budget_tokens": 1500,
+ "retrieved": [
+  "mb-stale-ch10-plan"
+ ],
+ "derived_consulted": [
+  "frozen:BW:b5369f37d181f00e"
+ ],
+ "temporal_decisions": [
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "status": "CURRENT",
+   "reason": "supersession resolved upstream (Ch8/Ch10 pipeline); replay preserves frozen decision"
+  }
+ ],
+ "trust_decisions": [
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "decision": "REJECT",
+   "reason": "deliberate wrong-memory control: provenance fails authority check"
+  }
+ ],
+ "frame_decision": {
+  "establishment": "UNKNOWN",
+  "action": "QUERY_ONLY"
+ },
+ "selected": [],
+ "rejected": [
+  {
+   "unit_id": "mb-stale-ch10-plan",
+   "reason": "trust gate REJECT: failed authority check"
+  }
+ ],
+ "context_tokens": 86,
+ "context_hash": "b5369f37d181f00e",
+ "reader_output": {
+  "task_score": 0.0,
+  "frozen": true
+ },
+ "behavioural_score": 0.0,
+ "harm": false,
+ "fallback_events": [],
+ "conditional_invocations": []
+}

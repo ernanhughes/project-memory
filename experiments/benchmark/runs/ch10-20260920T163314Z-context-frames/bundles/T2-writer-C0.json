@@ -1,0 +1,307 @@
+{
+  "bundle_id": "cb-T2-writer-C0",
+  "condition": "C0",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1485,
+  "bundle_digest": "0f07236307ab3d49",
+  "items": [
+    {
+      "item_id": "item-wr-improve-context",
+      "members": [
+        "wr-improve-context"
+      ],
+      "source_refs": [
+        "writer/docs/roadmap.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "writer.roadmap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 50
+    },
+    {
+      "item_id": "item-cc-improve-context",
+      "members": [
+        "cc-improve-context"
+      ],
+      "source_refs": [
+        "cocoder/docs/roadmap.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "cocoder.roadmap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 41
+    },
+    {
+      "item_id": "item-mb-arch-spine",
+      "members": [
+        "mb-arch-spine"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.spine",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-mb-arch-q6-open",
+      "members": [
+        "mb-arch-q6-open"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 107
+    },
+    {
+      "item_id": "item-mb-research-context-engineering",
+      "members": [
+        "mb-research-context-engineering"
+      ],
+      "source_refs": [
+        "planning/measurement-research-matrix.md"
+      ],
+      "kind": "research_note",
+      "claim_key": "research.context-engineering",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 87
+    },
+    {
+      "item_id": "item-mb-method-baseline-rule",
+      "members": [
+        "mb-method-baseline-rule"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.baseline-ladder",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 97
+    },
+    {
+      "item_id": "item-mb-echo-baseline-1",
+      "members": [
+        "mb-echo-baseline-1"
+      ],
+      "source_refs": [
+        "planning/chapter-04-graphrag-research.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 34
+    },
+    {
+      "item_id": "item-mb-stale-nexus-selects",
+      "members": [
+        "mb-stale-nexus-selects"
+      ],
+      "source_refs": [
+        "planning/chapter-06-memory-nexus-research.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "arch.nexus-role",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 46
+    },
+    {
+      "item_id": "item-mb-contract-failure-classes",
+      "members": [
+        "mb-contract-failure-classes"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.failure-classes",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 68
+    },
+    {
+      "item_id": "item-cc-context-window",
+      "members": [
+        "cc-context-window"
+      ],
+      "source_refs": [
+        "cocoder/context/build.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "cocoder.context",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 57
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-role",
+      "members": [
+        "mb-ch03-baseline-role"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-config",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 125
+    },
+    {
+      "item_id": "item-mb-ch06-result",
+      "members": [
+        "mb-ch06-result"
+      ],
+      "source_refs": [
+        "content/books/memory/06-chapter.md",
+        "experiments/benchmark/runs/ch6-20260919-nexus"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 79
+    },
+    {
+      "item_id": "item-mb-ch03-admission-note",
+      "members": [
+        "mb-ch03-admission-note"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.admission-vs-retrieval",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 84
+    },
+    {
+      "item_id": "item-wr-context-runtime",
+      "members": [
+        "wr-context-runtime"
+      ],
+      "source_refs": [
+        "writer/context/runtime.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "writer.context-runtime",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 66
+    },
+    {
+      "item_id": "item-mb-contract-q6",
+      "members": [
+        "mb-contract-q6"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.q6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 82
+    },
+    {
+      "item_id": "item-mb-session-intent-1",
+      "members": [
+        "mb-session-intent-1"
+      ],
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.intentions",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 55
+    },
+    {
+      "item_id": "item-wr-retrieval-eval",
+      "members": [
+        "wr-retrieval-eval"
+      ],
+      "source_refs": [
+        "writer/eval/retrieval.md"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "writer.eval",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 56
+    },
+    {
+      "item_id": "item-mb-research-prospective",
+      "members": [
+        "mb-research-prospective"
+      ],
+      "source_refs": [
+        "planning/chapter-09-open-loops-research.md"
+      ],
+      "kind": "research_note",
+      "claim_key": "research.prospective-memory",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 86
+    },
+    {
+      "item_id": "item-mb-session-pivot",
+      "members": [
+        "mb-session-pivot"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.pivot",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-echo-baseline-3",
+      "members": [
+        "mb-echo-baseline-3"
+      ],
+      "source_refs": [
+        "planning/continuity-audit.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 29
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

@@ -1,0 +1,5683 @@
+{
+  "config": {
+    "classifier": {
+      "abstain_below": 0.0,
+      "epochs": 400,
+      "l2": 0.01,
+      "learning_rate": 0.5,
+      "model_version": "nexus-classifier-v0.1",
+      "seed": 0
+    },
+    "code_commit": "c21bcae",
+    "context_budget": 8,
+    "controller": {
+      "forbid_repeat_capability": true,
+      "max_actions": 3,
+      "max_cost_units": 20.0,
+      "max_latency_ms": 600000.0,
+      "stop_policy_version": "nexus-stop-v0.1"
+    },
+    "corpus_version": "ch3-fixture-v0.1",
+    "notes": "",
+    "reader": {
+      "model": "llama3.1:8b",
+      "ollama_host": "http://localhost:11434",
+      "provider": "ollama",
+      "temperature": 0.0
+    },
+    "registry_version": "nexus-caps-v0.1",
+    "router_model": {
+      "max_tokens": 160,
+      "model": "llama3.1:8b",
+      "ollama_host": "http://localhost:11434",
+      "prompt_version": "nexus-router-prompt-v0.1",
+      "seed": 0,
+      "temperature": 0.0
+    },
+    "task_set_version": "nexus-routing-tasks-v0.1",
+    "utility": {
+      "adequacy_threshold": 0.75,
+      "evidence_weight": 0.5,
+      "lambda_cost": 0.01,
+      "lambda_harm": 0.5,
+      "lambda_latency": 0.0,
+      "quality_weight": 1.0,
+      "version": "nexus-utility-v0.1"
+    }
+  },
+  "experiments": {
+    "E6-A": {
+      "dominance": {
+        "single_capability_dominates": null,
+        "tasks_measured": 8,
+        "tasks_with_a_score_difference": 8,
+        "unique_wins": {
+          "ASSOCIATIVE": [
+            "q1-locate-eventstore",
+            "q2-decision-redis",
+            "q4-current-eventstore",
+            "q4-production-now"
+          ],
+          "GRAPH_LOCAL": [
+            "q4-historical-march"
+          ],
+          "NONE": [
+            "q-nomem-contention"
+          ],
+          "RAG": [
+            "q2-decision-eventstore"
+          ],
+          "RAW_EVIDENCE": [
+            "q3-why-postgres"
+          ]
+        },
+        "win_counts": {
+          "ASSOCIATIVE": 4,
+          "GRAPH_LOCAL": 1,
+          "NONE": 1,
+          "RAG": 1,
+          "RAW_EVIDENCE": 1
+        },
+        "wins": {
+          "ASSOCIATIVE": [
+            "q1-locate-eventstore",
+            "q2-decision-redis",
+            "q4-current-eventstore",
+            "q4-production-now"
+          ],
+          "GRAPH_LOCAL": [
+            "q4-historical-march"
+          ],
+          "NONE": [
+            "q-nomem-contention"
+          ],
+          "RAG": [
+            "q2-decision-eventstore"
+          ],
+          "RAW_EVIDENCE": [
+            "q3-why-postgres"
+          ]
+        }
+      },
+      "experiment": "E6-A",
+      "fixed_policies": {
+        "ASSOCIATIVE": {
+          "context_tokens": 591.4,
+          "cost_units": 1.2,
+          "evidence": 0.5736,
+          "harm": 0.0,
+          "latency_ms": 14428.1,
+          "quality": 0.9286,
+          "tasks": 7,
+          "utility": 1.2033
+        },
+        "GRAPH_BASIC": {
+          "context_tokens": 707.7,
+          "cost_units": 1.5,
+          "evidence": 0.2976,
+          "harm": 0.7857,
+          "latency_ms": 55544.1,
+          "quality": 0.9286,
+          "tasks": 7,
+          "utility": 0.6695
+        },
+        "GRAPH_GLOBAL": {
+          "context_tokens": 697.5,
+          "cost_units": 12.0,
+          "evidence": 0.3472,
+          "harm": 0.7667,
+          "latency_ms": 69403.4,
+          "quality": 0.7778,
+          "tasks": 6,
+          "utility": 0.4481
+        },
+        "GRAPH_LOCAL": {
+          "context_tokens": 709.0,
+          "cost_units": 3.0,
+          "evidence": 0.3472,
+          "harm": 0.425,
+          "latency_ms": 64705.2,
+          "quality": 0.9167,
+          "tasks": 6,
+          "utility": 0.8478
+        },
+        "NONE": {
+          "context_tokens": 0.0,
+          "cost_units": 0.0,
+          "evidence": 0.1429,
+          "harm": 0.0,
+          "latency_ms": 3501.1,
+          "quality": 0.1429,
+          "tasks": 7,
+          "utility": 0.2143
+        },
+        "RAG": {
+          "context_tokens": 753.9,
+          "cost_units": 1.0,
+          "evidence": 0.5,
+          "harm": 0.1429,
+          "latency_ms": 16375.0,
+          "quality": 0.9286,
+          "tasks": 7,
+          "utility": 1.0971
+        },
+        "RAW_EVIDENCE": {
+          "context_tokens": 1248.0,
+          "cost_units": 2.5,
+          "evidence": 0.5655,
+          "harm": 0.0,
+          "latency_ms": 9335.1,
+          "quality": 1.0,
+          "tasks": 6,
+          "utility": 1.2577
+        }
+      },
+      "per_task": {
+        "q-nomem-contention": {
+          "NONE": {
+            "context_tokens": 0,
+            "cost_units": 0.0,
+            "evidence": 1.0,
+            "harm": 0.0,
+            "latency_ms": 3103.4,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.5
+          },
+          "RAG": {
+            "context_tokens": 755,
+            "cost_units": 1.0,
+            "evidence": 0.5,
+            "harm": 0.0,
+            "latency_ms": 12988.0,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.24
+          }
+        },
+        "q1-locate-eventstore": {
+          "ASSOCIATIVE": {
+            "context_tokens": 623,
+            "cost_units": 1.2,
+            "evidence": 0.75,
+            "harm": 0.0,
+            "latency_ms": 5950.0,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.363
+          },
+          "GRAPH_BASIC": {
+            "context_tokens": 1019,
+            "cost_units": 1.5,
+            "evidence": 0.6667,
+            "harm": 0.0,
+            "latency_ms": 56883.8,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 1.3183
+          },
+          "GRAPH_GLOBAL": {
+            "context_tokens": 917,
+            "cost_units": 12.0,
+            "evidence": 0.6667,
+            "harm": 1.0,
+            "latency_ms": 81553.0,
+            "model_calls": 7,
+            "quality": 1.0,
+            "utility": 0.7133
+          },
+          "GRAPH_LOCAL": {
+            "context_tokens": 1498,
+            "cost_units": 3.0,
+            "evidence": 0.6667,
+            "harm": 1.0,
+            "latency_ms": 74561.8,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.8033
+          },
+          "NONE": {
+            "context_tokens": 0,
+            "cost_units": 0.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 2833.7,
+            "model_calls": 1,
+            "quality": 0.0,
+            "utility": 0.0
+          },
+          "RAG": {
+            "context_tokens": 753,
+            "cost_units": 1.0,
+            "evidence": 0.4583,
+            "harm": 0.0,
+            "latency_ms": 28433.9,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2192
+          },
+          "RAW_EVIDENCE": {
+            "context_tokens": 1248,
+            "cost_units": 2.5,
+            "evidence": 0.6071,
+            "harm": 0.0,
+            "latency_ms": 5476.4,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2786
+          }
+        },
+        "q2-decision-eventstore": {
+          "ASSOCIATIVE": {
+            "context_tokens": 724,
+            "cost_units": 1.2,
+            "evidence": 0.5625,
+            "harm": 0.0,
+            "latency_ms": 3691.7,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2692
+          },
+          "GRAPH_BASIC": {
+            "context_tokens": 819,
+            "cost_units": 1.5,
+            "evidence": 0.0,
+            "harm": 1.0,
+            "latency_ms": 49468.4,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.485
+          },
+          "GRAPH_GLOBAL": {
+            "context_tokens": 766,
+            "cost_units": 12.0,
+            "evidence": 0.0,
+            "harm": 0.6,
+            "latency_ms": 69172.5,
+            "model_calls": 7,
+            "quality": 1.0,
+            "utility": 0.58
+          },
+          "GRAPH_LOCAL": {
+            "context_tokens": 684,
+            "cost_units": 3.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 52123.0,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.97
+          },
+          "NONE": {
+            "context_tokens": 0,
+            "cost_units": 0.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 2602.5,
+            "model_calls": 1,
+            "quality": 0.0,
+            "utility": 0.0
+          },
+          "RAG": {
+            "context_tokens": 741,
+            "cost_units": 1.0,
+            "evidence": 0.5625,
+            "harm": 0.0,
+            "latency_ms": 9944.6,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2712
+          },
+          "RAW_EVIDENCE": {
+            "context_tokens": 1248,
+            "cost_units": 2.5,
+            "evidence": 0.5357,
+            "harm": 0.0,
+            "latency_ms": 4248.2,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2429
+          }
+        },
+        "q2-decision-redis": {
+          "ASSOCIATIVE": {
+            "context_tokens": 666,
+            "cost_units": 1.2,
+            "evidence": 0.6429,
+            "harm": 0.0,
+            "latency_ms": 22021.2,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.3094
+          },
+          "GRAPH_BASIC": {
+            "context_tokens": 550,
+            "cost_units": 1.5,
+            "evidence": 0.75,
+            "harm": 0.75,
+            "latency_ms": 48201.0,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.985
+          },
+          "GRAPH_GLOBAL": {
+            "context_tokens": 692,
+            "cost_units": 12.0,
+            "evidence": 0.75,
+            "harm": 0.5,
+            "latency_ms": 61015.7,
+            "model_calls": 7,
+            "quality": 0.6667,
+            "utility": 0.6717
+          },
+          "GRAPH_LOCAL": {
+            "context_tokens": 454,
+            "cost_units": 3.0,
+            "evidence": 0.75,
+            "harm": 0.75,
+            "latency_ms": 31079.4,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.97
+          },
+          "NONE": {
+            "context_tokens": 0,
+            "cost_units": 0.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 2706.6,
+            "model_calls": 1,
+            "quality": 0.0,
+            "utility": 0.0
+          },
+          "RAG": {
+            "context_tokens": 753,
+            "cost_units": 1.0,
+            "evidence": 0.625,
+            "harm": 0.0,
+            "latency_ms": 28157.7,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.3025
+          },
+          "RAW_EVIDENCE": {
+            "context_tokens": 1248,
+            "cost_units": 2.5,
+            "evidence": 0.5714,
+            "harm": 0.0,
+            "latency_ms": 4188.3,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2607
+          }
+        },
+        "q3-why-postgres": {
+          "ASSOCIATIVE": {
+            "context_tokens": 391,
+            "cost_units": 1.2,
+            "evidence": 0.2917,
+            "harm": 0.0,
+            "latency_ms": 4169.4,
+            "model_calls": 1,
+            "quality": 0.5,
+            "utility": 0.6338
+          },
+          "GRAPH_BASIC": {
+            "context_tokens": 932,
+            "cost_units": 1.5,
+            "evidence": 0.0,
+            "harm": 0.75,
+            "latency_ms": 47995.8,
+            "model_calls": 2,
+            "quality": 0.5,
+            "utility": 0.11
+          },
+          "GRAPH_GLOBAL": {
+            "context_tokens": 930,
+            "cost_units": 12.0,
+            "evidence": 0.0,
+            "harm": 1.0,
+            "latency_ms": 61619.3,
+            "model_calls": 7,
+            "quality": 0.5,
+            "utility": -0.12
+          },
+          "GRAPH_LOCAL": {
+            "context_tokens": 620,
+            "cost_units": 3.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 52420.5,
+            "model_calls": 2,
+            "quality": 0.5,
+            "utility": 0.47
+          },
+          "NONE": {
+            "context_tokens": 0,
+            "cost_units": 0.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 2738.3,
+            "model_calls": 1,
+            "quality": 0.0,
+            "utility": 0.0
+          },
+          "RAG": {
+            "context_tokens": 741,
+            "cost_units": 1.0,
+            "evidence": 0.2292,
+            "harm": 0.0,
+            "latency_ms": 13331.4,
+            "model_calls": 1,
+            "quality": 0.5,
+            "utility": 0.6046
+          },
+          "RAW_EVIDENCE": {
+            "context_tokens": 1248,
+            "cost_units": 2.5,
+            "evidence": 0.6071,
+            "harm": 0.0,
+            "latency_ms": 5633.2,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2786
+          }
+        },
+        "q4-current-eventstore": {
+          "ASSOCIATIVE": {
+            "context_tokens": 650,
+            "cost_units": 1.2,
+            "evidence": 0.5714,
+            "harm": 0.0,
+            "latency_ms": 22211.9,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2737
+          },
+          "GRAPH_BASIC": {
+            "context_tokens": 640,
+            "cost_units": 1.5,
+            "evidence": 0.0,
+            "harm": 1.0,
+            "latency_ms": 65656.6,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.485
+          },
+          "GRAPH_GLOBAL": {
+            "context_tokens": 726,
+            "cost_units": 12.0,
+            "evidence": 0.0,
+            "harm": 0.5,
+            "latency_ms": 89645.1,
+            "model_calls": 7,
+            "quality": 1.0,
+            "utility": 0.63
+          },
+          "GRAPH_LOCAL": {
+            "context_tokens": 564,
+            "cost_units": 3.0,
+            "evidence": 0.0,
+            "harm": 0.8,
+            "latency_ms": 89907.6,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.57
+          },
+          "NONE": {
+            "context_tokens": 0,
+            "cost_units": 0.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 7835.3,
+            "model_calls": 1,
+            "quality": 0.0,
+            "utility": 0.0
+          },
+          "RAG": {
+            "context_tokens": 741,
+            "cost_units": 1.0,
+            "evidence": 0.5625,
+            "harm": 0.0,
+            "latency_ms": 10136.1,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2712
+          },
+          "RAW_EVIDENCE": {
+            "context_tokens": 1248,
+            "cost_units": 2.5,
+            "evidence": 0.5357,
+            "harm": 0.0,
+            "latency_ms": 30419.9,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2429
+          }
+        },
+        "q4-historical-march": {
+          "ASSOCIATIVE": {
+            "context_tokens": 678,
+            "cost_units": 1.2,
+            "evidence": 0.5714,
+            "harm": 0.0,
+            "latency_ms": 39306.2,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2737
+          },
+          "GRAPH_BASIC": {
+            "context_tokens": 374,
+            "cost_units": 1.5,
+            "evidence": 0.6667,
+            "harm": 1.0,
+            "latency_ms": 44611.6,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.8183
+          },
+          "GRAPH_GLOBAL": {
+            "context_tokens": 154,
+            "cost_units": 12.0,
+            "evidence": 0.6667,
+            "harm": 1.0,
+            "latency_ms": 53414.7,
+            "model_calls": 7,
+            "quality": 0.5,
+            "utility": 0.2133
+          },
+          "GRAPH_LOCAL": {
+            "context_tokens": 434,
+            "cost_units": 3.0,
+            "evidence": 0.6667,
+            "harm": 0.0,
+            "latency_ms": 88138.7,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 1.3033
+          },
+          "NONE": {
+            "context_tokens": 0,
+            "cost_units": 0.0,
+            "evidence": 0.0,
+            "harm": 0.0,
+            "latency_ms": 2687.7,
+            "model_calls": 1,
+            "quality": 0.0,
+            "utility": 0.0
+          },
+          "RAG": {
+            "context_tokens": 793,
+            "cost_units": 1.0,
+            "evidence": 0.5625,
+            "harm": 1.0,
+            "latency_ms": 11633.6,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 0.7712
+          },
+          "RAW_EVIDENCE": {
+            "context_tokens": 1248,
+            "cost_units": 2.5,
+            "evidence": 0.5357,
+            "harm": 0.0,
+            "latency_ms": 6044.7,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.2429
+          }
+        },
+        "q4-production-now": {
+          "ASSOCIATIVE": {
+            "context_tokens": 408,
+            "cost_units": 1.2,
+            "evidence": 0.625,
+            "harm": 0.0,
+            "latency_ms": 3646.1,
+            "model_calls": 1,
+            "quality": 1.0,
+            "utility": 1.3005
+          },
+          "GRAPH_BASIC": {
+            "context_tokens": 620,
+            "cost_units": 1.5,
+            "evidence": 0.0,
+            "harm": 1.0,
+            "latency_ms": 75991.4,
+            "model_calls": 2,
+            "quality": 1.0,
+            "utility": 0.485
+          }
+        }
+      },
+      "quality_cost_frontier": [
+        "NONE",
+        "RAG",
+        "RAW_EVIDENCE"
+      ],
+      "question": "Do different memory capabilities win different tasks, or does one dominate?"
+    },
+    "E6-B": {
+      "experiment": "E6-B",
+      "headroom": {
+        "available": true,
+        "best_fixed_by_quality": "RAW_EVIDENCE",
+        "best_fixed_by_utility": "RAW_EVIDENCE",
+        "best_fixed_cost": 2.5,
+        "best_fixed_quality": 1.0,
+        "best_fixed_utility": 1.2577,
+        "oracle_cost": 1.4125,
+        "oracle_quality": 1.0,
+        "oracle_utility": 1.325,
+        "quality_headroom": 0.0,
+        "tasks": 8,
+        "utility_headroom": 0.0673
+      },
+      "oracle_best_utility_routes": {
+        "q-nomem-contention": "NONE",
+        "q1-locate-eventstore": "ASSOCIATIVE",
+        "q2-decision-eventstore": "RAG",
+        "q2-decision-redis": "ASSOCIATIVE",
+        "q3-why-postgres": "RAW_EVIDENCE",
+        "q4-current-eventstore": "ASSOCIATIVE",
+        "q4-historical-march": "GRAPH_LOCAL",
+        "q4-production-now": "ASSOCIATIVE"
+      },
+      "oracle_cheapest_adequate_routes": {
+        "q-nomem-contention": "NONE",
+        "q1-locate-eventstore": "RAG",
+        "q2-decision-eventstore": "RAG",
+        "q2-decision-redis": "RAG",
+        "q3-why-postgres": "RAW_EVIDENCE",
+        "q4-current-eventstore": "RAG",
+        "q4-historical-march": "RAG",
+        "q4-production-now": "ASSOCIATIVE"
+      },
+      "oracle_route_diversity": 5,
+      "oracles_agree_on": 4,
+      "question": "How much value could perfect routing provide?"
+    },
+    "E6-CDE": {
+      "classifier_training": {
+        "final_loss": 0.37807,
+        "initial_loss": 1.38629,
+        "labels": [
+          "ASSOCIATIVE",
+          "NONE",
+          "RAG",
+          "RAW_EVIDENCE"
+        ],
+        "samples": 7,
+        "trained": true
+      },
+      "dataset": {
+        "adequacy_threshold": 0.75,
+        "feature_names": [
+          "query_tokens_scaled",
+          "locational_signal",
+          "relational_signal",
+          "synthesis_signal",
+          "temporal_signal",
+          "causal_signal",
+          "counterfactual_signal",
+          "generality_signal",
+          "linked_entity_count_scaled",
+          "interrogative_what",
+          "interrogative_where",
+          "interrogative_why",
+          "interrogative_when",
+          "interrogative_which",
+          "interrogative_who",
+          "interrogative_how",
+          "has_prior_action",
+          "last_evidence_scaled",
+          "last_top_score",
+          "last_score_margin",
+          "disagreement"
+        ],
+        "label_distribution": {
+          "ASSOCIATIVE": 1,
+          "NONE": 1,
+          "RAG": 5,
+          "RAW_EVIDENCE": 1
+        },
+        "label_rule": "cheapest_adequate",
+        "leakage_rejections": [],
+        "samples": 8,
+        "sanity": []
+      },
+      "experiment": "E6-C..E",
+      "holdout_families": [
+        "indirect",
+        "no-memory"
+      ],
+      "question": "Can a router recover the oracle's headroom, and how much machinery does it take?",
+      "routers": {
+        "classifier": {
+          "manifest": {
+            "abstain_below": 0.0,
+            "epochs": 400,
+            "l2": 0.01,
+            "labels": [
+              "ASSOCIATIVE",
+              "NONE",
+              "RAG",
+              "RAW_EVIDENCE"
+            ],
+            "learning_rate": 0.5,
+            "low_confidence_fallbacks": 0,
+            "model_version": "nexus-classifier-v0.1",
+            "policy_type": "classifier",
+            "policy_version": "nexus-classifier-v0.1"
+          },
+          "policy_type": "classifier",
+          "policy_version": "nexus-classifier-v0.1",
+          "route_counts": {
+            "RAG": 7,
+            "RAW_EVIDENCE": 1
+          },
+          "router_latency_ms_per_query": 0.0353,
+          "router_latency_ms_total": 0.283,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.24,
+              "cost_regret": 1.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.26
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2192,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.1438
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3025,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0069
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2786,
+              "cost_regret": 0.0,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q3-why-postgres",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0025
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.7712,
+              "cost_regret": 0.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.5321
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "RAG",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 2,
+            "mean_cost_regret": 0.1429,
+            "mean_cost_units": 1.2143,
+            "mean_oracle_cost": 1.4429,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 1.0,
+            "mean_quality_regret": 0.0,
+            "mean_utility": 1.1934,
+            "mean_utility_regret": 0.135,
+            "over_routed": 1,
+            "tasks": 7,
+            "under_routed": 0,
+            "unmeasured_routes": 1
+          }
+        },
+        "classifier-transfer": {
+          "policy_type": "classifier-transfer",
+          "policy_version": "nexus-classifier-v0.1",
+          "route_counts": {
+            "RAG": 1
+          },
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.24,
+              "cost_regret": 1.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.26
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 0,
+            "mean_cost_regret": 1.0,
+            "mean_cost_units": 1.0,
+            "mean_oracle_cost": 0.0,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 1.0,
+            "mean_quality_regret": 0.0,
+            "mean_utility": 1.24,
+            "mean_utility_regret": 0.26,
+            "over_routed": 1,
+            "tasks": 1,
+            "under_routed": 0,
+            "unmeasured_routes": 0
+          }
+        },
+        "fixed:ASSOCIATIVE": {
+          "manifest": {
+            "policy_type": "fixed",
+            "policy_version": "fixed:ASSOCIATIVE:v0.1"
+          },
+          "policy_type": "fixed",
+          "policy_version": "fixed:ASSOCIATIVE:v0.1",
+          "route_counts": {
+            "ASSOCIATIVE": 8
+          },
+          "router_latency_ms_per_query": 0.0105,
+          "router_latency_ms_total": 0.084,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.363,
+              "cost_regret": 0.2,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2692,
+              "cost_regret": 0.2,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.002
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3094,
+              "cost_regret": 0.2,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 0.5,
+              "chosen_utility": 0.6338,
+              "cost_regret": -1.3,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 0.6447
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2737,
+              "cost_regret": 0.2,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2737,
+              "cost_regret": 0.2,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0296
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3005,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3005,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 4,
+            "mean_cost_regret": -0.0429,
+            "mean_cost_units": 1.2,
+            "mean_oracle_cost": 1.6143,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.9286,
+            "mean_quality_regret": 0.0714,
+            "mean_utility": 1.2033,
+            "mean_utility_regret": 0.0966,
+            "over_routed": 5,
+            "tasks": 7,
+            "under_routed": 1,
+            "unmeasured_routes": 1
+          }
+        },
+        "fixed:GRAPH_BASIC": {
+          "manifest": {
+            "policy_type": "fixed",
+            "policy_version": "fixed:GRAPH_BASIC:v0.1"
+          },
+          "policy_type": "fixed",
+          "policy_version": "fixed:GRAPH_BASIC:v0.1",
+          "route_counts": {
+            "GRAPH_BASIC": 8
+          },
+          "router_latency_ms_per_query": 0.0108,
+          "router_latency_ms_total": 0.086,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 1.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3183,
+              "cost_regret": 0.5,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0447
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 1.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.485,
+              "cost_regret": 0.5,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.7863
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 1.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.985,
+              "cost_regret": 0.5,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.3244
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 1.5,
+              "chosen_quality": 0.5,
+              "chosen_utility": 0.11,
+              "cost_regret": -1.0,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.1686
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 1.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.485,
+              "cost_regret": 0.5,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.7887
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 1.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.8183,
+              "cost_regret": 0.5,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.485
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "GRAPH_BASIC",
+              "chosen_cost": 1.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.485,
+              "cost_regret": 0.3,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3005,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.8155
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 0,
+            "mean_cost_regret": 0.2571,
+            "mean_cost_units": 1.5,
+            "mean_oracle_cost": 1.6143,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.9286,
+            "mean_quality_regret": 0.0714,
+            "mean_utility": 0.6695,
+            "mean_utility_regret": 0.6305,
+            "over_routed": 6,
+            "tasks": 7,
+            "under_routed": 1,
+            "unmeasured_routes": 1
+          }
+        },
+        "fixed:GRAPH_GLOBAL": {
+          "manifest": {
+            "policy_type": "fixed",
+            "policy_version": "fixed:GRAPH_GLOBAL:v0.1"
+          },
+          "policy_type": "fixed",
+          "policy_version": "fixed:GRAPH_GLOBAL:v0.1",
+          "route_counts": {
+            "GRAPH_GLOBAL": 8
+          },
+          "router_latency_ms_per_query": 0.0104,
+          "router_latency_ms_total": 0.083,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 12.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.7133,
+              "cost_regret": 11.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.6497
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 12.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.58,
+              "cost_regret": 11.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.6912
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 12.0,
+              "chosen_quality": 0.6667,
+              "chosen_utility": 0.6717,
+              "cost_regret": 11.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 0.3333,
+              "query_id": "q2-decision-redis",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 0.6378
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 12.0,
+              "chosen_quality": 0.5,
+              "chosen_utility": -0.12,
+              "cost_regret": 9.5,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.3986
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 12.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.63,
+              "cost_regret": 11.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.6437
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 12.0,
+              "chosen_quality": 0.5,
+              "chosen_utility": 0.2133,
+              "cost_regret": 11.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q4-historical-march",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.09
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 0,
+            "mean_cost_regret": 10.75,
+            "mean_cost_units": 12.0,
+            "mean_oracle_cost": 1.6833,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.7778,
+            "mean_quality_regret": 0.2222,
+            "mean_utility": 0.4481,
+            "mean_utility_regret": 0.8518,
+            "over_routed": 3,
+            "tasks": 6,
+            "under_routed": 3,
+            "unmeasured_routes": 2
+          }
+        },
+        "fixed:GRAPH_LOCAL": {
+          "manifest": {
+            "policy_type": "fixed",
+            "policy_version": "fixed:GRAPH_LOCAL:v0.1"
+          },
+          "policy_type": "fixed",
+          "policy_version": "fixed:GRAPH_LOCAL:v0.1",
+          "route_counts": {
+            "GRAPH_LOCAL": 8
+          },
+          "router_latency_ms_per_query": 0.0108,
+          "router_latency_ms_total": 0.086,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.8033,
+              "cost_regret": 2.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.5597
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.97,
+              "cost_regret": 2.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.3013
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.97,
+              "cost_regret": 2.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.3394
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 0.5,
+              "chosen_utility": 0.47,
+              "cost_regret": 0.5,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 0.8086
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.57,
+              "cost_regret": 2.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.7037
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3033,
+              "cost_regret": 2.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 1,
+            "mean_cost_regret": 1.75,
+            "mean_cost_units": 3.0,
+            "mean_oracle_cost": 1.6833,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.9167,
+            "mean_quality_regret": 0.0833,
+            "mean_utility": 0.8478,
+            "mean_utility_regret": 0.4521,
+            "over_routed": 5,
+            "tasks": 6,
+            "under_routed": 1,
+            "unmeasured_routes": 2
+          }
+        },
+        "fixed:NONE": {
+          "manifest": {
+            "policy_type": "fixed",
+            "policy_version": "fixed:NONE:v0.1"
+          },
+          "policy_type": "fixed",
+          "policy_version": "fixed:NONE:v0.1",
+          "route_counts": {
+            "NONE": 8
+          },
+          "router_latency_ms_per_query": 0.0173,
+          "router_latency_ms_total": 0.139,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.5,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": -1.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": false,
+              "quality_regret": 1.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.363
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": -1.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": false,
+              "quality_regret": 1.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.2712
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": -1.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 1.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.3094
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": -2.5,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 1.0,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.2786
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": -1.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": false,
+              "quality_regret": 1.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.2737
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": -1.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": false,
+              "quality_regret": 1.0,
+              "query_id": "q4-historical-march",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.3033
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 1,
+            "mean_cost_regret": -1.0714,
+            "mean_cost_units": 0.0,
+            "mean_oracle_cost": 1.4429,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.1429,
+            "mean_quality_regret": 0.8571,
+            "mean_utility": 0.2143,
+            "mean_utility_regret": 1.1142,
+            "over_routed": 0,
+            "tasks": 7,
+            "under_routed": 6,
+            "unmeasured_routes": 1
+          }
+        },
+        "fixed:RAG": {
+          "manifest": {
+            "policy_type": "fixed",
+            "policy_version": "fixed:RAG:v0.1"
+          },
+          "policy_type": "fixed",
+          "policy_version": "fixed:RAG:v0.1",
+          "route_counts": {
+            "RAG": 8
+          },
+          "router_latency_ms_per_query": 0.0119,
+          "router_latency_ms_total": 0.095,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.24,
+              "cost_regret": 1.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.26
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2192,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.1438
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3025,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0069
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 0.5,
+              "chosen_utility": 0.6046,
+              "cost_regret": -1.5,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 0.674
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0025
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.7712,
+              "cost_regret": 0.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.5321
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "RAG",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 1,
+            "mean_cost_regret": -0.0714,
+            "mean_cost_units": 1.0,
+            "mean_oracle_cost": 1.4429,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.9286,
+            "mean_quality_regret": 0.0714,
+            "mean_utility": 1.0971,
+            "mean_utility_regret": 0.2313,
+            "over_routed": 1,
+            "tasks": 7,
+            "under_routed": 1,
+            "unmeasured_routes": 1
+          }
+        },
+        "fixed:RAW_EVIDENCE": {
+          "manifest": {
+            "policy_type": "fixed",
+            "policy_version": "fixed:RAW_EVIDENCE:v0.1"
+          },
+          "policy_type": "fixed",
+          "policy_version": "fixed:RAW_EVIDENCE:v0.1",
+          "route_counts": {
+            "RAW_EVIDENCE": 8
+          },
+          "router_latency_ms_per_query": 0.0104,
+          "router_latency_ms_total": 0.083,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2786,
+              "cost_regret": 1.5,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0844
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2429,
+              "cost_regret": 1.5,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0284
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2607,
+              "cost_regret": 1.5,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0487
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2786,
+              "cost_regret": 0.0,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q3-why-postgres",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2429,
+              "cost_regret": 1.5,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0309
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2429,
+              "cost_regret": 1.5,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0605
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 1,
+            "mean_cost_regret": 1.25,
+            "mean_cost_units": 2.5,
+            "mean_oracle_cost": 1.6833,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 1.0,
+            "mean_quality_regret": 0.0,
+            "mean_utility": 1.2578,
+            "mean_utility_regret": 0.0421,
+            "over_routed": 5,
+            "tasks": 6,
+            "under_routed": 0,
+            "unmeasured_routes": 2
+          }
+        },
+        "leaky-family-control": {
+          "manifest": {
+            "policy_type": "leaky-family",
+            "policy_version": "leaky-family-v0.1"
+          },
+          "policy_type": "leaky-family",
+          "policy_version": "leaky-family-v0.1",
+          "route_counts": {
+            "GRAPH_LOCAL": 1,
+            "NONE": 1,
+            "RAG": 6
+          },
+          "router_latency_ms_per_query": 0.0121,
+          "router_latency_ms_total": 0.096,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.5,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2192,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.1438
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3025,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0069
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 0.5,
+              "chosen_utility": 0.47,
+              "cost_regret": 0.5,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 0.8086
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0025
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.7712,
+              "cost_regret": 0.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.5321
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "RAG",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 2,
+            "mean_cost_regret": 0.0714,
+            "mean_cost_units": 1.1429,
+            "mean_oracle_cost": 1.4429,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.9286,
+            "mean_quality_regret": 0.0714,
+            "mean_utility": 1.115,
+            "mean_utility_regret": 0.2134,
+            "over_routed": 0,
+            "tasks": 7,
+            "under_routed": 1,
+            "unmeasured_routes": 1
+          }
+        },
+        "oracle": {
+          "manifest": {
+            "policy_type": "oracle",
+            "policy_version": "oracle-utility-v0.1"
+          },
+          "policy_type": "oracle",
+          "policy_version": "oracle-utility-v0.1",
+          "route_counts": {
+            "ASSOCIATIVE": 4,
+            "GRAPH_LOCAL": 1,
+            "NONE": 1,
+            "RAG": 1,
+            "RAW_EVIDENCE": 1
+          },
+          "router_latency_ms_per_query": 0.0114,
+          "router_latency_ms_total": 0.091,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.5,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.363,
+              "cost_regret": 0.2,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3094,
+              "cost_regret": 0.2,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2786,
+              "cost_regret": 0.0,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q3-why-postgres",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2737,
+              "cost_regret": 0.2,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3033,
+              "cost_regret": 2.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3005,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3005,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 8,
+            "mean_cost_regret": 0.325,
+            "mean_cost_units": 1.4125,
+            "mean_oracle_cost": 1.4125,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 1.0,
+            "mean_quality_regret": 0.0,
+            "mean_utility": 1.325,
+            "mean_utility_regret": 0.0,
+            "over_routed": 4,
+            "tasks": 8,
+            "under_routed": 0,
+            "unmeasured_routes": 0
+          }
+        },
+        "oracle-cheapest-adequate": {
+          "manifest": {
+            "policy_type": "oracle-cheapest-adequate",
+            "policy_version": "oracle-cheapest-v0.1"
+          },
+          "policy_type": "oracle-cheapest-adequate",
+          "policy_version": "oracle-cheapest-v0.1",
+          "route_counts": {
+            "ASSOCIATIVE": 1,
+            "NONE": 1,
+            "RAG": 5,
+            "RAW_EVIDENCE": 1
+          },
+          "router_latency_ms_per_query": 0.0113,
+          "router_latency_ms_total": 0.09,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.5,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2192,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.1438
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3025,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0069
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "RAW_EVIDENCE",
+              "chosen_cost": 2.5,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2786,
+              "cost_regret": 0.0,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q3-why-postgres",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0025
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.7712,
+              "cost_regret": 0.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.5321
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3005,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3005,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 4,
+            "mean_cost_regret": 0.0,
+            "mean_cost_units": 1.0875,
+            "mean_oracle_cost": 1.4125,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 1.0,
+            "mean_quality_regret": 0.0,
+            "mean_utility": 1.2393,
+            "mean_utility_regret": 0.0857,
+            "over_routed": 0,
+            "tasks": 8,
+            "under_routed": 0,
+            "unmeasured_routes": 0
+          }
+        },
+        "random": {
+          "manifest": {
+            "policy_type": "random",
+            "policy_version": "random:seed7:v0.1"
+          },
+          "policy_type": "random",
+          "policy_version": "random:seed7:v0.1",
+          "route_counts": {
+            "ASSOCIATIVE": 3,
+            "GRAPH_DRIFT": 2,
+            "GRAPH_GLOBAL": 1,
+            "GRAPH_LOCAL": 1,
+            "NONE": 1
+          },
+          "router_latency_ms_per_query": 0.0348,
+          "router_latency_ms_total": 0.279,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "GRAPH_GLOBAL",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.363,
+              "cost_regret": 0.2,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_LOCAL",
+              "chosen_cost": 3.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.97,
+              "cost_regret": 2.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.3013
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": -1.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 1.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 1.3094
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "GRAPH_DRIFT",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q3-why-postgres",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "GRAPH_DRIFT",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2737,
+              "cost_regret": 0.2,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": true,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0296
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "ASSOCIATIVE",
+              "chosen_cost": 1.2,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3005,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3005,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 2,
+            "mean_cost_regret": 0.28,
+            "mean_cost_units": 1.32,
+            "mean_oracle_cost": 1.52,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.8,
+            "mean_quality_regret": 0.2,
+            "mean_utility": 0.9814,
+            "mean_utility_regret": 0.3281,
+            "over_routed": 3,
+            "tasks": 5,
+            "under_routed": 1,
+            "unmeasured_routes": 3
+          }
+        },
+        "rules": {
+          "manifest": {
+            "policy_type": "rules",
+            "policy_version": "rules-v0.1"
+          },
+          "policy_type": "rules",
+          "policy_version": "rules-v0.1",
+          "route_counts": {
+            "NONE": 1,
+            "RAG": 7
+          },
+          "router_latency_ms_per_query": 0.0128,
+          "router_latency_ms_total": 0.102,
+          "scores": [
+            {
+              "cheapest_adequate": "NONE",
+              "chosen": "NONE",
+              "chosen_cost": 0.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.5,
+              "cost_regret": 0.0,
+              "oracle": "NONE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.5,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q-nomem-contention",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2192,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.363,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q1-locate-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.1438
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "RAG",
+              "oracle_cost": 1.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2712,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.3025,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3094,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q2-decision-redis",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0069
+            },
+            {
+              "cheapest_adequate": "RAW_EVIDENCE",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 0.5,
+              "chosen_utility": 0.6046,
+              "cost_regret": -1.5,
+              "oracle": "RAW_EVIDENCE",
+              "oracle_cost": 2.5,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2786,
+              "over_routed": false,
+              "quality_regret": 0.5,
+              "query_id": "q3-why-postgres",
+              "under_routed": true,
+              "unmeasured": false,
+              "utility_regret": 0.674
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 1.2712,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 1.2,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.2737,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-current-eventstore",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.0025
+            },
+            {
+              "cheapest_adequate": "RAG",
+              "chosen": "RAG",
+              "chosen_cost": 1.0,
+              "chosen_quality": 1.0,
+              "chosen_utility": 0.7712,
+              "cost_regret": 0.0,
+              "oracle": "GRAPH_LOCAL",
+              "oracle_cost": 3.0,
+              "oracle_quality": 1.0,
+              "oracle_utility": 1.3033,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-historical-march",
+              "under_routed": false,
+              "unmeasured": false,
+              "utility_regret": 0.5321
+            },
+            {
+              "cheapest_adequate": "ASSOCIATIVE",
+              "chosen": "RAG",
+              "chosen_cost": 0.0,
+              "chosen_quality": 0.0,
+              "chosen_utility": 0.0,
+              "cost_regret": 0.0,
+              "oracle": "ASSOCIATIVE",
+              "oracle_cost": 0.0,
+              "oracle_quality": 0.0,
+              "oracle_utility": 0.0,
+              "over_routed": false,
+              "quality_regret": 0.0,
+              "query_id": "q4-production-now",
+              "under_routed": false,
+              "unmeasured": true,
+              "utility_regret": 0.0
+            }
+          ],
+          "totals": {
+            "exact_oracle_match": 2,
+            "mean_cost_regret": -0.2143,
+            "mean_cost_units": 0.8571,
+            "mean_oracle_cost": 1.4429,
+            "mean_oracle_quality": 1.0,
+            "mean_quality": 0.9286,
+            "mean_quality_regret": 0.0714,
+            "mean_utility": 1.1343,
+            "mean_utility_regret": 0.1942,
+            "over_routed": 0,
+            "tasks": 7,
+            "under_routed": 1,
+            "unmeasured_routes": 1
+          }
+        }
+      },
+      "test_size": 1,
+      "train_size": 7
+    }
+  },
+  "generated_at": "2026-09-19T21:30:21.922186+00:00",
+  "limitations": [
+    "offline scoring against cached live-system cells; DRIFT unmeasured",
+    "linked_entities empty in router state (no live graph at scoring time)",
+    "classifier trained on 7 held-in samples; transfer test on 1 held-out task only",
+    "20-task set has 8 tasks measured; 12 pending live runs"
+  ],
+  "matrix": {
+    "cells": [
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "session-014.md",
+          "session-019.md",
+          "stale-summary.md"
+        ],
+        "answer": "Session 014",
+        "capability_id": "ASSOCIATIVE",
+        "capability_latency_ms": 3.513399977236986,
+        "cited_ids": [
+          "session-014.md"
+        ],
+        "context_tokens": 623,
+        "cost_units": 1.2,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 7,
+        "latency_ms": 5950.021600001492,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "source_precision": 0.5,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "explored=7 stopped=hop-budget",
+        "query_id": "q1-locate-eventstore",
+        "reader_latency_ms": 5946.310000028461,
+        "retrieved_ids": [
+          "adr-007.md",
+          "benchmark-note.md",
+          "stale-summary.md",
+          "session-014.md",
+          "session-019.md",
+          "adr-009.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "session-014.md"
+        ],
+        "answer": "Session 014 (March 4, 2024)",
+        "capability_id": "GRAPH_BASIC",
+        "capability_latency_ms": 43724.812100001145,
+        "cited_ids": [
+          "session-014.md"
+        ],
+        "context_tokens": 1019,
+        "cost_units": 1.5,
+        "failure_classes": [
+          "CONTEXT_OMISSION"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 56883.78949998878,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "source_precision": 1.0,
+          "source_recall": 0.3333333333333333,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 2,
+        "notes": "linked=1 implicated=1",
+        "query_id": "q1-locate-eventstore",
+        "reader_latency_ms": 13158.833800000139,
+        "retrieved_ids": [
+          "session-014.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "session-014.md"
+        ],
+        "answer": "session-014.md",
+        "capability_id": "GRAPH_GLOBAL",
+        "capability_latency_ms": 77871.0125000216,
+        "cited_ids": [
+          "[derived:global search over persistent graph memory; linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md]"
+        ],
+        "context_tokens": 917,
+        "cost_units": 12.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 81553.03340003593,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "source_precision": 1.0,
+          "source_recall": 0.3333333333333333,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 7,
+        "notes": "linked=1 implicated=1",
+        "query_id": "q1-locate-eventstore",
+        "reader_latency_ms": 3681.88479996752,
+        "retrieved_ids": [
+          "session-014.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "session-014.md"
+        ],
+        "answer": "The discussion around the event-store backend was extensively documented across multiple artifacts, spanning sessions, decision records, benchmarks, and incident reports.",
+        "capability_id": "GRAPH_LOCAL",
+        "capability_latency_ms": 70013.99180002045,
+        "cited_ids": [
+          "linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md"
+        ],
+        "context_tokens": 1498,
+        "cost_units": 3.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 74561.8162000319,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "source_precision": 1.0,
+          "source_recall": 0.3333333333333333,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 2,
+        "notes": "linked=1 implicated=1",
+        "query_id": "q1-locate-eventstore",
+        "reader_latency_ms": 4547.686300007626,
+        "retrieved_ids": [
+          "session-014.md"
+        ]
+      },
+      {
+        "abstained": true,
+        "admitted_ids": [],
+        "answer": "Unknown",
+        "capability_id": "NONE",
+        "capability_latency_ms": 0.0,
+        "cited_ids": [],
+        "context_tokens": 0,
+        "cost_units": 0.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNNECESSARY_ABSTENTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 2833.72379996581,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0
+        },
+        "model_calls": 1,
+        "notes": "no history retrieved",
+        "query_id": "q1-locate-eventstore",
+        "reader_latency_ms": 2833.5354999871925,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "session-014.md",
+          "stale-summary.md",
+          "adr-007.md",
+          "notification-service.md",
+          "benchmark-note.md",
+          "production-notes.md",
+          "session-040.md",
+          "experiment-contention.md"
+        ],
+        "answer": "Session 014",
+        "capability_id": "RAG",
+        "capability_latency_ms": 5752.594600024167,
+        "cited_ids": [
+          "session-014.md"
+        ],
+        "context_tokens": 753,
+        "cost_units": 1.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 28433.899600000586,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "source_precision": 0.25,
+          "source_recall": 0.6666666666666666,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "retrieval_ms=2621",
+        "query_id": "q1-locate-eventstore",
+        "reader_latency_ms": 22681.132400000934,
+        "retrieved_ids": [
+          "session-014.md",
+          "stale-summary.md",
+          "adr-007.md",
+          "notification-service.md",
+          "benchmark-note.md",
+          "production-notes.md",
+          "session-040.md",
+          "experiment-contention.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "Session 014 \u2014 event-store backend discussion",
+        "capability_id": "RAW_EVIDENCE",
+        "capability_latency_ms": 1.2753999908454716,
+        "cited_ids": [
+          "session-014.md"
+        ],
+        "context_tokens": 1248,
+        "cost_units": 2.5,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 5476.448000001255,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "source_precision": 0.21428571428571427,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "unranked sweep of all source artifacts",
+        "query_id": "q1-locate-eventstore",
+        "reader_latency_ms": 5475.038299977314,
+        "retrieved_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL",
+        "capability_id": "ASSOCIATIVE",
+        "capability_latency_ms": 3.459799976553768,
+        "cited_ids": [
+          "adr-007.md"
+        ],
+        "context_tokens": 724,
+        "cost_units": 1.2,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 7,
+        "latency_ms": 3691.7166000348516,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.125,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "explored=7 stopped=hop-budget",
+        "query_id": "q2-decision-eventstore",
+        "reader_latency_ms": 3687.9063000087626,
+        "retrieved_ids": [
+          "adr-009.md",
+          "session-040.md",
+          "session-044.md",
+          "adr-007.md",
+          "session-014.md",
+          "session-019.md",
+          "stale-summary.md",
+          "production-notes.md",
+          "benchmark-note.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "PostgreSQL",
+        "capability_id": "GRAPH_BASIC",
+        "capability_latency_ms": 45471.38299996732,
+        "cited_ids": [
+          "Data: Sources (0)",
+          "Decision Record (ADR-007)",
+          "evt-205"
+        ],
+        "context_tokens": 819,
+        "cost_units": 1.5,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 49468.42460002517,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 2,
+        "notes": "linked=0 implicated=0",
+        "query_id": "q2-decision-eventstore",
+        "reader_latency_ms": 3996.892100025434,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "PostgreSQL",
+        "capability_id": "GRAPH_GLOBAL",
+        "capability_latency_ms": 64585.66670003347,
+        "cited_ids": [
+          "adr-007.md",
+          "EVT-205",
+          "PROTOTYPE EVT-201",
+          "40-minute stall in event ingestion during the June load window",
+          "session-040.md"
+        ],
+        "context_tokens": 766,
+        "cost_units": 12.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 69172.53660003189,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.6
+        },
+        "model_calls": 7,
+        "notes": "linked=0 implicated=0",
+        "query_id": "q2-decision-eventstore",
+        "reader_latency_ms": 4586.712999967858,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "PostgreSQL",
+        "capability_id": "GRAPH_LOCAL",
+        "capability_latency_ms": 30937.20059999032,
+        "cited_ids": [
+          "experiment-contention.md",
+          "incident-021.md",
+          "benchmark-note.md",
+          "adr-007.md",
+          "production-notes.md",
+          "stale-summary.md",
+          "session-014.md",
+          "session-019.md"
+        ],
+        "context_tokens": 684,
+        "cost_units": 3.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 52122.963200032245,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 2,
+        "notes": "linked=0 implicated=0",
+        "query_id": "q2-decision-eventstore",
+        "reader_latency_ms": 21185.587399988435,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": true,
+        "admitted_ids": [],
+        "answer": "Unknown",
+        "capability_id": "NONE",
+        "capability_latency_ms": 0.0,
+        "cited_ids": [],
+        "context_tokens": 0,
+        "cost_units": 0.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNNECESSARY_ABSTENTION",
+          "UNNECESSARY_ABSTENTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 2602.4512000149116,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 0.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0
+        },
+        "model_calls": 1,
+        "notes": "no history retrieved",
+        "query_id": "q2-decision-eventstore",
+        "reader_latency_ms": 2602.3218000191264,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "stale-summary.md",
+          "adr-007.md",
+          "notification-service.md",
+          "benchmark-note.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-040.md",
+          "commits.log"
+        ],
+        "answer": "PostgreSQL",
+        "capability_id": "RAG",
+        "capability_latency_ms": 5936.815499968361,
+        "cited_ids": [
+          "adr-007.md",
+          "production-notes.md"
+        ],
+        "context_tokens": 741,
+        "cost_units": 1.0,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 9944.621000031475,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.125,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "retrieval_ms=2657",
+        "query_id": "q2-decision-eventstore",
+        "reader_latency_ms": 4007.6249000267126,
+        "retrieved_ids": [
+          "stale-summary.md",
+          "adr-007.md",
+          "notification-service.md",
+          "benchmark-note.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-040.md",
+          "commits.log"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL",
+        "capability_id": "RAW_EVIDENCE",
+        "capability_latency_ms": 1.1891000322066247,
+        "cited_ids": [
+          "adr-007.md"
+        ],
+        "context_tokens": 1248,
+        "cost_units": 2.5,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 4248.219000000972,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.07142857142857142,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "unranked sweep of all source artifacts",
+        "query_id": "q2-decision-eventstore",
+        "reader_latency_ms": 4246.862799976952,
+        "retrieved_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "The team decided not to introduce Redis as a lookup cache.",
+        "capability_id": "ASSOCIATIVE",
+        "capability_latency_ms": 3.1399999861605465,
+        "cited_ids": [
+          "adr-009.md"
+        ],
+        "context_tokens": 666,
+        "cost_units": 1.2,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 6,
+        "latency_ms": 22021.184999961406,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.2857142857142857,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "explored=6 stopped=hop-budget",
+        "query_id": "q2-decision-redis",
+        "reader_latency_ms": 22017.82029995229,
+        "retrieved_ids": [
+          "adr-009.md",
+          "session-040.md",
+          "session-044.md",
+          "session-019.md",
+          "adr-007.md",
+          "session-014.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-009.md"
+        ],
+        "answer": "The team decided not to introduce Redis as a lookup cache.",
+        "capability_id": "GRAPH_BASIC",
+        "capability_latency_ms": 33195.2970000566,
+        "cited_ids": [
+          "Data: Sources (18, +more)",
+          "Data: Sources (1, 17, +more)",
+          "adr-009.md",
+          "session-040.md",
+          "Data: Sources (1, 9, +more)",
+          "Data: Sources (0, 2, +more)",
+          "Data: Sources (0, 10, +more)",
+          "Data: Sources (17, 18, +more)"
+        ],
+        "context_tokens": 550,
+        "cost_units": 1.5,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 48201.00110000931,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 1.0,
+          "source_recall": 0.5,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.75
+        },
+        "model_calls": 2,
+        "notes": "linked=1 implicated=1",
+        "query_id": "q2-decision-redis",
+        "reader_latency_ms": 15005.510599992704,
+        "retrieved_ids": [
+          "adr-009.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-009.md"
+        ],
+        "answer": "The team rejected the proposal to introduce Redis as a lookup cache.",
+        "capability_id": "GRAPH_GLOBAL",
+        "capability_latency_ms": 43981.73240001779,
+        "cited_ids": [
+          "session-040.md",
+          "Data: Reports (0)"
+        ],
+        "context_tokens": 692,
+        "cost_units": 12.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "MISSED_SUPERSESSION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 61015.67649998469,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 0.0,
+          "source_precision": 1.0,
+          "source_recall": 0.5,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.5
+        },
+        "model_calls": 7,
+        "notes": "linked=1 implicated=1",
+        "query_id": "q2-decision-redis",
+        "reader_latency_ms": 17033.75290002441,
+        "retrieved_ids": [
+          "adr-009.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-009.md"
+        ],
+        "answer": "The team decided not to introduce Redis as a lookup cache.",
+        "capability_id": "GRAPH_LOCAL",
+        "capability_latency_ms": 25200.786700006574,
+        "cited_ids": [
+          "Data: session-044 (18)",
+          "Data: session-040 (17)",
+          "Data: adr-009 (1)",
+          "adr-009.md"
+        ],
+        "context_tokens": 454,
+        "cost_units": 3.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 31079.394900007173,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 1.0,
+          "source_recall": 0.5,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.75
+        },
+        "model_calls": 2,
+        "notes": "linked=1 implicated=1",
+        "query_id": "q2-decision-redis",
+        "reader_latency_ms": 5878.40889999643,
+        "retrieved_ids": [
+          "adr-009.md"
+        ]
+      },
+      {
+        "abstained": true,
+        "admitted_ids": [],
+        "answer": "Unknown",
+        "capability_id": "NONE",
+        "capability_latency_ms": 0.0,
+        "cited_ids": [],
+        "context_tokens": 0,
+        "cost_units": 0.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNNECESSARY_ABSTENTION",
+          "UNNECESSARY_ABSTENTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 2706.6115000052378,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 0.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0
+        },
+        "model_calls": 1,
+        "notes": "no history retrieved",
+        "query_id": "q2-decision-redis",
+        "reader_latency_ms": 2706.472299993038,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-009.md",
+          "session-040.md",
+          "session-044.md",
+          "commits.log",
+          "session-019.md",
+          "adr-007.md",
+          "stale-summary.md",
+          "experiment-contention.md"
+        ],
+        "answer": "The team decided not to introduce Redis as a lookup cache.",
+        "capability_id": "RAG",
+        "capability_latency_ms": 5835.8305000001565,
+        "cited_ids": [
+          "adr-009.md",
+          "session-040.md",
+          "session-044.md"
+        ],
+        "context_tokens": 753,
+        "cost_units": 1.0,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 28157.700999989174,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.25,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "retrieval_ms=2657",
+        "query_id": "q2-decision-redis",
+        "reader_latency_ms": 22321.658700006083,
+        "retrieved_ids": [
+          "adr-009.md",
+          "session-040.md",
+          "session-044.md",
+          "commits.log",
+          "session-019.md",
+          "adr-007.md",
+          "stale-summary.md",
+          "experiment-contention.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "The team decided not to introduce Redis as a lookup cache.",
+        "capability_id": "RAW_EVIDENCE",
+        "capability_latency_ms": 1.6098000342026353,
+        "cited_ids": [
+          "adr-009.md"
+        ],
+        "context_tokens": 1248,
+        "cost_units": 2.5,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 4188.293299986981,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.14285714285714285,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "unranked sweep of all source artifacts",
+        "query_id": "q2-decision-redis",
+        "reader_latency_ms": 4186.4858999615535,
+        "retrieved_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "benchmark-note.md",
+          "production-notes.md",
+          "stale-summary.md"
+        ],
+        "answer": "The event store was migrated to PostgreSQL due to the SQLite prototype's failure under concurrent writes, as evidenced by the benchmark results in evt-204 and the decision in ADR-007.",
+        "capability_id": "ASSOCIATIVE",
+        "capability_latency_ms": 4.0206999983638525,
+        "cited_ids": [
+          "adr-007.md",
+          "benchmark-note.md"
+        ],
+        "context_tokens": 391,
+        "cost_units": 1.2,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "CONTEXT_DISTRACTION",
+          "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+        ],
+        "graph_expansions": 6,
+        "latency_ms": 4169.39990001265,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.25,
+          "source_recall": 0.3333333333333333,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "explored=6 stopped=hop-budget",
+        "query_id": "q3-why-postgres",
+        "reader_latency_ms": 4165.082000021357,
+        "retrieved_ids": [
+          "adr-007.md",
+          "stale-summary.md",
+          "production-notes.md",
+          "benchmark-note.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "production-notes.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL was chosen for the event store because it demonstrated scalable throughput and acceptable latency under concurrent writes, whereas SQLite failed to perform under such conditions, causing production incidents and degraded performance.",
+        "capability_id": "GRAPH_BASIC",
+        "capability_latency_ms": 34443.02050000988,
+        "cited_ids": [
+          "Sources (10)",
+          "Sources (11)",
+          "Sources (2)",
+          "adr-007.md",
+          "session-014.md",
+          "Sources (15)",
+          "Sources (19)",
+          "Sources (14)"
+        ],
+        "context_tokens": 932,
+        "cost_units": 1.5,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "CONTEXT_DISTRACTION",
+          "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 47995.782700018026,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "unsupported_source_rate": 0.75
+        },
+        "model_calls": 2,
+        "notes": "linked=1 implicated=2",
+        "query_id": "q3-why-postgres",
+        "reader_latency_ms": 13552.57729999721,
+        "retrieved_ids": [
+          "production-notes.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "production-notes.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL was chosen for the event store due to its superior scalability, durability, and support for advanced transactional features.",
+        "capability_id": "GRAPH_GLOBAL",
+        "capability_latency_ms": 57665.134600014426,
+        "cited_ids": [
+          "Data: Reports (1, 3)",
+          "EVT-205 (ADR-007)"
+        ],
+        "context_tokens": 930,
+        "cost_units": 12.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "CONTEXT_DISTRACTION",
+          "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 61619.33549999958,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 7,
+        "notes": "linked=1 implicated=2",
+        "query_id": "q3-why-postgres",
+        "reader_latency_ms": 3954.0161000331864,
+        "retrieved_ids": [
+          "production-notes.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "production-notes.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL was chosen for the event store to address the critical performance bottlenecks of SQLite under concurrent writes, ensuring scalability and reliability for the shared workload.",
+        "capability_id": "GRAPH_LOCAL",
+        "capability_latency_ms": 30037.753299984615,
+        "cited_ids": [
+          "experiment-contention.md",
+          "incident-021.md",
+          "benchmark-note.md",
+          "adr-007.md",
+          "stale-summary.md"
+        ],
+        "context_tokens": 620,
+        "cost_units": 3.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "CONTEXT_DISTRACTION",
+          "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+        ],
+        "graph_expansions": 1,
+        "latency_ms": 52420.54580000695,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 2,
+        "notes": "linked=1 implicated=2",
+        "query_id": "q3-why-postgres",
+        "reader_latency_ms": 22382.618799980264,
+        "retrieved_ids": [
+          "production-notes.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": true,
+        "admitted_ids": [],
+        "answer": "No information is available to answer this question.",
+        "capability_id": "NONE",
+        "capability_latency_ms": 0.0,
+        "cited_ids": [],
+        "context_tokens": 0,
+        "cost_units": 0.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNNECESSARY_ABSTENTION",
+          "UNNECESSARY_ABSTENTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 2738.281099998858,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 0.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0
+        },
+        "model_calls": 1,
+        "notes": "no history retrieved",
+        "query_id": "q3-why-postgres",
+        "reader_latency_ms": 2738.116800028365,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "benchmark-note.md",
+          "adr-007.md",
+          "production-notes.md",
+          "stale-summary.md",
+          "commits.log",
+          "notification-service.md",
+          "session-040.md",
+          "session-014.md"
+        ],
+        "answer": "The PostgreSQL candidate held flat throughput to 32 writers and had better concurrency behavior, which was decisive for a shared write-heavy service.",
+        "capability_id": "RAG",
+        "capability_latency_ms": 5830.420099955518,
+        "cited_ids": [
+          "benchmark-note.md",
+          "adr-007.md"
+        ],
+        "context_tokens": 741,
+        "cost_units": 1.0,
+        "failure_classes": [
+          "CONTEXT_OMISSION",
+          "CONTEXT_DISTRACTION",
+          "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 13331.406700017396,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 0.0,
+          "source_precision": 0.125,
+          "source_recall": 0.3333333333333333,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "retrieval_ms=2659",
+        "query_id": "q3-why-postgres",
+        "reader_latency_ms": 7500.727600010578,
+        "retrieved_ids": [
+          "benchmark-note.md",
+          "adr-007.md",
+          "production-notes.md",
+          "stale-summary.md",
+          "commits.log",
+          "notification-service.md",
+          "session-040.md",
+          "session-014.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "The PostgreSQL candidate held flat throughput to 32 writers (evt-204), and the SQLite prototype suffered concurrent-write contention under load (evt-202, evt-203).",
+        "capability_id": "RAW_EVIDENCE",
+        "capability_latency_ms": 1.3273999793455005,
+        "cited_ids": [
+          "adr-007.md",
+          "benchmark-note.md",
+          "experiment-contention.md"
+        ],
+        "context_tokens": 1248,
+        "cost_units": 2.5,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 5633.152099966537,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.21428571428571427,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "unranked sweep of all source artifacts",
+        "query_id": "q3-why-postgres",
+        "reader_latency_ms": 5631.6396000329405,
+        "retrieved_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL",
+        "capability_id": "ASSOCIATIVE",
+        "capability_latency_ms": 3.131000034045428,
+        "cited_ids": [
+          "adr-007.md"
+        ],
+        "context_tokens": 650,
+        "cost_units": 1.2,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 5,
+        "latency_ms": 22211.936600040644,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.14285714285714285,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "explored=5 stopped=activation-exhausted",
+        "query_id": "q4-current-eventstore",
+        "reader_latency_ms": 22208.612400048878,
+        "retrieved_ids": [
+          "adr-007.md",
+          "benchmark-note.md",
+          "stale-summary.md",
+          "adr-009.md",
+          "session-040.md",
+          "session-044.md",
+          "session-019.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "PostgreSQL",
+        "capability_id": "GRAPH_BASIC",
+        "capability_latency_ms": 30339.67680000933,
+        "cited_ids": [
+          "Data: Sources (0)",
+          "Data: Sources (2)",
+          "Data: Sources (14)"
+        ],
+        "context_tokens": 640,
+        "cost_units": 1.5,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 65656.63409995614,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 2,
+        "notes": "linked=0 implicated=0",
+        "query_id": "q4-current-eventstore",
+        "reader_latency_ms": 35316.7870999896,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "PostgreSQL",
+        "capability_id": "GRAPH_GLOBAL",
+        "capability_latency_ms": 84306.68949999381,
+        "cited_ids": [
+          "adr-007.md",
+          "EVT-204",
+          "EVT-205",
+          "session-040.md"
+        ],
+        "context_tokens": 726,
+        "cost_units": 12.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 89645.1276000007,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.5
+        },
+        "model_calls": 7,
+        "notes": "linked=0 implicated=0",
+        "query_id": "q4-current-eventstore",
+        "reader_latency_ms": 5338.223800004926,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "PostgreSQL",
+        "capability_id": "GRAPH_LOCAL",
+        "capability_latency_ms": 57589.64120002929,
+        "cited_ids": [
+          "adr-007.md",
+          "Production Notes",
+          "Experiment evt-202",
+          "Incident evt-203",
+          "Benchmark evt-204"
+        ],
+        "context_tokens": 564,
+        "cost_units": 3.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 89907.59990003426,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.8
+        },
+        "model_calls": 2,
+        "notes": "linked=0 implicated=0",
+        "query_id": "q4-current-eventstore",
+        "reader_latency_ms": 32317.67459999537,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": true,
+        "admitted_ids": [],
+        "answer": "Unknown",
+        "capability_id": "NONE",
+        "capability_latency_ms": 0.0,
+        "cited_ids": [],
+        "context_tokens": 0,
+        "cost_units": 0.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNNECESSARY_ABSTENTION",
+          "UNNECESSARY_ABSTENTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 7835.29489999637,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 0.0,
+          "current_state_accuracy": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0
+        },
+        "model_calls": 1,
+        "notes": "no history retrieved",
+        "query_id": "q4-current-eventstore",
+        "reader_latency_ms": 7835.126899997704,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "stale-summary.md",
+          "commits.log",
+          "benchmark-note.md",
+          "production-notes.md",
+          "session-040.md",
+          "session-014.md",
+          "notification-service.md"
+        ],
+        "answer": "PostgreSQL",
+        "capability_id": "RAG",
+        "capability_latency_ms": 5970.241000002716,
+        "cited_ids": [
+          "adr-007.md",
+          "production-notes.md"
+        ],
+        "context_tokens": 741,
+        "cost_units": 1.0,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 10136.091799999122,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.125,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "retrieval_ms=2745",
+        "query_id": "q4-current-eventstore",
+        "reader_latency_ms": 4165.660700004082,
+        "retrieved_ids": [
+          "adr-007.md",
+          "stale-summary.md",
+          "commits.log",
+          "benchmark-note.md",
+          "production-notes.md",
+          "session-040.md",
+          "session-014.md",
+          "notification-service.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL",
+        "capability_id": "RAW_EVIDENCE",
+        "capability_latency_ms": 1.5221000066958368,
+        "cited_ids": [
+          "adr-007.md",
+          "production-notes.md"
+        ],
+        "context_tokens": 1248,
+        "cost_units": 2.5,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 30419.85239996575,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.07142857142857142,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "unranked sweep of all source artifacts",
+        "query_id": "q4-current-eventstore",
+        "reader_latency_ms": 30418.13629999524,
+        "retrieved_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "stale-summary.md"
+        ],
+        "answer": "SQLite",
+        "capability_id": "ASSOCIATIVE",
+        "capability_latency_ms": 4.081499995663762,
+        "cited_ids": [
+          "session-014.md",
+          "session-019.md"
+        ],
+        "context_tokens": 678,
+        "cost_units": 1.2,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 8,
+        "latency_ms": 39306.232500006445,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "historical_state_accuracy": 1.0,
+          "source_precision": 0.14285714285714285,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "explored=8 stopped=hop-budget",
+        "query_id": "q4-historical-march",
+        "reader_latency_ms": 39301.82410002453,
+        "retrieved_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "session-014.md",
+          "session-019.md",
+          "stale-summary.md",
+          "production-notes.md",
+          "benchmark-note.md",
+          "session-040.md",
+          "session-044.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "experiment-contention.md",
+          "session-014.md",
+          "session-019.md"
+        ],
+        "answer": "SQLite",
+        "capability_id": "GRAPH_BASIC",
+        "capability_latency_ms": 35272.63849996962,
+        "cited_ids": [
+          "{'source': 'Data: Sources (3, 15)'}",
+          "{'source': 'Data: Sources (15)'}",
+          "{'source': 'Data: Sources (14)'}"
+        ],
+        "context_tokens": 374,
+        "cost_units": 1.5,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 3,
+        "latency_ms": 44611.5703000105,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "historical_state_accuracy": 1.0,
+          "source_precision": 0.3333333333333333,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 2,
+        "notes": "linked=3 implicated=3",
+        "query_id": "q4-historical-march",
+        "reader_latency_ms": 9338.692100020126,
+        "retrieved_ids": [
+          "experiment-contention.md",
+          "session-014.md",
+          "session-019.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "experiment-contention.md",
+          "session-014.md",
+          "session-019.md"
+        ],
+        "answer": "Event Store",
+        "capability_id": "GRAPH_GLOBAL",
+        "capability_latency_ms": 49778.79329997813,
+        "cited_ids": [
+          "PROTOTYPE (EVT-201)",
+          "PROTOTYPE"
+        ],
+        "context_tokens": 154,
+        "cost_units": 12.0,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION",
+          "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 3,
+        "latency_ms": 53414.676899963524,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "historical_state_accuracy": 0.0,
+          "source_precision": 0.3333333333333333,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 7,
+        "notes": "linked=3 implicated=3",
+        "query_id": "q4-historical-march",
+        "reader_latency_ms": 3635.682599968277,
+        "retrieved_ids": [
+          "experiment-contention.md",
+          "session-014.md",
+          "session-019.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "experiment-contention.md",
+          "session-014.md",
+          "session-019.md"
+        ],
+        "answer": "SQLite",
+        "capability_id": "GRAPH_LOCAL",
+        "capability_latency_ms": 34771.793899999466,
+        "cited_ids": [
+          "session-014.md"
+        ],
+        "context_tokens": 434,
+        "cost_units": 3.0,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 3,
+        "latency_ms": 88138.69029999478,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "historical_state_accuracy": 1.0,
+          "source_precision": 0.3333333333333333,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 2,
+        "notes": "linked=3 implicated=3",
+        "query_id": "q4-historical-march",
+        "reader_latency_ms": 53366.71189998742,
+        "retrieved_ids": [
+          "experiment-contention.md",
+          "session-014.md",
+          "session-019.md"
+        ]
+      },
+      {
+        "abstained": true,
+        "admitted_ids": [],
+        "answer": "Unknown",
+        "capability_id": "NONE",
+        "capability_latency_ms": 0.0,
+        "cited_ids": [],
+        "context_tokens": 0,
+        "cost_units": 0.0,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNNECESSARY_ABSTENTION",
+          "UNNECESSARY_ABSTENTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 2687.717199965846,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 0.0,
+          "historical_state_accuracy": 0.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0
+        },
+        "model_calls": 1,
+        "notes": "no history retrieved",
+        "query_id": "q4-historical-march",
+        "reader_latency_ms": 2687.58930003969,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "stale-summary.md",
+          "adr-007.md",
+          "session-014.md",
+          "experiment-contention.md",
+          "incident-021.md",
+          "production-notes.md",
+          "commits.log",
+          "benchmark-note.md"
+        ],
+        "answer": "SQLite",
+        "capability_id": "RAG",
+        "capability_latency_ms": 5995.341399975587,
+        "cited_ids": [
+          "session-014.md:5c5e18454baa6b2e",
+          "commits.log:c8e9dbf1861f3063"
+        ],
+        "context_tokens": 793,
+        "cost_units": 1.0,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 11633.558699977584,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "historical_state_accuracy": 1.0,
+          "source_precision": 0.125,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 1,
+        "notes": "retrieval_ms=2802",
+        "query_id": "q4-historical-march",
+        "reader_latency_ms": 5637.99930003006,
+        "retrieved_ids": [
+          "stale-summary.md",
+          "adr-007.md",
+          "session-014.md",
+          "experiment-contention.md",
+          "incident-021.md",
+          "production-notes.md",
+          "commits.log",
+          "benchmark-note.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ],
+        "answer": "SQLite",
+        "capability_id": "RAW_EVIDENCE",
+        "capability_latency_ms": 2.282800036482513,
+        "cited_ids": [
+          "session-014.md",
+          "production-notes.md"
+        ],
+        "context_tokens": 1248,
+        "cost_units": 2.5,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 6044.658400001936,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "historical_state_accuracy": 1.0,
+          "source_precision": 0.07142857142857142,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "unranked sweep of all source artifacts",
+        "query_id": "q4-historical-march",
+        "reader_latency_ms": 6042.00930002844,
+        "retrieved_ids": [
+          "adr-007.md",
+          "adr-009.md",
+          "benchmark-note.md",
+          "commits.log",
+          "experiment-contention.md",
+          "incident-021.md",
+          "issue-041.md",
+          "notification-service.md",
+          "production-notes.md",
+          "session-014.md",
+          "session-019.md",
+          "session-040.md",
+          "session-044.md",
+          "stale-summary.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "adr-007.md",
+          "benchmark-note.md",
+          "production-notes.md",
+          "stale-summary.md"
+        ],
+        "answer": "PostgreSQL",
+        "capability_id": "ASSOCIATIVE",
+        "capability_latency_ms": 3.2056999625638127,
+        "cited_ids": [
+          "production-notes.md"
+        ],
+        "context_tokens": 408,
+        "cost_units": 1.2,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 8,
+        "latency_ms": 3646.1395000224,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.25,
+          "source_recall": 1.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "explored=8 stopped=hop-budget",
+        "query_id": "q4-production-now",
+        "reader_latency_ms": 3642.723599972669,
+        "retrieved_ids": [
+          "production-notes.md",
+          "stale-summary.md",
+          "adr-007.md",
+          "benchmark-note.md"
+        ]
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "PostgreSQL",
+        "capability_id": "GRAPH_BASIC",
+        "capability_latency_ms": 55289.58760004025,
+        "cited_ids": [
+          "Data: Sources (0, +more)",
+          "Data: Sources (2, +more)",
+          "Data: Sources (10, +more)",
+          "Data: Sources (11, +more)",
+          "Data: Sources (14, +more)",
+          "Data: Sources (15, +more)",
+          "Data: Sources (19, +more)"
+        ],
+        "context_tokens": 620,
+        "cost_units": 1.5,
+        "failure_classes": [
+          "NOT_RETRIEVED",
+          "NOT_RETRIEVED",
+          "UNSUPPORTED_CLAIM"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 75991.42390000634,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "current_state_accuracy": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 0.0,
+          "supersession_correctness": 1.0,
+          "unsupported_source_rate": 1.0
+        },
+        "model_calls": 2,
+        "notes": "linked=0 implicated=0",
+        "query_id": "q4-production-now",
+        "reader_latency_ms": 20701.66329998756,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [],
+        "answer": "Write contention in a database refers to the situation where multiple transactions attempt to write to the same data simultaneously, leading to conflicts and potential data inconsistencies.",
+        "capability_id": "NONE",
+        "capability_latency_ms": 0.0,
+        "cited_ids": [],
+        "context_tokens": 0,
+        "cost_units": 0.0,
+        "failure_classes": [],
+        "graph_expansions": 0,
+        "latency_ms": 3103.448199981358,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 1.0,
+          "source_recall": 1.0
+        },
+        "model_calls": 1,
+        "notes": "no history retrieved",
+        "query_id": "q-nomem-contention",
+        "reader_latency_ms": 3103.2012999639846,
+        "retrieved_ids": []
+      },
+      {
+        "abstained": false,
+        "admitted_ids": [
+          "experiment-contention.md",
+          "incident-021.md",
+          "session-014.md",
+          "adr-007.md",
+          "issue-041.md",
+          "commits.log",
+          "session-019.md",
+          "notification-service.md"
+        ],
+        "answer": "Write contention in a database refers to the situation where multiple writers are trying to update the same data simultaneously, leading to delays, stalls, or even crashes.",
+        "capability_id": "RAG",
+        "capability_latency_ms": 5804.6465999796055,
+        "cited_ids": [
+          "experiment-contention.md",
+          "incident-021.md"
+        ],
+        "context_tokens": 755,
+        "cost_units": 1.0,
+        "failure_classes": [
+          "CONTEXT_DISTRACTION"
+        ],
+        "graph_expansions": 0,
+        "latency_ms": 12987.957599980291,
+        "measured": true,
+        "metrics": {
+          "abstention_correctness": 1.0,
+          "decision_exactness": 1.0,
+          "source_precision": 0.0,
+          "source_recall": 1.0,
+          "unsupported_source_rate": 0.0
+        },
+        "model_calls": 1,
+        "notes": "retrieval_ms=2685",
+        "query_id": "q-nomem-contention",
+        "reader_latency_ms": 7183.1088999751955,
+        "retrieved_ids": [
+          "experiment-contention.md",
+          "incident-021.md",
+          "session-014.md",
+          "adr-007.md",
+          "issue-041.md",
+          "commits.log",
+          "session-019.md",
+          "notification-service.md"
+        ]
+      }
+    ],
+    "manifest": {
+      "frozen": {
+        "context_budget": 8,
+        "corpus_version": "ch3-fixture-v0.1",
+        "reader_model": "llama3.1:8b",
+        "reader_temperature": 0.0,
+        "registry_version": "nexus-caps-v0.1",
+        "task_set_version": "nexus-routing-tasks-v0.1"
+      },
+      "registry": {
+        "capabilities": [
+          {
+            "available": true,
+            "capability_id": "ASSOCIATIVE",
+            "chapter": "5",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "cheap",
+              "limitations": [
+                "no gain when direct retrieval already succeeds",
+                "propagates extraction errors along false edges",
+                "depends on seed quality"
+              ],
+              "provides_provenance": true,
+              "reads_derived_state": true,
+              "strengths": [
+                "evidence reachable by a chain but not by resemblance",
+                "indirect multi-hop questions"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 1
+            },
+            "summary": "Cue-conditioned activation spreading through the memory graph from seeded nodes."
+          },
+          {
+            "available": true,
+            "capability_id": "GRAPH_BASIC",
+            "chapter": "4",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "cheap",
+              "limitations": [
+                "largely duplicates plain retrieval"
+              ],
+              "provides_provenance": true,
+              "reads_derived_state": true,
+              "strengths": [
+                "passage-level lookup inside the derived index"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 1
+            },
+            "summary": "Vector search over the graph index's text units: the derived layer's own retrieval analogue."
+          },
+          {
+            "available": true,
+            "capability_id": "GRAPH_DRIFT",
+            "chapter": "4",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "expensive",
+              "limitations": [
+                "the most expensive graph mode"
+              ],
+              "provides_provenance": true,
+              "reads_derived_state": true,
+              "strengths": [
+                "questions needing both breadth and detail"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 8
+            },
+            "summary": "Community-report primer followed by iterative local follow-ups."
+          },
+          {
+            "available": true,
+            "capability_id": "GRAPH_GLOBAL",
+            "chapter": "4",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "expensive",
+              "limitations": [
+                "expensive",
+                "coarse for specific factual lookups"
+              ],
+              "provides_provenance": true,
+              "reads_derived_state": true,
+              "strengths": [
+                "corpus-wide themes and summaries",
+                "questions no single passage answers"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 6
+            },
+            "summary": "Map/reduce synthesis over community reports covering the whole corpus."
+          },
+          {
+            "available": true,
+            "capability_id": "GRAPH_LOCAL",
+            "chapter": "4",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "moderate",
+              "limitations": [
+                "needs the question to link to graph entities",
+                "weak on corpus-wide questions"
+              ],
+              "provides_provenance": true,
+              "reads_derived_state": true,
+              "strengths": [
+                "questions about a named entity and what it relates to",
+                "relationships between artifacts"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 1
+            },
+            "summary": "Entity-centred search over graph neighbourhoods plus their source text."
+          },
+          {
+            "available": true,
+            "capability_id": "NONE",
+            "chapter": "1",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "free",
+              "limitations": [
+                "no access to project history at all"
+              ],
+              "provides_provenance": false,
+              "reads_derived_state": false,
+              "strengths": [
+                "questions the past does not bear on"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 1
+            },
+            "summary": "Answer from the reader alone, with no retrieved history."
+          },
+          {
+            "available": true,
+            "capability_id": "RAG",
+            "chapter": "3",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "cheap",
+              "limitations": [
+                "no relationship structure",
+                "no corpus-wide synthesis"
+              ],
+              "provides_provenance": true,
+              "reads_derived_state": false,
+              "strengths": [
+                "locating where something was discussed",
+                "questions answered by one or two passages"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 1
+            },
+            "summary": "Hybrid lexical and dense retrieval over raw history with reranking, then a bounded context."
+          },
+          {
+            "available": true,
+            "capability_id": "RAW_EVIDENCE",
+            "chapter": "3",
+            "degraded": false,
+            "degraded_reason": "",
+            "descriptor": {
+              "cost_tier": "moderate",
+              "limitations": [
+                "low precision",
+                "large context cost"
+              ],
+              "provides_provenance": true,
+              "reads_derived_state": false,
+              "strengths": [
+                "bypasses all derived interpretation",
+                "the floor under every other capability"
+              ],
+              "typical_latency_ms": 0.0,
+              "typical_model_calls": 1
+            },
+            "summary": "A wide, low-selectivity sweep of raw source artifacts: the fallback when derived memory is not trusted."
+          }
+        ],
+        "registry_version": "nexus-caps-v0.1"
+      },
+      "source": "cache",
+      "utility": {
+        "adequacy_threshold": 0.75,
+        "evidence_weight": 0.5,
+        "lambda_cost": 0.01,
+        "lambda_harm": 0.5,
+        "lambda_latency": 0.0,
+        "quality_weight": 1.0,
+        "version": "nexus-utility-v0.1"
+      }
+    }
+  },
+  "matrix_manifest": {
+    "frozen": {
+      "context_budget": 8,
+      "corpus_version": "ch3-fixture-v0.1",
+      "reader_model": "llama3.1:8b",
+      "reader_temperature": 0.0,
+      "registry_version": "nexus-caps-v0.1",
+      "task_set_version": "nexus-routing-tasks-v0.1"
+    },
+    "registry": {
+      "capabilities": [
+        {
+          "available": true,
+          "capability_id": "ASSOCIATIVE",
+          "chapter": "5",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "cheap",
+            "limitations": [
+              "no gain when direct retrieval already succeeds",
+              "propagates extraction errors along false edges",
+              "depends on seed quality"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "evidence reachable by a chain but not by resemblance",
+              "indirect multi-hop questions"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Cue-conditioned activation spreading through the memory graph from seeded nodes."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_BASIC",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "cheap",
+            "limitations": [
+              "largely duplicates plain retrieval"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "passage-level lookup inside the derived index"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Vector search over the graph index's text units: the derived layer's own retrieval analogue."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_DRIFT",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "expensive",
+            "limitations": [
+              "the most expensive graph mode"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "questions needing both breadth and detail"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 8
+          },
+          "summary": "Community-report primer followed by iterative local follow-ups."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_GLOBAL",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "expensive",
+            "limitations": [
+              "expensive",
+              "coarse for specific factual lookups"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "corpus-wide themes and summaries",
+              "questions no single passage answers"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 6
+          },
+          "summary": "Map/reduce synthesis over community reports covering the whole corpus."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_LOCAL",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "moderate",
+            "limitations": [
+              "needs the question to link to graph entities",
+              "weak on corpus-wide questions"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "questions about a named entity and what it relates to",
+              "relationships between artifacts"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Entity-centred search over graph neighbourhoods plus their source text."
+        },
+        {
+          "available": true,
+          "capability_id": "NONE",
+          "chapter": "1",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "free",
+            "limitations": [
+              "no access to project history at all"
+            ],
+            "provides_provenance": false,
+            "reads_derived_state": false,
+            "strengths": [
+              "questions the past does not bear on"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Answer from the reader alone, with no retrieved history."
+        },
+        {
+          "available": true,
+          "capability_id": "RAG",
+          "chapter": "3",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "cheap",
+            "limitations": [
+              "no relationship structure",
+              "no corpus-wide synthesis"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": false,
+            "strengths": [
+              "locating where something was discussed",
+              "questions answered by one or two passages"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Hybrid lexical and dense retrieval over raw history with reranking, then a bounded context."
+        },
+        {
+          "available": true,
+          "capability_id": "RAW_EVIDENCE",
+          "chapter": "3",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "moderate",
+            "limitations": [
+              "low precision",
+              "large context cost"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": false,
+            "strengths": [
+              "bypasses all derived interpretation",
+              "the floor under every other capability"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "A wide, low-selectivity sweep of raw source artifacts: the fallback when derived memory is not trusted."
+        }
+      ],
+      "registry_version": "nexus-caps-v0.1"
+    },
+    "source": "cache",
+    "utility": {
+      "adequacy_threshold": 0.75,
+      "evidence_weight": 0.5,
+      "lambda_cost": 0.01,
+      "lambda_harm": 0.5,
+      "lambda_latency": 0.0,
+      "quality_weight": 1.0,
+      "version": "nexus-utility-v0.1"
+    }
+  },
+  "registry": {
+    "capabilities": [
+      {
+        "available": true,
+        "capability_id": "ASSOCIATIVE",
+        "chapter": "5",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "cheap",
+          "limitations": [
+            "no gain when direct retrieval already succeeds",
+            "propagates extraction errors along false edges",
+            "depends on seed quality"
+          ],
+          "provides_provenance": true,
+          "reads_derived_state": true,
+          "strengths": [
+            "evidence reachable by a chain but not by resemblance",
+            "indirect multi-hop questions"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 1
+        },
+        "summary": "Cue-conditioned activation spreading through the memory graph from seeded nodes."
+      },
+      {
+        "available": true,
+        "capability_id": "GRAPH_BASIC",
+        "chapter": "4",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "cheap",
+          "limitations": [
+            "largely duplicates plain retrieval"
+          ],
+          "provides_provenance": true,
+          "reads_derived_state": true,
+          "strengths": [
+            "passage-level lookup inside the derived index"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 1
+        },
+        "summary": "Vector search over the graph index's text units: the derived layer's own retrieval analogue."
+      },
+      {
+        "available": true,
+        "capability_id": "GRAPH_DRIFT",
+        "chapter": "4",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "expensive",
+          "limitations": [
+            "the most expensive graph mode"
+          ],
+          "provides_provenance": true,
+          "reads_derived_state": true,
+          "strengths": [
+            "questions needing both breadth and detail"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 8
+        },
+        "summary": "Community-report primer followed by iterative local follow-ups."
+      },
+      {
+        "available": true,
+        "capability_id": "GRAPH_GLOBAL",
+        "chapter": "4",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "expensive",
+          "limitations": [
+            "expensive",
+            "coarse for specific factual lookups"
+          ],
+          "provides_provenance": true,
+          "reads_derived_state": true,
+          "strengths": [
+            "corpus-wide themes and summaries",
+            "questions no single passage answers"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 6
+        },
+        "summary": "Map/reduce synthesis over community reports covering the whole corpus."
+      },
+      {
+        "available": true,
+        "capability_id": "GRAPH_LOCAL",
+        "chapter": "4",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "moderate",
+          "limitations": [
+            "needs the question to link to graph entities",
+            "weak on corpus-wide questions"
+          ],
+          "provides_provenance": true,
+          "reads_derived_state": true,
+          "strengths": [
+            "questions about a named entity and what it relates to",
+            "relationships between artifacts"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 1
+        },
+        "summary": "Entity-centred search over graph neighbourhoods plus their source text."
+      },
+      {
+        "available": true,
+        "capability_id": "NONE",
+        "chapter": "1",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "free",
+          "limitations": [
+            "no access to project history at all"
+          ],
+          "provides_provenance": false,
+          "reads_derived_state": false,
+          "strengths": [
+            "questions the past does not bear on"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 1
+        },
+        "summary": "Answer from the reader alone, with no retrieved history."
+      },
+      {
+        "available": true,
+        "capability_id": "RAG",
+        "chapter": "3",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "cheap",
+          "limitations": [
+            "no relationship structure",
+            "no corpus-wide synthesis"
+          ],
+          "provides_provenance": true,
+          "reads_derived_state": false,
+          "strengths": [
+            "locating where something was discussed",
+            "questions answered by one or two passages"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 1
+        },
+        "summary": "Hybrid lexical and dense retrieval over raw history with reranking, then a bounded context."
+      },
+      {
+        "available": true,
+        "capability_id": "RAW_EVIDENCE",
+        "chapter": "3",
+        "degraded": false,
+        "degraded_reason": "",
+        "descriptor": {
+          "cost_tier": "moderate",
+          "limitations": [
+            "low precision",
+            "large context cost"
+          ],
+          "provides_provenance": true,
+          "reads_derived_state": false,
+          "strengths": [
+            "bypasses all derived interpretation",
+            "the floor under every other capability"
+          ],
+          "typical_latency_ms": 0.0,
+          "typical_model_calls": 1
+        },
+        "summary": "A wide, low-selectivity sweep of raw source artifacts: the fallback when derived memory is not trusted."
+      }
+    ],
+    "registry_version": "nexus-caps-v0.1"
+  },
+  "routing_families": {
+    "q-abs-cache": "unsupported",
+    "q-abs-provider": "unsupported",
+    "q-global-reliability": "synthesis",
+    "q-global-themes": "synthesis",
+    "q-ind-leftover": "indirect",
+    "q-ind-owner": "indirect",
+    "q-ind-separate-store": "indirect",
+    "q-nomem-contention": "no-memory",
+    "q-nomem-index": "no-memory",
+    "q-rel-influences": "relational",
+    "q-rel-trace": "relational",
+    "q-stale-trap": "adversarial",
+    "q1-locate-eventstore": "locate",
+    "q2-decision-eventstore": "locate",
+    "q2-decision-redis": "locate",
+    "q3-why-postgres": "provenance",
+    "q4-current-eventstore": "temporal",
+    "q4-historical-march": "temporal",
+    "q4-production-now": "temporal",
+    "q6-use-new-service": "use"
+  },
+  "suite_version": "E6-v0.1"
+}

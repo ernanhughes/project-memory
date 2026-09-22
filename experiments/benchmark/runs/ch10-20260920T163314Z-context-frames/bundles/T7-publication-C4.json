@@ -1,0 +1,250 @@
+{
+  "bundle_id": "cb-T7-publication-C4",
+  "condition": "C4",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1241,
+  "bundle_digest": "b096973a33418161",
+  "items": [
+    {
+      "item_id": "item-mb-ch09-handoff",
+      "members": [
+        "mb-ch09-handoff"
+      ],
+      "source_refs": [
+        "content/books/memory/09-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    },
+    {
+      "item_id": "item-mb-ch11-opening",
+      "members": [
+        "mb-ch11-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/11-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.continuity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 77
+    },
+    {
+      "item_id": "item-mb-ch10-priority-refusal",
+      "members": [
+        "mb-ch10-priority-refusal"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.priority-belongs-to-policy",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 74
+    },
+    {
+      "item_id": "item-mb-ch10-prose-opening",
+      "members": [
+        "mb-ch10-prose-opening"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.current-content",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 119
+    },
+    {
+      "item_id": "item-mb-ch10-prose-schema",
+      "members": [
+        "mb-ch10-prose-schema"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.current-content",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 103
+    },
+    {
+      "item_id": "item-mb-ch10-experiment-pending",
+      "members": [
+        "mb-ch10-experiment-pending"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.no-result",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 88
+    },
+    {
+      "item_id": "item-mb-ch10-concepts",
+      "members": [
+        "mb-ch10-concepts"
+      ],
+      "source_refs": [
+        "content/books/memory/10-concepts.txt"
+      ],
+      "kind": "chapter_concepts",
+      "claim_key": "ch10.concepts",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 86
+    },
+    {
+      "item_id": "item-mb-ch10-refs",
+      "members": [
+        "mb-ch10-refs"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md",
+        "research/bibliography.yaml"
+      ],
+      "kind": "citation",
+      "claim_key": "ch10.references",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 85
+    },
+    {
+      "item_id": "item-mb-style-conventions",
+      "members": [
+        "mb-style-conventions"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.prose",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 66
+    },
+    {
+      "item_id": "item-mb-style-frontmatter",
+      "members": [
+        "mb-style-frontmatter"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "hugo.toml"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.frontmatter",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 83
+    },
+    {
+      "item_id": "item-mb-style-build",
+      "members": [
+        "mb-style-build"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.build",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 56
+    },
+    {
+      "item_id": "item-mb-stale-ch10-plan",
+      "members": [
+        "mb-stale-ch10-plan"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 58
+    },
+    {
+      "item_id": "item-mb-echo-baseline-1",
+      "members": [
+        "mb-echo-baseline-1"
+      ],
+      "source_refs": [
+        "planning/chapter-04-graphrag-research.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 34
+    },
+    {
+      "item_id": "item-mb-echo-baseline-2",
+      "members": [
+        "mb-echo-baseline-2"
+      ],
+      "source_refs": [
+        "planning/chapter-05-associative-memory-research.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 27
+    },
+    {
+      "item_id": "item-mb-arch-q6-open",
+      "members": [
+        "mb-arch-q6-open"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 107
+    },
+    {
+      "item_id": "item-mb-session-pivot",
+      "members": [
+        "mb-session-pivot"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.pivot",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-research-deontic",
+      "members": [
+        "mb-research-deontic"
+      ],
+      "source_refs": [
+        "research/bibliography.yaml"
+      ],
+      "kind": "research_note",
+      "claim_key": "research.deontic",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 38
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

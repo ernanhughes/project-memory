@@ -1,0 +1,45 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md"
+  ],
+  "answer": "The team agrees the SQLite choice needs a proper experiment before any second service copies it.",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 4.448899999260902,
+  "cited_ids": [
+    "session-019.md:44776e7a9df6ca7d"
+  ],
+  "context_tokens": 443,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 7,
+  "latency_ms": 23702.77360000182,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 1,
+  "notes": "explored=7 stopped=activation-exhausted",
+  "query_id": "q-ind-owner",
+  "reader_latency_ms": 23698.11210001353,
+  "retrieved_ids": [
+    "adr-009.md",
+    "session-040.md",
+    "session-044.md",
+    "session-019.md",
+    "adr-007.md"
+  ]
+}

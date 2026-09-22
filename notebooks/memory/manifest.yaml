@@ -1,0 +1,240 @@
+# Notebook manifest: chapter -> notebook -> implementation -> experiment.
+# Auditable mapping for the Memory book companion notebooks.
+# Naming: NN-chapter.ipynb mirrors content/books/memory/NN-chapter.md.
+# Validation: python scripts/validate_notebooks.py
+# Browser HTML rendering: deferred (see notebooks/memory/README.md).
+
+execution_classes:
+  DETERMINISTIC: "runs from fixtures and package code; no services"
+  ARTIFACT_BACKED: "real code plus committed frozen artifacts by default"
+  OPTIONAL_LIVE: "artifact-backed by default; live rerun needs local services"
+  CAPSTONE: "integrated system replayed over frozen contexts"
+
+notebooks:
+  - chapter: 1
+    title: "What Remembering Means"
+    chapter_file: "content/books/memory/01-chapter.md"
+    notebook: "notebooks/memory/01-chapter.ipynb"
+    concepts: ["ch1-storage", "ch1-retrieval", "ch1-memory-behavioural",
+      "ch1-perfect-memory-paradox", "ch1-historical-record",
+      "ch1-selective-memory", "ch1-epistemic-status"]
+    modules: []
+    experiments: []
+    frozen_runs: []
+    evidence_status: "foundational_hypothesis"
+    execution_class: DETERMINISTIC
+
+  - chapter: 2
+    title: "The Measurement Instrument"
+    chapter_file: "content/books/memory/02-chapter.md"
+    notebook: "notebooks/memory/02-chapter.ipynb"
+    concepts: ["ch2-measurement-instrument", "ch2-task-metric-separation",
+      "ch2-controlled-corpus", "ch2-real-corpus", "ch2-baseline-ladder",
+      "ch2-failure-taxonomy", "ch2-validity"]
+    modules: ["experiments.benchmark.memory_measurement"]
+    experiments: ["memory_measurement v0.1 deterministic scorers"]
+    frozen_runs: []
+    evidence_status: "instrument_defined_experiment_pending"
+    execution_class: DETERMINISTIC
+
+  - chapter: 3
+    title: "The RAG Baseline"
+    chapter_file: "content/books/memory/03-chapter.md"
+    notebook: "notebooks/memory/03-chapter.ipynb"
+    concepts: ["ch3-conventional-rag", "ch3-hybrid-retrieval",
+      "ch3-context-assembly", "ch3-source-preserving-boundary",
+      "ch3-reader-use"]
+    modules: ["memory_baseline"]
+    experiments: ["ch3-20260919-ladder (8 conditions, 10 tasks)"]
+    frozen_runs: ["ch3-20260919-ladder"]
+    evidence_status: "implemented_comparative_book_experiment_pending"
+    execution_class: ARTIFACT_BACKED
+    live: "RUN_LIVE cell requires PostgreSQL + Ollama; default path uses frozen artifacts only"
+
+  - chapter: 4
+    title: "From Retrieval to Persistent Understanding"
+    chapter_file: "content/books/memory/04-chapter.md"
+    notebook: "notebooks/memory/04-chapter.ipynb"
+    concepts: ["ch4-transient-interpretation",
+      "ch4-persistent-derived-graph", "ch4-layered-memory",
+      "ch4-derivation-provenance", "ch4-persistent-error",
+      "ch4-rebuild-invariant"]
+    modules: ["graph_memory"]
+    experiments: ["ch4-20260919T205622Z (GraphRAG vs baseline + adjudication)"]
+    frozen_runs: ["ch4-20260919T205622Z"]
+    evidence_status: "developmental_verdict_type_c_with_type_b_core"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 5
+    title: "Pathways Through Memory"
+    chapter_file: "content/books/memory/05-chapter.md"
+    notebook: "notebooks/memory/05-chapter.ipynb"
+    concepts: ["ch5-associative-memory", "ch5-spreading-activation",
+      "ch5-cue-conditioned-propagation", "ch5-retrieval-causality"]
+    modules: ["associative_memory"]
+    experiments: ["E5 suite over assoc-ledger-v0.1 fixture graph"]
+    frozen_runs: ["ch5-20260919-e5"]
+    evidence_status: "developmental_conditional"
+    execution_class: DETERMINISTIC
+
+  - chapter: 6
+    title: "The Memory Nexus"
+    chapter_file: "content/books/memory/06-chapter.md"
+    notebook: "notebooks/memory/06-chapter.ipynb"
+    concepts: ["ch6-memory-nexus", "ch6-capability-routing",
+      "ch6-routing-regret"]
+    modules: ["memory_nexus"]
+    experiments: ["ch6-20260919-nexus (E6-A dominance, E6-B headroom, E6-CDE)"]
+    frozen_runs: ["ch6-20260919-nexus"]
+    evidence_status: "developmental_optimisation_control"
+    execution_class: DETERMINISTIC
+
+  - chapter: 7
+    title: "Why"
+    chapter_file: "content/books/memory/07-chapter.md"
+    notebook: "notebooks/memory/07-chapter.ipynb"
+    concepts: ["ch7-evidential-support", "ch7-support-groups",
+      "ch7-claim-extraction", "ch7-reverse-lineage", "ch7-echo-restatement"]
+    modules: ["evidence_lineage"]
+    experiments: ["E7 suite on deterministic claim/span ledger"]
+    frozen_runs: ["ch7-20260919-e7"]
+    evidence_status: "book_result_core_when_claims_derived"
+    execution_class: DETERMINISTIC
+
+  - chapter: 8
+    title: "Is It Still True?"
+    chapter_file: "content/books/memory/08-chapter.md"
+    notebook: "notebooks/memory/08-chapter.ipynb"
+    concepts: ["ch8-trajectory", "ch8-bitemporal-standpoint",
+      "ch8-temporal-admissibility", "ch8-arrival-event-separation"]
+    modules: ["temporal_memory"]
+    experiments: ["E8 suite (resolver conditions, bitemporal, late arrival)"]
+    frozen_runs: ["ch8-20260919T234349Z-temporal",
+      "ch8-20260919T234350Z-temporal"]
+    evidence_status: "book_result_core_for_temporal_state"
+    execution_class: DETERMINISTIC
+
+  - chapter: 9
+    title: "What Did We Leave Unfinished?"
+    chapter_file: "content/books/memory/09-chapter.md"
+    notebook: "notebooks/memory/09-chapter.ipynb"
+    concepts: ["ch9-open-loop", "ch9-expected-transition",
+      "ch9-search-footprint", "ch9-status-maintenance"]
+    modules: ["open_loops"]
+    experiments: ["E9 suite (mention vs transition, footprints, reverify)"]
+    frozen_runs: ["ch9-20260920T000629Z-open-loops"]
+    evidence_status: "book_result_conditional"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 10
+    title: "What Matters Right Now?"
+    chapter_file: "content/books/memory/10-chapter.md"
+    notebook: "notebooks/memory/10-chapter.ipynb"
+    concepts: ["ch10-project-frame", "ch10-work-frame",
+      "ch10-context-bundle", "ch10-selection-trace"]
+    modules: ["context_frames"]
+    experiments: ["ch10-20260920T163314Z-context-frames"]
+    frozen_runs: ["ch10-20260920T163314Z-context-frames"]
+    evidence_status: "book_result_core_explicit_control"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 11
+    title: "Consequences Nobody Wrote Down"
+    chapter_file: "content/books/memory/11-chapter.md"
+    notebook: "notebooks/memory/11-chapter.ipynb"
+    concepts: ["ch11-derived-loop", "ch11-triple-gate",
+      "ch11-inferred-precision"]
+    modules: ["derived_loops"]
+    experiments: ["ch11 derived-loop suite (staged vs unconstrained vs oracle)"]
+    frozen_runs: ["ch11-20260920T165907Z-derived-loops",
+      "ch11-20260920T171039Z-derived-loops"]
+    evidence_status: "book_result_conditional_guarded"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 12
+    title: "Does Better Context Change Behaviour?"
+    chapter_file: "content/books/memory/12-chapter.md"
+    notebook: "notebooks/memory/12-chapter.ipynb"
+    concepts: ["ch12-behavioural-influence", "ch12-behavioural-utility",
+      "ch12-memory-dependent-task"]
+    modules: ["behavior_eval", "capstone"]
+    experiments: ["ch12-20260920T204414Z-behavior",
+      "ch12-token-control-20260921T002019Z-llama",
+      "ch12-token-control-20260921T003600Z-muse"]
+    frozen_runs: ["ch12-20260920T204414Z-behavior",
+      "ch12-token-control-20260921T002019Z-llama",
+      "ch12-token-control-20260921T003600Z-muse"]
+    evidence_status: "book_result"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 13
+    title: "When the Frame Is Wrong"
+    chapter_file: "content/books/memory/13-chapter.md"
+    notebook: "notebooks/memory/13-chapter.ipynb"
+    concepts: ["ch13-reconciliation-record", "ch13-frame-establishment",
+      "ch13-simplification-test"]
+    modules: ["context_frames"]
+    experiments: ["ch13-eval-v1-ministral"]
+    frozen_runs: ["ch13-eval-v1-ministral", "ch13-eval-v1", "ch13-dev-v1"]
+    evidence_status: "book_result_conditional_control"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 14
+    title: "Context Is a Bottleneck"
+    chapter_file: "content/books/memory/14-chapter.md"
+    notebook: "notebooks/memory/14-chapter.ipynb"
+    concepts: ["ch14-context-bottleneck", "ch14-evidence-preservation",
+      "ch14-reader-relative-sufficiency"]
+    modules: ["memory_baseline", "context_frames"]
+    experiments: ["ch14-20260920T174259Z-context-assembly"]
+    frozen_runs: ["ch14-20260920T174259Z-context-assembly"]
+    evidence_status: "book_result_core_for_bounded_context"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 15
+    title: "What Should Memory Keep?"
+    chapter_file: "content/books/memory/15-chapter.md"
+    notebook: "notebooks/memory/15-chapter.ipynb"
+    concepts: ["ch15-availability-management",
+      "ch15-rebuildable-derived-memory", "ch15-competition-control"]
+    modules: []
+    experiments: ["growth/consolidation experiment (pending)"]
+    frozen_runs: []
+    evidence_status: "experimental_deferred"
+    execution_class: DETERMINISTIC
+
+  - chapter: 16
+    title: "Learning From Experience"
+    chapter_file: "content/books/memory/16-chapter.md"
+    notebook: "notebooks/memory/16-chapter.ipynb"
+    concepts: ["ch16-learning-from-experience", "ch16-outcome-attribution",
+      "ch16-procedure-memory"]
+    modules: ["derived_loops", "associative_memory"]
+    experiments: ["outcome adaptation experiment (pending)"]
+    frozen_runs: []
+    evidence_status: "experimental_deferred"
+    execution_class: DETERMINISTIC
+
+  - chapter: 17
+    title: "Can Memory Be Trusted?"
+    chapter_file: "content/books/memory/17-chapter.md"
+    notebook: "notebooks/memory/17-chapter.ipynb"
+    concepts: ["ch17-trust-gate", "ch17-authority-channel",
+      "ch17-quarantine"]
+    modules: ["context_frames"]
+    experiments: ["trust-eval-v1-muse", "trust-eval-v1-llama"]
+    frozen_runs: ["trust-eval-v1-muse", "trust-eval-v1-llama",
+      "trust-dev-v1"]
+    evidence_status: "book_result_conditional_control_priced"
+    execution_class: ARTIFACT_BACKED
+
+  - chapter: 18
+    title: "The Remembering System"
+    chapter_file: "content/books/memory/18-chapter.md"
+    notebook: "notebooks/memory/18-chapter.ipynb"
+    concepts: ["ch18-earned-architecture", "ch18-reversibility-system"]
+    modules: ["capstone"]
+    experiments: ["capstone replay over frozen ch12 + ch10 + ch14 + token control"]
+    frozen_runs: ["capstone-20260921T195901Z-replay"]
+    evidence_status: "book_result_capstone"
+    execution_class: CAPSTONE

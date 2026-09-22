@@ -1,0 +1,25 @@
+{
+  "chunking_policy": "sentence:2000:300",
+  "code_commit": "c21bcae",
+  "condition": "graph-global",
+  "context_budget": "chars=6000,passages=6",
+  "corpus_version": "ch3-fixture-v0.1",
+  "embedding_model": "ollama:bge-m3:1024",
+  "generator_seed": null,
+  "grader_identity": "mechanical-only",
+  "grader_version": "unspecified",
+  "instrument_version": "0.1.0",
+  "memory_configuration": "graph-global",
+  "model_identity": "ollama",
+  "model_version": "llama3.1:8b+graphrag:ministral-3:8b",
+  "notes": "Chapter 4 graph condition; n=14 tasks.",
+  "prompts": [
+    "Answer questions about a software project's recorded history. Use only the supplied project evidence. Quote or name the evidence identifiers you rely on. If the evidence does not determine an answer, say so plainly instead of guessing. Distinguish what was decided from what was merely proposed."
+  ],
+  "reranker": "cross-encoder",
+  "retrieval_budget": "candidates=30",
+  "run_id": "ch4-20260919T205622Z",
+  "scorer_version": "0.1.0",
+  "system_name": "rag-graph-llama3.1:8b",
+  "task_set_version": "ch4-tasks-v0.1"
+}

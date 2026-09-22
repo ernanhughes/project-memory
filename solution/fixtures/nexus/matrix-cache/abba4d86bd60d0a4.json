@@ -1,0 +1,52 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "session-014.md",
+    "incident-021.md",
+    "experiment-contention.md",
+    "production-notes.md",
+    "notification-service.md",
+    "session-019.md"
+  ],
+  "answer": "PostgreSQL",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6069.93609998608,
+  "cited_ids": [
+    "adr-007.md",
+    "session-014.md",
+    "incident-021.md",
+    "experiment-contention.md"
+  ],
+  "context_tokens": 785,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 13778.0242000008,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.25,
+    "source_recall": 1.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=2751",
+  "query_id": "q-stale-trap",
+  "reader_latency_ms": 7707.888700009789,
+  "retrieved_ids": [
+    "stale-summary.md",
+    "adr-007.md",
+    "session-014.md",
+    "incident-021.md",
+    "experiment-contention.md",
+    "production-notes.md",
+    "notification-service.md",
+    "session-019.md"
+  ]
+}

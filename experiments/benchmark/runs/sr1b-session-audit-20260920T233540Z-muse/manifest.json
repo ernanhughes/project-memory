@@ -1,0 +1,36 @@
+{
+  "suite": "SR-1b session-isolation audit",
+  "run_id": "sr1b-session-audit-20260920T233540Z-muse",
+  "created_at": "20260920T233540Z",
+  "tasks": [
+    "fix-store",
+    "cite-rule",
+    "corpus-cleanup"
+  ],
+  "reps": 3,
+  "arms": {
+    "S0": "fresh session B0",
+    "S1a": "session B4",
+    "S1b": "same session, exact S0 B0 input",
+    "S2": "fresh session B0 again"
+  },
+  "reader": "opencode:muse-spark-1.3-contributor@t0",
+  "reader_provider": "opencode-zen-go",
+  "reader_model": "muse-spark-1.3-contributor",
+  "reasoning_effort": "low",
+  "temperature": 0.0,
+  "max_output_tokens": 2048,
+  "grader_version": "behavior-grader-v2",
+  "prompt_version": "behavior-prompt-v2",
+  "fixture_version": "behavior-fixtures-v1",
+  "code_commit": "3035e13",
+  "muse_usage_totals": {
+    "input_tokens": 16788,
+    "cached_input_tokens": 2707,
+    "output_tokens": 28312,
+    "reasoning_tokens": 24711,
+    "total_tokens": 45100,
+    "calls": 36
+  },
+  "cost": "not computed"
+}

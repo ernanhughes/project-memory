@@ -1,0 +1,44 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "production-notes.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md"
+  ],
+  "answer": "The incidents and measurements that influenced the event-store decision were concurrent-write contention under load (evt-202, evt-203) and the PostgreSQL candidate holding flat throughput to 32 writers (evt-204).",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.4361000289209187,
+  "cited_ids": [
+    "adr-007.md"
+  ],
+  "context_tokens": 573,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 8,
+  "latency_ms": 28562.32229998568,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.16666666666666666,
+    "source_recall": 0.25,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=8 stopped=activation-exhausted",
+  "query_id": "q-rel-influences",
+  "reader_latency_ms": 28558.58840001747,
+  "retrieved_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "session-014.md",
+    "session-019.md",
+    "stale-summary.md",
+    "production-notes.md"
+  ]
+}

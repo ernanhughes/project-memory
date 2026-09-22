@@ -1,0 +1,35 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "The event store service",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 22745.297600049525,
+  "cited_ids": [
+    "adr-007.md",
+    "production-notes.md",
+    "session-044.md",
+    "adr-009.md"
+  ],
+  "context_tokens": 275,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 29530.40739998687,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-ind-separate-store",
+  "reader_latency_ms": 6784.927400003653,
+  "retrieved_ids": []
+}

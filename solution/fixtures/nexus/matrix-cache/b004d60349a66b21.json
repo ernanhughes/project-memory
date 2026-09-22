@@ -1,0 +1,47 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "adr-009.md",
+    "benchmark-note.md",
+    "session-019.md",
+    "session-040.md",
+    "session-044.md",
+    "stale-summary.md"
+  ],
+  "answer": "PostgreSQL",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.131000034045428,
+  "cited_ids": [
+    "adr-007.md"
+  ],
+  "context_tokens": 650,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 5,
+  "latency_ms": 22211.936600040644,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "current_state_accuracy": 1.0,
+    "source_precision": 0.14285714285714285,
+    "source_recall": 1.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=5 stopped=activation-exhausted",
+  "query_id": "q4-current-eventstore",
+  "reader_latency_ms": 22208.612400048878,
+  "retrieved_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "stale-summary.md",
+    "adr-009.md",
+    "session-040.md",
+    "session-044.md",
+    "session-019.md"
+  ]
+}

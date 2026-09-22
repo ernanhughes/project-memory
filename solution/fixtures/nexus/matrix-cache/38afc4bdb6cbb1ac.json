@@ -1,0 +1,41 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "incident-021.md",
+    "stale-summary.md"
+  ],
+  "answer": "new services",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 2.8602000093087554,
+  "cited_ids": [
+    "adr-007.md",
+    "stale-summary.md"
+  ],
+  "context_tokens": 353,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+  ],
+  "graph_expansions": 5,
+  "latency_ms": 4079.668899998069,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=5 stopped=activation-exhausted",
+  "query_id": "q-ind-separate-store",
+  "reader_latency_ms": 4076.5741000068374,
+  "retrieved_ids": [
+    "adr-007.md",
+    "stale-summary.md",
+    "incident-021.md"
+  ]
+}

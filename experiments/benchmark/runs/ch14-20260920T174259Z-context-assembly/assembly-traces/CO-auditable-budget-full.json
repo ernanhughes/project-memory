@@ -1,0 +1,1821 @@
+{
+  "T1-architecture": {
+    "task_id": "T1-architecture",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-arch-spine",
+          "mb-arch-q6-open",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1500
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-ch09-result",
+          "mb-ch10-experiment-pending",
+          "mb-arch-spine",
+          "mb-ch08-result",
+          "mb-arch-q6-open",
+          "mb-arch-definition",
+          "mb-ch10-priority-refusal",
+          "mb-method-baseline-rule",
+          "mb-ch06-result",
+          "mb-method-evidence-discipline",
+          "mb-ch10-prose-opening"
+        ],
+        "bundle_tokens": 1301
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-refutes-ch9-scope",
+          "mb-loop-ch10-experiment"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 16,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 125,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 82,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch09-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 113,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 88,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-spine",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 84,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch08-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 102,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-definition",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 67,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-priority-refusal",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 74,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch06-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 79,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 75,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-prose-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 119,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      }
+    ],
+    "latency_ms": 0.3968999999415246,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T1-publication": {
+    "task_id": "T1-publication",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch10-priority-refusal",
+          "mb-ch11-opening",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ],
+        "bundle_tokens": 1085
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-ch10-concepts",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-experiment-pending",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-build"
+        ],
+        "bundle_tokens": 992
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-loop-ch10-experiment",
+          "mb-loop-ch11-recap"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 14,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-ch10-prose-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 119,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-prose-schema",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 103,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-refs",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 85,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-style-conventions",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 66,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-concepts",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 86,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-priority-refusal",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 74,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 88,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-ch09-handoff",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch11-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-style-frontmatter",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 83,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-style-citations",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 78,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-style-build",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 56,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch11-recap",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 48,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch11-recap"
+        ]
+      }
+    ],
+    "latency_ms": 0.367999999980384,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-cocoder": {
+    "task_id": "T2-cocoder",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "cc-context-window",
+          "cc-memory-notes",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-evidence-refs"
+        ],
+        "bundle_tokens": 233
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "cc-context-window",
+          "cc-improve-context",
+          "cc-eval-harness",
+          "cc-memory-notes"
+        ],
+        "bundle_tokens": 186
+      },
+      {
+        "operation": "auditable-additions",
+        "added": []
+      },
+      {
+        "operation": "mark",
+        "marked": 4,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "cc-context-window",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 57,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "cc-improve-context",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 41,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "cc-eval-harness",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 46,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "cc-memory-notes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 42,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      }
+    ],
+    "latency_ms": 0.32660000033502,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-memory-book": {
+    "task_id": "T2-memory-book",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-graphrag",
+          "mb-impl-zeromq",
+          "mb-impl-postgres",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-research-context-engineering",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1315
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-arch-q6-open",
+          "mb-ch03-admission-note",
+          "mb-contract-q6",
+          "mb-research-context-engineering",
+          "mb-ch03-baseline-role",
+          "mb-arch-layers",
+          "mb-method-earn"
+        ],
+        "bundle_tokens": 674
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-refutes-ch9-scope"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 8,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-ch03-admission-note",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 84,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 82,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-research-context-engineering",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 87,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 125,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-layers",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 100,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.3268000000389293,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T2-writer": {
+    "task_id": "T2-writer",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "wr-context-runtime",
+          "wr-memory-store",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval"
+        ],
+        "bundle_tokens": 255
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "wr-context-runtime",
+          "wr-improve-context",
+          "wr-rag-baseline",
+          "wr-retrieval-eval",
+          "wr-memory-store"
+        ],
+        "bundle_tokens": 255
+      },
+      {
+        "operation": "auditable-additions",
+        "added": []
+      },
+      {
+        "operation": "mark",
+        "marked": 5,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "wr-context-runtime",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 66,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-improve-context",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-rag-baseline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 44,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-retrieval-eval",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 56,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "wr-memory-store",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 39,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      }
+    ],
+    "latency_ms": 0.27440000030765077,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T3-goal-switch": {
+    "task_id": "T3-goal-switch",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-failure-classes",
+          "mb-contract-frozen-run",
+          "mb-ch07-result",
+          "mb-ch09-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch06-result",
+          "mb-ch04-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition"
+        ],
+        "bundle_tokens": 1498
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-ch03-baseline-role",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-contract-q6",
+          "mb-session-pivot",
+          "mb-method-baseline-rule"
+        ],
+        "bundle_tokens": 862
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-refutes-ch9-scope"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 10,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 125,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-spine",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 84,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch09-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 113,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch08-result",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 102,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 82,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-session-pivot",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 63,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      }
+    ],
+    "latency_ms": 0.3131000003122608,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T4-current-vs-stale": {
+    "task_id": "T4-current-vs-stale",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-impl-postgres",
+          "mb-impl-zeromq",
+          "mb-impl-test-paths",
+          "mb-impl-graphrag",
+          "mb-ch09-result",
+          "mb-ch06-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch08-result",
+          "mb-ch07-result",
+          "mb-arch-q6-open",
+          "mb-arch-spine",
+          "mb-arch-definition",
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-session-pivot",
+          "mb-echo-baseline-4",
+          "mb-echo-ch9-result-1",
+          "mb-echo-baseline-3",
+          "mb-echo-baseline-1"
+        ],
+        "bundle_tokens": 1396
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-impl-postgres",
+          "mb-ch03-baseline-role",
+          "mb-impl-test-paths"
+        ],
+        "bundle_tokens": 246
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 5,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-impl-postgres",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 69,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 125,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-impl-test-paths",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 52,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      }
+    ],
+    "latency_ms": 0.3430999995543971,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T5-support-vs-topicality": {
+    "task_id": "T5-support-vs-topicality",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-baseline-rule",
+          "mb-method-earn",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-role",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-contract-failure-classes",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-ch06-result",
+          "mb-ch09-result",
+          "mb-ch08-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-loop-ch10-experiment"
+        ],
+        "bundle_tokens": 1476
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-method-evidence-discipline",
+          "mb-method-baseline-rule",
+          "mb-contract-failure-classes",
+          "mb-method-earn",
+          "mb-contract-frozen-run",
+          "mb-contract-q6"
+        ],
+        "bundle_tokens": 501
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-refutes-ch9-scope",
+          "mb-loop-ch10-experiment"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 8,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 75,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-failure-classes",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 68,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-frozen-run",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 90,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-contract-q6",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 82,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      }
+    ],
+    "latency_ms": 0.3265999994255253,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T6-echo-coalescing": {
+    "task_id": "T6-echo-coalescing",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-method-evidence-discipline",
+          "mb-ch03-baseline-strength",
+          "mb-ch03-admission-note",
+          "mb-ch03-baseline-role",
+          "mb-contract-q6",
+          "mb-contract-frozen-run",
+          "mb-contract-failure-classes",
+          "mb-ch06-result",
+          "mb-ch07-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch04-result",
+          "mb-arch-definition",
+          "mb-arch-layers",
+          "mb-arch-q6-open",
+          "mb-arch-spine"
+        ],
+        "bundle_tokens": 1485
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-method-earn",
+          "mb-method-baseline-rule",
+          "mb-ch03-baseline-role",
+          "mb-method-evidence-discipline"
+        ],
+        "bundle_tokens": 386
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 6,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-method-earn",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 89,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-baseline-rule",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 97,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch03-baseline-role",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 125,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-method-evidence-discipline",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 75,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      }
+    ],
+    "latency_ms": 0.31239999952958897,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-publication": {
+    "task_id": "T7-publication",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-priority-refusal",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-experiment-pending",
+          "mb-ch10-concepts",
+          "mb-ch10-refs",
+          "mb-style-conventions",
+          "mb-style-frontmatter",
+          "mb-style-build",
+          "mb-echo-baseline-1",
+          "mb-echo-baseline-2",
+          "mb-arch-q6-open",
+          "mb-session-pivot",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1183
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-style-conventions",
+          "mb-ch10-refs",
+          "mb-ch10-concepts",
+          "mb-style-frontmatter",
+          "mb-ch11-opening",
+          "mb-ch09-handoff"
+        ],
+        "bundle_tokens": 696
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-ch10-experiment-pending",
+          "mb-arch-q6-open"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 10,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-ch10-prose-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 119,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-prose-schema",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 103,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-style-conventions",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 66,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-refs",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 85,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-concepts",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 86,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-style-frontmatter",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 83,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch11-opening",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch09-handoff",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 77,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 88,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      }
+    ],
+    "latency_ms": 0.3391999998711981,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  },
+  "T7-release": {
+    "task_id": "T7-release",
+    "condition": "CO-auditable",
+    "budget": "full",
+    "operations": [
+      {
+        "operation": "input",
+        "source": "ch10-C5-frozen",
+        "admitted_members": [
+          "mb-loop-real-corpus",
+          "mb-loop-ch11-recap",
+          "mb-loop-ch10-experiment",
+          "mb-style-build",
+          "mb-style-frontmatter",
+          "mb-style-citations",
+          "mb-style-conventions",
+          "mb-ch09-result",
+          "mb-ch04-result",
+          "mb-refutes-ch9-scope",
+          "mb-ch09-handoff",
+          "mb-ch11-opening",
+          "mb-ch10-prose-opening",
+          "mb-ch10-prose-schema",
+          "mb-ch10-priority-refusal",
+          "mb-impl-zeromq",
+          "mb-impl-graphrag",
+          "mb-impl-postgres",
+          "mb-arch-q6-open",
+          "mb-research-deontic"
+        ],
+        "bundle_tokens": 1488
+      },
+      {
+        "operation": "input",
+        "source": "ch10-CO-frozen",
+        "admitted_members": [
+          "mb-loop-ch10-experiment",
+          "mb-loop-readme-drift",
+          "mb-loop-ch11-recap",
+          "mb-loop-real-corpus",
+          "mb-ch10-experiment-pending",
+          "mb-style-build"
+        ],
+        "bundle_tokens": 354
+      },
+      {
+        "operation": "auditable-additions",
+        "added": [
+          "mb-refutes-ch9-scope",
+          "mb-arch-q6-open"
+        ]
+      },
+      {
+        "operation": "mark",
+        "marked": 8,
+        "as_of": "2026-09-20T12:00:00Z"
+      }
+    ],
+    "items": [
+      {
+        "unit_id": "mb-loop-ch10-experiment",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 50,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-readme-drift",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 57,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-readme-drift"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-ch11-recap",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 48,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch11-recap"
+        ]
+      },
+      {
+        "unit_id": "mb-loop-real-corpus",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 55,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-real-corpus"
+        ]
+      },
+      {
+        "unit_id": "mb-ch10-experiment-pending",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 88,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-ch10-experiment"
+        ]
+      },
+      {
+        "unit_id": "mb-style-build",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 56,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z"
+        ]
+      },
+      {
+        "unit_id": "mb-refutes-ch9-scope",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 70,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DISPUTES fellow-group claim (unresolved)"
+        ]
+      },
+      {
+        "unit_id": "mb-arch-q6-open",
+        "state": "kept",
+        "reason": "ADMITTED_BY_C5",
+        "budget_before": null,
+        "budget_after": null,
+        "tokens": 107,
+        "represents": [],
+        "marks": [
+          "CURRENT as of 2026-09-20T12:00:00Z",
+          "DERIVED-LICENCE open-loop loop-q6"
+        ]
+      }
+    ],
+    "latency_ms": 0.32899999951041536,
+    "assembly_version": "assembly-v1",
+    "drop_policy_version": "drop-preference-outside-first-v1",
+    "render_version": "sectioned-evidence-v1"
+  }
+}

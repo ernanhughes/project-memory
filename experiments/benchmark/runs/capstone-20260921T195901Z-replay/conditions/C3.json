@@ -1,0 +1,73 @@
+{
+ "bcode": "B3",
+ "n_tasks": 7,
+ "task_success_macro": 0.3571,
+ "mean_tokens": 1909.3,
+ "harm_tasks": 0,
+ "rows": [
+  {
+   "task_id": "fix-store",
+   "task_score": 0.8333,
+   "harm": false,
+   "context_tokens": 1952,
+   "context_hash": "40c7810b6a2f5781",
+   "n_memory": 20
+  },
+  {
+   "task_id": "ship-ch10",
+   "task_score": 0.6667,
+   "harm": false,
+   "context_tokens": 2002,
+   "context_hash": "daef1c0ceb2d2fb2",
+   "n_memory": 20
+  },
+  {
+   "task_id": "release-blockers",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 2002,
+   "context_hash": "daef1c0ceb2d2fb2",
+   "n_memory": 20
+  },
+  {
+   "task_id": "credit-rule",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1987,
+   "context_hash": "4af28c8d036bd5c4",
+   "n_memory": 17
+  },
+  {
+   "task_id": "cite-rule",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1971,
+   "context_hash": "ea022a9601f1d89a",
+   "n_memory": 17
+  },
+  {
+   "task_id": "review-prose",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1464,
+   "context_hash": "da25f686d5f90a3f",
+   "n_memory": 15
+  },
+  {
+   "task_id": "review-arch",
+   "task_score": 1.0,
+   "harm": false,
+   "context_tokens": 1987,
+   "context_hash": "4af28c8d036bd5c4",
+   "n_memory": 17
+  },
+  {
+   "task_id": "irrelevant",
+   "task_score": 0.0,
+   "harm": false,
+   "context_tokens": 1464,
+   "context_hash": "da25f686d5f90a3f",
+   "n_memory": 15
+  }
+ ]
+}

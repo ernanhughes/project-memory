@@ -1,0 +1,50 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "stale-summary.md",
+    "commits.log",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-040.md",
+    "session-014.md",
+    "notification-service.md"
+  ],
+  "answer": "PostgreSQL",
+  "capability_id": "RAG",
+  "capability_latency_ms": 5970.241000002716,
+  "cited_ids": [
+    "adr-007.md",
+    "production-notes.md"
+  ],
+  "context_tokens": 741,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 10136.091799999122,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "current_state_accuracy": 1.0,
+    "source_precision": 0.125,
+    "source_recall": 1.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=2745",
+  "query_id": "q4-current-eventstore",
+  "reader_latency_ms": 4165.660700004082,
+  "retrieved_ids": [
+    "adr-007.md",
+    "stale-summary.md",
+    "commits.log",
+    "benchmark-note.md",
+    "production-notes.md",
+    "session-040.md",
+    "session-014.md",
+    "notification-service.md"
+  ]
+}

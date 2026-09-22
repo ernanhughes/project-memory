@@ -1,0 +1,296 @@
+{
+  "bundle_id": "cb-T5-support-vs-topicality-C1",
+  "condition": "C1",
+  "budget_tokens": 1500,
+  "bundle_tokens": 1498,
+  "bundle_digest": "abea4b8384ddb5d6",
+  "items": [
+    {
+      "item_id": "item-mb-session-pivot",
+      "members": [
+        "mb-session-pivot"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "session.pivot",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 63
+    },
+    {
+      "item_id": "item-mb-method-earn",
+      "members": [
+        "mb-method-earn"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "planning/book-architecture.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 89
+    },
+    {
+      "item_id": "item-mb-method-baseline-rule",
+      "members": [
+        "mb-method-baseline-rule"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.baseline-ladder",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 97
+    },
+    {
+      "item_id": "item-mb-echo-baseline-2",
+      "members": [
+        "mb-echo-baseline-2"
+      ],
+      "source_refs": [
+        "planning/chapter-05-associative-memory-research.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 27
+    },
+    {
+      "item_id": "item-mb-contract-failure-classes",
+      "members": [
+        "mb-contract-failure-classes"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.failure-classes",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 68
+    },
+    {
+      "item_id": "item-mb-ch06-result",
+      "members": [
+        "mb-ch06-result"
+      ],
+      "source_refs": [
+        "content/books/memory/06-chapter.md",
+        "experiments/benchmark/runs/ch6-20260919-nexus"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 79
+    },
+    {
+      "item_id": "item-mb-arch-definition",
+      "members": [
+        "mb-arch-definition"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md",
+        "content/books/memory/01-chapter.md"
+      ],
+      "kind": "architecture_note",
+      "claim_key": "arch.definition",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 67
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-role",
+      "members": [
+        "mb-ch03-baseline-role"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-config",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 125
+    },
+    {
+      "item_id": "item-mb-refutes-ch9-scope",
+      "members": [
+        "mb-refutes-ch9-scope"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/results.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 70
+    },
+    {
+      "item_id": "item-mb-ch09-result",
+      "members": [
+        "mb-ch09-result"
+      ],
+      "source_refs": [
+        "experiments/benchmark/runs/ch9-20260920T000629Z-open-loops/metrics.json"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "result.ch9",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 113
+    },
+    {
+      "item_id": "item-mb-loop-ch10-experiment",
+      "members": [
+        "mb-loop-ch10-experiment"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "open_loop",
+      "claim_key": "loop.ch10-experiment",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 50
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-strength",
+      "members": [
+        "mb-ch03-baseline-strength"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-strength",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 114
+    },
+    {
+      "item_id": "item-mb-contract-q6",
+      "members": [
+        "mb-contract-q6"
+      ],
+      "source_refs": [
+        "spec/benchmark-v0.1.md"
+      ],
+      "kind": "measurement_contract",
+      "claim_key": "contract.q6",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 82
+    },
+    {
+      "item_id": "item-mb-stale-ch10-plan",
+      "members": [
+        "mb-stale-ch10-plan"
+      ],
+      "source_refs": [
+        "planning/book-architecture.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "arch.next-mechanism",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 58
+    },
+    {
+      "item_id": "item-mb-style-citations",
+      "members": [
+        "mb-style-citations"
+      ],
+      "source_refs": [
+        "AGENTS.md",
+        "research/bibliography.yaml"
+      ],
+      "kind": "style_rule",
+      "claim_key": "style.citations",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 78
+    },
+    {
+      "item_id": "item-mb-ch10-refs",
+      "members": [
+        "mb-ch10-refs"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md",
+        "research/bibliography.yaml"
+      ],
+      "kind": "citation",
+      "claim_key": "ch10.references",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 85
+    },
+    {
+      "item_id": "item-mb-ch10-experiment-pending",
+      "members": [
+        "mb-ch10-experiment-pending"
+      ],
+      "source_refs": [
+        "content/books/memory/10-chapter.md"
+      ],
+      "kind": "chapter_prose",
+      "claim_key": "ch10.no-result",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 88
+    },
+    {
+      "item_id": "item-mb-method-evidence-discipline",
+      "members": [
+        "mb-method-evidence-discipline"
+      ],
+      "source_refs": [
+        "AGENTS.md"
+      ],
+      "kind": "method_rule",
+      "claim_key": "method.evidence-discipline",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 75
+    },
+    {
+      "item_id": "item-mb-echo-baseline-3",
+      "members": [
+        "mb-echo-baseline-3"
+      ],
+      "source_refs": [
+        "planning/continuity-audit.md"
+      ],
+      "kind": "session_note",
+      "claim_key": "method.earn-complexity",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 29
+    },
+    {
+      "item_id": "item-cc-improve-context",
+      "members": [
+        "cc-improve-context"
+      ],
+      "source_refs": [
+        "cocoder/docs/roadmap.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "cocoder.roadmap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 41
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

@@ -1,0 +1,6231 @@
+{
+  "cells": [
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "answer": "Session 014",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.513399977236986,
+      "cited_ids": [
+        "session-014.md"
+      ],
+      "context_tokens": 623,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 7,
+      "latency_ms": 5950.021600001492,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.5,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=7 stopped=hop-budget",
+      "query_id": "q1-locate-eventstore",
+      "reader_latency_ms": 5946.310000028461,
+      "retrieved_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md",
+        "session-014.md",
+        "session-019.md",
+        "adr-009.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "Session 014 (March 4, 2024)",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 43724.812100001145,
+      "cited_ids": [
+        "session-014.md"
+      ],
+      "context_tokens": 1019,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_OMISSION"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 56883.78949998878,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 0.3333333333333333,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q1-locate-eventstore",
+      "reader_latency_ms": 13158.833800000139,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "session-014.md",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 77871.0125000216,
+      "cited_ids": [
+        "[derived:global search over persistent graph memory; linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md]"
+      ],
+      "context_tokens": 917,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 81553.03340003593,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 0.3333333333333333,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q1-locate-eventstore",
+      "reader_latency_ms": 3681.88479996752,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "The discussion around the event-store backend was extensively documented across multiple artifacts, spanning sessions, decision records, benchmarks, and incident reports.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 70013.99180002045,
+      "cited_ids": [
+        "linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md"
+      ],
+      "context_tokens": 1498,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 74561.8162000319,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 0.3333333333333333,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q1-locate-eventstore",
+      "reader_latency_ms": 4547.686300007626,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2833.72379996581,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q1-locate-eventstore",
+      "reader_latency_ms": 2833.5354999871925,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md",
+        "stale-summary.md",
+        "adr-007.md",
+        "notification-service.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-040.md",
+        "experiment-contention.md"
+      ],
+      "answer": "Session 014",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5752.594600024167,
+      "cited_ids": [
+        "session-014.md"
+      ],
+      "context_tokens": 753,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 28433.899600000586,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 0.6666666666666666,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2621",
+      "query_id": "q1-locate-eventstore",
+      "reader_latency_ms": 22681.132400000934,
+      "retrieved_ids": [
+        "session-014.md",
+        "stale-summary.md",
+        "adr-007.md",
+        "notification-service.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-040.md",
+        "experiment-contention.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "Session 014 \u2014 event-store backend discussion",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.2753999908454716,
+      "cited_ids": [
+        "session-014.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 5476.448000001255,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.21428571428571427,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q1-locate-eventstore",
+      "reader_latency_ms": 5475.038299977314,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.459799976553768,
+      "cited_ids": [
+        "adr-007.md"
+      ],
+      "context_tokens": 724,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 7,
+      "latency_ms": 3691.7166000348516,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=7 stopped=hop-budget",
+      "query_id": "q2-decision-eventstore",
+      "reader_latency_ms": 3687.9063000087626,
+      "retrieved_ids": [
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md",
+        "adr-007.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md",
+        "production-notes.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 45471.38299996732,
+      "cited_ids": [
+        "Data: Sources (0)",
+        "Decision Record (ADR-007)",
+        "evt-205"
+      ],
+      "context_tokens": 819,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 49468.42460002517,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q2-decision-eventstore",
+      "reader_latency_ms": 3996.892100025434,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 64585.66670003347,
+      "cited_ids": [
+        "adr-007.md",
+        "EVT-205",
+        "PROTOTYPE EVT-201",
+        "40-minute stall in event ingestion during the June load window",
+        "session-040.md"
+      ],
+      "context_tokens": 766,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 69172.53660003189,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.6
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q2-decision-eventstore",
+      "reader_latency_ms": 4586.712999967858,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 30937.20059999032,
+      "cited_ids": [
+        "experiment-contention.md",
+        "incident-021.md",
+        "benchmark-note.md",
+        "adr-007.md",
+        "production-notes.md",
+        "stale-summary.md",
+        "session-014.md",
+        "session-019.md"
+      ],
+      "context_tokens": 684,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 52122.963200032245,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q2-decision-eventstore",
+      "reader_latency_ms": 21185.587399988435,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2602.4512000149116,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q2-decision-eventstore",
+      "reader_latency_ms": 2602.3218000191264,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "stale-summary.md",
+        "adr-007.md",
+        "notification-service.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-040.md",
+        "commits.log"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5936.815499968361,
+      "cited_ids": [
+        "adr-007.md",
+        "production-notes.md"
+      ],
+      "context_tokens": 741,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 9944.621000031475,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2657",
+      "query_id": "q2-decision-eventstore",
+      "reader_latency_ms": 4007.6249000267126,
+      "retrieved_ids": [
+        "stale-summary.md",
+        "adr-007.md",
+        "notification-service.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-040.md",
+        "commits.log"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.1891000322066247,
+      "cited_ids": [
+        "adr-007.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4248.219000000972,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.07142857142857142,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q2-decision-eventstore",
+      "reader_latency_ms": 4246.862799976952,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "The team decided not to introduce Redis as a lookup cache.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.1399999861605465,
+      "cited_ids": [
+        "adr-009.md"
+      ],
+      "context_tokens": 666,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 6,
+      "latency_ms": 22021.184999961406,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.2857142857142857,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=6 stopped=hop-budget",
+      "query_id": "q2-decision-redis",
+      "reader_latency_ms": 22017.82029995229,
+      "retrieved_ids": [
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md",
+        "session-019.md",
+        "adr-007.md",
+        "session-014.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-009.md"
+      ],
+      "answer": "The team decided not to introduce Redis as a lookup cache.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 33195.2970000566,
+      "cited_ids": [
+        "Data: Sources (18, +more)",
+        "Data: Sources (1, 17, +more)",
+        "adr-009.md",
+        "session-040.md",
+        "Data: Sources (1, 9, +more)",
+        "Data: Sources (0, 2, +more)",
+        "Data: Sources (0, 10, +more)",
+        "Data: Sources (17, 18, +more)"
+      ],
+      "context_tokens": 550,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 48201.00110000931,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 0.5,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.75
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q2-decision-redis",
+      "reader_latency_ms": 15005.510599992704,
+      "retrieved_ids": [
+        "adr-009.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-009.md"
+      ],
+      "answer": "The team rejected the proposal to introduce Redis as a lookup cache.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 43981.73240001779,
+      "cited_ids": [
+        "session-040.md",
+        "Data: Reports (0)"
+      ],
+      "context_tokens": 692,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "MISSED_SUPERSESSION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 61015.67649998469,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 1.0,
+        "source_recall": 0.5,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.5
+      },
+      "model_calls": 7,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q2-decision-redis",
+      "reader_latency_ms": 17033.75290002441,
+      "retrieved_ids": [
+        "adr-009.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-009.md"
+      ],
+      "answer": "The team decided not to introduce Redis as a lookup cache.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 25200.786700006574,
+      "cited_ids": [
+        "Data: session-044 (18)",
+        "Data: session-040 (17)",
+        "Data: adr-009 (1)",
+        "adr-009.md"
+      ],
+      "context_tokens": 454,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 31079.394900007173,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 0.5,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.75
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q2-decision-redis",
+      "reader_latency_ms": 5878.40889999643,
+      "retrieved_ids": [
+        "adr-009.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2706.6115000052378,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q2-decision-redis",
+      "reader_latency_ms": 2706.472299993038,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md",
+        "commits.log",
+        "session-019.md",
+        "adr-007.md",
+        "stale-summary.md",
+        "experiment-contention.md"
+      ],
+      "answer": "The team decided not to introduce Redis as a lookup cache.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5835.8305000001565,
+      "cited_ids": [
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md"
+      ],
+      "context_tokens": 753,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 28157.700999989174,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2657",
+      "query_id": "q2-decision-redis",
+      "reader_latency_ms": 22321.658700006083,
+      "retrieved_ids": [
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md",
+        "commits.log",
+        "session-019.md",
+        "adr-007.md",
+        "stale-summary.md",
+        "experiment-contention.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "The team decided not to introduce Redis as a lookup cache.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.6098000342026353,
+      "cited_ids": [
+        "adr-009.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4188.293299986981,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q2-decision-redis",
+      "reader_latency_ms": 4186.4858999615535,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "The event store was migrated to PostgreSQL due to the SQLite prototype's failure under concurrent writes, as evidenced by the benchmark results in evt-204 and the decision in ADR-007.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 4.0206999983638525,
+      "cited_ids": [
+        "adr-007.md",
+        "benchmark-note.md"
+      ],
+      "context_tokens": 391,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+      ],
+      "graph_expansions": 6,
+      "latency_ms": 4169.39990001265,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.25,
+        "source_recall": 0.3333333333333333,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=6 stopped=hop-budget",
+      "query_id": "q3-why-postgres",
+      "reader_latency_ms": 4165.082000021357,
+      "retrieved_ids": [
+        "adr-007.md",
+        "stale-summary.md",
+        "production-notes.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL was chosen for the event store because it demonstrated scalable throughput and acceptable latency under concurrent writes, whereas SQLite failed to perform under such conditions, causing production incidents and degraded performance.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 34443.02050000988,
+      "cited_ids": [
+        "Sources (10)",
+        "Sources (11)",
+        "Sources (2)",
+        "adr-007.md",
+        "session-014.md",
+        "Sources (15)",
+        "Sources (19)",
+        "Sources (14)"
+      ],
+      "context_tokens": 932,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 47995.782700018026,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.75
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=2",
+      "query_id": "q3-why-postgres",
+      "reader_latency_ms": 13552.57729999721,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL was chosen for the event store due to its superior scalability, durability, and support for advanced transactional features.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 57665.134600014426,
+      "cited_ids": [
+        "Data: Reports (1, 3)",
+        "EVT-205 (ADR-007)"
+      ],
+      "context_tokens": 930,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 61619.33549999958,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=1 implicated=2",
+      "query_id": "q3-why-postgres",
+      "reader_latency_ms": 3954.0161000331864,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL was chosen for the event store to address the critical performance bottlenecks of SQLite under concurrent writes, ensuring scalability and reliability for the shared workload.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 30037.753299984615,
+      "cited_ids": [
+        "experiment-contention.md",
+        "incident-021.md",
+        "benchmark-note.md",
+        "adr-007.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 620,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 52420.54580000695,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=2",
+      "query_id": "q3-why-postgres",
+      "reader_latency_ms": 22382.618799980264,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "No information is available to answer this question.",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2738.281099998858,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q3-why-postgres",
+      "reader_latency_ms": 2738.116800028365,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "benchmark-note.md",
+        "adr-007.md",
+        "production-notes.md",
+        "stale-summary.md",
+        "commits.log",
+        "notification-service.md",
+        "session-040.md",
+        "session-014.md"
+      ],
+      "answer": "The PostgreSQL candidate held flat throughput to 32 writers and had better concurrency behavior, which was decisive for a shared write-heavy service.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5830.420099955518,
+      "cited_ids": [
+        "benchmark-note.md",
+        "adr-007.md"
+      ],
+      "context_tokens": 741,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 13331.406700017396,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.125,
+        "source_recall": 0.3333333333333333,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2659",
+      "query_id": "q3-why-postgres",
+      "reader_latency_ms": 7500.727600010578,
+      "retrieved_ids": [
+        "benchmark-note.md",
+        "adr-007.md",
+        "production-notes.md",
+        "stale-summary.md",
+        "commits.log",
+        "notification-service.md",
+        "session-040.md",
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "The PostgreSQL candidate held flat throughput to 32 writers (evt-204), and the SQLite prototype suffered concurrent-write contention under load (evt-202, evt-203).",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.3273999793455005,
+      "cited_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "experiment-contention.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 5633.152099966537,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.21428571428571427,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q3-why-postgres",
+      "reader_latency_ms": 5631.6396000329405,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.131000034045428,
+      "cited_ids": [
+        "adr-007.md"
+      ],
+      "context_tokens": 650,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 5,
+      "latency_ms": 22211.936600040644,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=5 stopped=activation-exhausted",
+      "query_id": "q4-current-eventstore",
+      "reader_latency_ms": 22208.612400048878,
+      "retrieved_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md",
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 30339.67680000933,
+      "cited_ids": [
+        "Data: Sources (0)",
+        "Data: Sources (2)",
+        "Data: Sources (14)"
+      ],
+      "context_tokens": 640,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 65656.63409995614,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q4-current-eventstore",
+      "reader_latency_ms": 35316.7870999896,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 84306.68949999381,
+      "cited_ids": [
+        "adr-007.md",
+        "EVT-204",
+        "EVT-205",
+        "session-040.md"
+      ],
+      "context_tokens": 726,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 89645.1276000007,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.5
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q4-current-eventstore",
+      "reader_latency_ms": 5338.223800004926,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 57589.64120002929,
+      "cited_ids": [
+        "adr-007.md",
+        "Production Notes",
+        "Experiment evt-202",
+        "Incident evt-203",
+        "Benchmark evt-204"
+      ],
+      "context_tokens": 564,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 89907.59990003426,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.8
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q4-current-eventstore",
+      "reader_latency_ms": 32317.67459999537,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 7835.29489999637,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "current_state_accuracy": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q4-current-eventstore",
+      "reader_latency_ms": 7835.126899997704,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "stale-summary.md",
+        "commits.log",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-040.md",
+        "session-014.md",
+        "notification-service.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5970.241000002716,
+      "cited_ids": [
+        "adr-007.md",
+        "production-notes.md"
+      ],
+      "context_tokens": 741,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 10136.091799999122,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2745",
+      "query_id": "q4-current-eventstore",
+      "reader_latency_ms": 4165.660700004082,
+      "retrieved_ids": [
+        "adr-007.md",
+        "stale-summary.md",
+        "commits.log",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-040.md",
+        "session-014.md",
+        "notification-service.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.5221000066958368,
+      "cited_ids": [
+        "adr-007.md",
+        "production-notes.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 30419.85239996575,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.07142857142857142,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q4-current-eventstore",
+      "reader_latency_ms": 30418.13629999524,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "answer": "SQLite",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 4.081499995663762,
+      "cited_ids": [
+        "session-014.md",
+        "session-019.md"
+      ],
+      "context_tokens": 678,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 8,
+      "latency_ms": 39306.232500006445,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "historical_state_accuracy": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=8 stopped=hop-budget",
+      "query_id": "q4-historical-march",
+      "reader_latency_ms": 39301.82410002453,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md",
+        "production-notes.md",
+        "benchmark-note.md",
+        "session-040.md",
+        "session-044.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "experiment-contention.md",
+        "session-014.md",
+        "session-019.md"
+      ],
+      "answer": "SQLite",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 35272.63849996962,
+      "cited_ids": [
+        "{'source': 'Data: Sources (3, 15)'}",
+        "{'source': 'Data: Sources (15)'}",
+        "{'source': 'Data: Sources (14)'}"
+      ],
+      "context_tokens": 374,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 3,
+      "latency_ms": 44611.5703000105,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "historical_state_accuracy": 1.0,
+        "source_precision": 0.3333333333333333,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=3 implicated=3",
+      "query_id": "q4-historical-march",
+      "reader_latency_ms": 9338.692100020126,
+      "retrieved_ids": [
+        "experiment-contention.md",
+        "session-014.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "experiment-contention.md",
+        "session-014.md",
+        "session-019.md"
+      ],
+      "answer": "Event Store",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 49778.79329997813,
+      "cited_ids": [
+        "PROTOTYPE (EVT-201)",
+        "PROTOTYPE"
+      ],
+      "context_tokens": 154,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 3,
+      "latency_ms": 53414.676899963524,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "historical_state_accuracy": 0.0,
+        "source_precision": 0.3333333333333333,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=3 implicated=3",
+      "query_id": "q4-historical-march",
+      "reader_latency_ms": 3635.682599968277,
+      "retrieved_ids": [
+        "experiment-contention.md",
+        "session-014.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "experiment-contention.md",
+        "session-014.md",
+        "session-019.md"
+      ],
+      "answer": "SQLite",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 34771.793899999466,
+      "cited_ids": [
+        "session-014.md"
+      ],
+      "context_tokens": 434,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 3,
+      "latency_ms": 88138.69029999478,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "historical_state_accuracy": 1.0,
+        "source_precision": 0.3333333333333333,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=3 implicated=3",
+      "query_id": "q4-historical-march",
+      "reader_latency_ms": 53366.71189998742,
+      "retrieved_ids": [
+        "experiment-contention.md",
+        "session-014.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2687.717199965846,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "historical_state_accuracy": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q4-historical-march",
+      "reader_latency_ms": 2687.58930003969,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "stale-summary.md",
+        "adr-007.md",
+        "session-014.md",
+        "experiment-contention.md",
+        "incident-021.md",
+        "production-notes.md",
+        "commits.log",
+        "benchmark-note.md"
+      ],
+      "answer": "SQLite",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5995.341399975587,
+      "cited_ids": [
+        "session-014.md:5c5e18454baa6b2e",
+        "commits.log:c8e9dbf1861f3063"
+      ],
+      "context_tokens": 793,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 11633.558699977584,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "historical_state_accuracy": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2802",
+      "query_id": "q4-historical-march",
+      "reader_latency_ms": 5637.99930003006,
+      "retrieved_ids": [
+        "stale-summary.md",
+        "adr-007.md",
+        "session-014.md",
+        "experiment-contention.md",
+        "incident-021.md",
+        "production-notes.md",
+        "commits.log",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "SQLite",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 2.282800036482513,
+      "cited_ids": [
+        "session-014.md",
+        "production-notes.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 6044.658400001936,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "historical_state_accuracy": 1.0,
+        "source_precision": 0.07142857142857142,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q4-historical-march",
+      "reader_latency_ms": 6042.00930002844,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.2056999625638127,
+      "cited_ids": [
+        "production-notes.md"
+      ],
+      "context_tokens": 408,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 8,
+      "latency_ms": 3646.1395000224,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=8 stopped=hop-budget",
+      "query_id": "q4-production-now",
+      "reader_latency_ms": 3642.723599972669,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md",
+        "adr-007.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 55289.58760004025,
+      "cited_ids": [
+        "Data: Sources (0, +more)",
+        "Data: Sources (2, +more)",
+        "Data: Sources (10, +more)",
+        "Data: Sources (11, +more)",
+        "Data: Sources (14, +more)",
+        "Data: Sources (15, +more)",
+        "Data: Sources (19, +more)"
+      ],
+      "context_tokens": 620,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 75991.42390000634,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q4-production-now",
+      "reader_latency_ms": 20701.66329998756,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 72966.27809997881,
+      "cited_ids": [
+        "adr-007.md",
+        "Benchmark EVT-204",
+        "Data: Reports (1, 3, +more)"
+      ],
+      "context_tokens": 678,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 89495.15730002895,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.6666666666666666
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q4-production-now",
+      "reader_latency_ms": 16528.679199982435,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 23424.133999971673,
+      "cited_ids": [
+        "Data: Production state notes (14)"
+      ],
+      "context_tokens": 343,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 77912.49600000447,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q4-production-now",
+      "reader_latency_ms": 54488.1567999837,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2672.774799983017,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "current_state_accuracy": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q4-production-now",
+      "reader_latency_ms": 2672.645899991039,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "production-notes.md",
+        "commits.log",
+        "stale-summary.md",
+        "notification-service.md",
+        "benchmark-note.md",
+        "adr-007.md",
+        "session-014.md",
+        "session-040.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6092.155399965122,
+      "cited_ids": [
+        "production-notes.md",
+        "commits.log"
+      ],
+      "context_tokens": 741,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 12570.675700029824,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2705",
+      "query_id": "q4-production-now",
+      "reader_latency_ms": 6478.327599994373,
+      "retrieved_ids": [
+        "production-notes.md",
+        "commits.log",
+        "stale-summary.md",
+        "notification-service.md",
+        "benchmark-note.md",
+        "adr-007.md",
+        "session-014.md",
+        "session-040.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.2114999699406326,
+      "cited_ids": [
+        "production-notes.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4153.281099977903,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "current_state_accuracy": 1.0,
+        "source_precision": 0.07142857142857142,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q4-production-now",
+      "reader_latency_ms": 4151.911600027233,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "incident-021.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 4.88480000058189,
+      "cited_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "production-notes.md"
+      ],
+      "context_tokens": 768,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 8,
+      "latency_ms": 24956.110600032844,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 0.5,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=8 stopped=activation-exhausted",
+      "query_id": "q6-use-new-service",
+      "reader_latency_ms": 24950.928700040095,
+      "retrieved_ids": [
+        "adr-007.md",
+        "stale-summary.md",
+        "incident-021.md",
+        "adr-009.md",
+        "session-014.md",
+        "session-019.md",
+        "production-notes.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 43755.70219999645,
+      "cited_ids": [
+        "Data: Sources (2)",
+        "Data: Sources (10)",
+        "Data: Sources (11)",
+        "Data: Sources (14)",
+        "Data: Sources (15)",
+        "Data: Sources (18)",
+        "Data: Sources (19)"
+      ],
+      "context_tokens": 661,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 48357.844199985266,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q6-use-new-service",
+      "reader_latency_ms": 4601.914400001988,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 61245.07419997826,
+      "cited_ids": [
+        "EVT-205 (ADR-007)",
+        "Benchmark EVT-204",
+        "session-040.md",
+        "PROTOTYPE (EVT-201)"
+      ],
+      "context_tokens": 861,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 99916.09329998028,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.75
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q6-use-new-service",
+      "reader_latency_ms": 38670.79110001214,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 38894.65360000031,
+      "cited_ids": [
+        "adr-007.md",
+        "Benchmark evt-204 (2)",
+        "Data: Experiment evt-202 (10)",
+        "Data: Incident evt-203 (11)",
+        "Data: Production Notes (14)",
+        "Data: Stale Summary (19)"
+      ],
+      "context_tokens": 701,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 90341.59490000457,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.8333333333333334
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q6-use-new-service",
+      "reader_latency_ms": 51446.72700000228,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "We cannot determine what the second service should use for its own event log.",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2960.794700018596,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q6-use-new-service",
+      "reader_latency_ms": 2960.6104000122286,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "stale-summary.md",
+        "notification-service.md",
+        "session-014.md",
+        "session-019.md",
+        "incident-021.md",
+        "adr-007.md",
+        "experiment-contention.md",
+        "benchmark-note.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5852.793800004292,
+      "cited_ids": [
+        "adr-007.md",
+        "session-014.md",
+        "experiment-contention.md"
+      ],
+      "context_tokens": 816,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 14184.770599997137,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2677",
+      "query_id": "q6-use-new-service",
+      "reader_latency_ms": 8331.772499950603,
+      "retrieved_ids": [
+        "stale-summary.md",
+        "notification-service.md",
+        "session-014.md",
+        "session-019.md",
+        "incident-021.md",
+        "adr-007.md",
+        "experiment-contention.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.227599976118654,
+      "cited_ids": [
+        "adr-007.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 30537.93470002711,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q6-use-new-service",
+      "reader_latency_ms": 30536.533100006636,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "incident-021.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 4.484499979298562,
+      "cited_ids": [
+        "adr-007.md"
+      ],
+      "context_tokens": 773,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 6,
+      "latency_ms": 60163.61719998531,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=6 stopped=activation-exhausted",
+      "query_id": "q-stale-trap",
+      "reader_latency_ms": 60158.92100002384,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md",
+        "incident-021.md",
+        "session-040.md",
+        "session-044.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 41328.9361000061,
+      "cited_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 531,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 107717.0798999723,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.6666666666666666,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=3",
+      "query_id": "q-stale-trap",
+      "reader_latency_ms": 66387.91970000602,
+      "retrieved_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 109734.6358000068,
+      "cited_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 806,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 124478.24960004073,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.6666666666666666,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 7,
+      "notes": "linked=1 implicated=3",
+      "query_id": "q-stale-trap",
+      "reader_latency_ms": 14743.348799995147,
+      "retrieved_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 63990.31109997304,
+      "cited_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 488,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 102224.41149997758,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.6666666666666666,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=3",
+      "query_id": "q-stale-trap",
+      "reader_latency_ms": 38233.773899963126,
+      "retrieved_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "There is not enough information to determine what the new service should use instead of the wiki's SQLite setup.",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2999.0303999511525,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-stale-trap",
+      "reader_latency_ms": 2998.8319000112824,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "stale-summary.md",
+        "adr-007.md",
+        "session-014.md",
+        "incident-021.md",
+        "experiment-contention.md",
+        "production-notes.md",
+        "notification-service.md",
+        "session-019.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6069.93609998608,
+      "cited_ids": [
+        "adr-007.md",
+        "session-014.md",
+        "incident-021.md",
+        "experiment-contention.md"
+      ],
+      "context_tokens": 785,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 13778.0242000008,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2751",
+      "query_id": "q-stale-trap",
+      "reader_latency_ms": 7707.888700009789,
+      "retrieved_ids": [
+        "stale-summary.md",
+        "adr-007.md",
+        "session-014.md",
+        "incident-021.md",
+        "experiment-contention.md",
+        "production-notes.md",
+        "notification-service.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "PostgreSQL",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.2635999592021108,
+      "cited_ids": [
+        "adr-007.md",
+        "production-notes.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 23330.83320001606,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "supersession_correctness": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-stale-trap",
+      "reader_latency_ms": 23329.38870001817,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-009.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "None",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.645899996627122,
+      "cited_ids": [
+        "adr-009.md",
+        "session-044.md"
+      ],
+      "context_tokens": 510,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "FAILED_ABSTENTION"
+      ],
+      "graph_expansions": 7,
+      "latency_ms": 47190.716100041755,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=7 stopped=activation-exhausted",
+      "query_id": "q-abs-cache",
+      "reader_latency_ms": 47186.75500003155,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md",
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "None",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 48324.24159999937,
+      "cited_ids": [
+        "adr-009.md",
+        "session-044.md",
+        "session-040.md"
+      ],
+      "context_tokens": 371,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "FAILED_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 58319.102599984035,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-abs-cache",
+      "reader_latency_ms": 9994.6590999607,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "No cache layer was adopted for the event store.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 72662.57069999119,
+      "cited_ids": [
+        "Data: Reports (0, 3, +more)",
+        "Data: Reports (0)"
+      ],
+      "context_tokens": 422,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "FAILED_ABSTENTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 149041.63440002594,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-abs-cache",
+      "reader_latency_ms": 76378.7906000507,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "None",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 73201.97850000113,
+      "cited_ids": [
+        "Data: session-044 (18)",
+        "Data: session-040 (17)",
+        "adr-009.md"
+      ],
+      "context_tokens": 323,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "FAILED_ABSTENTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 133236.86950001866,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.6666666666666666
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-abs-cache",
+      "reader_latency_ms": 60034.63140001986,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [],
+      "graph_expansions": 0,
+      "latency_ms": 2578.1982999760658,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-abs-cache",
+      "reader_latency_ms": 2578.048800001852,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-040.md",
+        "stale-summary.md",
+        "production-notes.md",
+        "benchmark-note.md",
+        "commits.log",
+        "adr-007.md",
+        "notification-service.md",
+        "session-014.md"
+      ],
+      "answer": "None",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6554.628400015645,
+      "cited_ids": [
+        "session-040.md",
+        "adr-007.md"
+      ],
+      "context_tokens": 741,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "FAILED_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 15898.474499990698,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3317",
+      "query_id": "q-abs-cache",
+      "reader_latency_ms": 9343.693499977235,
+      "retrieved_ids": [
+        "session-040.md",
+        "stale-summary.md",
+        "production-notes.md",
+        "benchmark-note.md",
+        "commits.log",
+        "adr-007.md",
+        "notification-service.md",
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "None",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.080899965018034,
+      "cited_ids": [
+        "adr-009.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "FAILED_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4609.131899953354,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-abs-cache",
+      "reader_latency_ms": 4607.916100008879,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "answer": "The incidents and measurements that influenced the event-store decision were concurrent-write contention under load (evt-202, evt-203) and the PostgreSQL candidate holding flat throughput to 32 writers (evt-204).",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.4361000289209187,
+      "cited_ids": [
+        "adr-007.md"
+      ],
+      "context_tokens": 573,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 8,
+      "latency_ms": 28562.32229998568,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.16666666666666666,
+        "source_recall": 0.25,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=8 stopped=activation-exhausted",
+      "query_id": "q-rel-influences",
+      "reader_latency_ms": 28558.58840001747,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md",
+        "production-notes.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "The incidents and measurements that influenced the event-store decision were: Concurrent Write Contention (Experiment evt-202), Incident evt-203: Write Stalls in Production, and Benchmark evt-204: PostgreSQL Throughput.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 161525.2817000146,
+      "cited_ids": [
+        "record 10",
+        "record 11",
+        "record 2"
+      ],
+      "context_tokens": 1541,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 191957.7153000282,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-rel-influences",
+      "reader_latency_ms": 30432.21800000174,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "Concurrency Threshold Collapse, 40-Minute Stall During June Load Window (Incident EVT-203), Benchmark EVT-204/EVT-205",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 511633.32050002646,
+      "cited_ids": [
+        "adr-007.md",
+        "PROTOTYPE (33, 43)",
+        "LOAD-TEST REVIEW (34)",
+        "Reports (1, 5, +more)",
+        "Reports (5)",
+        "Reports (3)"
+      ],
+      "context_tokens": 811,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 976448.9360000007,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.8333333333333334
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-rel-influences",
+      "reader_latency_ms": 464815.4114000499,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "Performance Degradation Under Load (Incidents & Experiments)",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 399049.4642999838,
+      "cited_ids": [
+        "incident-021.md",
+        "experiment-contention.md",
+        "evt-203 (June 2024)",
+        "evt-202 (June 2024)"
+      ],
+      "context_tokens": 1017,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 428026.1220000102,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.5
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-rel-influences",
+      "reader_latency_ms": 28976.45429999102,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 6256.994700001087,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-rel-influences",
+      "reader_latency_ms": 6256.830299971625,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "session-040.md",
+        "benchmark-note.md",
+        "incident-021.md",
+        "stale-summary.md",
+        "experiment-contention.md",
+        "session-014.md",
+        "notification-service.md"
+      ],
+      "answer": "Incident evt-203 and Experiment evt-202 influenced the event-store decision.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6657.835599966347,
+      "cited_ids": [
+        "incident-021.md",
+        "experiment-contention.md"
+      ],
+      "context_tokens": 803,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 82098.88549998868,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.5,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3338",
+      "query_id": "q-rel-influences",
+      "reader_latency_ms": 75440.80509996274,
+      "retrieved_ids": [
+        "adr-007.md",
+        "session-040.md",
+        "benchmark-note.md",
+        "incident-021.md",
+        "stale-summary.md",
+        "experiment-contention.md",
+        "session-014.md",
+        "notification-service.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "Incident evt-203 and Benchmark evt-204 influenced the event-store decision.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.3345000334084034,
+      "cited_ids": [
+        "incident-021.md:65392e92ee19ff32",
+        "benchmark-note.md:e8560e5286fd2027"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4803.861899999902,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.2857142857142857,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-rel-influences",
+      "reader_latency_ms": 4802.300799987279,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "session-044.md"
+      ],
+      "answer": "The June ingestion stall was caused by write contention on the SQLite event log under concurrent writers, which led to the decision to target PostgreSQL for the event-store.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.6385999992489815,
+      "cited_ids": [
+        "incident-021.md",
+        "adr-007.md"
+      ],
+      "context_tokens": 577,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 7,
+      "latency_ms": 5087.877100042533,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.3333333333333333,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=7 stopped=hop-budget",
+      "query_id": "q-rel-trace",
+      "reader_latency_ms": 5083.889600005932,
+      "retrieved_ids": [
+        "incident-021.md",
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "issue-041.md",
+        "session-044.md",
+        "adr-007.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "The June ingestion stall exposed SQLite's inability to handle concurrent writes, prompting a reevaluation of the event store's backend and ultimately leading to the decision to migrate to PostgreSQL.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 198146.2751000072,
+      "cited_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md",
+        "evt-203",
+        "Data: Sources (11, 5, +more)",
+        "evt-204",
+        "Data: Sources (2, 16, +more)",
+        "adr-007.md",
+        "Data: Sources (0, 14, +more)",
+        "Data: Sources (8, 14, +more)",
+        "event-store wiki page",
+        "Data: Sources (19, 0, +more)"
+      ],
+      "context_tokens": 818,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 3,
+      "latency_ms": 230928.8142999867,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.3333333333333333,
+        "source_recall": 0.5,
+        "unsupported_source_rate": 0.6666666666666666
+      },
+      "model_calls": 2,
+      "notes": "linked=3 implicated=3",
+      "query_id": "q-rel-trace",
+      "reader_latency_ms": 32782.30210003676,
+      "retrieved_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "The June ingestion stall exposed fundamental limitations in SQLite\u2019s architecture, particularly under high write loads, and served as the primary catalyst for the architectural shift to PostgreSQL.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 64254.826199961826,
+      "cited_ids": [
+        "Data: Reports (5)",
+        "Data: Reports (1, 5)",
+        "Data: Reports (1, 4)",
+        "adr-007.md"
+      ],
+      "context_tokens": 1323,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 3,
+      "latency_ms": 72735.17350002658,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.3333333333333333,
+        "source_recall": 0.5,
+        "unsupported_source_rate": 0.75
+      },
+      "model_calls": 7,
+      "notes": "linked=3 implicated=3",
+      "query_id": "q-rel-trace",
+      "reader_latency_ms": 8480.165200016927,
+      "retrieved_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "The June ingestion stall and the PostgreSQL decision are directly connected through a series of technical evaluations and incidents that exposed critical limitations in the initial SQLite-based event store prototype.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 29995.34720001975,
+      "cited_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 593,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+      ],
+      "graph_expansions": 3,
+      "latency_ms": 36574.58100002259,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.3333333333333333,
+        "source_recall": 0.5,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=3 implicated=3",
+      "query_id": "q-rel-trace",
+      "reader_latency_ms": 6579.018199990969,
+      "retrieved_ids": [
+        "incident-021.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2658.397799998056,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-rel-trace",
+      "reader_latency_ms": 2658.243699988816,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "incident-021.md",
+        "adr-007.md",
+        "benchmark-note.md",
+        "commits.log",
+        "production-notes.md",
+        "stale-summary.md",
+        "adr-009.md",
+        "session-040.md"
+      ],
+      "answer": "The June ingestion stall was caused by write contention on the SQLite event log under concurrent writers, which led to the decision to target PostgreSQL as the new event-store.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6629.8094999510795,
+      "cited_ids": [
+        "incident-021.md",
+        "adr-007.md"
+      ],
+      "context_tokens": 741,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 11648.183099983726,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3375",
+      "query_id": "q-rel-trace",
+      "reader_latency_ms": 5018.154199991841,
+      "retrieved_ids": [
+        "incident-021.md",
+        "adr-007.md",
+        "benchmark-note.md",
+        "commits.log",
+        "production-notes.md",
+        "stale-summary.md",
+        "adr-009.md",
+        "session-040.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "The June ingestion stall was caused by write contention on the SQLite event log under concurrent writers, which led to the decision to target PostgreSQL for the event store.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.1961999698542058,
+      "cited_ids": [
+        "incident-021.md",
+        "adr-007.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 6217.569200030994,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-rel-trace",
+      "reader_latency_ms": 6216.172899992671,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "answer": "The project's event store target was changed from SQLite to PostgreSQL.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.787200024817139,
+      "cited_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 526,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 5,
+      "latency_ms": 5633.55029997183,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.2,
+        "source_recall": 0.25,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=5 stopped=activation-exhausted",
+      "query_id": "q-global-themes",
+      "reader_latency_ms": 5629.483700031415,
+      "retrieved_ids": [
+        "adr-007.md",
+        "session-014.md",
+        "session-019.md",
+        "benchmark-note.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "The project underwent significant architectural shifts primarily driven by performance bottlenecks and scalability concerns, particularly around the event store component. The major changes include the migration from SQLite to PostgreSQL, the rejection of Redis for lookup caching, and the deprecation of outdated documentation.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 41435.55410002591,
+      "cited_ids": [
+        "Data: Sources (19)",
+        "Data: Sources (10)",
+        "Data: Sources (11)",
+        "Data: Sources (16)",
+        "adr-007.md",
+        "Data: Sources (8)",
+        "adr-009.md",
+        "Data: Sources (1)",
+        "Data: Sources (18)",
+        "Data: Sources (17)"
+      ],
+      "context_tokens": 1078,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 50055.3280999884,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.8
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-global-themes",
+      "reader_latency_ms": 8619.600499980152,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "The project underwent three major architectural changes: 1) migration from SQLite to PostgreSQL as the primary database backend, 2) rejection of Redis as a lookup cache, and 3) iterative replacement of the SQLite prototype with PostgreSQL.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 54746.71809998108,
+      "cited_ids": [
+        "adr-007.md",
+        "EVT-205",
+        "Data: Reports (5, +more)",
+        "EVT-204",
+        "EVT-201",
+        "session-040.md"
+      ],
+      "context_tokens": 957,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 63624.26870001946,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.6666666666666666
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-global-themes",
+      "reader_latency_ms": 8877.394500013907,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "The project underwent significant architectural shifts from using SQLite to PostgreSQL, driven by performance bottlenecks and scalability concerns.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 41562.6986999996,
+      "cited_ids": [
+        "Data: *session-014* (15)",
+        "Data: *stale-summary* (19)",
+        "Data: *experiment-contention* (10)",
+        "Data: *incident-021* (11)",
+        "Data: *adr-007* (0)",
+        "Data: *production-notes* (14)",
+        "Data: *session-019* (16)",
+        "Data: *session-040* (17)",
+        "Data: *session-044* (18)"
+      ],
+      "context_tokens": 1035,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 54909.51580001274,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-global-themes",
+      "reader_latency_ms": 13346.659599978011,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "No information is available to determine the major architectural changes that occurred in this project's history.",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 3001.4542000135407,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-global-themes",
+      "reader_latency_ms": 3001.3321999576874,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "experiment-contention.md",
+        "session-019.md",
+        "session-040.md",
+        "adr-009.md",
+        "adr-007.md",
+        "session-044.md",
+        "notification-service.md",
+        "commits.log"
+      ],
+      "answer": "The project switched from using SQLite as the event store to PostgreSQL, and also decided not to use Redis as a lookup cache.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6858.532799989916,
+      "cited_ids": [
+        "adr-007.md",
+        "adr-009.md"
+      ],
+      "context_tokens": 715,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 11981.841799977701,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.375,
+        "source_recall": 0.75,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3384",
+      "query_id": "q-global-themes",
+      "reader_latency_ms": 5123.1362000107765,
+      "retrieved_ids": [
+        "experiment-contention.md",
+        "session-019.md",
+        "session-040.md",
+        "adr-009.md",
+        "adr-007.md",
+        "session-044.md",
+        "notification-service.md",
+        "commits.log"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "The event store service was migrated from SQLite to PostgreSQL.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.0992999887093902,
+      "cited_ids": [
+        "adr-007.md",
+        "production-notes.md",
+        "session-014.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 5583.465000032447,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.2857142857142857,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-global-themes",
+      "reader_latency_ms": 5582.184700004291,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "stale-summary.md"
+      ],
+      "answer": "The team did a controlled benchmark (evt-204) and load tests (session-019) to evaluate the reliability of the event-store backend.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.362000046763569,
+      "cited_ids": [
+        "benchmark-note.md",
+        "session-019.md"
+      ],
+      "context_tokens": 681,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 7,
+      "latency_ms": 4868.690300034359,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.2857142857142857,
+        "source_recall": 0.5,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=7 stopped=activation-exhausted",
+      "query_id": "q-global-reliability",
+      "reader_latency_ms": 4865.136000036728,
+      "retrieved_ids": [
+        "adr-007.md",
+        "session-014.md",
+        "session-019.md",
+        "benchmark-note.md",
+        "stale-summary.md",
+        "adr-009.md",
+        "production-notes.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "The team conducted a series of experiments, benchmarks, and decisions to address reliability concerns in the event-store backend, particularly focusing on handling concurrent writes and scalability.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 39534.078800003044,
+      "cited_ids": [
+        "Session 014 (record 15)",
+        "Data: Sources (15)",
+        "Experiment evt-202 (record 10)",
+        "Data: Sources (10)",
+        "Data: Sources (11)",
+        "Benchmark evt-204 (record 2)",
+        "Data: Sources (2)",
+        "adr-007.md",
+        "Data: Sources (0)",
+        "Production state notes (record 14)",
+        "Data: Sources (14)",
+        "Event-store wiki page (record 19)",
+        "Data: Sources (19)",
+        "Session 040 (record 17)",
+        "Data: Sources (17)"
+      ],
+      "context_tokens": 1018,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 48872.40870000096,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.9333333333333333
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q-global-reliability",
+      "reader_latency_ms": 9338.143200031482,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "The team undertook a series of structured, data-driven initiatives to enhance the reliability of the event-store backend, primarily addressing performance bottlenecks, scalability limitations, and incident response.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 65353.37590001291,
+      "cited_ids": [
+        "session-014.md",
+        "adr-007.md",
+        "EVT-205",
+        "Benchmark EVT-204",
+        "Incident EVT-203"
+      ],
+      "context_tokens": 1195,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 72906.38460003538,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.6
+      },
+      "model_calls": 7,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q-global-reliability",
+      "reader_latency_ms": 7552.845099999104,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "The team conducted a thorough evaluation and migration process for the event-store backend, driven by reliability concerns with the initial SQLite implementation.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 34994.862199993804,
+      "cited_ids": [
+        "session-014.md",
+        "experiment-contention.md",
+        "session-019.md",
+        "incident-021.md",
+        "benchmark-note.md",
+        "adr-007.md",
+        "production-notes.md",
+        "session-044.md",
+        "adr-009.md"
+      ],
+      "context_tokens": 837,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 42798.9016000065,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q-global-reliability",
+      "reader_latency_ms": 7803.859099978581,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "No information is available to answer this question.",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2841.640600003302,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-global-reliability",
+      "reader_latency_ms": 2841.502399998717,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "stale-summary.md",
+        "session-014.md",
+        "adr-007.md",
+        "benchmark-note.md",
+        "notification-service.md",
+        "session-040.md",
+        "experiment-contention.md",
+        "production-notes.md"
+      ],
+      "answer": "The team experimented with SQLite as a prototype for the event-store backend, but due to concurrent-write contention, they decided to migrate to PostgreSQL.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6493.325699993875,
+      "cited_ids": [
+        "session-014.md",
+        "adr-007.md",
+        "experiment-contention.md"
+      ],
+      "context_tokens": 753,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 11767.764499993064,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 0.5,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3275",
+      "query_id": "q-global-reliability",
+      "reader_latency_ms": 5274.181700020563,
+      "retrieved_ids": [
+        "stale-summary.md",
+        "session-014.md",
+        "adr-007.md",
+        "benchmark-note.md",
+        "notification-service.md",
+        "session-040.md",
+        "experiment-contention.md",
+        "production-notes.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "The team identified and addressed concurrent-write contention in the SQLite prototype, leading to its replacement with PostgreSQL.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.3330000219866633,
+      "cited_ids": [
+        "adr-007.md",
+        "experiment-contention.md",
+        "incident-021.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 6050.187200016808,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.2857142857142857,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-global-reliability",
+      "reader_latency_ms": 6048.697599966545,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "issue-041.md",
+        "session-014.md",
+        "session-019.md",
+        "session-044.md"
+      ],
+      "answer": "Benchmark fixtures were left behind by the measurements.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.8745999918319285,
+      "cited_ids": [
+        "issue-041.md"
+      ],
+      "context_tokens": 641,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 5,
+      "latency_ms": 3821.3059999980032,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=5 stopped=activation-exhausted",
+      "query_id": "q-ind-leftover",
+      "reader_latency_ms": 3817.1955999569036,
+      "retrieved_ids": [
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "issue-041.md",
+        "session-044.md",
+        "adr-007.md",
+        "session-014.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "leaving of scratch fixtures in the load-test directory",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 24035.695200029295,
+      "cited_ids": [
+        "[derived:basic search over persistent graph memory; linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md]",
+        "Issue 041"
+      ],
+      "context_tokens": 326,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 30693.646400002763,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q-ind-leftover",
+      "reader_latency_ms": 6657.797800027765,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "The absence of empirical validation for Redis optimization and the lack of formal post-mortem or architectural review for SQLite replacement.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 73576.16910000797,
+      "cited_ids": [
+        "[derived:global search over persistent graph memory; linked entities: EVENT-STORE BACKEND; implicated sources: session-014.md]",
+        "### Absence of Empirical Validation for Redis Optimization",
+        "### Lack of Formal Post-Mortem or Architectural Review for SQLite Replacement"
+      ],
+      "context_tokens": 1269,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 79748.27959999675,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q-ind-leftover",
+      "reader_latency_ms": 6171.882099995855,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md"
+      ],
+      "answer": "cleanup of benchmark fixtures and scratch files from the load-testing phase",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 25179.18830004055,
+      "cited_ids": [
+        "Issue 041 (1)"
+      ],
+      "context_tokens": 381,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 42074.0317000309,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=1",
+      "query_id": "q-ind-leftover",
+      "reader_latency_ms": 16894.68319999287,
+      "retrieved_ids": [
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2627.005200018175,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-ind-leftover",
+      "reader_latency_ms": 2626.8824000144377,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "session-014.md",
+        "session-040.md",
+        "session-044.md",
+        "issue-041.md",
+        "experiment-contention.md",
+        "adr-007.md",
+        "adr-009.md",
+        "session-019.md"
+      ],
+      "answer": "The contention benchmark left scratch fixtures in the load-test directory.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6567.13470001705,
+      "cited_ids": [
+        "issue-041.md"
+      ],
+      "context_tokens": 706,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 10333.773399994243,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3357",
+      "query_id": "q-ind-leftover",
+      "reader_latency_ms": 3766.435500001535,
+      "retrieved_ids": [
+        "session-014.md",
+        "session-040.md",
+        "session-044.md",
+        "issue-041.md",
+        "experiment-contention.md",
+        "adr-007.md",
+        "adr-009.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "Benchmark fixtures were left behind by the measurements that settled the backend question.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.2083000037819147,
+      "cited_ids": [
+        "issue-041.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4204.750700038858,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.07142857142857142,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-ind-leftover",
+      "reader_latency_ms": 4203.382799983956,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md"
+      ],
+      "answer": "The team agrees the SQLite choice needs a proper experiment before any second service copies it.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 4.448899999260902,
+      "cited_ids": [
+        "session-019.md:44776e7a9df6ca7d"
+      ],
+      "context_tokens": 443,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 7,
+      "latency_ms": 23702.77360000182,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 1,
+      "notes": "explored=7 stopped=activation-exhausted",
+      "query_id": "q-ind-owner",
+      "reader_latency_ms": 23698.11210001353,
+      "retrieved_ids": [
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md",
+        "session-019.md",
+        "adr-007.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "a.novak",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 45376.358600042295,
+      "cited_ids": [
+        "experiment evt-202",
+        "Data: Sources (10, +more)",
+        "Data: Sources (2, +more)",
+        "adr-007.md"
+      ],
+      "context_tokens": 773,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 50416.9530000072,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.75
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-ind-owner",
+      "reader_latency_ms": 5040.395000018179,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "technical teams, architects, and operational entities",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 107883.58590001008,
+      "cited_ids": [
+        "adr-007.md",
+        "Session 019",
+        "PROTOTYPE (EVT-201)",
+        "EVT-203",
+        "EVT-205",
+        "Benchmark EVT-204"
+      ],
+      "context_tokens": 761,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 115085.17429995118,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.8333333333333334
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-ind-owner",
+      "reader_latency_ms": 7201.411699992605,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "A. Novak, with contributions from the broader team (m.okafor and j.lindqvist)",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 39098.96070003742,
+      "cited_ids": [
+        "experiment-contention.md",
+        "benchmark-note.md",
+        "session-019.md",
+        "adr-007.md"
+      ],
+      "context_tokens": 839,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 46373.373200010974,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-ind-owner",
+      "reader_latency_ms": 7274.237899982836,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2779.9067000159994,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-ind-owner",
+      "reader_latency_ms": 2779.7796999802813,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "session-040.md",
+        "production-notes.md",
+        "stale-summary.md",
+        "session-014.md",
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "adr-009.md"
+      ],
+      "answer": "a.novak",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6643.314000044484,
+      "cited_ids": [
+        "experiment-contention.md",
+        "benchmark-note.md"
+      ],
+      "context_tokens": 749,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 10944.574899971485,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.25,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3394",
+      "query_id": "q-ind-owner",
+      "reader_latency_ms": 4301.0541999829,
+      "retrieved_ids": [
+        "adr-007.md",
+        "session-040.md",
+        "production-notes.md",
+        "stale-summary.md",
+        "session-014.md",
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "adr-009.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "a.novak",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.0130000300705433,
+      "cited_ids": [
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "incident-021.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4475.352799985558,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.14285714285714285,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-ind-owner",
+      "reader_latency_ms": 4474.180899967905,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "incident-021.md",
+        "stale-summary.md"
+      ],
+      "answer": "new services",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 2.8602000093087554,
+      "cited_ids": [
+        "adr-007.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 353,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_OMISSION",
+        "CONTEXT_DISTRACTION",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+      ],
+      "graph_expansions": 5,
+      "latency_ms": 4079.668899998069,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=5 stopped=activation-exhausted",
+      "query_id": "q-ind-separate-store",
+      "reader_latency_ms": 4076.5741000068374,
+      "retrieved_ids": [
+        "adr-007.md",
+        "stale-summary.md",
+        "incident-021.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "notification service",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 32804.9055999727,
+      "cited_ids": [
+        "Data: Sources (13)",
+        "Data: Sources (0, 14)",
+        "Data: Sources (14)"
+      ],
+      "context_tokens": 555,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 39397.70420000423,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-ind-separate-store",
+      "reader_latency_ms": 6592.577499977779,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "Redis",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 38246.87979998998,
+      "cited_ids": [
+        "Data: Reports (0)"
+      ],
+      "context_tokens": 482,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 44007.685900025535,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-ind-separate-store",
+      "reader_latency_ms": 5760.594199993648,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "The event store service",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 22745.297600049525,
+      "cited_ids": [
+        "adr-007.md",
+        "production-notes.md",
+        "session-044.md",
+        "adr-009.md"
+      ],
+      "context_tokens": 275,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 29530.40739998687,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-ind-separate-store",
+      "reader_latency_ms": 6784.927400003653,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [
+        "NOT_RETRIEVED",
+        "NOT_RETRIEVED",
+        "UNNECESSARY_ABSTENTION",
+        "UNNECESSARY_ABSTENTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 2738.379700051155,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "decision_exactness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 0.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-ind-separate-store",
+      "reader_latency_ms": 2738.219700055197,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "notification-service.md",
+        "stale-summary.md",
+        "adr-007.md",
+        "session-014.md",
+        "benchmark-note.md",
+        "session-019.md",
+        "production-notes.md",
+        "incident-021.md"
+      ],
+      "answer": "The notification service",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6705.445899977349,
+      "cited_ids": [
+        "notification-service.md"
+      ],
+      "context_tokens": 772,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 10568.22179997107,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.125,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3351",
+      "query_id": "q-ind-separate-store",
+      "reader_latency_ms": 3862.551199970767,
+      "retrieved_ids": [
+        "notification-service.md",
+        "stale-summary.md",
+        "adr-007.md",
+        "session-014.md",
+        "benchmark-note.md",
+        "session-019.md",
+        "production-notes.md",
+        "incident-021.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "The notification service",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.494700030889362,
+      "cited_ids": [
+        "notification-service.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4768.104300019331,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.07142857142857142,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-ind-separate-store",
+      "reader_latency_ms": 4766.406900016591,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "issue-041.md",
+        "session-014.md",
+        "session-019.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "Write contention refers to the situation where multiple writers attempt to update the same data in a database simultaneously, leading to conflicts and decreased performance.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.779200022108853,
+      "cited_ids": [
+        "experiment-contention.md"
+      ],
+      "context_tokens": 760,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 5,
+      "latency_ms": 4367.780300031882,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=5 stopped=activation-exhausted",
+      "query_id": "q-nomem-contention",
+      "reader_latency_ms": 4363.719499961007,
+      "retrieved_ids": [
+        "session-014.md",
+        "adr-007.md",
+        "stale-summary.md",
+        "benchmark-note.md",
+        "experiment-contention.md",
+        "issue-041.md",
+        "session-044.md",
+        "session-019.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "Write contention in a database refers to the performance degradation that occurs when multiple processes or users compete to write data simultaneously, leading to delays, bottlenecks, or system slowdowns due to resource conflicts.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 20819.877000001725,
+      "cited_ids": [
+        "[derived:basic search over persistent graph memory; linked entities: none; implicated sources: none]"
+      ],
+      "context_tokens": 84,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 28274.0260999999,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-nomem-contention",
+      "reader_latency_ms": 7453.978099976666,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "Write contention in a database refers to the conflict that arises when multiple transactions attempt to write to the same data simultaneously.",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 20581.6354000126,
+      "cited_ids": [],
+      "context_tokens": 44,
+      "cost_units": 12.0,
+      "failure_classes": [],
+      "graph_expansions": 0,
+      "latency_ms": 26960.67330002552,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-nomem-contention",
+      "reader_latency_ms": 6378.885300015099,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "Write contention in a database refers to the performance degradation that occurs when multiple processes or threads compete for the same write resources, such as locks on tables or rows, leading to delays, slower write operations, and reduced throughput.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 20444.45100001758,
+      "cited_ids": [
+        "[derived:local search over persistent graph memory; linked entities: none; implicated sources: none]"
+      ],
+      "context_tokens": 88,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 28222.269799967762,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 0.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-nomem-contention",
+      "reader_latency_ms": 7777.5373999611475,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "Write contention in a database refers to the situation where multiple transactions attempt to write to the same data simultaneously, leading to conflicts and potential data inconsistencies.",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [],
+      "graph_expansions": 0,
+      "latency_ms": 3103.448199981358,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-nomem-contention",
+      "reader_latency_ms": 3103.2012999639846,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "experiment-contention.md",
+        "incident-021.md",
+        "session-014.md",
+        "adr-007.md",
+        "issue-041.md",
+        "commits.log",
+        "session-019.md",
+        "notification-service.md"
+      ],
+      "answer": "Write contention in a database refers to the situation where multiple writers are trying to update the same data simultaneously, leading to delays, stalls, or even crashes.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 5804.6465999796055,
+      "cited_ids": [
+        "experiment-contention.md",
+        "incident-021.md"
+      ],
+      "context_tokens": 755,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 12987.957599980291,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=2685",
+      "query_id": "q-nomem-contention",
+      "reader_latency_ms": 7183.1088999751955,
+      "retrieved_ids": [
+        "experiment-contention.md",
+        "incident-021.md",
+        "session-014.md",
+        "adr-007.md",
+        "issue-041.md",
+        "commits.log",
+        "session-019.md",
+        "notification-service.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "Write contention in a database refers to the situation where multiple writers are trying to update the same data simultaneously, leading to delays, stalls, or even crashes.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.0547999991104007,
+      "cited_ids": [
+        "experiment-contention.md",
+        "incident-021.md"
+      ],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 5848.61099999398,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-nomem-contention",
+      "reader_latency_ms": 5847.393300035037,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "A database index is a data structure that improves the speed of data retrieval by providing a quick way to locate specific data within a database.",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.0379000236280262,
+      "cited_ids": [],
+      "context_tokens": 666,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 5,
+      "latency_ms": 4953.995599993505,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "explored=5 stopped=activation-exhausted",
+      "query_id": "q-nomem-index",
+      "reader_latency_ms": 4950.752399978228,
+      "retrieved_ids": [
+        "adr-007.md",
+        "stale-summary.md",
+        "session-014.md",
+        "session-019.md",
+        "adr-009.md",
+        "session-040.md",
+        "session-044.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "A database index is a data structure that improves the speed of data retrieval operations on a database table.",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 30305.283599998802,
+      "cited_ids": [
+        "[derived:basic search over persistent graph memory; linked entities: none; implicated sources: none]"
+      ],
+      "context_tokens": 537,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 37781.09509998467,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-nomem-index",
+      "reader_latency_ms": 7475.609600020107,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "A database index is a specialized data structure designed to optimize the speed and efficiency of data retrieval operations within a database management system (DBMS).",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 57319.54360002419,
+      "cited_ids": [
+        "[derived:global search over persistent graph memory; linked entities: none; implicated sources: none]"
+      ],
+      "context_tokens": 1319,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 66274.67800001614,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 7,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-nomem-index",
+      "reader_latency_ms": 8954.966300050728,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "A database index is a data structure that improves the speed of data retrieval operations on a database table.",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 53116.396700032055,
+      "cited_ids": [
+        "[derived:local search over persistent graph memory; linked entities: none; implicated sources: none]",
+        "### What Is a Database Index?"
+      ],
+      "context_tokens": 1126,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 61536.66659997543,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=0 implicated=0",
+      "query_id": "q-nomem-index",
+      "reader_latency_ms": 8420.077999995556,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [],
+      "answer": "A database index is a data structure that improves the speed of data retrieval by allowing the database to quickly locate specific data.",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [],
+      "graph_expansions": 0,
+      "latency_ms": 3507.5299000018276,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-nomem-index",
+      "reader_latency_ms": 3507.3292000452057,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "notification-service.md",
+        "production-notes.md",
+        "session-044.md",
+        "session-014.md",
+        "experiment-contention.md",
+        "session-019.md",
+        "adr-007.md",
+        "adr-009.md"
+      ],
+      "answer": "A database index is a data structure that improves the speed of data retrieval by allowing for efficient location of specific data within a database.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6543.300699966494,
+      "cited_ids": [],
+      "context_tokens": 711,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 11407.083600002807,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3387",
+      "query_id": "q-nomem-index",
+      "reader_latency_ms": 4863.5651000076905,
+      "retrieved_ids": [
+        "notification-service.md",
+        "production-notes.md",
+        "session-044.md",
+        "session-014.md",
+        "experiment-contention.md",
+        "session-019.md",
+        "adr-007.md",
+        "adr-009.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "A database index is a data structure that improves the speed of data retrieval by providing a quick way to locate specific data within a database.",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.1059000389650464,
+      "cited_ids": [],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 5439.759600034449,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "decision_exactness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-nomem-index",
+      "reader_latency_ms": 5438.485100050457,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": false,
+      "admitted_ids": [
+        "adr-007.md",
+        "benchmark-note.md",
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "Not specified",
+      "capability_id": "ASSOCIATIVE",
+      "capability_latency_ms": 3.253400034736842,
+      "cited_ids": [
+        "adr-007.md",
+        "production-notes.md"
+      ],
+      "context_tokens": 391,
+      "cost_units": 1.2,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "FAILED_ABSTENTION"
+      ],
+      "graph_expansions": 6,
+      "latency_ms": 5093.7226000241935,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 0.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 1,
+      "notes": "explored=6 stopped=hop-budget",
+      "query_id": "q-abs-provider",
+      "reader_latency_ms": 5090.270999993663,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md",
+        "adr-007.md",
+        "benchmark-note.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "Unknown",
+      "capability_id": "GRAPH_BASIC",
+      "capability_latency_ms": 21569.02260001516,
+      "cited_ids": [
+        "Data: Sources (8, 14)",
+        "Data: Sources (2, 10, 11)"
+      ],
+      "context_tokens": 230,
+      "cost_units": 1.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 28093.117100012023,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 1.0
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=2",
+      "query_id": "q-abs-provider",
+      "reader_latency_ms": 6523.948899994139,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "I am unable to determine the answer",
+      "capability_id": "GRAPH_GLOBAL",
+      "capability_latency_ms": 27557.15379997855,
+      "cited_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "context_tokens": 54,
+      "cost_units": 12.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 33589.44419998443,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.0
+      },
+      "model_calls": 7,
+      "notes": "linked=1 implicated=2",
+      "query_id": "q-abs-provider",
+      "reader_latency_ms": 6032.145000004675,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ],
+      "answer": "Unknown",
+      "capability_id": "GRAPH_LOCAL",
+      "capability_latency_ms": 23941.79760001134,
+      "cited_ids": [
+        "Data: ADR-007 (0)",
+        "session-019.md",
+        "experiment-contention.md",
+        "Data: Benchmark-Note (2)",
+        "production-notes.md"
+      ],
+      "context_tokens": 303,
+      "cost_units": 3.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "graph_expansions": 1,
+      "latency_ms": 30664.136399980634,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0,
+        "unsupported_source_rate": 0.4
+      },
+      "model_calls": 2,
+      "notes": "linked=1 implicated=2",
+      "query_id": "q-abs-provider",
+      "reader_latency_ms": 6722.175800008699,
+      "retrieved_ids": [
+        "production-notes.md",
+        "stale-summary.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [],
+      "answer": "Unknown",
+      "capability_id": "NONE",
+      "capability_latency_ms": 0.0,
+      "cited_ids": [],
+      "context_tokens": 0,
+      "cost_units": 0.0,
+      "failure_classes": [],
+      "graph_expansions": 0,
+      "latency_ms": 2720.1066999696195,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 1.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "no history retrieved",
+      "query_id": "q-abs-provider",
+      "reader_latency_ms": 2719.943699950818,
+      "retrieved_ids": []
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [
+        "production-notes.md",
+        "benchmark-note.md",
+        "adr-007.md",
+        "commits.log",
+        "stale-summary.md",
+        "notification-service.md",
+        "experiment-contention.md",
+        "session-014.md"
+      ],
+      "answer": "There is no information about the cloud provider hosting the production PostgreSQL instance.",
+      "capability_id": "RAG",
+      "capability_latency_ms": 6587.90109999245,
+      "cited_ids": [],
+      "context_tokens": 767,
+      "cost_units": 1.0,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 10405.085899983533,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "retrieval_ms=3364",
+      "query_id": "q-abs-provider",
+      "reader_latency_ms": 3817.0300999772735,
+      "retrieved_ids": [
+        "production-notes.md",
+        "benchmark-note.md",
+        "adr-007.md",
+        "commits.log",
+        "stale-summary.md",
+        "notification-service.md",
+        "experiment-contention.md",
+        "session-014.md"
+      ]
+    },
+    {
+      "abstained": true,
+      "admitted_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ],
+      "answer": "None",
+      "capability_id": "RAW_EVIDENCE",
+      "capability_latency_ms": 1.1625000042840838,
+      "cited_ids": [],
+      "context_tokens": 1248,
+      "cost_units": 2.5,
+      "failure_classes": [
+        "CONTEXT_DISTRACTION"
+      ],
+      "graph_expansions": 0,
+      "latency_ms": 4446.146399946883,
+      "measured": true,
+      "metrics": {
+        "abstention_correctness": 1.0,
+        "source_precision": 0.0,
+        "source_recall": 1.0
+      },
+      "model_calls": 1,
+      "notes": "unranked sweep of all source artifacts",
+      "query_id": "q-abs-provider",
+      "reader_latency_ms": 4444.847600010689,
+      "retrieved_ids": [
+        "adr-007.md",
+        "adr-009.md",
+        "benchmark-note.md",
+        "commits.log",
+        "experiment-contention.md",
+        "incident-021.md",
+        "issue-041.md",
+        "notification-service.md",
+        "production-notes.md",
+        "session-014.md",
+        "session-019.md",
+        "session-040.md",
+        "session-044.md",
+        "stale-summary.md"
+      ]
+    }
+  ],
+  "manifest": {
+    "bring_up": {
+      "absent": {},
+      "degraded": {},
+      "details": {
+        "assoc_health": {
+          "edges": 176,
+          "healthy": false,
+          "issues": [
+            "orphan-nodes: 11 nodes are unreachable by traversal",
+            "dominant-hub: highest-degree node has 22 neighbours against an average of 3.3; expect hub capture",
+            "saturated-association: an association weight has reached the ceiling; check for runaway reinforcement"
+          ],
+          "nodes": 107
+        },
+        "assoc_structural_note": "orphan-nodes; dominant-hub; saturated-association",
+        "graph_health": {
+          "healthy": true,
+          "issues": [
+            "community-reports: communities without reports: ['2'] (extraction/generation failure \u2014 see index logs)"
+          ],
+          "stats": {
+            "claims": 56,
+            "claims_without_sources": 0,
+            "communities": 6,
+            "communities_without_reports": [
+              "2"
+            ],
+            "community_reports": 5,
+            "documents": 20,
+            "duplicate_entities": [
+              "EVENT-STORE ~ EVENT STORE",
+              "A. NOVAK ~ A.NOVAK",
+              "M. OKAFOR ~ M.OKAFOR",
+              "EVT-201 ~ EVT-202",
+              "EVT-201 ~ EVT-203",
+              "EVT-201 ~ EVT-204",
+              "EVT-201 ~ EVT-205",
+              "EVT-202 ~ EVT-203",
+              "EVT-202 ~ EVT-204",
+              "EVT-202 ~ EVT-205",
+              "EVT-203 ~ EVT-204",
+              "EVT-203 ~ EVT-205",
+              "EVT-204 ~ EVT-205",
+              "FACT-301 ~ FACT-302",
+              "J. LINDQVIST ~ J. LINQVIST",
+              "SESSION-040 ~ SESSION-044"
+            ],
+            "entities": 39,
+            "entities_without_sources": 0,
+            "index_failures": 0,
+            "overall_orphan_rate": 0.0,
+            "relationships": 65,
+            "relationships_without_sources": 0,
+            "text_units": 20
+          }
+        },
+        "graph_synthesis_caveat": "communities without reports: ['2'] (extraction/generation failure \u2014 see index logs)",
+        "rag_health": {
+          "chunks": 14,
+          "healthy": true,
+          "issues": [],
+          "sources": 14
+        }
+      },
+      "healthy": [
+        "ASSOCIATIVE",
+        "GRAPH_BASIC",
+        "GRAPH_DRIFT",
+        "GRAPH_GLOBAL",
+        "GRAPH_LOCAL",
+        "RAG",
+        "RAW_EVIDENCE"
+      ]
+    },
+    "capabilities_run": [
+      "ASSOCIATIVE",
+      "GRAPH_BASIC",
+      "GRAPH_GLOBAL",
+      "GRAPH_LOCAL",
+      "NONE",
+      "RAG",
+      "RAW_EVIDENCE"
+    ],
+    "code_commit": "c21bcae",
+    "frozen": {
+      "context_budget": 8,
+      "corpus_version": "ch3-fixture-v0.1",
+      "reader_model": "llama3.1:8b",
+      "reader_temperature": 0.0,
+      "registry_version": "nexus-caps-v0.1",
+      "task_set_version": "nexus-routing-tasks-v0.1"
+    },
+    "registry": {
+      "capabilities": [
+        {
+          "available": true,
+          "capability_id": "ASSOCIATIVE",
+          "chapter": "5",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "cheap",
+            "limitations": [
+              "no gain when direct retrieval already succeeds",
+              "propagates extraction errors along false edges",
+              "depends on seed quality"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "evidence reachable by a chain but not by resemblance",
+              "indirect multi-hop questions"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Cue-conditioned activation spreading through the memory graph from seeded nodes."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_BASIC",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "cheap",
+            "limitations": [
+              "largely duplicates plain retrieval"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "passage-level lookup inside the derived index"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Vector search over the graph index's text units: the derived layer's own retrieval analogue."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_DRIFT",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "expensive",
+            "limitations": [
+              "the most expensive graph mode"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "questions needing both breadth and detail"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 8
+          },
+          "summary": "Community-report primer followed by iterative local follow-ups."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_GLOBAL",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "expensive",
+            "limitations": [
+              "expensive",
+              "coarse for specific factual lookups"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "corpus-wide themes and summaries",
+              "questions no single passage answers"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 6
+          },
+          "summary": "Map/reduce synthesis over community reports covering the whole corpus."
+        },
+        {
+          "available": true,
+          "capability_id": "GRAPH_LOCAL",
+          "chapter": "4",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "moderate",
+            "limitations": [
+              "needs the question to link to graph entities",
+              "weak on corpus-wide questions"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": true,
+            "strengths": [
+              "questions about a named entity and what it relates to",
+              "relationships between artifacts"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Entity-centred search over graph neighbourhoods plus their source text."
+        },
+        {
+          "available": true,
+          "capability_id": "NONE",
+          "chapter": "1",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "free",
+            "limitations": [
+              "no access to project history at all"
+            ],
+            "provides_provenance": false,
+            "reads_derived_state": false,
+            "strengths": [
+              "questions the past does not bear on"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Answer from the reader alone, with no retrieved history."
+        },
+        {
+          "available": true,
+          "capability_id": "RAG",
+          "chapter": "3",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "cheap",
+            "limitations": [
+              "no relationship structure",
+              "no corpus-wide synthesis"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": false,
+            "strengths": [
+              "locating where something was discussed",
+              "questions answered by one or two passages"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "Hybrid lexical and dense retrieval over raw history with reranking, then a bounded context."
+        },
+        {
+          "available": true,
+          "capability_id": "RAW_EVIDENCE",
+          "chapter": "3",
+          "degraded": false,
+          "degraded_reason": "",
+          "descriptor": {
+            "cost_tier": "moderate",
+            "limitations": [
+              "low precision",
+              "large context cost"
+            ],
+            "provides_provenance": true,
+            "reads_derived_state": false,
+            "strengths": [
+              "bypasses all derived interpretation",
+              "the floor under every other capability"
+            ],
+            "typical_latency_ms": 0.0,
+            "typical_model_calls": 1
+          },
+          "summary": "A wide, low-selectivity sweep of raw source artifacts: the fallback when derived memory is not trusted."
+        }
+      ],
+      "registry_version": "nexus-caps-v0.1"
+    },
+    "routing_families": {
+      "q-abs-cache": "unsupported",
+      "q-abs-provider": "unsupported",
+      "q-global-reliability": "synthesis",
+      "q-global-themes": "synthesis",
+      "q-ind-leftover": "indirect",
+      "q-ind-owner": "indirect",
+      "q-ind-separate-store": "indirect",
+      "q-nomem-contention": "no-memory",
+      "q-nomem-index": "no-memory",
+      "q-rel-influences": "relational",
+      "q-rel-trace": "relational",
+      "q-stale-trap": "adversarial",
+      "q1-locate-eventstore": "locate",
+      "q2-decision-eventstore": "locate",
+      "q2-decision-redis": "locate",
+      "q3-why-postgres": "provenance",
+      "q4-current-eventstore": "temporal",
+      "q4-historical-march": "temporal",
+      "q4-production-now": "temporal",
+      "q6-use-new-service": "use"
+    },
+    "tasks_run": [
+      "q1-locate-eventstore",
+      "q2-decision-eventstore",
+      "q2-decision-redis",
+      "q3-why-postgres",
+      "q4-current-eventstore",
+      "q4-historical-march",
+      "q4-production-now",
+      "q6-use-new-service",
+      "q-stale-trap",
+      "q-abs-cache",
+      "q-rel-influences",
+      "q-rel-trace",
+      "q-global-themes",
+      "q-global-reliability",
+      "q-ind-leftover",
+      "q-ind-owner",
+      "q-ind-separate-store",
+      "q-nomem-contention",
+      "q-nomem-index",
+      "q-abs-provider"
+    ],
+    "utility": {
+      "adequacy_threshold": 0.75,
+      "evidence_weight": 0.5,
+      "lambda_cost": 0.01,
+      "lambda_harm": 0.5,
+      "lambda_latency": 0.0,
+      "quality_weight": 1.0,
+      "version": "nexus-utility-v0.1"
+    }
+  }
+}

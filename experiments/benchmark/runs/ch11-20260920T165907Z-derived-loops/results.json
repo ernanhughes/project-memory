@@ -1,0 +1,1710 @@
+{
+  "suite": "E-11-derived-loops",
+  "gate_version": "staged-triple-gate-v1",
+  "standpoint": "2025-02-07",
+  "conditions": {
+    "unconstrained": {
+      "scores": [
+        {
+          "task_id": "t-full-scope",
+          "genuine": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-docs-deferral",
+            "c-docs-flags",
+            "c-facade-delete",
+            "c-tests-remove",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "false_positives": [
+            "c-docs-deferral",
+            "c-facade-delete",
+            "c-tests-remove"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 3,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.1667,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-hidden-only",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags",
+            "c-guess"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [
+            "c-guess"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-trap-only",
+          "genuine": [],
+          "admitted": [
+            "c-facade-delete",
+            "c-tests-remove"
+          ],
+          "true_positives": [],
+          "false_positives": [
+            "c-facade-delete",
+            "c-tests-remove"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": true,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.5,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-deferral",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-deferral",
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [
+            "c-docs-deferral"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-partial",
+          "genuine": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-facade-delete",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "false_positives": [
+            "c-facade-delete"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.6667,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 2,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.3333,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-stale-leg",
+          "genuine": [
+            "c-cli-half"
+          ],
+          "admitted": [
+            "c-backup-stale",
+            "c-cli-half"
+          ],
+          "true_positives": [
+            "c-cli-half"
+          ],
+          "false_positives": [
+            "c-backup-stale"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-guess",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-guess",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [
+            "c-guess"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-contract-harm",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-facade-delete",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [
+            "c-facade-delete"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.5,
+          "explicit_leak": [],
+          "stage_failures": {}
+        }
+      ],
+      "aggregate": {
+        "tasks": 8,
+        "mean_inferred_precision": 0.4583,
+        "mean_inferred_recall": 0.875,
+        "tasks_with_harmful": 4,
+        "harmful_task_rate": 0.5,
+        "abstention_tasks": 1,
+        "abstention_correct": 0,
+        "abstention_rate": 0.0,
+        "evidence_correctness": 0.0
+      }
+    },
+    "staged": {
+      "scores": [
+        {
+          "task_id": "t-full-scope",
+          "genuine": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 3,
+          "evidence_total": 3,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4",
+            "c-tests-remove": "S4",
+            "c-docs-deferral": "S4"
+          }
+        },
+        {
+          "task_id": "t-hidden-only",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "S2"
+          }
+        },
+        {
+          "task_id": "t-trap-only",
+          "genuine": [],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": true,
+          "trap_only": true,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4",
+            "c-tests-remove": "S4"
+          }
+        },
+        {
+          "task_id": "t-deferral",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-docs-deferral": "S4"
+          }
+        },
+        {
+          "task_id": "t-partial",
+          "genuine": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 2,
+          "evidence_total": 2,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4"
+          }
+        },
+        {
+          "task_id": "t-stale-leg",
+          "genuine": [
+            "c-cli-half"
+          ],
+          "admitted": [
+            "c-cli-half"
+          ],
+          "true_positives": [
+            "c-cli-half"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-backup-stale": "S3"
+          }
+        },
+        {
+          "task_id": "t-guess",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "S2"
+          }
+        },
+        {
+          "task_id": "t-contract-harm",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4"
+          }
+        }
+      ],
+      "aggregate": {
+        "tasks": 8,
+        "mean_inferred_precision": 0.875,
+        "mean_inferred_recall": 0.875,
+        "tasks_with_harmful": 0,
+        "harmful_task_rate": 0.0,
+        "abstention_tasks": 1,
+        "abstention_correct": 1,
+        "abstention_rate": 1.0,
+        "evidence_correctness": 1.0
+      }
+    },
+    "no-current": {
+      "scores": [
+        {
+          "task_id": "t-full-scope",
+          "genuine": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 3,
+          "evidence_total": 3,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4",
+            "c-tests-remove": "S4",
+            "c-docs-deferral": "S4"
+          }
+        },
+        {
+          "task_id": "t-hidden-only",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "S2"
+          }
+        },
+        {
+          "task_id": "t-trap-only",
+          "genuine": [],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": true,
+          "trap_only": true,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4",
+            "c-tests-remove": "S4"
+          }
+        },
+        {
+          "task_id": "t-deferral",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-docs-deferral": "S4"
+          }
+        },
+        {
+          "task_id": "t-partial",
+          "genuine": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 2,
+          "evidence_total": 2,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4"
+          }
+        },
+        {
+          "task_id": "t-stale-leg",
+          "genuine": [
+            "c-cli-half"
+          ],
+          "admitted": [
+            "c-backup-stale",
+            "c-cli-half"
+          ],
+          "true_positives": [
+            "c-cli-half"
+          ],
+          "false_positives": [
+            "c-backup-stale"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-guess",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "S2"
+          }
+        },
+        {
+          "task_id": "t-contract-harm",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4"
+          }
+        }
+      ],
+      "aggregate": {
+        "tasks": 8,
+        "mean_inferred_precision": 0.8125,
+        "mean_inferred_recall": 0.875,
+        "tasks_with_harmful": 0,
+        "harmful_task_rate": 0.0,
+        "abstention_tasks": 1,
+        "abstention_correct": 1,
+        "abstention_rate": 1.0,
+        "evidence_correctness": 1.0
+      }
+    },
+    "no-expected": {
+      "scores": [
+        {
+          "task_id": "t-full-scope",
+          "genuine": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 3,
+          "evidence_total": 3,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4",
+            "c-tests-remove": "S4",
+            "c-docs-deferral": "S4"
+          }
+        },
+        {
+          "task_id": "t-hidden-only",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags",
+            "c-guess"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [
+            "c-guess"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-trap-only",
+          "genuine": [],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": true,
+          "trap_only": true,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4",
+            "c-tests-remove": "S4"
+          }
+        },
+        {
+          "task_id": "t-deferral",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-docs-deferral": "S4"
+          }
+        },
+        {
+          "task_id": "t-partial",
+          "genuine": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 2,
+          "evidence_total": 2,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4"
+          }
+        },
+        {
+          "task_id": "t-stale-leg",
+          "genuine": [
+            "c-cli-half"
+          ],
+          "admitted": [
+            "c-cli-half"
+          ],
+          "true_positives": [
+            "c-cli-half"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-backup-stale": "S3"
+          }
+        },
+        {
+          "task_id": "t-guess",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-guess",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [
+            "c-guess"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-contract-harm",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "S4"
+          }
+        }
+      ],
+      "aggregate": {
+        "tasks": 8,
+        "mean_inferred_precision": 0.75,
+        "mean_inferred_recall": 0.875,
+        "tasks_with_harmful": 0,
+        "harmful_task_rate": 0.0,
+        "abstention_tasks": 1,
+        "abstention_correct": 1,
+        "abstention_rate": 1.0,
+        "evidence_correctness": 1.0
+      }
+    },
+    "no-cancel": {
+      "scores": [
+        {
+          "task_id": "t-full-scope",
+          "genuine": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-docs-deferral",
+            "c-docs-flags",
+            "c-facade-delete",
+            "c-tests-remove",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "false_positives": [
+            "c-docs-deferral",
+            "c-facade-delete",
+            "c-tests-remove"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 3,
+          "evidence_total": 3,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.1667,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-hidden-only",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "S2"
+          }
+        },
+        {
+          "task_id": "t-trap-only",
+          "genuine": [],
+          "admitted": [
+            "c-facade-delete",
+            "c-tests-remove"
+          ],
+          "true_positives": [],
+          "false_positives": [
+            "c-facade-delete",
+            "c-tests-remove"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": true,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.5,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-deferral",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-deferral",
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [
+            "c-docs-deferral"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-partial",
+          "genuine": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-facade-delete",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "false_positives": [
+            "c-facade-delete"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.6667,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 2,
+          "evidence_total": 2,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.3333,
+          "explicit_leak": [],
+          "stage_failures": {}
+        },
+        {
+          "task_id": "t-stale-leg",
+          "genuine": [
+            "c-cli-half"
+          ],
+          "admitted": [
+            "c-cli-half"
+          ],
+          "true_positives": [
+            "c-cli-half"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-backup-stale": "S3"
+          }
+        },
+        {
+          "task_id": "t-guess",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "S2"
+          }
+        },
+        {
+          "task_id": "t-contract-harm",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-facade-delete",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [
+            "c-facade-delete"
+          ],
+          "false_negatives": [],
+          "inferred_precision": 0.5,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 1,
+          "evidence_total": 1,
+          "evidence_correctness": 1.0,
+          "harmful_listed": [
+            "c-facade-delete"
+          ],
+          "harmful_rate": 0.5,
+          "explicit_leak": [],
+          "stage_failures": {}
+        }
+      ],
+      "aggregate": {
+        "tasks": 8,
+        "mean_inferred_precision": 0.6458,
+        "mean_inferred_recall": 0.875,
+        "tasks_with_harmful": 4,
+        "harmful_task_rate": 0.5,
+        "abstention_tasks": 1,
+        "abstention_correct": 0,
+        "abstention_rate": 0.0,
+        "evidence_correctness": 1.0
+      }
+    },
+    "oracle": {
+      "scores": [
+        {
+          "task_id": "t-full-scope",
+          "genuine": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 3,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "ORACLE",
+            "c-tests-remove": "ORACLE",
+            "c-docs-deferral": "ORACLE"
+          }
+        },
+        {
+          "task_id": "t-hidden-only",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "ORACLE"
+          }
+        },
+        {
+          "task_id": "t-trap-only",
+          "genuine": [],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": true,
+          "trap_only": true,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "ORACLE",
+            "c-tests-remove": "ORACLE"
+          }
+        },
+        {
+          "task_id": "t-deferral",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [
+            "c-docs-flags"
+          ],
+          "true_positives": [
+            "c-docs-flags"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-docs-deferral": "ORACLE"
+          }
+        },
+        {
+          "task_id": "t-partial",
+          "genuine": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "admitted": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "true_positives": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 2,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "ORACLE"
+          }
+        },
+        {
+          "task_id": "t-stale-leg",
+          "genuine": [
+            "c-cli-half"
+          ],
+          "admitted": [
+            "c-cli-half"
+          ],
+          "true_positives": [
+            "c-cli-half"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-backup-stale": "ORACLE"
+          }
+        },
+        {
+          "task_id": "t-guess",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "ORACLE"
+          }
+        },
+        {
+          "task_id": "t-contract-harm",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [
+            "c-web"
+          ],
+          "true_positives": [
+            "c-web"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 1.0,
+          "inferred_recall": 1.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 1,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "ORACLE"
+          }
+        }
+      ],
+      "aggregate": {
+        "tasks": 8,
+        "mean_inferred_precision": 0.875,
+        "mean_inferred_recall": 0.875,
+        "tasks_with_harmful": 0,
+        "harmful_task_rate": 0.0,
+        "abstention_tasks": 1,
+        "abstention_correct": 1,
+        "abstention_rate": 1.0,
+        "evidence_correctness": 0.0
+      }
+    },
+    "abstain": {
+      "scores": [
+        {
+          "task_id": "t-full-scope",
+          "genuine": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [
+            "c-cli-half",
+            "c-docs-flags",
+            "c-web"
+          ],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-docs-flags": "ABSTAIN",
+            "c-facade-delete": "ABSTAIN",
+            "c-tests-remove": "ABSTAIN",
+            "c-docs-deferral": "ABSTAIN",
+            "c-cli-half": "ABSTAIN",
+            "c-web": "ABSTAIN"
+          }
+        },
+        {
+          "task_id": "t-hidden-only",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [
+            "c-docs-flags"
+          ],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-docs-flags": "ABSTAIN",
+            "c-guess": "ABSTAIN"
+          }
+        },
+        {
+          "task_id": "t-trap-only",
+          "genuine": [],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": true,
+          "trap_only": true,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "ABSTAIN",
+            "c-tests-remove": "ABSTAIN"
+          }
+        },
+        {
+          "task_id": "t-deferral",
+          "genuine": [
+            "c-docs-flags"
+          ],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [
+            "c-docs-flags"
+          ],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-docs-deferral": "ABSTAIN",
+            "c-docs-flags": "ABSTAIN"
+          }
+        },
+        {
+          "task_id": "t-partial",
+          "genuine": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [
+            "c-cli-half",
+            "c-web"
+          ],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-cli-half": "ABSTAIN",
+            "c-web": "ABSTAIN",
+            "c-facade-delete": "ABSTAIN"
+          }
+        },
+        {
+          "task_id": "t-stale-leg",
+          "genuine": [
+            "c-cli-half"
+          ],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [
+            "c-cli-half"
+          ],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-backup-stale": "ABSTAIN",
+            "c-cli-half": "ABSTAIN"
+          }
+        },
+        {
+          "task_id": "t-guess",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [
+            "c-web"
+          ],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-guess": "ABSTAIN",
+            "c-web": "ABSTAIN"
+          }
+        },
+        {
+          "task_id": "t-contract-harm",
+          "genuine": [
+            "c-web"
+          ],
+          "admitted": [],
+          "true_positives": [],
+          "false_positives": [],
+          "false_negatives": [
+            "c-web"
+          ],
+          "inferred_precision": 0.0,
+          "inferred_recall": 0.0,
+          "abstention_ok": false,
+          "trap_only": false,
+          "evidence_correct": 0,
+          "evidence_total": 0,
+          "evidence_correctness": 0.0,
+          "harmful_listed": [],
+          "harmful_rate": 0.0,
+          "explicit_leak": [],
+          "stage_failures": {
+            "c-facade-delete": "ABSTAIN",
+            "c-web": "ABSTAIN"
+          }
+        }
+      ],
+      "aggregate": {
+        "tasks": 8,
+        "mean_inferred_precision": 0.0,
+        "mean_inferred_recall": 0.0,
+        "tasks_with_harmful": 0,
+        "harmful_task_rate": 0.0,
+        "abstention_tasks": 1,
+        "abstention_correct": 1,
+        "abstention_rate": 1.0,
+        "evidence_correctness": 0.0
+      }
+    }
+  },
+  "backtest": {
+    "primary": "mean_inferred_precision",
+    "primary_gain": -0.2292,
+    "breaches": [
+      "harmful_task_rate: 0.0 -> 0.5",
+      "abstention_rate: 1.0 -> 0.0"
+    ],
+    "promoted": false,
+    "candidate": "v2-drop-cancelling-leg",
+    "rationale": "recover the deferred-docs candidate; locally correct, globally harmful"
+  }
+}

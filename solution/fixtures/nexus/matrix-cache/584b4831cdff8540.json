@@ -1,0 +1,45 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "adr-007.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "incident-021.md",
+    "issue-041.md",
+    "session-044.md"
+  ],
+  "answer": "The June ingestion stall was caused by write contention on the SQLite event log under concurrent writers, which led to the decision to target PostgreSQL for the event-store.",
+  "capability_id": "ASSOCIATIVE",
+  "capability_latency_ms": 3.6385999992489815,
+  "cited_ids": [
+    "incident-021.md",
+    "adr-007.md"
+  ],
+  "context_tokens": 577,
+  "cost_units": 1.2,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 7,
+  "latency_ms": 5087.877100042533,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.3333333333333333,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 1,
+  "notes": "explored=7 stopped=hop-budget",
+  "query_id": "q-rel-trace",
+  "reader_latency_ms": 5083.889600005932,
+  "retrieved_ids": [
+    "incident-021.md",
+    "benchmark-note.md",
+    "experiment-contention.md",
+    "issue-041.md",
+    "session-044.md",
+    "adr-007.md"
+  ]
+}

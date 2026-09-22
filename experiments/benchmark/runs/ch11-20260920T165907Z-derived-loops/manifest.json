@@ -1,0 +1,22 @@
+{
+  "suite": "E-11-derived-loops",
+  "run_id": "ch11-20260920T165907Z-derived-loops",
+  "created_at": "20260920T165907Z",
+  "fixture_version": "corpus_import-v1",
+  "gate_version": "staged-triple-gate-v1",
+  "standpoint": "2025-02-07",
+  "conditions": [
+    "unconstrained",
+    "staged",
+    "no-current",
+    "no-expected",
+    "no-cancel",
+    "oracle",
+    "abstain"
+  ],
+  "task_count": 8,
+  "corpus_digest": "ac9c33ec3d6026d5",
+  "code_commit": "3155d8c",
+  "reader": null,
+  "note": "fixture-level deterministic run; zero model calls"
+}

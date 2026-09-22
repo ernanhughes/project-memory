@@ -1,0 +1,80 @@
+{
+  "bundle_id": "cb-T2-writer-C5",
+  "condition": "C5",
+  "budget_tokens": 1500,
+  "bundle_tokens": 255,
+  "bundle_digest": "adac675b5ce008a0",
+  "items": [
+    {
+      "item_id": "item-wr-context-runtime",
+      "members": [
+        "wr-context-runtime"
+      ],
+      "source_refs": [
+        "writer/context/runtime.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "writer.context-runtime",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 66
+    },
+    {
+      "item_id": "item-wr-memory-store",
+      "members": [
+        "wr-memory-store"
+      ],
+      "source_refs": [
+        "writer/memory/store.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "writer.memory",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 39
+    },
+    {
+      "item_id": "item-wr-improve-context",
+      "members": [
+        "wr-improve-context"
+      ],
+      "source_refs": [
+        "writer/docs/roadmap.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "writer.roadmap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 50
+    },
+    {
+      "item_id": "item-wr-rag-baseline",
+      "members": [
+        "wr-rag-baseline"
+      ],
+      "source_refs": [
+        "writer/context/retrieval.py"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "writer.baseline",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 44
+    },
+    {
+      "item_id": "item-wr-retrieval-eval",
+      "members": [
+        "wr-retrieval-eval"
+      ],
+      "source_refs": [
+        "writer/eval/retrieval.md"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "writer.eval",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 56
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

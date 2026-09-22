@@ -1,0 +1,54 @@
+{
+  "bundle_id": "cb-T4-current-vs-stale-CO",
+  "condition": "CO",
+  "budget_tokens": 1500,
+  "bundle_tokens": 246,
+  "bundle_digest": "9d9524d86ca991af",
+  "items": [
+    {
+      "item_id": "item-mb-impl-postgres",
+      "members": [
+        "mb-impl-postgres"
+      ],
+      "source_refs": [
+        "solution/memory_baseline/storage.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.store-backend",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 69
+    },
+    {
+      "item_id": "item-mb-ch03-baseline-role",
+      "members": [
+        "mb-ch03-baseline-role"
+      ],
+      "source_refs": [
+        "content/books/memory/03-chapter.md",
+        "experiments/benchmark/runs/ch3-20260919-ladder3"
+      ],
+      "kind": "baseline_result",
+      "claim_key": "baseline.ch3-config",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 125
+    },
+    {
+      "item_id": "item-mb-impl-test-paths",
+      "members": [
+        "mb-impl-test-paths"
+      ],
+      "source_refs": [
+        "solution/pyproject.toml",
+        "solution/README.md"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "impl.tests",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 52
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}

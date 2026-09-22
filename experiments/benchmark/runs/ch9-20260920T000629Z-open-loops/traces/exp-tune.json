@@ -1,0 +1,92 @@
+[
+  {
+    "valid_at": "2024-07-20T00:00:00Z",
+    "expectation_id": "exp-tune",
+    "status": "SUPERSEDED",
+    "confidence_class": "CLOSED_WITH_EVIDENCE",
+    "opening_evidence": [
+      "issue-041"
+    ],
+    "closing_evidence": [
+      "ch9-migrate-decision"
+    ],
+    "closure_tier": "explicit",
+    "footprint": {
+      "expectation_id": "exp-tune",
+      "searched_sources": [
+        "commits",
+        "decisions",
+        "diffs",
+        "issues",
+        "sessions"
+      ],
+      "searched_until": "2024-07-20T00:00:00Z",
+      "candidate_closures_examined": 2,
+      "gaps": [],
+      "current_state_checked": false
+    },
+    "deadline_passed": false,
+    "last_verified_at": null,
+    "detail": "closed by ch9-migrate-decision [explicit]"
+  },
+  {
+    "valid_at": "2024-08-25T00:00:00Z",
+    "expectation_id": "exp-tune",
+    "status": "SUPERSEDED",
+    "confidence_class": "CLOSED_WITH_EVIDENCE",
+    "opening_evidence": [
+      "issue-041"
+    ],
+    "closing_evidence": [
+      "ch9-migrate-decision"
+    ],
+    "closure_tier": "explicit",
+    "footprint": {
+      "expectation_id": "exp-tune",
+      "searched_sources": [
+        "commits",
+        "decisions",
+        "diffs",
+        "issues",
+        "sessions"
+      ],
+      "searched_until": "2024-08-25T00:00:00Z",
+      "candidate_closures_examined": 5,
+      "gaps": [],
+      "current_state_checked": false
+    },
+    "deadline_passed": false,
+    "last_verified_at": null,
+    "detail": "closed by ch9-migrate-decision [explicit]"
+  },
+  {
+    "valid_at": "2024-08-31T00:00:00Z",
+    "expectation_id": "exp-tune",
+    "status": "SUPERSEDED",
+    "confidence_class": "CLOSED_WITH_EVIDENCE",
+    "opening_evidence": [
+      "issue-041"
+    ],
+    "closing_evidence": [
+      "ch9-migrate-decision"
+    ],
+    "closure_tier": "explicit",
+    "footprint": {
+      "expectation_id": "exp-tune",
+      "searched_sources": [
+        "commits",
+        "decisions",
+        "diffs",
+        "issues",
+        "sessions"
+      ],
+      "searched_until": "2024-08-31T00:00:00Z",
+      "candidate_closures_examined": 7,
+      "gaps": [],
+      "current_state_checked": false
+    },
+    "deadline_passed": false,
+    "last_verified_at": null,
+    "detail": "closed by ch9-migrate-decision [explicit]"
+  }
+]

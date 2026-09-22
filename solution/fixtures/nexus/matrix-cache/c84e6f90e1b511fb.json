@@ -1,0 +1,33 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "session-014.md"
+  ],
+  "answer": "Session 014 (March 4, 2024)",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 43724.812100001145,
+  "cited_ids": [
+    "session-014.md"
+  ],
+  "context_tokens": 1019,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "CONTEXT_OMISSION"
+  ],
+  "graph_expansions": 1,
+  "latency_ms": 56883.78949998878,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 1.0,
+    "source_recall": 0.3333333333333333,
+    "unsupported_source_rate": 0.0
+  },
+  "model_calls": 2,
+  "notes": "linked=1 implicated=1",
+  "query_id": "q1-locate-eventstore",
+  "reader_latency_ms": 13158.833800000139,
+  "retrieved_ids": [
+    "session-014.md"
+  ]
+}

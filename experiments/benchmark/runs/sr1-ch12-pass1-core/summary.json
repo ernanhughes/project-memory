@@ -1,0 +1,642 @@
+{
+  "mean_by_condition": {
+    "B0": {
+      "n": 9,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 6,
+          "macro": 0.0833
+        },
+        "failure_avoidance": {
+          "applicable": 1,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 3,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 9,
+          "macro": 0.3333
+        },
+        "open_work_continuation": {
+          "applicable": 4,
+          "macro": 0.25
+        }
+      },
+      "task_success": {
+        "applicable": 9,
+        "macro": 0.3056
+      },
+      "harmful": {
+        "applicable": 3,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1.0
+    },
+    "B2": {
+      "n": 8,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 5,
+          "macro": 0.5
+        },
+        "failure_avoidance": {
+          "applicable": 1,
+          "macro": 0.0
+        },
+        "harmful_actions": {
+          "applicable": 2,
+          "macro": 0.5
+        },
+        "goal_adherence": {
+          "applicable": 8,
+          "macro": 0.5
+        },
+        "open_work_continuation": {
+          "applicable": 3,
+          "macro": 0.0
+        }
+      },
+      "task_success": {
+        "applicable": 8,
+        "macro": 0.4583
+      },
+      "harmful": {
+        "applicable": 2,
+        "harmful_tasks": 1,
+        "micro": 0.5
+      },
+      "mean_tokens": 2027.4
+    },
+    "B3": {
+      "n": 8,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 5,
+          "macro": 0.9
+        },
+        "failure_avoidance": {
+          "applicable": 1,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 2,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 8,
+          "macro": 0.875
+        },
+        "open_work_continuation": {
+          "applicable": 3,
+          "macro": 0.5
+        }
+      },
+      "task_success": {
+        "applicable": 8,
+        "macro": 0.8125
+      },
+      "harmful": {
+        "applicable": 2,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1853.6
+    },
+    "B4": {
+      "n": 8,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 6,
+          "macro": 0.6667
+        },
+        "failure_avoidance": {
+          "applicable": 1,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 3,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 8,
+          "macro": 0.75
+        },
+        "open_work_continuation": {
+          "applicable": 4,
+          "macro": 0.625
+        }
+      },
+      "task_success": {
+        "applicable": 8,
+        "macro": 0.6667
+      },
+      "harmful": {
+        "applicable": 3,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1050.8
+    },
+    "BO": {
+      "n": 7,
+      "dimensions": {
+        "constraint_adherence": {
+          "applicable": 5,
+          "macro": 0.9
+        },
+        "failure_avoidance": {
+          "applicable": 1,
+          "macro": 1.0
+        },
+        "harmful_actions": {
+          "applicable": 2,
+          "macro": 0.0
+        },
+        "goal_adherence": {
+          "applicable": 7,
+          "macro": 0.8571
+        },
+        "open_work_continuation": {
+          "applicable": 3,
+          "macro": 0.6667
+        }
+      },
+      "task_success": {
+        "applicable": 7,
+        "macro": 0.8214
+      },
+      "harmful": {
+        "applicable": 2,
+        "harmful_tasks": 0,
+        "micro": 0.0
+      },
+      "mean_tokens": 1328.6
+    }
+  },
+  "matched_means": {
+    "B0": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.1548,
+      "mean_tokens": 1.0
+    },
+    "B2": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.381,
+      "mean_tokens": 2028.7
+    },
+    "B3": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.7857,
+      "mean_tokens": 1909.3
+    },
+    "B4": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.6429,
+      "mean_tokens": 1172.7
+    },
+    "BO": {
+      "tasks": [
+        "cite-rule",
+        "credit-rule",
+        "fix-store",
+        "release-blockers",
+        "review-arch",
+        "review-prose",
+        "ship-ch10"
+      ],
+      "n_tasks": 7,
+      "task_success_macro": 0.8214,
+      "mean_tokens": 1328.6
+    }
+  },
+  "influence": {
+    "rows": [
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.3333,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.1667,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.5,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.25,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "irrelevant",
+        "base": "B0",
+        "treated": "B2",
+        "base_score": 1.0,
+        "treated_score": 1.0,
+        "cell": "memory-not-shown-necessary"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "irrelevant",
+        "base": "B0",
+        "treated": "B3",
+        "base_score": 1.0,
+        "treated_score": 1.0,
+        "cell": "memory-not-shown-necessary"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "corpus-cleanup",
+        "base": "B0",
+        "treated": "B4",
+        "base_score": 0.6667,
+        "treated_score": 0.8333,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "fix-store",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.3333,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "ship-ch10",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "release-blockers",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "credit-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.75,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "cite-rule",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 1.0,
+        "cell": "beneficial-memory-contribution"
+      },
+      {
+        "task": "review-prose",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.0,
+        "cell": "memory-failed-to-repair"
+      },
+      {
+        "task": "review-arch",
+        "base": "B0",
+        "treated": "BO",
+        "base_score": 0.0,
+        "treated_score": 0.75,
+        "cell": "memory-failed-to-repair"
+      }
+    ],
+    "counts": {
+      "memory-not-shown-necessary": 2,
+      "beneficial-memory-contribution": 13,
+      "harmful-memory-contribution": 0,
+      "memory-failed-to-repair": 16
+    }
+  },
+  "directional": {
+    "pairs": 31,
+    "behavior_changed": 29,
+    "score_improved": 23,
+    "score_degraded": 1,
+    "score_unchanged": 7
+  },
+  "deltas": {
+    "fix-store|B2": {
+      "task_delta": -0.3333,
+      "repeats": 1
+    },
+    "ship-ch10|B2": {
+      "task_delta": 0.1667,
+      "repeats": 1
+    },
+    "release-blockers|B2": {
+      "task_delta": 0.5,
+      "repeats": 1
+    },
+    "credit-rule|B2": {
+      "task_delta": 0.25,
+      "repeats": 1
+    },
+    "cite-rule|B2": {
+      "task_delta": 0.25,
+      "repeats": 1
+    },
+    "review-prose|B2": {
+      "task_delta": 0.0,
+      "repeats": 1
+    },
+    "review-arch|B2": {
+      "task_delta": 0.75,
+      "repeats": 1
+    },
+    "irrelevant|B2": {
+      "task_delta": 0.0,
+      "repeats": 1
+    },
+    "fix-store|B3": {
+      "task_delta": 0.6667,
+      "repeats": 1
+    },
+    "ship-ch10|B3": {
+      "task_delta": 1.0,
+      "repeats": 1
+    },
+    "release-blockers|B3": {
+      "task_delta": 0.75,
+      "repeats": 1
+    },
+    "credit-rule|B3": {
+      "task_delta": 0.25,
+      "repeats": 1
+    },
+    "cite-rule|B3": {
+      "task_delta": 1.0,
+      "repeats": 1
+    },
+    "review-prose|B3": {
+      "task_delta": 0.0,
+      "repeats": 1
+    },
+    "review-arch|B3": {
+      "task_delta": 0.75,
+      "repeats": 1
+    },
+    "irrelevant|B3": {
+      "task_delta": 0.0,
+      "repeats": 1
+    },
+    "fix-store|B4": {
+      "task_delta": 0.6667,
+      "repeats": 1
+    },
+    "ship-ch10|B4": {
+      "task_delta": 1.0,
+      "repeats": 1
+    },
+    "release-blockers|B4": {
+      "task_delta": 0.75,
+      "repeats": 1
+    },
+    "credit-rule|B4": {
+      "task_delta": 0.25,
+      "repeats": 1
+    },
+    "cite-rule|B4": {
+      "task_delta": 0.0,
+      "repeats": 1
+    },
+    "review-prose|B4": {
+      "task_delta": 0.0,
+      "repeats": 1
+    },
+    "review-arch|B4": {
+      "task_delta": 0.75,
+      "repeats": 1
+    },
+    "corpus-cleanup|B4": {
+      "task_delta": 0.1666,
+      "repeats": 1
+    },
+    "fix-store|BO": {
+      "task_delta": 0.6667,
+      "repeats": 1
+    },
+    "ship-ch10|BO": {
+      "task_delta": 1.0,
+      "repeats": 1
+    },
+    "release-blockers|BO": {
+      "task_delta": 1.0,
+      "repeats": 1
+    },
+    "credit-rule|BO": {
+      "task_delta": 0.25,
+      "repeats": 1
+    },
+    "cite-rule|BO": {
+      "task_delta": 1.0,
+      "repeats": 1
+    },
+    "review-prose|BO": {
+      "task_delta": 0.0,
+      "repeats": 1
+    },
+    "review-arch|BO": {
+      "task_delta": 0.75,
+      "repeats": 1
+    }
+  }
+}

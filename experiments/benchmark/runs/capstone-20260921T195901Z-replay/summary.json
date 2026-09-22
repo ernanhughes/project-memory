@@ -1,0 +1,8 @@
+{
+ "mode": "replay",
+ "manifest_id": "20c668d09bc6dd6e",
+ "traces": 103,
+ "C4_minus_C0_matched": 0.2619,
+ "BR_minus_BA_matched": 0.5278,
+ "verdict": "A"
+}

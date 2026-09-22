@@ -1,0 +1,35 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "a.novak",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 45376.358600042295,
+  "cited_ids": [
+    "experiment evt-202",
+    "Data: Sources (10, +more)",
+    "Data: Sources (2, +more)",
+    "adr-007.md"
+  ],
+  "context_tokens": 773,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 50416.9530000072,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 0.75
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-ind-owner",
+  "reader_latency_ms": 5040.395000018179,
+  "retrieved_ids": []
+}

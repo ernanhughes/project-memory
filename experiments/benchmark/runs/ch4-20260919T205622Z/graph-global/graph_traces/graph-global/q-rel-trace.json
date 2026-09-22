@@ -1,0 +1,16 @@
+{
+  "graph_answer": "### The June Ingestion Stall and the Decision to Migrate to PostgreSQL\n\nThe **June ingestion stall**\u2014a **40-minute disruption in event ingestion** caused by **SQLite write contention**\u2014played a **pivotal role** in the decision to migrate from SQLite to PostgreSQL. This incident exposed critical limitations in SQLite\u2019s ability to handle high write loads, particularly during peak operational windows, and directly influenced the architectural decision-making process.\n\n#### **1. Technical Failures and Scalability Limitations**\nThe June stall highlighted **SQLite\u2019s inherent scalability and performance bottlenecks** under concurrent write scenarios. Reports such as **SQLite Event Ingestion Disruption (5)** and broader performance reviews (**PROTOTYPE 33, 43**; **LOAD-TEST REVIEW 34**) consistently documented SQLite\u2019s inability to scale beyond a small number of writers. The incident served as **empirical validation** of these pre-existing concerns, reinforcing the need for a more robust database solution.\n\n#### **2. Formal Decision-Making and Documentation**\nThe June stall was explicitly referenced in **Architectural Decision Records (ADRs)**, most notably **ADR-007**, which formally proposed PostgreSQL as the replacement for SQLite. This decision was justified by PostgreSQL\u2019s superior **scalability, durability, and transactional consistency**\u2014qualities that SQLite could not reliably deliver during high-load periods. The iterative documentation of SQLite\u2019s limitations (**EVT-201, EVT-203**) and the formal migration process (**EVT-205**) further solidified the case for the upgrade.\n\n#### **3. Validation of Technical Arguments**\nThe June stall acted as a **critical validation point** for the technical rationale behind PostgreSQL. By demonstrating real-world operational failures, it reinforced the arguments made in favor of the migration, ensuring that the decision was not based solely on theoretical concerns but on **observable, repeatable performance issues**. This incident thus served as a **tipping point** in the migration process, accelerating the shift from SQLite to PostgreSQL.\n\n#### **Key Data References**\n- **SQLite Event Ingestion Disruption (5)**\n- **Architectural Decision Record (ADR-007) [1, 3]**\n- **Performance Test Reports (33, 34, +more)**\n- **Event Store Backend Migration Documentation (1, 3, +more)**\n\nIn summary, the June ingestion stall was not merely an isolated incident but a **defining moment** that exposed SQLite\u2019s critical flaws and justified the migration to PostgreSQL as a necessary upgrade for scalability and reliability.",
+  "graph_latency_ms": 97395.7,
+  "implicated_sources": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "linked_entities": [
+    "EVENT INGESTION",
+    "JUNE LOAD WINDOW",
+    "POSTGRESQL"
+  ],
+  "mode": "global",
+  "task_id": "q-rel-trace"
+}

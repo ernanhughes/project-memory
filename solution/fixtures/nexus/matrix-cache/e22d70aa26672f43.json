@@ -1,0 +1,52 @@
+{
+  "abstained": false,
+  "admitted_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ],
+  "answer": "The June ingestion stall exposed SQLite's inability to handle concurrent writes, prompting a reevaluation of the event store's backend and ultimately leading to the decision to migrate to PostgreSQL.",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 198146.2751000072,
+  "cited_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md",
+    "evt-203",
+    "Data: Sources (11, 5, +more)",
+    "evt-204",
+    "Data: Sources (2, 16, +more)",
+    "adr-007.md",
+    "Data: Sources (0, 14, +more)",
+    "Data: Sources (8, 14, +more)",
+    "event-store wiki page",
+    "Data: Sources (19, 0, +more)"
+  ],
+  "context_tokens": 818,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "CONTEXT_OMISSION",
+    "CONTEXT_DISTRACTION",
+    "CORRECT_EVIDENCE_WRONG_INTERPRETATION",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 3,
+  "latency_ms": 230928.8142999867,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 0.0,
+    "source_precision": 0.3333333333333333,
+    "source_recall": 0.5,
+    "unsupported_source_rate": 0.6666666666666666
+  },
+  "model_calls": 2,
+  "notes": "linked=3 implicated=3",
+  "query_id": "q-rel-trace",
+  "reader_latency_ms": 32782.30210003676,
+  "retrieved_ids": [
+    "incident-021.md",
+    "production-notes.md",
+    "stale-summary.md"
+  ]
+}

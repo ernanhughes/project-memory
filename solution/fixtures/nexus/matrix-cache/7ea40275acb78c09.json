@@ -1,0 +1,44 @@
+{
+  "abstained": true,
+  "admitted_ids": [
+    "production-notes.md",
+    "benchmark-note.md",
+    "adr-007.md",
+    "commits.log",
+    "stale-summary.md",
+    "notification-service.md",
+    "experiment-contention.md",
+    "session-014.md"
+  ],
+  "answer": "There is no information about the cloud provider hosting the production PostgreSQL instance.",
+  "capability_id": "RAG",
+  "capability_latency_ms": 6587.90109999245,
+  "cited_ids": [],
+  "context_tokens": 767,
+  "cost_units": 1.0,
+  "failure_classes": [
+    "CONTEXT_DISTRACTION"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 10405.085899983533,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 1.0
+  },
+  "model_calls": 1,
+  "notes": "retrieval_ms=3364",
+  "query_id": "q-abs-provider",
+  "reader_latency_ms": 3817.0300999772735,
+  "retrieved_ids": [
+    "production-notes.md",
+    "benchmark-note.md",
+    "adr-007.md",
+    "commits.log",
+    "stale-summary.md",
+    "notification-service.md",
+    "experiment-contention.md",
+    "session-014.md"
+  ]
+}

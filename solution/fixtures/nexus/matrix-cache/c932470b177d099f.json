@@ -1,0 +1,37 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_GLOBAL",
+  "capability_latency_ms": 64585.66670003347,
+  "cited_ids": [
+    "adr-007.md",
+    "EVT-205",
+    "PROTOTYPE EVT-201",
+    "40-minute stall in event ingestion during the June load window",
+    "session-040.md"
+  ],
+  "context_tokens": 766,
+  "cost_units": 12.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 69172.53660003189,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 0.6
+  },
+  "model_calls": 7,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q2-decision-eventstore",
+  "reader_latency_ms": 4586.712999967858,
+  "retrieved_ids": []
+}

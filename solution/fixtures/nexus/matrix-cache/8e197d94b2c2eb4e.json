@@ -1,0 +1,35 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "PostgreSQL",
+  "capability_id": "GRAPH_BASIC",
+  "capability_latency_ms": 45471.38299996732,
+  "cited_ids": [
+    "Data: Sources (0)",
+    "Decision Record (ADR-007)",
+    "evt-205"
+  ],
+  "context_tokens": 819,
+  "cost_units": 1.5,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 49468.42460002517,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "supersession_correctness": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q2-decision-eventstore",
+  "reader_latency_ms": 3996.892100025434,
+  "retrieved_ids": []
+}

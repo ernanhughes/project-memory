@@ -1,0 +1,39 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "The project underwent significant architectural shifts from using SQLite to PostgreSQL, driven by performance bottlenecks and scalability concerns.",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 41562.6986999996,
+  "cited_ids": [
+    "Data: *session-014* (15)",
+    "Data: *stale-summary* (19)",
+    "Data: *experiment-contention* (10)",
+    "Data: *incident-021* (11)",
+    "Data: *adr-007* (0)",
+    "Data: *production-notes* (14)",
+    "Data: *session-019* (16)",
+    "Data: *session-040* (17)",
+    "Data: *session-044* (18)"
+  ],
+  "context_tokens": 1035,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "NOT_RETRIEVED",
+    "NOT_RETRIEVED",
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 54909.51580001274,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "source_precision": 0.0,
+    "source_recall": 0.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-global-themes",
+  "reader_latency_ms": 13346.659599978011,
+  "retrieved_ids": []
+}

@@ -1,0 +1,53 @@
+{
+  "suite": "SR-1d token-matched control",
+  "run_id": "sr1c-ch12-confirm-20260920T234546Z-muse",
+  "created_at": "20260921T001441Z",
+  "behavior_schema_version": "behavior-task-v1",
+  "grader_version": "behavior-grader-v2",
+  "fixture_version": "behavior-fixtures-v1",
+  "prompt_version": "behavior-prompt-v2",
+  "benchmark_contract": "benchmark-v0.1 plus diagnostic behavioural dimensions (no contract change)",
+  "conditions_run": [
+    "B0",
+    "B1",
+    "B1P",
+    "B2",
+    "B3",
+    "B4",
+    "BO"
+  ],
+  "repeats": 3,
+  "tasks": [
+    "fix-store",
+    "ship-ch10",
+    "release-blockers",
+    "credit-rule",
+    "cite-rule",
+    "review-prose",
+    "review-arch"
+  ],
+  "ch10_source_run": "ch10-20260920T163314Z-context-frames",
+  "ch11_source_run": "ch11-20260920T171039Z-derived-loops",
+  "ch14_source_run": "ch14-20260920T174259Z-context-assembly",
+  "token_estimator": "chars//4 (estimated tokens)",
+  "code_commit": "7209d20",
+  "reader_cache_calls": 34,
+  "reader_cache_hits": 15,
+  "cost": "not computed",
+  "reader": "opencode:muse-spark-1.3-contributor@t0",
+  "reader_provider": "opencode-zen-go",
+  "reader_model": "muse-spark-1.3-contributor",
+  "reasoning_effort": "low",
+  "temperature": 0.0,
+  "max_output_tokens": 2048,
+  "session_scheme": "unique-per-call",
+  "muse_usage_totals": {
+    "input_tokens": 118556,
+    "cached_input_tokens": 16309,
+    "output_tokens": 37676,
+    "reasoning_tokens": 31364,
+    "total_tokens": 156232,
+    "calls": 34
+  },
+  "code_note": "live calls under 6cfb827 (rep 0) + 7209d20 (reps 1-2); request path identical across both"
+}

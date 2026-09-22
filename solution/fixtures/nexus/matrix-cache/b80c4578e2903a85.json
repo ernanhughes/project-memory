@@ -1,0 +1,31 @@
+{
+  "abstained": false,
+  "admitted_ids": [],
+  "answer": "A database index is a data structure that improves the speed of data retrieval operations on a database table.",
+  "capability_id": "GRAPH_LOCAL",
+  "capability_latency_ms": 53116.396700032055,
+  "cited_ids": [
+    "[derived:local search over persistent graph memory; linked entities: none; implicated sources: none]",
+    "### What Is a Database Index?"
+  ],
+  "context_tokens": 1126,
+  "cost_units": 3.0,
+  "failure_classes": [
+    "UNSUPPORTED_CLAIM"
+  ],
+  "graph_expansions": 0,
+  "latency_ms": 61536.66659997543,
+  "measured": true,
+  "metrics": {
+    "abstention_correctness": 1.0,
+    "decision_exactness": 1.0,
+    "source_precision": 1.0,
+    "source_recall": 1.0,
+    "unsupported_source_rate": 1.0
+  },
+  "model_calls": 2,
+  "notes": "linked=0 implicated=0",
+  "query_id": "q-nomem-index",
+  "reader_latency_ms": 8420.077999995556,
+  "retrieved_ids": []
+}

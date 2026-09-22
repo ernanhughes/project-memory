@@ -1,0 +1,52 @@
+{
+  "bundle_id": "cb-T2-writer-C2",
+  "condition": "C2",
+  "budget_tokens": 1500,
+  "bundle_tokens": 172,
+  "bundle_digest": "536f9fe243893424",
+  "items": [
+    {
+      "item_id": "item-wr-improve-context",
+      "members": [
+        "wr-improve-context"
+      ],
+      "source_refs": [
+        "writer/docs/roadmap.md"
+      ],
+      "kind": "planning_note",
+      "claim_key": "writer.roadmap",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 50
+    },
+    {
+      "item_id": "item-wr-context-runtime",
+      "members": [
+        "wr-context-runtime"
+      ],
+      "source_refs": [
+        "writer/context/runtime.py"
+      ],
+      "kind": "implementation_detail",
+      "claim_key": "writer.context-runtime",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 66
+    },
+    {
+      "item_id": "item-wr-retrieval-eval",
+      "members": [
+        "wr-retrieval-eval"
+      ],
+      "source_refs": [
+        "writer/eval/retrieval.md"
+      ],
+      "kind": "experiment_result",
+      "claim_key": "writer.eval",
+      "conflict_with": [],
+      "temporal_note": "",
+      "tokens": 56
+    }
+  ],
+  "schema_version": "context-bundle/v0.1"
+}
