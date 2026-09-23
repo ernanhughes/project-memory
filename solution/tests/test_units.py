@@ -10,6 +10,14 @@ from memory_baseline.evaluation import _to_system_output
 from memory_baseline.generation import _parse_response
 from memory_baseline.health import HealthIssue, HealthReport
 from memory_baseline.retrieval import OverlapReranker, reciprocal_rank_fusion
+from memory_baseline.routing import (
+    MemoryRoute,
+    classify_route,
+    evaluate_router,
+    guidance_for,
+    parse_explicit_route,
+    route_for_request,
+)
 from memory_baseline.storage import ScoredChunk
 
 
@@ -33,6 +41,23 @@ def test_discover_and_parse(tmp_path: Path) -> None:
     source = ingest.parse(tmp_path / "a.md", tmp_path)
     assert source is not None and source.source_id == "a.md"
     assert ingest.parse(tmp_path / "empty.md", tmp_path) is None
+
+
+def test_discover_skips_build_artifacts(tmp_path: Path) -> None:
+    (tmp_path / "src").mkdir()
+    (tmp_path / "src" / "index.ts").write_text("export const x = 1;\n",
+                                               encoding="utf-8")
+    for skipped in ("dist", "build", "coverage", "target", ".next",
+                    ".turbo", "node_modules", "__pycache__", ".venv", "venv"):
+        artifact = tmp_path / skipped
+        artifact.mkdir(exist_ok=True)
+        (artifact / "bundle.js").write_text("var x = 1;\n", encoding="utf-8")
+    (tmp_path / "dist" / "notes.md").write_text("stale build doc\n",
+                                                encoding="utf-8")
+    found = ingest.discover(tmp_path)
+    assert [p.relative_to(tmp_path).as_posix() for p in found] == [
+        "src/index.ts"
+    ]
 
 
 def test_chunk_ids_deterministic() -> None:
@@ -212,3 +237,88 @@ def test_default_config_freezes() -> None:
     assert config.embedding.model == "bge-m3"
     assert "distinguish" in config.generator.system_prompt.lower() or \
         "proposed" in config.generator.system_prompt
+
+
+# -- routing ------------------------------------------------------------
+
+
+def test_routing_contract_passes() -> None:
+    report = evaluate_router()
+    assert report["passed"], report["failures"]
+    assert (report["recall_correct"], report["influence_correct"],
+            report["ambiguous_correct"]) == (7, 7, 5)
+    # 19 contract fixtures + 2 explicit-override checks = 21 checks.
+    assert report["examples"] == 19
+    assert (report["checks_passed"], report["checks_total"]) == (21, 21)
+
+
+def test_recall_interrogative_beats_action_verb() -> None:
+    # "Why did we originally choose X" asks about the past choice.
+    decision = classify_route("Why did we originally choose PostgreSQL?")
+    assert decision.route is MemoryRoute.RECALL
+    assert decision.source == "deterministic"
+    assert not decision.ambiguous
+
+
+def test_explicit_route_overrides_inference() -> None:
+    assert classify_route("Where did we discuss pgvector?",
+                          explicit="influence").route is MemoryRoute.INFLUENCE
+    assert classify_route("Fix the migration.",
+                          explicit="recall").route is MemoryRoute.RECALL
+    explicit = classify_route("anything", explicit="recall")
+    assert explicit.source == "explicit" and not explicit.ambiguous
+
+
+def test_malformed_route_fails_closed() -> None:
+    import pytest
+
+    with pytest.raises(ValueError):
+        parse_explicit_route("historical-ish")
+    with pytest.raises(ValueError):
+        route_for_request("query", route="sometime")
+
+
+def test_ambiguous_queries_stay_observable() -> None:
+    for query in ("PostgreSQL schema", "The old design", "Current state"):
+        decision = classify_route(query)
+        assert decision.route is MemoryRoute.INFLUENCE
+        assert decision.ambiguous
+        assert "ambiguous" in decision.reason or "fallback" in decision.reason
+
+
+def test_route_guidance_labels_contract() -> None:
+    assert "historical reconstruction" in guidance_for(MemoryRoute.RECALL)
+    assert "not yet implemented" in guidance_for(MemoryRoute.INFLUENCE)
+
+
+# -- temporal interpretation --------------------------------------------
+
+
+def test_temporal_contract_passes() -> None:
+    from memory_baseline.temporal import evaluate_temporal
+
+    report = evaluate_temporal()
+    assert report["passed"], report["categories"]
+    assert (report["checks_passed"], report["checks_total"]) == (16, 16)
+    assert set(report["categories"]) == {
+        "current", "valid_time", "known_at", "bitemporal",
+        "planned_effective", "supersession", "correction", "ordering",
+        "incomplete_history", "unmodelled",
+    }
+
+
+def test_temporal_standpoint_rejects_bad_params() -> None:
+    import pytest
+
+    from memory_baseline.temporal import TemporalStandpoint
+
+    assert TemporalStandpoint(mode="current").mode == "current"
+    with pytest.raises(ValueError, match="TEMPORAL_BAD_STANDPOINT"):
+        TemporalStandpoint(mode="valid_at")
+    with pytest.raises(ValueError, match="TEMPORAL_BAD_STANDPOINT"):
+        TemporalStandpoint(mode="valid_at", valid_at="last summer")
+    with pytest.raises(ValueError, match="TEMPORAL_BAD_TIMESTAMP"):
+        TemporalStandpoint(mode="current", valid_at="last summer")
+    with pytest.raises(ValueError, match="TEMPORAL_BAD_STANDPOINT"):
+        TemporalStandpoint(mode="bitemporal",
+                           valid_at="2026-07-20T00:00:00Z")

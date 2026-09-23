@@ -20,7 +20,13 @@ TEXT_SUFFIXES = {
     ".json", ".yaml", ".yml", ".toml", ".cfg", ".ini",
     ".log",
 }
-SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv"}
+# Build outputs and other generated trees are never project memory.
+# This set stays narrow on purpose: ordinary source, docs, configs and
+# logs are ingested; regenerable artifacts are not.
+SKIP_DIRS = {
+    ".git", "node_modules", "__pycache__", ".venv", "venv",
+    "dist", "build", "coverage", "target", ".next", ".turbo",
+}
 
 
 @dataclass(frozen=True)
